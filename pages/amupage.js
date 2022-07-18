@@ -4,13 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import "swiper/css/navigation";
-
+import slideStlye from "../styles/Slide.module.css";
 import { Mousewheel, Pagination, Keyboard, Navigation, Autoplay } from "swiper";
 import CircleFloating from "../component/CircleFloating";
 
 export default function Amupage() {
   return (
     <>
+      <header>
+        <h1>HEY</h1>
+      </header>
       <Swiper
         slidesPerView={1}
         // centeredSlides={true}
@@ -22,7 +25,8 @@ export default function Amupage() {
         // navigation={true}
         keyboard={{ enabled: true, pageUpDown: true }}
         autoplay={{ delay: 2000 }}
-        style={{ height: 1000, width: 2000 }}
+        // style={{ height: 1000, width: 2000 }}
+        className={slideStlye.slide}
         speed={2000}
         rewind={true}
         // loop={true}
