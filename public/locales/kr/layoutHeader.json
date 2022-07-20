@@ -5,7 +5,8 @@
   "puraTech": "PURA-TECH",
   "sns": "SNS",
   "lameditech": "LAMEDITECH",
-  "companyInfo": "사업자 정보",
+  "companyInfoCurrentStateClose": "사업자 정보 +",
+  "companyInfoCurrentStateOpen": "사업자 정보 -",
   "kr": "KR",
   "en": "EN"
 }

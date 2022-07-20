@@ -19,8 +19,16 @@ export default function LinkPriceButton(props) {
           elevation={2}
           className={styles.paperButton}
           variant="outlined"
-        />
-        <h1>qweqweqwe</h1>
+          sx={{
+            gridTemplateColumns: "repeat(2, 1fr)",
+            display: "grid",
+          }}
+        >
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+        </Paper>
       </Box>
     </>
   );

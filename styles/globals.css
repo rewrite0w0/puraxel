@@ -6,6 +6,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px 변환 */
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,5 +18,9 @@ a {
 
 * {
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+.transitionWrap {
   overflow: hidden;
 }
