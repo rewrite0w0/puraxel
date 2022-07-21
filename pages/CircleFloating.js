@@ -1,7 +1,14 @@
 import { motion, useTransform, useMotionValue, animate } from "framer-motion";
 import { useEffect } from "react";
 
-export default function CircleFloating() {
+export default function CircleFloating(props) {
+  const y = useMotionValue(0);
+
+  useEffect(() => {
+    animate(y, 200);
+    animate(y, 100);
+  }, []);
+
   return (
     <motion.div
       style={{
@@ -15,14 +22,12 @@ export default function CircleFloating() {
       <motion.div
         transition={{
           duration: 0.8,
-          delay: 0.75,
+          // delay: 0.25,
           repeat: Infinity,
           repeatType: "reverse",
           // type: "spring",
         }}
-        initial="offscreen"
-        whileInView="onscreen"
-        animate={{ translateY: 1000 }}
+        animate={{ y: -45.05 }}
         style={{
           width: 180,
           height: 180,

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
-import Navbar from "../../pages/Navbars";
+import Navbar from "pages/Navbars";
 // import styles from "./layout.module.css";
 // import "swiper/css";
 // import "swiper/css/pagination";

@@ -18,7 +18,12 @@ a {
 
 * {
   box-sizing: border-box;
-  overflow: hidden;
+  /* overflow: hidden; */
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 .transitionWrap {

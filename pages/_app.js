@@ -1,9 +1,9 @@
 import Head from "next/head";
-import "../styles/globals.css";
+import "styles/globals.css";
 import "swiper/css/bundle";
 
-import Transition from "../components/Transition";
-import "../styles/transition.css";
+import Transition from "components/Transition";
+import "styles/transition.css";
 
 function MyApp({ Component, pageProps, router }) {
   // const getLayOut = Component.getLayOut || ((page) => page);

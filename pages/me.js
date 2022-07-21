@@ -1,5 +1,5 @@
-import NavIconButton from "../component/Nav/NavIconButton";
-import Layout from "../component/layout/layout";
+import NavIconButton from "components/Nav/NavIconButton";
+import Layout from "components/layout/Layout";
 
 export default function Me() {
   return (

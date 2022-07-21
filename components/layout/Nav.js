@@ -1,4 +1,4 @@
-import NavIconButton from "../component/Nav/NavIconButton";
+import NavIconButton from "component/Nav/NavIconButton";
 
 export default function Nav() {
   return (
