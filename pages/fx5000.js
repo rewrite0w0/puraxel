@@ -1,7 +1,11 @@
-export default function Fx5000() {
+import Swipers from "components/Swipers";
+import { SwiperSlide } from "swiper/react";
+
+export default function FX5000() {
   return (
-    <>
-      <h1>fx5000 페이지</h1>
-    </>
+    <Swipers>
+      <SwiperSlide>FX</SwiperSlide>
+      <SwiperSlide>5000</SwiperSlide>
+    </Swipers>
   );
 }

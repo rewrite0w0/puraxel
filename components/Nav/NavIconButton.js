@@ -5,7 +5,7 @@ export default function NavIconButton(props) {
   return (
     <div>
       <Button
-        startIcon={props.icon ? "" : !props.icon}
+        startIcon={props.icon ? props.icon : false}
         href={props.link ? props.link : "https://www.qwant.com/"}
         className={style.NavItem}
       >

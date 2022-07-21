@@ -12,7 +12,7 @@ export default function Swipers({ children }) {
         clickable: true,
       }}
       keyboard={{ enabled: true, pageUpDown: true }}
-      autoplay={{ delay: 3000 }}
+      autoplay={{ delay: 1000 }}
       className={slideStlye.slide}
       speed={1000}
       rewind={true}

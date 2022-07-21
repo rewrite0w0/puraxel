@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import NavIconButton from "components/Nav/NavIconButton";
 import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
-export default function Navbars() {
+export default function NavbarLeft() {
   return (
     <Box sx={{ display: "flex" }}>
       <NavIconButton link="/" title="로고요" />
