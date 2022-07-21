@@ -10,10 +10,10 @@ export default function CircleFloating(props) {
     //     margin: 10,
     //   }}
     // >
-    <div style={{ width: 2000, height: 2000, padding: 10, margin: 10 }}>
+    <div style={{ height: 400, padding: 60, margin: 10 }}>
       <motion.div
         // className={style.box}
-        animate={{ y: 500, x: 0 }}
+        animate={{ y: 10, x: 0 }}
         transition={{
           duration: 2,
           delay: 0.25,
@@ -21,11 +21,12 @@ export default function CircleFloating(props) {
           repeatType: "reverse",
         }}
         style={{
-          width: 200,
-          height: 200,
+          width: 180,
+          height: 180,
           borderRadius: "50%",
           background: "rgba(245, 40, 145, 0.06)",
           filter: `blur(6px)`,
+          backdropFilter: `blur(6px)`,
         }}
         // style={{
         //   height: !props.height ? 120 : props.height,
@@ -45,5 +46,3 @@ export default function CircleFloating(props) {
 }
 
 // backdrop-filter
-
-// 투명투명

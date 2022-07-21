@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
+import Navbar from "../../pages/Navbar";
 // import styles from "./layout.module.css";
 // import "swiper/css";
 // import "swiper/css/pagination";
@@ -8,9 +9,7 @@ import { Mousewheel, Pagination } from "swiper";
 export default function Layout({ children }) {
   return (
     <>
-      <Head>
-        <title>타이틀 don</title>
-      </Head>
+      <Navbar />
       <main>{children}</main>
     </>
   );
