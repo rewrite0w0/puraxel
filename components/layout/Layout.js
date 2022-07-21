@@ -2,7 +2,6 @@ import Head from "next/head";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper";
 import Navbar from "components/Nav/Navbars";
-import Slider from "./Slider";
 
 import style from "styles/Layout.module.css";
 

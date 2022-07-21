@@ -1,27 +1,26 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import slideStlye from "styles/Slide.module.css";
+import { Mousewheel, Pagination, Keyboard, Navigation, Autoplay } from "swiper";
+
 // import LinkButton from "../../component/Body/LinkButton";
-import LinkButton from "components/Body/LinkButton";
-
-import LinkPriceButton from "components/Body/LinkPriceButton";
-
+// import LinkButton from "components/Body/LinkButton";
+// import LinkPriceButton from "components/Body/LinkPriceButton";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import "swiper/css/navigation";
-import slideStlye from "styles/Slide.module.css";
-import { Mousewheel, Pagination, Keyboard, Navigation, Autoplay } from "swiper";
 // import CircleFloating from "../component/CircleFloating";
 // import LinkPriceButton from "../component/Body/LinkPriceButton";
 
 export default function Amupage() {
   return (
     <>
-      <header>
-        <h1>HEY</h1>
+      {/* <header> */}
+      {/* <h1>HEY</h1> */}
 
-        {/* <LinkButton buttonName="쇼핑몰" /> */}
-        {/* <LinkPriceButton /> */}
-      </header>
+      {/* <LinkButton buttonName="쇼핑몰" /> */}
+      {/* <LinkPriceButton /> */}
+      {/* </header> */}
       <Swiper
         slidesPerView={1}
         // centeredSlides={true}
@@ -40,12 +39,7 @@ export default function Amupage() {
         // loop={true}
         modules={[Mousewheel, Pagination, Keyboard, Navigation, Autoplay]}
       >
-        <SwiperSlide style={{ background: "greenyellow" }}>
-          <header>헤더헤더</header>
-          {/* <CircleFloating height={160} width={200} blur={50} /> */}
-          <main>메인메인</main>
-          <footer>푸터푸터</footer>
-        </SwiperSlide>
+        <SwiperSlide style={{ background: "greenyellow" }}></SwiperSlide>
         <SwiperSlide style={{ background: "pink" }}>Slide 2</SwiperSlide>
         <SwiperSlide style={{ background: "green" }}>Slide 3</SwiperSlide>
         <SwiperSlide style={{ background: "hotpink" }}>Slide 4</SwiperSlide>

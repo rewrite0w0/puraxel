@@ -1,13 +1,11 @@
-import NavIconButton from "components/Nav/NavIconButton";
-import Layout from "components/layout/Layout";
+import Swipers from "components/Swipers";
+import { SwiperSlide } from "swiper/react";
 
 export default function Me() {
   return (
-    <>
-      <Layout>
-        <h1>Me 페이지</h1>
-        <NavIconButton title="yo" />
-      </Layout>
-    </>
+    <Swipers>
+      <SwiperSlide>1</SwiperSlide>
+      <SwiperSlide>2</SwiperSlide>
+    </Swipers>
   );
 }

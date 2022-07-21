@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  height: 5vh;
+  /* padding: 1rem; */
+  justify-content: space-between;
+}
+
+.body {
+  width: 100%;
+  height: 95vh;
+  font-size: 20rem;
+}

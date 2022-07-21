@@ -7,7 +7,7 @@ export default function Navbars() {
   return (
     <Box sx={{ display: "flex" }} className={style.header}>
       <Navbar />
-      <NavbarInfo />
+      <NavbarInfo className={style.rightNav} />
     </Box>
   );
 }

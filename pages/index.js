@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "styles/Home.module.css";
+import Swipers from "components/Swipers";
+import { SwiperSlide } from "swiper/react";
 
 export default function Home() {
   return (
@@ -11,53 +13,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="/me" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="/fx5000" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href="/hair" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a href="/ee" className={styles.card}>
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main>
+        <Swipers>
+          <SwiperSlide style={{ background: "greenyellow" }}>
+            Slide 1
+          </SwiperSlide>
+          <SwiperSlide style={{ background: "pink" }}>Slide 2</SwiperSlide>
+          <SwiperSlide style={{ background: "green" }}>Slide 3</SwiperSlide>
+          <SwiperSlide style={{ background: "hotpink" }}>Slide 4</SwiperSlide>
+          <SwiperSlide style={{ background: "skyblue" }}>Slide 5</SwiperSlide>
+          <SwiperSlide style={{ background: "yellow" }}>Slide 6</SwiperSlide>
+          <SwiperSlide style={{ background: "gray" }}>Slide 7</SwiperSlide>
+          <SwiperSlide style={{ background: "#f0a0f9" }}>Slide 8</SwiperSlide>
+          <SwiperSlide style={{ background: "tomato" }}>Slide 9</SwiperSlide>
+        </Swipers>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   );
 }
