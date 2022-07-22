@@ -6,7 +6,7 @@ export default function NavIconButton(props) {
     <div>
       <Button
         startIcon={props.icon ? props.icon : false}
-        href={props.link ? props.link : "https://www.qwant.com/"}
+        href={props.link ? props.link : props.link}
         className={style.NavItem}
       >
         {props.title ? props.title : "타이틀 없음 :/"}

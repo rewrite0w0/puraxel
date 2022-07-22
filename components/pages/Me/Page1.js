@@ -3,7 +3,7 @@ import CircleFloating from "../../Parts/CircleFloating";
 export default function Page1(props) {
   return (
     <>
-      <CircleFloating initX={1000} initY={-1000} aniX={1000} aniY={500} />
+      <CircleFloating initX={0} initY={0} aniX={100} aniY={1000} />
       <h1>ME!</h1>
     </>
   );

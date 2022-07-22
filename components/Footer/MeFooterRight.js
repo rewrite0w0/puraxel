@@ -4,7 +4,7 @@ import LinkPriceButton from "./LinkPriceButton";
 
 export default function MeFooterRight() {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", alignItems: "center" }}>
       <LinkButton />
       <LinkPriceButton />
     </Box>

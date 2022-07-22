@@ -5,15 +5,18 @@ import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
 export default function MeFooterLeft() {
   return (
-    <Box sx={{ display: "flex", heigth: "2vh", alignItems: "center" }}>
-      <LinkButton buttonName={layoutFooterKr.ShoppingMallLink} />
+    <Box sx={{ display: "flex", alignItems: "center" }}>
+      <LinkButton
+        buttonName={layoutFooterKr.ShoppingMallLink}
+        link="https://qwant.com"
+      />
 
       <LinkPriceButton
         title={layoutFooterKr.Me}
         price={layoutFooterKr.MePrice}
         installment={layoutFooterKr.MeInstallmentDuration}
         installmentPrice={layoutFooterKr.MeInstallmentPrice}
-        link="/"
+        link="https://qwant.com"
       />
 
       <LinkPriceButton
