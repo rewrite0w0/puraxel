@@ -1,10 +1,13 @@
 import MeFooter from "components/Footer/MeFooter";
+import style from "styles/MeFooterLayout.module.css";
 
 export default function MeLayout({ children }) {
   return (
     <>
-      {children}
-      <MeFooter style={{ position: "relative", zIndex: 100 }} />
+      <main className={style.body}>{children}</main>
+      <footer>
+        <MeFooter className={style.footer} />
+      </footer>
     </>
   );
 }
