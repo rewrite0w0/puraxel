@@ -4,7 +4,7 @@ export default function MeLayout({ children }) {
   return (
     <>
       {children}
-      <MeFooter style={{ position: "relative" }} />
+      <MeFooter style={{ position: "relative", zIndex: 100 }} />
     </>
   );
 }

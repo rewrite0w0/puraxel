@@ -2,8 +2,10 @@
   background-color: #947dd6;
   color: #ffffff;
   border-radius: 0.3rem;
-  width: 7rem;
-  height: 4vh;
-  font-size: large;
+  padding: 1rem;
+  margin: 1rem;
+  /* width: 10rem; */
+  height: 4.5vh;
+  font-size: x-large;
   font-weight: bold;
 }
