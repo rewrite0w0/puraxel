@@ -1,0 +1,14 @@
+.backGround {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255), rgba(252, 209, 215));
+}
+
+.body {
+  height: 86vh;
+  /* position: relative; */
+}
+
+.footer {
+  position: relative;
+}

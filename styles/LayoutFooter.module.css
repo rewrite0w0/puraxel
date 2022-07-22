@@ -1,3 +1,7 @@
+.footer {
+  justify-content: space-between;
+}
+
 .rightNav {
-  background-color: #949465;
+  color: #949465;
 }

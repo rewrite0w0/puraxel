@@ -1,19 +1,10 @@
-import commonStyle from "./Me.common.module.css";
+import CircleFloating from "../../Parts/CircleFloating";
 
 export default function Page1(props) {
   return (
-    <div
-      className={commonStyle.backGround}
-      //   style={{
-      //     height: "100vh",
-      //     width: "100%",
-      //     background: "rgba(2,2,2,0.12)",
-      //     color: "green",
-      //     position: "inherit",
-      //   }}
-    >
-      dddd
-      <div className={commonStyle.temp}>move?</div>
-    </div>
+    <>
+      <CircleFloating initX={1000} initY={-1000} aniX={1000} aniY={500} />
+      <h1>ME!</h1>
+    </>
   );
 }
