@@ -7,16 +7,17 @@ export default function Swipers({ children }) {
   return (
     <Swiper
       slidesPerView={1}
-      mousewheel={{ sensitivity: 0.5 }}
+      mousewheel={{ sensitivity: 0.25 }}
       pagination={{
         clickable: true,
       }}
+      scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true }}
-      autoplay={{ delay: 1000 }}
+      autoplay={{ delay: 50000 }}
       className={slideStlye.slide}
       speed={1000}
       rewind={true}
-      modules={[Mousewheel, Pagination, Keyboard, Navigation, Autoplay]}
+      modules={[Mousewheel, Pagination, Keyboard, Autoplay]}
     >
       {children}
     </Swiper>
