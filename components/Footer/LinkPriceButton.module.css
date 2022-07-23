@@ -9,6 +9,10 @@
   height: 6vh;
   font-size: x-large;
   font-weight: bold;
+  display: flex;
+  /* align-items: center;
+  justify-items: center;
+  flex: 1 1 auto; */
 }
 
 /* .priceButton:hover{
