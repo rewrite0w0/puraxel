@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   Box,
   Button,
@@ -10,8 +10,16 @@ import {
   MenuItem,
   OutlinedInput,
   InputLabel,
-} from "@mui/material";
-import style from "./ModalComponent.module.css";
+  ButtonGroup,
+  Checkbox,
+  FormControlLabel,
+  Popper,
+} from '@mui/material';
+import style from './ModalComponent.module.css';
+import modalKr from 'public/locales/kr/modal';
+
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
@@ -19,16 +27,16 @@ import style from "./ModalComponent.module.css";
 // import Modal from "@mui/material/Modal";
 
 const bgStyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-  display: "flex",
+  display: 'flex',
 };
 
 export default function ModalComponent() {
@@ -53,27 +61,42 @@ export default function ModalComponent() {
     setEndAvailableTime(evt.target.value);
   };
 
+  //
+
+  const [popOverAnchor, setPopOverAnchor] = useState(undefined);
+  const [popOverOpen, setPopOverOpen] = useState(false);
+
+  const handleOpenPopOver = (evt) => {
+    setPopOverAnchor(evt.currentTarget);
+    setPopOverOpen(true);
+  };
+
+  const handleClosePopOver = () => {
+    setPopOverAnchor(undefined);
+    setPopOverOpen(false);
+  };
+
   return (
     <>
-      <Button onClick={handleOpenModal}>문의</Button>
+      <Button onClick={handleOpenModal}>{modalKr.modalButtonTitle}</Button>
       <Modal open={modalOpen} onClose={handleCloseModal}>
         <Box sx={bgStyle}>
           <Box className={style.left}>
-            <h1>제품 문의</h1>
+            <h1>{modalKr.modalTitle}</h1>
             <Box>
-              <TextField label={"asdasd"} required />
+              <TextField label={modalKr.modalName} required />
             </Box>
             <Box>
-              <TextField label={"asdasd"} required />
+              <TextField label={modalKr.modalTel} required />
             </Box>
             <Box>
-              <TextField label={"asdasd"} required />
+              <TextField label={modalKr.modalEmail} required />
             </Box>
             <Box>
-              <TextField label={"asdasd"} required />
+              <TextField label={modalKr.modalCompanyName} />
             </Box>
             <Box>
-              <p>연락 가능 시간대</p>
+              <p>{modalKr.modalAvailableTime}</p>
               {/*  */}
               <Box className={style.timeReciverContainer}>
                 <Box>
@@ -87,15 +110,6 @@ export default function ModalComponent() {
                           {time}
                         </MenuItem>
                       ))}
-                      {/* <MenuItem value={9}>09</MenuItem>
-                      <MenuItem value={10}>10</MenuItem>
-                      <MenuItem value={11}>11</MenuItem>
-                      <MenuItem value={12}>12</MenuItem>
-                      <MenuItem value={13}>13</MenuItem>
-                      <MenuItem value={14}>14</MenuItem>
-                      <MenuItem value={15}>15</MenuItem>
-                      <MenuItem value={16}>16</MenuItem>
-                      <MenuItem value={17}>17</MenuItem> */}
                     </Select>
                   </FormControl>
                 </Box>
@@ -112,34 +126,66 @@ export default function ModalComponent() {
                             {time}
                           </MenuItem>
                         ))}
-                      {/* {startAvailableTime.forEach(x) timeZone.map(time=>{
-                        <MenuItem key={time} value={time}>{time}</MenuItem>
-                      })} */}
-                      {/* <MenuItem value={10}>10</MenuItem>
-                      <MenuItem value={11}>11</MenuItem>
-                      <MenuItem value={12}>12</MenuItem>
-                      <MenuItem value={13}>13</MenuItem>
-                      <MenuItem value={14}>14</MenuItem>
-                      <MenuItem value={15}>15</MenuItem>
-                      <MenuItem value={16}>16</MenuItem>
-                      <MenuItem value={17}>17</MenuItem>
-                      <MenuItem value={18}>18</MenuItem> */}
                     </Select>
                   </FormControl>
                 </Box>
+              </Box>
+              {/*  */}
+
+              <Box
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                <Checkbox
+                  icon={<CheckCircleOutlineIcon />}
+                  checkedIcon={<CheckCircleIcon />}
+                  sx={{
+                    '& .MuiSvgIcon-root': { fontSize: '2.8rem' },
+                    color: 'pink',
+                    '&.Mui-checked': {
+                      color: 'red',
+                    },
+                  }}
+                />
+                <Typography>{modalKr.modalAgreeCheck}</Typography>
+                <Typography
+                  onClick={() =>
+                    window.open('/agreeDetailInfomation', '_blank')
+                  }
+                >
+                  {modalKr.modalAgreeDetail}
+                </Typography>
               </Box>
               {/*  */}
             </Box>
           </Box>
 
           <Box className={style.center}></Box>
-          <Box className={style.right}>12345</Box>
-          {/* <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography> */}
+          <Box className={style.right}>
+            {/*  */}
+            <Box>
+              <ButtonGroup style={{ display: 'flex' }}>
+                <Button>{modalKr.modalLangKr}</Button>
+                <Button>{modalKr.modalLangEn}</Button>
+                <Button>{modalKr.modalLangCh}</Button>
+              </ButtonGroup>
+            </Box>
+            {/*  */}
+            <Box>
+              <TextField label={modalKr.modalAskTitle} required />
+            </Box>
+
+            <Box>
+              <TextField
+                placeholder={modalKr.modalAskContentPlaceholder}
+                required
+              />
+            </Box>
+
+            <Box></Box>
+          </Box>
         </Box>
       </Modal>
     </>
