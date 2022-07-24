@@ -9,7 +9,7 @@
   height: 6vh;
   font-size: x-large;
   font-weight: bold;
-  display: flex;
+  display: grid;
   /* align-items: center;
   justify-items: center;
   flex: 1 1 auto; */
@@ -19,14 +19,18 @@
   pointer
 } */
 
-/* .priceButton1 {
+.priceButton1 {
+  background-color: blue;
 }
 
 .priceButton2 {
+  background-color: yellow;
 }
 
 .priceButton3 {
+  background-color: brown;
 }
 
 .priceButton4 {
-} */
+  background-color: yellowgreen;
+}

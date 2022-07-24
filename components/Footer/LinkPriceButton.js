@@ -15,7 +15,7 @@ export default function LinkPriceButton(props) {
       >
         <div className={style.priceButton1}>{props.title}</div>
         <div className={style.priceButton2}>
-          {props.originalPrice ? props.originalPrice : false}{" "}
+          {props.originalPrice ? props.originalPrice : " "}{" "}
           {props.arrow ? props.arrow : false} {props.price}
         </div>
         <div className={style.priceButton3}>
