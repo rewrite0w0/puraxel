@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import style from "./LinkButton.module.css";
+import style from "styles/LinkButton.module.css";
 import StoreIcon from "@mui/icons-material/Store";
 
 export default function LinkButton(props) {

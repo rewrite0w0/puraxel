@@ -11,11 +11,6 @@ export default function Page2(props) {
           <SwiperSlide>2</SwiperSlide>
         </Swipers>
       </Paper>
-      <h1>ok</h1>
-      <h1>ok</h1>
-      <h1>ok</h1>
-      <h1>ok</h1>
-      <h1>ok</h1>
     </>
   );
 }

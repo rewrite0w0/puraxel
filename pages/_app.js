@@ -3,7 +3,6 @@ import "styles/globals.css";
 import "swiper/css/bundle";
 import Layout from "components/layout/Layout";
 import Transition from "components/Transition";
-import "styles/transition.css";
 
 function MyApp({ Component, pageProps, router }) {
   // const getLayOut = Component.getLayOut || ((page) => page);

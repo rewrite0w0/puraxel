@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import slideStlye from "styles/Slide.module.css";
+// import slideStlye from "styles/Slide.module.css";
 import { Mousewheel, Pagination, Keyboard, Navigation, Autoplay } from "swiper";
 
 // import LinkButton from "../../component/Body/LinkButton";
@@ -33,7 +33,7 @@ export default function Amupage() {
         keyboard={{ enabled: true, pageUpDown: true }}
         autoplay={{ delay: 100 }}
         // style={{ height: 1000, width: 2000 }}
-        className={slideStlye.slide}
+        // className={slideStlye.slide}
         speed={1000}
         rewind={true}
         // loop={true}
