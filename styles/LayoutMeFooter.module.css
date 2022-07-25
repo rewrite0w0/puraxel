@@ -1,10 +1,11 @@
 .backGround {
   /* background: linear-gradient(rgba(255, 255, 255), rgba(252, 209, 215)); */
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   height: 85vh;
 }
 
 .footer {
+  display: flex;
   justify-content: space-between;
   background-color: brown;
   height: 10vh;

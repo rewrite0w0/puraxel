@@ -1,6 +1,5 @@
 import { Box, Container, Paper, Typography } from "@mui/material";
 import meKr from "public/locales/kr/me";
-import { Swiper } from "swiper";
 
 const Page1Intro1 = () => {
   return (
@@ -27,8 +26,6 @@ const Page1Explain = () => {
 };
 
 export default function Page1() {
-  var sw = new Swiper();
-  console.log(sw);
   return (
     <>
       <Box display="grid">
