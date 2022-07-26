@@ -1,0 +1,20 @@
+.img {
+  background-color: white;
+}
+
+.imgContainer {
+  /* display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem; */
+  /* background-color: blue; */
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  /* padding: 1rem; */
+  height: 80vh;
+  z-index: 9999;
+}

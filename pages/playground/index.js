@@ -19,11 +19,11 @@ export default function dashboard() {
         modules={[Pagination, Navigation]}
         // className={mySwiper.hey}
         style={{ height: "80vh" }}
-        onClick={
-          // (e) => (e.pagination.el.childNodes.item[1] = "0000000000000")
-          // (e) => console.log((e.pagination.el.childNodes[1] = 1))
-          (e) => console.log(e.pagination.el.childNodes[1])
-        }
+        // onClick={
+        //   // (e) => (e.pagination.el.childNodes.item[1] = "0000000000000")
+        //   // (e) => console.log((e.pagination.el.childNodes[1] = 1))
+        //   (e) => console.log(e.pagination.el.childNodes[1])
+        // }
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>

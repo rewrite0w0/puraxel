@@ -8,7 +8,7 @@ export default function Swipers({ children }) {
     <Swiper
       slidesPerView={1}
       mousewheel={{ sensitivity: 0.25 }}
-      navigation={true}
+      // navigation={true}
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {

@@ -1,5 +1,8 @@
 import { Box, Container, Paper, Typography } from "@mui/material";
+import Image from "next/image";
 import meKr from "public/locales/kr/me";
+import flowerWithMe from "src/image/ME/me_01.png";
+import style from "./page1.module.css";
 
 const Page1Intro1 = () => {
   return (
@@ -25,6 +28,17 @@ const Page1Explain = () => {
   );
 };
 
+const Page1Img = () => {
+  return (
+    <Image
+      src={flowerWithMe}
+      alt="flower with me"
+      className={style.img}
+      width="1000vw"
+    />
+  );
+};
+
 export default function Page1() {
   return (
     <>
@@ -35,13 +49,14 @@ export default function Page1() {
           style={{
             height: "45vh",
             borderBottom: "0.1rem solid blue",
-            // width: "100%",
           }}
         >
           <Box>
             <Page1Intro1 />
           </Box>
-          <Box>@</Box>
+          <Box className={style.imgContainer}>
+            <Page1Img />
+          </Box>
         </Box>
         {/*  */}
         <Box
@@ -55,7 +70,7 @@ export default function Page1() {
           <Box>
             <Page1Explain />
           </Box>
-          <Box>@</Box>
+          <Box>{/* 4/4 */}</Box>
         </Box>
       </Box>
     </>
