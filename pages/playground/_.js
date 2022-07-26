@@ -1,19 +1,27 @@
-import CircleFloating from "../../components/Parts/CircleFloating";
-
+// import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
-import mySwiper from "./hey.module.css";
-
 export default function dashboard() {
+  // const _ = new Swiper(".swiper", {
+  //   pagenation: {
+  //     el: { childNodes: "mmmmmmmmm" },
+  //   },
+  // });
+
+  // console.log(_);
   return (
     <>
       {/* <h1>Hello dashboard</h1> */}
       {/* <CircleFloating /> */}
-
+      {/* <h1>ddddd</h1> */}
       <Swiper
         pagination={{
-          type: "fraction",
+          // type: "fraction",
+          type: "custom",
+          renderCustom: function (swiper, current, total) {
+            return current + "ㅡ" + total;
+          },
         }}
         navigation={true}
         modules={[Pagination, Navigation]}

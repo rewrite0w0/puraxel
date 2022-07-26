@@ -5,6 +5,9 @@ const nextConfig = {
   swcMinify: true,
   // experimental: {
   //   scrollRestoration: true,
+  //   images: {
+  //     unoptimized: true,
+  //   },
   // },
   i18n: {
     defaultLocale: "en",
