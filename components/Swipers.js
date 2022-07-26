@@ -9,6 +9,12 @@ export default function Swipers({ children }) {
       slidesPerView={1}
       mousewheel={{ sensitivity: 0.25 }}
       navigation={true}
+      pagination={{
+        type: "custom",
+        renderCustom: (swiper, current, total) => {
+          return current + "    ㅡ    " + total;
+        },
+      }}
       scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true }}
       autoplay={{ delay: 50000 }}

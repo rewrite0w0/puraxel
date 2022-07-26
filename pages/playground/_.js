@@ -1,6 +1,7 @@
 // import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
+import mySwiper from "./hey.module.css";
 
 export default function dashboard() {
   // const _ = new Swiper(".swiper", {
@@ -25,13 +26,12 @@ export default function dashboard() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        // className={mySwiper.hey}
         style={{ height: "80vh" }}
-        onClick={
-          // (e) => (e.pagination.el.childNodes.item[1] = "0000000000000")
-          // (e) => console.log((e.pagination.el.childNodes[1] = 1))
-          (e) => console.log(e.pagination.el.childNodes[1])
-        }
+        // onClick={
+        //   // (e) => (e.pagination.el.childNodes.item[1] = "0000000000000")
+        //   // (e) => console.log((e.pagination.el.childNodes[1] = 1))
+        //   (e) => console.log(e.pagination.el.childNodes[1])
+        // }
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
@@ -46,3 +46,5 @@ export default function dashboard() {
     </>
   );
 }
+
+// https://stackoverflow.com/questions/63865706/swiper-slide-custom-counter-fractions
