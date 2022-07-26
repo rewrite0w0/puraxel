@@ -5,7 +5,7 @@ export default function MeLayout({ children }) {
   return (
     <div>
       <body className={style.backGround}>{children}</body>
-      <footer className={style.footer}>
+      <footer>
         <MeFooter />
       </footer>
     </div>
