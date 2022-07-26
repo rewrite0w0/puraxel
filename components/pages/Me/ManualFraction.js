@@ -6,7 +6,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export function ManualFractionPage1() {
   return (
-    <Box display="grid">
+    <Box display="grid" sx={{}}>
       <Box className="mouse" display="flex" sx={{ color: "gray" }}>
         <ArrowBackIosIcon />
         <MouseIcon />

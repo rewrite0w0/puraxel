@@ -3,20 +3,21 @@ import Image from "next/image";
 import meKr from "public/locales/kr/me";
 import flowerWithMe from "src/image/ME/me_01.png";
 import style from "./page1.module.css";
+import { ManualFractionPage1 } from "./ManualFraction";
 
 const Page1Intro1 = () => {
   return (
-    <Container>
+    <Box>
       <Typography>{meKr.Page1Intro1A}</Typography>
       <Typography>{meKr.Page1Intro1B}</Typography>
       <Typography>{meKr.Page1Title}</Typography>
-    </Container>
+    </Box>
   );
 };
 
 const Page1Explain = () => {
   return (
-    <Container>
+    <Box>
       <Typography>{meKr.Page1Explain1A}</Typography>
       <Typography>{meKr.Page1Explain1B}</Typography>
       <Typography>{meKr.Page1Explain1C}</Typography>
@@ -24,7 +25,7 @@ const Page1Explain = () => {
       <Typography>{meKr.Page1Explain2A}</Typography>
       <Typography>{meKr.Page1Explain2B}</Typography>
       <Typography>{meKr.Page1Explain2C}</Typography>
-    </Container>
+    </Box>
   );
 };
 
@@ -44,7 +45,7 @@ export default function Page1() {
     <>
       <Box display="grid">
         <Box
-          display={"grid"}
+          display="grid"
           sx={{ gridTemplateColumns: "repeat(2, 1fr)" }}
           style={{
             height: "45vh",
@@ -52,15 +53,19 @@ export default function Page1() {
           }}
         >
           <Box>
-            <Page1Intro1 />
+            <Box>
+              <Page1Intro1 />
+            </Box>
           </Box>
+
+          {/*  */}
           <Box className={style.imgContainer}>
             <Page1Img />
           </Box>
         </Box>
         {/*  */}
         <Box
-          display={"grid"}
+          display="grid"
           sx={{ gridTemplateColumns: "repeat(2, 1fr)" }}
           style={{
             height: "45vh",
@@ -70,7 +75,10 @@ export default function Page1() {
           <Box>
             <Page1Explain />
           </Box>
-          <Box>{/* 4/4 */}</Box>
+          <Box>
+            {/* 4/4 */}
+            <ManualFractionPage1 />
+          </Box>
         </Box>
       </Box>
     </>
