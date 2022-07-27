@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import style from "./Nav.module.css";
 
 export default function NavIconButton(props) {
   return (
@@ -6,6 +7,7 @@ export default function NavIconButton(props) {
       <Button
         startIcon={props.icon ? props.icon : false}
         href={props.link ? props.link : props.link}
+        className={style.buttonStyle}
       >
         {props.title ? props.title : "타이틀 없음 :/"}
       </Button>

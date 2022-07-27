@@ -3,6 +3,8 @@ import { Box, Button, Menu, MenuItem, Typography } from "@mui/material";
 import NavIconButton from "components/Nav/NavIconButton";
 import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
+import style from "./Nav.module.css";
+
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -67,7 +69,8 @@ export default function NavbarRight() {
 
       <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton>
 
-      <Button onClick={handleCompanyInfoButton}>
+      {/* 왜인지 몰라도 여기는 * 스타일이 안먹혀서 수동으로 줌 */}
+      <Button onClick={handleCompanyInfoButton} className={style.buttonStyle}>
         {companyOpenState === false
           ? layoutHeaderKr.companyInfoCurrentStateClose
           : layoutHeaderKr.companyInfoCurrentStateOpen}
