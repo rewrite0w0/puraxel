@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import slideStlye from "styles/Slide.module.css";
+import slideStlye from "./Slide.module.css";
 import { Mousewheel, Pagination, Keyboard, Navigation, Autoplay } from "swiper";
 
 export default function Swipers({ children }) {

@@ -19,7 +19,7 @@ import {
   DialogContent,
   DialogActions,
 } from "@mui/material";
-import style from "styles/ModalComponent.module.css";
+import style from "./ModalComponent.module.css";
 import modalKr from "public/locales/kr/modal";
 
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";

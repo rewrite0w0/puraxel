@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
-import style from "styles/LinkPriceButton.module.css";
-import layoutFooterKr from "public/locales/kr/layoutFooter.json";
+import style from "./LinkPriceButton.module.css";
 
 export default function LinkPriceButton(props) {
   return (

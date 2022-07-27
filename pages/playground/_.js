@@ -46,5 +46,3 @@ export default function dashboard() {
     </>
   );
 }
-
-// https://stackoverflow.com/questions/63865706/swiper-slide-custom-counter-fractions

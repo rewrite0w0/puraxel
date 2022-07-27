@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import MeFooterRight from "./MeFooterRight";
 import MeFooterLeft from "./MeFooterLeft";
-import style from "styles/LayoutMeFooter.module.css";
+import style from "./LayoutMeFooter.module.css";
 
 export default function MeFooter() {
   return (
