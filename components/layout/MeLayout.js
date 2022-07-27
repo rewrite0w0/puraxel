@@ -1,4 +1,4 @@
-import style from "../Footer/LayoutMeFooter.module.css";
+import style from "../Footer/MeFooterLayout.module.css";
 import MeFooter from "../Footer/MeFooter";
 
 export default function MeLayout({ children }) {

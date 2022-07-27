@@ -1,5 +1,5 @@
 .priceButton {
-  color: black;
+  color: white;
   border-radius: 0.3rem;
   /* border-color: rgba(255, 255, 255, 0.5); */
   border: solid rgba(0, 255, 255, 0.5);
@@ -10,9 +10,6 @@
   font-size: x-large;
   font-weight: bold;
   display: grid;
-  /* align-items: center;
-  justify-items: center;
-  flex: 1 1 auto; */
 }
 
 /* .priceButton:hover{
