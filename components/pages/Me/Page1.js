@@ -43,43 +43,31 @@ const Page1Img = () => {
 export default function Page1() {
   return (
     <>
-      <Box display="grid">
-        <Box
-          display="grid"
-          sx={{ gridTemplateColumns: "repeat(2, 1fr)" }}
-          style={{
-            height: "45vh",
-            borderBottom: "0.1rem solid blue",
-          }}
-        >
+      <Box
+        display="grid"
+        sx={{
+          gridTemplateColumns: "repeat(2, 1fr)",
+        }}
+      >
+        <Box display={"grid"}>
           <Box>
-            <Box>
-              <Page1Intro1 />
-            </Box>
+            <Page1Intro1 />
           </Box>
-
           {/*  */}
-          <Box className={style.imgContainer}>
-            <Page1Img />
-          </Box>
-        </Box>
-        {/*  */}
-        <Box
-          display="grid"
-          sx={{ gridTemplateColumns: "repeat(2, 1fr)" }}
-          style={{
-            height: "45vh",
-            // width: "100%",
-          }}
-        >
           <Box>
             <Page1Explain />
           </Box>
-          <Box>
-            {/* 4/4 */}
-            <ManualFractionPage1 />
-          </Box>
+          {/*  */}
         </Box>
+        {/*  */}
+        <Box
+          display={"flex"}
+          sx={{ justifyContent: "center" }}
+          className={style.imgContainer}
+        >
+          <Page1Img />
+        </Box>
+        {/* <Box>4</Box> */}
       </Box>
     </>
   );
