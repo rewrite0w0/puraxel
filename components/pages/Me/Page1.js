@@ -5,9 +5,9 @@ import flowerWithMe from "src/image/ME/me_01.png";
 import style from "./page1.module.css";
 // import { ManualFractionPage1 } from "./ManualFraction";
 
-const Page1Intro1 = () => {
+const Page1Intro1 = (props) => {
   return (
-    <Box>
+    <Box sx={props.sx}>
       <Typography sx={{ color: "blue", fontSize: "5vw" }}>
         {meKr.Page1Intro1A}
       </Typography>
@@ -57,16 +57,17 @@ export default function Page1() {
         }}
       >
         <Box display={"grid"}>
-          <Box>
+          <Box sx={{ borderBottom: "1px solid red" }}>
             <Page1Intro1 />
           </Box>
+
           <Box>
             <Page1Explain />
           </Box>
         </Box>
 
         <Box
-          display={"flex"}
+          display={"grid"}
           sx={{ justifyContent: "center" }}
           className={style.imgContainer}
         >
