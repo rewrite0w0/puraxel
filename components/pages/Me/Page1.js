@@ -8,18 +8,16 @@ import style from "./page1.module.css";
 const Page1Intro1 = (props) => {
   return (
     <Box sx={props.sx}>
-      <Typography sx={{ color: "blue", fontSize: "5vw" }}>
-        {meKr.Page1Intro1A}
-      </Typography>
+      <Typography sx={{ color: "red" }}>{meKr.Page1Intro1A}</Typography>
       <Typography>{meKr.Page1Intro1B}</Typography>
-      <Typography>{meKr.Page1Title}</Typography>
+      <Typography sx={{ fontSize: "4vw" }}>{meKr.Page1Title}</Typography>
     </Box>
   );
 };
 
-const Page1Explain = () => {
+const Page1Explain = (props) => {
   return (
-    <Box>
+    <Box sx={props.sx}>
       <Typography>
         <Typography>{meKr.Page1Explain1A}</Typography>
         <Typography>
@@ -40,7 +38,7 @@ const Page1Img = () => {
   return (
     <Image
       src={flowerWithMe}
-      alt="flower with me"
+      alt="flower with ME"
       className={style.img}
       width="800vw"
     />
@@ -57,12 +55,23 @@ export default function Page1() {
         }}
       >
         <Box display={"grid"}>
-          <Box sx={{ borderBottom: "1px solid red" }}>
-            <Page1Intro1 />
+          <Box
+            display={"flex"}
+            sx={{
+              borderBottom: "1px solid red",
+              justifyContent: "center",
+              alignItems: "center",
+              background: "yellowgreen",
+            }}
+          >
+            <Page1Intro1 sx={{ width: "25vw" }} />
           </Box>
 
-          <Box>
-            <Page1Explain />
+          <Box
+            display={"flex"}
+            sx={{ justifyContent: "right", background: "green" }}
+          >
+            <Page1Explain sx={{ background: "blue", width: "25vw" }} />
           </Box>
         </Box>
 
