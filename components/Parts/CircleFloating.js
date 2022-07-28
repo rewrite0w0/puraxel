@@ -32,7 +32,7 @@ export default function CircleFloating(props) {
         width: "25rem",
         height: "25rem",
         borderRadius: "50%",
-        // background: "rgba(245, 40, 145, 0.06)",
+        background: "rgba(245, 40, 145, 0.06)",
         boxShadow: `0px 12px 24px rgba(243, 232, 255, 0.3)`,
         color: "red",
         // filter: `blur(40px)`,

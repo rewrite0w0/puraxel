@@ -1,7 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import slideStlye from "./Slide.module.css";
-import { Mousewheel, Pagination, Keyboard, Navigation, Autoplay } from "swiper";
+import {
+  Mousewheel,
+  Pagination,
+  Keyboard,
+  Navigation,
+  Autoplay,
+  EffectFade,
+} from "swiper";
 
 export default function Swipers({ children }) {
   return (
@@ -19,9 +26,18 @@ export default function Swipers({ children }) {
       keyboard={{ enabled: true, pageUpDown: true }}
       autoplay={{ delay: 50000 }}
       className={slideStlye.slide}
-      speed={1000}
+      speed={500}
       rewind={true}
-      modules={[Mousewheel, Pagination, Keyboard, Autoplay, Navigation]}
+      effect={"fade"}
+      fadeEffect={{ crossFade: true }}
+      modules={[
+        Mousewheel,
+        Pagination,
+        Keyboard,
+        Autoplay,
+        Navigation,
+        EffectFade,
+      ]}
     >
       {children}
     </Swiper>
