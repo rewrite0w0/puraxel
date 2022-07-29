@@ -6,22 +6,37 @@ export default function LinkPriceButton(props) {
     <>
       <Box
         className={style.priceButton}
-        sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)" }}
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          ...props,
+        }}
         href={props.link ? props.link : "/"}
         onClick={() => {
           window.open(props.link ? props.link : "/", "_blank");
         }}
       >
         <div className={style.priceButton1}>{props.title}</div>
+
         <div className={style.priceButton2}>
-          {props.originalPrice ? props.originalPrice : " "}{" "}
-          {props.arrow ? props.arrow : false} {props.price}
+          <span style={{ color: "gray" }}>
+            {props.originalPrice ? props.originalPrice : " "} &nbsp;
+            {props.arrow ? props.arrow : false}
+          </span>
+          &nbsp;
+          <span style={{ color: "red" }}>{props.price}</span>
         </div>
-        <div className={style.priceButton3}>
+
+        <div
+          className={style.priceButton3}
+          style={{ marginLeft: "1vw", color: "red" }}
+        >
           {props.offRate ? props.offRate : ""}
         </div>
+
         <div className={style.priceButton4}>
-          <span>{props.installment} </span>
+          <span style={{ color: "gray" }}>{props.installment}</span>
+          &nbsp;
           <span>{props.installmentPrice}</span>
         </div>
       </Box>

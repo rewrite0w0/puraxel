@@ -6,6 +6,7 @@ import Page2 from "components/pages/Me/Page2";
 import Page3 from "components/pages/Me/Page3";
 import Page4 from "components/pages/Me/Page4";
 import CircleFloating from "components/Parts/CircleFloating";
+import { useState } from "react";
 
 export default function Me() {
   return (
@@ -15,14 +16,15 @@ export default function Me() {
           <Page1 />
         </SwiperSlide>
         <SwiperSlide>
+          {/* {window.screen.width > 1000 ? <Page2 /> : <Page3 />} */}
           <Page2 />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Page3 />
         </SwiperSlide>
         <SwiperSlide>
           <Page4 />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swipers>
     </MeLayout>
   );

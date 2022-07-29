@@ -5,11 +5,6 @@ import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
 import style from "./Nav.module.css";
 
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
-
 export default function NavbarRight() {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
   const [companyInfoAnchorState, setCompanyInfoAnchorState] =
@@ -39,38 +34,22 @@ export default function NavbarRight() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
-      {/* <Button onClick={handleSNSButton}>{layoutHeaderKr.sns}</Button> */}
-      {/* <Menu
-        open={snsOpenState}
-        onClose={handleSNSCloseButton}
-        anchorEl={snsAnchorState}
-      >
-        <MenuItem onClick={handleSNSCloseButton}>
-          <FacebookIcon />
-        </MenuItem>
-        <MenuItem onClick={handleSNSCloseButton}>
-          <InstagramIcon />
-        </MenuItem>
-        <MenuItem onClick={handleSNSCloseButton}>
-          <TwitterIcon />
-        </MenuItem>
-        <MenuItem
-          onClick={() => {
-            console.log(snsAnchorState);
-            setSnsAnchorState(undefined);
-          }}
-        >
-          <QuestionAnswerRoundedIcon />
-        </MenuItem>
-      </Menu> */}
-
+    <Box sx={{ display: "flex", alignItems: "center" }}>
       <NavIconButton title={layoutHeaderKr.sns} />
 
-      <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton>
+      <NavIconButton title={layoutHeaderKr.lameditech} />
+
+      <NavIconButton
+        onClick={handleCompanyInfoButton}
+        className={style.buttonStyle}
+      >
+        {companyOpenState === false
+          ? layoutHeaderKr.companyInfoCurrentStateClose
+          : layoutHeaderKr.companyInfoCurrentStateOpen}
+      </NavIconButton>
 
       {/* 왜인지 몰라도 여기는 * 스타일이 안먹혀서 수동으로 줌 */}
-      <Button onClick={handleCompanyInfoButton} className={style.buttonStyle}>
+      <Box onClick={handleCompanyInfoButton} className={style.buttonStyle}>
         {companyOpenState === false
           ? layoutHeaderKr.companyInfoCurrentStateClose
           : layoutHeaderKr.companyInfoCurrentStateOpen}
@@ -87,7 +66,13 @@ export default function NavbarRight() {
               padding: "1rem",
             }}
           >
-            <h1>{layoutHeaderKr.companyInfoName}</h1>
+            <h1
+              onClick={() => {
+                window.open("https://www.lameditech.com/");
+              }}
+            >
+              {layoutHeaderKr.companyInfoName}
+            </h1>
             <div style={{ color: "gray" }}>
               <p>{layoutHeaderKr.companyInfoRep}</p>
               <p>{layoutHeaderKr.companyInfoLicense}</p>
@@ -99,7 +84,7 @@ export default function NavbarRight() {
             </div>
           </div>
         </Menu>
-      </Button>
+      </Box>
 
       <NavIconButton title={layoutHeaderKr.kr} />
 

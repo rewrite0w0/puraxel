@@ -12,46 +12,55 @@ import left from "src/image/ME/me_02_b.png";
 import Image from "next/image";
 import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
 
-// const CircleLeft = (props) => {
-//   return (
-//     <motion.div
-//       style={{
-//         width: "20vw",
-//         height: "40vh",
-//         background: "red",
-//         borderRadius: "50%",
-//       }}
-//     />
-//   );
-// };
+const LaserExplain = (props) => {
+  return (
+    <Box>
+      {/* <Typography> */}
+      <h2>{meKr.Page2LaserTitle}</h2>
+      <span>{meKr.Page2LaserExplain1A}</span>
+      <p>{meKr.Page2LaserExplain1B}</p>
+      <span>{meKr.Page2LaserExplain1C}</span>
+      <p>
+        {meKr.Page2LaserTechExplain1A}
+        {meKr.Page2LaserTechExplain1B}
+      </p>
 
-// const CircleRight = (props) => {
-//   return (
-//     <motion.div
-//       style={{
-//         width: "20vw",
-//         height: "40vh",
-//         background: "blue",
-//         borderRadius: "50%",
+      {/* </Typography> */}
+    </Box>
+  );
+};
 
-//         ...props.sx,
-//       }}
-//     />
-//   );
-// };
+const GalvanicExplain = (props) => {
+  return (
+    <Typography>
+      <h2>{meKr.Page2GalvanicTitle}</h2>
+      <p>{meKr.Page2GalvanicExplain1A}</p>
+      <p>{meKr.Page2GalvanicExplain1B}</p>
+      <p>{meKr.Page2GalvanicExplain1C}</p>
+      <p>{meKr.Page2GalvanicExplain1D}</p>
 
-// const Circle = (props) => {
-//   return (
-//     <motion.div
-//       style={{
-//         width: "25vw",
-//         height: "25vw",
-//         borderRadius: "50%",
-//         ...props.sx,
-//       }}
-//     />
-//   );
-// };
+      <span>
+        <span>
+          {meKr.Page2GalvanicTechExplain1A}
+          <span> </span>
+
+          <span style={{ fontSize: "0.5vw", color: "rgba(0,0,0, 0.25)" }}>
+            {meKr.Page2GalvanicTechExplain1B}
+          </span>
+        </span>
+        <span> </span>
+        <span>
+          {meKr.Page2GalvanicTechExplain2A}
+          <span> </span>
+
+          <span style={{ fontSize: "0.5vw", color: "rgba(0,0,0, 0.25)" }}>
+            {meKr.Page2GalvanicTechExplain2B}
+          </span>
+        </span>
+      </span>
+    </Typography>
+  );
+};
 
 export default function Page2(props) {
   const [modeSelector, setModeSelector] = useState("Laser");
@@ -72,20 +81,21 @@ export default function Page2(props) {
   };
   const modeCondition = modeSelector === "Laser";
   const laserCondition = laserSelector === true;
+  const disableColor = "rgba(0, 0, 0, 0.25)";
 
-  console.log(laserSelector);
-  console.log(modeSelector);
+  // console.log(laserSelector);
+  // console.log(modeSelector);
   return (
     <>
       <Box
         display={"grid"}
-        sx={{ gridTemplateColumns: "1.3fr 1fr", fontSize: "1vw" }}
+        sx={{ gridTemplateColumns: "1.2fr 1fr", fontSize: "1vw" }}
       >
         {/* 왼쪽 grid */}
         <Box
           display={"grid"}
           sx={{
-            gridTemplateColumns: "2fr 1fr",
+            gridTemplateColumns: "2fr 0.4fr",
             marginTop: "4vh",
             marginLeft: "3vw",
           }}
@@ -94,16 +104,16 @@ export default function Page2(props) {
             sx={{
               height: "60vh",
               display: "grid",
-              gridTemplateRows: "1fr 2fr 1fr",
+              gridTemplateRows: "0.8fr 3fr 2fr",
               padding: "5rem",
             }}
           >
-            {/* 첫 번째 grid */}
+            {/* 첫 번째 grid: 제목/소개*/}
             <Box>
               <span style={{ color: "rgba(0,0,0,0.5)" }}>
                 {meKr.Page2Intro1}
               </span>
-              <h1>
+              <h1 style={{ margin: 0 }}>
                 <span>{meKr.Page2Intro2A}</span>
                 <span style={{ fontWeight: "normal" }}>
                   {meKr.Page2Intro2B}
@@ -115,21 +125,38 @@ export default function Page2(props) {
               </h1>
             </Box>
 
-            {/* 두 번째 grid */}
-            <Box sx={{ display: "grid", gridTemplateColumns: "1fr 0.1fr 1fr" }}>
+            {/* 두 번째 grid: 이미지 모음 */}
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: "1fr 0.1fr 1fr",
+              }}
+            >
               <Box
                 onClick={selectorLaser}
                 sx={{
-                  border: "5px solid red",
+                  // border: "5px solid red",
                   display: "grid",
                   gridTemplateRows: "0.5fr 2fr",
+                  backgroundColor: modeCondition ? "aliceblue" : disableColor,
                 }}
               >
-                <Box sx={{ padding: "1vh" }}>
+                <Box
+                  sx={{
+                    padding: "1vh",
+                    color: modeCondition ? "purple" : disableColor,
+                  }}
+                >
                   {meKr.Page2ContainerLaserTitle}
                 </Box>
                 <Box>
-                  <Image src={left} alt="left" />
+                  <Image
+                    src={left}
+                    alt="left"
+                    style={{
+                      filter: modeCondition ? "grayscale(0)" : "grayscale(1)",
+                    }}
+                  />
                 </Box>
               </Box>
               <Box>
@@ -138,43 +165,45 @@ export default function Page2(props) {
                 />
               </Box>
               <Box
+                onClick={selectorGalvanic}
                 sx={{
-                  border: "5px solid red",
+                  border: "5px solid blue",
                   display: "grid",
                   gridTemplateRows: "1fr 2fr",
+                  backgroundColor: !modeCondition ? "aliceblue" : disableColor,
                 }}
               >
-                <Box sx={{ padding: "1vh" }}>
+                <Box
+                  sx={{
+                    padding: "1vh",
+                    color: !modeCondition ? "purple" : disableColor,
+                  }}
+                >
                   {meKr.Page2ContainerGalvanicTitle}
                 </Box>
                 <Box>
-                  <Image src={right} alt="right" />
+                  <Image
+                    src={right}
+                    alt="right"
+                    style={{
+                      filter: !modeCondition ? "grayscale(0)" : "grayscale(1)",
+                    }}
+                  />
                 </Box>
               </Box>
             </Box>
 
-            {/* 세 번째 grid */}
-            <Box>
-              <Typography>
-                <h2>{meKr.Page2LaserTitle}</h2>
-                <p>{meKr.Page2LaserExplain1A}</p>
-                <p>{meKr.Page2LaserExplain1B}</p>
-                <p>{meKr.Page2LaserExplain1C}</p>
-                <p>
-                  {meKr.Page2LaserTechExplain1A}
-                  {meKr.Page2LaserTechExplain1B}
-                </p>
-              </Typography>
-            </Box>
+            {/* 세 번째 grid: 설명 */}
+            <Box>{modeCondition ? <LaserExplain /> : <GalvanicExplain />}</Box>
           </Paper>
 
           {/* 책갈피 grid */}
           <Box>
             <Paper
+              onClick={selectorLaser}
               sx={{
                 width: "10vh",
                 height: "4vh",
-                background: "yellowgreen",
                 fontSize: "0.8vw",
                 wordBreak: "keep-all",
                 display: "flex",
@@ -182,21 +211,24 @@ export default function Page2(props) {
                 alignContent: "center",
                 justifyContent: "center",
                 alignItems: "center",
+                background: modeCondition ? "pink" : disableColor,
               }}
             >
-              {/* <Typography sx={{ fontSize: "1vw" }}> */}
-              <div style={{ fontSize: "0.65vw" }}>
+              <div
+                style={{
+                  fontSize: "0.65vw",
+                }}
+              >
                 {meKr.Page2BookMarkLaser}
               </div>
               {"\n"}
-              {/* </Typography> */}
-              {/* <Typography sx={{ fontSize: "1vw" }}> */}
+
               <div style={{ fontSize: "0.6vw" }}>
                 {meKr.Page2BookMarkDetail}
               </div>
-              {/* </Typography> */}
             </Paper>
             <Paper
+              onClick={selectorGalvanic}
               sx={{
                 width: "10vh",
                 height: "4vh",
@@ -210,6 +242,7 @@ export default function Page2(props) {
                 alignContent: "center",
                 justifyContent: "center",
                 alignItems: "center",
+                background: !modeCondition ? "pink" : disableColor,
               }}
             >
               {/* <Typography sx={{ fontSize: "0.5vw" }}> */}
@@ -226,7 +259,25 @@ export default function Page2(props) {
         </Box>
 
         {/* 오른쪽 grid */}
-        <Box>2</Box>
+        <Box>
+          {modeCondition ? (
+            <Image
+              src={left}
+              alt="left"
+              style={{
+                filter: modeCondition ? "grayscale(0)" : "grayscale(1)",
+              }}
+            />
+          ) : (
+            <Image
+              src={right}
+              alt="right"
+              style={{
+                filter: !modeCondition ? "grayscale(0)" : "grayscale(1)",
+              }}
+            />
+          )}
+        </Box>
       </Box>
     </>
   );
@@ -320,3 +371,46 @@ export default function Page2(props) {
 //   {/* <CircleRight /> */}
 // </Box>
 // </Box>
+
+const CircleLeft = (props) => {
+  return (
+    <motion.div
+      style={{
+        width: "20vw",
+        height: "40vh",
+        background: "red",
+        borderRadius: "50%",
+
+        ...props.sx,
+      }}
+    />
+  );
+};
+
+const CircleRight = (props) => {
+  return (
+    <motion.div
+      style={{
+        width: "20vw",
+        height: "40vh",
+        background: "blue",
+        borderRadius: "50%",
+
+        ...props.sx,
+      }}
+    />
+  );
+};
+
+// const Circle = (props) => {
+//   return (
+//     <motion.div
+//       style={{
+//         width: "25vw",
+//         height: "25vw",
+//         borderRadius: "50%",
+//         ...props.sx,
+//       }}
+//     />
+//   );
+// };

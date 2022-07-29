@@ -5,6 +5,7 @@
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
   scrollbar-width: none;
+  word-break: keep-all;
 }
 
 *::-webkit-scrollbar {
