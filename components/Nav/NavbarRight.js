@@ -25,35 +25,33 @@ export default function NavbarRight() {
 
   const handleCompanyInfoButton = (e) => {
     setCompanyInfoAnchorState(e.currentTarget);
-    // console.log(e.currentTarget);
+    console.log(e.currentTarget);
     setCompanyInfoOpenState(!companyOpenState);
+    console.log(companyOpenState);
   };
 
   const handleCompanyInfoCloseButton = () => {
     setCompanyInfoAnchorState(undefined);
   };
 
+  const companyInfoOpenStateCodition = companyOpenState === false;
+
   return (
     <Box sx={{ display: "flex", alignItems: "center" }}>
-      <NavIconButton title={layoutHeaderKr.sns} />
+      <NavIconButton title={layoutHeaderKr.sns}></NavIconButton>
 
-      <NavIconButton title={layoutHeaderKr.lameditech} />
+      <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton>
 
       <NavIconButton
         onClick={handleCompanyInfoButton}
-        className={style.buttonStyle}
-      >
-        {companyOpenState === false
-          ? layoutHeaderKr.companyInfoCurrentStateClose
-          : layoutHeaderKr.companyInfoCurrentStateOpen}
-      </NavIconButton>
-
-      {/* 왜인지 몰라도 여기는 * 스타일이 안먹혀서 수동으로 줌 */}
-      <Box onClick={handleCompanyInfoButton} className={style.buttonStyle}>
-        {companyOpenState === false
-          ? layoutHeaderKr.companyInfoCurrentStateClose
-          : layoutHeaderKr.companyInfoCurrentStateOpen}
-        <Menu
+        title="mu?"
+        // title={
+        //   companyInfoOpenStateCodition
+        //     ? layoutHeaderKr.companyInfoCurrentStateClose
+        //     : layoutHeaderKr.companyInfoCurrentStateOpen
+        // }
+      ></NavIconButton>
+      {/* <Menu
           open={companyOpenState}
           onClose={handleCompanyInfoCloseButton}
           anchorEl={companyInfoAnchorState}
@@ -83,12 +81,12 @@ export default function NavbarRight() {
               <p>{layoutHeaderKr.companyInfoEmail}</p>
             </div>
           </div>
-        </Menu>
-      </Box>
+        </Menu> */}
+      {/* </NavIconButton> */}
 
-      <NavIconButton title={layoutHeaderKr.kr} />
+      <NavIconButton title={layoutHeaderKr.kr}></NavIconButton>
 
-      <NavIconButton title={layoutHeaderKr.en} />
+      <NavIconButton title={layoutHeaderKr.en}></NavIconButton>
     </Box>
   );
 }
