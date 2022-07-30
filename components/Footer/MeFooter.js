@@ -1,11 +1,11 @@
-import { Box } from "@mui/material";
-import MeFooterRight from "./MeFooterRight";
-import MeFooterLeft from "./MeFooterLeft";
-import style from "./MeFooterLayout.module.css";
+import { Box } from '@mui/material';
+import MeFooterRight from './MeFooterRight';
+import MeFooterLeft from './MeFooterLeft';
+import style from './MeFooterLayout.module.css';
 
 export default function MeFooter() {
   return (
-    <Box sx={{ display: "flex" }} className={style.footer}>
+    <Box sx={{ display: 'grid' }} className={style.footer}>
       <MeFooterLeft />
       <MeFooterRight />
     </Box>

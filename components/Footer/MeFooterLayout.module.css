@@ -5,8 +5,8 @@
 }
 
 .footer {
-  /* display: inline-flex; */
-  display: flex;
+  /* display: inline-grid; */
+  display: grid;
   justify-content: space-between;
   /* background-color: brown; */
   height: 4vw;

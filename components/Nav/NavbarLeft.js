@@ -1,16 +1,19 @@
-import { Box, IconButton, SvgIcon } from "@mui/material";
-import NavIconButton from "components/Nav/NavIconButton";
-import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
-import style from "./Nav.module.css";
+import { Box, IconButton, SvgIcon } from '@mui/material';
+import NavIconButton from 'components/Nav/NavIconButton';
+import layoutHeaderKr from 'public/locales/kr/layoutHeader.json';
+import style from './Nav.module.css';
 
-const buttonStyle = { fontWeight: "bolder", fontSize: "larger" };
+const buttonStyle = { fontWeight: 'bolder', fontSize: 'larger' };
 
-export default function NavbarLeft() {
+export default function NavbarLeft(props) {
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box
+      {...props}
+      // sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}
+    >
       <NavIconButton
         onClick={() => {
-          location.href = "/me";
+          location.href = '/me';
         }}
         // link="/me"
         title={layoutHeaderKr.me}
@@ -23,7 +26,7 @@ export default function NavbarLeft() {
       /> */}
       <NavIconButton
         onClick={() => {
-          location.href = "/fx5000";
+          location.href = '/fx5000';
         }}
         // link="/fx5000"
         title={layoutHeaderKr.fx5000}

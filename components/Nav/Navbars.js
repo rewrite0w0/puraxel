@@ -1,34 +1,127 @@
-import { Box } from "@mui/material";
-import NavbarRight from "./NavbarRight";
-import NavbarLeft from "./NavbarLeft";
-import style from "../layout/Layout.module.css";
-import navStyle from "./Nav.module.css";
+import { useState } from 'react';
+import { Box, Menu, Button, ImageList } from '@mui/material';
+import NavbarRight from './NavbarRight';
+import NavbarLeft from './NavbarLeft';
+import style from '../layout/Layout.module.css';
+import navStyle from './Nav.module.css';
 
-import Image from "next/image";
-import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
+import Image from 'next/image';
+import layoutHeaderKr from 'public/locales/kr/layoutHeader.json';
 
-import PuraxelLogo from "src/image/header/puraxel_logo_basic.svg";
-// import PuraxelLogoColor from "src/image/header/puraxel_logo_basic.svg";
-import { motion } from "framer-motion";
+import NavIconButton from 'components/Nav/NavIconButton';
+
+const buttonStyle = { fontSize: '1.4vw' };
+
+import PuraxelLogo from 'src/image/header/puraxel_logo_basic.svg';
+import PuraxelLogoColor from 'src/image/header/puraxel_logo_basic.svg';
+import { motion } from 'framer-motion';
 
 export default function Navbars() {
+  const [companyOpenState, setCompanyInfoOpenState] = useState(false);
+  const [companyInfoAnchorState, setCompanyInfoAnchorState] =
+    useState(undefined);
+
+  const [snsOpenState, setSnsOpenState] = useState(false);
+  const [snsAnchorState, setSnsAnchorState] = useState(undefined);
+
+  const handleSNSButton = (e) => {
+    setSnsAnchorState(e.currentTarget);
+    // console.log(e.currentTarget);
+    setSnsOpenState(!snsOpenState);
+  };
+
+  const handleSNSCloseButton = () => {
+    setSnsAnchorState(undefined);
+  };
+
+  const handleCompanyInfoButton = (e) => {
+    setCompanyInfoAnchorState(e.currentTarget);
+    // console.log(e.currentTarget);
+    setCompanyInfoOpenState(!companyOpenState);
+    // console.log(companyOpenState);
+  };
+
+  const handleCompanyInfoCloseButton = () => {
+    setCompanyInfoAnchorState(undefined);
+  };
+
+  const companyInfoOpenStateCodition = companyOpenState === false;
+
   return (
-    <Box sx={{ display: "flex" }} className={style.header}>
-      {/* <Image
-        src={PuraxelLogo}
-        alt="puraxel logo image"
-        width={160}
-        // height={50}
-        className={navStyle.logo}
+    <Box className={style.header}>
+      <Box>
+        <Image
+          src={PuraxelLogo}
+          alt="PuraxelLogoColor"
+          style={{ backgroundColor: 'pink' }}
+          width={'10vw'}
+          height={'20vh'}
+        />
+      </Box>
+
+      <NavIconButton
         onClick={() => {
-          location.href = "/";
+          location.href = '/me';
         }}
-      /> */}
-      <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "95vw" }}
-      >
-        <NavbarLeft className={navStyle.leftNav} />
-        <NavbarRight className={navStyle.rightNav} />
+        title={layoutHeaderKr.me}
+        sx={buttonStyle}
+      />
+
+      <NavIconButton
+        onClick={() => {
+          location.href = '/fx5000';
+        }}
+        title={layoutHeaderKr.fx5000}
+        sx={buttonStyle}
+      />
+
+      <Box className={navStyle.rightNav}>
+        <NavIconButton title={layoutHeaderKr.sns}></NavIconButton>
+
+        <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton>
+
+        <Button
+          onClick={handleCompanyInfoButton}
+          className={navStyle.buttonStyle}
+        >
+          {companyInfoOpenStateCodition
+            ? layoutHeaderKr.companyInfoCurrentStateClose
+            : layoutHeaderKr.companyInfoCurrentStateOpen}
+          <Menu
+            open={companyOpenState}
+            onClose={handleCompanyInfoCloseButton}
+            anchorEl={companyInfoAnchorState}
+          >
+            <div
+              style={{
+                height: '100%',
+                width: '30vw',
+                padding: '1rem',
+              }}
+            >
+              <h1
+                onClick={() => {
+                  window.open('https://www.lameditech.com/');
+                }}
+              >
+                {layoutHeaderKr.companyInfoName}
+              </h1>
+              <div style={{ color: 'gray' }}>
+                <p>{layoutHeaderKr.companyInfoRep}</p>
+                <p>{layoutHeaderKr.companyInfoLicense}</p>
+                <p>{layoutHeaderKr.companyInfoAddress1A}</p>
+                <p>{layoutHeaderKr.companyInfoAddress1B}</p>
+                <p>{layoutHeaderKr.companyInfoTel}</p>
+                <p>{layoutHeaderKr.companyInfoFax}</p>
+                <p>{layoutHeaderKr.companyInfoEmail}</p>
+              </div>
+            </div>
+          </Menu>
+        </Button>
+
+        <NavIconButton title={layoutHeaderKr.kr}></NavIconButton>
+
+        <NavIconButton title={layoutHeaderKr.en}></NavIconButton>
       </Box>
     </Box>
   );

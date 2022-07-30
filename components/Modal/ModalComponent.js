@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   Box,
   Button,
@@ -18,12 +18,12 @@ import {
   DialogTitle,
   DialogContent,
   DialogActions,
-} from "@mui/material";
-import style from "./ModalComponent.module.css";
-import modalKr from "public/locales/kr/modal";
+} from '@mui/material';
+import style from './ModalComponent.module.css';
+import modalKr from 'public/locales/kr/modal';
 
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
@@ -31,16 +31,16 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 // import Modal from "@mui/material/Modal";
 
 const bgStyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
   width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-  display: "flex",
+  display: 'flex',
 };
 
 export default function ModalComponent() {
@@ -160,18 +160,18 @@ export default function ModalComponent() {
 
               <Box
                 style={{
-                  display: "flex",
-                  alignItems: "center",
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
                 <Checkbox
                   icon={<CheckCircleOutlineIcon />}
                   checkedIcon={<CheckCircleIcon />}
                   sx={{
-                    "& .MuiSvgIcon-root": { fontSize: "2.8rem" },
-                    color: "pink",
-                    "&.Mui-checked": {
-                      color: "red",
+                    '& .MuiSvgIcon-root': { fontSize: '2.8rem' },
+                    color: 'pink',
+                    '&.Mui-checked': {
+                      color: 'red',
                     },
                   }}
                 />
@@ -193,7 +193,7 @@ export default function ModalComponent() {
           <Box className={style.right}>
             {/*  */}
             <Box>
-              <ButtonGroup style={{ display: "flex" }}>
+              <ButtonGroup style={{ display: 'flex' }}>
                 <Button>{modalKr.modalLangKr}</Button>
                 <Button>{modalKr.modalLangEn}</Button>
                 <Button>{modalKr.modalLangCh}</Button>
@@ -212,14 +212,14 @@ export default function ModalComponent() {
             </Box>
             {/*  */}
             <Box>
-              <Box style={{ display: "flex" }}>
+              <Box style={{ display: 'flex' }}>
                 <Typography>
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain1}
                 </Typography>
               </Box>
 
-              <Box style={{ display: "flex" }}>
+              <Box style={{ display: 'flex' }}>
                 <Typography>
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain2A}
@@ -263,7 +263,7 @@ export default function ModalComponent() {
         onClose={handleCloseSendedNoticeDialog}
       >
         <DialogTitle>
-          <CheckCircleIcon style={{ color: "pink" }} />
+          <CheckCircleIcon style={{ color: 'pink' }} />
         </DialogTitle>
         <DialogContent>
           {modalKr.modalSendPara1}

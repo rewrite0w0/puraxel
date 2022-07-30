@@ -20,23 +20,23 @@
 
 .priceButton1 {
   /* background-color: blue; */
-  display: flex;
+  display: grid;
 }
 
 .priceButton2 {
   /* background-color: yellow; */
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  justify-content: grid-end;
 }
 
 .priceButton3 {
   /* background-color: brown; */
-  display: flex;
+  display: grid;
 }
 
 .priceButton4 {
   /* background-color: yellowgreen; */
-  display: flex;
+  display: grid;
 
-  justify-content: flex-end;
+  justify-content: grid-end;
 }

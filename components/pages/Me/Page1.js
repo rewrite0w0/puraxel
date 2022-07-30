@@ -1,16 +1,16 @@
-import { Box, Typography } from "@mui/material";
-import Image from "next/image";
-import meKr from "public/locales/kr/me";
-import flowerWithMe from "src/image/ME/me_01.png";
-import style from "./page1.module.css";
+import { Box, Typography } from '@mui/material';
+import Image from 'next/image';
+import meKr from 'public/locales/kr/me';
+import flowerWithMe from 'src/image/ME/me_01.png';
+import style from './page1.module.css';
 // import { ManualFractionPage1 } from "./ManualFraction";
 
 const Page1Intro1 = (props) => {
   return (
     <Box sx={props.sx}>
-      <Typography sx={{ color: "red" }}>{meKr.Page1Intro1A}</Typography>
+      <Typography sx={{ color: 'red' }}>{meKr.Page1Intro1A}</Typography>
       <Typography>{meKr.Page1Intro1B}</Typography>
-      <Typography sx={{ fontSize: "4vw" }}>{meKr.Page1Title}</Typography>
+      <Typography sx={{ fontSize: '4vw' }}>{meKr.Page1Title}</Typography>
     </Box>
   );
 };
@@ -51,33 +51,33 @@ export default function Page1() {
       <Box
         display="grid"
         sx={{
-          gridTemplateColumns: "repeat(2, 1fr)",
+          gridTemplateColumns: 'repeat(2, 1fr)',
         }}
       >
-        <Box display={"grid"}>
+        <Box display={'grid'}>
           <Box
-            display={"flex"}
+            display={'grid'}
             sx={{
-              borderBottom: "1px solid red",
-              justifyContent: "center",
-              alignItems: "center",
-              background: "yellowgreen",
+              borderBottom: '1px solid red',
+              justifyContent: 'center',
+              alignItems: 'center',
+              background: 'yellowgreen',
             }}
           >
-            <Page1Intro1 sx={{ width: "25vw" }} />
+            <Page1Intro1 sx={{ width: '25vw' }} />
           </Box>
 
           <Box
-            display={"flex"}
-            sx={{ justifyContent: "right", background: "green" }}
+            display={'grid'}
+            sx={{ justifyContent: 'right', background: 'green' }}
           >
-            <Page1Explain sx={{ background: "blue", width: "25vw" }} />
+            <Page1Explain sx={{ background: 'blue', width: '25vw' }} />
           </Box>
         </Box>
 
         <Box
-          display={"grid"}
-          sx={{ justifyContent: "center" }}
+          display={'grid'}
+          sx={{ justifyContent: 'center' }}
           className={style.imgContainer}
         >
           <Page1Img />
