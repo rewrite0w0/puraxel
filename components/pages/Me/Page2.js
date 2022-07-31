@@ -180,7 +180,7 @@ export default function Page2(props) {
                     position: "fixed",
                     color: "rgba(0,0,0,0.4)",
                     backgroundColor: "rgba(255,255,255,0.4)",
-                    backdropFilter: blur("50px"),
+                    backdropFilter: "blur('50px')",
                     fontSize: "3vw",
                   }}
                 />
@@ -286,36 +286,39 @@ export default function Page2(props) {
         <Box
           sx={{
             display: "flex",
-            justifyContent: "flex-start",
+            justifyContent: "center",
             alignItems: "center",
-            margin: "1rem",
-            // background: 'white',
+            // margin: "1rem",
+            // background: "white",
           }}
         >
           {/* 왼쪽 동그라미 */}
-          <motion.div>
-            <Box
-              style={{
-                background: "black",
-                width: "25vw",
-                height: "50vh",
-                borderRadius: "50%",
-                position: "relative",
-                right: "-6vw",
-              }}
-            ></Box>
-          </motion.div>
+          {/* <motion.div> */}
+          <Box
+            style={{
+              background: "black",
+              width: "25vw",
+              height: "50vh",
+              borderRadius: "50%",
+              position: "relative",
+              right: "-5vw",
+            }}
+          ></Box>
+          {/* </motion.div> */}
 
           <motion.div
             style={{
-              // background: 'purple',
+              // background: "purple",
+              display: "flex",
               width: "20vw",
               height: "40vh",
               position: "fixed",
               // zIndex: 5,
               borderRadius: "50%",
-              marginLeft: "17vw",
-              marginTop: "4vh",
+              // marginLeft: "17vw",
+              // marginTop: "4vh",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             {modeCondition ? (
@@ -339,18 +342,18 @@ export default function Page2(props) {
             )}
           </motion.div>
 
-          <motion.div>
-            <Box
-              style={{
-                background: "red",
-                width: "25vw",
-                height: "50vh",
-                borderRadius: "50%",
-              }}
-            >
-              {/* 오른쪽 동그라미 */}
-            </Box>
-          </motion.div>
+          {/* <motion.div> */}
+          <Box
+            style={{
+              background: "red",
+              width: "25vw",
+              height: "50vh",
+              borderRadius: "50%",
+            }}
+          >
+            {/* 오른쪽 동그라미 */}
+          </Box>
+          {/* </motion.div> */}
         </Box>
       </Box>
     </>
