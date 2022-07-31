@@ -1,5 +1,6 @@
 .img {
   background-color: white;
+  /* z-index: 9999; */
 }
 
 .imgContainer {
@@ -9,5 +10,5 @@
   margin-bottom: 1rem;
   padding: 1rem;
   height: 80vh;
-  z-index: 9999;
+  /* z-index: 9999; */
 }

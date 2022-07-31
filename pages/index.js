@@ -1,5 +1,8 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import mainKr from 'public/locales/kr/main';
+
+import tempImage from 'src/image/header/puraxel_logo_basic.svg';
 
 export default function Home() {
   return (
@@ -14,14 +17,14 @@ export default function Home() {
         <body style={{ display: 'grid', gridTemplateRows: '40vh 60vh' }}>
           <div
             style={{
-              background: 'cyan',
+              // background: 'cyan',
               display: 'grid',
               gridTemplateColumns: '2fr 3fr',
             }}
           >
             <div
               style={{
-                background: 'red',
+                // background: 'red',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
@@ -30,32 +33,39 @@ export default function Home() {
                 // gap: '1rem',
               }}
             >
+              {/* 폰트 키우기 */}
               <span>{mainKr.title1A}</span>
               <span>{mainKr.title1B}</span>
             </div>
             <div
               style={{
-                background: 'yellow',
+                // background: 'yellow',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'end',
               }}
             >
+              {/* 폰트 키우기 윗줄 */}
               <span>{mainKr.explain1A}</span>
               <span>{mainKr.explain1B}</span>
+              {/* 폰트 키우기 아랫줄 */}
               <span>{mainKr.explain1A}</span>
               <span>{mainKr.explain1B}</span>
             </div>
           </div>
+
+          {/* 이미지 꽉 채우기 */}
+
           <div
             style={{
               display: 'flex',
-              background: 'yellowgreen',
+              // background: 'yellowgreen',
               justifyContent: 'center',
               alignItems: 'center',
+              // backgroundImage: `url(${tempImage})`,
             }}
           >
-            image
+            <Image src={tempImage} alt="temp" />
           </div>
         </body>
       </main>

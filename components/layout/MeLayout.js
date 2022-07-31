@@ -11,14 +11,16 @@ export default function MeLayout({ children }) {
   return (
     <div>
       <body
-        style={{
-          // height: '100vh',
-          // backgroundColor: 'skyblue',
-          background:
-            'linear-gradient(rgba(255, 255, 255), rgba(252, 209, 215))',
-          // position: 'relative',
-          // margin: 0,
-        }}
+        style={
+          {
+            // height: '100vh',
+            // backgroundColor: 'skyblue',
+            // background:
+            //   'linear-gradient(rgba(255, 255, 255, 0.3), rgba(252, 209, 215, 0.7))',
+            // position: 'relative',
+            // margin: 0,
+          }
+        }
       >
         {children}
       </body>
@@ -30,7 +32,7 @@ export default function MeLayout({ children }) {
           height: '10vh',
           // backgroundColor: 'blue',
           right: 0,
-          left: 0,
+          left: '4vw',
           bottom: '7vh',
         }}
       >
@@ -58,7 +60,10 @@ export default function MeLayout({ children }) {
           link="https://www.qwant.com/"
         />
 
-        <LinkButton buttonName="여기에 캐러셀 혹은 수동 캐러셀" />
+        <LinkButton
+          sx={{ marginLeft: '20vw' }}
+          buttonName="여기에 캐러셀 혹은 수동 캐러셀"
+        />
       </footer>
     </div>
   );

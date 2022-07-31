@@ -12,9 +12,9 @@ export default function Me() {
   return (
     <MeLayout>
       <Swipers>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Page4 />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <Page1 />
         </SwiperSlide>

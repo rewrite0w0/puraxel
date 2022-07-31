@@ -48,7 +48,11 @@ export default function Navbars() {
 
   return (
     <Box className={style.header}>
-      <Box>
+      <Box
+        onClick={() => {
+          location.href = '/';
+        }}
+      >
         <Image
           src={PuraxelLogo}
           alt="PuraxelLogoColor"

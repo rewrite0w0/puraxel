@@ -83,8 +83,6 @@ export default function Page2(props) {
   const laserCondition = laserSelector === true;
   const disableColor = 'rgba(0, 0, 0, 0.25)';
 
-  // console.log(laserSelector);
-  // console.log(modeSelector);
   return (
     <>
       <Box
@@ -96,7 +94,7 @@ export default function Page2(props) {
           display={'grid'}
           sx={{
             gridTemplateColumns: '2fr 0.4fr',
-            marginTop: '4vh',
+            marginTop: '0.5vh',
             marginLeft: '3vw',
           }}
         >
@@ -128,10 +126,11 @@ export default function Page2(props) {
             {/* 두 번째 grid: 이미지 모음 */}
             <Box
               sx={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 0.1fr 1fr',
+                display: 'flex',
+                // gridTemplateColumns: '1fr 0.1fr 1fr',
               }}
             >
+              {/* 레이저 */}
               <Box
                 onClick={selectorLaser}
                 sx={{
@@ -159,15 +158,25 @@ export default function Page2(props) {
                   />
                 </Box>
               </Box>
-              <Box>
+              {/* 중앙 */}
+              <Box
+                sx={{
+                  display: 'flex',
+                  backgroundColor: 'yellow',
+                  justifyContent: 'center',
+                  flexDirection: 'column',
+                  position: 'fixed',
+                }}
+              >
                 <AddCircleOutlineRoundedIcon
-                  sx={{ color: 'blue', fontSize: '2vw' }}
+                  sx={{ color: 'red', fontSize: '3vw' }}
                 />
               </Box>
+              {/* 갈바닉 */}
               <Box
                 onClick={selectorGalvanic}
                 sx={{
-                  border: '5px solid blue',
+                  // border: '5px solid blue',
                   display: 'grid',
                   gridTemplateRows: '1fr 2fr',
                   backgroundColor: !modeCondition ? 'aliceblue' : disableColor,
@@ -259,8 +268,77 @@ export default function Page2(props) {
         </Box>
 
         {/* 오른쪽 grid */}
-        <Box>
-          {modeCondition ? (
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            margin: '1rem',
+            // background: 'white',
+          }}
+        >
+          {/* 왼쪽 동그라미 */}
+          <motion.div>
+            <Box
+              style={{
+                background: 'black',
+                width: '25vw',
+                height: '50vh',
+                borderRadius: '50%',
+                position: 'relative',
+                right: '-6vw',
+              }}
+            ></Box>
+          </motion.div>
+
+          <motion.div
+            style={{
+              // background: 'purple',
+              width: '20vw',
+              height: '40vh',
+              position: 'fixed',
+              // zIndex: 5,
+              borderRadius: '50%',
+              marginLeft: '17vw',
+              marginTop: '4vh',
+            }}
+          >
+            {modeCondition ? (
+              // 레이저
+              <Image
+                src={left}
+                alt="left"
+                style={{
+                  filter: modeCondition ? 'grayscale(0)' : 'grayscale(1)',
+                }}
+              />
+            ) : (
+              // 갈바닉
+              <Image
+                src={right}
+                alt="right"
+                style={{
+                  filter: !modeCondition ? 'grayscale(0)' : 'grayscale(1)',
+                }}
+              />
+            )}
+          </motion.div>
+
+          <motion.div>
+            <Box
+              style={{
+                background: 'red',
+                width: '25vw',
+                height: '50vh',
+                borderRadius: '50%',
+              }}
+            >
+              {/* 오른쪽 동그라미 */}
+            </Box>
+          </motion.div>
+
+          {/* {modeCondition ? (
+            // 레이저
             <Image
               src={left}
               alt="left"
@@ -269,6 +347,7 @@ export default function Page2(props) {
               }}
             />
           ) : (
+            // 갈바닉
             <Image
               src={right}
               alt="right"
@@ -276,141 +355,13 @@ export default function Page2(props) {
                 filter: !modeCondition ? 'grayscale(0)' : 'grayscale(1)',
               }}
             />
-          )}
+          )} */}
+
+          {/* <motion.div style={{ height: '10vh', width: '10vw' }}>d</motion.div>
+
+          <motion.div>d</motion.div> */}
         </Box>
       </Box>
     </>
   );
 }
-
-// <Box>
-//         <Box
-//           display={"grid"}
-//           sx={{ justifyContent: "center", alignItem: "center" }}
-//         >
-//           <Box
-//             onClick={() => setModeSelector("Laser")}
-//             sx={{
-//               background: modeCondition ? "green" : "transparent",
-//               filter: modeCondition ? "grayscale(0)" : "grayscale(1)",
-//             }}
-//           >
-//             <Image
-//               src={testImage}
-//               alt="test image :)"
-//               style={{ height: "50vh" }}
-//               height={500}
-//             />
-//           </Box>
-//           <AddCircleOutlineRoundedIcon
-//             sx={{
-//               fontSize: "8vw",
-//               color: "blueviolet",
-//               position: "absolute",
-//               zIndex: 10,
-//             }}
-//           />
-//           <Box
-//             onClick={() => setModeSelector("Galvanic")}
-//             sx={{
-//               background: !modeCondition ? "red" : "transparent",
-//               filter: !modeCondition ? "grayscale(0)" : "grayscale(1)",
-//             }}
-//           >
-//             <Image src={testImage} alt="test image :)" height={500} />
-//           </Box>
-//         </Box>
-//       </Box>
-
-//
-
-// <Box
-// display={"grid"}
-// sx={{
-//   gridTemplateColumns: "1fr 1fr",
-//   justifyContent: "center",
-//   alignContent: "center",
-// }}
-// >
-// <Box
-//   style={{ background: "yellow", justifyContent: "center" }}
-//   // display="grid"
-// >
-//   {/* <Circle sx={{ background: "purple", position: "absoulte" }} />
-//   <CircleLeft /> */}
-//   1
-// </Box>
-// <Box
-//   display={"grid"}
-//   sx={{
-//     gridTemplateRows: "1fr 2.5fr 1fr",
-//     justifyContent: "center",
-//     background: "green",
-//     position: "relative",
-//     height: "100vh",
-//   }}
-// >
-//   <Box sx={{ background: "red" }}>1</Box>
-
-//   <Box
-//     display={"grid"}
-//     sx={{
-//       background: "yellow",
-//       position: "relative",
-//       marginRight: "10vw",
-//     }}
-//   >
-//     <Circle
-//       sx={{ background: "purple", position: "absolute", left: "12vw" }}
-//     />
-//     <Circle sx={{ background: "red" }} />
-//   </Box>
-
-//   <Box sx={{ background: "blue" }}>3</Box>
-
-//   {/* <CircleRight /> */}
-// </Box>
-// </Box>
-
-const CircleLeft = (props) => {
-  return (
-    <motion.div
-      style={{
-        width: '20vw',
-        height: '40vh',
-        background: 'red',
-        borderRadius: '50%',
-
-        ...props.sx,
-      }}
-    />
-  );
-};
-
-const CircleRight = (props) => {
-  return (
-    <motion.div
-      style={{
-        width: '20vw',
-        height: '40vh',
-        background: 'blue',
-        borderRadius: '50%',
-
-        ...props.sx,
-      }}
-    />
-  );
-};
-
-// const Circle = (props) => {
-//   return (
-//     <motion.div
-//       style={{
-//         width: "25vw",
-//         height: "25vw",
-//         borderRadius: "50%",
-//         ...props.sx,
-//       }}
-//     />
-//   );
-// };

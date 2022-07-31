@@ -9,6 +9,7 @@ export default function LinkButton(props) {
         variant="text"
         className={style.btn}
         startIcon={<StoreIcon />}
+        style={{ ...props.sx }}
         onClick={() => {
           window.open(props.link ? props.link : '/', '_blank');
         }}

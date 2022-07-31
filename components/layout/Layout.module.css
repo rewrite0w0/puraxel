@@ -9,6 +9,13 @@
   /* background-color: pink; */
 }
 
+/* 여기서 바디 색 전부를 고침 */
+/* 상태변수로 ME 밑줄과 같이 처리하면 될 듯? */
+
 .body {
   height: 95vh;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(252, 209, 215, 0.7)
+  );
 }
