@@ -336,30 +336,6 @@ export default function Page2(props) {
               {/* 오른쪽 동그라미 */}
             </Box>
           </motion.div>
-
-          {/* {modeCondition ? (
-            // 레이저
-            <Image
-              src={left}
-              alt="left"
-              style={{
-                filter: modeCondition ? 'grayscale(0)' : 'grayscale(1)',
-              }}
-            />
-          ) : (
-            // 갈바닉
-            <Image
-              src={right}
-              alt="right"
-              style={{
-                filter: !modeCondition ? 'grayscale(0)' : 'grayscale(1)',
-              }}
-            />
-          )} */}
-
-          {/* <motion.div style={{ height: '10vh', width: '10vw' }}>d</motion.div>
-
-          <motion.div>d</motion.div> */}
         </Box>
       </Box>
     </>
