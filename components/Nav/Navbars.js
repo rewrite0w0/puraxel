@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { Box, Menu, Button, ImageList } from '@mui/material';
-import NavbarRight from './NavbarRight';
-import NavbarLeft from './NavbarLeft';
+import { Box, Menu, Button } from '@mui/material';
+
 import style from '../layout/Layout.module.css';
 import navStyle from './Nav.module.css';
 
@@ -53,27 +52,30 @@ export default function Navbars() {
         <Image
           src={PuraxelLogo}
           alt="PuraxelLogoColor"
+          className={navStyle.logo}
           style={{ backgroundColor: 'pink' }}
           width={'10vw'}
           height={'20vh'}
         />
       </Box>
 
-      <NavIconButton
-        onClick={() => {
-          location.href = '/me';
-        }}
-        title={layoutHeaderKr.me}
-        sx={buttonStyle}
-      />
+      <Box>
+        <NavIconButton
+          onClick={() => {
+            location.href = '/me';
+          }}
+          title={layoutHeaderKr.me}
+          sx={buttonStyle}
+        />
 
-      <NavIconButton
-        onClick={() => {
-          location.href = '/fx5000';
-        }}
-        title={layoutHeaderKr.fx5000}
-        sx={buttonStyle}
-      />
+        <NavIconButton
+          onClick={() => {
+            location.href = '/fx5000';
+          }}
+          title={layoutHeaderKr.fx5000}
+          sx={buttonStyle}
+        />
+      </Box>
 
       <Box className={navStyle.rightNav}>
         <NavIconButton title={layoutHeaderKr.sns}></NavIconButton>
@@ -118,9 +120,7 @@ export default function Navbars() {
             </div>
           </Menu>
         </Button>
-
         <NavIconButton title={layoutHeaderKr.kr}></NavIconButton>
-
         <NavIconButton title={layoutHeaderKr.en}></NavIconButton>
       </Box>
     </Box>

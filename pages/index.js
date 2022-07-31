@@ -1,6 +1,5 @@
-import Head from "next/head";
-import Swipers from "components/Swipers";
-import { SwiperSlide } from "swiper/react";
+import Head from 'next/head';
+import mainKr from 'public/locales/kr/main';
 
 export default function Home() {
   return (
@@ -12,14 +11,53 @@ export default function Home() {
       </Head>
 
       <main>
-        <Swipers>
-          <SwiperSlide style={{ background: "greenyellow" }}>
-            Slide 1
-          </SwiperSlide>
-          <SwiperSlide style={{ background: "pink" }}>Slide 2</SwiperSlide>
-          <SwiperSlide style={{ background: "green" }}>Slide 3</SwiperSlide>
-          <SwiperSlide style={{ background: "hotpink" }}>Slide 4</SwiperSlide>
-        </Swipers>
+        <body style={{ display: 'grid', gridTemplateRows: '40vh 60vh' }}>
+          <div
+            style={{
+              background: 'cyan',
+              display: 'grid',
+              gridTemplateColumns: '2fr 3fr',
+            }}
+          >
+            <div
+              style={{
+                background: 'red',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                // margin: '1rem',
+                // gap: '1rem',
+              }}
+            >
+              <span>{mainKr.title1A}</span>
+              <span>{mainKr.title1B}</span>
+            </div>
+            <div
+              style={{
+                background: 'yellow',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'end',
+              }}
+            >
+              <span>{mainKr.explain1A}</span>
+              <span>{mainKr.explain1B}</span>
+              <span>{mainKr.explain1A}</span>
+              <span>{mainKr.explain1B}</span>
+            </div>
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              background: 'yellowgreen',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            image
+          </div>
+        </body>
       </main>
     </div>
   );
