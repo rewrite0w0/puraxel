@@ -18,9 +18,6 @@ export default function Me() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Swipers>
-        {/* <SwiperSlide>
-          <Page4 />
-        </SwiperSlide> */}
         <SwiperSlide>
           <Page1 />
         </SwiperSlide>
@@ -28,6 +25,14 @@ export default function Me() {
           {/* {window.screen.width > 1000 ? <Page2 /> : <Page3 />} */}
           <Page2 />
         </SwiperSlide>
+
+        <SwiperSlide>
+          <Page3 />
+        </SwiperSlide>
+
+        {/* <SwiperSlide>
+          <Page4 />
+        </SwiperSlide> */}
       </Swipers>
     </MeLayout>
   );

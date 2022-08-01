@@ -1,8 +1,10 @@
-import meKr from 'public/locales/kr/me.json';
-import { Box, Paper, Typography } from '@mui/material';
-import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Swipers from '../../Swipers';
+import meKr from "public/locales/kr/me.json";
+import { Box, Paper, Typography } from "@mui/material";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import upperImage from "src/image/ME/me_03_a.png";
+import lowerImage from "src/image/ME/me_03_b.png";
+import style from "./page3.module.css";
 
 const TitleDon = (props) => {
   return (
@@ -26,12 +28,12 @@ const ExplainDetail = (props) => {
     //   <SwiperSlide>3</SwiperSlide>
     // </Swiper>
     <Box
-      display={'grid'}
+      display={"grid"}
       sx={{
-        gridTemplateRows: '1fr 2fr 3fr',
-        justifyContent: 'center',
-        height: '100%',
-        margin: '1rem',
+        gridTemplateRows: "1fr 2fr 3fr",
+        justifyContent: "center",
+        height: "100%",
+        margin: "1rem",
       }}
     >
       <Box></Box>
@@ -56,9 +58,9 @@ const HowToUse = (props) => {
     //     background: "yellowgreen",
     //   }}
     // >
-    <Box display="grid" sx={{ gridTemplateRows: '1fr 4fr', height: '70vh' }}>
-      <Box sx={{ background: 'red' }}>{/* <TitleDon /> */}</Box>
-      <Box sx={{ background: 'green' }}>
+    <Box display="grid" sx={{ gridTemplateRows: "1fr 4fr", height: "70vh" }}>
+      <Box sx={{ background: "red" }}>{/* <TitleDon /> */}</Box>
+      <Box sx={{ background: "green" }}>
         <ExplainDetail />
       </Box>
     </Box>
@@ -68,24 +70,39 @@ const HowToUse = (props) => {
 
 export default function Page3() {
   return (
-    // <Box
-    //   display={"grid"}
-    //   sx={{ gridTemplateColumns: "1fr 1.4fr", height: "100vh" }}
-    // >
-    <>
-      <Box sx={{ background: 'blue' }}>2</Box>
-      {/* <Box sx={{ background: "yellow" }} height={500}> */}
-      {/* <HowToUse /> */}
-      {/* </Box> */}
-      <Paper style={{ height: '50vh', width: '20vw' }}>
-        <Swipers>
-          <SwiperSlide style={{ background: 'red' }}>
-            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-          </SwiperSlide>
-          <SwiperSlide style={{ background: 'blue' }}>2</SwiperSlide>
-          <SwiperSlide style={{ background: 'green' }}>3</SwiperSlide>
-        </Swipers>
-      </Paper>
-    </>
+    <Box display={"grid"} sx={{ gridTemplateColumns: "2fr 3fr" }}>
+      <Box display="flex" className={style.leftContainer}>
+        <Box className={style.lowerImage}>아래</Box>
+        <Box className={style.upperImage}>위</Box>
+      </Box>
+      <Box className={style.rightContainer}>
+        <Paper className={style.rightContents}>
+          <Box className={style.rightContentUpper}>adasd</Box>
+          <Box className={style.rightContentMiddleUpper}>adasd</Box>
+          <Box className={style.rightContentMiddleLower}>adasd</Box>
+          <Box className={style.rightContentLower}>adasd</Box>
+        </Paper>
+      </Box>
+    </Box>
   );
 }
+
+// <Box
+//   display={"grid"}
+//   sx={{ gridTemplateColumns: "1fr 1.4fr", height: "100vh" }}
+// >
+// <>
+//   <Box sx={{ background: 'blue' }}>2</Box>
+//   {/* <Box sx={{ background: "yellow" }} height={500}> */}
+//   {/* <HowToUse /> */}
+//   {/* </Box> */}
+//   <Paper style={{ height: '50vh', width: '20vw' }}>
+//     <Swipers>
+//       <SwiperSlide style={{ background: 'red' }}>
+//         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//       </SwiperSlide>
+//       <SwiperSlide style={{ background: 'blue' }}>2</SwiperSlide>
+//       <SwiperSlide style={{ background: 'green' }}>3</SwiperSlide>
+//     </Swipers>
+//   </Paper>
+// </>
