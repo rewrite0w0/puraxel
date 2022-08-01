@@ -1,21 +1,27 @@
-import { Button } from '@mui/material';
-import style from './LinkButton.module.css';
-import StoreIcon from '@mui/icons-material/Store';
+import { Button, Box } from "@mui/material";
+import style from "./LinkButton.module.css";
+import StoreIcon from "@mui/icons-material/Store";
+import _style from "./LinkPriceButton.module.css";
 
 export default function LinkButton(props) {
   return (
     <>
-      <Button
+      <Box
         variant="text"
-        className={style.btn}
+        // className={style.btn}
+        className={_style.priceButton}
         startIcon={<StoreIcon />}
         style={{ ...props.sx }}
         onClick={() => {
-          window.open(props.link ? props.link : '/', '_blank');
+          window.open(props.link ? props.link : "/", "_blank");
         }}
       >
-        {props.buttonName}
-      </Button>
+        <span>
+          {props.icon}
+          {/* <StoreIcon /> */}
+          {props.buttonName}
+        </span>
+      </Box>
     </>
   );
 }

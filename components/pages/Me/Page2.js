@@ -107,7 +107,7 @@ export default function Page2(props) {
             }}
           >
             {/* 첫 번째 grid: 제목/소개*/}
-            <Box>
+            <Box sx={{ height: "10vh" }}>
               <span style={{ color: "rgba(0,0,0,0.5)" }}>
                 {meKr.Page2Intro1}
               </span>
@@ -216,7 +216,7 @@ export default function Page2(props) {
             </Box>
 
             {/* 세 번째 grid: 설명 */}
-            <Box sx={{ heigth: "5vh" }}>
+            <Box sx={{ heigth: "10vh" }}>
               {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
             </Box>
           </Paper>
