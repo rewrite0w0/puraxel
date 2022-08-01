@@ -15,9 +15,10 @@
 
 .body {
   height: 95vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(255, 255, 255, 0.3),
     rgba(252, 209, 215, 0.7)
-  );
+  ); */
+  background: linear-gradient(#f4edff, #e9caf4);
   overflow: hidden;
 }

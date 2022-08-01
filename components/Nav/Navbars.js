@@ -11,13 +11,9 @@ import NavIconButton from "components/Nav/NavIconButton";
 
 const buttonStyle = { fontSize: "1vw" };
 
-import puraxelLogo from "src/image/header/gnb_home_active_hover.svg";
-
 import upperArrow from "src/image/header/upperarrow.svg";
 
 import { motion } from "framer-motion";
-
-import ShortcutLMDT from "src/image/header/shortcut_lmdt.svg";
 
 export default function Navbars(props) {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);

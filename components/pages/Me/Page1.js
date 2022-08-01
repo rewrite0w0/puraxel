@@ -8,11 +8,20 @@ import style from "./page1.module.css";
 
 const Page1Intro1 = (props) => {
   return (
-    <Box sx={props.sx}>
-      <Typography sx={{ color: "red" }}>{meKr.Page1Intro1A}</Typography>
-      <Typography>{meKr.Page1Intro1B}</Typography>
-      <Typography sx={{ fontSize: "4vw" }}>{meKr.Page1Title}</Typography>
-    </Box>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        bottom: 0,
+      }}
+    >
+      <span style={{ fontSize: "2.5vw" }}>
+        <span style={{ color: "#A292A3" }}>{meKr.Page1Intro1A}</span>
+        <span style={{}}>{meKr.Page1Intro1B}</span>
+      </span>
+
+      <span style={{ fontSize: "4.25vw" }}>{meKr.Page1Title}</span>
+    </div>
   );
 };
 
