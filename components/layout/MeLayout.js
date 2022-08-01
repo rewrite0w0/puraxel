@@ -33,9 +33,11 @@ export default function MeLayout({ children }) {
           zIndex: 99,
           height: "10vh",
           // backgroundColor: 'blue',
-          right: 0,
-          left: "4vw",
+          // right: 0,
+          // left: "4vw",
           bottom: "1vh",
+          width: "100%",
+          justifyContent: "space-between",
         }}
       >
         <LinkButton

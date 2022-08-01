@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
 import meKr from "public/locales/kr/me";
-import flowerWithMe from "src/image/ME/me_01.png";
+import flowerWithMe from "src/image/ME/me_main.png";
 import style from "./page1.module.css";
 // import { ManualFractionPage1 } from "./ManualFraction";
 
@@ -51,7 +51,7 @@ const Page1Img = (props) => {
       alt="flower with ME"
       className={style.img}
       width={800}
-      height={600}
+      height={700}
       style={{ ...props.sx }}
     />
   );

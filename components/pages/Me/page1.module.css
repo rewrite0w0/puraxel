@@ -1,8 +1,9 @@
 .img {
-  background-color: white;
+  /* background-color: white; */
   /* z-index: 9999; */
-  position: "fixed";
-  height: "100vh";
+  /* position: "fixed"; */
+  /* height: "100vh"; */
+  margin-top: 1vh;
 }
 
 .imgContainer {
@@ -52,6 +53,7 @@
   /* align-items: center; */
   /* align-content: center; */
   display: flex;
+  margin-top: 1vw;
 }
 
 .containerLeftBottom {
