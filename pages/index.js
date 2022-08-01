@@ -69,8 +69,9 @@ export default function Home() {
 
       {/* 이미지 꽉 채우기 */}
 
-      <div className={style.imageStyle}></div>
-      {/* <Image src={mainImage} className={style.imageStyle} alt="PURAXEL ME" /> */}
+      <div className={style.imageStyle}>
+        {/* <Image src={mainImage} className={style.imageStyle} alt="PURAXEL ME" /> */}
+      </div>
     </div>
   );
 }
