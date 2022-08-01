@@ -25,11 +25,18 @@
 .containerLeftTop {
   /* background-color: black; */
   /* border: 10px solid red; */
+
+  /* background-color: violet; */
   display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* align-content: center; */
+  align-items: end;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  border-bottom: 1px solid gold;
 }
 .containerRightTop {
   /* background-color: blue; */
