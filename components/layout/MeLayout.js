@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import layoutStyle from 'components/pages/Me/mePage.module.css';
+import { motion } from "framer-motion";
+import layoutStyle from "components/pages/Me/mePage.module.css";
 
-import { Box } from '@mui/material';
+import { Box } from "@mui/material";
 
-import LinkButton from 'components/Footer/LinkButton';
-import LinkPriceButton from 'components/Footer/LinkPriceButton';
-import layoutFooterKr from 'public/locales/kr/layoutFooter.json';
+import LinkButton from "components/Footer/LinkButton";
+import LinkPriceButton from "components/Footer/LinkPriceButton";
+import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
 export default function MeLayout({ children }) {
   return (
@@ -26,14 +26,14 @@ export default function MeLayout({ children }) {
       </body>
       <footer
         style={{
-          position: 'fixed',
-          display: 'flex',
+          position: "fixed",
+          display: "flex",
           zIndex: 99,
-          height: '10vh',
+          height: "10vh",
           // backgroundColor: 'blue',
           right: 0,
-          left: '4vw',
-          bottom: '7vh',
+          left: "4vw",
+          bottom: "7vh",
         }}
       >
         <LinkButton
@@ -61,7 +61,7 @@ export default function MeLayout({ children }) {
         />
 
         <LinkButton
-          sx={{ marginLeft: '20vw' }}
+          sx={{ marginLeft: "42vw" }}
           buttonName="여기에 캐러셀 혹은 수동 캐러셀"
         />
       </footer>

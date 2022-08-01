@@ -8,7 +8,7 @@ export default function LinkButton(props) {
     <>
       <Box
         variant="text"
-        // className={style.btn}
+        // className={style.plainButton}
         className={_style.priceButton}
         startIcon={<StoreIcon />}
         style={{ ...props.sx }}
