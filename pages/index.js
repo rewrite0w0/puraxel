@@ -28,7 +28,7 @@ export default function Home() {
         style={{
           // background: "cyan",
           display: "grid",
-          gridTemplateColumns: "2fr 3fr",
+          gridTemplateColumns: "1fr 1.1fr",
           height: "30vh",
         }}
       >
@@ -39,14 +39,18 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            alignItems: "center",
+            alignItems: "flex-end",
             // margin: '1rem',
             // gap: '1rem',
           }}
         >
-          {/* 폰트 키우기 */}
-          <span>{mainKr.title1A}</span>
-          <span>{mainKr.title1B}</span>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            {/* 폰트 키우기 */}
+            <span style={{ fontSize: "2.5vw", color: "#A292A3" }}>
+              {mainKr.title1A}
+            </span>
+            <span style={{ fontSize: "3vw" }}>{mainKr.title1B}</span>
+          </div>
         </div>
 
         {/* 우측 상단 */}
@@ -56,14 +60,15 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "end",
+            marginLeft: "2vw",
           }}
         >
           {/* 폰트 키우기 윗줄 */}
-          <span>{mainKr.explain1A}</span>
-          <span>{mainKr.explain1B}</span>
+          <span style={{ fontSize: "1vw" }}>{mainKr.explain1A}</span>
+          <span style={{ fontSize: "1vw" }}>{mainKr.explain1B}</span>
           {/* 폰트 키우기 아랫줄 */}
-          <span>{mainKr.explain1A}</span>
-          <span>{mainKr.explain1B}</span>
+          <span style={{ fontSize: "0.6vw" }}>{mainKr.explain1A}</span>
+          <span style={{ fontSize: "0.6vw" }}>{mainKr.explain1B}</span>
         </div>
       </div>
 
