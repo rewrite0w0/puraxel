@@ -100,7 +100,7 @@ export default function Page2(props) {
         >
           <Paper
             sx={{
-              height: "60vh",
+              height: "63vh",
               display: "grid",
               gridTemplateRows: "0.8fr 2fr 2fr",
               padding: "5rem",
@@ -349,6 +349,7 @@ export default function Page2(props) {
               width: "25vw",
               height: "50vh",
               borderRadius: "50%",
+              marginRight: "2vw",
             }}
           >
             {/* 오른쪽 동그라미 */}

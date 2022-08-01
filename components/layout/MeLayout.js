@@ -7,6 +7,8 @@ import LinkButton from "components/Footer/LinkButton";
 import LinkPriceButton from "components/Footer/LinkPriceButton";
 import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
+import StoreIcon from "@mui/icons-material/Store";
+
 export default function MeLayout({ children }) {
   return (
     <div>
@@ -33,12 +35,13 @@ export default function MeLayout({ children }) {
           // backgroundColor: 'blue',
           right: 0,
           left: "4vw",
-          bottom: "7vh",
+          bottom: "1vh",
         }}
       >
         <LinkButton
-          buttonName={layoutFooterKr.ShoppingMallLink}
+          title={layoutFooterKr.ShoppingMallLink}
           link="https://qwant.com"
+          icon={<StoreIcon />}
         />
 
         <LinkPriceButton
@@ -62,7 +65,7 @@ export default function MeLayout({ children }) {
 
         <LinkButton
           sx={{ marginLeft: "42vw" }}
-          buttonName="여기에 캐러셀 혹은 수동 캐러셀"
+          title="여기에 캐러셀 혹은 수동 캐러셀"
         />
       </footer>
     </div>

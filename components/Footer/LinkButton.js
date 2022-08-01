@@ -17,9 +17,9 @@ export default function LinkButton(props) {
         }}
       >
         <span>
-          {props.icon}
+          {props.icon ? props.icon : ""}
           {/* <StoreIcon /> */}
-          {props.buttonName}
+          {props.title ? props.title : ""}
         </span>
       </Box>
     </>
