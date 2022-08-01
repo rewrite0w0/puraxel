@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Menu, Button } from "@mui/material";
+import { Box, Menu, Button, MenuItem } from "@mui/material";
 
 import style from "../layout/Layout.module.css";
 import navStyle from "./Nav.module.css";
@@ -45,6 +45,7 @@ export default function Navbars(props) {
   };
 
   const companyInfoOpenStateCodition = companyOpenState === false;
+  const snsCodition = snsOpenState === false;
 
   return (
     <Box className={style.header} style={{ ...props.sx }}>
@@ -82,7 +83,47 @@ export default function Navbars(props) {
       </Box>
 
       <Box className={navStyle.rightNav}>
-        <NavIconButton title={layoutHeaderKr.sns}></NavIconButton>
+        <Button onClick={handleSNSButton} className={navStyle.buttonStyle}>
+          {layoutHeaderKr.sns}
+          <Menu
+            open={snsOpenState}
+            onClose={handleSNSCloseButton}
+            anchorEl={snsAnchorState}
+          >
+            <div
+              style={{
+                height: "100%",
+                width: "10vw",
+                padding: "1rem",
+              }}
+            >
+              <MenuItem
+                onClick={() => {
+                  window.open("https://facebook.com", "_blank");
+                }}
+                onWheelCapture
+              >
+                FACEBOOK
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  window.open("https://youtube.com", "_blank");
+                }}
+              >
+                YOUTUBE
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  window.open("https://naver.com", "_blank");
+                }}
+              >
+                NAVERBLOG
+              </MenuItem>
+            </div>
+          </Menu>
+        </Button>
+
+        {/* <NavIconButton title={layoutHeaderKr.sns}></NavIconButton> */}
 
         <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton>
 
