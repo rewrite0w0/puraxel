@@ -1,21 +1,21 @@
-import { useState } from 'react';
-import { Box, Menu, Button } from '@mui/material';
+import { useState } from "react";
+import { Box, Menu, Button } from "@mui/material";
 
-import style from '../layout/Layout.module.css';
-import navStyle from './Nav.module.css';
+import style from "../layout/Layout.module.css";
+import navStyle from "./Nav.module.css";
 
-import Image from 'next/image';
-import layoutHeaderKr from 'public/locales/kr/layoutHeader.json';
+import Image from "next/image";
+import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
-import NavIconButton from 'components/Nav/NavIconButton';
+import NavIconButton from "components/Nav/NavIconButton";
 
-const buttonStyle = { fontSize: '1.4vw' };
+const buttonStyle = { fontSize: "1.4vw" };
 
-import PuraxelLogo from 'src/image/header/puraxel_logo_basic.svg';
-import PuraxelLogoColor from 'src/image/header/puraxel_logo_basic.svg';
-import { motion } from 'framer-motion';
+import PuraxelLogo from "src/image/header/puraxel_logo_basic.svg";
+import PuraxelLogoColor from "src/image/header/puraxel_logo_basic.svg";
+import { motion } from "framer-motion";
 
-export default function Navbars() {
+export default function Navbars(props) {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
   const [companyInfoAnchorState, setCompanyInfoAnchorState] =
     useState(undefined);
@@ -47,26 +47,26 @@ export default function Navbars() {
   const companyInfoOpenStateCodition = companyOpenState === false;
 
   return (
-    <Box className={style.header}>
+    <Box className={style.header} style={{ ...props.sx }}>
       <Box
         onClick={() => {
-          location.href = '/';
+          location.href = "/";
         }}
       >
         <Image
           src={PuraxelLogo}
           alt="PuraxelLogoColor"
           className={navStyle.logo}
-          style={{ backgroundColor: 'pink' }}
-          width={'10vw'}
-          height={'20vh'}
+          style={{ backgroundColor: "pink" }}
+          width={"10vw"}
+          height={"20vh"}
         />
       </Box>
 
       <Box>
         <NavIconButton
           onClick={() => {
-            location.href = '/me';
+            location.href = "/me";
           }}
           title={layoutHeaderKr.me}
           sx={buttonStyle}
@@ -74,7 +74,7 @@ export default function Navbars() {
 
         <NavIconButton
           onClick={() => {
-            location.href = '/fx5000';
+            location.href = "/fx5000";
           }}
           title={layoutHeaderKr.fx5000}
           sx={buttonStyle}
@@ -100,19 +100,19 @@ export default function Navbars() {
           >
             <div
               style={{
-                height: '100%',
-                width: '30vw',
-                padding: '1rem',
+                height: "100%",
+                width: "30vw",
+                padding: "1rem",
               }}
             >
               <h1
                 onClick={() => {
-                  window.open('https://www.lameditech.com/');
+                  window.open("https://www.lameditech.com/");
                 }}
               >
                 {layoutHeaderKr.companyInfoName}
               </h1>
-              <div style={{ color: 'gray' }}>
+              <div style={{ color: "gray" }}>
                 <p>{layoutHeaderKr.companyInfoRep}</p>
                 <p>{layoutHeaderKr.companyInfoLicense}</p>
                 <p>{layoutHeaderKr.companyInfoAddress1A}</p>

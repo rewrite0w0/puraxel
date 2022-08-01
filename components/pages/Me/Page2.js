@@ -94,7 +94,7 @@ export default function Page2(props) {
           display={"grid"}
           sx={{
             gridTemplateColumns: "2fr 0.4fr",
-            marginTop: "0.5vh",
+            marginTop: "2vh",
             marginLeft: "3vw",
           }}
         >
