@@ -67,7 +67,9 @@ export default function Page1() {
       <motion.div className={style.containerLeftBottom}>
         <Page1Explain />
       </motion.div>
-      {/* <motion.div className={style.containerRightBottom}>4</motion.div> */}
+      <motion.div className={style.containerRightBottom}>
+        {/* empty */}
+      </motion.div>
     </motion.div>
   );
 }
