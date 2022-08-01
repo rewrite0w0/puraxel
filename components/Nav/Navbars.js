@@ -15,6 +15,8 @@ import PuraxelLogo from "src/image/header/puraxel_logo_basic.svg";
 import PuraxelLogoColor from "src/image/header/puraxel_logo_basic.svg";
 import { motion } from "framer-motion";
 
+import ShortcutLMDT from "src/image/header/shortcut_lmdt.svg";
+
 export default function Navbars(props) {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
   const [companyInfoAnchorState, setCompanyInfoAnchorState] =
@@ -102,7 +104,7 @@ export default function Navbars(props) {
       </Box>
 
       <Box className={navStyle.rightNav}>
-        <Button onClick={handleSNSButton} className={navStyle.buttonStyle}>
+        <Button onClick={handleSNSButton} className={navStyle.buttonStyleKr}>
           {layoutHeaderKr.sns}
           <Menu
             open={snsOpenState}
@@ -147,15 +149,15 @@ export default function Navbars(props) {
 
         {/* <NavIconButton title={layoutHeaderKr.sns}></NavIconButton> */}
 
-        <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton>
+        {/* <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton> */}
 
         <Button
           onClick={handleCompanyInfoButton}
           className={navStyle.buttonStyleKr}
         >
           {companyInfoOpenStateCodition
-            ? layoutHeaderKr.companyInfoCurrentStateClose
-            : layoutHeaderKr.companyInfoCurrentStateOpen}
+            ? layoutHeaderKr.lameditechInfoOpen
+            : layoutHeaderKr.lameditechInfoClose}
           <Menu
             open={companyOpenState}
             onClose={handleCompanyInfoCloseButton}
@@ -168,13 +170,32 @@ export default function Navbars(props) {
                 padding: "1rem",
               }}
             >
-              <h1
-                onClick={() => {
-                  window.open("https://www.lameditech.com/");
+              <p
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
                 }}
               >
-                {layoutHeaderKr.companyInfoName}
-              </h1>
+                <span>{layoutHeaderKr.companyInfoName}</span>
+
+                <span
+                  onClick={() => {
+                    window.open("https://www.lameditech.com/");
+                  }}
+                  style={{
+                    fontSize: "0.3vw",
+                    background: "gray",
+                    borderRadius: "1.25px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "3vw",
+                    cursor: "pointer",
+                  }}
+                >
+                  라메디텍 바로가기↗
+                </span>
+              </p>
               <div style={{ color: "gray" }}>
                 <p>{layoutHeaderKr.companyInfoRep}</p>
                 <p>{layoutHeaderKr.companyInfoLicense}</p>
