@@ -9,7 +9,7 @@ import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
 import NavIconButton from "components/Nav/NavIconButton";
 
-const buttonStyle = { fontSize: "1.4vw" };
+const buttonStyle = { fontSize: "1vw" };
 
 import PuraxelLogo from "src/image/header/puraxel_logo_basic.svg";
 import PuraxelLogoColor from "src/image/header/puraxel_logo_basic.svg";
@@ -82,6 +82,22 @@ export default function Navbars(props) {
             title={layoutHeaderKr.fx5000}
             sx={buttonStyle}
           />
+
+          <NavIconButton
+            onClick={() => {
+              location.href = "/hair";
+            }}
+            title={layoutHeaderKr.hair}
+            sx={buttonStyle}
+          />
+
+          <NavIconButton
+            onClick={() => {
+              location.href = "/tech";
+            }}
+            title={layoutHeaderKr.puraTech}
+            sx={buttonStyle}
+          />
         </Box>
       </Box>
 
@@ -96,7 +112,7 @@ export default function Navbars(props) {
             <div
               style={{
                 height: "100%",
-                width: "10vw",
+                width: "5vw",
                 padding: "1rem",
               }}
             >
