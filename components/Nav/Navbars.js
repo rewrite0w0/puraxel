@@ -164,47 +164,53 @@ export default function Navbars(props) {
             open={companyOpenState}
             onClose={handleCompanyInfoCloseButton}
             anchorEl={companyInfoAnchorState}
+            // className={navStyle.applyKRFont}
           >
             <div
               style={{
                 height: "100%",
-                width: "30vw",
-                padding: "1rem",
+                width: "20vw",
+                padding: "2rem",
               }}
             >
               <p
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
+                  fontSize: "1vw",
                 }}
               >
-                <span>{layoutHeaderKr.companyInfoName}</span>
+                <span style={{ fontSize: "1.4vw" }}>
+                  {layoutHeaderKr.companyInfoName}
+                </span>
 
                 <span
                   onClick={() => {
                     window.open("https://www.lameditech.com/");
                   }}
                   style={{
-                    fontSize: "0.3vw",
-                    background: "gray",
-                    borderRadius: "0.25rem",
+                    color: "#7E818D",
+                    background: "#F2F3F6",
+                    borderRadius: "0.4rem",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    width: "3vw",
+                    // width: "3vw",
+                    paddingLeft: "0.25vw",
+                    paddingRight: "0.25vw",
                     cursor: "pointer",
                   }}
                 >
-                  라메디텍 바로가기
-                  <Image
+                  라메디텍 바로가기↗
+                  {/* <Image
                     src={upperArrow}
-                    width={10}
-                    height={10}
+                    // width={10}
+                    // height={10}
                     alt="upperArrow"
-                  />
+                  /> */}
                 </span>
               </p>
-              <div style={{ color: "gray" }}>
+              <div style={{ color: "gray", fontSize: "0.7vw" }}>
                 <p>{layoutHeaderKr.companyInfoRep}</p>
                 <p>{layoutHeaderKr.companyInfoLicense}</p>
                 <p>{layoutHeaderKr.companyInfoAddress1A}</p>
