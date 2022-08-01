@@ -39,11 +39,14 @@
 .logo {
   /* background-color: pink; */
   /* margin-top: 0.5vh; */
+  display: flex;
+  align-self: center;
   width: 10vw;
+  height: 2vw;
   margin-left: 1vw;
   margin-right: 2vw;
   content: url(../../src/image/header/gnb_home_active_hover.svg);
-  size: 1rem;
+  /* size: 1rem; */
 
   /* background-image: url(../../src/image/header/gnb_logo_default.svg); */
   /* background-size: cover; */
@@ -51,6 +54,7 @@
 
 .logo:hover {
   cursor: pointer;
+  filter: opacity(50%);
 }
 
 .leftNav {
