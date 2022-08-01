@@ -1,9 +1,32 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
+/* @import url("../../styles/fontface.css"); */
+
+@font-face {
+  font-family: "ENFont";
+  src: url("../../src/fonts/CaviarDreams.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ENFontB";
+  src: url("../../src/fonts/CaviarDreams_Bold.woff") format("woff");
+}
+
 .buttonStyle {
+  font-family: "ENFont", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
+  /* font-family: "ENFont"; */
+  color: gray;
+  width: 12vw;
+  font-size: 1vw;
+}
+
+.buttonStyleKr {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
+  /* font-family: "ENFont"; */
   color: gray;
   width: 12vw;
   font-size: 1vw;
@@ -27,4 +50,16 @@
 
 .rightNav {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.applyENFont {
+  font-family: "ENFont";
+}
+
+.applyKRFont {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
 }

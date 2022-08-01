@@ -98,6 +98,15 @@ export default function Navbars(props) {
               }}
             >
               <MenuItem
+                className={navStyle.applyENFont}
+                onClick={() => {
+                  window.open("https://instagram.com", "_blank");
+                }}
+              >
+                INSTAGRAM
+              </MenuItem>
+              <MenuItem
+                className={navStyle.applyENFont}
                 onClick={() => {
                   window.open("https://facebook.com", "_blank");
                 }}
@@ -106,18 +115,12 @@ export default function Navbars(props) {
                 FACEBOOK
               </MenuItem>
               <MenuItem
+                className={navStyle.applyENFont}
                 onClick={() => {
                   window.open("https://youtube.com", "_blank");
                 }}
               >
                 YOUTUBE
-              </MenuItem>
-              <MenuItem
-                onClick={() => {
-                  window.open("https://naver.com", "_blank");
-                }}
-              >
-                NAVERBLOG
               </MenuItem>
             </div>
           </Menu>
@@ -129,7 +132,7 @@ export default function Navbars(props) {
 
         <Button
           onClick={handleCompanyInfoButton}
-          className={navStyle.buttonStyle}
+          className={navStyle.buttonStyleKr}
         >
           {companyInfoOpenStateCodition
             ? layoutHeaderKr.companyInfoCurrentStateClose
