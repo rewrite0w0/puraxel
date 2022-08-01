@@ -13,6 +13,8 @@ const buttonStyle = { fontSize: "1vw" };
 
 import PuraxelLogo from "src/image/header/puraxel_logo_basic.svg";
 import PuraxelLogoColor from "src/image/header/puraxel_logo_basic.svg";
+import upperArrow from "src/image/header/upperarrow.svg";
+
 import { motion } from "framer-motion";
 
 import ShortcutLMDT from "src/image/header/shortcut_lmdt.svg";
@@ -185,7 +187,7 @@ export default function Navbars(props) {
                   style={{
                     fontSize: "0.3vw",
                     background: "gray",
-                    borderRadius: "1.25px",
+                    borderRadius: "0.25rem",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -193,7 +195,13 @@ export default function Navbars(props) {
                     cursor: "pointer",
                   }}
                 >
-                  라메디텍 바로가기↗
+                  라메디텍 바로가기
+                  <Image
+                    src={upperArrow}
+                    width={10}
+                    height={10}
+                    alt="upperArrow"
+                  />
                 </span>
               </p>
               <div style={{ color: "gray" }}>
