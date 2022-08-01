@@ -11,8 +11,8 @@ import NavIconButton from "components/Nav/NavIconButton";
 
 const buttonStyle = { fontSize: "1vw" };
 
-import PuraxelLogo from "src/image/header/puraxel_logo_basic.svg";
-import PuraxelLogoColor from "src/image/header/puraxel_logo_basic.svg";
+import puraxelLogo from "src/image/header/gnb_home_active_hover.svg";
+
 import upperArrow from "src/image/header/upperarrow.svg";
 
 import { motion } from "framer-motion";

@@ -4,6 +4,8 @@
   margin-top: 1vh;
   /* background: url(../src/image/ME/main_01.png); */
   /* display: flex; */
-  background-image: url(../src/image/ME/main_01.png);
-  background-size: cover;
+  /* background-image: url(../src/image/ME/main_01.png);
+  background-size: cover; */
+
+  content: url(../src/image/ME/main_01.png);
 }
