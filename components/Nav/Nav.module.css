@@ -18,7 +18,7 @@
     "Noto Sans KR", "Malgun Gothic", sans-serif;
   /* font-family: "ENFont"; */
   color: gray;
-  width: 12vw;
+  /* width: 12vw; */
   font-size: 1vw;
 }
 
@@ -28,7 +28,7 @@
     "Malgun Gothic", sans-serif;
   /* font-family: "ENFont"; */
   color: gray;
-  width: 12vw;
+  /* width: 12vw; */
   font-size: 1vw;
 }
 
@@ -41,11 +41,15 @@
 }
 
 .logo {
-  /* background-color: pink; */
-  margin-top: 0.5vh;
+  background-color: pink;
+  /* margin-top: 0.5vh; */
+  width: 10vw;
 }
 
 .leftNav {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .rightNav {

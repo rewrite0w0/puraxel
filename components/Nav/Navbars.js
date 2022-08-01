@@ -49,37 +49,40 @@ export default function Navbars(props) {
 
   return (
     <Box className={style.header} style={{ ...props.sx }}>
-      <Box
-        onClick={() => {
-          location.href = "/";
-        }}
-      >
-        <Image
-          src={PuraxelLogo}
-          alt="PuraxelLogoColor"
+      <Box className={navStyle.leftNav}>
+        <Box
           className={navStyle.logo}
-          style={{ backgroundColor: "pink" }}
-          width={"10vw"}
-          height={"20vh"}
-        />
-      </Box>
-
-      <Box>
-        <NavIconButton
           onClick={() => {
-            location.href = "/me";
+            location.href = "/";
           }}
-          title={layoutHeaderKr.me}
-          sx={buttonStyle}
-        />
+        >
+          {/* <Image
+            src={PuraxelLogo}
+            alt="PuraxelLogoColor"
+            className={navStyle.logo}
+            style={{ backgroundColor: "pink" }}
+            width={"10vw"}
+            height={"20vh"}
+          /> */}
+        </Box>
 
-        <NavIconButton
-          onClick={() => {
-            location.href = "/fx5000";
-          }}
-          title={layoutHeaderKr.fx5000}
-          sx={buttonStyle}
-        />
+        <Box>
+          <NavIconButton
+            onClick={() => {
+              location.href = "/me";
+            }}
+            title={layoutHeaderKr.me}
+            sx={buttonStyle}
+          />
+
+          <NavIconButton
+            onClick={() => {
+              location.href = "/fx5000";
+            }}
+            title={layoutHeaderKr.fx5000}
+            sx={buttonStyle}
+          />
+        </Box>
       </Box>
 
       <Box className={navStyle.rightNav}>
