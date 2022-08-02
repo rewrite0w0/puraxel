@@ -8,6 +8,8 @@
   align-items: center;
   /* justify-content: center; */
   /* background-color: pink; */
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 /* 여기서 바디 색 전부를 고침 */
@@ -19,7 +21,7 @@
     rgba(255, 255, 255, 0.3),
     rgba(252, 209, 215, 0.7)
   ); */
-
+  /* margin: 80px; */
   /* 여기서 하단 다 주는데 나중에 상태관리로 페이지마자 색깔 줘야 함 */
   /* 할 때, 버튼 밑줄이랑, 폰트랑, kr/en 구분도 해야 함 */
   background: linear-gradient(#fff, #e9caf4);

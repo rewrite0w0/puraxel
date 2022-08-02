@@ -45,3 +45,26 @@ a {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
 } */
+
+.MuiFormControl-root > * {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+
+.MuiOutlinedInput-input {
+  color: pink;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: 0;
+  outline: 0;
+}
+
+/* .muioutlinedinput-input::placeholder {
+  color: red;
+} */
+
+.MuiSelect-select {
+  color: gray;
+}

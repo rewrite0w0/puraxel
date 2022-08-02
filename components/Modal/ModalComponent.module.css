@@ -14,7 +14,8 @@
 }
 
 .left {
-  background: skyblue;
+  /* font-family: "ENFont"; */
+  /* background: skyblue; */
   font-size: 1vw;
 
   display: grid;
@@ -28,7 +29,9 @@
 } */
 
 .right {
-  background: yellowgreen;
+  /* font-family: "ENFont"; */
+  font-size: 1vw;
+  /* background: yellowgreen; */
   /* display: flex;
   flex-direction: column; */
   display: grid;
@@ -55,4 +58,15 @@
   padding: 4vh;
 
   display: flex;
+}
+
+.buttonStyle {
+  color: gray;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+
+.buttonStyle:hover {
+  color: pink;
 }

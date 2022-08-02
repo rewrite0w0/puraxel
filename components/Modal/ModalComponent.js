@@ -113,6 +113,8 @@ export default function ModalComponent() {
         }}
       /> */}
 
+      {/* 그리드 좌측 */}
+
       <Box className={buttonStyle.priceButton} onClick={handleOpenModal}>
         {modalKr.modalButtonTitle}
       </Box>
@@ -121,7 +123,7 @@ export default function ModalComponent() {
           <Box className={style.left}>
             {/* 1 */}
             <Box>
-              <h1>{modalKr.modalTitle}</h1>
+              <span>{modalKr.modalTitle}</span>
             </Box>
             {/* 2 */}
             <Box>
@@ -187,19 +189,20 @@ export default function ModalComponent() {
                   icon={<CheckCircleOutlineIcon />}
                   checkedIcon={<CheckCircleIcon />}
                   sx={{
-                    "& .MuiSvgIcon-root": { fontSize: "2.8rem" },
+                    "& .MuiSvgIcon-root": { fontSize: "1vw" },
                     color: "pink",
                     "&.Mui-checked": {
-                      color: "red",
+                      color: "gray",
                     },
                   }}
                 />
-                <Typography>{modalKr.modalAgreeCheck}</Typography>
+                <Typography sx={{ fontSize: "0.9vw", color: "gray" }}>
+                  {modalKr.modalAgreeCheck}
+                </Typography>
+                &nbsp;
                 <Typography
-                  // onClick={() =>
-                  //   window.open("/agreeDetailInfomation", "_blank")
-                  // }
                   onClick={handleOpenAgreeNoticeDialog}
+                  sx={{ cursor: "pointer", fontSize: "0.8vw", color: "gray" }}
                 >
                   {modalKr.modalAgreeDetail}
                 </Typography>
@@ -208,31 +211,40 @@ export default function ModalComponent() {
             </Box>
           </Box>
 
+          {/* 그리드 우측 */}
           {/* <Box className={style.center}></Box> */}
           <Box className={style.right}>
             {/* 1 */}
-            {/*  */}
+            {/* 언어 버튼 선택 */}
             <Box>
               <ButtonGroup style={{ display: "flex" }}>
-                <Button>{modalKr.modalLangKr}</Button>
-                <Button>{modalKr.modalLangEn}</Button>
-                <Button>{modalKr.modalLangCh}</Button>
+                <Button variant="text" className={style.buttonStyle}>
+                  {modalKr.modalLangKr}
+                </Button>
+                <Button variant="text" className={style.buttonStyle}>
+                  {modalKr.modalLangEn}
+                </Button>
+                <Button variant="text" className={style.buttonStyle}>
+                  {modalKr.modalLangCh}
+                </Button>
               </ButtonGroup>
             </Box>
-            {/*  */}
             {/* 2 */}
+            {/* 문의 제목 */}
             <Box>
               <TextField label={modalKr.modalAskTitle} required />
             </Box>
             {/* 3 */}
+            {/* 문의 내용 */}
             <Box>
               <TextField
-                placeholder={modalKr.modalAskContentPlaceholder}
+                label={modalKr.modalAskContent}
+                // placeholder={modalKr.modalAskContentPlaceholder}
                 required
               />
             </Box>
-            {/*  */}
             {/* 4 */}
+            {/* 여러가지 안내 사항 */}
             <Box>
               <Box style={{ display: "flex" }}>
                 <Typography>

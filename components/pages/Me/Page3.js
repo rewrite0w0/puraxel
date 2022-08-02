@@ -80,7 +80,7 @@ export default function Page3() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube-nocookie.com/embed/X6oDTHJnxq4?controls=1&rel=0&disablekb=1&autoplay=1&loop=1"
+            src="https://www.youtube-nocookie.com/embed/X6oDTHJnxq4?controls=1&rel=0&disablekb=1&autoplay=1&loop=1&mute=0&modestbranding=1"
             title="How to use PURAXEL"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
