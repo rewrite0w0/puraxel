@@ -1,7 +1,7 @@
-import { Box, Paper, Typography } from "@mui/material";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Box, Paper } from "@mui/material";
+// import { Swiper, SwiperSlide } from "swiper/react";
 // import { ManualFractionPage2 } from "../../Parts/ManualFraction";
-import Swipers from "../../Swipers";
+// import Swipers from "../../Swipers";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import meKr from "public/locales/kr/me.json";
@@ -14,46 +14,59 @@ import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRou
 
 const LaserExplain = (props) => {
   return (
-    <Box>
+    <div>
+      <br />
+      <br />
       <span>{meKr.Page2LaserTitle}</span>
-      <span>{meKr.Page2LaserExplain1A}</span>
+      <br />
+      <br />
+      {/* <span>{meKr.Page2LaserExplain1A}</span>
       <span>{meKr.Page2LaserExplain1B}</span>
-      <span>{meKr.Page2LaserExplain1C}</span>
+      <span>{meKr.Page2LaserExplain1C}</span> */}
+      <span>{meKr.Page2LaserExplain}</span>
+      <br />
+      <br />
       <span>
         {meKr.Page2LaserTechExplain1A}
         {meKr.Page2LaserTechExplain1B}
       </span>
-    </Box>
+    </div>
   );
 };
 
 const GalvanicExplain = (props) => {
   return (
-    <Box>
+    <div>
+      <br />
+      <br />
       <span>{meKr.Page2GalvanicTitle}</span>
-      <span>{meKr.Page2GalvanicExplain1A}</span>
+      <br />
+      <br />
+      {/* <span>{meKr.Page2GalvanicExplain1A}</span>
       <span>{meKr.Page2GalvanicExplain1B}</span>
       <span>{meKr.Page2GalvanicExplain1C}</span>
-      <span>{meKr.Page2GalvanicExplain1D}</span>
-
+      <span>{meKr.Page2GalvanicExplain1D}</span> */}
+      <span>{meKr.Page2GalvanicExplain}</span>
+      <br />
+      <br />
       <span>
         <span>
           {meKr.Page2GalvanicTechExplain1A}
           <span> </span>
 
-          <span style={{ fontSize: "0.5vw", color: "rgba(0,0,0, 0.25)" }}>
+          <span style={{ fontSize: "0.7vw", color: "rgba(0,0,0, 0.25)" }}>
             {meKr.Page2GalvanicTechExplain1B}
           </span>
         </span>
-
+        &nbsp;
         <span>
           {meKr.Page2GalvanicTechExplain2A}
-          <span style={{ fontSize: "0.5vw", color: "rgba(0,0,0, 0.25)" }}>
+          <span style={{ fontSize: "0.7vw", color: "rgba(0,0,0, 0.25)" }}>
             {meKr.Page2GalvanicTechExplain2B}
           </span>
         </span>
       </span>
-    </Box>
+    </div>
   );
 };
 
@@ -78,8 +91,13 @@ export default function Page2(props) {
   // const laserCondition = laserSelector === true;
 
   const DISABLECOLOR = "rgba(0, 0, 0, 0.25)";
-  const GRAY = "#F2F3F6";
+  const _GRAY = "#F2F3F6";
   const PURPLE = "#A590FA";
+  const _GRAY2 = "rgba(217, 217, 217, 0.7)";
+  const _WHITE = "rgba(255, 255, 255, 1)";
+  const WHITEGRADIENT = "linear-gradient(#EFEFEF, #FFFFFF)";
+  const PURPLEGRADIENT =
+    "linear-gradient(180deg, #F9F5FD 0%, rgba(255, 255, 255, 0) 50%)";
 
   return (
     <Box
@@ -130,13 +148,14 @@ export default function Page2(props) {
                 // border: "5px solid red",
                 display: "grid",
                 gridTemplateRows: "0.5fr 2fr",
-                backgroundColor: modeCondition ? "aliceblue" : DISABLECOLOR,
+                background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
               }}
             >
               <Box
                 sx={{
                   padding: "1vh",
                   color: modeCondition ? PURPLE : DISABLECOLOR,
+                  // background: modeCondition ? PURPLEGRADIENT : DISABLECOLOR,
                 }}
               >
                 {meKr.Page2ContainerLaserTitle}
@@ -170,7 +189,7 @@ export default function Page2(props) {
                 sx={{
                   position: "fixed",
                   color: "rgba(0,0,0,0.4)",
-                  backgroundColor: "rgba(255,255,255,0.4)",
+                  background: "rgba(255,255,255,0.4)",
                   backdropFilter: "blur('50px')",
                   fontSize: "3vw",
                 }}
@@ -183,13 +202,14 @@ export default function Page2(props) {
                 // border: '5px solid blue',
                 display: "grid",
                 gridTemplateRows: "1fr 2fr",
-                backgroundColor: !modeCondition ? "aliceblue" : DISABLECOLOR,
+                background: !modeCondition ? _WHITE : DISABLECOLOR,
               }}
             >
               <Box
                 sx={{
                   padding: "1vh",
                   color: !modeCondition ? PURPLE : DISABLECOLOR,
+                  // background: !modeCondition ? PURPLEGRADIENT : DISABLECOLOR,
                 }}
               >
                 {meKr.Page2ContainerGalvanicTitle}
@@ -216,6 +236,7 @@ export default function Page2(props) {
         <Box>
           <Paper
             onClick={selectorLaser}
+            // elevation={0}
             sx={{
               width: "10vh",
               height: "4vh",
@@ -226,7 +247,8 @@ export default function Page2(props) {
               alignContent: "center",
               justifyContent: "center",
               alignItems: "center",
-              background: modeCondition ? "pink" : DISABLECOLOR,
+
+              background: modeCondition ? "white" : DISABLECOLOR,
             }}
           >
             <div
@@ -255,7 +277,7 @@ export default function Page2(props) {
               alignContent: "center",
               justifyContent: "center",
               alignItems: "center",
-              background: !modeCondition ? "pink" : DISABLECOLOR,
+              background: !modeCondition ? "white" : DISABLECOLOR,
             }}
           >
             {/* <Typography sx={{ fontSize: "0.5vw" }}> */}
