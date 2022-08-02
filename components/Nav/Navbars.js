@@ -102,7 +102,11 @@ export default function Navbars(props) {
       </Box>
 
       <Box className={navStyle.rightNav}>
-        <Button onClick={handleSNSButton} className={navStyle.buttonStyleKr}>
+        <Button
+          onClick={handleSNSButton}
+          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
+          disableRipple
+        >
           {layoutHeaderKr.sns}
           <Menu
             open={snsOpenState}
@@ -117,6 +121,7 @@ export default function Navbars(props) {
               }}
             >
               <MenuItem
+                disableRipple
                 className={navStyle.applyENFont}
                 onClick={() => {
                   window.open("https://www.instagram.com/puraxel/", "_blank");
@@ -125,6 +130,7 @@ export default function Navbars(props) {
                 INSTAGRAM
               </MenuItem>
               <MenuItem
+                disableRipple
                 className={navStyle.applyENFont}
                 onClick={() => {
                   window.open(
@@ -137,6 +143,7 @@ export default function Navbars(props) {
                 FACEBOOK
               </MenuItem>
               <MenuItem
+                disableRipple
                 className={navStyle.applyENFont}
                 onClick={() => {
                   window.open(
@@ -156,8 +163,10 @@ export default function Navbars(props) {
         {/* <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton> */}
 
         <Button
+          disableRipple
           onClick={handleCompanyInfoButton}
-          className={navStyle.buttonStyleKr}
+          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
+          sx={{ marginLeft: "40px" }}
         >
           {companyInfoOpenStateCodition
             ? layoutHeaderKr.lameditechInfoOpen
@@ -226,11 +235,13 @@ export default function Navbars(props) {
         </Button>
         <NavIconButton
           title={layoutHeaderKr.kr}
-          className={navStyle.buttonStyleKr}
+          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
+          sx={{ marginLeft: "53px" }}
         ></NavIconButton>
         <NavIconButton
           title={layoutHeaderKr.en}
-          className={navStyle.buttonStyleKr}
+          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
+          sx={{ marginLeft: "16px" }}
         ></NavIconButton>
       </Box>
     </Box>

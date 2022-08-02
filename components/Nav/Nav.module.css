@@ -28,10 +28,12 @@
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
   /* font-family: "ENFont"; */
-  color: var(--primary01);
   /* width: 12vw; */
+}
+
+.subMenu {
+  color: var(--grayScale06);
   font-size: 12px;
-  margin-left: 40px;
 }
 
 .buttonStyle:hover {
