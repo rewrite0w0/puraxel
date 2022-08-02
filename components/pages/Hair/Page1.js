@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Image from "next/image";
 import meKr from "public/locales/kr/me";
 import flowerWithMe from "src/image/ME/me_main.png";
@@ -12,35 +12,46 @@ const Page1Intro1 = (props) => {
       style={{
         display: "flex",
         flexDirection: "column",
-        bottom: 0,
+        marginLeft: "15.5vw",
       }}
     >
       <span style={{ fontSize: "2.5vw" }}>
-        <span style={{ color: "#A292A3" }}>{meKr.Page1Intro1A}</span>
+        <span style={{ color: "#A292A3" }}>{meKr.Page1Intro1A}</span>&nbsp;
         <span style={{}}>{meKr.Page1Intro1B}</span>
       </span>
 
-      <span style={{ fontSize: "4.25vw" }}>{meKr.Page1Title}</span>
+      <span style={{ fontSize: "4.25vw" }} className={style.fontEN}>
+        {/* {meKr.Page1Title} */}
+        PURAXEL-HAIR
+      </span>
     </div>
   );
 };
 
 const Page1Explain = (props) => {
   return (
-    <Box sx={props.sx}>
-      <Typography>
-        <Typography>{meKr.Page1Explain1A}</Typography>
-        <Typography>
-          {meKr.Page1Explain1B}
-          {meKr.Page1Explain1C}
-          {meKr.Page1Explain1D}
-        </Typography>
+    <div style={{ fontSize: "1.2vw", marginLeft: "3.3vw" }}>
+      <span>
+        <span>{meKr.Page1Explain1A}</span>
         <br />
-        <Typography>{meKr.Page1Explain2A}</Typography>
-        <Typography>{meKr.Page1Explain2B}</Typography>
-        <Typography>{meKr.Page1Explain2C}</Typography>
-      </Typography>
-    </Box>
+        <span>
+          <span>{meKr.Page1Explain1B}</span>
+          <span>{meKr.Page1Explain1C}</span>
+          <span>{meKr.Page1Explain1D}</span>
+        </span>
+        <br />
+        <br />
+
+        <span style={{ fontWeight: "lighter" }}>
+          <span>{meKr.Page1Explain2A}</span>
+          <br />
+          <span>{meKr.Page1Explain2B}</span>
+          <br />
+          <span>{meKr.Page1Explain2C}</span>
+          <br />
+        </span>
+      </span>
+    </div>
   );
 };
 
@@ -69,9 +80,11 @@ export default function Page1() {
     >
       <motion.div className={style.containerLeftTop}>
         <Page1Intro1 />
+        {/* <hr className={style.borderLine} /> */}
       </motion.div>
       <motion.div className={style.containerRightTop}>
         <Page1Img />
+        {/* <Box className={style.img}></Box> */}
       </motion.div>
       <motion.div className={style.containerLeftBottom}>
         <Page1Explain />

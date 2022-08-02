@@ -119,7 +119,7 @@ export default function Navbars(props) {
               <MenuItem
                 className={navStyle.applyENFont}
                 onClick={() => {
-                  window.open("https://instagram.com", "_blank");
+                  window.open("https://www.instagram.com/puraxel/", "_blank");
                 }}
               >
                 INSTAGRAM
@@ -127,7 +127,10 @@ export default function Navbars(props) {
               <MenuItem
                 className={navStyle.applyENFont}
                 onClick={() => {
-                  window.open("https://facebook.com", "_blank");
+                  window.open(
+                    "https://www.facebook.com/Puraxel.official/",
+                    "_blank"
+                  );
                 }}
                 onWheelCapture
               >
@@ -136,7 +139,10 @@ export default function Navbars(props) {
               <MenuItem
                 className={navStyle.applyENFont}
                 onClick={() => {
-                  window.open("https://youtube.com", "_blank");
+                  window.open(
+                    "https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ",
+                    "_blank"
+                  );
                 }}
               >
                 YOUTUBE
