@@ -37,7 +37,9 @@ export default function MeLayout({ children }) {
           // left: "4vw",
           bottom: "1vh",
           width: "100%",
-          justifyContent: "space-between",
+          // justifyContent: "space-between",
+          // justifyContent: "space-around",
+          justifyContent: "space-evenly",
         }}
       >
         <LinkButton

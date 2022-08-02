@@ -1,6 +1,6 @@
 import { Box, Paper, Typography } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { ManualFractionPage2 } from "./ManualFraction";
+// import { ManualFractionPage2 } from "../../Parts/ManualFraction";
 import Swipers from "../../Swipers";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -15,29 +15,26 @@ import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRou
 const LaserExplain = (props) => {
   return (
     <Box>
-      {/* <Typography> */}
-      <h2>{meKr.Page2LaserTitle}</h2>
+      <span>{meKr.Page2LaserTitle}</span>
       <span>{meKr.Page2LaserExplain1A}</span>
-      <p>{meKr.Page2LaserExplain1B}</p>
+      <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span>
-      <p>
+      <span>
         {meKr.Page2LaserTechExplain1A}
         {meKr.Page2LaserTechExplain1B}
-      </p>
-
-      {/* </Typography> */}
+      </span>
     </Box>
   );
 };
 
 const GalvanicExplain = (props) => {
   return (
-    <Typography>
-      <h2>{meKr.Page2GalvanicTitle}</h2>
-      <p>{meKr.Page2GalvanicExplain1A}</p>
-      <p>{meKr.Page2GalvanicExplain1B}</p>
-      <p>{meKr.Page2GalvanicExplain1C}</p>
-      <p>{meKr.Page2GalvanicExplain1D}</p>
+    <Box>
+      <span>{meKr.Page2GalvanicTitle}</span>
+      <span>{meKr.Page2GalvanicExplain1A}</span>
+      <span>{meKr.Page2GalvanicExplain1B}</span>
+      <span>{meKr.Page2GalvanicExplain1C}</span>
+      <span>{meKr.Page2GalvanicExplain1D}</span>
 
       <span>
         <span>
@@ -48,17 +45,15 @@ const GalvanicExplain = (props) => {
             {meKr.Page2GalvanicTechExplain1B}
           </span>
         </span>
-        <span> </span>
+
         <span>
           {meKr.Page2GalvanicTechExplain2A}
-          <span> </span>
-
           <span style={{ fontSize: "0.5vw", color: "rgba(0,0,0, 0.25)" }}>
             {meKr.Page2GalvanicTechExplain2B}
           </span>
         </span>
       </span>
-    </Typography>
+    </Box>
   );
 };
 
@@ -67,10 +62,10 @@ export default function Page2(props) {
   const [laserSelector, setLaserSelector] = useState(true);
   // console.log(modeSelector);
 
-  const handlerLaserSelectorOnClick = () => {
-    laserSelector ? setLaserSelector(false) : setLaserSelector(true);
-    !modeCondition ? setModeSelector("Laser") : setModeSelector("Galvanic");
-  };
+  // const handlerLaserSelectorOnClick = () => {
+  //   laserSelector ? setLaserSelector(false) : setLaserSelector(true);
+  //   !modeCondition ? setModeSelector("Laser") : setModeSelector("Galvanic");
+  // };
 
   const selectorLaser = () => {
     return setModeSelector("Laser");
@@ -80,8 +75,11 @@ export default function Page2(props) {
     return setModeSelector("Galvanic");
   };
   const modeCondition = modeSelector === "Laser";
-  const laserCondition = laserSelector === true;
-  const disableColor = "rgba(0, 0, 0, 0.25)";
+  // const laserCondition = laserSelector === true;
+
+  const DISABLECOLOR = "rgba(0, 0, 0, 0.25)";
+  const GRAY = "#F2F3F6";
+  const PURPLE = "#A590FA";
 
   return (
     <Box
@@ -132,13 +130,13 @@ export default function Page2(props) {
                 // border: "5px solid red",
                 display: "grid",
                 gridTemplateRows: "0.5fr 2fr",
-                backgroundColor: modeCondition ? "aliceblue" : disableColor,
+                backgroundColor: modeCondition ? "aliceblue" : DISABLECOLOR,
               }}
             >
               <Box
                 sx={{
                   padding: "1vh",
-                  color: modeCondition ? "purple" : disableColor,
+                  color: modeCondition ? PURPLE : DISABLECOLOR,
                 }}
               >
                 {meKr.Page2ContainerLaserTitle}
@@ -148,7 +146,7 @@ export default function Page2(props) {
                   src={left}
                   alt="left"
                   style={{
-                    filter: modeCondition ? "grayscale(0)" : "grayscale(1)",
+                    filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
                   }}
                 />
               </Box>
@@ -185,13 +183,13 @@ export default function Page2(props) {
                 // border: '5px solid blue',
                 display: "grid",
                 gridTemplateRows: "1fr 2fr",
-                backgroundColor: !modeCondition ? "aliceblue" : disableColor,
+                backgroundColor: !modeCondition ? "aliceblue" : DISABLECOLOR,
               }}
             >
               <Box
                 sx={{
                   padding: "1vh",
-                  color: !modeCondition ? "purple" : disableColor,
+                  color: !modeCondition ? PURPLE : DISABLECOLOR,
                 }}
               >
                 {meKr.Page2ContainerGalvanicTitle}
@@ -201,7 +199,7 @@ export default function Page2(props) {
                   src={right}
                   alt="right"
                   style={{
-                    filter: !modeCondition ? "grayscale(0)" : "grayscale(1)",
+                    filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
                   }}
                 />
               </Box>
@@ -228,7 +226,7 @@ export default function Page2(props) {
               alignContent: "center",
               justifyContent: "center",
               alignItems: "center",
-              background: modeCondition ? "pink" : disableColor,
+              background: modeCondition ? "pink" : DISABLECOLOR,
             }}
           >
             <div
@@ -257,7 +255,7 @@ export default function Page2(props) {
               alignContent: "center",
               justifyContent: "center",
               alignItems: "center",
-              background: !modeCondition ? "pink" : disableColor,
+              background: !modeCondition ? "pink" : DISABLECOLOR,
             }}
           >
             {/* <Typography sx={{ fontSize: "0.5vw" }}> */}
@@ -285,7 +283,11 @@ export default function Page2(props) {
         {/* <motion.div> */}
         <Box
           style={{
-            background: "black",
+            // background: "black",
+            background: modeCondition
+              ? "linear-gradient(#DEE1FF00,#BFA9EE)"
+              : DISABLECOLOR,
+
             width: "25vw",
             height: "50vh",
             borderRadius: "50%",
@@ -297,7 +299,7 @@ export default function Page2(props) {
 
         <motion.div
           style={{
-            // background: "purple",
+            // background: "PURPLE",
             display: "flex",
             width: "20vw",
             height: "40vh",
@@ -316,7 +318,7 @@ export default function Page2(props) {
               src={left}
               alt="left"
               style={{
-                filter: modeCondition ? "grayscale(0)" : "grayscale(1)",
+                filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
             />
           ) : (
@@ -325,7 +327,7 @@ export default function Page2(props) {
               src={right}
               alt="right"
               style={{
-                filter: !modeCondition ? "grayscale(0)" : "grayscale(1)",
+                filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
             />
           )}
@@ -334,7 +336,11 @@ export default function Page2(props) {
         {/* <motion.div> */}
         <Box
           style={{
-            background: "red",
+            // background: "red",
+            background: !modeCondition
+              ? "linear-gradient(#DEE1FF00,#BFA9EE)"
+              : DISABLECOLOR,
+            backdropFilter: "blur(32px)",
             width: "25vw",
             height: "50vh",
             borderRadius: "50%",

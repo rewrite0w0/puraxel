@@ -19,7 +19,7 @@
   /* justify-content: center; */
   /* justify-items: center; */
   /* align-content: center; */
-  align-items: end;
+  align-items: flex-end;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;

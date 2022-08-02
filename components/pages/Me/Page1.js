@@ -29,7 +29,7 @@ const Page1Intro1 = (props) => {
 
 const Page1Explain = (props) => {
   return (
-    <div style={{ fontSize: "1.2vw" }}>
+    <div style={{ fontSize: "1.2vw", marginLeft: "3.3vw" }}>
       <span>
         <span>{meKr.Page1Explain1A}</span>
         <br />

@@ -77,10 +77,19 @@ export default function Page3() {
       </Box>
       <Box className={style.rightContainer}>
         <Paper className={style.rightContents}>
-          <Box className={style.rightContentUpper}>adasd</Box>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube-nocookie.com/embed/X6oDTHJnxq4?controls=1&rel=0&autoplay=1&loop=1"
+            title="How to use PURAXEL"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+          {/* <Box className={style.rightContentUpper}>adasd</Box>
           <Box className={style.rightContentMiddleUpper}>adasd</Box>
           <Box className={style.rightContentMiddleLower}>adasd</Box>
-          <Box className={style.rightContentLower}>adasd</Box>
+          <Box className={style.rightContentLower}>adasd</Box> */}
         </Paper>
       </Box>
     </Box>
