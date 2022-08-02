@@ -1,3 +1,8 @@
+.modalContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .container {
   position: "absolute";
   top: "50vw";
@@ -8,18 +13,46 @@
   border: "2px solid #000";
 }
 
-.right {
-  width: 55rem;
-}
-
-.center {
-  width: 10rem;
-}
-
 .left {
-  width: 35rem;
+  background: skyblue;
+  font-size: 1vw;
+
+  display: grid;
+  grid-template-rows: repeat(5, 0.5fr) 4fr;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* .center {
+  width: 10vw;
+} */
+
+.right {
+  background: yellowgreen;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 4fr 0.5fr;
 }
 
 .timeReciverContainer {
+  display: flex;
+}
+
+.temp {
+  position: absolute;
+  justify-content: center;
+  top: 25vh;
+  left: 17vh;
+  transform: "translate(-50%, -50%)";
+  width: 60vw;
+  height: 40vw;
+  /* bgcolor: "background.paper"; */
+  background-color: white;
+  border: "2px solid #000";
+
+  box-shadow: 24px;
+  padding: 4vh;
+
   display: flex;
 }

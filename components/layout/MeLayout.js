@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import layoutStyle from "components/pages/Me/mePage.module.css";
 
 import { Box } from "@mui/material";
 
@@ -45,7 +44,8 @@ export default function MeLayout({ children }) {
         <LinkButton
           title={layoutFooterKr.ShoppingMallLink}
           link="https://qwant.com"
-          icon={<StoreIcon />}
+          icon={<StoreIcon sx={{ fontSize: "1.1vw" }} />}
+          sx={{ width: "4vw", fontSize: "1vw" }}
         />
 
         <LinkPriceButton

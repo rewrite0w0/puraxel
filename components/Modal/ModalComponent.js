@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
+import buttonStyle from "components/Footer/LinkPriceButton.module.css";
+import LinkButton from "components/Footer/LinkButton";
 import {
   Box,
   Button,
@@ -18,12 +20,12 @@ import {
   DialogTitle,
   DialogContent,
   DialogActions,
-} from '@mui/material';
-import style from './ModalComponent.module.css';
-import modalKr from 'public/locales/kr/modal';
+} from "@mui/material";
+import style from "./ModalComponent.module.css";
+import modalKr from "public/locales/kr/modal";
 
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
@@ -31,16 +33,16 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 // import Modal from "@mui/material/Modal";
 
 const bgStyle = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "60vw",
+  height: "40vw",
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  display: 'flex',
 };
 
 export default function ModalComponent() {
@@ -104,26 +106,43 @@ export default function ModalComponent() {
 
   return (
     <>
-      <Button onClick={handleOpenModal}>{modalKr.modalButtonTitle}</Button>
+      {/* <ModalButton
+        title={modalKr.modalButtonTitle}
+        onClick={() => {
+          console.log("move?");
+        }}
+      /> */}
+
+      <Box className={buttonStyle.priceButton} onClick={handleOpenModal}>
+        {modalKr.modalButtonTitle}
+      </Box>
       <Modal open={modalOpen} onClose={handleCloseModal}>
-        <Box sx={bgStyle}>
+        <Box sx={bgStyle} className={style.modalContainer}>
           <Box className={style.left}>
-            <h1>{modalKr.modalTitle}</h1>
+            {/* 1 */}
+            <Box>
+              <h1>{modalKr.modalTitle}</h1>
+            </Box>
+            {/* 2 */}
             <Box>
               <TextField label={modalKr.modalName} required />
             </Box>
+            {/* 3 */}
             <Box>
               <TextField label={modalKr.modalTel} required />
             </Box>
+            {/* 4 */}
             <Box>
               <TextField label={modalKr.modalEmail} required />
             </Box>
+            {/* 5 */}
             <Box>
               <TextField label={modalKr.modalCompanyName} />
             </Box>
+            {/* 6 */}
             <Box>
               <p>{modalKr.modalAvailableTime}</p>
-              {/*  */}
+              {/* timer */}
               <Box className={style.timeReciverContainer}>
                 <Box>
                   <FormControl>
@@ -157,21 +176,21 @@ export default function ModalComponent() {
                 </Box>
               </Box>
               {/*  */}
-
+              {/* 7 */}
               <Box
                 style={{
-                  display: 'flex',
-                  alignItems: 'center',
+                  display: "flex",
+                  alignItems: "center",
                 }}
               >
                 <Checkbox
                   icon={<CheckCircleOutlineIcon />}
                   checkedIcon={<CheckCircleIcon />}
                   sx={{
-                    '& .MuiSvgIcon-root': { fontSize: '2.8rem' },
-                    color: 'pink',
-                    '&.Mui-checked': {
-                      color: 'red',
+                    "& .MuiSvgIcon-root": { fontSize: "2.8rem" },
+                    color: "pink",
+                    "&.Mui-checked": {
+                      color: "red",
                     },
                   }}
                 />
@@ -189,21 +208,23 @@ export default function ModalComponent() {
             </Box>
           </Box>
 
-          <Box className={style.center}></Box>
+          {/* <Box className={style.center}></Box> */}
           <Box className={style.right}>
+            {/* 1 */}
             {/*  */}
             <Box>
-              <ButtonGroup style={{ display: 'flex' }}>
+              <ButtonGroup style={{ display: "flex" }}>
                 <Button>{modalKr.modalLangKr}</Button>
                 <Button>{modalKr.modalLangEn}</Button>
                 <Button>{modalKr.modalLangCh}</Button>
               </ButtonGroup>
             </Box>
             {/*  */}
+            {/* 2 */}
             <Box>
               <TextField label={modalKr.modalAskTitle} required />
             </Box>
-
+            {/* 3 */}
             <Box>
               <TextField
                 placeholder={modalKr.modalAskContentPlaceholder}
@@ -211,15 +232,16 @@ export default function ModalComponent() {
               />
             </Box>
             {/*  */}
+            {/* 4 */}
             <Box>
-              <Box style={{ display: 'flex' }}>
+              <Box style={{ display: "flex" }}>
                 <Typography>
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain1}
                 </Typography>
               </Box>
 
-              <Box style={{ display: 'flex' }}>
+              <Box style={{ display: "flex" }}>
                 <Typography>
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain2A}
@@ -263,7 +285,7 @@ export default function ModalComponent() {
         onClose={handleCloseSendedNoticeDialog}
       >
         <DialogTitle>
-          <CheckCircleIcon style={{ color: 'pink' }} />
+          <CheckCircleIcon style={{ color: "pink" }} />
         </DialogTitle>
         <DialogContent>
           {modalKr.modalSendPara1}

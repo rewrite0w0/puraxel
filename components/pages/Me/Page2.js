@@ -110,7 +110,7 @@ export default function Page2(props) {
         sx={{
           gridTemplateColumns: "2fr 0.4fr",
           marginTop: "2vh",
-          marginLeft: "3vw",
+          marginLeft: "7vw",
         }}
       >
         <Paper

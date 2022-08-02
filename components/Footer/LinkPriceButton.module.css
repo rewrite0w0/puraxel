@@ -26,17 +26,22 @@
 .priceButton1 {
   /* background-color: blue; */
   /* display: grid; */
+  justify-self: flex-start;
+  margin-left: 0.8vw;
 }
 
 .priceButton2 {
   /* background-color: yellow; */
   /* display: grid;
   justify-content: grid-end; */
+  margin-right: 0.8vw;
+  justify-self: flex-end;
 }
 
 .priceButton3 {
   /* background-color: brown; */
   /* display: grid; */
+  justify-self: flex-start;
 }
 
 .priceButton4 {
@@ -44,4 +49,5 @@
   /* display: grid;
 
   justify-content: grid-end; */
+  justify-self: flex-end;
 }

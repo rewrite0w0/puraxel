@@ -8,6 +8,7 @@ import LinkPriceButton from "components/Footer/LinkPriceButton";
 import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
 import StoreIcon from "@mui/icons-material/Store";
+import ModalComponent from "components/Modal/ModalComponent";
 
 export default function MeLayout({ children }) {
   return (
@@ -42,11 +43,12 @@ export default function MeLayout({ children }) {
           // justifyContent: "space-evenly",
         }}
       >
-        <LinkButton
-          title={layoutFooterKr.ShoppingMallLink}
-          link="https://qwant.com"
-          icon={<StoreIcon />}
-        />
+        {/* <LinkButton
+          title={layoutFooterKr.ContactUS}
+          // link="https://qwant.com"
+          // icon={<StoreIcon />}
+        /> */}
+        <ModalComponent />
 
         <LinkButton
           sx={{ marginLeft: "42vw" }}

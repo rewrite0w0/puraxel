@@ -43,9 +43,9 @@ export default function MeLayout({ children }) {
         }}
       >
         <LinkButton
-          title={layoutFooterKr.ShoppingMallLink}
+          title={layoutFooterKr.ContactUS}
           link="https://qwant.com"
-          icon={<StoreIcon />}
+          // icon={<StoreIcon />}
         />
 
         <LinkButton

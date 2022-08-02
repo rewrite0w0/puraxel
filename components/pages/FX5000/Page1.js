@@ -5,6 +5,7 @@ import meKr from "public/locales/kr/me";
 import flowerWithMe from "src/image/ME/me_main.png";
 import style from "./page1.module.css";
 // import { ManualFractionPage1 } from "./ManualFraction";
+import tempImage from "src/image/giphy.gif";
 
 const Page1Intro1 = (props) => {
   return (
@@ -58,7 +59,8 @@ const Page1Explain = (props) => {
 const Page1Img = (props) => {
   return (
     <Image
-      src={flowerWithMe}
+      // src={flowerWithMe}
+      src={tempImage}
       alt="flower with ME"
       className={style.img}
       width={800}
@@ -85,6 +87,7 @@ export default function Page1() {
       <motion.div className={style.containerRightTop}>
         <Page1Img />
         {/* <Box className={style.img}></Box> */}
+        {/* <div className={style.img}></div> */}
       </motion.div>
       <motion.div className={style.containerLeftBottom}>
         <Page1Explain />
