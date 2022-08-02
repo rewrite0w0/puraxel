@@ -218,8 +218,14 @@ export default function Navbars(props) {
             </div>
           </Menu>
         </Button>
-        <NavIconButton title={layoutHeaderKr.kr}></NavIconButton>
-        <NavIconButton title={layoutHeaderKr.en}></NavIconButton>
+        <NavIconButton
+          title={layoutHeaderKr.kr}
+          className={navStyle.buttonStyleKr}
+        ></NavIconButton>
+        <NavIconButton
+          title={layoutHeaderKr.en}
+          className={navStyle.buttonStyleKr}
+        ></NavIconButton>
       </Box>
     </Box>
   );

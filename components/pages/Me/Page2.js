@@ -297,6 +297,7 @@ export default function Page2(props) {
         ></Box>
         {/* </motion.div> */}
 
+        {/* 이미지 */}
         <motion.div
           style={{
             // background: "PURPLE",
@@ -304,7 +305,7 @@ export default function Page2(props) {
             width: "20vw",
             height: "40vh",
             position: "fixed",
-            // zIndex: 5,
+            zIndex: 1,
             borderRadius: "50%",
             // marginLeft: "17vw",
             // marginTop: "4vh",
