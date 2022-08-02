@@ -1,29 +1,16 @@
-.img {
-  /* background-color: white; */
-  /* z-index: 9999; */
-  /* position: "fixed"; */
-  /* height: "100vh"; */
-  margin-top: 1vh;
+@font-face {
+  font-family: "ENFont";
+  src: url("../../../src/fonts/CaviarDreams.woff") format("woff");
 }
 
-.imgContainer {
-  display: grid;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  height: 80vh;
-  /* z-index: 9999; */
-}
-
-.container {
-  /* justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center; */
+@font-face {
+  font-family: "ENFontB";
+  src: url("../../../src/fonts/CaviarDreams_Bold.woff") format("woff");
 }
 
 .containerLeftTop {
+  /* 그리드 1,2번 차지 */
+
   /* background-color: black; */
   /* border: 10px solid red; */
 
@@ -37,11 +24,29 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
-  border-bottom: 1px solid linear-gradient(#feebee, #f9c1be);
-  margin: 0;
-  padding: 0;
+
+  /* --borderLine: linear-gradient(135deg, orange 60%, cyan); */
+  /* z-index: 9999; */
+  /* background-color: var(--borderLine); */
+  border-bottom: 1px solid pink;
+
+  /* margin: 0;
+  padding: 0; */
 }
+
+/* .borderLine {
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+  border-radius: 10px 10px 0px 0px;
+  height: 5px;
+} */
+
 .containerRightTop {
+  /* 이미지 그리드 2,4번 차지 */
+
   /* background-color: blue; */
   grid-column-start: 2;
   grid-column-end: 2;
@@ -56,6 +61,15 @@
   margin-top: 1vw;
 }
 
+.img {
+  /* background-color: white; */
+  /* z-index: 9999; */
+  /* position: "fixed"; */
+  /* height: "100vh"; */
+  /* margin-top: 1vh; */
+  /* content: url(../../../src/image/ME/me_main.png); */
+}
+
 .containerLeftBottom {
   /* background-color: yellow; */
   display: flex;
@@ -67,4 +81,26 @@
 
 .containerRightBottom {
   /* background-color: red; */
+}
+
+.imgContainer {
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  height: 80vh;
+
+  /* z-index: 9999; */
+}
+
+.container {
+  /* justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center; */
+}
+
+.fontEN {
+  font-family: ENFont;
 }
