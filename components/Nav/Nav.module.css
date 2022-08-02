@@ -17,9 +17,10 @@
     system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
     "Noto Sans KR", "Malgun Gothic", sans-serif;
   /* font-family: "ENFont"; */
-  color: gray;
+  color: var(--primary01);
   /* width: 12vw; */
-  font-size: 0.5vw;
+  font-size: 20px;
+  margin-right: 40px;
 }
 
 .buttonStyleKr {
@@ -27,9 +28,10 @@
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
   /* font-family: "ENFont"; */
-  color: gray;
+  color: var(--primary01);
   /* width: 12vw; */
-  font-size: 0.5vw;
+  font-size: 12px;
+  margin-left: 40px;
 }
 
 .buttonStyle:hover {

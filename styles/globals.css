@@ -1,5 +1,29 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
+:root {
+  --primary01: rgba(85, 87, 111, 1);
+  --primary02: rgba(162, 146, 163, 1);
+  --primary03: rgba(178, 152, 173, 1);
+  --primary04: rgba(234, 215, 223, 1);
+
+  --secondaryME: linear-gradient(180deg, #f4edff 0%, #e9caf4 100%);
+  --secondaryMESub: rgba(226, 188, 255, 0.5);
+  --secondaryHair: linear-gradient(180deg, #fdf0e8 0%, #f9d6ce 100%);
+  --secondaryHairSub: rgba(252, 216, 183, 0.5);
+  --secondaryFX5000: linear-gradient(180deg, #feebee 0%, #f9c1be 100%);
+  --secondaryFX5000Sub: rgba(241, 181, 185, 0.5);
+
+  --grayScale01: rgba(248, 249, 250, 1);
+  --grayScale02: rgba(242, 243, 246, 1);
+  --grayScale03: rgba(223, 225, 232, 1);
+  --grayScale04: rgba(199, 202, 211, 1);
+  --grayScale05: rgba(167, 171, 182, 1);
+  --grayScale06: rgba(126, 129, 141, 1);
+  --grayScale07: rgba(77, 80, 88, 1);
+  --grayScale08: rgba(40, 41, 46, 1);
+  --grayScaleTab: rgba(126, 129, 141, 0.12);
+}
+
 * {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
@@ -50,6 +74,10 @@ a {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
+}
+
+.MuiButton-root:hover {
+  background: transparent;
 }
 
 .MuiOutlinedInput-input {
