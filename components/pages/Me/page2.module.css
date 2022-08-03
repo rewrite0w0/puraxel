@@ -143,9 +143,12 @@
 
 .explainTitle {
   font-size: 24px;
-  letter-spacing: -0.02em;
+  letter-spacing: -2px;
   color: var(--primary01);
 }
 
 .explainPara {
+  color: var(--grayScale08);
+  font-size: 14px;
+  letter-spacing: -1px;
 }

@@ -1,5 +1,6 @@
 .meContainer {
-  /* background: var(--secondaryME); */
+  background: var(--secondaryME);
+  /* height: 80vh; */
   /* min-height: 100vh;
   max-height: 100vh; */
 }
@@ -9,8 +10,9 @@
   /* margin-right: 80px;
   margin-left: 80px; */
   /* background: black; */
-  min-height: 100vh;
-  max-height: 100vh;
+  /* height: 50vh; */
+  /* min-height: 100vh;
+  max-height: 100vh; */
   /* position: relative; */
 }
 
@@ -18,6 +20,11 @@
   /* // position: "fixed", */
   display: flex;
   flex-direction: row;
+  z-index: 9999;
+
+  position: absolute;
+
+  /* bottom: 100px; */
   /* z-index: 99; */
   /* // height: "10vh", */
   /* // backgroundColor: 'blue', */
@@ -33,7 +40,8 @@
   /* position: relative; */
   /* background: blue; */
   /* margin-bottom: 48px; */
-
+  bottom: 0;
   margin-right: 80px;
   margin-left: 80px;
+  margin-bottom: 48px;
 }

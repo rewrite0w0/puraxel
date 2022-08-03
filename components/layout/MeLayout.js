@@ -2,7 +2,6 @@ import LinkButton from "components/Footer/LinkButton";
 import LinkPriceButton from "components/Footer/LinkPriceButton";
 import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
-import StoreIcon from "@mui/icons-material/Store";
 import { ShopIcon } from "components/Parts/Icons";
 import style from "./MeLayout.module.css";
 

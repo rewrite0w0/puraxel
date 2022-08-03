@@ -21,11 +21,13 @@ const LaserExplain = (props) => {
       {/* <span>{meKr.Page2LaserExplain1A}</span>
       <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span> */}
-      <span className={style.explainPara}>{meKr.Page2LaserExplain}</span>
-      <br />
       <span>
-        {meKr.Page2LaserTechExplain1A}
-        {meKr.Page2LaserTechExplain1B}
+        <span className={style.explainPara}>{meKr.Page2LaserExplain}</span>
+        <br style={{ margin: "8px" }} />
+        <span>
+          {meKr.Page2LaserTechExplain1A}
+          {meKr.Page2LaserTechExplain1B}
+        </span>
       </span>
     </div>
   );
@@ -41,23 +43,18 @@ const GalvanicExplain = (props) => {
       <span>{meKr.Page2GalvanicExplain1C}</span>
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
       <span className={style.explainPara}>{meKr.Page2GalvanicExplain}</span>
-
       <br />
       <span>
         <span>
           {meKr.Page2GalvanicTechExplain1A}
           <span> </span>
 
-          <span style={{ fontSize: "0.7vw", color: "rgba(0,0,0, 0.25)" }}>
-            {meKr.Page2GalvanicTechExplain1B}
-          </span>
+          <span>{meKr.Page2GalvanicTechExplain1B}</span>
         </span>
         &nbsp;
         <span>
           {meKr.Page2GalvanicTechExplain2A}
-          <span style={{ fontSize: "0.7vw", color: "rgba(0,0,0, 0.25)" }}>
-            {meKr.Page2GalvanicTechExplain2B}
-          </span>
+          <span>{meKr.Page2GalvanicTechExplain2B}</span>
         </span>
       </span>
     </div>
