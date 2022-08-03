@@ -16,16 +16,12 @@ import { PlusIcon } from "components/Parts/Icons";
 const LaserExplain = (props) => {
   return (
     <div>
-      <br />
-      <br />
-      <span>{meKr.Page2LaserTitle}</span>
-      <br />
-      <br />
+      <span className={style.explainTitle}>{meKr.Page2LaserTitle}</span>
+      <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2LaserExplain1A}</span>
       <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span> */}
-      <span>{meKr.Page2LaserExplain}</span>
-      <br />
+      <span className={style.explainPara}>{meKr.Page2LaserExplain}</span>
       <br />
       <span>
         {meKr.Page2LaserTechExplain1A}
@@ -38,17 +34,14 @@ const LaserExplain = (props) => {
 const GalvanicExplain = (props) => {
   return (
     <div>
-      <br />
-      <br />
-      <span>{meKr.Page2GalvanicTitle}</span>
-      <br />
-      <br />
+      <span className={style.explainTitle}>{meKr.Page2GalvanicTitle}</span>
+      <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2GalvanicExplain1A}</span>
       <span>{meKr.Page2GalvanicExplain1B}</span>
       <span>{meKr.Page2GalvanicExplain1C}</span>
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
-      <span>{meKr.Page2GalvanicExplain}</span>
-      <br />
+      <span className={style.explainPara}>{meKr.Page2GalvanicExplain}</span>
+
       <br />
       <span>
         <span>
@@ -92,13 +85,9 @@ export default function Page2(props) {
   // const laserCondition = laserSelector === true;
 
   const DISABLECOLOR = "rgba(0, 0, 0, 0.25)";
-  const _GRAY = "#F2F3F6";
-  const PURPLE = "#A590FA";
-  const _GRAY2 = "rgba(217, 217, 217, 0.7)";
-  const _WHITE = "rgba(255, 255, 255, 1)";
-  const WHITEGRADIENT = "linear-gradient(#EFEFEF, #FFFFFF)";
-  const PURPLEGRADIENT =
-    "linear-gradient(180deg, #F9F5FD 0%, rgba(255, 255, 255, 0) 50%)";
+
+  const indicatorActive = "#A590FA";
+  const indicatorInactive = "#DFE1E8";
 
   return (
     <Box className={style.page2Container}>
@@ -125,111 +114,53 @@ export default function Page2(props) {
           <Box className={style.leftPaperMiddle}>
             {/* 레이저 */}
             <Box
-              className={style.imageContainer}
+              className={style.laserContainer}
               onClick={selectorLaser}
-              // sx={{
-              //   border: "5px solid red",
-              //   background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
-              //   display: "grid",
-              //   gridTemplateRows: "1fr 2fr",
-              //   width: "277px",
-              //   heigth: "277px",
-              //   display: "grid",
-              //   gridTemplateRows: "0.5fr 2fr",
-              //   border: "1px solid #EFEFEF",
-              // }}
-            >
-              <Box
-                sx={{
-                  // padding: "1vh",
-                  color: modeCondition ? PURPLE : DISABLECOLOR,
-                  // background: modeCondition ? PURPLEGRADIENT : DISABLECOLOR,
-                }}
-              >
-                {meKr.Page2ContainerLaserTitle}
-              </Box>
-              <Box className={style.laserImage}>
-                {/* <Image
-                  src={left}
-                  alt="left"
-                  style={{
-                    filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
-                  }}
-                /> */}
-              </Box>
-            </Box>
+              sx={{
+                // background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
+                filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
+              }}
+            ></Box>
             {/* 중앙 */}
             <Box
               sx={{
                 display: "flex",
-                // height: "100vh",
-                // width: "100vw",
                 justifyContent: "center",
                 alignItems: "center",
-
-                // flexDirection: "column",
-                // position: "fixed",
-                // marginTop: "11vh",
-                // marginLeft: "14vw",
               }}
             >
               <Box className={style.plusImage}></Box>
-              {/* <PlusIcon
-                sx={{
-                  position: "fixed",
-                  // color: "rgba(0,0,0,0.4)",
-                  color: "red",
-                  background: "blue",
-                  // background: "rgba(255,255,255,0.4)",
-                  // backdropFilter: "blur('50px')",
-                  boxSizing: "border-box",
-
-                  width: "58px",
-                  height: "58px",
-                  // backdropFilter: "blur(50px)",
-                  // fontSize: "3vw",
-                }}
-              /> */}
             </Box>
             {/* 갈바닉 */}
             <Box
               onClick={selectorGalvanic}
-              className={style.imageContainer}
+              className={style.galvanicContainer}
               sx={{
-                // border: '5px solid blue',
-                // display: "grid",
-                // gridTemplateRows: "1fr 2fr",
-                background: !modeCondition ? _WHITE : DISABLECOLOR,
-                // width: "276px",
-                // heigth: "276px",
-                // display: "grid",
-                // gridTemplateRows: "0.5fr 2fr",
-                // border: "1px solid #EFEFEF",
+                filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
-            >
-              <Box
-                sx={{
-                  // padding: "1vh",
-                  color: !modeCondition ? PURPLE : DISABLECOLOR,
-                  // background: !modeCondition ? PURPLEGRADIENT : DISABLECOLOR,
-                }}
-              >
-                {meKr.Page2ContainerGalvanicTitle}
-              </Box>
-              <Box className={style.galvanicImage}>
-                {/* <Image
-                  src={right}
-                  alt="right"
-                  style={{
-                    filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
-                  }}
-                /> */}
-              </Box>
-            </Box>
+            ></Box>
           </Box>
 
           {/* 세 번째 grid: 설명 */}
-          <Box sx={{ heigth: "10vh" }}>
+          <Box className={style.leftPaperBottom}>
+            <span className={style.indicator}>
+              <span
+                className={style.indicatorAtom}
+                style={{
+                  background: modeCondition
+                    ? indicatorActive
+                    : indicatorInactive,
+                }}
+              ></span>
+              <span
+                className={style.indicatorAtom}
+                style={{
+                  background: !modeCondition
+                    ? indicatorActive
+                    : indicatorInactive,
+                }}
+              ></span>
+            </span>
             {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
           </Box>
         </Paper>

@@ -20,7 +20,7 @@
 .leftPaperTop {
   height: 107px;
   width: 570px;
-  letter-spacing: -2px;
+
   margin-bottom: 47px;
 }
 
@@ -32,6 +32,7 @@
 .leftPaperTopSecond {
   font-size: 48px;
   color: var(--primary01);
+  letter-spacing: -2px;
 }
 
 .leftPaperTopSecondPoint {
@@ -46,8 +47,7 @@
 }
 
 .plusImage {
-  border: 1px solid
-    linear-gradient(135.82deg, #f3f3f3 13.3%, rgba(255, 255, 255, 0.3) 98.46%);
+  border: 1px solid var(--mePage2Plus);
 
   /* border-image-source: linear-gradient(
     135.82deg,
@@ -67,11 +67,13 @@
   height: 58px;
   content: url(../../../src/image/ME/ic_functionPlus.svg);
 
+  z-index: 1;
   box-sizing: border-box;
   border-radius: 50%;
 
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(50px);
+  margin-right: 18px;
 }
 
 .laserImage {
@@ -81,29 +83,32 @@
 }
 
 .laserContainer {
-  /* content: url(../../../src/image/ME/me_laser_active.svg); */
-  background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
-    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
-  height: 277px;
-  width: 277px;
+  content: url(../../../src/image/ME/me_laser_active.svg);
+  height: 300px;
+  width: 300px;
+  margin-left: -20px;
 
+  /* background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
+    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .galvanicImage {
   content: url(../../../src/image/ME/me_galvanic_active.svg);
 }
 .galvanicContainer {
-  background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
+  content: url(../../../src/image/ME/me_galvanic_active.svg);
+  height: 300px;
+  width: 300px;
+  margin-left: -20px;
+  /* background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
     linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
-  height: 277px;
-  width: 277px;
 
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .imageContainer {
@@ -115,4 +120,32 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+}
+
+.indicator {
+  display: flex;
+}
+
+.indicatorLeft {
+}
+.indicatorRight {
+}
+
+.indicatorAtom {
+  width: 6px;
+  height: 6px;
+  opacity: 0.7;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 41px;
+  margin-bottom: 8px;
+}
+
+.explainTitle {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  color: var(--primary01);
+}
+
+.explainPara {
 }
