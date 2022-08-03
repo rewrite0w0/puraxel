@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import style from "./Nav.module.css";
 
 export default function NavIconButton(props) {
@@ -6,7 +6,7 @@ export default function NavIconButton(props) {
     <Button
       style={{ ...props.sx }}
       disableRipple
-      className={style.buttonStyle}
+      className={props.className}
       {...props}
     >
       {props.title ? props.title : ""}

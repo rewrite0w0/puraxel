@@ -12,6 +12,12 @@
   src: url("../../src/fonts/CaviarDreams_Bold.woff") format("woff");
 }
 
+.header {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .buttonStyle {
   font-family: "ENFont", Pretendard, -apple-system, BlinkMacSystemFont,
     system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
@@ -31,9 +37,23 @@
   /* width: 12vw; */
 }
 
+.gnbMenu {
+  font-family: "ENFont";
+  font-weight: 700;
+  /* font-family: "ENFont"; */
+  color: var(--primary01);
+  /* width: 12vw; */
+  font-size: 20px;
+  margin-right: 40px;
+}
+
 .subMenu {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
   color: var(--grayScale06);
   font-size: 12px;
+  margin-right: 40px;
 }
 
 .buttonStyle:hover {
@@ -45,15 +65,19 @@
   /* margin-top: 0.5vh; */
   display: flex;
   align-self: center;
-  width: 10vw;
+  /* width: 10vw;
   height: 2vw;
   margin-left: 1vw;
-  margin-right: 2vw;
+  margin-right: 2vw; */
   content: url(../../src/image/header/gnb_home_active_hover.svg);
   /* size: 1rem; */
-
   /* background-image: url(../../src/image/header/gnb_logo_default.svg); */
   /* background-size: cover; */
+  height: 36px;
+  width: 80px;
+  margin-left: 80px;
+  margin-right: 80px;
+  /* font-size: 16px; */
 }
 
 .logo:hover {
@@ -65,22 +89,84 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  margin-left: 1vw;
 }
 
 .rightNav {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin-right: 1vw;
 }
 
 .applyENFont {
   font-family: "ENFont";
+  font-size: 12px;
+  color: var(--grayScale06);
 }
 
 .applyKRFont {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
+}
+
+.SNSContainer {
+  margin: 0;
+  padding: 0;
+  height: 107px;
+  width: 91px;
+  opacity: 90%;
+  border-radius: 4px;
+}
+
+.SNSMenu {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  color: var(--grayScale06);
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  /* margin-right: 40px; */
+  margin-left: 12px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.SNSMenuFirst {
+  margin-top: 12px;
+}
+
+.SNSMenuLast {
+  margin-bottom: 16px;
+}
+
+.companyInfoMenuContainer {
+  /* margin: 16px; */
+  padding: 0;
+  height: 192px;
+  width: 296px;
+}
+
+.companyTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.companyTitle {
+  font-size: 14px;
+  color: var(--grayScale07);
+}
+
+.companyLinkButton {
+  cursor: "pointer";
+  content: url(../../src/image/header/lmdt_link.svg);
+  width: 114px;
+  height: 21px;
+}
+
+.companyInfoDetail {
+  font-size: 12px;
+  color: var(--grayScale06);
 }

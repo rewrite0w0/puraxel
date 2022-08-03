@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Box, Menu, Button, MenuItem } from "@mui/material";
 
-import style from "../layout/Layout.module.css";
 import navStyle from "./Nav.module.css";
 
 import Image from "next/image";
@@ -9,11 +8,7 @@ import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
 import NavIconButton from "components/Nav/NavIconButton";
 
-const buttonStyle = { fontSize: "1vw" };
-
-import upperArrow from "src/image/header/upperarrow.svg";
-
-import { motion } from "framer-motion";
+import lmdtInfo from "src/image/header/lmdt.svg";
 
 export default function Navbars(props) {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
@@ -48,23 +43,14 @@ export default function Navbars(props) {
   const snsCodition = snsOpenState === false;
 
   return (
-    <Box className={style.header} style={{ ...props.sx }}>
+    <Box className={navStyle.header}>
       <Box className={navStyle.leftNav}>
         <Box
           className={navStyle.logo}
           onClick={() => {
             location.href = "/";
           }}
-        >
-          {/* <Image
-            src={PuraxelLogo}
-            alt="PuraxelLogoColor"
-            className={navStyle.logo}
-            style={{ backgroundColor: "pink" }}
-            width={"10vw"}
-            height={"20vh"}
-          /> */}
-        </Box>
+        ></Box>
 
         <Box>
           <NavIconButton
@@ -72,7 +58,7 @@ export default function Navbars(props) {
               location.href = "/me";
             }}
             title={layoutHeaderKr.me}
-            sx={buttonStyle}
+            className={navStyle.gnbMenu}
           />
 
           <NavIconButton
@@ -80,7 +66,7 @@ export default function Navbars(props) {
               location.href = "/fx5000";
             }}
             title={layoutHeaderKr.fx5000}
-            sx={buttonStyle}
+            className={navStyle.gnbMenu}
           />
 
           <NavIconButton
@@ -88,7 +74,7 @@ export default function Navbars(props) {
               location.href = "/hair";
             }}
             title={layoutHeaderKr.hair}
-            sx={buttonStyle}
+            className={navStyle.gnbMenu}
           />
 
           <NavIconButton
@@ -96,7 +82,7 @@ export default function Navbars(props) {
               location.href = "/tech";
             }}
             title={layoutHeaderKr.puraTech}
-            sx={buttonStyle}
+            className={navStyle.gnbMenu}
           />
         </Box>
       </Box>
@@ -112,17 +98,12 @@ export default function Navbars(props) {
             open={snsOpenState}
             onClose={handleSNSCloseButton}
             anchorEl={snsAnchorState}
+            sx={{ Left: "1601px", Top: "64px", margin: 0, padding: 0 }}
           >
-            <div
-              style={{
-                height: "100%",
-                width: "5vw",
-                padding: "1rem",
-              }}
-            >
+            <div className={navStyle.SNSContainer}>
               <MenuItem
                 disableRipple
-                className={navStyle.applyENFont}
+                className={`${navStyle.SNSMenu} ${navStyle.SNSMenuFirst}`}
                 onClick={() => {
                   window.open("https://www.instagram.com/puraxel/", "_blank");
                 }}
@@ -131,7 +112,7 @@ export default function Navbars(props) {
               </MenuItem>
               <MenuItem
                 disableRipple
-                className={navStyle.applyENFont}
+                className={navStyle.SNSMenu}
                 onClick={() => {
                   window.open(
                     "https://www.facebook.com/Puraxel.official/",
@@ -144,7 +125,7 @@ export default function Navbars(props) {
               </MenuItem>
               <MenuItem
                 disableRipple
-                className={navStyle.applyENFont}
+                className={`${navStyle.SNSMenu} ${navStyle.SNSMenuLast}`}
                 onClick={() => {
                   window.open(
                     "https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ",
@@ -165,8 +146,7 @@ export default function Navbars(props) {
         <Button
           disableRipple
           onClick={handleCompanyInfoButton}
-          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
-          sx={{ marginLeft: "40px" }}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
         >
           {companyInfoOpenStateCodition
             ? layoutHeaderKr.lameditechInfoOpen
@@ -175,23 +155,26 @@ export default function Navbars(props) {
             open={companyOpenState}
             onClose={handleCompanyInfoCloseButton}
             anchorEl={companyInfoAnchorState}
-            // className={navStyle.applyKRFont}
+            className={`${navStyle.applyKRFont} ${navStyle.temp}`}
           >
-            <div
-              style={{
-                height: "100%",
-                width: "20vw",
-                padding: "2rem",
-              }}
-            >
-              <p
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  fontSize: "1vw",
-                }}
-              >
-                <span style={{ fontSize: "1.4vw" }}>
+            <div className={`${navStyle.companyInfoMenuContainer}`}>
+              {/* 근데 다국어는 어떻게 처리할거임 이렇게 이미지로 하면? */}
+              {/* 이것도 상태관리 이미지 변경? condition ? kr : en 요렇게? */}
+              {/* 위치 옮기는 거 어떻게 하지? Menu와 div 사이에 element인데 이걸 어떻게 찾지*/}
+              <Image src={lmdtInfo} alt="" useMap="#lameditechLink" />
+              <map name="lameditechLink">
+                <area
+                  target="_blank"
+                  alt="linkToLameditech"
+                  title="linkToLameditech"
+                  href="https://www.lameditech.com"
+                  coords="293,46,179,29"
+                  shape="rect"
+                ></area>
+              </map>
+              {/* 
+              <span className={navStyle.companyTitleContainer}>
+                <span className={navStyle.companyTitle}>
                   {layoutHeaderKr.companyInfoName}
                 </span>
 
@@ -199,49 +182,41 @@ export default function Navbars(props) {
                   onClick={() => {
                     window.open("https://www.lameditech.com/");
                   }}
-                  style={{
-                    color: "#7E818D",
-                    background: "#F2F3F6",
-                    borderRadius: "0.4rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    // width: "3vw",
-                    paddingLeft: "0.25vw",
-                    paddingRight: "0.25vw",
-                    cursor: "pointer",
-                  }}
-                >
-                  라메디텍 바로가기↗
-                  {/* <Image
-                    src={upperArrow}
-                    // width={10}
-                    // height={10}
-                    alt="upperArrow"
-                  /> */}
+                  className={navStyle.companyLinkButton}
+                ></span>
+              </span>
+
+              <div className={navStyle.companyInfoDetail}>
+                <span>
+                  <span>{layoutHeaderKr.companyInfoRep}</span>
+                  <br />
+                  <span>{layoutHeaderKr.companyInfoLicense}</span>
                 </span>
-              </p>
-              <div style={{ color: "gray", fontSize: "0.7vw" }}>
-                <p>{layoutHeaderKr.companyInfoRep}</p>
-                <p>{layoutHeaderKr.companyInfoLicense}</p>
-                <p>{layoutHeaderKr.companyInfoAddress1A}</p>
-                <p>{layoutHeaderKr.companyInfoAddress1B}</p>
-                <p>{layoutHeaderKr.companyInfoTel}</p>
-                <p>{layoutHeaderKr.companyInfoFax}</p>
-                <p>{layoutHeaderKr.companyInfoEmail}</p>
-              </div>
+                <br style={{ marginBottom: "8px" }} />
+                <span>
+                  <span>{layoutHeaderKr.companyInfoAddress1A}</span>
+                  <br />
+                  <span>{layoutHeaderKr.companyInfoAddress1B}</span>
+                  <br />
+                  <span>{layoutHeaderKr.companyInfoTel}</span>
+                  <br />
+                  <span>{layoutHeaderKr.companyInfoFax}</span>
+                  <br />
+                  <span>{layoutHeaderKr.companyInfoEmail}</span>
+                </span>
+              </div> */}
             </div>
           </Menu>
         </Button>
         <NavIconButton
           title={layoutHeaderKr.kr}
-          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
-          sx={{ marginLeft: "53px" }}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
+          sx={{ marginRight: "16px", padding: 0 }}
         ></NavIconButton>
         <NavIconButton
           title={layoutHeaderKr.en}
-          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
-          sx={{ marginLeft: "16px" }}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
+          sx={{ marginRight: "80px" }}
         ></NavIconButton>
       </Box>
     </Box>
