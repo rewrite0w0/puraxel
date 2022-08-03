@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import slideStlye from './Slide.module.css';
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import slideStlye from "./Slide.module.css";
 import {
   Mousewheel,
   Pagination,
@@ -8,7 +8,7 @@ import {
   Navigation,
   Autoplay,
   EffectFade,
-} from 'swiper';
+} from "swiper";
 
 export default function Swipers({ children }) {
   return (
@@ -24,11 +24,11 @@ export default function Swipers({ children }) {
       // }}
       scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true }}
-      autoplay={{ delay: 50000 }}
+      autoplay={{ delay: 500000 }}
       className={slideStlye.slide}
-      speed={500}
+      speed={50}
       rewind={true}
-      effect={'fade'}
+      effect={"fade"}
       fadeEffect={{ crossFade: true }}
       modules={[
         Mousewheel,

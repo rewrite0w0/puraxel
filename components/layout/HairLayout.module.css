@@ -1,0 +1,16 @@
+.HairContainer {
+  background: var(--secondaryHair);
+}
+
+.bodyContainer {
+  /* margin-top: 80px; */
+  /* margin-right: 80px;
+  margin-left: 80px; */
+  /* background: black; */
+}
+
+.footerContainer {
+  /* margin-bottom: 48px;
+  margin-right: 80px;
+  margin-left: 80px; */
+}

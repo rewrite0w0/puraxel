@@ -9,25 +9,25 @@
 
 .upperImage {
   /* background-color: red; */
-  height: 20vw;
-  width: 20vw;
+  /* height: 20vw;
+  width: 20vw; */
   content: url(../../../src/image/ME/me_03_b.png);
 
   position: absolute;
-  top: 5vw;
-  right: 66vw;
+  /* top: 5vw;
+  right: 66vw; */
 }
 
 .lowerImage {
   /* background-color: blue; */
-  height: 20vw;
-  width: 20vw;
+  /* height: 20vw;
+  width: 20vw; */
 
   /* 이게 왜 되지...? */
   z-index: 1;
   position: absolute;
-  top: 19.5vw;
-  right: 76vw;
+  /* top: 19.5vw;
+  right: 76vw; */
   content: url(../../../src/image/ME/me_03_a.png);
 }
 
@@ -36,7 +36,7 @@
 }
 
 .rightContents {
-  margin-top: 2.4vw;
+  /* margin-top: 2.4vw;
   height: 40vw;
-  width: 99%;
+  width: 99%; */
 }

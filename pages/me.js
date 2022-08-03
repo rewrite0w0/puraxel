@@ -26,9 +26,9 @@ export default function Me() {
           <Page2 />
         </SwiperSlide>
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Page3 />
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         {/* <SwiperSlide>
           <Page4 />

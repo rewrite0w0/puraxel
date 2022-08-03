@@ -1,51 +1,57 @@
-import { motion } from "framer-motion";
-import layoutStyle from "components/pages/Me/mePage.module.css";
-
-import { Box } from "@mui/material";
-
 import LinkButton from "components/Footer/LinkButton";
 import LinkPriceButton from "components/Footer/LinkPriceButton";
 import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
 import StoreIcon from "@mui/icons-material/Store";
+import { ShopIcon } from "components/Parts/Icons";
+import style from "./MeLayout.module.css";
 
-export default function MeLayout({ children }) {
+export default function HairLayout({ children }) {
   return (
-    <div>
-      <body
-        style={
-          {
-            // height: '100vh',
-            // backgroundColor: 'skyblue',
-            // background:
-            //   'linear-gradient(rgba(255, 255, 255, 0.3), rgba(252, 209, 215, 0.7))',
-            // position: 'relative',
-            // margin: 0,
-          }
-        }
-      >
-        {children}
-      </body>
+    <div className={style.meContainer}>
+      <body className={style.bodyContainer}>{children}</body>
       <footer
+        className={style.footerContainer}
         style={{
-          position: "fixed",
+          // position: "fixed",
           display: "flex",
-          zIndex: 99,
-          height: "10vh",
+
+          // zIndex: 99,
+          // height: "10vh",
           // backgroundColor: 'blue',
           // right: 0,
           // left: "4vw",
-          bottom: "1vh",
-          width: "100%",
-
-          justifyContent: "space-between",
+          // bottom: "1vh",
+          // width: "100%",
+          // justifyContent: "space-between",
+          // justifyContent: "space-around",
           // justifyContent: "space-evenly",
         }}
       >
         <LinkButton
-          title={layoutFooterKr.ContactUS}
+          title={layoutFooterKr.ShoppingMallLink}
           link="https://qwant.com"
-          // icon={<StoreIcon />}
+          icon={<ShopIcon sx={{ fontSize: "1.1vw" }} />}
+          sx={{ width: "4vw", fontSize: "1vw" }}
+        />
+
+        <LinkPriceButton
+          title={layoutFooterKr.Me}
+          price={layoutFooterKr.MePrice}
+          installment={layoutFooterKr.MeInstallmentDuration}
+          installmentPrice={layoutFooterKr.MeInstallmentPrice}
+          link="https://qwant.com"
+        />
+
+        <LinkPriceButton
+          title={layoutFooterKr.MeAmpoul}
+          originalPrice={layoutFooterKr.MeAmpoulOriginalPrice}
+          arrow={layoutFooterKr.MeAmpoulArrow}
+          price={layoutFooterKr.MeAmpoulPrice}
+          offRate={layoutFooterKr.MeAmpoulPriceDiscountRate}
+          installment={layoutFooterKr.MeAmpoulInstallment}
+          installmentPrice={layoutFooterKr.MeAmpoulInstallmentPrice}
+          link="https://www.qwant.com/"
         />
 
         <LinkButton

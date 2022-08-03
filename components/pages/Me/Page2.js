@@ -6,11 +6,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import meKr from "public/locales/kr/me.json";
 
+import style from "./page2.module.css";
 import right from "src/image/ME/me_02_a.png";
 import left from "src/image/ME/me_02_b.png";
-
 import Image from "next/image";
 import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
+import { PlusIcon } from "components/Parts/Icons";
 
 const LaserExplain = (props) => {
   return (
@@ -100,74 +101,61 @@ export default function Page2(props) {
     "linear-gradient(180deg, #F9F5FD 0%, rgba(255, 255, 255, 0) 50%)";
 
   return (
-    <Box
-      display={"grid"}
-      sx={{ gridTemplateColumns: "1.2fr 1fr", fontSize: "1vw" }}
-    >
+    <Box className={style.page2Container}>
       {/* 왼쪽 grid */}
-      <Box
-        display={"grid"}
-        sx={{
-          gridTemplateColumns: "2fr 0.4fr",
-          marginTop: "2vh",
-          marginLeft: "7vw",
-        }}
-      >
-        <Paper
-          sx={{
-            height: "63vh",
-            display: "grid",
-            gridTemplateRows: "0.8fr 2fr 2fr",
-            padding: "5rem",
-          }}
-        >
+      <Box className={style.leftGridContainer}>
+        <Paper className={style.leftPaper}>
           {/* 첫 번째 grid: 제목/소개*/}
-          <Box sx={{ height: "10vh" }}>
-            <span style={{ color: "rgba(0,0,0,0.5)" }}>{meKr.Page2Intro1}</span>
-            <h1 style={{ margin: 0 }}>
-              <span>{meKr.Page2Intro2A}</span>
-              <span style={{ fontWeight: "normal" }}>{meKr.Page2Intro2B}</span>
-              <span>{meKr.Page2Intro2C}</span>
-              <span style={{ fontWeight: "normal" }}>{meKr.Page2Intro2D}</span>
-            </h1>
+          <Box className={style.leftPaperTop}>
+            <span className={style.leftPaperTopFirst}>{meKr.Page2Intro1}</span>
+            <br />
+            <span className={style.leftPaperTopSecond}>
+              <span className={style.leftPaperTopSecondPoint}>
+                {meKr.Page2Intro2A}
+              </span>
+              <span>{meKr.Page2Intro2B}</span>
+              <span className={style.leftPaperTopSecondPoint}>
+                {meKr.Page2Intro2C}
+              </span>
+              <span>{meKr.Page2Intro2D}</span>
+            </span>
           </Box>
 
           {/* 두 번째 grid: 이미지 모음 */}
-          <Box
-            sx={{
-              display: "flex",
-              height: "28vh",
-              marginTop: "1vh",
-              // gridTemplateColumns: '1fr 0.1fr 1fr',
-            }}
-          >
+          <Box className={style.leftPaperMiddle}>
             {/* 레이저 */}
             <Box
+              className={style.imageContainer}
               onClick={selectorLaser}
-              sx={{
-                // border: "5px solid red",
-                display: "grid",
-                gridTemplateRows: "0.5fr 2fr",
-                background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
-              }}
+              // sx={{
+              //   border: "5px solid red",
+              //   background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
+              //   display: "grid",
+              //   gridTemplateRows: "1fr 2fr",
+              //   width: "277px",
+              //   heigth: "277px",
+              //   display: "grid",
+              //   gridTemplateRows: "0.5fr 2fr",
+              //   border: "1px solid #EFEFEF",
+              // }}
             >
               <Box
                 sx={{
-                  padding: "1vh",
+                  // padding: "1vh",
                   color: modeCondition ? PURPLE : DISABLECOLOR,
                   // background: modeCondition ? PURPLEGRADIENT : DISABLECOLOR,
                 }}
               >
                 {meKr.Page2ContainerLaserTitle}
               </Box>
-              <Box>
-                <Image
+              <Box className={style.laserImage}>
+                {/* <Image
                   src={left}
                   alt="left"
                   style={{
                     filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
                   }}
-                />
+                /> */}
               </Box>
             </Box>
             {/* 중앙 */}
@@ -185,43 +173,57 @@ export default function Page2(props) {
                 // marginLeft: "14vw",
               }}
             >
-              <AddCircleOutlineRoundedIcon
+              <Box className={style.plusImage}></Box>
+              {/* <PlusIcon
                 sx={{
                   position: "fixed",
-                  color: "rgba(0,0,0,0.4)",
-                  background: "rgba(255,255,255,0.4)",
-                  backdropFilter: "blur('50px')",
-                  fontSize: "3vw",
+                  // color: "rgba(0,0,0,0.4)",
+                  color: "red",
+                  background: "blue",
+                  // background: "rgba(255,255,255,0.4)",
+                  // backdropFilter: "blur('50px')",
+                  boxSizing: "border-box",
+
+                  width: "58px",
+                  height: "58px",
+                  // backdropFilter: "blur(50px)",
+                  // fontSize: "3vw",
                 }}
-              />
+              /> */}
             </Box>
             {/* 갈바닉 */}
             <Box
               onClick={selectorGalvanic}
+              className={style.imageContainer}
               sx={{
                 // border: '5px solid blue',
-                display: "grid",
-                gridTemplateRows: "1fr 2fr",
+                // display: "grid",
+                // gridTemplateRows: "1fr 2fr",
                 background: !modeCondition ? _WHITE : DISABLECOLOR,
+                // width: "276px",
+                // heigth: "276px",
+                // display: "grid",
+                // gridTemplateRows: "0.5fr 2fr",
+                // border: "1px solid #EFEFEF",
               }}
             >
               <Box
                 sx={{
-                  padding: "1vh",
+                  // padding: "1vh",
                   color: !modeCondition ? PURPLE : DISABLECOLOR,
                   // background: !modeCondition ? PURPLEGRADIENT : DISABLECOLOR,
                 }}
               >
                 {meKr.Page2ContainerGalvanicTitle}
               </Box>
-              <Box>
-                <Image
+              <Box className={style.galvanicImage}>
+                {/* <Image
                   src={right}
                   alt="right"
                   style={{
                     filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
                   }}
-                />
+                /> */}
               </Box>
             </Box>
           </Box>

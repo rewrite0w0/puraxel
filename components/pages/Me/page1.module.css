@@ -28,7 +28,7 @@
   /* --borderLine: linear-gradient(135deg, orange 60%, cyan); */
   /* z-index: 9999; */
   /* background-color: var(--borderLine); */
-  border-bottom: 1px solid pink;
+  border-bottom: 1px solid red;
 
   /* margin: 0;
   padding: 0; */
@@ -58,7 +58,7 @@
   /* align-items: center; */
   /* align-content: center; */
   display: flex;
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
 }
 
 .img {
@@ -86,10 +86,10 @@
 .imgContainer {
   display: grid;
   justify-content: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  height: 80vh;
+  height: 80vh; */
 
   /* z-index: 9999; */
 }
@@ -102,5 +102,5 @@
 }
 
 .fontEN {
-  font-family: ENFont;
+  font-family: "ENFont";
 }

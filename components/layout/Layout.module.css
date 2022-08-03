@@ -26,5 +26,10 @@
   /* 여기서 하단 다 주는데 나중에 상태관리로 페이지마자 색깔 줘야 함 */
   /* 할 때, 버튼 밑줄이랑, 폰트랑, kr/en 구분도 해야 함 */
   /* background: linear-gradient(#fff, #e9caf4); */
+  /* background: "#FA94EF"; */
+  z-index: 1;
+
   overflow: hidden;
+  /* margin-right: 80px;
+  margin-left: 80px; */
 }

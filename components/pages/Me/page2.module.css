@@ -1,0 +1,118 @@
+.page2Container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.leftGridContainer {
+  display: grid;
+  grid-template-columns: 2fr 0.4fr;
+  margin-top: 100px;
+}
+
+.leftPaper {
+  display: grid;
+  grid-template-rows: 0.8fr 2fr 2fr;
+  padding-top: 48px;
+  padding-left: 236px;
+  padding-right: 152px;
+}
+
+.leftPaperTop {
+  height: 107px;
+  width: 570px;
+  letter-spacing: -2px;
+  margin-bottom: 47px;
+}
+
+.leftPaperTopFirst {
+  font-size: 32px;
+  color: var(--grayScale05);
+}
+
+.leftPaperTopSecond {
+  font-size: 48px;
+  color: var(--primary01);
+}
+
+.leftPaperTopSecondPoint {
+  font-weight: 700;
+}
+
+.leftPaperMiddle {
+  display: flex;
+}
+
+.leftPaperBottom {
+}
+
+.plusImage {
+  border: 1px solid
+    linear-gradient(135.82deg, #f3f3f3 13.3%, rgba(255, 255, 255, 0.3) 98.46%);
+
+  /* border-image-source: linear-gradient(
+    135.82deg,
+    #f3f3f3 13.3%,
+    rgba(255, 255, 255, 0.3) 98.46%
+  ); */
+
+  background: linear-gradient(
+      135.82deg,
+      #f3f3f3 13.3%,
+      rgba(255, 255, 255, 0.3) 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+
+  position: fixed;
+  width: 58px;
+  height: 58px;
+  content: url(../../../src/image/ME/ic_functionPlus.svg);
+
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(50px);
+}
+
+.laserImage {
+  margin: 0;
+  padding: 0;
+  content: url(../../../src/image/ME/me_laser_active.svg);
+}
+
+.laserContainer {
+  /* content: url(../../../src/image/ME/me_laser_active.svg); */
+  background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
+    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
+  height: 277px;
+  width: 277px;
+
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.galvanicImage {
+  content: url(../../../src/image/ME/me_galvanic_active.svg);
+}
+.galvanicContainer {
+  background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
+    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
+  height: 277px;
+  width: 277px;
+
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
+    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
+  height: 277px;
+  width: 277px;
+
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,20 +1,16 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 .plainButton {
-  /* background-color: #947dd6; */
-  color: rgba(0, 0, 0, 0.7);
-  border-radius: 0.4rem;
-  padding: 1rem;
-  margin: 1rem;
-  /* width: 10rem; */
-  height: 3.8vw;
-  /* font-size: x-large; */
-  font-size: 1vw;
-  /* display: inherit; */
-  /* font-weight: bold; */
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
-  background-color: white;
+  color: var(--primary01);
+  background: var(--white);
+  border-radius: 0.4rem;
+  border: 1px solid var(--white);
   box-shadow: 0px 6px 20px rgba(127, 46, 190, 0.05);
+  height: 64px;
+  gap: 104px;
+  box-shadow: 0px 6px 20px rgba(127, 46, 190, 0.05);
+  position: absolute;
 }

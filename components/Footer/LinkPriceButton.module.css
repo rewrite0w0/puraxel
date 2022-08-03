@@ -1,22 +1,19 @@
 .priceButton {
-  color: rgba(0, 0, 0, 0.7);
-  border-radius: 0.4rem;
-  /* border-color: rgba(255, 255, 255, 0.5); */
-  /* border: solid rgba(0, 255, 255, 0.5); */
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 0.75vw;
-  /* width: 100%; */
-  height: 2vw;
-  /* justify-content: center; */
-
-  /* background-color: rgba(255, 255, 255, 0.6); */
-  /* font-weight: bold; */
-  display: grid;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  color: var(--primary01);
+  background: var(--white);
+  border-radius: 0.4px;
+  border: 1px solid var(--white);
   box-shadow: 0px 6px 20px rgba(127, 46, 190, 0.05);
-  background-color: white;
+  height: 64px;
+  /* gap: 104px; */
+  color: rgba(0, 0, 0, 0.7);
+  display: grid;
   justify-items: center;
   align-items: center;
+  font-size: 18px;
 }
 
 .priceButton:hover {
@@ -24,30 +21,25 @@
 }
 
 .priceButton1 {
-  /* background-color: blue; */
-  /* display: grid; */
   justify-self: flex-start;
-  margin-left: 0.8vw;
+  font-size: 16px;
+  color: var(--grayScale07);
 }
 
 .priceButton2 {
-  /* background-color: yellow; */
-  /* display: grid;
-  justify-content: grid-end; */
-  margin-right: 0.8vw;
   justify-self: flex-end;
+  font-size: 12px;
+  color: var(--primary03);
 }
 
 .priceButton3 {
-  /* background-color: brown; */
-  /* display: grid; */
+  font-size: 12px;
+  color: var(--primary03);
   justify-self: flex-start;
 }
 
 .priceButton4 {
-  /* background-color: yellowgreen; */
-  /* display: grid;
-
-  justify-content: grid-end; */
+  font-size: 20px;
+  color: var(--grayScale07);
   justify-self: flex-end;
 }

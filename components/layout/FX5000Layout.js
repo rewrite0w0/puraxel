@@ -10,7 +10,7 @@ import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 import StoreIcon from "@mui/icons-material/Store";
 import ModalComponent from "components/Modal/ModalComponent";
 
-export default function MeLayout({ children }) {
+export default function FX5000Layout({ children }) {
   return (
     <div>
       <body

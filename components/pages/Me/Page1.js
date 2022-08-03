@@ -73,7 +73,8 @@ export default function Page1() {
       className={style.container}
       style={{
         display: "grid",
-        gridTemplateRows: "40vh 40vh",
+
+        gridTemplateRows: "50vh 50vh",
         gridTemplateColumns: "1fr 1fr",
       }}
     >
