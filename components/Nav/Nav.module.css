@@ -16,6 +16,7 @@
   margin-top: 24px;
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 }
 
 .buttonStyle {
@@ -75,7 +76,7 @@
   /* background-size: cover; */
   height: 36px;
   width: 80px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   margin-right: 80px;
   /* font-size: 16px; */
 }
@@ -95,6 +96,7 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
+  margin-right: 80px;
 }
 
 .applyENFont {

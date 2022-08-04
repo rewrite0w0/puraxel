@@ -1,12 +1,16 @@
 .page2Container {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
+  margin-top: 144px;
+  margin-right: 149px;
 }
 
 .leftGridContainer {
   display: grid;
   grid-template-columns: 2fr 0.4fr;
   margin-top: 100px;
+  width: 958px;
+  /* height: 680px; */
 }
 
 .leftPaper {

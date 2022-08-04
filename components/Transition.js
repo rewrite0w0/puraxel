@@ -32,7 +32,7 @@ const Transition = ({ children }) => {
   const { asPath } = useRouter();
 
   return (
-    <div className="transitionWrap">
+    <main className="transitionWrap">
       <AnimatePresence initial={false} exitBeforeEnter>
         <motion.div
           key={asPath}
@@ -44,7 +44,7 @@ const Transition = ({ children }) => {
           {children}
         </motion.div>
       </AnimatePresence>
-    </div>
+    </main>
   );
 };
 

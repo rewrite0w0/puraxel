@@ -4,7 +4,7 @@
     "Malgun Gothic", sans-serif;
   color: var(--primary01);
   background: var(--white);
-  border-radius: 0.4px;
+  border-radius: 4px;
   border: 1px solid var(--white);
   box-shadow: 0px 6px 20px rgba(127, 46, 190, 0.05);
   height: 64px;

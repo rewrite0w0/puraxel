@@ -11,16 +11,49 @@ import style from "./page2.module.css";
 const LaserExplain = (props) => {
   return (
     <div>
-      <span className={style.explainTitle}>{meKr.Page2LaserTitle}</span>
+      <span
+        className={style.explainTitle}
+        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
+      >
+        {meKr.Page2LaserTitle}
+      </span>
       <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2LaserExplain1A}</span>
       <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span> */}
       <span>
-        <span className={style.explainPara}>{meKr.Page2LaserExplain}</span>
-        <br style={{ margin: "8px" }} />
-        <span>
+        <span
+          className={style.explainPara}
+          style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+        >
+          {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
+          피부층에 약 100개의 작은 홀을 생성하여
+        </span>
+        <br />
+        <span
+          style={{
+            fontSize: "14px",
+            letterSpacing: "-1px",
+            color: "#7E818D",
+          }}
+        >
+          {/* {나중에 json 넣어야함} */}
+          크림과 앰플의 피부흡수율을 높이줍니다.
+        </span>
+        <br style={{ marginBottom: "30px" }} />
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#A7ABB6",
+            marginRight: "8px",
+          }}
+        >
           {meKr.Page2LaserTechExplain1A}
+        </span>
+        <span
+          style={{ fontSize: "12px", letterSpacing: "-1px", color: "#7E818D" }}
+        >
           {meKr.Page2LaserTechExplain1B}
         </span>
       </span>
@@ -31,25 +64,79 @@ const LaserExplain = (props) => {
 const GalvanicExplain = (props) => {
   return (
     <div>
-      <span className={style.explainTitle}>{meKr.Page2GalvanicTitle}</span>
+      <span
+        className={style.explainTitle}
+        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
+      >
+        {meKr.Page2GalvanicTitle}
+      </span>
       <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2GalvanicExplain1A}</span>
       <span>{meKr.Page2GalvanicExplain1B}</span>
       <span>{meKr.Page2GalvanicExplain1C}</span>
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
-      <span className={style.explainPara}>{meKr.Page2GalvanicExplain}</span>
-      <br />
-      <span>
+      <span
+        className={style.explainPara}
+        style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+      >
+        {/* {meKr.Page2GalvanicExplain} */}
         <span>
+          같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
+          흡수율을 높입니다.
+        </span>
+        <br />
+        <span>
+          레이저 모드와 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
+        </span>
+      </span>
+      <br
+        style={{
+          marginBottom: "30px",
+        }}
+      />
+      <span>
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#4D5D58",
+            fontWeight: 600,
+          }}
+        >
           {meKr.Page2GalvanicTechExplain1A}
-          <span> </span>
-
-          <span>{meKr.Page2GalvanicTechExplain1B}</span>
         </span>
         &nbsp;
-        <span>
+        <span
+          style={{
+            marginRight: "81px",
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#A7ABB6",
+            fontWeight: 300,
+          }}
+        >
+          {meKr.Page2GalvanicTechExplain1B}
+        </span>
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#4D5D58",
+            fontWeight: 600,
+          }}
+        >
           {meKr.Page2GalvanicTechExplain2A}
-          <span>{meKr.Page2GalvanicTechExplain2B}</span>
+        </span>
+        &nbsp;
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#A7ABB6",
+            fontWeight: 300,
+          }}
+        >
+          {meKr.Page2GalvanicTechExplain2B}
         </span>
       </span>
     </div>
@@ -166,6 +253,7 @@ export default function Page2(props) {
             className={style.bookmark}
             sx={{
               background: modeCondition ? "white" : DISABLECOLOR,
+              marginTop: "50px",
               marginBottom: "8px",
             }}
           >

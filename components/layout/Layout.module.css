@@ -27,9 +27,30 @@
   /* 할 때, 버튼 밑줄이랑, 폰트랑, kr/en 구분도 해야 함 */
   /* background: linear-gradient(#fff, #e9caf4); */
   /* background: "#FA94EF"; */
-  z-index: 1;
+  /* z-index: 1; */
 
-  overflow: hidden;
+  /* overflow: hidden; */
   /* margin-right: 80px;
   margin-left: 80px; */
+}
+
+.layoutMain {
+}
+
+.layoutHeader {
+  z-index: 9999;
+  position: absolute;
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: pink; */
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 24px;
+}
+
+.layoutBody {
+  /* position: absolute; */
 }

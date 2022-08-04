@@ -8,6 +8,7 @@ import Page3 from "components/pages/Me/Page3";
 import Page4 from "components/pages/Me/Page4";
 import CircleFloating from "components/Parts/CircleFloating";
 import { useState } from "react";
+import Page0 from "components/pages/Me/temp.Page1";
 
 export default function Me() {
   return (
@@ -19,6 +20,9 @@ export default function Me() {
       </Head>
       <Swipers>
         <SwiperSlide>
+          <Page0 />
+        </SwiperSlide>
+        <SwiperSlide>
           <Page1 />
         </SwiperSlide>
         <SwiperSlide>
@@ -26,13 +30,13 @@ export default function Me() {
           <Page2 />
         </SwiperSlide>
 
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Page3 />
-        </SwiperSlide> */}
+        </SwiperSlide>
 
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Page4 />
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swipers>
     </MeLayout>
   );
