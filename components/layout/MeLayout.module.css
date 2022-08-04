@@ -6,6 +6,7 @@
 
   height: 100vh;
   background: url(../../src/image/ME/bg_me.png);
+  background-size: cover;
 }
 
 .bodyContainer {
