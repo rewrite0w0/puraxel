@@ -1,21 +1,16 @@
-.meContainer {
-  /* background: var(--secondaryME); */
-  /* height: 80vh; */
-  /* min-height: 100vh;
-  max-height: 100vh; */
-
+.TechContainer {
+  background: ghostwhite;
   height: 100vh;
-  background: url(../../src/image/ME/bg_me.png);
 }
 
 .bodyContainer {
   /* margin-top: 80px; */
   /* margin-right: 80px;
-  margin-left: 80px; */
+    margin-left: 80px; */
   /* background: black; */
   /* height: 50vh; */
   /* min-height: 100vh;
-  max-height: 100vh; */
+    max-height: 100vh; */
   /* position: relative; */
 }
 
@@ -39,11 +34,12 @@
   /* // justifyContent: "space-around", */
   /* // justifyContent: "space-evenly", */
   /* justify-items: center;
-  align-items: center; */
+    align-items: center; */
   /* position: relative; */
   /* background: blue; */
   /* margin-bottom: 48px; */
   bottom: 0;
+  right: 0;
   margin-right: 80px;
   margin-left: 80px;
   margin-bottom: 48px;

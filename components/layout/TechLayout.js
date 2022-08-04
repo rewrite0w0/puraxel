@@ -3,17 +3,15 @@ import LinkPriceButton from "components/Footer/LinkPriceButton";
 import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
 import { ShopIcon } from "components/Parts/Icons";
-import style from "./HairLayout.module.css";
-import ModalComponent from "components/Modal/ModalComponent";
+import style from "./TechLayout.module.css";
 
-export default function HairLayout({ children }) {
+export default function TechLayout({ children }) {
   return (
-    <div className={style.HairContainer}>
+    <div className={style.TechContainer}>
       <body className={style.bodyContainer}>
         {children}
 
         <footer className={style.footerContainer}>
-          <ModalComponent />
           <LinkButton
             title="여기에 캐러셀 혹은 수동 캐러셀"
             sx={{ width: "92px" }}

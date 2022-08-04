@@ -19,8 +19,8 @@ export default function FX5000() {
       <Swipers>
         <SwiperSlide>{Page1}</SwiperSlide>
         <SwiperSlide>{Page2}</SwiperSlide>
-        {/* <SwiperSlide>{Page3}</SwiperSlide> */}
-        {/* <SwiperSlide>{Page4}</SwiperSlide> */}
+        <SwiperSlide>{Page3}</SwiperSlide>
+        <SwiperSlide>{Page4}</SwiperSlide>
       </Swipers>
     </FX5000Layout>
   );

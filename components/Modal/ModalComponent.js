@@ -45,7 +45,7 @@ const bgStyle = {
   p: 4,
 };
 
-export default function ModalComponent() {
+export default function ModalComponent(props) {
   //  모달
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -115,7 +115,11 @@ export default function ModalComponent() {
 
       {/* 그리드 좌측 */}
 
-      <Box className={buttonStyle.priceButton} onClick={handleOpenModal}>
+      <Box
+        className={buttonStyle.priceButton}
+        onClick={handleOpenModal}
+        {...props}
+      >
         {modalKr.modalButtonTitle}
       </Box>
       <Modal open={modalOpen} onClose={handleCloseModal}>

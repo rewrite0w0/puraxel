@@ -1,0 +1,13 @@
+.page2Container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  height: 100vh;
+}
+
+.page2ContainerLeft {
+  background: red;
+}
+
+.page2ContainerRight {
+  background: blue;
+}
