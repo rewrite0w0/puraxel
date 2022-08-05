@@ -44,6 +44,11 @@
 
   position: absolute;
 
+  /* width: 95vw; */
+  /* width: "inherit"; */
+  width: -moz-available;
+
+  justify-content: space-between;
   /* bottom: 100px; */
   /* z-index: 99; */
   /* // height: "10vh", */

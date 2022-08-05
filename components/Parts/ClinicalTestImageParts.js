@@ -1,7 +1,6 @@
-import { Box } from "@mui/material";
-import style from "./Mepage3.module.css";
+import style from "./ClinicalTestImageParts.module.css";
 
-export default function MePage3Parts(props) {
+export default function ClinicalTestImageParts(props) {
   return (
     <div
       className={style.icon}

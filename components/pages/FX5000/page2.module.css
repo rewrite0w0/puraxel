@@ -1,12 +1,16 @@
 .page2Container {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
+  margin-top: 144px;
+  margin-right: 149px;
 }
 
 .leftGridContainer {
   display: grid;
   grid-template-columns: 2fr 0.4fr;
   margin-top: 100px;
+  width: 958px;
+  /* height: 680px; */
 }
 
 .leftPaper {
@@ -151,4 +155,83 @@
   color: var(--grayScale08);
   font-size: 14px;
   letter-spacing: -1px;
+}
+
+.bookmark {
+  width: 123px;
+  height: 63px;
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid #f2f3f7; */
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 0px 4px 4px 0px;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bookmark:hover {
+  cursor: pointer;
+}
+
+.bookmarkParaContainer {
+  padding: 12px 16px 12px 20px;
+}
+
+.bookmarkUpperPara {
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+
+.bookmarkLowerPara {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.rightGridContainer {
+  margin-top: 40px;
+  /* background: white; */
+  width: 1000px;
+  height: 800px;
+}
+
+.laserImageRightContainer {
+  content: url(../../../src/image/ME/img_pura_01.png);
+}
+
+.galvanicImageRightContainer {
+  content: url(../../../src/image/ME/img_pura_02.png);
+}
+
+.explainContainer {
+  width: 650px;
+  height: 164px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: green;
+  border: 1px solid #f2f3f7;
+  display: flex;
+}
+
+.explainContainerTitle {
+}
+
+.explainContainerDouble {
+  width: 650px;
+  height: 320px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background: pink;
+  border: 1px solid #f2f3f7;
+  display: flex;
+}
+
+.tempImage {
+  /* content: url(../../../src/image/giphy.gif); */
+  width: 264px;
+  height: 148px;
+  background: black;
 }

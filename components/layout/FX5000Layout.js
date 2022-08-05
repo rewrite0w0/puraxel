@@ -5,6 +5,7 @@ import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 import { ShopIcon } from "components/Parts/Icons";
 import style from "./FX5000Layout.module.css";
 import ModalComponent from "components/Modal/ModalComponent";
+import CommonPlainButtons from "components/Footer/CommonPlainButtons";
 
 export default function FX5000Layout({ children }) {
   return (
@@ -14,7 +15,7 @@ export default function FX5000Layout({ children }) {
 
         <footer className={style.footerContainer}>
           <ModalComponent />
-          <LinkButton
+          <CommonPlainButtons
             title="여기에 캐러셀 혹은 수동 캐러셀"
             sx={{ width: "92px" }}
           />

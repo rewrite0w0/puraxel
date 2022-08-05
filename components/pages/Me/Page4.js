@@ -75,21 +75,21 @@ const PaperRightBot = (props) => {
 };
 
 const Parts01 = () => {
-  // return <div className={style.meParts01} imagenum="pu"></div>;
-  return <Image src={parts01} />;
+  return <div className={style.meParts01} imagenum="pu"></div>;
+  // return <Image src={parts01} />;
 };
 
 const Parts02 = () => {
-  // return <div className={style.meParts02} imagenum="ra"></div>;
-  return <Image src={parts02} />;
+  return <div className={style.meParts02} imagenum="ra"></div>;
+  // return <Image src={parts02} />;
 };
 const Parts03 = () => {
-  // return <div className={style.meParts03} imagenum="xel"></div>;
-  return <Image src={parts03} />;
+  return <div className={style.meParts03} imagenum="xel"></div>;
+  // return <Image src={parts03} />;
 };
 const Parts04 = () => {
-  // return <div className={style.meParts04} imagenum="me"></div>;
-  return <Image src={parts04} />;
+  return <div className={style.meParts04} imagenum="me"></div>;
+  // return <Image src={parts04} />;
 };
 
 export default function Page4(props) {
@@ -142,18 +142,29 @@ export default function Page4(props) {
         style={{
           // background: "pink",
           display: "flex",
-          width: "40%",
+          // width: "40%",
           justifyContent: "center",
+          // marginTop: "500px",
+          padding: "25px",
+          marginTop: "145px",
+          marginRight: "266px",
+          marginLeft: "160px",
+          marginBottom: "100px",
         }}
       >
         {<PartViewer />}
       </div>
       <div
-        style={{ display: "flex", width: "60%", justifyContent: "flex-end" }}
+        style={{
+          display: "flex",
+          // width: "60%",
+          overflow: "inherit",
+          justifyContent: "flex-end",
+        }}
       >
         {/* {<PartViewer />} */}
-        <Paper
-          sx={{
+        <article
+          style={{
             width: "1124px",
             heigth: "640px",
             marginBottom: "220px",
@@ -165,6 +176,7 @@ export default function Page4(props) {
             gridTemplateRows: "1fr 4fr",
             gridTemplateColumns: "1fr 1.2fr",
             padding: "48px 80px",
+            background: "#fff",
           }}
         >
           <section className={style.paperLeftTop}>
@@ -180,7 +192,7 @@ export default function Page4(props) {
             </span>
           </section>
           <section className={style.paperRightTop}>
-            <motion.div
+            <div
               className={style.paperRightTopImages}
               partsid="pu"
               onClick={imageOnClickHandler.onPu}
@@ -194,8 +206,8 @@ export default function Page4(props) {
                   marginBottom: parts === "pu" ? "10px" : "0px",
                 }}
               />
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               className={style.paperRightTopImages}
               partsid="ra"
               onClick={imageOnClickHandler.onRa}
@@ -209,8 +221,8 @@ export default function Page4(props) {
                   marginBottom: parts === "ra" ? "10px" : "0px",
                 }}
               />
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               className={style.paperRightTopImages}
               partsid="xel"
               onClick={imageOnClickHandler.onXel}
@@ -224,8 +236,8 @@ export default function Page4(props) {
                   marginBottom: parts === "xel" ? "10px" : "0px",
                 }}
               />
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               className={style.paperRightTopImages}
               partsid="me"
               onClick={imageOnClickHandler.onMe}
@@ -239,7 +251,7 @@ export default function Page4(props) {
                   marginBottom: parts === "me" ? "10px" : "0px",
                 }}
               />
-            </motion.div>
+            </div>
           </section>
           <section className={style.paperLeftBottom}>
             <PaperLeftBot title="제품명" explain="퓨라셀 me" />
@@ -273,7 +285,7 @@ export default function Page4(props) {
               secondEX="11.1V 850mAh Lithium-Polymer Battery"
             />
           </section>
-        </Paper>
+        </article>
       </div>
     </div>
   );

@@ -1,15 +1,16 @@
 import Image from "next/image";
 import style from "./temp.page1.module.css";
 
-import tempME from "../../../src/image/ME/page1/puraxel_me_me_me.svg";
+import tempME from "../../../src/image/ME/page1/me_04_03.svg";
 
 export default function Page0() {
   return (
     <main
       style={{
         display: "grid",
-        gridTemplateColumns: "1.8fr 1fr",
-        marginTop: "136px",
+        gridTemplateColumns: "2fr 1fr",
+        marginTop: "210px",
+        height: "100vh",
       }}
     >
       <section
@@ -32,7 +33,7 @@ export default function Page0() {
             justifyContent: "center",
             alignItems: "center",
             color: "#fff",
-            marginBottom: "16px",
+            marginBottom: "26px",
           }}
         >
           PURAXEL
@@ -43,7 +44,6 @@ export default function Page0() {
             letterSpacing: "-2px",
             color: "#55576F",
             fontWeight: "800",
-            marginBottom: "16px",
           }}
         >
           ME
@@ -64,7 +64,7 @@ export default function Page0() {
             letterSpacing: "-2px",
             fontWeight: "300",
             color: "#55576F",
-            marginBottom: "56px",
+            marginBottom: "76px",
           }}
         >
           얼굴에 물들이다
@@ -85,7 +85,7 @@ export default function Page0() {
             fontWeight: "700",
             letterSpacing: "-1px",
             color: "#4D5058",
-            marginBottom: "12px",
+            marginBottom: "32px",
           }}
         >
           홈 에스테틱 레이저의 시작
@@ -119,9 +119,8 @@ export default function Page0() {
           src={tempME}
           // width="574px"
           // height="1422px"
-          layout="fixed"
-          // bottom="0"
-          // style={{ position: "absolute" }}
+          bottom="0"
+          style={{ position: "absolute" }}
         />
       </section>
     </main>

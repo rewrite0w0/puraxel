@@ -7,25 +7,53 @@ import { motion } from "framer-motion";
 import meKr from "public/locales/kr/me.json";
 
 import style from "./page2.module.css";
-import right from "src/image/ME/me_02_a.png";
-import left from "src/image/ME/me_02_b.png";
-import Image from "next/image";
-import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
-import { PlusIcon } from "components/Parts/Icons";
 
 const LaserExplain = (props) => {
   return (
     <div>
-      <span className={style.explainTitle}>{meKr.Page2LaserTitle}</span>
+      <span
+        className={style.explainTitle}
+        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
+      >
+        {meKr.Page2LaserTitle}
+      </span>
       <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2LaserExplain1A}</span>
       <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span> */}
       <span>
-        <span className={style.explainPara}>{meKr.Page2LaserExplain}</span>
-        <br style={{ margin: "8px" }} />
-        <span>
+        <span
+          className={style.explainPara}
+          style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+        >
+          {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
+          피부층에 약 100개의 작은 홀을 생성하여
+        </span>
+        <br />
+        <span
+          style={{
+            fontSize: "14px",
+            letterSpacing: "-1px",
+            color: "#7E818D",
+          }}
+        >
+          {/* {나중에 json 넣어야함} */}
+          크림과 앰플의 피부흡수율을 높이줍니다.
+        </span>
+        <br style={{ marginBottom: "30px" }} />
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#A7ABB6",
+            marginRight: "8px",
+          }}
+        >
           {meKr.Page2LaserTechExplain1A}
+        </span>
+        <span
+          style={{ fontSize: "12px", letterSpacing: "-1px", color: "#7E818D" }}
+        >
           {meKr.Page2LaserTechExplain1B}
         </span>
       </span>
@@ -36,25 +64,79 @@ const LaserExplain = (props) => {
 const GalvanicExplain = (props) => {
   return (
     <div>
-      <span className={style.explainTitle}>{meKr.Page2GalvanicTitle}</span>
+      <span
+        className={style.explainTitle}
+        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
+      >
+        {meKr.Page2GalvanicTitle}
+      </span>
       <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2GalvanicExplain1A}</span>
       <span>{meKr.Page2GalvanicExplain1B}</span>
       <span>{meKr.Page2GalvanicExplain1C}</span>
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
-      <span className={style.explainPara}>{meKr.Page2GalvanicExplain}</span>
-      <br />
-      <span>
+      <span
+        className={style.explainPara}
+        style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+      >
+        {/* {meKr.Page2GalvanicExplain} */}
         <span>
+          같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
+          흡수율을 높입니다.
+        </span>
+        <br />
+        <span>
+          레이저 모드와 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
+        </span>
+      </span>
+      <br
+        style={{
+          marginBottom: "30px",
+        }}
+      />
+      <span>
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#4D5D58",
+            fontWeight: 600,
+          }}
+        >
           {meKr.Page2GalvanicTechExplain1A}
-          <span> </span>
-
-          <span>{meKr.Page2GalvanicTechExplain1B}</span>
         </span>
         &nbsp;
-        <span>
+        <span
+          style={{
+            marginRight: "81px",
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#A7ABB6",
+            fontWeight: 300,
+          }}
+        >
+          {meKr.Page2GalvanicTechExplain1B}
+        </span>
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#4D5D58",
+            fontWeight: 600,
+          }}
+        >
           {meKr.Page2GalvanicTechExplain2A}
-          <span>{meKr.Page2GalvanicTechExplain2B}</span>
+        </span>
+        &nbsp;
+        <span
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-1px",
+            color: "#A7ABB6",
+            fontWeight: 300,
+          }}
+        >
+          {meKr.Page2GalvanicTechExplain2B}
         </span>
       </span>
     </div>
@@ -81,7 +163,7 @@ export default function Page2(props) {
   const modeCondition = modeSelector === "Laser";
   // const laserCondition = laserSelector === true;
 
-  const DISABLECOLOR = "rgba(0, 0, 0, 0.25)";
+  const DISABLECOLOR = "#F2F3F6";
 
   const indicatorActive = "#A590FA";
   const indicatorInactive = "#DFE1E8";
@@ -140,6 +222,7 @@ export default function Page2(props) {
 
           {/* 세 번째 grid: 설명 */}
           <Box className={style.leftPaperBottom}>
+            {/* 인디케이터 */}
             <span className={style.indicator}>
               <span
                 className={style.indicatorAtom}
@@ -158,6 +241,7 @@ export default function Page2(props) {
                 }}
               ></span>
             </span>
+            {/* 설명 */}
             {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
           </Box>
         </Paper>
@@ -166,144 +250,62 @@ export default function Page2(props) {
         <Box>
           <Paper
             onClick={selectorLaser}
-            // elevation={0}
+            className={style.bookmark}
             sx={{
-              width: "10vh",
-              height: "4vh",
-              fontSize: "0.8vw",
-              wordBreak: "keep-all",
-              display: "grid",
-              gridDirection: "column",
-              alignContent: "center",
-              justifyContent: "center",
-              alignItems: "center",
-
               background: modeCondition ? "white" : DISABLECOLOR,
+              marginTop: "50px",
+              marginBottom: "8px",
             }}
           >
-            <div
-              style={{
-                fontSize: "0.65vw",
-              }}
-            >
-              {meKr.Page2BookMarkLaser}
+            <div className={style.bookmarkParaContainer}>
+              <span
+                className={style.bookmarkUpperpara}
+                style={{
+                  fontSize: "14px",
+                  letterSpacing: "-1px",
+                }}
+              >
+                {meKr.Page2BookMarkLaser}
+              </span>
+              <br />
+              <span className={style.bookmarkLowerPara}>
+                {meKr.Page2BookMarkDetail}
+              </span>
             </div>
-            {"\n"}
-
-            <div style={{ fontSize: "0.6vw" }}>{meKr.Page2BookMarkDetail}</div>
           </Paper>
           <Paper
             onClick={selectorGalvanic}
+            className={style.bookmark}
             sx={{
-              width: "10vh",
-              height: "4vh",
-              fontSize: "0.8vw",
-              wordBreak: "keep-all",
-              // display: "grid",
-              // alignContent: "center",
-              // justifyContent: "center",
-              display: "grid",
-              gridDirection: "column",
-              alignContent: "center",
-              justifyContent: "center",
-              alignItems: "center",
               background: !modeCondition ? "white" : DISABLECOLOR,
             }}
           >
-            {/* <Typography sx={{ fontSize: "0.5vw" }}> */}
-            {meKr.Page2BookMarkGalvanic}
-            {/* </Typography> */}
-            {"\n"}
-            {/* <Typography sx={{ fontSize: "0.5vw" }}> */}
-            <div style={{ fontSize: "0.6vw" }}>{meKr.Page2BookMarkDetail}</div>
-            {/* </Typography> */}
+            <div className={style.bookmarkParaContainer}>
+              <span className={style.bookmarkUpperpara}>
+                {meKr.Page2BookMarkGalvanic}
+              </span>
+              <br />
+              <span className={style.bookmarkLowerPara}>
+                {meKr.Page2BookMarkDetail}
+              </span>
+            </div>
           </Paper>
         </Box>
       </Box>
 
       {/* 오른쪽 grid */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          // margin: "1rem",
-          // background: "white",
-        }}
-      >
-        {/* 왼쪽 동그라미 */}
-        {/* <motion.div> */}
-        <Box
-          style={{
-            // background: "black",
-            background: modeCondition
-              ? "linear-gradient(#DEE1FF00,#BFA9EE)"
-              : DISABLECOLOR,
 
-            width: "25vw",
-            height: "50vh",
-            borderRadius: "50%",
-            position: "relative",
-            right: "-5vw",
-          }}
+      {/* <Box className={style.rightGridContainer}> */}
+      {modeCondition ? (
+        <Box
+          className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
         ></Box>
-        {/* </motion.div> */}
-
-        {/* 이미지 */}
-        <motion.div
-          style={{
-            // background: "PURPLE",
-            display: "flex",
-            width: "20vw",
-            height: "40vh",
-            position: "fixed",
-            zIndex: 1,
-            borderRadius: "50%",
-            // marginLeft: "17vw",
-            // marginTop: "4vh",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          {modeCondition ? (
-            // 레이저
-            <Image
-              src={left}
-              alt="left"
-              style={{
-                filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
-              }}
-            />
-          ) : (
-            // 갈바닉
-            <Image
-              src={right}
-              alt="right"
-              style={{
-                filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
-              }}
-            />
-          )}
-        </motion.div>
-
-        {/* <motion.div> */}
+      ) : (
         <Box
-          style={{
-            // background: "red",
-            background: !modeCondition
-              ? "linear-gradient(#DEE1FF00,#BFA9EE)"
-              : DISABLECOLOR,
-            backdropFilter: "blur(32px)",
-            width: "25vw",
-            height: "50vh",
-            borderRadius: "50%",
-            marginRight: "2vw",
-          }}
-        >
-          {/* 오른쪽 동그라미 */}
-        </Box>
-        {/* </motion.div> */}
-      </Box>
+          className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
+        ></Box>
+      )}
+      {/* </Box> */}
     </Box>
   );
 }

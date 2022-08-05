@@ -1,5 +1,5 @@
 import style from "./page3.module.css";
-import MePage3Parts from "components/Parts/MePage3";
+import ClinicalTestImageParts from "components/Parts/ClinicalTestImageParts";
 
 import {
   ReactCompareSlider,
@@ -23,48 +23,93 @@ export default function Page3() {
           display: "flex",
           flexDirection: "row",
           marginRight: "471px",
-          width: "1124px",
-          height: "107px",
+          width: "1300px",
+          height: "120px",
           // gridTemplateColumns: "480px 200px 180px",
         }}
       >
-        <span
+        <section
           style={{
-            background: "red",
-            display: "grid",
-            gridTemplateRows: "1fr 1fr",
+            marginRight: "65px",
+            width: "600px",
           }}
         >
-          <span>임시페이지</span>
-          <span>지금은 내용없음</span>
-        </span>
-        <span
+          <span
+            style={{
+              fontSize: "32px",
+              letterSpacing: "-2px",
+              fontWeight: "300",
+              color: "#A7ABB6",
+            }}
+          >
+            퓨라셀 각 효능에 특화된 앰플 사용 후 결과
+          </span>
+          <br />
+          <span
+            style={{
+              fontSize: "48px",
+              letterSpacing: "-0.02em",
+
+              color: "#55576F",
+            }}
+          >
+            <span>퓨라셀</span>
+            &nbsp;
+            <span style={{ fontWeight: "700" }}>임상 실험</span>
+          </span>
+        </section>
+        {/*  */}
+        <section
           style={{
-            background: "black",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gridTemplateRows: "1fr 1fr",
-            color: "white",
+            marginRight: "98px",
+            marginTop: "40px",
+            width: "255px",
           }}
         >
-          <span>시험 기간</span>
-          <span>23123~213123</span>
-          <span>시험 기관 라임보소</span>
-          <span>ㅇㅇ?ㅇㅇㅇ?ㅇㅇㅇㅇ?</span>
-        </span>
-        <span
-          style={{
-            background: "yellow",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gridTemplateRows: "1fr 1fr",
-          }}
-        >
-          <span>피시험자</span>
-          <span>여성 21명</span>
-          <span>부위</span>
-          <span>안면 2주 2배 EE</span>
-        </span>
+          <span
+            className={style.testTitle}
+            // style={{
+            //   marginRight: "16px",
+            //   fontWeight: 500,
+            //   fontSize: "16px",
+            //   letterSpacing: "-1px",
+            //   color: "#7E818D",
+            // }}
+          >
+            시험 기간
+          </span>
+          <span className={style.testDetail}>2020. 5. 21 ~ 7. 13</span>
+          <br />
+          <span
+            className={style.testTitle}
+            // style={{
+            //   marginRight: "16px",
+            //   fontWeight: 500,
+            //   fontSize: "16px",
+            //   letterSpacing: "-1px",
+            //   color: "#7E818D",
+            // }}
+          >
+            시험 기관
+          </span>
+          <span className={style.testDetail}>한국피부과학연구원</span>
+        </section>
+        {/*  */}
+        <section style={{ marginTop: "40px", width: "330px" }}>
+          <span>
+            <span className={style.testTitle}>피시험자</span>
+            <span className={style.testDetail}>여성 21명</span>
+          </span>
+          <br />
+          <span>
+            <span className={style.testTitle} style={{ marginRight: "42px" }}>
+              부위
+            </span>
+            <span className={style.testDetail}>
+              안면 부위와 전완부위 2주 사용 후 2배 증가
+            </span>
+          </span>
+        </section>
       </article>
 
       <article
@@ -72,17 +117,20 @@ export default function Page3() {
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr 0.25fr",
           gridTemplateRows: "1fr 1fr",
-          background: "pink",
+          // background: "pink",
+
+          background: "rgba(255, 255, 255, 0.7)",
           width: "1699px",
           height: "661px",
+          marginTop: "40px",
           paddingLeft: "40px",
-          paddingTop: "20px",
-          paddingBottom: "20px",
+          // paddingTop: "20px",
+
           paddingRight: "80px",
         }}
       >
         <section>
-          <MePage3Parts title="미 임상실험 01" />
+          <ClinicalTestImageParts title="피부 보습력 3배 증가" width="171px" />
           <div style={{ marginTop: "8px" }}>
             <span>피부 수분 변화에 대한 통계분석 결과,</span>
             <br />
@@ -108,7 +156,7 @@ export default function Page3() {
         </section>
 
         <section>
-          <MePage3Parts title="미 임상실험 02" />
+          <ClinicalTestImageParts title="피부 치밀도 30% 증가" width="184px" />
           <div style={{ marginTop: "8px" }}>
             <span>피부톤을 나타내는 L*value가 퓨라셀</span>
             <br />
@@ -134,7 +182,7 @@ export default function Page3() {
         </section>
 
         <section>
-          <MePage3Parts title="미 임상실험 03" />
+          <ClinicalTestImageParts title="피부톤(맑기) 2배 증가" width="156px" />
           <div style={{ marginTop: "8px" }}>
             <span>피부치밀도를 나타내는 Density 값이</span>
             <br />
@@ -161,10 +209,11 @@ export default function Page3() {
 
         <section>{/* empty */}</section>
         <section>
-          <MePage3Parts
-            title="미 임상실험 A"
+          <ClinicalTestImageParts
+            title="색소 침착 개선"
             color="#55576F"
             sx={{ background: "#f2f3f7" }}
+            width="101px"
           />
           <div
             style={{
@@ -186,9 +235,9 @@ export default function Page3() {
         </section>
 
         <section>
-          <MePage3Parts
-            title="임상 B"
-            width={"47px"}
+          <ClinicalTestImageParts
+            title="안티에이징 효과"
+            width={"112px"}
             color={"#55576F"}
             sx={{ background: "#f2f3f7" }}
           />

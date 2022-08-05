@@ -27,6 +27,8 @@ import modalKr from "public/locales/kr/modal";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
+import commonButtonStyle from "components/Footer/CommonButtons.module.css";
+
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
 // import Typography from "@mui/material/Typography";
@@ -116,10 +118,24 @@ export default function ModalComponent(props) {
       {/* 그리드 좌측 */}
 
       <Box
-        className={buttonStyle.priceButton}
+        // className={buttonStyle.priceButton}
+        // className={commonButtonStyle.buttonContainer}
+        style={{
+          background: "rgba(255,255,255,0.6)",
+          boxShadow: "0px 6px 20px rgba(127, 46, 190, 0.05)",
+          border: "1px solid #FFFFFF",
+          borderRadius: "4px",
+          display: "flex",
+          // gridTemplateRows: "1fr 1fr",
+          height: "64px",
+          flexDirection: "column",
+          justifyContent: "center",
+          ...props.style,
+        }}
         onClick={handleOpenModal}
         {...props}
       >
+        ~icon~
         {modalKr.modalButtonTitle}
       </Box>
       <Modal open={modalOpen} onClose={handleCloseModal}>

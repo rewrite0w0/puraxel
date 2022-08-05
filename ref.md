@@ -23,6 +23,8 @@
 - https://mui.com/material-ui/api/svg-icon/
 - https://zetawiki.com/wiki/CSS%EC%97%90%EC%84%9C_CSS_%EC%9E%84%ED%8F%AC%ED%8A%B8 css import css
 - https://stackoverflow.com/questions/8200204/fit-background-image-to-div
+- https://stackoverflow.com/questions/3383923/css-moz-available-equivalent-in-webkit
+- https://newbedev.com/putting-moz-available-and-webkit-fill-available-in-one-width-css-property
 
 ## 유튜브 관련
 

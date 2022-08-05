@@ -69,7 +69,7 @@ const Page1Img = (props) => {
 
 export default function Page1() {
   return (
-    <motion.div
+    <div
       className={style.container}
       style={{
         display: "grid",
@@ -78,20 +78,18 @@ export default function Page1() {
         gridTemplateColumns: "1fr 1fr",
       }}
     >
-      <motion.div className={style.containerLeftTop}>
+      <div className={style.containerLeftTop}>
         <Page1Intro1 />
         {/* <hr className={style.borderLine} /> */}
-      </motion.div>
-      <motion.div className={style.containerRightTop}>
+      </div>
+      <div className={style.containerRightTop}>
         <Page1Img />
         {/* <Box className={style.img}></Box> */}
-      </motion.div>
-      <motion.div className={style.containerLeftBottom}>
+      </div>
+      <div className={style.containerLeftBottom}>
         <Page1Explain />
-      </motion.div>
-      <motion.div className={style.containerRightBottom}>
-        {/* empty */}
-      </motion.div>
-    </motion.div>
+      </div>
+      <div className={style.containerRightBottom}>{/* empty */}</div>
+    </div>
   );
 }

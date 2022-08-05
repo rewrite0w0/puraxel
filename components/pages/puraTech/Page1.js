@@ -79,20 +79,18 @@ export default function Page1() {
         gridTemplateColumns: "1fr 1fr",
       }}
     >
-      <motion.div className={style.containerLeftTop}>
+      <div className={style.containerLeftTop}>
         <div style={{ background: "red" }}>하이브리드 </div>
 
         {/* <hr className={style.borderLine} /> */}
-      </motion.div>
-      <motion.div className={style.containerRightTop}>
+      </div>
+      <div className={style.containerRightTop}>
         asddddddddddddd
         {/* <Page1Img /> */}
         {/* <Box className={style.img}></Box> */}
-      </motion.div>
-      <motion.div className={style.containerLeftBottom}>ㅇㅋㄷㅋ</motion.div>
-      <motion.div className={style.containerRightBottom}>
-        {/* void */}
-      </motion.div>
+      </div>
+      <div className={style.containerLeftBottom}>ㅇㅋㄷㅋ</div>
+      <div className={style.containerRightBottom}>{/* void */}</div>
     </main>
   );
 }

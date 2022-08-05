@@ -232,7 +232,7 @@ export default function Page2(props) {
         }}
       >
         {/* 왼쪽 동그라미 */}
-        {/* <motion.div> */}
+        {/* <div> */}
         <Box
           style={{
             // background: "black",
@@ -247,10 +247,10 @@ export default function Page2(props) {
             right: "-5vw",
           }}
         ></Box>
-        {/* </motion.div> */}
+        {/* </div> */}
 
         {/* 이미지 */}
-        <motion.div
+        <div
           style={{
             // background: "PURPLE",
             display: "flex",
@@ -284,9 +284,9 @@ export default function Page2(props) {
               }}
             />
           )}
-        </motion.div>
+        </div>
 
-        {/* <motion.div> */}
+        {/* <div> */}
         <Box
           style={{
             // background: "red",
@@ -302,7 +302,7 @@ export default function Page2(props) {
         >
           {/* 오른쪽 동그라미 */}
         </Box>
-        {/* </motion.div> */}
+        {/* </div> */}
       </Box>
     </Box>
   );

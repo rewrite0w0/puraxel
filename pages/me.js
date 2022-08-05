@@ -22,9 +22,9 @@ export default function Me() {
         <SwiperSlide>
           <Page0 />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Page1 />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           {/* {window.screen.width > 1000 ? <Page2 /> : <Page3 />} */}
           <Page2 />

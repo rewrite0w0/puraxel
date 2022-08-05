@@ -1,21 +1,31 @@
 .page2Container {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  margin-top: 144px;
-  margin-right: 149px;
+  /* margin-top: 144px; */
+  /* margin-right: 149px; */
+  /* background: black; */
+  height: 100vh;
 }
 
 .leftGridContainer {
   display: grid;
   grid-template-columns: 2fr 0.4fr;
-  margin-top: 100px;
+  margin-top: 144px;
   width: 958px;
+  height: 680px;
   /* height: 680px; */
+  /* background: var(--grayScale02); */
+  background: var(--white);
+
+  /* grayscale/02 */
+  border: 1px solid #f2f3f7;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
 }
 
 .leftPaper {
   display: grid;
-  grid-template-rows: 0.8fr 2fr 2fr;
+  /* grid-template-rows: 0.8fr 2fr 2fr; */
   padding-top: 48px;
   padding-left: 236px;
   padding-right: 152px;
@@ -24,8 +34,7 @@
 .leftPaperTop {
   height: 107px;
   width: 570px;
-
-  margin-bottom: 47px;
+  /* margin-bottom: 47px; */
 }
 
 .leftPaperTopFirst {
@@ -48,6 +57,7 @@
 }
 
 .leftPaperBottom {
+  margin-top: 10px;
 }
 
 .plusImage {
@@ -78,6 +88,7 @@
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(50px);
   margin-right: 18px;
+  margin-bottom: 55px;
 }
 
 .laserImage {
@@ -128,6 +139,7 @@
 
 .indicator {
   display: flex;
+  margin-top: -63px;
 }
 
 .indicatorLeft {
@@ -190,16 +202,21 @@
 }
 
 .rightGridContainer {
+  margin-left: 123px;
   margin-top: 40px;
   /* background: white; */
   width: 1000px;
-  height: 800px;
+  height: 1000px;
 }
 
 .laserImageRightContainer {
-  content: url(../../../src/image/ME/img_pura_01.png);
+  /* content: url(../../../src/image/ME/img_pura_01.png); */
+  /* content: url(../../../src/image/ME/page2/las.svg); */
+  content: url(../../../src/image/ME/page2/las.png);
 }
 
 .galvanicImageRightContainer {
-  content: url(../../../src/image/ME/img_pura_02.png);
+  /* content: url(../../../src/image/ME/img_pura_02.png); */
+  /* content: url(../../../src/image/ME/page2/gal.svg); */
+  content: url(../../../src/image/ME/page2/gal.png);
 }

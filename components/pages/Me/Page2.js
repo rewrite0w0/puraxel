@@ -1,4 +1,4 @@
-import { Box, Paper } from "@mui/material";
+import { div, Paper } from "@mui/material";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { ManualFractionPage2 } from "../../Parts/ManualFraction";
 // import Swipers from "../../Swipers";
@@ -13,7 +13,13 @@ const LaserExplain = (props) => {
     <div>
       <span
         className={style.explainTitle}
-        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
+        style={{
+          fontSize: "24px",
+          letterSpacing: "-2px",
+          color: "#55576F",
+          fontWeight: 600,
+          letterSpacing: "-2px",
+        }}
       >
         {meKr.Page2LaserTitle}
       </span>
@@ -66,7 +72,12 @@ const GalvanicExplain = (props) => {
     <div>
       <span
         className={style.explainTitle}
-        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
+        style={{
+          fontSize: "24px",
+          letterSpacing: "-2px",
+          color: "#55576F",
+          fontWeight: 600,
+        }}
       >
         {meKr.Page2GalvanicTitle}
       </span>
@@ -169,12 +180,12 @@ export default function Page2(props) {
   const indicatorInactive = "#DFE1E8";
 
   return (
-    <Box className={style.page2Container}>
+    <div className={style.page2Container}>
       {/* 왼쪽 grid */}
-      <Box className={style.leftGridContainer}>
-        <Paper className={style.leftPaper}>
+      <div className={style.leftGridContainer}>
+        <div className={style.leftPaper}>
           {/* 첫 번째 grid: 제목/소개*/}
-          <Box className={style.leftPaperTop}>
+          <div className={style.leftPaperTop}>
             <span className={style.leftPaperTopFirst}>{meKr.Page2Intro1}</span>
             <br />
             <span className={style.leftPaperTopSecond}>
@@ -187,41 +198,41 @@ export default function Page2(props) {
               </span>
               <span>{meKr.Page2Intro2D}</span>
             </span>
-          </Box>
+          </div>
 
           {/* 두 번째 grid: 이미지 모음 */}
-          <Box className={style.leftPaperMiddle}>
+          <div className={style.leftPaperMiddle}>
             {/* 레이저 */}
-            <Box
+            <div
               className={style.laserContainer}
               onClick={selectorLaser}
-              sx={{
+              style={{
                 // background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
                 filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
-            ></Box>
+            ></div>
             {/* 중앙 */}
-            <Box
-              sx={{
+            <div
+              style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
-              <Box className={style.plusImage}></Box>
-            </Box>
+              <div className={style.plusImage}></div>
+            </div>
             {/* 갈바닉 */}
-            <Box
+            <div
               onClick={selectorGalvanic}
               className={style.galvanicContainer}
-              sx={{
+              style={{
                 filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
-            ></Box>
-          </Box>
+            ></div>
+          </div>
 
           {/* 세 번째 grid: 설명 */}
-          <Box className={style.leftPaperBottom}>
+          <div className={style.leftPaperBottom}>
             {/* 인디케이터 */}
             <span className={style.indicator}>
               <span
@@ -243,15 +254,15 @@ export default function Page2(props) {
             </span>
             {/* 설명 */}
             {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
-          </Box>
-        </Paper>
+          </div>
+        </div>
 
         {/* 책갈피 grid */}
-        <Box>
-          <Paper
+        <div>
+          <div
             onClick={selectorLaser}
             className={style.bookmark}
-            sx={{
+            style={{
               background: modeCondition ? "white" : DISABLECOLOR,
               marginTop: "50px",
               marginBottom: "8px",
@@ -272,11 +283,11 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkDetail}
               </span>
             </div>
-          </Paper>
-          <Paper
+          </div>
+          <div
             onClick={selectorGalvanic}
             className={style.bookmark}
-            sx={{
+            style={{
               background: !modeCondition ? "white" : DISABLECOLOR,
             }}
           >
@@ -289,23 +300,23 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkDetail}
               </span>
             </div>
-          </Paper>
-        </Box>
-      </Box>
+          </div>
+        </div>
+      </div>
 
       {/* 오른쪽 grid */}
 
-      {/* <Box className={style.rightGridContainer}> */}
+      {/* <div className={style.rightGridContainer}> */}
       {modeCondition ? (
-        <Box
+        <div
           className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
-        ></Box>
+        ></div>
       ) : (
-        <Box
+        <div
           className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
-        ></Box>
+        ></div>
       )}
-      {/* </Box> */}
-    </Box>
+      {/* </div> */}
+    </div>
   );
 }

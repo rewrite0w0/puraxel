@@ -1,18 +1,24 @@
-import style from "./LinkPriceButton.module.css";
+import style from "./CommonButtons.module.css";
 
 export default function CommonButtons(props) {
   return (
     <section
       {...props}
       style={{
-        background: "#fff",
+        background: "rgba(255,255,255,0.6)",
+        boxShadow: "0px 6px 20px rgba(127, 46, 190, 0.05)",
+        border: "1px solid #FFFFFF",
         borderRadius: "4px",
         display: "flex",
         // gridTemplateRows: "1fr 1fr",
         height: "64px",
         flexDirection: "column",
         // justifyContent: "center",
+        cursor: "pointer",
         ...props.style,
+      }}
+      onClick={() => {
+        window.open(props.link ? props.link : "/", "_blank");
       }}
     >
       <div

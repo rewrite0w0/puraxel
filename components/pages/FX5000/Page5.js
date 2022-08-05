@@ -92,7 +92,7 @@ const Parts04 = () => {
   return <Image src={parts04} />;
 };
 
-export default function Page4(props) {
+export default function Page5(props) {
   const [parts, setParts] = useState("pu");
 
   const imageOnClickHandler = {

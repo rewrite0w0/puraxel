@@ -1,0 +1,24 @@
+.buttonContainer {
+  background: "rgba(255;255;255;0.6)";
+  box-shadow: "0px 6px 20px rgba(127; 46; 190; 0.05)";
+  border: "1px solid #FFFFFF";
+  border-radius: "4px";
+  display: "flex";
+  /* // gridTemplateRows: "1fr 1fr"; */
+  height: "64px";
+  /* flexdirection: "column"; */
+  /* // justifyContent: "center"; */
+}
+
+.buttonContainer:hover {
+  cursor: pointer;
+}
+
+.buttonInnerContainer {
+  margin-right: "16px";
+  margin-top: "8px";
+  margin-bottom: "8px";
+  margin-left: "8px";
+  display: "flex";
+  justify-content: "space-between";
+}

@@ -211,7 +211,7 @@ export default function Navbars(props) {
         <NavIconButton
           title={layoutHeaderKr.kr}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
-          sx={{ marginRight: "16px", padding: 0 }}
+          sx={{ marginRight: "0px" }}
         ></NavIconButton>
         <NavIconButton
           title={layoutHeaderKr.en}

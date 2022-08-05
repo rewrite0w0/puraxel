@@ -6,6 +6,8 @@ import Page1 from "components/pages/FX5000/Page1";
 import Page2 from "components/pages/FX5000/Page2";
 import Page3 from "components/pages/FX5000/Page3";
 import Page4 from "components/pages/FX5000/Page4";
+import Page5 from "components/pages/FX5000/Page5";
+import Page0 from "components/pages/FX5000/temp.Page1";
 
 export default function FX5000() {
   return (
@@ -17,10 +19,12 @@ export default function FX5000() {
       </Head>
 
       <Swipers>
-        <SwiperSlide>{Page1}</SwiperSlide>
+        <SwiperSlide>{Page0}</SwiperSlide>
+        {/* <SwiperSlide>{Page1}</SwiperSlide> */}
         <SwiperSlide>{Page2}</SwiperSlide>
         <SwiperSlide>{Page3}</SwiperSlide>
         <SwiperSlide>{Page4}</SwiperSlide>
+        <SwiperSlide>{Page5}</SwiperSlide>
       </Swipers>
     </FX5000Layout>
   );
