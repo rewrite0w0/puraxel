@@ -1,0 +1,14 @@
+.testTitle {
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: var(--grayScale06);
+}
+
+.testDetail {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: var(--grayScale07);
+}

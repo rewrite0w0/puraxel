@@ -13,7 +13,7 @@ export default function Page3() {
     <main
       style={{
         // display: "grid:",
-        marginTop: "120px",
+        marginTop: "160px",
         marginLeft: "227px",
       }}
     >
@@ -124,8 +124,8 @@ export default function Page3() {
           height: "661px",
           marginTop: "40px",
           paddingLeft: "40px",
-          // paddingTop: "20px",
-
+          paddingTop: "20px",
+          paddingBottom: "20px",
           paddingRight: "80px",
         }}
       >

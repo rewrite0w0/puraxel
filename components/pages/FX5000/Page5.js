@@ -1,17 +1,15 @@
 import { useState } from "react";
-import style from "./page4.module.css";
-
-import { motion } from "framer-motion";
+import style from "./page5.module.css";
 
 import parts01 from "src/image/ME/page4/me_04_01.svg";
 import parts02 from "src/image/ME/page4/me_04_02.svg";
 import parts03 from "src/image/ME/page4/me_04_03.svg";
 import parts04 from "src/image/ME/page4/me_04_04.svg";
 
-import parts01onPaper from "src/image/ME/page4/me_01_active.svg";
-import parts02onPaper from "src/image/ME/page4/me_02_active.svg";
-import parts03onPaper from "src/image/ME/page4/me_03_active.svg";
-import parts04onPaper from "src/image/ME/page4/me_04_active.svg";
+import parts01onPaper from "src/image/FX5000/page5/fx-5000_01_active.svg";
+import parts02onPaper from "src/image/FX5000/page5/fx-5000_02_active.svg";
+import parts03onPaper from "src/image/FX5000/page5/fx-5000_03_active.svg";
+import parts04onPaper from "src/image/FX5000/page5/fx-5000_04_active.svg";
 
 import parts01onPaperOff from "src/image/ME/page4/me_01_inactive.svg";
 import parts02onPaperOff from "src/image/ME/page4/me_02_inactive.svg";
@@ -75,24 +73,24 @@ const PaperRightBot = (props) => {
 };
 
 const Parts01 = () => {
-  // return <div className={style.meParts01} imagenum="pu"></div>;
-  return <Image src={parts01} height={746} width={305} layout="" />;
+  return <div className={style.meParts01} imagenum="pu"></div>;
+  // return <Image src={parts01} />;
 };
 
 const Parts02 = () => {
-  // return <div className={style.meParts02} imagenum="ra"></div>;
-  return <Image src={parts02} />;
+  return <div className={style.meParts02} imagenum="ra"></div>;
+  // return <Image src={parts02} />;
 };
 const Parts03 = () => {
-  // return <div className={style.meParts03} imagenum="xel"></div>;
-  return <Image src={parts03} />;
+  return <div className={style.meParts03} imagenum="xel"></div>;
+  // return <Image src={parts03} />;
 };
 const Parts04 = () => {
-  // return <div className={style.meParts04} imagenum="me"></div>;
-  return <Image src={parts04} />;
+  return <div className={style.meParts04} imagenum="me"></div>;
+  // return <Image src={parts04} />;
 };
 
-export default function Page5(props) {
+export default function Page4(props) {
   const [parts, setParts] = useState("pu");
 
   const imageOnClickHandler = {
@@ -110,15 +108,6 @@ export default function Page5(props) {
     },
   };
 
-  // const grayScale = "filter:grayscale(0.7)";
-
-  // const imageGrayScaleHandler = {
-  //   onPu: () => {},
-  //   onRa: () => {},
-  //   onXel: () => {},
-  //   onMe: () => {},
-  // };
-
   const PartViewer = () => {
     if (parts === "pu") {
       return <Parts01 />;
@@ -134,7 +123,6 @@ export default function Page5(props) {
       return <Parts04 />;
     }
   };
-  // <Image src={parts01} alt="qweqwe" />
 
   return (
     <div className={style.container}>
@@ -163,8 +151,8 @@ export default function Page5(props) {
         }}
       >
         {/* {<PartViewer />} */}
-        <Paper
-          sx={{
+        <article
+          style={{
             width: "1124px",
             heigth: "640px",
             marginBottom: "220px",
@@ -176,6 +164,7 @@ export default function Page5(props) {
             gridTemplateRows: "1fr 4fr",
             gridTemplateColumns: "1fr 1.2fr",
             padding: "48px 80px",
+            background: "#fff",
           }}
         >
           <section className={style.paperLeftTop}>
@@ -284,7 +273,7 @@ export default function Page5(props) {
               secondEX="11.1V 850mAh Lithium-Polymer Battery"
             />
           </section>
-        </Paper>
+        </article>
       </div>
     </div>
   );

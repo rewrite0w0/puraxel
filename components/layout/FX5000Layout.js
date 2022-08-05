@@ -9,8 +9,8 @@ import CommonPlainButtons from "components/Footer/CommonPlainButtons";
 
 export default function FX5000Layout({ children }) {
   return (
-    <div className={style.FX5000Container}>
-      <body className={style.bodyContainer}>
+    <main className={style.FX5000Container}>
+      <article className={style.bodyContainer}>
         {children}
 
         <footer className={style.footerContainer}>
@@ -20,7 +20,7 @@ export default function FX5000Layout({ children }) {
             sx={{ width: "92px" }}
           />
         </footer>
-      </body>
-    </div>
+      </article>
+    </main>
   );
 }

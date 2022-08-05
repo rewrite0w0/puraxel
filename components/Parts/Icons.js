@@ -8,7 +8,34 @@ const ShopIcon = createSvgIcon(
     strokeLinecap="square"
   />
 );
-
+const Inquiry = createSvgIcon(
+  <svg
+    width="28"
+    height="28"
+    viewBox="0 0 28 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle
+      cx="19.6875"
+      cy="11.8125"
+      r="2.1875"
+      stroke="#55576F"
+      strokeWidth="1.7"
+    />
+    <circle cx="10.5" cy="9.625" r="3.5" stroke="#55576F" strokeWidth="1.7" />
+    <path
+      d="M4.375 20.125C4.375 17.7088 6.33375 15.75 8.75 15.75H12.25C14.6662 15.75 16.625 17.7088 16.625 20.125V22.75H4.375V20.125Z"
+      stroke="#55576F"
+      strokeWidth="1.7"
+    />
+    <path
+      d="M18.8126 16.625L20.125 16.625C22.058 16.625 23.625 18.192 23.625 20.125V21.875H16.625"
+      stroke="#55576F"
+      strokeWidth="1.7"
+    />
+  </svg>
+);
 const PlusIcon = createSvgIcon(
   <svg
     width="58"
@@ -77,4 +104,4 @@ const PlusIcon = createSvgIcon(
   </svg>
 );
 
-module.exports = { ShopIcon, PlusIcon };
+module.exports = { ShopIcon, PlusIcon, Inquiry };

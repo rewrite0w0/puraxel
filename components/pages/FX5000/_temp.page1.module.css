@@ -7,12 +7,3 @@
   font-family: "ENFontB";
   src: url("../../../src/fonts/CaviarDreams_Bold.woff") format("woff");
 }
-
-.rightImage {
-  background: "black";
-  margin-top: 180px;
-  margin-right: 80px;
-  width: 100%;
-  height: auto;
-  content: url(../../../src/image/FX5000/page1/FX5000.svg);
-}

@@ -19,13 +19,11 @@
   /* justify-content: center; */
   /* justify-items: center; */
   /* align-content: center; */
-  /* align-items: flex-end; */
-  align-items: center;
+  align-items: flex-end;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
-  /* background: blue; */
 
   /* --borderLine: linear-gradient(135deg, orange 60%, cyan); */
   /* z-index: 9999; */
@@ -49,19 +47,17 @@
 .containerRightTop {
   /* 이미지 그리드 2,4번 차지 */
 
-  background-color: green;
-
-  /* grid-column-start: 2;
+  /* background-color: blue; */
+  grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 3; */
-
+  grid-row-end: 3;
   /* border: 10px solid red; */
-  /* justify-content: center; */
+  justify-content: center;
   /* justify-items: center; */
   /* align-items: center; */
   /* align-content: center; */
-  /* display: flex; */
+  display: flex;
   /* margin-top: 1vw; */
 }
 
@@ -75,7 +71,7 @@
 }
 
 .containerLeftBottom {
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -84,7 +80,7 @@
 }
 
 .containerRightBottom {
-  background-color: red;
+  /* background-color: red; */
 }
 
 .imgContainer {

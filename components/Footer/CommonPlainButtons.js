@@ -21,7 +21,7 @@ export default function CommonPlainButtons(props) {
         window.open(props.link ? props.link : "/", "_blank");
       }}
     >
-      <div>{props.icon ? props.icon : undefined}</div>
+      <div>{props.icon}</div>
       <div>{props.title}</div>
     </section>
   );

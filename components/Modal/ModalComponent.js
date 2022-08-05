@@ -29,6 +29,8 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import commonButtonStyle from "components/Footer/CommonButtons.module.css";
 
+import { Inquiry } from "components/Parts/Icons";
+
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
 // import Typography from "@mui/material/Typography";
@@ -128,14 +130,30 @@ export default function ModalComponent(props) {
           display: "flex",
           // gridTemplateRows: "1fr 1fr",
           height: "64px",
-          flexDirection: "column",
+          // padding: "16px",
+          paddingLeft: "8px",
+          paddingRight: "8px",
+          alignItems: "center",
           justifyContent: "center",
           ...props.style,
+          fontWeight: "600",
+          fontSize: "18px",
+          letterSpacing: "-1px",
+          cursor: "pointer",
         }}
         onClick={handleOpenModal}
         {...props}
       >
-        ~icon~
+        {/* ~icon~ */}
+        {
+          <Inquiry
+            style={{
+              height: "50px",
+              width: "25px",
+              marginRight: "7.25px",
+            }}
+          />
+        }
         {modalKr.modalButtonTitle}
       </Box>
       <Modal open={modalOpen} onClose={handleCloseModal}>

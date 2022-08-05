@@ -9,8 +9,8 @@ import CommonPlainButtons from "components/Footer/CommonPlainButtons";
 
 export default function HairLayout({ children }) {
   return (
-    <div className={style.HairContainer}>
-      <body className={style.bodyContainer}>
+    <main className={style.HairContainer}>
+      <article className={style.bodyContainer}>
         {children}
 
         <footer className={style.footerContainer}>
@@ -20,7 +20,7 @@ export default function HairLayout({ children }) {
             sx={{ width: "92px" }}
           />
         </footer>
-      </body>
-    </div>
+      </article>
+    </main>
   );
 }

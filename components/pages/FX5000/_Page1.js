@@ -4,8 +4,6 @@ import Image from "next/image";
 import meKr from "public/locales/kr/me";
 import flowerWithMe from "src/image/ME/me_main.png";
 import style from "./page1.module.css";
-import ExplainContainer from "components/Parts/ExplainParts";
-
 // import { ManualFractionPage1 } from "./ManualFraction";
 
 const Page1Intro1 = (props) => {
@@ -15,7 +13,6 @@ const Page1Intro1 = (props) => {
         display: "flex",
         flexDirection: "column",
         marginLeft: "15.5vw",
-        marginBottom: "-0.8vw",
       }}
     >
       <span style={{ fontSize: "2.5vw" }}>
@@ -72,27 +69,27 @@ const Page1Img = (props) => {
 
 export default function Page1() {
   return (
-    <main
+    <div
       className={style.container}
       style={{
         display: "grid",
+
         gridTemplateRows: "50vh 50vh",
         gridTemplateColumns: "1fr 1fr",
       }}
     >
       <div className={style.containerLeftTop}>
-        {/* <div style={{ background: "red" }}>하이브리드 </div> */}
-        <ExplainContainer />
-
+        <Page1Intro1 />
         {/* <hr className={style.borderLine} /> */}
       </div>
       <div className={style.containerRightTop}>
-        asddddddddddddd
-        {/* <Page1Img /> */}
+        <Page1Img />
         {/* <Box className={style.img}></Box> */}
       </div>
-      <div className={style.containerLeftBottom}>ㅇㅋㄷㅋ</div>
-      <div className={style.containerRightBottom}>{/* void */}</div>
-    </main>
+      <div className={style.containerLeftBottom}>
+        <Page1Explain />
+      </div>
+      <div className={style.containerRightBottom}>{/* empty */}</div>
+    </div>
   );
 }

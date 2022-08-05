@@ -1,8 +1,10 @@
+import { useState } from "react";
 import style from "./page4.module.css";
 
 const YTThumbnailContainer = (props) => {
   return (
     <section
+      onClick={props.onClick}
       style={{
         width: "184px",
         heigth: "142px",
@@ -32,6 +34,23 @@ const YTThumbnailContainer = (props) => {
 };
 
 export default function Page4(props) {
+  const [YTLink, setYTLink] = useState("X6oDTHJnxq4");
+
+  const YTLinkHandler = {
+    zero: () => {
+      setYTLink("X6oDTHJnxq4");
+    },
+    firstImage: () => {
+      setYTLink("iSlAIizlcb8");
+    },
+    secondImage: () => {
+      setYTLink("ciJNn09AT78");
+    },
+    thirdImage: () => {
+      setYTLink("OKQULSJ8L10");
+    },
+  };
+
   return (
     <main
       style={{
@@ -51,7 +70,7 @@ export default function Page4(props) {
         }}
       >
         {/* 왼쪽 상단 */}
-        <div>
+        <div onClick={YTLinkHandler.zero}>
           <span
             style={{
               fontWeight: "500",
@@ -86,6 +105,7 @@ export default function Page4(props) {
         <div style={{ display: "flex" }}>
           <YTThumbnailContainer
             cn={style.temp}
+            onClick={YTLinkHandler.firstImage}
             // temp="url(../../../src/image/FX5000/page4/giphy.gif)"
             explain="고성능 화장품의 흡수율을 높여주는
             퓨라셀 피부 관리법"
@@ -93,12 +113,14 @@ export default function Page4(props) {
 
           <YTThumbnailContainer
             cn={style.temp}
+            onClick={YTLinkHandler.secondImage}
             // temp="url(src/image/FX5000/page4/giphy.gif)"
             explain="피부결, 피부톤, 건조만 고민을
             한 번에 잡아주는 관리법"
           />
           <YTThumbnailContainer
             cn={style.temp}
+            onClick={YTLinkHandler.thirdImage}
             // temp="url(src/image/FX5000/page4/giphy.gif)"
             explain="에스테틱 레이저 퓨라셀 동아TV
             스타일美 시즌2 방송"
@@ -112,7 +134,7 @@ export default function Page4(props) {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube-nocookie.com/embed/X6oDTHJnxq4?controls=1&rel=0&disablekb=1&autoplay=1&loop=1&mute=0&modestbranding=1"
+          src={`https://www.youtube-nocookie.com/embed/${YTLink}?controls=1&rel=0&disablekb=1&autoplay=1&loop=0&mute=0&modestbranding=1`}
           title="How to use PURAXEL"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

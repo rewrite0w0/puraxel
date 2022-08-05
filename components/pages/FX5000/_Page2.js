@@ -1,4 +1,4 @@
-import { div, Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { ManualFractionPage2 } from "../../Parts/ManualFraction";
 // import Swipers from "../../Swipers";
@@ -7,27 +7,13 @@ import { motion } from "framer-motion";
 import meKr from "public/locales/kr/me.json";
 
 import style from "./page2.module.css";
-import Page2Parts from "./Page2Parts";
-
-const LeftButtonExplain = () => {
-  return <h1>1234</h1>;
-};
-const RightButtonExplain = () => {
-  return <h1>qwert</h1>;
-};
 
 const LaserExplain = (props) => {
   return (
     <div>
       <span
         className={style.explainTitle}
-        style={{
-          fontSize: "24px",
-          letterSpacing: "-2px",
-          color: "#55576F",
-          fontWeight: 600,
-          letterSpacing: "-2px",
-        }}
+        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
       >
         {meKr.Page2LaserTitle}
       </span>
@@ -80,15 +66,9 @@ const GalvanicExplain = (props) => {
     <div>
       <span
         className={style.explainTitle}
-        style={{
-          fontSize: "24px",
-          letterSpacing: "-2px",
-          color: "#55576F",
-          fontWeight: 600,
-        }}
+        style={{ fontSize: "24px", letterSpacing: "-2px", color: "#55576F" }}
       >
-        {/* {meKr.Page2GalvanicTitle} */}
-        초음파 모드
+        {meKr.Page2GalvanicTitle}
       </span>
       <br style={{ margin: "8px" }} />
       {/* <span>{meKr.Page2GalvanicExplain1A}</span>
@@ -101,11 +81,13 @@ const GalvanicExplain = (props) => {
       >
         {/* {meKr.Page2GalvanicExplain} */}
         <span>
-          강한 파장의 초음파에서 발생하는 진동으로 피부를 이완시켜 자극없이
-          노폐물을 제거해줍니다.
+          같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
+          흡수율을 높입니다.
         </span>
         <br />
-        <span>마사지로 기능성 솔루션 흡수력을 높여줍니다.</span>
+        <span>
+          레이저 모드와 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
+        </span>
       </span>
       <br
         style={{
@@ -121,7 +103,7 @@ const GalvanicExplain = (props) => {
             fontWeight: 600,
           }}
         >
-          {/* {meKr.Page2GalvanicTechExplain1A} */}
+          {meKr.Page2GalvanicTechExplain1A}
         </span>
         &nbsp;
         <span
@@ -133,7 +115,7 @@ const GalvanicExplain = (props) => {
             fontWeight: 300,
           }}
         >
-          {/* {meKr.Page2GalvanicTechExplain1B} */}
+          {meKr.Page2GalvanicTechExplain1B}
         </span>
         <span
           style={{
@@ -143,7 +125,7 @@ const GalvanicExplain = (props) => {
             fontWeight: 600,
           }}
         >
-          {/* {meKr.Page2GalvanicTechExplain2A} */}
+          {meKr.Page2GalvanicTechExplain2A}
         </span>
         &nbsp;
         <span
@@ -154,7 +136,7 @@ const GalvanicExplain = (props) => {
             fontWeight: 300,
           }}
         >
-          {/* {meKr.Page2GalvanicTechExplain2B} */}
+          {meKr.Page2GalvanicTechExplain2B}
         </span>
       </span>
     </div>
@@ -183,16 +165,16 @@ export default function Page2(props) {
 
   const DISABLECOLOR = "#F2F3F6";
 
-  const indicatorActive = "#dd7a8c";
+  const indicatorActive = "#A590FA";
   const indicatorInactive = "#DFE1E8";
 
   return (
-    <div className={style.page2Container}>
+    <Box className={style.page2Container}>
       {/* 왼쪽 grid */}
-      <div className={style.leftGridContainer}>
-        <div className={style.leftPaper}>
+      <Box className={style.leftGridContainer}>
+        <Paper className={style.leftPaper}>
           {/* 첫 번째 grid: 제목/소개*/}
-          <div className={style.leftPaperTop}>
+          <Box className={style.leftPaperTop}>
             <span className={style.leftPaperTopFirst}>{meKr.Page2Intro1}</span>
             <br />
             <span className={style.leftPaperTopSecond}>
@@ -205,41 +187,41 @@ export default function Page2(props) {
               </span>
               <span>{meKr.Page2Intro2D}</span>
             </span>
-          </div>
+          </Box>
 
           {/* 두 번째 grid: 이미지 모음 */}
-          <div className={style.leftPaperMiddle}>
+          <Box className={style.leftPaperMiddle}>
             {/* 레이저 */}
-            <div
+            <Box
               className={style.laserContainer}
               onClick={selectorLaser}
-              style={{
+              sx={{
                 // background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
                 filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
-            ></div>
+            ></Box>
             {/* 중앙 */}
-            <div
-              style={{
+            <Box
+              sx={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
               }}
             >
-              <div className={style.plusImage}></div>
-            </div>
+              <Box className={style.plusImage}></Box>
+            </Box>
             {/* 갈바닉 */}
-            <div
+            <Box
               onClick={selectorGalvanic}
               className={style.galvanicContainer}
-              style={{
+              sx={{
                 filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
               }}
-            ></div>
-          </div>
+            ></Box>
+          </Box>
 
           {/* 세 번째 grid: 설명 */}
-          <div className={style.leftPaperBottom}>
+          <Box className={style.leftPaperBottom}>
             {/* 인디케이터 */}
             <span className={style.indicator}>
               <span
@@ -261,15 +243,15 @@ export default function Page2(props) {
             </span>
             {/* 설명 */}
             {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
-          </div>
-        </div>
+          </Box>
+        </Paper>
 
         {/* 책갈피 grid */}
-        <div>
-          <div
+        <Box>
+          <Paper
             onClick={selectorLaser}
             className={style.bookmark}
-            style={{
+            sx={{
               background: modeCondition ? "white" : DISABLECOLOR,
               marginTop: "50px",
               marginBottom: "8px",
@@ -290,11 +272,11 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkDetail}
               </span>
             </div>
-          </div>
-          <div
+          </Paper>
+          <Paper
             onClick={selectorGalvanic}
             className={style.bookmark}
-            style={{
+            sx={{
               background: !modeCondition ? "white" : DISABLECOLOR,
             }}
           >
@@ -307,24 +289,88 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkDetail}
               </span>
             </div>
-          </div>
-        </div>
-      </div>
+          </Paper>
+        </Box>
+      </Box>
 
       {/* 오른쪽 grid */}
 
-      <Page2Parts />
-      {/* <div className={style.rightGridContainer}> */}
+      {/* <Box className={style.rightGridContainer}> */}
       {/* {modeCondition ? (
-        <div
+        <Box
           className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
-        ></div>
+        ></Box>
       ) : (
-        <div
+        <Box
           className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
-        ></div>
+        ></Box>
       )} */}
-      {/* </div> */}
-    </div>
+      <section style={{ display: "flex", flexDirection: "column" }}>
+        {/*  */}
+        <article className={style.explainContainer}>
+          <section className={style.tempimage}>이미지자리</section>
+          <section>
+            <div className={style.explainContainerTitle}>
+              <span>버</span>
+              <span>튼</span>
+            </div>
+            <div>{props.qwer}</div>
+          </section>
+        </article>
+        {/*  */}
+        <article className={style.explainContainerDouble}>
+          <div className={style.tempimage}>이미지자리</div>
+          <section>
+            <div className={style.explainContainerTitle}>
+              <span>버</span>
+              <span>튼</span>
+            </div>
+            <div>{props.qwer}</div>
+          </section>
+        </article>
+        {/*  */}
+        <article className={style.explainContainer}>
+          <section className={style.tempimage}>이미지자리</section>
+          <section>
+            <div className={style.explainContainerTitle}>
+              <span>버</span>
+              <span>튼</span>
+            </div>
+            <div>{props.qwer}</div>
+          </section>
+        </article>
+      </section>
+      {/* </Box> */}
+    </Box>
   );
 }
+
+const ExplainContainer = (props) => {
+  return (
+    <article className={style.explainContainer}>
+      <section className={style.tempImage}></section>
+      <section>
+        <div className={style.explainContainerTitle}>
+          <span>버</span>
+          <span>튼</span>
+        </div>
+        <div>{props.qwer}</div>
+      </section>
+    </article>
+  );
+};
+
+const ExplainContainerDouble = (props) => {
+  return (
+    <article className={style.explainContainerDouble}>
+      <section>1</section>
+      <section>
+        <div>
+          <span>1</span>
+          <span>2</span>
+        </div>
+        <div>1</div>
+      </section>
+    </article>
+  );
+};
