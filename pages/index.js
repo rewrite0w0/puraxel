@@ -15,20 +15,13 @@ import Page2Parts from "components/pages/FX5000/Page2Parts";
 
 export default function Home() {
   return (
-    <main
-      style={{
-        display: "flex",
-        // alignContent: "center",
-        justifyContent: "center",
-      }}
-    >
-      <Page2Parts />
-      {/* <Swipers>
+    <main>
+      <Swipers>
         <SwiperSlide>{Page1}</SwiperSlide>
         <SwiperSlide>{Page2}</SwiperSlide>
         <SwiperSlide>{Page3}</SwiperSlide>
         <SwiperSlide>{Page4}</SwiperSlide>
-      </Swipers> */}
+      </Swipers>
     </main>
   );
 }

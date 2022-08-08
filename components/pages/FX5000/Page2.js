@@ -7,14 +7,7 @@ import { motion } from "framer-motion";
 import meKr from "public/locales/kr/me.json";
 
 import style from "./page2.module.css";
-import Page2Parts from "./Page2Parts";
-
-const LeftButtonExplain = () => {
-  return <h1>1234</h1>;
-};
-const RightButtonExplain = () => {
-  return <h1>qwert</h1>;
-};
+import { LaserModeParts, UltraModeParts } from "./Page2Parts";
 
 const LaserExplain = (props) => {
   return (
@@ -265,7 +258,7 @@ export default function Page2(props) {
         </div>
 
         {/* 책갈피 grid */}
-        <div>
+        <div style={{ marginLeft: "-60px" }}>
           <div
             onClick={selectorLaser}
             className={style.bookmark}
@@ -295,7 +288,7 @@ export default function Page2(props) {
             onClick={selectorGalvanic}
             className={style.bookmark}
             style={{
-              background: !modeCondition ? "white" : DISABLECOLOR,
+              background: !modeCondition ? "#fff" : DISABLECOLOR,
             }}
           >
             <div className={style.bookmarkParaContainer}>
@@ -313,7 +306,8 @@ export default function Page2(props) {
 
       {/* 오른쪽 grid */}
 
-      <Page2Parts />
+      {modeCondition ? <LaserModeParts /> : <UltraModeParts />}
+
       {/* <div className={style.rightGridContainer}> */}
       {/* {modeCondition ? (
         <div
