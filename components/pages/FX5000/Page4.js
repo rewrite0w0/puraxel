@@ -70,7 +70,7 @@ export default function Page4(props) {
         }}
       >
         {/* 왼쪽 상단 */}
-        <div onClick={YTLinkHandler.zero}>
+        <div onClick={YTLinkHandler.zero} style={{ cursor: "pointer" }}>
           <span
             style={{
               fontWeight: "500",

@@ -544,7 +544,7 @@ export function LaserModeParts() {
         display: "flex",
         flexDirection: "column",
         marginTop: "175px",
-        marginLeft: "50px",
+        marginLeft: "80px",
       }}
     >
       <ExplainContainer>
@@ -665,7 +665,7 @@ export function UltraModeParts() {
         display: "flex",
         flexDirection: "column",
         marginTop: "175px",
-        marginLeft: "50px",
+        marginLeft: "80px",
       }}
     >
       <ExplainContainer>
