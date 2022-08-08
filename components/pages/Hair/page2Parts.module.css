@@ -1,0 +1,61 @@
+.explainTitleCommon {
+  height: "43px";
+  background: "#F8F9FA";
+  border-radius: "4px";
+  padding: "8px 12px";
+  font-size: "16px";
+  font-weight: "300";
+  letter-spacing: "-0.01em";
+  color: var(--grayScale07);
+}
+
+.optionButtonCommon {
+  display: flex;
+  /* padding: 4px 8px; */
+  width: 59px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  opacity: 0.9;
+  border-radius: 4px;
+  letter-spacing: -0.03em;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.modeImageCommon {
+  /* width: auto; */
+  /* height: 100%; */
+  width: 264px;
+  /* width: inherit; */
+  height: 148px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 8px;
+}
+
+.LaserModeImageTop {
+  background: url(../../../src/image/FX5000/page2/functionIllust_laser.svg);
+}
+
+.LaserModeImageBottom {
+  background: url(../../../src/image/FX5000/page2/functionIllust_LED.svg);
+}
+
+.UltraModeImagetop {
+  background: url(../../../src/image/FX5000/page2/functionIllust_ultrasonic.svg);
+}
+
+.UltraModeImageUpperMiddle {
+  background: url(../../../src/image/FX5000/page2/functionIllust_galvanic_01.svg);
+}
+
+.UltraModeImageLowerMiddle {
+  background: url(../../../src/image/FX5000/page2/functionIllust_galvanic_02.svg);
+}
+
+.UltraModeImageBottom {
+  background: url(../../../src/image/FX5000/page2/functionIllust_cooling.svg);
+}

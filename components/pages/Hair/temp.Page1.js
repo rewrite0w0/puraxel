@@ -1,25 +1,27 @@
 import Image from "next/image";
 import style from "./temp.page1.module.css";
 
-import tempME from "../../../src/image/ME/page1/puraxel_me_me_me.svg";
+import tempME from "../../../src/image/FX5000/page1/fx5000.svg";
 
 export default function Page0() {
   return (
     <main
       style={{
         display: "grid",
-        gridTemplateColumns: "1.8fr 1fr",
-        marginTop: "136px",
+        gridTemplateColumns: "1fr 1fr",
+        // background: "black",
+        height: "100vh",
       }}
     >
       <section
         style={{
+          marginTop: "161px",
           display: "flex",
           flexDirection: "column",
           marginLeft: "228px",
         }}
       >
-        <div
+        {/* <div
           style={{
             fontSize: "20px",
             letterSpacing: "-1px",
@@ -35,94 +37,116 @@ export default function Page0() {
             marginBottom: "16px",
           }}
         >
+          에스테틱의 시작
+        </div> */}
+        <span
+          style={{
+            fontSize: "48px",
+            letterSpacing: "-2px",
+            color: "#55576F",
+            fontWeight: "300",
+            marginBottom: "24px",
+          }}
+        >
+          에스테틱의 시작
+        </span>
+        <span
+          style={{
+            fontSize: "96px",
+            letterSpacing: "-2px",
+            color: "#55576F",
+            fontWeight: "300",
+          }}
+        >
           PURAXEL
-        </div>
-        <div
+        </span>
+        <span
           style={{
-            fontSize: "108px",
+            fontSize: "96px",
             letterSpacing: "-2px",
             color: "#55576F",
-            fontWeight: "800",
-            marginBottom: "16px",
-          }}
-        >
-          ME
-        </div>
-        <div
-          style={{
-            fontSize: "56px",
-            letterSpacing: "-2px",
             fontWeight: "300",
-            color: "#55576F",
+            marginBottom: "77px",
           }}
         >
-          빛을
-        </div>
-        <div
-          style={{
-            fontSize: "56px",
-            letterSpacing: "-2px",
-            fontWeight: "300",
-            color: "#55576F",
-            marginBottom: "56px",
-          }}
-        >
-          얼굴에 물들이다
-        </div>
-        <div
-          style={{
-            boxSizing: "border-box",
-            width: "282px",
-            height: "74px",
-            background: "rgba(255, 255, 255, 0.5)",
-            boxShadow: "0px 20px 60px rgba(0, 0, 0, 0.03)",
-            backdropFilter: "blur(20px)",
-            borderRadius: "4px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "24px",
-            fontWeight: "700",
-            letterSpacing: "-1px",
-            color: "#4D5058",
-            marginBottom: "12px",
-          }}
-        >
-          홈 에스테틱 레이저의 시작
-        </div>
+          FX-5000
+        </span>
 
-        <div
+        <span
           style={{
-            color: "#4D5058",
+            fontSize: "40px",
             letterSpacing: "-2px",
-            fontSize: "20px",
+            color: "#4D5058",
             fontWeight: "300",
-            width: "574px",
-            height: "159px",
-            background:
-              "linear-gradient(180deg, rgba(255, 255, 255, 0.5) 43.4%, rgba(255, 255, 255, 0) 100%)",
-            backdropFilter: "blur(20px)",
-            borderRadius: "4px",
-            display: "flex",
-            padding: "20px 59px 71px 20px",
-            // justifyContent: "center",
-            // alignItems: "center",
           }}
         >
-          병원, 의료기관에서만 볼 수 있던 프락셔널 레이저 기기,
-          <br />
-          이제는 집에서도 편리하게 사용하실 수 있습니다.
-        </div>
+          레이저 기술로
+        </span>
+        <span style={{ marginBottom: "24px" }}>
+          <span
+            style={{
+              fontSize: "48px",
+              letterSpacing: "-2px",
+              color: "#55576F",
+              fontWeight: "600",
+            }}
+          >
+            에스테틱에 혁신
+          </span>
+          <span
+            style={{
+              fontSize: "40px",
+              letterSpacing: "-2px",
+              color: "#4D5058",
+              fontWeight: "300",
+            }}
+          >
+            을 가져오다
+          </span>
+        </span>
+        <span
+          style={{
+            fontSize: "24px",
+            letterSpacing: "-2px",
+            color: "#4D5058",
+            fontWeight: "300",
+          }}
+        >
+          퓨라셀 PURAXEL은
+        </span>
+        <span
+          style={{
+            fontSize: "24px",
+            letterSpacing: "-2px",
+            color: "#4D5058",
+            fontWeight: "300",
+          }}
+        >
+          에스테틱에서 만날 수 있는
+        </span>
+        <span
+          style={{
+            fontSize: "24px",
+            letterSpacing: "-2px",
+            color: "#4D5058",
+            fontWeight: "300",
+          }}
+        >
+          고품격 미용 레이저입니다.
+        </span>
       </section>
       <section style={{ display: "flex" }}>
-        <Image
+        <div className={style.rightImage}></div>
+        {/* <Image
           src={tempME}
-          // width="574px"
-          // height="1422px"
-          layout="fixed"
+          alt="puraxel FX5000"
+          className={style.rightImage}
+          // width={574}
+          // height={1422}
+          // layout="fixed"
           // bottom="0"
           // style={{ position: "absolute" }}
-        />
+        /> */}
       </section>
     </main>
   );

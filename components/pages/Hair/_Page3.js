@@ -6,17 +6,14 @@ import {
   ReactCompareSliderImage,
 } from "react-compare-slider";
 
-import right from "../../../src/image/a.png";
-import left from "src/image/b.png";
-import q from "../../../src/image/a.png";
-import z from "../../../src/image/b.png";
+import ReactCompareImage from "react-compare-image";
 
 export default function Page3() {
   return (
     <main
       style={{
         // display: "grid:",
-        marginTop: "120px",
+        marginTop: "160px",
         marginLeft: "227px",
       }}
     >
@@ -127,8 +124,8 @@ export default function Page3() {
           height: "661px",
           marginTop: "40px",
           paddingLeft: "40px",
-          // paddingTop: "20px",
-
+          paddingTop: "20px",
+          paddingBottom: "20px",
           paddingRight: "80px",
         }}
       >
@@ -139,7 +136,7 @@ export default function Page3() {
             <br />
             <span>화장품+퓨라셀 1회 사용 직후 300%이상 증가</span>
           </div>
-          <ReactCompareSlider
+          <div
             style={{
               width: "380px",
               height: "164px",
@@ -148,14 +145,14 @@ export default function Page3() {
               borderRadius: "4px",
               border: "1px solid #F2F3F7",
             }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
+          >
+            <ReactCompareImage
+              // leftImage="src/image/ME/me_03_a.png"
+              // rightImage="src/image/ME/me_03_b.png"
+              leftImage={"../../../src/image/ME/me_03_a.png"}
+              rightImage={"../../../src/image/ME/me_03_b.png"}
+            />
+          </div>
         </section>
 
         <section>
@@ -165,7 +162,7 @@ export default function Page3() {
             <br />
             <span>사용전과 비교하여 2주 사용후 2배 증가</span>
           </div>
-          <ReactCompareSlider
+          <div
             style={{
               width: "380px",
               height: "164px",
@@ -174,14 +171,14 @@ export default function Page3() {
               borderRadius: "4px",
               border: "1px solid #F2F3F7",
             }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
+          >
+            <ReactCompareImage
+              // leftImage="src/image/ME/me_03_a.png"
+              // rightImage="src/image/ME/me_03_b.png"
+              leftImage={"../../../src/image/ME/me_03_a.png"}
+              rightImage={"../../../src/image/ME/me_03_b.png"}
+            />
+          </div>
         </section>
 
         <section>
@@ -191,7 +188,7 @@ export default function Page3() {
             <br />
             <span>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</span>
           </div>
-          <ReactCompareSlider
+          <div
             style={{
               width: "380px",
               height: "164px",
@@ -200,14 +197,14 @@ export default function Page3() {
               borderRadius: "4px",
               border: "1px solid #F2F3F7",
             }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
+          >
+            <ReactCompareImage
+              // leftImage="src/image/ME/me_03_a.png"
+              // rightImage="src/image/ME/me_03_b.png"
+              leftImage={"../../../src/image/ME/me_03_a.png"}
+              rightImage={"../../../src/image/ME/me_03_b.png"}
+            />
+          </div>
         </section>
 
         <section>{/* empty */}</section>
@@ -218,7 +215,7 @@ export default function Page3() {
             sx={{ background: "#f2f3f7" }}
             width="101px"
           />
-          <ReactCompareSlider
+          <div
             style={{
               width: "380px",
               height: "164px",
@@ -227,14 +224,14 @@ export default function Page3() {
               borderRadius: "4px",
               border: "1px solid #F2F3F7",
             }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
+          >
+            <ReactCompareImage
+              // leftImage="src/image/ME/me_03_a.png"
+              // rightImage="src/image/ME/me_03_b.png"
+              leftImage={"../../../src/image/ME/me_03_a.png"}
+              rightImage={"../../../src/image/ME/me_03_b.png"}
+            />
+          </div>
         </section>
 
         <section>
@@ -245,7 +242,7 @@ export default function Page3() {
             sx={{ background: "#f2f3f7" }}
           />
           <span style={{ marginTop: "16px" }}></span>
-          {/* <section
+          <div
             style={{
               width: "380px",
               height: "164px",
@@ -254,32 +251,14 @@ export default function Page3() {
               borderRadius: "4px",
               border: "1px solid #F2F3F7",
             }}
-          > */}
-          {/* <ReactCompareImage
-            leftImage="src/image/ME/me_03_a.png"
-            rightImage="src/image/ME/me_03_b.png"
-            leftImage={"../../../src/image/ME/me_03_a.png"}
-            rightImage={"../../../src/image/ME/me_03_b.png"}
-            /> */}
-
-          <ReactCompareSlider
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
-          {/* </section> */}
+          >
+            <ReactCompareImage
+              // leftImage="src/image/ME/me_03_a.png"
+              // rightImage="src/image/ME/me_03_b.png"
+              leftImage={"../../../src/image/ME/me_03_a.png"}
+              rightImage={"../../../src/image/ME/me_03_b.png"}
+            />
+          </div>
         </section>
 
         <section></section>

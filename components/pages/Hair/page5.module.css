@@ -1,8 +1,3 @@
-.temp {
-  content: url("../../../src/image/FX5000/page4/giphy.gif");
-  background: black;
-}
-
 .container {
   /* background: blue; */
   height: 100vh;
@@ -11,32 +6,32 @@
   justify-content: space-between;
 }
 
-.mePart01 {
+.meParts01 {
   width: 305px;
   height: 746px;
   /* background: blue; */
-  content: url(../../../src/image/ME/page4/me_04_01.svg);
+  content: url(../../../src/image/FX5000/page5/fx5000_01.svg);
 }
 
-.mePart02 {
+.meParts02 {
   width: 305px;
   height: 746px;
   /* background: green; */
-  content: url(../../../src/image/ME/page4/me_04_02.svg);
+  content: url(../../../src/image/FX5000/page5/fx5000_02.svg);
 }
 
-.mePart03 {
+.meParts03 {
   width: 305px;
   height: 746px;
   /* background: pink; */
-  content: url(../../../src/image/ME/page4/me_04_03.svg);
+  content: url(../../../src/image/FX5000/page5/fx5000_03.svg);
 }
 
-.mePart04 {
+.meParts04 {
   width: 305px;
   height: 746px;
   /* background: black; */
-  content: url(../../../src/image/ME/page4/me_04_04.svg);
+  content: url(../../../src/image/FX5000/page5/fx5000_04.svg);
 }
 /* 
 .temp {

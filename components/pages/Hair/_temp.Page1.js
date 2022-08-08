@@ -1,14 +1,14 @@
 import Image from "next/image";
 import style from "./temp.page1.module.css";
 
-import tempME from "../../../src/image/ME/page1/me_04_03.svg";
+import tempME from "../../../src/image/FX5000/page1/fx-5000_01.png";
 
 export default function Page0() {
   return (
     <main
       style={{
         display: "grid",
-        gridTemplateColumns: "2fr 1fr",
+        gridTemplateColumns: "1fr 1fr",
         marginTop: "210px",
         height: "100vh",
       }}
@@ -46,7 +46,7 @@ export default function Page0() {
             fontWeight: "800",
           }}
         >
-          ME
+          FX5000
         </div>
         <div
           style={{
@@ -56,7 +56,7 @@ export default function Page0() {
             color: "#55576F",
           }}
         >
-          빛을
+          레이저 기술로
         </div>
         <div
           style={{
@@ -67,7 +67,7 @@ export default function Page0() {
             marginBottom: "76px",
           }}
         >
-          얼굴에 물들이다
+          에스테틱의 혁신을 가져오다
         </div>
         <div
           style={{
@@ -88,7 +88,7 @@ export default function Page0() {
             marginBottom: "32px",
           }}
         >
-          홈 에스테틱 레이저의 시작
+          에스테틱 레이저의 시작
         </div>
 
         <div
@@ -109,9 +109,9 @@ export default function Page0() {
             // alignItems: "center",
           }}
         >
-          병원, 의료기관에서만 볼 수 있던 프락셔널 레이저 기기,
+          퓨라셀 FX-5000은 의료용으로만 사용되던 레이저를
           <br />
-          이제는 집에서도 편리하게 사용하실 수 있습니다.
+          미용기기로 만든 국내 최초 레이저 뷰티 디바이스입니다.
         </div>
       </section>
       <section style={{ display: "flex" }}>
@@ -119,6 +119,7 @@ export default function Page0() {
           src={tempME}
           // width="574px"
           // height="1422px"
+
           bottom="0"
           style={{ position: "absolute" }}
         />
