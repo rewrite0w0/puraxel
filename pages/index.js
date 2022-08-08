@@ -11,16 +11,24 @@ import Page2 from "components/pages/main/Page1";
 import Page3 from "components/pages/main/Page1";
 import Page4 from "components/pages/main/Page1";
 import { SwiperSlide } from "swiper/react";
+import Page2Parts from "components/pages/FX5000/Page2Parts";
 
 export default function Home() {
   return (
-    <main>
-      <Swipers>
+    <main
+      style={{
+        display: "flex",
+        // alignContent: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Page2Parts />
+      {/* <Swipers>
         <SwiperSlide>{Page1}</SwiperSlide>
         <SwiperSlide>{Page2}</SwiperSlide>
         <SwiperSlide>{Page3}</SwiperSlide>
         <SwiperSlide>{Page4}</SwiperSlide>
-      </Swipers>
+      </Swipers> */}
     </main>
   );
 }

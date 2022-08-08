@@ -1,101 +1,53 @@
 import { CaptionIcon } from "components/Parts/Icons";
 import style from "./page2Parts.module.css";
 
-const RedButton = () => {
+const LaserModeImageTop = () => {
   return (
-    <span
-      className={`${style.optionButtonCommon}`}
-      style={{
-        background: "#DD7A8C",
-        color: "#fff",
-      }}
-    >
-      기본 기능
-    </span>
+    <div
+      className={`${style.modeImageCommon} ${style.LaserModeImageTop}`}
+    ></div>
   );
 };
 
-const BlackButton = () => {
+const LaserModeImageBottom = () => {
   return (
-    <span
-      className={`${style.optionButtonCommon}`}
-      style={{
-        background: "#7e818d",
-        color: "#fff",
-      }}
-    >
-      옵션 기능
-    </span>
+    <div
+      className={`${style.modeImageCommon} ${style.LaserModeImageBottom}`}
+    ></div>
   );
 };
 
-const GrayButton = (props) => {
+const UltraModeImagetop = () => {
   return (
-    <span
-      className={`${style.optionButtonCommon}`}
-      style={{
-        color: "#4d5058",
-        background: "#f2f3f7",
-        ...props.sx,
-        marginRight: "8px",
-      }}
-    >
-      {props.title}
-    </span>
+    <div
+      className={`${style.modeImageCommon} ${style.UltraModeImagetop}`}
+    ></div>
   );
 };
 
-const LaserModeImageTop = ({ children }) => {
-  return (
-    <div className={`${style.modeImageCommon} ${style.LaserModeImageTop}`}>
-      {children}
-    </div>
-  );
-};
-
-const LaserModeImageBottom = ({ children }) => {
-  return (
-    <div className={`${style.modeImageCommon} ${style.LaserModeImageBottom}`}>
-      {children}
-    </div>
-  );
-};
-
-const UltraModeImagetop = ({ children }) => {
-  return (
-    <div className={`${style.modeImageCommon} ${style.UltraModeImagetop}`}>
-      {children}
-    </div>
-  );
-};
-
-const UltraModeImageUpperMiddle = ({ children }) => {
+const UltraModeImageUpperMiddle = () => {
   return (
     <div
       className={`${style.modeImageCommon} ${style.UltraModeImageUpperMiddle}`}
-    >
-      {children}
-    </div>
+    ></div>
   );
 };
-const UltraModeImageLowerMiddle = ({ children }) => {
+const UltraModeImageLowerMiddle = () => {
   return (
     <div
       className={`${style.modeImageCommon} ${style.UltraModeImageLowerMiddle}`}
-    >
-      {children}
-    </div>
+    ></div>
   );
 };
-const UltraModeImageBottom = ({ children }) => {
+const UltraModeImageBottom = () => {
   return (
-    <div className={`${style.modeImageCommon} ${style.UltraModeImageBottom}`}>
-      {children}
-    </div>
+    <div
+      className={`${style.modeImageCommon} ${style.UltraModeImageBottom}`}
+    ></div>
   );
 };
 
-const ExplainContainer = ({ children }) => {
+const ExplainContainer = (props) => {
   return (
     <section
       style={{
@@ -104,30 +56,20 @@ const ExplainContainer = ({ children }) => {
         width: "594px",
         height: "164px",
         background: "rgba(255, 255, 255, 0.5)",
+        /* grayscale/02 */
         border: "1px solid #F2F3F7",
         borderRadius: "4px",
-        alignItems: "center",
-        marginTop: "8px",
-        marginBottom: "8px",
-        paddingLeft: "8px",
-        paddingRight: "8px",
       }}
     >
-      {/* <div
+      <div
         style={{
           width: "264px",
           height: "148px",
           borderRadius: "4px",
-          background: `url(${az})`,
         }}
-      > */}
-
-      {children}
-      {/* <LaserModeImageTop>
-        {props.button1 ? props.button1 : ""}
-        {props.button2 ? props.button2 : ""}
-      </LaserModeImageTop> */}
-      {/* </div> */}
+      >
+        {props.image}
+      </div>
       <div>2</div>
     </section>
   );
@@ -319,18 +261,7 @@ const SafeFeature = (props) => {
 export default function Page2Parts() {
   return (
     <article style={{ display: "flex", flexDirection: "column" }}>
-      <ExplainContainer
-      // image={aa}
-      // button1={<RedButton />}
-      // button2={
-      //   <GrayButton title="모공관리 (레벨: 1~3)" sx={{ width: "115px" }} />
-      // }
-      >
-        <LaserModeImageTop>
-          <RedButton />
-          <GrayButton title="모공관리 (레벨: 1~3)" sx={{ width: "115px" }} />
-        </LaserModeImageTop>
-      </ExplainContainer>
+      <ExplainContainer />
       {/* <Z /> */}
 
       <section style={{ marginTop: "18px" }}>
