@@ -11,7 +11,6 @@ import Page2 from "components/pages/main/Page1";
 import Page3 from "components/pages/main/Page1";
 import Page4 from "components/pages/main/Page1";
 import { SwiperSlide } from "swiper/react";
-import Page2Parts from "components/pages/FX5000/Page2Parts";
 
 export default function Home() {
   return (
