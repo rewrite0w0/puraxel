@@ -1,19 +1,10 @@
 import { useState } from "react";
 import meKr from "public/locales/kr/me";
 import style from "./page1.module.css";
+import { ArrowLA, ArrowLI, ArrowRA, ArrowRI } from "components/Parts/Icons";
 
 const MaruNumber = (props) => {
   return <section className={style.maruNumber}>{props.num}</section>;
-};
-
-const temp = () => {
-  return (
-    <div>
-      <MaruNumber num={1} />
-      <MaruNumber num={2} />
-      <MaruNumber num={3} />
-    </div>
-  );
 };
 
 const PageTitle = () => {
@@ -105,8 +96,85 @@ const ExplainFloatingBottom = () => {
   );
 };
 
+const ArrowLayout = ({ children }) => {
+  return <section style={{ display: "flex" }}>{children}</section>;
+};
+
 export default function Page1() {
   const [pageState, setPageState] = useState("page1");
+
+  const onClickHandler = {
+    page01: () => setPageState("page1"),
+    page02: () => setPageState("page2"),
+    page03: () => setPageState("page3"),
+  };
+
+  const CurrentArrow = () => {
+    if (pageState === "page1") {
+      return (
+        <ArrowLayout>
+          <ArrowLI />
+          <ArrowRA
+            onClick={onClickHandler.page02}
+            style={{ cursor: "pointer" }}
+          />
+        </ArrowLayout>
+      );
+    }
+
+    if (pageState === "page2") {
+      return (
+        <ArrowLayout>
+          <ArrowLA
+            onClick={onClickHandler.page01}
+            style={{ cursor: "pointer" }}
+          />
+          <ArrowRA
+            onClick={onClickHandler.page03}
+            style={{ cursor: "pointer" }}
+          />
+        </ArrowLayout>
+      );
+    }
+
+    if (pageState === "page3") {
+      return (
+        <ArrowLayout>
+          <ArrowLA
+            onClick={onClickHandler.page02}
+            style={{ cursor: "pointer" }}
+          />
+          <ArrowRI />
+        </ArrowLayout>
+      );
+    }
+  };
+
+  const CurrentNumber = () => {
+    if (pageState === "page1") {
+      return <MaruNumber num={1} />;
+    }
+
+    if (pageState === "page2") {
+      return <MaruNumber num={2} />;
+    }
+    if (pageState === "page3") {
+      return <MaruNumber num={3} />;
+    }
+  };
+
+  const PageDetail = () => {
+    if (pageState === "page1") {
+      return <Page01 />;
+    }
+
+    if (pageState === "page2") {
+      return <Page02 />;
+    }
+    if (pageState === "page3") {
+      return <Page03 />;
+    }
+  };
 
   return (
     <article
@@ -115,7 +183,7 @@ export default function Page1() {
         flexDirection: "column",
         marginLeft: "228px",
         marginRight: "228px",
-        marginTop: "100px",
+        marginTop: "164px",
         marginBottom: "100px",
       }}
     >
@@ -145,20 +213,28 @@ export default function Page1() {
         </span>
       </section>
       <section style={{ display: "flex" }}>
-        <div>
+        <div style={{ marginTop: "114px" }}>
           <ExplainFloatingTop />
           <ExplainFloatingBottom />
         </div>
-        <div style={{ marginLeft: "155px" }}>
-          <section style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginLeft: "155px", marginTop: "61px" }}>
+          <section
+            style={{
+              display: "flex",
+              alignItems: "center",
+              marginBottom: "12px",
+            }}
+          >
             <PageTitle />
             <span className={style.ExplainTitleSub}>작동 방식</span>
-            <span>번호</span>
-            <span>화살표</span>
+            <span>
+              <CurrentNumber />
+            </span>
+            <span>
+              <CurrentArrow />
+            </span>
           </section>
-          {/* <Page01 /> */}
-          {/* <Page02 /> */}
-          <Page03 />
+          <PageDetail />
         </div>
       </section>
     </article>

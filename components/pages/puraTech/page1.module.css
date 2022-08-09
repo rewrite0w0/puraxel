@@ -82,19 +82,23 @@
   color: var(--grayScale07);
   letter-spacing: -0.01em;
 
+  margin-left: 12px;
   font-weight: 500;
   font-size: 24px;
 }
 
 .page01Image {
   content: url(../../../src/image/PURATECH/page1/tech_main_01.svg);
+  margin-top: 19px;
 }
 
 .page02Image {
   content: url(../../../src/image/PURATECH/page1/tech_main_02.svg);
+  margin-top: 19px;
 }
 .page03Image {
   content: url(../../../src/image/PURATECH/page1/tech_main_03.svg);
+  margin-top: 19px;
 }
 
 .ExplainCommonPara {
@@ -103,7 +107,6 @@
 
   letter-spacing: -0.01em;
 
-  /* grayscale/07 */
   color: var(--grayScale07);
 }
 
@@ -114,22 +117,25 @@
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
 
-  /* grayscale/05 */
   color: var(--grayScale05);
 }
 
 .maruNumber {
   width: 20px;
   height: 20px;
-  background: #f8f9fa;
+  background: var(--grayScale02);
   border-radius: 100px;
   font-weight: 600;
 
   font-size: 12px;
 
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
+  margin-left: 24px;
+  margin-right: 8px;
 
   color: var(--grayScale04);
 }
