@@ -1,95 +1,61 @@
-import { motion } from "framer-motion";
-import { Box } from "@mui/material";
-import Image from "next/image";
-import meKr from "public/locales/kr/me";
-import flowerWithMe from "src/image/ME/me_main.png";
+import { useState } from "react";
 import style from "./page1.module.css";
-// import { ManualFractionPage1 } from "./ManualFraction";
-
-const Page1Intro1 = (props) => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        marginLeft: "15.5vw",
-      }}
-    >
-      <span style={{ fontSize: "2.5vw" }}>
-        <span style={{ color: "#A292A3" }}>{meKr.Page1Intro1A}</span>&nbsp;
-        <span style={{}}>{meKr.Page1Intro1B}</span>
-      </span>
-
-      <span style={{ fontSize: "4.25vw" }} className={style.fontEN}>
-        {meKr.Page1Title}
-      </span>
-    </div>
-  );
-};
-
-const Page1Explain = (props) => {
-  return (
-    <div style={{ fontSize: "1.2vw", marginLeft: "3.3vw" }}>
-      <span>
-        <span>{meKr.Page1Explain1A}</span>
-        <br />
-        <span>
-          <span>{meKr.Page1Explain1B}</span>
-          <span>{meKr.Page1Explain1C}</span>
-          <span>{meKr.Page1Explain1D}</span>
-        </span>
-        <br />
-        <br />
-
-        <span style={{ fontWeight: "lighter" }}>
-          <span>{meKr.Page1Explain2A}</span>
-          <br />
-          <span>{meKr.Page1Explain2B}</span>
-          <br />
-          <span>{meKr.Page1Explain2C}</span>
-          <br />
-        </span>
-      </span>
-    </div>
-  );
-};
-
-const Page1Img = (props) => {
-  return (
-    <Image
-      src={flowerWithMe}
-      alt="flower with ME"
-      className={style.img}
-      width={800}
-      height={700}
-      style={{ ...props.sx }}
-    />
-  );
-};
 
 export default function Page1() {
-  return (
-    <div
-      className={style.container}
-      style={{
-        display: "grid",
+  const [currentPage, setCurrentPage] = useState("me");
+  // me, fx, hair
 
-        gridTemplateRows: "50vh 50vh",
-        gridTemplateColumns: "1fr 1fr",
+  const onHoverHandler = {
+    me: () => {
+      setCurrentPage("me");
+    },
+    fx: () => {
+      setCurrentPage("fx");
+    },
+    hair: () => {
+      setCurrentPage("hair");
+    },
+  };
+
+  return (
+    <section
+      style={{
+        marginRight: "228px",
+        marginLeft: "228px",
+        marginTop: "160px",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <div className={style.containerLeftTop}>
-        <Page1Intro1 />
-        {/* <hr className={style.borderLine} /> */}
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <span className={style.title}>피부, 홀로 빛나다</span>
+          <div style={{ display: "flex" }}>
+            <span className={style.titleExplain}>
+              <span>
+                <span style={{ fontWeight: 500 }}>프락셔널 레이저</span>로
+                생성되는
+              </span>
+              <br />
+              <span>
+                5000개의 <span style={{ fontWeight: 500 }}>마이크로 홀</span>
+              </span>
+            </span>
+
+            <span className={style.titleExplain} style={{ marginLeft: "64px" }}>
+              <span>레이저, 시작부터 프로페셔널</span>
+              <br />
+              <span style={{ fontWeight: 500 }}>
+                홈 레이저 뷰티 케어의 시작
+              </span>
+            </span>
+          </div>
+        </div>
+        <div>
+          <div className={style.logo}></div>
+        </div>
       </div>
-      <div className={style.containerRightTop}>
-        <Page1Img />
-        {/* <Box className={style.img}></Box> */}
-      </div>
-      <div className={style.containerLeftBottom}>
-        <Page1Explain />
-      </div>
-      <div className={style.containerRightBottom}>{/* empty */}</div>
-    </div>
+      <div>2</div>
+    </section>
   );
 }

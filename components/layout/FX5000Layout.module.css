@@ -47,6 +47,8 @@
   /* width: 95vw; */
   /* width: "inherit"; */
   width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
 
   justify-content: space-between;
   /* bottom: 100px; */

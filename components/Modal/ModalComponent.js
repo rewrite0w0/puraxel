@@ -41,8 +41,8 @@ const bgStyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "60vw",
-  height: "40vw",
+  // width: "60vw",
+  // height: "40vw",
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -160,24 +160,41 @@ export default function ModalComponent(props) {
         <Box sx={bgStyle} className={style.modalContainer}>
           <Box className={style.left}>
             {/* 1 */}
-            <Box>
-              <span>{modalKr.modalTitle}</span>
+            <Box sx={{ marginBottom: "60px" }}>
+              <span className={style.modealLeftTitle}>
+                {modalKr.modalTitle}
+              </span>
             </Box>
             {/* 2 */}
             <Box>
-              <TextField label={modalKr.modalName} required />
+              <TextField
+                label={modalKr.modalName}
+                required
+                className={style.leftInputField}
+              />
             </Box>
             {/* 3 */}
             <Box>
-              <TextField label={modalKr.modalTel} required />
+              <TextField
+                label={modalKr.modalTel}
+                required
+                className={style.leftInputField}
+              />
             </Box>
             {/* 4 */}
             <Box>
-              <TextField label={modalKr.modalEmail} required />
+              <TextField
+                label={modalKr.modalEmail}
+                required
+                className={style.leftInputField}
+              />
             </Box>
             {/* 5 */}
             <Box>
-              <TextField label={modalKr.modalCompanyName} />
+              <TextField
+                label={modalKr.modalCompanyName}
+                className={style.leftInputField}
+              />
             </Box>
             {/* 6 */}
             <Box>
@@ -198,6 +215,7 @@ export default function ModalComponent(props) {
                     </Select>
                   </FormControl>
                 </Box>
+                <Box sx={{ display: "flex", alignItems: "center" }}>~</Box>
                 <Box>
                   <FormControl>
                     <Select
@@ -220,29 +238,34 @@ export default function ModalComponent(props) {
               <Box
                 style={{
                   display: "flex",
-                  alignItems: "center",
+                  // alignItems: "center",
                 }}
               >
                 <Checkbox
                   icon={<CheckCircleOutlineIcon />}
                   checkedIcon={<CheckCircleIcon />}
                   sx={{
-                    "& .MuiSvgIcon-root": { fontSize: "1vw" },
+                    "& .MuiSvgIcon-root": { background: "transparent" },
                     color: "pink",
                     "&.Mui-checked": {
-                      color: "gray",
+                      color: "pink",
                     },
                   }}
                 />
-                <Typography sx={{ fontSize: "0.9vw", color: "gray" }}>
-                  {modalKr.modalAgreeCheck}
-                </Typography>
-                &nbsp;
-                <Typography
-                  onClick={handleOpenAgreeNoticeDialog}
-                  sx={{ cursor: "pointer", fontSize: "0.8vw", color: "gray" }}
-                >
-                  {modalKr.modalAgreeDetail}
+                <Typography className={style.rightPrivayCollectAgree}>
+                  <span>{modalKr.modalAgreeCheck}</span>
+                  &nbsp;
+                  <span
+                    onClick={handleOpenAgreeNoticeDialog}
+                    className={style.rightPrivayCollectAgree}
+                    style={{
+                      cursor: "pointer",
+                      color: "#A7ABB6",
+                      fontSize: "12px",
+                    }}
+                  >
+                    {modalKr.modalAgreeDetail}
+                  </span>
                 </Typography>
               </Box>
               {/*  */}
@@ -256,28 +279,49 @@ export default function ModalComponent(props) {
             {/* 언어 버튼 선택 */}
             <Box>
               <ButtonGroup style={{ display: "flex" }}>
-                <Button variant="text" className={style.buttonStyle}>
+                <Button
+                  disableRipple
+                  variant="text"
+                  className={style.buttonStyle}
+                >
                   {modalKr.modalLangKr}
                 </Button>
-                <Button variant="text" className={style.buttonStyle}>
+                <Button
+                  disableRipple
+                  variant="text"
+                  className={style.buttonStyle}
+                >
                   {modalKr.modalLangEn}
                 </Button>
-                <Button variant="text" className={style.buttonStyle}>
+                <Button
+                  disableRipple
+                  variant="text"
+                  className={style.buttonStyle}
+                >
                   {modalKr.modalLangCh}
                 </Button>
               </ButtonGroup>
             </Box>
             {/* 2 */}
             {/* 문의 제목 */}
-            <Box>
-              <TextField label={modalKr.modalAskTitle} required />
+            <Box sx={{ marginTop: "20px" }}>
+              <TextField
+                fullWidth={true}
+                label={modalKr.modalAskTitle}
+                required
+              />
             </Box>
             {/* 3 */}
             {/* 문의 내용 */}
-            <Box>
+            <Box sx={{ height: "1000px" }}>
               <TextField
+                maxRows={25}
+                fullWidth={true}
+                multiline={true}
                 label={modalKr.modalAskContent}
+                sx={{ height: "100%", background: "pink" }}
                 // placeholder={modalKr.modalAskContentPlaceholder}
+
                 required
               />
             </Box>

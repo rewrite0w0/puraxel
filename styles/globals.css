@@ -131,3 +131,7 @@ a {
   padding: 0;
   margin: 0;
 }
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  transition: none;
+}
