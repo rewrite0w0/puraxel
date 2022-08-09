@@ -1,13 +1,132 @@
-.page2Container {
+.container {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 227px;
+  margin-left: 227px;
+  margin-top: 225px;
 }
 
-.page2ContainerLeft {
-  background: red;
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.page2ContainerRight {
-  background: blue;
+.topImage {
+  content: url(../../../src/image/PURATECH/page2/tech_02_img01.svg);
+}
+
+.rightBottomSide {
+  display: flex;
+  margin-top: -24px;
+}
+
+.bottomLeftImage {
+  content: url(../../../src/image/PURATECH/page2/tech_02_img02.svg);
+  margin-right: 25px;
+}
+
+.bottomRightImage {
+  content: url(../../../src/image/PURATECH/page2/tech_02_img03.svg);
+}
+
+.title {
+  font-weight: 300;
+  font-size: 32px;
+
+  /* or 42px */
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  /* grayscale/05 */
+  margin-bottom: 80px;
+}
+
+.titleTop {
+  font-size: 32px;
+  color: var(--grayScale05);
+}
+
+.titleBot {
+  font-size: 48px;
+  color: var(--primary01);
+}
+
+.expTop {
+  box-sizing: border-box;
+
+  width: 299px;
+  height: 116px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(233, 240, 250, 0.5) 0%,
+    rgba(213, 228, 250, 0.015) 54.12%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(20px);
+
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-left: 20px;
+}
+
+.expTopUpper {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-size: 16px;
+
+  color: var(--primary01);
+  margin-bottom: 8px;
+}
+
+.expTopLower {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.01em;
+  color: var(--grayScale07);
+}
+
+.expBot {
+  box-sizing: border-box;
+
+  width: 425px;
+  height: 420px;
+
+  background: #ffffff;
+
+  border: 1px solid #f2f3f7;
+  backdrop-filter: blur(20px);
+
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  color: var(--grayScale07);
+  letter-spacing: -0.03em;
+
+  font-weight: 300;
+  font-size: 20px;
+  padding-left: 20px;
+
+  margin-left: 150px;
+  margin-top: -30px;
+  position: sticky;
+  z-index: -1;
+}
+
+.expBotBold {
+  font-weight: 500;
+}
+
+.borderLineDash {
+  width: 337px;
+  border: 1px dashed var(--grayScale03);
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
