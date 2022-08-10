@@ -3,7 +3,6 @@ import { div, Paper } from "@mui/material";
 // import { ManualFractionPage2 } from "../../Parts/ManualFraction";
 // import Swipers from "../../Swipers";
 import { useState } from "react";
-import { motion } from "framer-motion";
 import meKr from "public/locales/kr/me.json";
 
 import style from "./page2.module.css";

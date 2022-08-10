@@ -34,3 +34,47 @@
 
   color: var(--grayScale07);
 }
+
+.bottom {
+  display: flex;
+}
+
+.bottomCommonLayout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* flex-direction: column; */
+  width: 871px;
+  height: 579px;
+  /* padding: 40px; */
+  /* padding-left: 40px; */
+  /* padding-top: 40px; */
+}
+
+.meImage {
+  /* width: 100px;
+  height: 100px; */
+  background-color: transparent;
+  background-image: url(../../../src/image/main/ME.svg);
+  background-size: auto;
+}
+
+.meContainer {
+  background: yellow;
+}
+
+.fx5000Container {
+  background: black;
+}
+.hairContainer {
+  background: pink;
+}
+
+.borderLine {
+  width: 40px;
+  border: 1px solid var(--grayScale03);
+  margin-left: 0px;
+}

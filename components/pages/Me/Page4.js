@@ -1,8 +1,6 @@
 import { useState } from "react";
 import style from "./page4.module.css";
 
-import { motion } from "framer-motion";
-
 import parts01 from "src/image/ME/page4/me_04_01.svg";
 import parts02 from "src/image/ME/page4/me_04_02.svg";
 import parts03 from "src/image/ME/page4/me_04_03.svg";

@@ -34,3 +34,7 @@
 - https://qiita.com/heppokofrontend/items/8e8ac3f9cdf34a4e360e
 - https://developers.google.com/youtube/iframe_api_reference
 - https://stackoverflow.com/questions/12522291/pausing-youtube-iframe-api-in-javascript
+
+## 카카오 채널 관련
+
+- https://developers.kakao.com/tool/demo/channel/chat?method=chat

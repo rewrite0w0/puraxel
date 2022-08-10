@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import meKr from "public/locales/kr/me";

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTrail, Trail, animated } from "react-spring";
 import style from "./page1.module.css";
 
 export default function Page1() {
@@ -6,7 +7,7 @@ export default function Page1() {
   // me, fx, hair
 
   const onHoverHandler = {
-    me: () => {
+    meIn: () => {
       setCurrentPage("me");
     },
     fx: () => {
@@ -55,7 +56,96 @@ export default function Page1() {
           <div className={style.logo}></div>
         </div>
       </div>
-      <div>2</div>
+      <div className={style.bottom}>
+        {/* <MeContainer /> */}
+        {/* <Test1 />
+        <Test2 />
+        <Test3 /> */}
+      </div>
     </section>
   );
 }
+
+const MeContainer = () => {
+  return (
+    <section
+      className={`${style.bottomCommonLayout} ${style.meContainer} ${style.meImage}`}
+    >
+      <article style={{ marginLeft: "40px" }}>
+        <div style={{ marginTop: "40px" }}>
+          <span>me</span>
+          <span>쇼핑몰 버튼</span>
+        </div>
+        <br />
+        <div>
+          <span>병원이나 의료기관에서만 볼 수 있었던 프락셔널 레이저,</span>
+          <br />
+          <span>이제는 집에서도 편리하게 사용하실 수 있습니다.</span>
+        </div>
+        <hr className={style.borderLine} />
+        <div>
+          <span>주요 기능</span>
+          <span>
+            <div>
+              <div>이미지</div>
+              <span>프락셔널</span>
+            </div>
+            <div>
+              <div>이미지</div>
+              <span>갈바닉</span>
+            </div>
+          </span>
+        </div>
+        <hr className={style.borderLine} />
+
+        <span>이벤트 상품</span>
+        <div>
+          <div>버튼 1</div>
+          <div>버튼 2</div>
+        </div>
+        {/* <article>
+        <div className={style.meImage}></div>
+      </article> */}
+      </article>
+    </section>
+  );
+};
+
+const FX5000Container = () => {
+  return (
+    <section
+      className={`${style.bottomCommonLayout} ${style.fx5000Container}`}
+    ></section>
+  );
+};
+
+const HairContainer = () => {
+  return (
+    <section
+      className={`${style.bottomCommonLayout} ${style.hairContainer}`}
+    ></section>
+  );
+};
+
+const Test1 = () => {
+  const trail = useTrail(amount, { opacity: 1 });
+  return (
+    <section
+      className={`${style.bottomCommonLayout} ${style.meContainer}`}
+    ></section>
+  );
+};
+const Test2 = () => {
+  return (
+    <section className={`${style.bottomCommonLayout} ${style.fx5000Container}`}>
+      <Trail></Trail>
+    </section>
+  );
+};
+const Test3 = () => {
+  return (
+    <section className={`${style.bottomCommonLayout} ${style.hairContainer}`}>
+      <Trail></Trail>
+    </section>
+  );
+};
