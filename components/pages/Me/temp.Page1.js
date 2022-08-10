@@ -122,6 +122,7 @@ export default function Page0() {
           layout="fixed"
           // bottom="0"
           // style={{ position: "absolute" }}
+          alt="me me me"
         />
       </section>
     </main>

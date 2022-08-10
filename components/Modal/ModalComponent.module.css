@@ -64,7 +64,7 @@
   flex-direction: column;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: fill-available;
+  /* width: fill-available; */
   margin-left: 40px;
 }
 

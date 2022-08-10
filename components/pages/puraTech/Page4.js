@@ -95,7 +95,7 @@ export default function Page4(props) {
 
       <div style={{ marginTop: "73px", marginLeft: "445px" }}>
         <CertiTitleContainer
-          color=""
+          // color=""
           background="#f2f3f7"
           title="LaMeditech Certifications"
           subject="기업 인증"

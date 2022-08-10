@@ -10,6 +10,13 @@ import CircleFloating from "components/Parts/CircleFloating";
 import { useState } from "react";
 import Page0 from "components/pages/Me/temp.Page1";
 
+import { Spring, animated, useSpring, SpringRef } from "react-spring";
+import style from "styles/me.module.css";
+
+const Oval = () => {
+  return <animated.div className={style.oval}>ㅇㅋㄷㅋ</animated.div>;
+};
+
 export default function Me() {
   return (
     <MeLayout>
@@ -20,6 +27,7 @@ export default function Me() {
       </Head>
       <Swipers>
         <SwiperSlide>
+          {/* <Oval /> */}
           <Page0 />
         </SwiperSlide>
         {/* <SwiperSlide>

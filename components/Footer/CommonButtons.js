@@ -96,13 +96,13 @@ export default function CommonButtons(props) {
               color: "#C7CAD3",
             }}
           >
-            {props.bottomRightz}
+            {props.bottomRightz ? props.bottomRightz : ""}
           </span>
           &nbsp;
           <span
             style={{ color: "#4D5058", fontSize: "20px", fontWeight: "300" }}
           >
-            {props.bottomRightx}
+            {props.bottomRightx ? props.bottomRightx : ""}
           </span>
         </span>
       </div>

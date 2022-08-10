@@ -61,26 +61,6 @@ export default function MeLayout({ children }) {
               style={{ width: "425px" }}
               link="https://qwant.com"
             />
-            {/* <LinkPriceButton
-            title={layoutFooterKr.Me}
-            price={layoutFooterKr.MePrice}
-            installment={layoutFooterKr.MeInstallmentDuration}
-            installmentPrice={layoutFooterKr.MeInstallmentPrice}
-            link="https://qwant.com"
-            sx={{ width: "277px", marginRight: "20px" }}
-          /> */}
-
-            {/* <LinkPriceButton
-            title={layoutFooterKr.MeAmpoul}
-            originalPrice={layoutFooterKr.MeAmpoulOriginalPrice}
-            arrow={layoutFooterKr.MeAmpoulArrow}
-            price={layoutFooterKr.MeAmpoulPrice}
-            offRate={layoutFooterKr.MeAmpoulPriceDiscountRate}
-            installment={layoutFooterKr.MeAmpoulInstallment}
-            installmentPrice={layoutFooterKr.MeAmpoulInstallmentPrice}
-            link="https://www.qwant.com/"
-            sx={{ width: "425px" }}
-          /> */}
           </div>
           <CommonManualFractionButtons
             title="여기에 캐러셀 혹은 수동 캐러셀"
