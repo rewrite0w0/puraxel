@@ -29,7 +29,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import commonButtonStyle from "components/Footer/CommonButtons.module.css";
 
-import { Inquiry } from "components/Parts/Icons";
+import { AskIcon, Inquiry, ShopIcon } from "components/Parts/Icons";
 
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
@@ -215,7 +215,16 @@ export default function ModalComponent(props) {
                     </Select>
                   </FormControl>
                 </Box>
-                <Box sx={{ display: "flex", alignItems: "center" }}>~</Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    color: "#7e818d",
+                    fontSize: "14px",
+                  }}
+                >
+                  ~
+                </Box>
                 <Box>
                   <FormControl>
                     <Select
@@ -239,6 +248,7 @@ export default function ModalComponent(props) {
                 style={{
                   display: "flex",
                   // alignItems: "center",
+                  marginTop: "160px",
                 }}
               >
                 <Checkbox
@@ -319,7 +329,9 @@ export default function ModalComponent(props) {
                 fullWidth={true}
                 multiline={true}
                 label={modalKr.modalAskContent}
-                sx={{ height: "100%", background: "pink" }}
+                // onFocus={true}
+                // onClick={(e) => e.currentTarget.onfocus}
+                sx={{ height: "100%" }}
                 // placeholder={modalKr.modalAskContentPlaceholder}
 
                 required
@@ -329,24 +341,66 @@ export default function ModalComponent(props) {
             {/* 여러가지 안내 사항 */}
             <Box>
               <Box style={{ display: "flex" }}>
-                <Typography>
+                <Typography
+                  sx={{
+                    fontWeight: 500,
+                    fontSize: "14px",
+                    letterSpacing: "-0.01em",
+                    color: "#7e818d",
+                  }}
+                >
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain1}
                 </Typography>
               </Box>
 
               <Box style={{ display: "flex" }}>
-                <Typography>
+                <Typography
+                  sx={{
+                    fontWeight: 500,
+                    fontSize: "14px",
+                    letterSpacing: "-0.01em",
+                    color: "#7e818d",
+                  }}
+                >
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain2A}
-                  {modalKr.modalExplain2B}
+                  <span style={{ fontWeight: 700, color: "#b298ad" }}>
+                    {modalKr.modalExplain2B}
+                  </span>
                   {modalKr.modalExplain2C}
                 </Typography>
               </Box>
 
-              <Button>{modalKr.modalLinkToShoppingMall}</Button>
-              <Button>{modalKr.modalLinkToAsk}</Button>
-              <Button>{modalKr.modalSendButton}</Button>
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div style={{ display: "flex", marginTop: "16px" }}>
+                  <span className={style.shopButton}>
+                    <ShopIcon
+                      sx={{
+                        height: "50px",
+                        width: "25px",
+                        color: "#fff",
+                        marginRight: "7.25px",
+                      }}
+                    />
+                    {modalKr.modalLinkToShoppingMall}
+                  </span>
+                  <span className={style.helpButton}>
+                    <AskIcon />
+                    {modalKr.modalLinkToAsk}
+                  </span>
+                </div>
+                <div
+                  className={style.sendButton}
+                  style={
+                    {
+                      // background
+                    }
+                  }
+                >
+                  {modalKr.modalSendButton}
+                </div>
+              </div>
             </Box>
             {/*  */}
           </Box>
@@ -354,14 +408,35 @@ export default function ModalComponent(props) {
       </Modal>
 
       <Dialog open={closeNoticeDialogOpen} onClose={handleCloseNoticeDialog}>
-        <DialogTitle>
-          {modalKr.modalExitModalPara1}
-          {modalKr.modalExitModalPara2}
-        </DialogTitle>
-        <DialogActions>
-          <Button>{modalKr.modalExitModalYes}</Button>
-          <Button>{modalKr.modalExitModalNo}</Button>
-        </DialogActions>
+        <section
+          style={{
+            // width: "296px",
+            // height: "150px",
+            display: "flex",
+            flexDirection: "column",
+            // justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <DialogTitle
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <span className={style.dialogTopPara}>
+              {modalKr.modalExitModalPara2}
+            </span>
+            <span className={style.dialogBotPara}>
+              {modalKr.modalExitModalPara1}
+            </span>
+          </DialogTitle>
+          <DialogActions>
+            <div className={style.exitButton}>{modalKr.modalExitModalYes}</div>
+            <div className={style.stayButton}>{modalKr.modalExitModalNo}</div>
+          </DialogActions>
+        </section>
       </Dialog>
 
       <Dialog

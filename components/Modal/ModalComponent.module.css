@@ -9,6 +9,7 @@
   box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   z-index: 9999;
+  font-family: ;
 }
 
 .container {
@@ -110,6 +111,120 @@
   letter-spacing: -0.01em;
   font-weight: 600;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99px;
+  height: 29px;
+
+  background: var(--primary01);
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+  margin-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  cursor: pointer;
+}
+
+.helpButton {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 119px;
+  height: 29px;
+
+  background: #ffffff;
+
+  border: 1px solid #55576f;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+
+  letter-spacing: -0.01em;
+
+  cursor: pointer;
+  color: var(--primary01);
+}
+
+.sendButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 154px;
+  height: 60px;
+
+  background: var(--grayScale03);
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 20px;
+
+  text-align: center;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dialogTopPara {
+  font-weight: 500;
+  font-size: 16px;
+
+  letter-spacing: -0.01em;
+
+  /* grayscale/07 */
+  color: #4d5058;
+}
+
+.dialogBotPara {
+  font-weight: 500;
+  font-size: 16px;
+
+  letter-spacing: -0.01em;
+  color: #a7abb6;
+}
+
+.exitButton {
+  width: 128px;
+  height: 48px;
+
+  background: #dfe1e8;
+  border-radius: 4px;
+  color: var(--grayScale08);
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stayButton {
+  width: 128px;
+  height: 48px;
+
+  background: #444444;
+  border-radius: 4px;
+  color: white;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
