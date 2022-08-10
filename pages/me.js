@@ -1,23 +1,90 @@
 import Head from "next/head";
 import Swipers from "components/Swipers";
 import MeLayout from "components/layout/MeLayout";
-import { SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Page1 from "components/pages/Me/Page1";
 import Page2 from "components/pages/Me/Page2";
 import Page3 from "components/pages/Me/Page3";
 import Page4 from "components/pages/Me/Page4";
 import CircleFloating from "components/Parts/CircleFloating";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Page0 from "components/pages/Me/temp.Page1";
 
-import { Spring, animated, useSpring, SpringRef } from "react-spring";
+import { Spring, animated, useSpring, SpringRef, config } from "react-spring";
+
+import { motion } from "framer-motion";
 import style from "styles/me.module.css";
 
-const Oval = () => {
-  return <animated.div className={style.oval}>ㅇㅋㄷㅋ</animated.div>;
-};
-
 export default function Me() {
+  const [ovalStart, setOvalStart] = useState(undefined);
+
+  const Oval2 = (props) => {
+    const transitionOval = useSpring({
+      from: { y: props.startY, x: props.startX },
+      to: { y: props.EndY, x: props.EndX },
+      config: { duration: 5000 },
+      ...props,
+    });
+
+    const styles = useSpring({
+      loop: { reverse: true },
+      from: { y: 0 },
+      to: { y: 25 },
+      config: { duration: 500 },
+    });
+    return (
+      <motion.div
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          left: 0,
+          top: 0,
+          ...transitionOval,
+        }}
+        {...props}
+      >
+        <animated.div className={style.oval} style={{ ...styles }}>
+          ㅇㅋㄷㅋ
+        </animated.div>
+      </motion.div>
+    );
+  };
+
+  const Oval = (props) => {
+    const transitionOval = useSpring({
+      from: { y: props.startY, x: props.startX },
+      to: { y: props.EndY, x: props.EndX },
+      config: { duration: 5000 },
+      ...props,
+    });
+
+    const styles = useSpring({
+      loop: { reverse: true },
+      from: { y: 0 },
+      to: { y: 25 },
+      config: { duration: 500 },
+    });
+    return (
+      <animated.div
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          left: 0,
+          top: 0,
+          ...transitionOval,
+        }}
+        {...props}
+      >
+        <animated.div className={style.oval} style={{ ...styles }}>
+          ㅇㅋㄷㅋ
+        </animated.div>
+      </animated.div>
+    );
+  };
+
+  // const [styles, api] = useSpring(() => {});
+  // console.log(styles, api);
+
   return (
     <MeLayout>
       <Head>
@@ -27,23 +94,48 @@ export default function Me() {
       </Head>
       <Swipers>
         <SwiperSlide>
-          {/* <Oval /> */}
+          <Oval
+            startX={0}
+            startY={0}
+            EndX={1491}
+            EndY={686}
+            pause={ovalStart === "page1" ? false : true}
+          />
           <Page0 />
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <Page1 />
-        </SwiperSlide> */}
+
         <SwiperSlide>
-          {/* {window.screen.width > 1000 ? <Page2 /> : <Page3 />} */}
           <Page2 />
+          <Oval
+            startX={1491}
+            startY={686}
+            EndX={824}
+            EndY={666}
+            // onUpdate={setOvalStart("page2")}
+            pause={ovalStart === "page3" ? false : true}
+          />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
+          <Oval
+            startX={824}
+            startY={666}
+            EndX={1491}
+            EndY={686}
+            pause={ovalStart === "page3" ? false : true}
+          />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page4 />
+          <Oval
+            startX={1491}
+            startY={686}
+            EndX={441}
+            EndY={120}
+            pause={ovalStart === "page4" ? false : true}
+          />
         </SwiperSlide>
       </Swipers>
     </MeLayout>

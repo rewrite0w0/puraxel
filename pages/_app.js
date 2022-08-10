@@ -3,6 +3,7 @@ import "styles/globals.css";
 import "swiper/css/bundle";
 import Layout from "components/layout/Layout";
 // import Transition from "components/Transition";
+import { Provider } from "jotai";
 
 function MyApp({ Component, pageProps, router }) {
   // const getLayOut = Component.getLayOut || ((page) => page);
@@ -11,12 +12,17 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     // <Transition>
-    <Layout>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider>
+      <Layout>
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+        </Head>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
     // </Transition>
   );
 }

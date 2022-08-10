@@ -10,18 +10,31 @@ import {
   EffectFade,
 } from "swiper";
 
+const Temp = (props) => {
+  return <h1>{JSON.parse(props.current)}</h1>;
+};
+
 export default function Swipers({ children }) {
   return (
     <Swiper
       slidesPerView={1}
       mousewheel={{ sensitivity: 0.25 }}
       // navigation={true}
-      // pagination={{
-      //   type: "custom",
-      //   renderCustom: (swiper, current, total) => {
-      //     return current + "    ㅡ    " + total;
-      //   },
-      // }}
+      pagination={{
+        type: "custom",
+        renderCustom: (swiper, current, total) => {
+          // console.log(swiper);
+
+          console.log(total);
+          // return current + "    ㅡ    " + total;
+          return `${current} ㅡ ${total}`;
+        },
+        renderFraction: (currentClass, totalClass) => {
+          console.log(currentClass, totalClass);
+          // return currentClass + " ㅡ " + totalClass;
+          return `${currentClass} + " ㅡ " + ${totalClass}`;
+        },
+      }}
       scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true }}
       autoplay={{ delay: 500000 }}
@@ -32,7 +45,7 @@ export default function Swipers({ children }) {
       fadeEffect={{ crossFade: true }}
       modules={[
         Mousewheel,
-        // Pagination,
+        Pagination,
         Keyboard,
         Autoplay,
         Navigation,

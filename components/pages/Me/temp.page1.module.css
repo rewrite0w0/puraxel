@@ -1,9 +1,61 @@
-@font-face {
-  font-family: "ENFont";
-  src: url("../../../src/fonts/CaviarDreams.woff") format("woff");
+.container {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  margin-top: 225px;
 }
 
-@font-face {
-  font-family: "ENFontB";
-  src: url("../../../src/fonts/CaviarDreams_Bold.woff") format("woff");
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 228px;
+}
+
+.rightContainer {
+  display: flex;
+}
+
+.subTitle {
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+
+  color: var(--primary01);
+}
+
+.title {
+  font-weight: 300;
+  font-size: 96px;
+  letter-spacing: -0.02em;
+
+  color: var(--primary01);
+}
+
+.mainExplain {
+  font-weight: 300;
+  font-size: 40px;
+
+  letter-spacing: -0.02em;
+
+  /* grayscale/07 */
+  color: var(--grayScale07);
+}
+
+.mainExplainBold {
+  font-weight: 600;
+  font-size: 40px;
+
+  letter-spacing: -0.02em;
+
+  /* grayscale/07 */
+  color: var(--grayScale07);
+}
+
+.subExplain {
+  font-weight: 300;
+  font-size: 24px;
+
+  letter-spacing: -0.02em;
+
+  /* grayscale/07 */
+  color: var(--grayScale07);
 }

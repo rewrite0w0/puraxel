@@ -84,6 +84,7 @@ export default function CommonButtons(props) {
             fontWeight: "500",
             letterSpacing: "-1px",
             color: "#B398AD",
+            marginLeft: "16px",
           }}
         >
           {props.bottomLeft ? props.bottomLeft : ""}

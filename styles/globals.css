@@ -135,3 +135,9 @@ a {
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
   transition: none;
 }
+
+.swiper-pagination-custom {
+  color: pink;
+  position: absolute;
+  bottom: 100px;
+}

@@ -55,7 +55,7 @@ export default function MeLayout({ children }) {
               topLeft="퓨라셀 ME + 퓨라더마앰플"
               topRightOriginalPrice="1800000원 => "
               topRightDiscountPrice="1,890,000원"
-              bottomLeft="18%"
+              bottomLeft="23%"
               bottomRightz="12개월"
               bottomRightx="월 157,500원"
               style={{ width: "425px" }}

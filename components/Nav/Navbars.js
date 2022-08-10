@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Box, Menu, Button, MenuItem } from "@mui/material";
 
 import navStyle from "./Nav.module.css";
@@ -42,6 +42,46 @@ export default function Navbars(props) {
   const companyInfoOpenStateCodition = companyOpenState === false;
   const snsCodition = snsOpenState === false;
 
+  const [currentPage, setCurrentPage] = useState(undefined);
+
+  const currentPageChecker = () => {
+    if (document.documentURI.includes("hair")) {
+      setCurrentPage("hair");
+    } else {
+      setCurrentPage(undefined);
+    }
+
+    if (document.documentURI.includes("fx5000")) {
+      setCurrentPage("fx5000");
+    } else {
+      setCurrentPage(undefined);
+    }
+
+    if (document.documentURI.includes("me")) {
+      setCurrentPage("me");
+    } else {
+      setCurrentPage(undefined);
+    }
+
+    if (document.documentURI.includes("tech")) {
+      setCurrentPage("tech");
+    } else {
+      setCurrentPage(undefined);
+    }
+  };
+
+  const currentPageFeature = {
+    hair: currentPage === "hair" ? "2px solid pink" : "",
+    me: currentPage === "me" ? "2px solid pink" : "",
+    fx5000: currentPage === "fx5000" ? "2px solid pink" : "",
+    tech: currentPage === "tech" ? "2px solid pink" : "",
+  };
+
+  useEffect(() => {
+    currentPageChecker();
+    console.log(currentPage);
+  });
+
   return (
     <Box className={navStyle.header}>
       <Box className={navStyle.leftNav}>
@@ -58,6 +98,9 @@ export default function Navbars(props) {
               location.href = "/me";
             }}
             title={layoutHeaderKr.me}
+            sx={{
+              borderBottom: currentPage === "me" ? "2px solid pink" : "",
+            }}
             className={navStyle.gnbMenu}
           />
 
