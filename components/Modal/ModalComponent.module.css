@@ -9,7 +9,10 @@
   box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   z-index: 9999;
-  font-family: ;
+
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
 }
 
 .container {
@@ -213,6 +216,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .stayButton {
@@ -228,4 +232,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.sendASKPara {
+  font-weight: 300;
+  font-size: 24px;
+
+  letter-spacing: -0.02em;
+
+  color: var(--grayScale08);
+}
+
+.sendASKSubPara {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 14px;
+
+  letter-spacing: -0.02em;
+
+  color: var(--grayScale05);
 }

@@ -56,6 +56,7 @@ export default function ModalComponent(props) {
   const handleOpenModal = () => {
     setModalOpen(true);
   };
+
   const handleCloseModal = () => {
     // setModalOpen(false);
     setCloseNoticeDialogOpen(true);
@@ -95,6 +96,28 @@ export default function ModalComponent(props) {
   const handleCloseNoticeDialog = () => {
     setCloseNoticeDialogOpen(false);
     setModalOpen(false);
+  };
+
+  const handleCloseNoticeYesOrNo = () => {
+    setCloseNoticeDialogOpen(false);
+  };
+
+  // 전송 확인 알림
+
+  const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
+
+  const handleOpenSendAgreeDialog = () => {
+    setSendAgreeDialogOpen(true);
+  };
+
+  const handleCloseSendAgreeDialog = () => {
+    setSendAgreeDialogOpen(false);
+  };
+
+  const handleSendAgreeYes = () => {
+    setModalOpen(false);
+    setSendAgreeDialogOpen(false);
+    handleOpenSendedNoticeDialog();
   };
 
   // 전송 완료 알림
@@ -256,9 +279,9 @@ export default function ModalComponent(props) {
                   checkedIcon={<CheckCircleIcon />}
                   sx={{
                     "& .MuiSvgIcon-root": { background: "transparent" },
-                    color: "pink",
+                    color: "#A7ABB6",
                     "&.Mui-checked": {
-                      color: "pink",
+                      color: "#4d5058",
                     },
                   }}
                 />
@@ -390,8 +413,10 @@ export default function ModalComponent(props) {
                     {modalKr.modalLinkToAsk}
                   </span>
                 </div>
+                {/* 전송 */}
                 <div
                   className={style.sendButton}
+                  onClick={handleOpenSendAgreeDialog}
                   style={
                     {
                       // background
@@ -407,7 +432,11 @@ export default function ModalComponent(props) {
         </Box>
       </Modal>
 
-      <Dialog open={closeNoticeDialogOpen} onClose={handleCloseNoticeDialog}>
+      <Dialog
+        open={closeNoticeDialogOpen}
+        onClose={handleCloseNoticeDialog}
+        onClick={(e) => e.preventDefault}
+      >
         <section
           style={{
             // width: "296px",
@@ -433,15 +462,73 @@ export default function ModalComponent(props) {
             </span>
           </DialogTitle>
           <DialogActions>
-            <div className={style.exitButton}>{modalKr.modalExitModalYes}</div>
-            <div className={style.stayButton}>{modalKr.modalExitModalNo}</div>
+            <div className={style.exitButton} onClick={handleCloseNoticeDialog}>
+              {modalKr.modalExitModalYes}
+            </div>
+            <div
+              className={style.stayButton}
+              onClick={handleCloseNoticeYesOrNo}
+            >
+              {modalKr.modalExitModalNo}
+            </div>
           </DialogActions>
         </section>
       </Dialog>
 
+      {/*  */}
+
+      <Dialog
+        open={sendAgreeDialogOpen}
+        onClose={handleCloseSendAgreeDialog}
+        onClick={(e) => e.preventDefault}
+      >
+        <section
+          style={{
+            // width: "296px",
+            // height: "150px",
+            display: "flex",
+            flexDirection: "column",
+            // justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <DialogTitle
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <span className={style.dialogTopPara}>
+              {/* {modalKr.modalExitModalPara2} */}
+              문의 내용을 전달하시겠습니까?
+            </span>
+            <span className={style.dialogBotPara}>
+              {/* {modalKr.modalExitModalPara1} */}한 번 전달한 문의는 수정할 수
+              없습니다.
+            </span>
+          </DialogTitle>
+          <DialogActions>
+            <div
+              className={style.exitButton}
+              onClick={handleCloseSendAgreeDialog}
+            >
+              {/* {modalKr.modalExitModalYes} */}
+              아니오
+            </div>
+            <div className={style.stayButton} onClick={handleSendAgreeYes}>
+              {/* {modalKr.modalExitModalNo} */}네
+            </div>
+          </DialogActions>
+        </section>
+      </Dialog>
+
+      {/*  */}
+
       <Dialog
         open={agreeNoticeDialogOpen}
         onClose={handleCloseAgreeNoticeDialog}
+        // sx={{ display: "flex" }}
       >
         <DialogTitle>{modalKr.modalDetailTitle}</DialogTitle>
         <DialogContent dividers="scroll">
@@ -453,14 +540,50 @@ export default function ModalComponent(props) {
         open={sendedNoticeDialogOpen}
         onClose={handleCloseSendedNoticeDialog}
       >
-        <DialogTitle>
-          <CheckCircleIcon style={{ color: "pink" }} />
-        </DialogTitle>
-        <DialogContent>
-          {modalKr.modalSendPara1}
-          {modalKr.modalSendPara2}
-          {modalKr.modalSendPara3}
-        </DialogContent>
+        <section
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            // height: "225px",
+            // width: "381px",
+            paddingLeft: "20px",
+            paddingRight: "20px",
+          }}
+        >
+          {/* <DialogTitle></DialogTitle> */}
+          <DialogContent>
+            <span
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <CheckCircleIcon
+                style={{
+                  color: "pink",
+                  height: "56px",
+                  width: "56px",
+                  marginBottom: "16px",
+                }}
+              />
+              <span className={style.sendASKPara}>
+                {modalKr.modalSendPara1}
+              </span>
+              <br />
+              <span className={style.sendASKPara}>
+                {modalKr.modalSendPara2}
+              </span>
+              <br />
+              <span className={style.sendASKSubPara}>
+                {modalKr.modalSendPara3}
+              </span>
+            </span>
+          </DialogContent>
+        </section>
       </Dialog>
     </>
   );
