@@ -29,15 +29,16 @@ export default function Page0() {
         </span>
       </section>
       <section className={style.rightContainer}>
-        <Image
+        <div className={style.meImage}></div>
+        {/* <Image
           src={tempME}
           // width="574px"
           // height="1422px"
-          layout="fixed"
+          layout="fill"
           // bottom="0"
-          // style={{ position: "absolute" }}
+          style={{ position: "absolute", bottom: 0 }}
           alt="me me me"
-        />
+        /> */}
       </section>
     </main>
   );

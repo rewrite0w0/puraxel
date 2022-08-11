@@ -16,6 +16,10 @@ export default function CommonButtons(props) {
         // justifyContent: "center",
         cursor: "pointer",
         ...props.style,
+        fontSize: "18px",
+        fontWeight: "600",
+        letterSpacing: "-1px",
+        color: "#555768",
       }}
       onClick={() => {
         window.open(props.link ? props.link : "/", "_blank");

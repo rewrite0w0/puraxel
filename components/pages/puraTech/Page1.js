@@ -191,10 +191,11 @@ export default function Page1() {
         <span
           style={{
             fontSize: "48px",
-            fontWeight: "300",
+            // fontWeight: "300",
             letterSpacing: "-0.02em",
             color: "#55576f",
           }}
+          className={style.subTitle}
         >
           하이브리드 레이저의 에스테틱 솔루션
           <br />

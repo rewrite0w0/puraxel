@@ -1,7 +1,7 @@
 .TechContainer {
   /* background: skyblue; */
-  /* background: url(../../src/image/PURATECH/productBg.svg); */
-
+  background: url(../../src/image/PURATECH/productBg.svg);
+  background-size: cover;
   height: 100vh;
 }
 
@@ -14,6 +14,7 @@
   /* min-height: 100vh;
     max-height: 100vh; */
   /* position: relative; */
+  height: 100vh;
 }
 
 .footerContainer {

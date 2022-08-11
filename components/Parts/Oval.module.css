@@ -28,4 +28,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* animation: 0.5s linear 1s infinite alternate heartBeat; */
 }
+
+/* @keyframes heartBeat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+} */

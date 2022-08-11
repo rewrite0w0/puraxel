@@ -139,3 +139,7 @@
 
   color: var(--grayScale04);
 }
+
+.subTitle {
+  font-weight: 200;
+}

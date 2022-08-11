@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: 1.8fr 1fr;
   margin-top: 225px;
+  margin-left: 228px;
+  margin-right: 228px;
 }
 
 .leftContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 228px;
 }
 
 .rightContainer {
@@ -18,7 +19,7 @@
   font-weight: 300;
   font-size: 48px;
   letter-spacing: -0.02em;
-
+  line-height: 128%;
   color: var(--primary01);
 }
 
@@ -26,7 +27,7 @@
   font-weight: 300;
   font-size: 96px;
   letter-spacing: -0.02em;
-
+  line-height: 120%;
   color: var(--primary01);
 }
 
@@ -58,4 +59,9 @@
 
   /* grayscale/07 */
   color: var(--grayScale07);
+}
+
+.meImage {
+  content: url(../../../src/image/ME/page1/puraxel_me_me_me.svg);
+  position: fixed;
 }

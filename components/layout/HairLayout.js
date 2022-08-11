@@ -15,10 +15,10 @@ export default function HairLayout({ children }) {
 
         <footer className={style.footerContainer}>
           <ModalComponent />
-          <CommonPlainButtons
+          {/* <CommonPlainButtons
             title="여기에 캐러셀 혹은 수동 캐러셀"
             sx={{ width: "92px" }}
-          />
+          /> */}
         </footer>
       </article>
     </main>

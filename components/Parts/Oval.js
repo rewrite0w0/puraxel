@@ -11,9 +11,9 @@ const Oval = (props) => {
 
   const styles = useSpring({
     loop: { reverse: true },
-    from: { y: 0 },
-    to: { y: 25 },
-    config: { duration: 500 },
+    from: { y: 0, scale: 1 },
+    to: { y: 25, scale: 1.12 },
+    config: { duration: 1000 },
   });
   return (
     <animated.div

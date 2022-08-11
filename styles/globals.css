@@ -146,14 +146,14 @@ a {
   margin-bottom: 36px;
   /* z-index: 100000; */
   /* cursor: pointer; */
-  animation: 0.5s linear 1s infinite alternate slidein;
+  animation: 0.5s linear 1s infinite alternate heartBeat;
 }
 
-@keyframes slidein {
+@keyframes heartBeat {
   from {
     transform: scale(1);
   }
   to {
-    transform: scale(1.2);
+    transform: scale(1.25);
   }
 }

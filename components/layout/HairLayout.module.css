@@ -1,6 +1,8 @@
 .HairContainer {
   /* background: var(--secondaryHair); */
-  background: url(../../src/image/HAIR/bg_hair.png);
+  /* background: url(../../src/image/HAIR/bg_hair.png); */
+  background: url(../../src/image/HAIR/productBg_hair.png);
+  background-size: cover;
   height: 100vh;
 }
 

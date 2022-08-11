@@ -7,7 +7,6 @@ import style from "./MeLayout.module.css";
 
 import CommonButtons from "components/Footer/CommonButtons";
 import CommonPlainButtons from "components/Footer/CommonPlainButtons";
-import CommonManualFractionButtons from "components/Footer/CommonManualFractionButtons";
 
 export default function MeLayout({ children }) {
   return (
@@ -39,6 +38,7 @@ export default function MeLayout({ children }) {
                 fontSize: "18px",
                 fontWeight: "600",
                 letterSpacing: "-1px",
+                color: "#555768",
                 cursor: "pointer",
               }}
             />
@@ -47,25 +47,38 @@ export default function MeLayout({ children }) {
               topRightDiscountPrice="1,890,000원"
               bottomRightz="12개월"
               bottomRightx="월 157,500원"
-              style={{ width: "277px", marginRight: "20px" }}
+              style={{
+                width: "277px",
+                marginRight: "20px",
+                fontSize: "18px",
+                fontWeight: "600",
+                letterSpacing: "-1px",
+                color: "#555768",
+              }}
               link="https://qwant.com"
             />
 
             <CommonButtons
               topLeft="퓨라셀 ME + 퓨라더마앰플"
-              topRightOriginalPrice="1800000원 => "
+              topRightOriginalPrice="2,433,000원 => "
               topRightDiscountPrice="1,890,000원"
               bottomLeft="23%"
               bottomRightz="12개월"
               bottomRightx="월 157,500원"
-              style={{ width: "425px" }}
+              style={{
+                width: "425px",
+                fontSize: "18px",
+                fontWeight: "600",
+                letterSpacing: "-1px",
+                color: "#555768",
+              }}
               link="https://qwant.com"
             />
           </div>
-          <CommonManualFractionButtons
+          {/* <CommonManualFractionButtons
             title="여기에 캐러셀 혹은 수동 캐러셀"
             style={{ width: "92px", marginRight: "80px" }}
-          />
+          /> */}
         </footer>
       </article>
     </main>

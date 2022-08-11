@@ -8,6 +8,11 @@
   height: "64px";
   /* flexdirection: "column"; */
   /* // justifyContent: "center"; */
+
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  font-size: 18px;
+  color: var(--primary01);
 }
 
 .buttonContainer:hover {

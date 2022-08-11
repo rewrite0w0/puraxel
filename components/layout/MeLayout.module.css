@@ -5,7 +5,9 @@
   max-height: 100vh; */
 
   height: 100vh;
-  background: url(../../src/image/ME/bg_me.png);
+  /* background: url(../../src/image/ME/bg_me.png);
+  background-size: cover; */
+  background: url(../../src/image/ME/productBg_me.png);
   background-size: cover;
 }
 

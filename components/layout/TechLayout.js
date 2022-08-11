@@ -13,10 +13,10 @@ export default function TechLayout({ children }) {
         {children}
 
         <footer className={style.footerContainer}>
-          <CommonPlainButtons
+          {/* <CommonPlainButtons
             title="여기에 캐러셀 혹은 수동 캐러셀"
             sx={{ width: "92px" }}
-          />
+          /> */}
         </footer>
       </article>
     </main>
