@@ -7,6 +7,7 @@ import Page2 from "components/pages/Hair/Page2";
 import Page3 from "components/pages/Hair/Page3";
 import Page4 from "components/pages/Hair/Page4";
 import Page0 from "components/pages/Hair/temp.Page1";
+import Oval from "components/Parts/Oval";
 
 export default function Hair() {
   return (
@@ -18,11 +19,26 @@ export default function Hair() {
         <link rel="icon" href="/gnb_logo_active.svg" />
       </Head>
       <Swipers>
-        <SwiperSlide>{Page0}</SwiperSlide>
+        <SwiperSlide>
+          <Oval
+            startX={0}
+            startY={0}
+            EndX={1491}
+            EndY={686}
+            // pause={ovalStart === "page1" ? false : true}
+          />
+          <Page0 />
+        </SwiperSlide>
         {/* <SwiperSlide>{Page1}</SwiperSlide> */}
-        <SwiperSlide>{Page2}</SwiperSlide>
-        <SwiperSlide>{Page3}</SwiperSlide>
-        <SwiperSlide>{Page4}</SwiperSlide>
+        <SwiperSlide>
+          <Page2 />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Page3 />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Page4 />
+        </SwiperSlide>
       </Swipers>
     </HairLayout>
   );

@@ -99,7 +99,7 @@ export default function Me() {
             startY={0}
             EndX={1491}
             EndY={686}
-            pause={ovalStart === "page1" ? false : true}
+            // pause={ovalStart === "page1" ? false : true}
           />
           <Page0 />
         </SwiperSlide>
@@ -112,7 +112,7 @@ export default function Me() {
             EndX={824}
             EndY={666}
             // onUpdate={setOvalStart("page2")}
-            pause={ovalStart === "page3" ? false : true}
+            // pause={ovalStart === "page3" ? false : true}
           />
         </SwiperSlide>
 
@@ -123,7 +123,7 @@ export default function Me() {
             startY={666}
             EndX={1491}
             EndY={686}
-            pause={ovalStart === "page3" ? false : true}
+            // pause={ovalStart === "page3" ? false : true}
           />
         </SwiperSlide>
 
@@ -134,7 +134,7 @@ export default function Me() {
             startY={686}
             EndX={441}
             EndY={120}
-            pause={ovalStart === "page4" ? false : true}
+            // pause={ovalStart === "page4" ? false : true}
           />
         </SwiperSlide>
       </Swipers>

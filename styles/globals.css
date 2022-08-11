@@ -137,7 +137,33 @@ a {
 }
 
 .swiper-pagination-custom {
-  color: pink;
+  /* color: pink; */
+  /* position: absolute; */
+  /* top: 200;
+  left: 0; */
+  /* background: black; */
+  /* display: flex;
+  justify-content: flex-end; */
+  /* height: 100%; */
+
+  /* background: yellowgreen; */
+}
+
+.customPagination {
+  /* background: black; */
   position: absolute;
-  bottom: 100px;
+  bottom: 0;
+  right: 0;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-bottom: 36px;
+}
+
+/* .swiper-pagination {
+  display: flex;
+  justify-content: flex-end;
+  transform: translate3d(-50px, -50px, -50px);
+} */
+
+@keyframes test {
 }
