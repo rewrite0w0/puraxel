@@ -1,18 +1,24 @@
 .container {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  margin-top: 225px;
-  margin-left: 228px;
-  margin-right: 228px;
+  /* display: grid;
+  grid-template-columns: 1.8fr 1fr; */
+  /* display: block; */
+  /* display: flex; */
+  height: 100vh;
+  display: flex;
 }
 
 .leftContainer {
   display: flex;
+  margin-top: 225px;
+  margin-left: 228px;
+  /* margin-right: 428px; */
+  width: 50%;
   flex-direction: column;
 }
 
 .rightContainer {
   display: flex;
+  align-items: flex-end;
 }
 
 .subTitle {
@@ -62,6 +68,9 @@
 }
 
 .meImage {
-  content: url(../../../src/image/ME/page1/puraxel_me_me_me.svg);
-  position: fixed;
+  /* content: url(../../../src/image/ME/page1/puraxel_me_me_me.svg); */
+  content: url(../../../src/image/ME/page1/me_main.svg);
+  position: absolute;
+
+  /* position: fixed; */
 }

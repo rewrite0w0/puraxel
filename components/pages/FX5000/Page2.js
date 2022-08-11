@@ -15,10 +15,11 @@ const LaserExplain = (props) => {
         className={style.explainTitle}
         style={{
           fontSize: "24px",
-          letterSpacing: "-2px",
+          letterSpacing: "-0.02em",
           color: "#55576F",
           fontWeight: 600,
-          letterSpacing: "-2px",
+          letterSpacing: "-0.02em",
+          lineHeight: "132%",
         }}
       >
         {meKr.Page2LaserTitle}
@@ -30,7 +31,11 @@ const LaserExplain = (props) => {
       <span>
         <span
           className={style.explainPara}
-          style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+          style={{
+            fontSize: "14px",
+            letterSpacing: "-0.01em",
+            color: "#7E818D",
+          }}
         >
           {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
           피부층에 약 100개의 작은 홀을 생성하여
@@ -39,18 +44,18 @@ const LaserExplain = (props) => {
         <span
           style={{
             fontSize: "14px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#7E818D",
           }}
         >
           {/* {나중에 json 넣어야함} */}
-          크림과 앰플의 피부흡수율을 높이줍니다.
+          크림과 앰플의 피부흡수율을 높여줍니다.
         </span>
-        <br style={{ marginBottom: "30px" }} />
+        <br style={{ marginBottom: "12px" }} />
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#A7ABB6",
             marginRight: "8px",
           }}
@@ -58,7 +63,12 @@ const LaserExplain = (props) => {
           {meKr.Page2LaserTechExplain1A}
         </span>
         <span
-          style={{ fontSize: "12px", letterSpacing: "-1px", color: "#7E818D" }}
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-0.01em",
+            color: "#7E818D",
+            letterSpacing: "-0.01em",
+          }}
         >
           {meKr.Page2LaserTechExplain1B}
         </span>
@@ -74,7 +84,7 @@ const GalvanicExplain = (props) => {
         className={style.explainTitle}
         style={{
           fontSize: "24px",
-          letterSpacing: "-2px",
+          letterSpacing: "-0.02em",
           color: "#55576F",
           fontWeight: 600,
         }}
@@ -89,7 +99,7 @@ const GalvanicExplain = (props) => {
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
       <span
         className={style.explainPara}
-        style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+        style={{ fontSize: "14px", letterSpacing: "-0.01em", color: "#7E818D" }}
       >
         {/* {meKr.Page2GalvanicExplain} */}
         <span>
@@ -108,7 +118,7 @@ const GalvanicExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#4D5D58",
             fontWeight: 600,
           }}
@@ -120,7 +130,7 @@ const GalvanicExplain = (props) => {
           style={{
             marginRight: "81px",
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#A7ABB6",
             fontWeight: 300,
           }}
@@ -130,7 +140,7 @@ const GalvanicExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#4D5D58",
             fontWeight: 600,
           }}
@@ -141,7 +151,7 @@ const GalvanicExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#A7ABB6",
             fontWeight: 300,
           }}
@@ -156,12 +166,6 @@ const GalvanicExplain = (props) => {
 export default function Page2(props) {
   const [modeSelector, setModeSelector] = useState("Laser");
   const [laserSelector, setLaserSelector] = useState(true);
-  // console.log(modeSelector);
-
-  // const handlerLaserSelectorOnClick = () => {
-  //   laserSelector ? setLaserSelector(false) : setLaserSelector(true);
-  //   !modeCondition ? setModeSelector("Laser") : setModeSelector("Galvanic");
-  // };
 
   const selectorLaser = () => {
     return setModeSelector("Laser");
@@ -185,17 +189,30 @@ export default function Page2(props) {
         <div className={style.leftPaper}>
           {/* 첫 번째 grid: 제목/소개*/}
           <div className={style.leftPaperTop}>
-            <span className={style.leftPaperTopFirst}>{meKr.Page2Intro1}</span>
+            <span
+              className={style.leftPaperTopFirst}
+              style={{
+                fontWeight: 300,
+                letterSpacing: "-0.02em",
+                lineHeight: "132%",
+                fontSize: "32px",
+                color: "#a7abb6",
+              }}
+            >
+              {/* {meKr.Page2Intro1} */}
+              레이저와 초음파 기술을 활용한
+            </span>
             <br />
-            <span className={style.leftPaperTopSecond}>
-              <span className={style.leftPaperTopSecondPoint}>
-                {meKr.Page2Intro2A}
-              </span>
-              <span>{meKr.Page2Intro2B}</span>
-              <span className={style.leftPaperTopSecondPoint}>
-                {meKr.Page2Intro2C}
-              </span>
-              <span>{meKr.Page2Intro2D}</span>
+            <span
+              style={{
+                fontWeight: 300,
+                letterSpacing: "-0.02em",
+                lineHeight: "132%",
+                fontSize: "48px",
+                color: "rgba(85, 87, 111, 1)",
+              }}
+            >
+              퓨라셀의 <span style={{ fontWeight: 700 }}>다섯가지 기능</span>
             </span>
           </div>
 
@@ -283,7 +300,7 @@ export default function Page2(props) {
               </span>
             </div>
           </div>
-          <div
+          {/* <div
             onClick={selectorGalvanic}
             className={style.bookmark}
             style={{
@@ -299,25 +316,13 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkDetail}
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* 오른쪽 grid */}
 
       {modeCondition ? <LaserModeParts /> : <UltraModeParts />}
-
-      {/* <div className={style.rightGridContainer}> */}
-      {/* {modeCondition ? (
-        <div
-          className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
-        ></div>
-      ) : (
-        <div
-          className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
-        ></div>
-      )} */}
-      {/* </div> */}
     </div>
   );
 }

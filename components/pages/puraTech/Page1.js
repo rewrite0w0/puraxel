@@ -17,7 +17,9 @@ const Page01 = () => {
       <span className={style.ExplainCommonPara}>
         Array Lens를 사용한 Fractional 형태의 레이저 출력
       </span>
-      <div className={style.page01Image}></div>
+      <div className={style.commonImage}>
+        <div className={style.page01Image}></div>
+      </div>
     </section>
   );
 };
@@ -37,7 +39,9 @@ const Page02 = () => {
       <span className={style.ExplainCommonParaSub}>
         *1회 레이저 조사 시 약 100개 Micro holes생성
       </span>
-      <div className={style.page02Image}></div>
+      <div className={style.commonImage}>
+        <div className={style.page02Image}></div>
+      </div>
     </section>
   );
 };
@@ -53,7 +57,9 @@ const Page03 = () => {
       <span className={style.ExplainCommonParaSub}>
         퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 수 있습니다.
       </span>
-      <div className={style.page03Image}></div>
+      <div className={style.commonImage}>
+        <div className={style.page03Image}></div>
+      </div>
     </section>
   );
 };
@@ -200,7 +206,7 @@ export default function Page1() {
           하이브리드 레이저의 에스테틱 솔루션
           <br />
           퓨라셀의 기술력
-          <br />
+          <br style={{ marginBottom: "24px" }} />
           <span
             style={{
               fontSize: "96px",

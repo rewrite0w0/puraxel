@@ -10,6 +10,8 @@ import CircleFloating from "components/Parts/CircleFloating";
 import { useEffect, useState } from "react";
 import Page0 from "components/pages/Me/temp.Page1";
 
+import Oval from "components/Parts/Oval";
+
 import { Spring, animated, useSpring, SpringRef, config } from "react-spring";
 
 import { motion } from "framer-motion";
@@ -50,7 +52,7 @@ export default function Me() {
     );
   };
 
-  const Oval = (props) => {
+  const Oval1 = (props) => {
     const transitionOval = useSpring({
       from: { y: props.startY, x: props.startX },
       to: { y: props.EndY, x: props.EndX },

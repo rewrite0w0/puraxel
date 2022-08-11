@@ -45,7 +45,7 @@
 .leftPaperTopSecond {
   font-size: 48px;
   color: var(--primary01);
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
 }
 
 .leftPaperTopSecondPoint {
@@ -100,11 +100,12 @@
 
 .laserContainer {
   /* content: url(../../../src/image/ME/me_laser_active.svg); */
-  content: url(../../../src/image/FX5000/page2/puraxelLeft.svg);
+  background: url(../../../src/image/FX5000/page2/puraxelLeft.svg);
+  background-size: cover;
 
   height: 300px;
   width: 300px;
-  margin-left: -20px;
+  /* margin-left: -20px; */
 
   /* background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
     linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
@@ -118,8 +119,8 @@
 }
 .galvanicContainer {
   /* content: url(../../../src/image/ME/me_galvanic_active.svg); */
-  content: url(../../../src/image/FX5000/page2/puraxelRight.svg);
-
+  background: url(../../../src/image/FX5000/page2/puraxelRight.svg);
+  background-size: cover;
   height: 300px;
   width: 300px;
   margin-left: 20px;
@@ -144,7 +145,7 @@
 
 .indicator {
   display: flex;
-  margin-top: -63px;
+  /* margin-top: -63px; */
 }
 
 .indicatorLeft {
@@ -158,20 +159,22 @@
   opacity: 0.7;
   border-radius: 50%;
   margin-right: 8px;
+  /* margin-right: 8px;
   margin-top: 41px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  margin-bottom: 12px;
 }
 
 .explainTitle {
   font-size: 24px;
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
   color: var(--primary01);
 }
 
 .explainPara {
   color: var(--grayScale08);
   font-size: 14px;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 
 .bookmark {
@@ -198,12 +201,12 @@
 
 .bookmarkUpperPara {
   font-size: 14px;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 
 .bookmarkLowerPara {
   font-size: 12px;
-  letter-spacing: -1px;
+  letter-spacing: -0.01em;
 }
 
 .rightGridContainer {

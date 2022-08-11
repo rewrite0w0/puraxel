@@ -28,8 +28,8 @@ export default function Page0() {
           이제는 집에서도 편리하게 사용하실 수 있습니다.
         </span>
       </section>
-      <section className={style.rightContainer}>
-        <div className={style.meImage}></div>
+      <span className={style.rightContainer}>
+        <span className={style.meImage} />
         {/* <Image
           src={tempME}
           // width="574px"
@@ -39,7 +39,7 @@ export default function Page0() {
           style={{ position: "absolute", bottom: 0 }}
           alt="me me me"
         /> */}
-      </section>
+      </span>
     </main>
   );
 }

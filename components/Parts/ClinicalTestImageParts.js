@@ -6,7 +6,7 @@ export default function ClinicalTestImageParts(props) {
       className={style.icon}
       style={{
         ...props.sx,
-        width: props.width ? props.width : "129px",
+        // width: props.width ? props.width : "129px",
         color: props.color ? props.color : "#ffffff",
       }}
     >

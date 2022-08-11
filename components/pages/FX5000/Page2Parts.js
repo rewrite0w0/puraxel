@@ -22,7 +22,9 @@ const ExplainContainerRightSide = (props) => {
 
 const UltraTopExplain = () => {
   return (
-    <span className={style.explainTitleCommon} style={{ marginTop: "8px" }}>
+    <span
+      className={`${style.explainTitleCommon} ${style.explainTitleLineHeight}`}
+    >
       기능성 솔루션을 바른 후 마사지하면
       <br />
       <span>높은 흡수력</span>으로 더 탄력있고 촘촘한
@@ -33,7 +35,9 @@ const UltraTopExplain = () => {
 
 const UltraMiddleTopExplain = () => {
   return (
-    <span className={style.explainTitleCommon} style={{ marginTop: "8px" }}>
+    <span
+      className={`${style.explainTitleCommon} ${style.explainTitleLineHeight}`}
+    >
       같은 극끼리 밀어내는 갈바닉 기술을 활용하여
       <br />
       이온화된 화장품의 흡수율을 높입니다.
@@ -71,7 +75,7 @@ const UltraMiddleBottomExplain = () => {
 
 const UltraBottomExplain = () => {
   return (
-    <span className={style.explainTitleCommon} style={{ marginTop: "8px" }}>
+    <span className={style.explainTitleCommon}>
       <span
         style={{
           letterSpacing: "-0.01em",
@@ -79,12 +83,13 @@ const UltraBottomExplain = () => {
           fontWeight: "300",
           color: "#4d5058",
         }}
+        className={style.explainTitleLineHeight}
       >
         차가운 쿨링효과로 피부를 진정시키고
         <br />
         모공 축소를 도와줍니다.
       </span>
-      <br />
+      <br style={{ marginBottom: "11px" }} />
       <span
         style={{
           letterSpacing: "-0.03em",
@@ -103,12 +108,15 @@ const UltraBottomExplain = () => {
 
 const LaserExplainInLaser = (props) => {
   return (
-    <span className={style.explainTitleCommon} style={{ marginTop: "8px" }}>
+    <span
+      className={`${style.explainTitleCommon} ${style.explainTitleLineHeight}`}
+      style={{ marginTop: "8px" }}
+    >
       <span style={{ fontWeight: "500" }}>피부 재생용 레이저</span>를 피부에
       조사하여,
       <br />
       5~200µm의 표피층에 1회 약 100개의 <br />
-      Multi-Micro pore을 만들어
+      Multi-Micro pore을 만들어&nbsp;
       <span style={{ fontWeight: "500" }}>
         화장품 등의
         <br />
@@ -121,25 +129,26 @@ const LaserExplainInLaser = (props) => {
 
 const LedExplainInLaser = (props) => {
   return (
-    <span className={style.explainTitleCommon} style={{ marginTop: "8px" }}>
-      <span>
+    <span className={style.explainTitleCommon}>
+      <span className={style.explainTitleLineHeight}>
         <span style={{ fontWeight: "500" }}>3가지 파장의 빛</span>으로 피부
         깊숙한 곳까지
         <br />
         건강하고 탄력 있게 관리해줍니다.
       </span>
-      <br />
+      <br style={{ marginBottom: "8px" }} />
       <span
         style={{
           fontWeight: 600,
           fontSize: "12px",
           letterSpacing: "-0.03em",
           color: "#7e818d",
+          lineHeight: "140%",
         }}
       >
-        Red, Blue, Pink 모드 중 원하는 기능 사용
+        <span>Red, Blue, Pink 모드 중 원하는 기능 사용으로</span>
         <br />
-        으로 피부 진정과 보습・탄력, 트러블 완화에 도움을 줍니다.
+        <span>피부 진정과 보습・탄력, 트러블 완화에 도움을 줍니다.</span>
       </span>
     </span>
   );
@@ -151,7 +160,7 @@ const ExplainContainerTitle = (props) => {
       style={{
         display: "flex",
         // height: "43px",
-        background: "#f8f9fa",
+        background: props.title ? "#f8f9fa" : "transparent",
         // background: "pink",
         borderRadius: "4px",
         padding: "8px 12px",
@@ -474,7 +483,7 @@ const SafeFeature = (props) => {
         border: "1px solid #f8f9fa",
         borderRadius: "4px",
         // marginBottom: "16px",
-        marginTop: "16px",
+        marginTop: "8px",
       }}
     >
       <span
@@ -486,6 +495,8 @@ const SafeFeature = (props) => {
           // linear-gradient(90deg, rgba(248, 249, 250, 0) 0%, #F8F9FA 100%);
           display: "flex",
           alignItems: "center",
+          paddingRight: "10px",
+          paddingLeft: "8px",
         }}
       >
         <span
@@ -513,6 +524,7 @@ const SafeFeature = (props) => {
             fontWeight: "700",
             fontSize: "16px",
             letterSpacing: "-0.01em",
+            lineHeight: "150%",
           }}
         >
           {props.title}
@@ -582,7 +594,7 @@ export function LaserModeParts() {
         {/* <LedExplainInLaser /> */}
       </ExplainContainer>
 
-      <section style={{ marginTop: "18px" }}>
+      <section style={{ marginTop: "18px", marginBottom: "20px" }}>
         <span
           style={{
             letterSpacing: "-0.01rem",
@@ -615,7 +627,7 @@ export function LaserModeParts() {
       />
 
       <SafeFeature
-        // maruColor="a"
+        maruColor="a"
         number="2"
         title="접속 센서"
         explain={<Explain2 />}
@@ -629,31 +641,13 @@ export function LaserModeParts() {
       />
 
       <SafeFeature
-        // maruColor="a"
+        maruColor="a"
         number="4"
         title="조사 스위치"
         explain={<Explain4 />}
       />
 
       <Caption />
-      {/* <section>접속 센서</section>
-      <section>그립 센서</section>
-      <section>조사 스위치</section>
-      <section
-        style={{
-          borderRadius: "4px",
-          background: "rgba(255,255,255,0.5)",
-          width: "558px",
-          heigth: "58px",
-        }}
-      >
-        <span>! 주의</span>
-        <span>
-          본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에 직접 또는
-          반사되는 레이저 조사 시 위험합니다. 반드시 보안경 착용 후 사용하며
-          절대 직·간접적으로 보지 말아야 합니다.
-        </span>
-      </section> */}
     </article>
   );
 }
@@ -687,53 +681,7 @@ export function UltraModeParts() {
       {/*  */}
 
       <ExplainContainerDouble />
-      {/* <ExplainContainerDouble>
-        <UltraModeImageUpperMiddle>
-          <BlackButton />
-          <GrayButton title="사용: 4분" sx={{ width: "60px" }} />
-        </UltraModeImageUpperMiddle>
-        <ExplainContainerRightSide
-          title={
-            <ExplainContainerTitle
-              width="267px"
-              title="갈바닉"
-              subTitle="딥 클렌징, 피부속 영양분 침투 촉진"
-            />
-          }
-          content={<UltraMiddleTopExplain />}
-        ></ExplainContainerRightSide>
 
-        <UltraModeImageLowerMiddle />
-        <ExplainContainerRightSide
-          title={<ExplainContainerTitle />}
-          content={<UltraMiddleBottomExplain />}
-        ></ExplainContainerRightSide>
-      </ExplainContainerDouble> */}
-
-      {/* <ExplainContainer>
-        <UltraModeImageUpperMiddle>
-          <BlackButton />
-          <GrayButton title="사용: 4분" sx={{ width: "60px" }} />
-        </UltraModeImageUpperMiddle>
-        <ExplainContainerRightSide
-          title={
-            <ExplainContainerTitle
-              width="267px"
-              title="갈바닉"
-              subTitle="딥 클렌징, 피부속 영양분 침투 촉진"
-            />
-          }
-          content={<UltraMiddleTopExplain />}
-        ></ExplainContainerRightSide>
-      </ExplainContainer> */}
-      {/*  */}
-      {/* <ExplainContainer>
-        <UltraModeImageLowerMiddle />
-        <ExplainContainerRightSide
-          title={<ExplainContainerTitle />}
-          content={<UltraMiddleBottomExplain />}
-        ></ExplainContainerRightSide>
-      </ExplainContainer> */}
       {/*  */}
       <ExplainContainer
         style={{ marginTop: "-10px", borderTop: "transparent" }}
