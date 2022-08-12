@@ -21,31 +21,14 @@ export default function Page0() {
           marginLeft: "228px",
         }}
       >
-        {/* <div
-          style={{
-            fontSize: "20px",
-            letterSpacing: "-1px",
-            background: "#55576F",
-            borderRadius: "4px",
-            border: "0.78125px solid #FFF",
-            width: "120px",
-            height: "50px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#fff",
-            marginBottom: "16px",
-          }}
-        >
-          에스테틱의 시작
-        </div> */}
         <span
           style={{
             fontSize: "48px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "300",
             marginBottom: "24px",
+            lineHeight: "128%",
           }}
         >
           에스테틱의 시작
@@ -53,9 +36,10 @@ export default function Page0() {
         <span
           style={{
             fontSize: "96px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "300",
+            lineHeight: "120%",
           }}
         >
           PURAXEL
@@ -63,10 +47,11 @@ export default function Page0() {
         <span
           style={{
             fontSize: "96px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "300",
             marginBottom: "77px",
+            lineHeight: "120%",
           }}
         >
           FX-5000
@@ -75,9 +60,10 @@ export default function Page0() {
         <span
           style={{
             fontSize: "40px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
+            lineHeight: "128%",
           }}
         >
           레이저 기술로
@@ -86,9 +72,10 @@ export default function Page0() {
           <span
             style={{
               fontSize: "48px",
-              letterSpacing: "-2px",
+              letterSpacing: "-0.02em",
               color: "#55576F",
               fontWeight: "600",
+              lineHeight: "128%",
             }}
           >
             에스테틱에 혁신
@@ -96,9 +83,10 @@ export default function Page0() {
           <span
             style={{
               fontSize: "40px",
-              letterSpacing: "-2px",
+              letterSpacing: "-0.02em",
               color: "#4D5058",
               fontWeight: "300",
+              lineHeight: "128%",
             }}
           >
             을 가져오다
@@ -107,9 +95,10 @@ export default function Page0() {
         <span
           style={{
             fontSize: "24px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
+            lineHeight: "140%",
           }}
         >
           퓨라셀 PURAXEL은
@@ -117,9 +106,10 @@ export default function Page0() {
         <span
           style={{
             fontSize: "24px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
+            lineHeight: "140%",
           }}
         >
           에스테틱에서 만날 수 있는
@@ -127,9 +117,10 @@ export default function Page0() {
         <span
           style={{
             fontSize: "24px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
+            lineHeight: "140%",
           }}
         >
           고품격 미용 레이저입니다.
