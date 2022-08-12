@@ -83,8 +83,8 @@ export default function Navbars(props) {
   });
 
   return (
-    <Box className={navStyle.header}>
-      <Box className={navStyle.leftNav}>
+    <header className={navStyle.header}>
+      <section className={navStyle.leftNav}>
         <Box
           className={navStyle.logo}
           onClick={() => {
@@ -92,7 +92,7 @@ export default function Navbars(props) {
           }}
         ></Box>
 
-        <Box>
+        <div className={navStyle.rightNav}>
           <NavIconButton
             onClick={() => {
               location.href = "/me";
@@ -127,8 +127,8 @@ export default function Navbars(props) {
             title={layoutHeaderKr.puraTech}
             className={navStyle.gnbMenu}
           />
-        </Box>
-      </Box>
+        </div>
+      </section>
 
       <Box className={navStyle.rightNav}>
         <Button
@@ -262,6 +262,6 @@ export default function Navbars(props) {
           sx={{ marginRight: "80px" }}
         ></NavIconButton>
       </Box>
-    </Box>
+    </header>
   );
 }
