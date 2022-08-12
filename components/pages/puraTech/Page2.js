@@ -27,7 +27,7 @@ const ExplainTop = () => {
 const ExplainBottom = () => {
   return (
     <section className={style.expBot}>
-      <div style={{ marginTop: "56px" }}>
+      <div>
         <span>수분에 대한 에너지 흡수도가 높아 레이저 조사 시</span>
         <br />
         <span className={style.expBotBold}>
@@ -46,13 +46,14 @@ const ExplainBottom = () => {
 
       <hr className={style.borderLineDash} />
       <div>
-        <span>레이저로 인한 천공 깊이는</span>
+        <span>레이저로 인한 천공 깊이는&nbsp;</span>
         <span className={style.expBotBold}>
-          단위면적당 레이저 에너지 밀도(세기)에 따라
+          단위면적당 레이저 <br />
+          에너지 밀도(세기)
         </span>
-        <br />
+
         <span>
-          실제{" "}
+          에 따라 실제{" "}
           <span className={style.expBotBold}>피부에 천공되는 깊이에 차이</span>
           를 줍니다.
         </span>

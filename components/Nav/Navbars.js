@@ -80,7 +80,7 @@ export default function Navbars(props) {
   useEffect(() => {
     currentPageChecker();
     console.log(currentPage);
-  });
+  }, currentPage);
 
   return (
     <header className={navStyle.header}>
@@ -98,9 +98,13 @@ export default function Navbars(props) {
               location.href = "/me";
             }}
             title={layoutHeaderKr.me}
-            sx={{
-              borderBottom: currentPage === "me" ? "2px solid pink" : "",
-            }}
+            // sx={
+            //   {
+            // textDecoration: "underline",
+            // textDecorationThickness: "2px",
+            // opacity: 1,
+            // }
+            // }
             className={navStyle.gnbMenu}
           />
 
@@ -124,7 +128,8 @@ export default function Navbars(props) {
             onClick={() => {
               location.href = "/tech";
             }}
-            title={layoutHeaderKr.puraTech}
+            // title={layoutHeaderKr.puraTech}
+            title={"tech"}
             className={navStyle.gnbMenu}
           />
         </div>
@@ -254,7 +259,11 @@ export default function Navbars(props) {
         <NavIconButton
           title={layoutHeaderKr.kr}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
-          sx={{ marginRight: "0px" }}
+          sx={{
+            marginRight: "16px",
+            textDecoration: "underline",
+            textDecorationThickness: "2px",
+          }}
         ></NavIconButton>
         <NavIconButton
           title={layoutHeaderKr.en}

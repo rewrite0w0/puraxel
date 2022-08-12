@@ -57,11 +57,11 @@ const CertiTitleContainer = (props) => {
 const HeaderTitle = () => {
   return (
     <section className={style.headerTitle}>
-      <span>인증 받은</span>
+      <span className={style.headerTitleUpper}>
+        인증 받은 레이저 기기로 마음까지 편한 관리!
+      </span>
       <br />
-      <span>레이저 기기로</span>
-      <br />
-      <span>마음까지 편한 관리!</span>
+      <span className={style.headerTitleLower}>퓨라셀 인증</span>
     </section>
   );
 };

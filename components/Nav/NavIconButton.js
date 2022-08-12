@@ -1,15 +1,13 @@
-import { Button } from "@mui/material";
-import style from "./Nav.module.css";
-
 export default function NavIconButton(props) {
   return (
-    <Button
-      style={{ ...props.sx }}
+    <div
+      style={{ ...props.sx, cursor: "pointer" }}
       disableRipple
       className={props.className}
+      onClick={props.onClick}
       {...props}
     >
       {props.title ? props.title : ""}
-    </Button>
+    </div>
   );
 }

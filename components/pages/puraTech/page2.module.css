@@ -64,6 +64,7 @@
     rgba(213, 228, 250, 0.015) 54.12%,
     rgba(255, 255, 255, 0.15) 100%
   );
+
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(20px);
 
@@ -97,20 +98,24 @@
   box-sizing: border-box;
 
   width: 425px;
-  height: 420px;
-
+  height: 466px;
+  padding-top: 36px;
   background: #ffffff;
 
   border: 1px solid #f2f3f7;
   backdrop-filter: blur(20px);
 
   border-radius: 4px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  justify-content: center;
+
   color: var(--grayScale07);
   letter-spacing: -0.03em;
+  line-height: 144%;
 
   font-weight: 300;
+  /* font-weight: lighter; */
   font-size: 20px;
   padding-left: 20px;
 
@@ -122,6 +127,7 @@
 
 .expBotBold {
   font-weight: 500;
+  /* font-weight: medium; */
 }
 
 .borderLineDash {

@@ -20,18 +20,56 @@
 }
 
 .buttonStyleKr {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   /* width: 12vw; */
+  display: inline-flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .gnbMenu {
   font-weight: 700;
   color: var(--primary01);
+  opacity: 0.5;
   /* width: 12vw; */
-  font-size: 20px;
+
   margin-right: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+
+  letter-spacing: -0.03em;
+}
+
+.gnbMenu:hover {
+  opacity: 1;
+  /* animation: 0.25s linear 1s infinite alternate opa; */
+}
+
+@keyframes opa {
+  /* 0% {
+    opacity: 0.5;
+    scale: 1;
+  }
+
+  50% {
+    opacity: 0.75;
+    scale: 1.2;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+  } */
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
 }
 
 .subMenu {

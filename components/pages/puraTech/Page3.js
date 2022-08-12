@@ -66,8 +66,11 @@ const Step = (props) => {
   return (
     <section style={{ display: "flex", marginBottom: "8px" }}>
       <section className={style.step}>
-        <span style={{ fontWeight: 600, fontSize: "12px" }}>STEP</span>
-        <br />
+        <span style={{ fontWeight: 600, fontSize: "12px" }}>
+          STEP
+          <br />
+        </span>
+
         <span style={{ fontWeight: 800, fontSize: "16px" }}>{props.step}</span>
       </section>
       <section className={style.title}>

@@ -40,6 +40,8 @@
   border-radius: 4px;
   display: flex;
   /* justify-content: center; */
+  padding-left: 10px;
+  /* padding-left: 5px; */
   align-items: center;
   margin-right: 12px;
 }
@@ -64,17 +66,25 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
-
   letter-spacing: -0.01em;
-
   color: var(--grayScale07);
 }
 
 .headerTitle {
-  color: var(--primary01);
-  font-size: 48px;
   letter-spacing: -0.02em;
   font-weight: 300;
+}
+
+.headerTitleUpper {
+  color: var(--grayScale05);
+  font-size: 32px;
+  line-height: 132%;
+}
+
+.headerTitleLower {
+  color: var(--primary01);
+  font-size: 48px;
+  line-height: 132%;
 }
 
 .CertiTitleContainer {
@@ -92,6 +102,10 @@
   padding-right: 6px;
   height: 48px;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  padding: 6px 12px;
+  letter-spacing: -0.01em;
 }
 
 .CertiTitleContainerSubject {
@@ -100,4 +114,7 @@
   letter-spacing: -0.01em;
   font-size: 14px;
   font-weight: 500;
+  line-height: 150%;
+  font-style: normal;
+  margin-top: 10px;
 }
