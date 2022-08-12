@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import style from "./page5.module.css";
 
 import parts01 from "src/image/ME/page4/me_04_01.svg";
@@ -91,7 +91,7 @@ const Parts04 = () => {
 };
 
 export default function Page4(props) {
-  const [parts, setParts] = useState("pu");
+  const [parts, setParts] = useState(undefined);
 
   const imageOnClickHandler = {
     onPu: () => {
@@ -123,6 +123,10 @@ export default function Page4(props) {
       return <Parts04 />;
     }
   };
+
+  useEffect(() => {
+    return setParts("pu");
+  }, []);
 
   return (
     <div className={style.container}>

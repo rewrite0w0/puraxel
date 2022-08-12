@@ -5,12 +5,13 @@
   /* margin-right: 149px; */
   /* background: black; */
   height: 100vh;
+  align-items: center;
 }
 
 .leftGridContainer {
   display: grid;
   grid-template-columns: 2fr 0.4fr;
-  margin-top: 144px;
+  /* margin-top: 144px; */
   width: 958px;
   height: 680px;
   /* height: 680px; */
@@ -202,21 +203,31 @@
 }
 
 .rightGridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 123px;
   margin-top: 40px;
+  margin-right: 40px;
   /* background: white; */
-  width: 1000px;
-  height: 1000px;
+  /* width: 1000px;
+  height: 1000px; */
+  width: auto;
+  height: 100%;
 }
 
 .laserImageRightContainer {
   /* content: url(../../../src/image/ME/img_pura_01.png); */
   /* content: url(../../../src/image/ME/page2/las.svg); */
-  content: url(../../../src/image/ME/page2/las.png);
+  /* content: url(../../../src/image/ME/page2/las.png); */
+  background-image: url(../../../src/image/ME/page2/las.png);
+  background-size: cover;
 }
 
 .galvanicImageRightContainer {
   /* content: url(../../../src/image/ME/img_pura_02.png); */
   /* content: url(../../../src/image/ME/page2/gal.svg); */
-  content: url(../../../src/image/ME/page2/gal.png);
+  /* content: url(../../../src/image/ME/page2/gal.png); */
+  background-image: url(../../../src/image/ME/page2/gal.png);
+  background-size: cover;
 }

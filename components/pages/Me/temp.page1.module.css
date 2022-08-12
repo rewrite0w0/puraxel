@@ -70,7 +70,10 @@
 .meImage {
   /* content: url(../../../src/image/ME/page1/puraxel_me_me_me.svg); */
   content: url(../../../src/image/ME/page1/me_main.svg);
-  position: absolute;
+  /* position: absolute; */
+
+  height: 80%;
+  width: fit-content;
 
   /* position: fixed; */
 }
