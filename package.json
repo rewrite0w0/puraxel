@@ -20,6 +20,7 @@
     "next": "12.2.2",
     "react": "18.2.0",
     "react-compare-slider": "^2.2.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "18.2.0",
     "react-i18next": "^11.18.1",
     "react-spring": "^9.4.5",

@@ -1,15 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
-/* @font-face {
-  font-family: "ENFont";
-  src: url("../src/fonts/CaviarDreams.woff") format("woff");
-}
-
-@font-face {
-  font-family: "ENFontB";
-  src: url("../src/fonts/CaviarDreams_Bold.woff") format("woff");
-} */
-
 :root {
   --primary01: rgba(85, 87, 111, 1);
   --primary02: rgba(162, 146, 163, 1);

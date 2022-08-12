@@ -13,7 +13,6 @@
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
-  /* font-family: "ENFont"; */
   color: var(--primary01);
   /* width: 12vw; */
   font-size: 20px;
@@ -24,13 +23,11 @@
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
-  /* font-family: "ENFont"; */
   /* width: 12vw; */
 }
 
 .gnbMenu {
   font-weight: 700;
-  /* font-family: "ENFont"; */
   color: var(--primary01);
   /* width: 12vw; */
   font-size: 20px;
@@ -89,7 +86,6 @@
 }
 
 .applyENFont {
-  font-family: "ENFont";
   font-size: 12px;
   color: var(--grayScale06);
 }
