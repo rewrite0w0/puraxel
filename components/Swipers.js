@@ -14,6 +14,15 @@ import {
 export default function Swipers({ children }) {
   return (
     <Swiper
+      style={{
+        // maxHeight: "0%",
+        // minHeight: "100%",
+        // maxWidth: "0%",
+        // minWidth: "100%",
+        // width:"100%",
+        // height:"0%"
+        height: "100vh",
+      }}
       slidesPerView={1}
       mousewheel={{ sensitivity: 0.25 }}
       // navigation={true}
