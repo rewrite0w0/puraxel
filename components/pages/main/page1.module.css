@@ -1,10 +1,6 @@
 .container {
-  /* background: url(../../../src/image/main/); */
-  position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* background-color: palegreen; */
 }
 
 .mainContentContainer {
@@ -27,8 +23,8 @@
   justify-content: center; */
   background: url(../../../src/image/main/me.png);
   background-size: cover;
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  /* height: 100vh; */
   width: 1167px;
   height: 772px;
   z-index: -10;
@@ -41,8 +37,8 @@
 }
 
 .title {
-  font-family: "Pretendard";
-  font-style: normal;
+  /* font-family: "Pretendard";
+  font-style: normal; */
   font-weight: 300;
   font-size: 96px;
   line-height: 120%;

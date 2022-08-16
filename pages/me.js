@@ -9,6 +9,7 @@ import Page4 from "components/pages/Me/Page4";
 import CircleFloating from "components/Parts/CircleFloating";
 import { useEffect, useState } from "react";
 import Page0 from "components/pages/Me/temp.Page1";
+import Page44 from "components/pages/Me/temp.Page5";
 
 import Oval from "components/Parts/Oval";
 
@@ -130,7 +131,7 @@ export default function Me() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Page4 />
+          <Page44 />
           <Oval
             startX={1491}
             startY={686}

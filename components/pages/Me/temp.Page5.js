@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
 import _ from "./temp.page5.module.css";
 
-import parts01onPaper from "src/image/FX5000/page5/fx-5000_01_active.svg";
-import parts02onPaper from "src/image/FX5000/page5/fx-5000_02_active.svg";
-import parts03onPaper from "src/image/FX5000/page5/fx-5000_03_active.svg";
-import parts04onPaper from "src/image/FX5000/page5/fx-5000_04_active.svg";
-
 const GrayButton = (props) => {
   return (
     <span
@@ -39,19 +34,36 @@ const ExplainFrame = (props) => {
   );
 };
 
-const ExplainFeatureMode = () => {
+const LaserWave = () => {
   return (
-    <span>
-      1) 레이저 모드
+    <span className={_.mainExplain}>
+      2940nm<span className={_.subExplain}>(±1%)</span>
+    </span>
+  );
+};
+
+const LaserPowerRange = () => {
+  return (
+    <span className={_.mainExplain}>
+      80~140mJ <span className={_.subExplain}>(±20)</span>
+    </span>
+  );
+};
+
+const LaserRepeat = () => {
+  return (
+    <span className={_.mainExplain}>
+      3~5 seconds <span className={_.subExplain}>interval</span>
+    </span>
+  );
+};
+
+const ProductFeature = () => {
+  return (
+    <span className={_.mainExplain}>
+      1) Fractional Laser
       <br />
-      2) 초음파 모드
-      <br />
-      3) 갈바닉 모드 <span className={_.subExplain}>(옵션)</span>
-      <br />
-      4) 쿨링 모드 <span className={_.subExplain}>(옵션)</span>
-      <br />
-      5) LED 모드 <span className={_.subExplain}>(옵션)</span>
-      <br />
+      2) Galvanic
     </span>
   );
 };
@@ -59,73 +71,54 @@ const ExplainFeatureMode = () => {
 const ProductWeight = () => {
   return (
     <span className={_.mainExplain}>
-      616g <span className={_.subExplain}>(Main body)</span>
+      350g <span className={_.subExplain}>(Main body)</span>
       <br />
-      503g <span className={_.subExplain}>(Cradle, 배터리 포함)</span>
+      Cradle: 110g <span className={_.subExplain}>(Cradle)</span>
     </span>
   );
 };
 
-const ProductSize = () => {
+const ProducetSize = () => {
   return (
-    <span>
-      82x201x225.3mm <span className={_.subExplain}>(Main body)</span>
+    <span className={_.mainExplain}>
+      50x57x220mm <span className={_.subExplain}>(Main body)</span>
       <br />
-      250x169x135mm <span className={_.subExplain}>(Cradle)</span>
+      98x98x85mm <span className={_.subExplain}>(Cradle)</span>
     </span>
   );
 };
 
-const ProductBattery = () => {
+const ProductSpec = () => {
   return (
-    <span>
-      11.1V 1,300mAh
+    <span className={_.mainExplain}>
+      Built-in Rechargeable
+      <br />
+      11.1V 850mAh
       <br />
       Lithium-Polymer Battery
-      <br />
-      충전 어댑터: 14VDC / 1.71A
-    </span>
-  );
-};
-const ProductETC = () => {
-  return (
-    <span style={{ display: "flex", flexWrap: "wrap" }}>
-      <GrayButton title="제품 본체" width="76px" />
-      <GrayButton title="충전 크래들" width="88px" />
-      <GrayButton title="어댑터" width="61px" />
-      <GrayButton title="보안경(시술자용, 고객용)" width="161px" />
-      <GrayButton title="레이저 헤드팁(원형, 일자, 네모)" width="195px" />
-      <GrayButton title="초음파 헤드" width="88px" />
-      <GrayButton title="배터리(충전용) *2" width="124px" />
-      <GrayButton title="사용 설명서" width="88px" />
-      <GrayButton title="퀵 가이드" width="76px" />
     </span>
   );
 };
 
 const ExplainOnPaper = () => {
   return (
-    <section
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr auto",
-        width: "100%",
-        flexWrap: "wrap",
-      }}
-    >
+    <section style={{ display: "flex", width: "100%" }}>
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           alignSelf: "flex-start",
           justifyContent: "flex-start",
+          // background: "red",
+          width: "50%",
         }}
       >
-        <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
+        <ExplainFrame title="제품명" exp="퓨라셀 me" />
+        <ExplainFrame title="레이저 파장" exp={<LaserWave />} />
+        <ExplainFrame title="레이저 레벨 범위" exp="1~2 level" />
         <ExplainFrame title="레이저 종류" exp="Er:YAG" />
-        <ExplainFrame title="레이저 등급" exp="1등급(class 1)" />
-        <ExplainFrame title="레이저 레벨 범위" exp="1~3 level" />
-        <ExplainFrame title="기능 모드" exp={<ExplainFeatureMode />} />
+        <ExplainFrame title="레이저 출력 범위" exp={<LaserPowerRange />} />
+        <ExplainFrame title="레이저 반복" exp={<LaserRepeat />} />
       </div>
       <div
         style={{
@@ -133,12 +126,14 @@ const ExplainOnPaper = () => {
           flexDirection: "column",
           alignSelf: "flex-start",
           justifyContent: "flex-start",
+          // background: "blue",
+          width: "50%",
         }}
       >
+        <ExplainFrame title="기능 모드" exp={<ProductFeature />} />
         <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
-        <ExplainFrame title="제품 사이즈" exp={<ProductSize />} />
-        <ExplainFrame title="배터리" exp={<ProductBattery />} />
-        <ExplainFrame title="구성품" exp={<ProductETC />} />
+        <ExplainFrame title="제품 사이즈" exp={<ProducetSize />} />
+        <ExplainFrame title="배터리 사양" exp={<ProductSpec />} />
       </div>
     </section>
   );
