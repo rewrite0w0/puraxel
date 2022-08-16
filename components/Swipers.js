@@ -24,6 +24,7 @@ export default function Swipers({ children }) {
         height: "100vh",
       }}
       slidesPerView={1}
+      allowTouchMove={false}
       mousewheel={{ sensitivity: 0.25 }}
       // navigation={true}
       pagination={{

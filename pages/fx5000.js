@@ -34,9 +34,12 @@ export default function FX5000() {
 
         <SwiperSlide>
           <Page22 />
+          <Oval startX={618} startY={822} EndX={822} EndY={618} />
         </SwiperSlide>
+
         {/* <SwiperSlide>{Page1}</SwiperSlide> */}
-        <SwiperSlide>
+
+        {/* <SwiperSlide>
           <Page2 />
           <Oval
             startX={618}
@@ -45,7 +48,7 @@ export default function FX5000() {
             EndY={618}
             // pause={ovalStart === "page1" ? false : true}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <Page3 />
           <Oval

@@ -1,0 +1,260 @@
+.commonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 234px;
+  /* margin-left: 80px; */
+  /* background-color: black; */
+  margin-right: 228px;
+}
+
+.explainTitleCommon {
+  height: 43px;
+  /* background: #f8f9fa; */
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  color: var(--grayScale07);
+  /* line-height: 150%; */
+  /* margin-left: 32px; */
+}
+
+.explainTitleLineHeight {
+  line-height: 150%;
+}
+
+.optionButtonCommon {
+  display: flex;
+  /* padding: 4px 8px; */
+  width: 75x;
+  height: 32px;
+  padding: 4px 8px;
+  font-weight: 700;
+  font-size: 16px;
+  opacity: 0.95;
+  border-radius: 4px;
+  letter-spacing: -0.03em;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  /* margin-top: 8px; */
+  gap: 8px;
+
+  line-height: 150%;
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* grayscale/07 */
+  color: #4d5058;
+}
+
+.modeImageCommon {
+  /* width: auto; */
+  /* height: 100%; */
+  width: 264px;
+  /* width: inherit; */
+  height: 148px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 8px;
+}
+
+.LaserModeImage {
+  background: url(../../../src/image/FX5000/page2/functionIllust_laser.svg);
+}
+
+.SonicModeImage {
+  background: url(../../../src/image/FX5000/page2/fx-5000_ultrasonic.svg);
+}
+
+.GalvanicModeImageTop {
+  background: url(../../../src/image/FX5000/page2/fx-5000_galvanic01.svg);
+}
+
+.GalvanicModeImageBottom {
+  background: url(../../../src/image/FX5000/page2/fx-5000_gal2.svg);
+}
+
+.CoolingModeImage {
+  background: url(../../../src/image/FX5000/page2/fx-5000_cooling.svg);
+}
+
+.LedModeImage {
+  background: url(../../../src/image/FX5000/page2/fx-5000_LEDImage.svg);
+}
+
+.laserButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  width: 197px;
+  height: 45px;
+
+  background: rgba(255, 255, 255, 0.3);
+
+  /* basic/white */
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 12px rgba(221, 122, 140, 0.12);
+  border-radius: 4px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.laserButtonBold {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+
+  /* grayscale/07 */
+  color: #4d5058;
+}
+
+.laserButtonLight {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+
+  /* grayscale/07 */
+  color: #4d5058;
+}
+
+.laserWarning {
+  box-sizing: border-box;
+  width: 80px;
+  height: 33px;
+  display: flex;
+  align-items: baseline;
+  background: #ffffff;
+  cursor: pointer;
+
+  /* grayscale/02 */
+  border: 1px solid #f2f3f7;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #7e818d;
+  padding: 8px 12px;
+}
+
+.subExplainLaserWarning {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+
+  /* primary/01 */
+  color: #55576f;
+}
+
+.explainLaserWarning {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+
+  /* identical to box height, or 34px */
+  letter-spacing: -0.01em;
+
+  /* primary/01 */
+  color: #55576f;
+  margin-right: 8px;
+}
+
+.laserTitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 128%;
+
+  /* or 51px */
+  letter-spacing: -0.02em;
+
+  /* primary/01 */
+  color: #55576f;
+  margin-right: 12px;
+}
+
+.laserSubTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  /* identical to box height, or 24px */
+  letter-spacing: -0.01em;
+
+  /* primary/02 */
+  color: #a292a3;
+}
+
+.commonText {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #4d5058;
+}
+
+.commonTextBold {
+  font-weight: 500;
+}
+
+.floatingContainer {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 35.7491px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(11.9164px);
+
+  border-radius: 4px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+
+  letter-spacing: -0.02em;
+
+  color: #7e818d;
+}
+
+.explainContainer {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+
+  /* or 34px */
+  letter-spacing: -0.02em;
+
+  /* grayscale/06 */
+  color: #7e818d;
+}
+
+.explainContainerBold {
+  font-weight: 500;
+  color: var(--grayScale07);
+}

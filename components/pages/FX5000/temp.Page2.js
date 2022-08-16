@@ -1,24 +1,7 @@
 import { useEffect, useState } from "react";
 import _ from "./temp.page2.module.css";
 
-const LaserMode = () => {
-  return <section>1234</section>;
-};
-
-const SonicMode = () => {
-  return <section>1234</section>;
-};
-const GalvanicMode = () => {
-  return <section>1234</section>;
-};
-
-const CoolingMode = () => {
-  return <section>1234</section>;
-};
-
-const LedMode = () => {
-  return <section>1234</section>;
-};
+import { Laser, Sonic, Galvanic, Cooling, Led } from "./temp.Page2.parts";
 
 const ExplainContainer = (props) => {
   return (
@@ -75,6 +58,28 @@ export default function Page2() {
     },
   };
 
+  const ExplainViewer = () => {
+    if (currentMode === "Laser") {
+      return <Laser />;
+    }
+
+    if (currentMode === "Sonic") {
+      return <Sonic />;
+    }
+
+    if (currentMode === "Galvanic") {
+      return <Galvanic />;
+    }
+
+    if (currentMode === "Cooling") {
+      return <Cooling />;
+    }
+
+    if (currentMode === "Led") {
+      return <Led />;
+    }
+  };
+
   return (
     <article className={_.container}>
       <section className={_.leftContainer}>
@@ -86,7 +91,7 @@ export default function Page2() {
               퓨라셀의 <span className={_.titleBold}>다섯가지 기능</span>
             </span>
             <br style={{ marginTop: "12px" }} />
-            <span className={_.instruction}>궁금한 기능을 클릭해보세요?</span>
+            <span className={_.instruction}>궁금한 기능을 클릭해보세요</span>
             <br />
           </span>
           {/*  */}
@@ -167,7 +172,10 @@ export default function Page2() {
           </section>
         </div>
       </section>
-      <section className={_.rightContainer}></section>
+      <section className={_.rightContainer}>
+        {/* <Laser /> */}
+        <ExplainViewer />
+      </section>
     </article>
   );
 }

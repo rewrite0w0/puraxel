@@ -1,4 +1,3 @@
-import { div, Paper } from "@mui/material";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { ManualFractionPage2 } from "../../Parts/ManualFraction";
 // import Swipers from "../../Swipers";
