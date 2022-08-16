@@ -87,18 +87,19 @@
 }
 
 .imageLaser {
-  width: 285px;
-  height: 460px;
-  background: #f2f3f7;
-  border-radius: 4px;
-  border: 1px solid #f2f3f7;
   background-image: url(../../../src/image/FX5000/page2/_laser.svg);
   background-size: cover;
-  background-color: #f2f3f6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .imageLaser:hover {
   background-color: white;
+  opacity: 0.8;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .rightImageCommon {
@@ -114,9 +115,27 @@
 
 .rightImageCommon:hover {
   background-color: white;
+  opacity: 0.8;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .imageContainerLeft {
+  background: #f2f3f7;
+  border-radius: 4px;
+  border: 1px solid #f2f3f7;
+  background-color: #f2f3f6;
+}
+
+.leftImageCommon {
+  width: 285px;
+  height: 460px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border: 1px solid #f2f3f7;
+  border-radius: 4px;
+  background-color: #f2f3f6;
 }
 
 .imageContainerRight {
@@ -131,7 +150,7 @@
   margin-top: 20px;
   background-image: url(../../../src/image/FX5000/page2/_sonic.svg);
   background-size: cover;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 .imageGalvanic {
@@ -165,4 +184,48 @@
   width: inherit;
   display: flex;
   align-items: flex-end;
+}
+
+.explainContainer {
+  /* display: flex; */
+  background-color: transparent;
+  backdrop-filter: blur(0.7px);
+  width: 100%;
+}
+
+.explainContainerSpan {
+  font-weight: 700;
+  font-size: 16.2909px;
+  line-height: 132%;
+
+  /* identical to box height, or 22px */
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* primary/01 */
+  color: #55576f;
+}
+
+.explainContainerNum {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+
+  /* or 21px */
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-feature-settings: "tnum" on, "lnum" on, "case" on;
+
+  color: #f8f9fa;
+  /* background: #f2f3f7; */
+  background-color: pink;
+  border-radius: 50%;
+  /* margin-left: 12px; */
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
 }
