@@ -1,23 +1,12 @@
 import { useState, useEffect } from "react";
 import style from "./page5.module.css";
 
-import parts01 from "src/image/ME/page4/me_04_01.svg";
-import parts02 from "src/image/ME/page4/me_04_02.svg";
-import parts03 from "src/image/ME/page4/me_04_03.svg";
-import parts04 from "src/image/ME/page4/me_04_04.svg";
-
 import parts01onPaper from "src/image/FX5000/page5/fx-5000_01_active.svg";
 import parts02onPaper from "src/image/FX5000/page5/fx-5000_02_active.svg";
 import parts03onPaper from "src/image/FX5000/page5/fx-5000_03_active.svg";
 import parts04onPaper from "src/image/FX5000/page5/fx-5000_04_active.svg";
 
-import parts01onPaperOff from "src/image/ME/page4/me_01_inactive.svg";
-import parts02onPaperOff from "src/image/ME/page4/me_02_inactive.svg";
-import parts03onPaperOff from "src/image/ME/page4/me_03_inactive.svg";
-import parts04onPaperOff from "src/image/ME/page4/me_04_inactive.svg";
-
 import Image from "next/image";
-import { Paper } from "@mui/material";
 
 const PaperLeftBot = (props) => {
   return (

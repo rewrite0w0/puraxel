@@ -1,9 +1,14 @@
 .container {
   /* background: blue; */
-  height: 100vh;
+  height: 100%;
   /* display: "grid"; */
   display: flex;
   justify-content: space-between;
+}
+
+.commonPart {
+  width: 96px;
+  height: 96px;
 }
 
 .meParts01 {

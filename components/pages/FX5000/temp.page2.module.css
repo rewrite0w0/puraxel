@@ -10,7 +10,7 @@
   display: flex;
   width: 100%;
 
-  height: 100vh;
+  height: 100%;
   align-items: center;
 }
 
@@ -178,10 +178,13 @@
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   /* background-color: pink; */
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
+  height: 720px;
+  margin-top: 120px;
+  /* background-color: black; */
 }
 
 .imageCommon {
