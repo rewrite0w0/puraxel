@@ -8,6 +8,7 @@ import Page3 from "components/pages/FX5000/Page3";
 import Page4 from "components/pages/FX5000/Page4";
 import Page5 from "components/pages/FX5000/Page5";
 import Page0 from "components/pages/FX5000/temp.Page1";
+import Page22 from "components/pages/FX5000/temp.Page2";
 import Oval from "components/Parts/Oval";
 
 export default function FX5000() {
@@ -29,6 +30,10 @@ export default function FX5000() {
             EndY={686}
             // pause={ovalStart === "page1" ? false : true}
           />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Page22 />
         </SwiperSlide>
         {/* <SwiperSlide>{Page1}</SwiperSlide> */}
         <SwiperSlide>
