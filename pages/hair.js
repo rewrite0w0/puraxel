@@ -7,6 +7,8 @@ import Page2 from "components/pages/Hair/Page2";
 import Page3 from "components/pages/Hair/Page3";
 import Page4 from "components/pages/Hair/Page4";
 import Page0 from "components/pages/Hair/temp.Page1";
+import Page22 from "components/pages/Hair/temp.Page2";
+import Page5 from "components/pages/Hair/temp.Page5";
 import Oval from "components/Parts/Oval";
 
 export default function Hair() {
@@ -31,13 +33,16 @@ export default function Hair() {
         </SwiperSlide>
         {/* <SwiperSlide>{Page1}</SwiperSlide> */}
         <SwiperSlide>
-          <Page2 />
+          <Page22 />
         </SwiperSlide>
         <SwiperSlide>
           <Page3 />
         </SwiperSlide>
         <SwiperSlide>
           <Page4 />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Page5 />
         </SwiperSlide>
       </Swipers>
     </HairLayout>

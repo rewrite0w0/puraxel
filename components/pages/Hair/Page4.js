@@ -56,7 +56,7 @@ export default function Page4(props) {
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
+        height: "100%",
       }}
     >
       <section
@@ -70,16 +70,17 @@ export default function Page4(props) {
         }}
       >
         {/* 왼쪽 상단 */}
-        <div onClick={YTLinkHandler.zero} style={{ cursor: "pointer" }}>
+        <div>
           <span
             style={{
-              fontWeight: "500",
-              fontSize: "16px",
+              fontWeight: "300",
+              fontSize: "32px",
               letterSpacing: "-0.01rem",
               color: "#A7ABB6",
+              // lineHeight: "132%",
             }}
           >
-            에스테틱에서 받는 관리 과정을 영상으로 자세히 보기
+            에스테틱에 관리 과정, 영상으로 자세히 보기
           </span>
           <br />
 
@@ -88,6 +89,7 @@ export default function Page4(props) {
               letterSpacing: "-0.02rem",
               color: "#55576F",
               fontSize: "64px",
+              lineHeight: "124px",
             }}
           >
             <span
@@ -102,7 +104,7 @@ export default function Page4(props) {
           </span>
         </div>
 
-        <div style={{ display: "flex" }}>
+        {/* <div style={{ display: "flex" }}>
           <YTThumbnailContainer
             cn={style.temp}
             onClick={YTLinkHandler.firstImage}
@@ -125,7 +127,7 @@ export default function Page4(props) {
             explain="에스테틱 레이저 퓨라셀 동아TV
             스타일美 시즌2 방송"
           />
-        </div>
+        </div> */}
       </section>
 
       {/* 이미지 꽉 채우기 */}

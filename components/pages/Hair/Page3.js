@@ -1,36 +1,10 @@
 import style from "./page3.module.css";
 import ClinicalTestImageParts from "components/Parts/ClinicalTestImageParts";
 
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
-
-import right from "../../../src/image/a.png";
-import left from "src/image/b.png";
-import q from "../../../src/image/a.png";
-import z from "../../../src/image/b.png";
-
 export default function Page3() {
   return (
-    <main
-      style={{
-        // display: "grid:",
-        marginTop: "120px",
-        marginLeft: "227px",
-      }}
-    >
-      <article
-        style={{
-          marginBottom: "40px",
-          display: "flex",
-          flexDirection: "row",
-          marginRight: "471px",
-          width: "1300px",
-          height: "120px",
-          // gridTemplateColumns: "480px 200px 180px",
-        }}
-      >
+    <main className={style.container}>
+      <article className={style.topContainer}>
         <section
           style={{
             marginRight: "65px",
@@ -40,9 +14,10 @@ export default function Page3() {
           <span
             style={{
               fontSize: "32px",
-              letterSpacing: "-2px",
+              letterSpacing: "-0.02em",
               fontWeight: "300",
               color: "#A7ABB6",
+              lineHeight: "132%",
             }}
           >
             퓨라셀 각 효능에 특화된 앰플 사용 후 결과
@@ -52,7 +27,7 @@ export default function Page3() {
             style={{
               fontSize: "48px",
               letterSpacing: "-0.02em",
-
+              lineHeight: "124%",
               color: "#55576F",
             }}
           >
@@ -81,7 +56,7 @@ export default function Page3() {
           >
             시험 기간
           </span>
-          <span className={style.testDetail}>2020. 5. 21 ~ 7. 13</span>
+          <span className={style.testDetail}>2020년 8월 21일~ 5월 30일</span>
           <br />
           <span
             className={style.testTitle}
@@ -95,13 +70,13 @@ export default function Page3() {
           >
             시험 기관
           </span>
-          <span className={style.testDetail}>한국피부과학연구원</span>
+          <span className={style.testDetail}>**성형외과의원</span>
         </section>
         {/*  */}
         <section style={{ marginTop: "40px", width: "330px" }}>
           <span>
             <span className={style.testTitle}>피시험자</span>
-            <span className={style.testDetail}>여성 21명</span>
+            <span className={style.testDetail}>30~60세 성인 남성</span>
           </span>
           <br />
           <span>
@@ -109,180 +84,153 @@ export default function Page3() {
               부위
             </span>
             <span className={style.testDetail}>
-              안면 부위와 전완부위 2주 사용 후 2배 증가
+              피시험자의 정수리와 M자{" "}
+              <span className={style.testDetailSub}>앞머리 측면</span>
+            </span>
+            <br />
+            <span
+              className={style.testTitle}
+              style={{ marginRight: "66px" }}
+            ></span>
+            <span className={style.testDetail}>
+              <span className={style.testDetailSub}>
+                (시험제품의 용법 기준)
+              </span>
             </span>
           </span>
         </section>
       </article>
 
-      <article
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr 0.25fr",
-          gridTemplateRows: "1fr 1fr",
-          // background: "pink",
+      <article className={style.paperContainer}>
+        <section className={style.paperExplainContainer}>
+          <div className={style.paperInnerContainer}>
+            <div className={style.paperInnerContainerTop}>
+              <ClinicalTestImageParts
+                title="정수리 탈모"
+                sx={{ marginRight: "18px" }}
+              />
 
-          background: "rgba(255, 255, 255, 0.7)",
-          width: "1699px",
-          height: "661px",
-          marginTop: "40px",
-          paddingLeft: "40px",
-          // paddingTop: "20px",
-
-          paddingRight: "80px",
-        }}
-      >
-        <section>
-          <ClinicalTestImageParts title="피부 보습력 3배 증가" width="171px" />
-          <div style={{ marginTop: "8px" }}>
-            <span>피부 수분 변화에 대한 통계분석 결과,</span>
-            <br />
-            <span>화장품+퓨라셀 1회 사용 직후 300%이상 증가</span>
+              <span className={style.titleExplain}>
+                퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
+              </span>
+            </div>
+            <div className={style.paperInnerContainerBottom}>
+              <div
+                className={`${style.topLeftImage} ${style.imageCommon}`}
+              ></div>
+              <div
+                className={`${style.topRightImage} ${style.imageCommon}`}
+              ></div>
+            </div>
           </div>
-          <ReactCompareSlider
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
-        </section>
+          {/*  */}
+          <div className={style.paperInnerContainer}>
+            <div className={style.paperInnerContainerTop}>
+              <ClinicalTestImageParts
+                title="모량 테스트"
+                sx={{ marginRight: "18px", backgroundColor: "#f8f9fa" }}
+                color="#55576F"
+              />
 
-        <section>
-          <ClinicalTestImageParts title="피부 치밀도 30% 증가" width="184px" />
-          <div style={{ marginTop: "8px" }}>
-            <span>피부톤을 나타내는 L*value가 퓨라셀</span>
-            <br />
-            <span>사용전과 비교하여 2주 사용후 2배 증가</span>
+              {/* <span className={style.titleExplain}>
+                퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
+              </span> */}
+            </div>
+            <div className={style.paperInnerContainerBottom}>
+              <div
+                className={`${style.topright_Image} ${style.right_ImageCommon}`}
+              ></div>
+              <div className={style.right_Container}>
+                <span className={style.right_SubExp}>원형 탈모 부위</span>
+                <span
+                  className={style.right_Exp}
+                  style={{ marginBottom: "20px" }}
+                >
+                  31.0% 증가
+                </span>
+                <span className={style.right_SubExp}>M자 탈모 부위</span>
+                <span className={style.right_Exp}>11.5% 증가</span>
+              </div>
+
+              <div
+                style={{
+                  marginLeft: "40px",
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "50px",
+                  width: "50px",
+                }}
+              >
+                <div className={style.graph01} style={{ marginBottom: "8px" }}>
+                  이미지?
+                </div>
+                <div className={style.graph02} style={{ marginBottom: "24px" }}>
+                  이미지?
+                </div>
+                <div className={style.graph03} style={{ marginBottom: "8px" }}>
+                  이미지?
+                </div>
+                <div className={style.graph04}>이미지?</div>
+              </div>
+            </div>
           </div>
-          <ReactCompareSlider
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
         </section>
 
-        <section>
-          <ClinicalTestImageParts title="피부톤(맑기) 2배 증가" width="156px" />
-          <div style={{ marginTop: "8px" }}>
-            <span>피부치밀도를 나타내는 Density 값이</span>
-            <br />
-            <span>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</span>
+        <section
+          className={style.paperExplainContainer}
+          style={{ marginTop: "18px" }}
+        >
+          <div className={style.paperInnerContainer}>
+            <div className={style.paperInnerContainerTop}>
+              <ClinicalTestImageParts
+                title="M자 탈모"
+                sx={{ marginRight: "18px" }}
+              />
+
+              <span className={style.titleExplain}>
+                퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
+              </span>
+            </div>
+            <div className={style.paperInnerContainerBottom}>
+              <div
+                className={`${style.botLeftImage} ${style.imageCommon}`}
+              ></div>
+              <div
+                className={`${style.botRightImage} ${style.imageCommon}`}
+              ></div>
+            </div>
           </div>
-          <ReactCompareSlider
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
+          {/*  */}
+          <div className={style.paperInnerContainer}>
+            <div className={style.paperInnerContainerTop}>
+              <ClinicalTestImageParts
+                title="모발 테스트"
+                color="#55576F"
+                sx={{ marginRight: "18px", backgroundColor: "#f8f9fa" }}
+              />
+
+              {/* <span className={style.titleExplain}>
+                퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
+              </span> */}
+            </div>
+            <div className={style.paperInnerContainerBottom}>
+              <div
+                className={`${style.botright_Image} ${style.right_ImageCommon}`}
+              ></div>
+              <div className={style.right_Container}>
+                <span className={style.right_SubExp}>원형 탈모 부위</span>
+                <span
+                  className={style.right_Exp}
+                  style={{ marginBottom: "20px" }}
+                >
+                  28.6% 증가
+                </span>
+                <span className={style.right_SubExp}>M자 탈모 부위</span>
+                <span className={style.right_Exp}>51.5% 증가</span>
+              </div>
+            </div>
+          </div>
         </section>
-
-        <section>{/* empty */}</section>
-        <section>
-          <ClinicalTestImageParts
-            title="색소 침착 개선"
-            color="#55576F"
-            sx={{ background: "#f2f3f7" }}
-            width="101px"
-          />
-          <ReactCompareSlider
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
-        </section>
-
-        <section>
-          <ClinicalTestImageParts
-            title="안티에이징 효과"
-            width={"112px"}
-            color={"#55576F"}
-            sx={{ background: "#f2f3f7" }}
-          />
-          <span style={{ marginTop: "16px" }}></span>
-          {/* <section
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-          > */}
-          {/* <ReactCompareImage
-            leftImage="src/image/ME/me_03_a.png"
-            rightImage="src/image/ME/me_03_b.png"
-            leftImage={"../../../src/image/ME/me_03_a.png"}
-            rightImage={"../../../src/image/ME/me_03_b.png"}
-            /> */}
-
-          <ReactCompareSlider
-            style={{
-              width: "380px",
-              height: "164px",
-              background: "rgba(255,255,255,0.5)",
-              marginTop: "20px",
-              borderRadius: "4px",
-              border: "1px solid #F2F3F7",
-            }}
-            changePositionOnHover={true}
-            itemOne={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img01.jpg" />
-            }
-            itemTwo={
-              <ReactCompareSliderImage src="https://puraxel.co.kr/img/main/section10_img02.jpg" />
-            }
-          />
-          {/* </section> */}
-        </section>
-
-        <section></section>
       </article>
     </main>
   );
