@@ -1,38 +1,39 @@
 .container {
   /* background: blue; */
-  height: 100%;
+  /* height: 100%; */
   /* display: "grid"; */
   display: flex;
+
   justify-content: space-between;
 }
 
-.commonPart {
+.commonParts {
   width: 96px;
   height: 96px;
 }
 
-.meParts01 {
+.Parts01 {
   width: 305px;
   height: 746px;
   /* background: blue; */
   content: url(../../../src/image/FX5000/page5/fx5000_01.svg);
 }
 
-.meParts02 {
+.Parts02 {
   width: 305px;
   height: 746px;
   /* background: green; */
   content: url(../../../src/image/FX5000/page5/fx5000_02.svg);
 }
 
-.meParts03 {
+.Parts03 {
   width: 305px;
   height: 746px;
   /* background: pink; */
   content: url(../../../src/image/FX5000/page5/fx5000_03.svg);
 }
 
-.meParts04 {
+.Parts04 {
   width: 305px;
   height: 746px;
   /* background: black; */

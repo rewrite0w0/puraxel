@@ -18,7 +18,7 @@ const PaperLeftBot = (props) => {
         borderBottom: "1px solid #F2F3F6",
         width: "300px",
         fontSize: "16px",
-        letterSpacing: "-1px",
+        letterSpacing: "-0.01em",
       }}
     >
       <div style={{ color: "#A7ABB6" }}>{props.title}</div>
@@ -41,7 +41,7 @@ const PaperRightBot = (props) => {
       }}
     >
       <div
-        style={{ fontSize: "16px", letterSpacing: "-1px", color: "#A7ABB6" }}
+        style={{ fontSize: "16px", letterSpacing: "-0.01em", color: "#A7ABB6" }}
       >
         {props.title}
       </div>
@@ -50,7 +50,7 @@ const PaperRightBot = (props) => {
         style={{
           color: "#4D5058",
           fontSize: "16px",
-          letterSpacing: "-1px",
+          letterSpacing: "-0.01em",
           marginLeft: "50px",
         }}
       >
@@ -62,21 +62,17 @@ const PaperRightBot = (props) => {
 };
 
 const Parts01 = () => {
-  return <div className={style.meParts01} imagenum="pu"></div>;
-  // return <Image src={parts01} />;
+  return <div className={style.Parts01}></div>;
 };
 
 const Parts02 = () => {
-  return <div className={style.meParts02} imagenum="ra"></div>;
-  // return <Image src={parts02} />;
+  return <div className={style.Parts02}></div>;
 };
 const Parts03 = () => {
-  return <div className={style.meParts03} imagenum="xel"></div>;
-  // return <Image src={parts03} />;
+  return <div className={style.Parts03}></div>;
 };
 const Parts04 = () => {
-  return <div className={style.meParts04} imagenum="me"></div>;
-  // return <Image src={parts04} />;
+  return <div className={style.Parts04}></div>;
 };
 
 export default function Page4(props) {
@@ -97,7 +93,7 @@ export default function Page4(props) {
     },
   };
 
-  const PartViewer = () => {
+  const PartsViewer = () => {
     if (parts === "pu") {
       return <Parts01 />;
     }
@@ -133,7 +129,7 @@ export default function Page4(props) {
           marginBottom: "100px",
         }}
       >
-        {<PartViewer />}
+        {<PartsViewer />}
       </div>
       <div
         style={{
