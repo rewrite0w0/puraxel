@@ -329,7 +329,7 @@ const Explain2 = () => {
     <span>
       접촉 센서에 의해&nbsp;{" "}
       <span style={{ fontWeight: "700" }}>
-        레이저 헤드가 피부에 닿아야만 작동
+        레이저 헤드가 두피에 닿아야만 작동
       </span>
       합니다.
     </span>
@@ -441,7 +441,7 @@ export function Laser() {
       <section style={{ marginTop: "18px", marginBottom: "20px" }}>
         <span className={style.laserTitle}>레이저 모드</span>
         <span className={style.laserSubTitle}>
-          <span style={{ marginRight: "8px" }}>#피부 속 채널 생성</span>{" "}
+          <span style={{ marginRight: "8px" }}>#두피 속 채널 생성</span>{" "}
           <span>#모공 관리</span>
         </span>
       </section>
@@ -457,22 +457,12 @@ export function Laser() {
             />
           </div>
           <span className={style.commonText}>
-            <span>
-              <span className={style.commonTextBold}>피부 재생용 레이저</span>를
-              피부에 조사하여,
-            </span>
+            두피 두께에 맞는 단계 설정으로 원하는
             <br />
-            <span>5~200µm의 표피층에 1회 약 100개의</span>
-            <br />
-            <span>
-              Multi-Micro pore을 만들어&nbsp;
-              <span className={style.commonTextBold}>화장품 등의</span>
-            </span>
-            <br />
-            <span>
-              <span className={style.commonTextBold}>약물 흡수율을 증가</span>
-              시킵니다.
-            </span>
+            부위에 레이저를 조사하여{" "}
+            <span className={style.commonTextBold}>두피 속 마이크로</span>
+            <br /> <span className={style.commonTextBold}>채널을 생성</span>
+            합니다.
           </span>
         </div>
       </section>

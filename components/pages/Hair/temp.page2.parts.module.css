@@ -61,22 +61,28 @@
 
 .LaserModeImage {
   background: url(../../../src/image/FX5000/page2/functionIllust_laser.svg);
+  background: url(../../../src/image/HAIR//page2/_laser.svg);
 }
 
 .SonicModeImage {
   background: url(../../../src/image/FX5000/page2/fx-5000_ultrasonic.svg);
+  background: url(../../../src/image/HAIR//page2/_sonic.svg);
 }
 
 .GalvanicModeImageTop {
   background: url(../../../src/image/FX5000/page2/fx-5000_galvanic01.svg);
+  background: url(../../../src/image/HAIR//page2/_gal1.svg);
 }
 
 .GalvanicModeImageBottom {
   background: url(../../../src/image/FX5000/page2/fx-5000_gal2.svg);
+  background: url(../../../src/image/HAIR//page2/_gal2.svg);
 }
 
 .CoolingModeImage {
   background: url(../../../src/image/FX5000/page2/fx-5000_cooling.svg);
+  background: url(../../../src/image/HAIR//page2/_cooling.svg);
+  background-size: cover;
 }
 
 .LedModeImage {

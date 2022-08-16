@@ -105,7 +105,7 @@ export default function Page2() {
                   background: currentMode === "Laser" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageLaser}`}>
+                <div className={`${_.imageLaser} ${_.imageCommon}`}>
                   <ExplainContainer
                     num={"1"}
                     title={"레이저"}
@@ -127,7 +127,7 @@ export default function Page2() {
                   background: currentMode === "Sonic" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageSonic}  ${_.imageCommon}`}>
+                <div className={`${_.SonicImage}  ${_.imageCommon}`}>
                   <ExplainContainer num={"2"} title={"초음파"} />
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function Page2() {
                   background: currentMode === "Galvanic" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageGalvanic}  ${_.imageCommon}`}>
+                <div className={`${_.GalvanicImage}  ${_.imageCommon}`}>
                   <ExplainContainer num={"3"} title={"갈바닉"} />
                 </div>
               </div>
@@ -151,21 +151,8 @@ export default function Page2() {
                   background: currentMode === "Cooling" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageCooling}  ${_.imageCommon}`}>
+                <div className={`${_.CoolingImage}  ${_.imageCommon}`}>
                   <ExplainContainer num={"4"} title={"쿨링"} />
-                </div>
-              </div>
-
-              <div
-                className={`${_.rightImageCommon}`}
-                // 여기서 상태관리 잡은거 백그라운드 컬러 주면됨
-                style={{
-                  background: currentMode === "Led" ? ACTIVE : INACTIVE,
-                }}
-                onClick={modeHandler.led}
-              >
-                <div className={`${_.imageLED} ${_.imageCommon}`}>
-                  <ExplainContainer num={"5"} title={"LED"} />
                 </div>
               </div>
             </div>
@@ -173,7 +160,6 @@ export default function Page2() {
         </div>
       </section>
       <section className={_.rightContainer}>
-        {/* <Laser /> */}
         <ExplainViewer />
       </section>
     </article>
