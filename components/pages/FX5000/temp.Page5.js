@@ -107,8 +107,9 @@ const ExplainOnPaper = () => {
   return (
     <section
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr auto",
+        // display: "grid",
+        // gridTemplateColumns: "1fr 1fr auto",
+        display: "flex",
         width: "100%",
         flexWrap: "wrap",
       }}
@@ -119,6 +120,7 @@ const ExplainOnPaper = () => {
           flexDirection: "column",
           alignSelf: "flex-start",
           justifyContent: "flex-start",
+          width: "50%",
         }}
       >
         <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
@@ -133,6 +135,7 @@ const ExplainOnPaper = () => {
           flexDirection: "column",
           alignSelf: "flex-start",
           justifyContent: "flex-start",
+          width: "50%",
         }}
       >
         <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
