@@ -10,7 +10,7 @@ export default function ClinicalTestImageParts(props) {
         color: props.color ? props.color : "#ffffff",
       }}
     >
-      {props.title}
+      <span className={style.para}>{props.title}</span>
     </div>
   );
 }

@@ -10,40 +10,28 @@ export default function Page3() {
   return (
     <section
       style={{
-        width: "100%",
-        height: "100vh",
-        // background: "blue"
+        width: "auto",
+        height: "100%",
       }}
     >
       <div
         style={{
-          display: "grid",
-          // display: "flex",
+          // display: "grid",
+          display: "flex",
           flexDirection: "column",
           marginTop: "120px",
           marginLeft: "227px",
-          // width: "100%",
-          // alignSelf: "flex-end",
-          // position: "absolute",
-          // right: 0,
-          // background: "pink",
-          justifyItems: "end",
+          justifyItems: "flex-end",
         }}
       >
         <article
           style={{
-            // marginBottom: "40px",
-            // width: "fit-content",
             display: "flex",
-            // justifyContent: "center",
+
             justifySelf: "flex-start",
             width: "fit-content",
-            // background: "blue",
-            // flexDirection: "row",
-            // marginRight: "471px",
-            // width: "1300px",
-            // height: "120px",
-            // gridTemplateColumns: "480px 200px 180px",
+
+            marginBottom: "24px",
           }}
         >
           <section
@@ -114,14 +102,14 @@ export default function Page3() {
             <span className={style.testDetail}>한국피부과학연구원</span>
           </section>
           {/*  */}
-          <section style={{ marginTop: "40px", width: "330px" }}>
+          <section style={{ marginTop: "40px", width: "360px" }}>
             <span>
               <span className={style.testTitle}>피시험자</span>
               <span className={style.testDetail}>여성 21명</span>
             </span>
             <br />
             <span>
-              <span className={style.testTitle} style={{ marginRight: "42px" }}>
+              <span className={style.testTitle} style={{ marginRight: "44px" }}>
                 부위
               </span>
               <span className={style.testDetail}>
@@ -131,142 +119,77 @@ export default function Page3() {
           </section>
         </article>
 
-        <article
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gridTemplateRows: "1fr 1fr",
-            // background: "pink",
-            background: "rgba(255, 255, 255, 0.7)",
-            width: "1699px",
-            height: "661px",
-            marginTop: "40px",
-            paddingLeft: "40px",
-            paddingTop: "20px",
-            paddingRight: "351px",
+        <article className={style.paperContainer}>
+          <div style={{ display: "flex" }}>
+            <section style={{ marginRight: "75px" }}>
+              <ClinicalTestImageParts
+                title="피부 보습력 3배 증가"
+                width="171px"
+              />
 
-            // background: "gray",
+              <span className={style.paperPara}>
+                <span>피부 수분 변화에 대한 통계분석 결과,</span>
+                <br />
+                <span>화장품+퓨라셀 1회 사용 직후 300%이상 증가</span>
+              </span>
 
-            // paddingRight: "80px",
-          }}
-        >
-          <section>
-            <ClinicalTestImageParts
-              title="피부 보습력 3배 증가"
-              width="171px"
-            />
-            <div style={{ marginTop: "8px" }}>
-              <span>피부 수분 변화에 대한 통계분석 결과,</span>
-              <br />
-              <span>화장품+퓨라셀 1회 사용 직후 300%이상 증가</span>
-            </div>
+              <div className={`${style.image1} ${style.imageContainer}`} />
+            </section>
 
-            <div
-              className={style.image1}
-              style={{
-                width: "380px",
-                height: "164px",
-                background: "rgba(255,255,255,0.5)",
-                marginTop: "20px",
-                borderRadius: "4px",
-                border: "1px solid #F2F3F7",
-              }}
-            />
-          </section>
+            <section style={{ marginRight: "75px" }}>
+              <ClinicalTestImageParts
+                title="피부 치밀도 30% 증가"
+                width="184px"
+              />
+              <span className={style.paperPara}>
+                <span>피부톤을 나타내는 L*value가 퓨라셀</span>
+                <br />
+                <span>사용전과 비교하여 2주 사용후 2배 증가</span>
+              </span>
 
-          <section>
-            <ClinicalTestImageParts
-              title="피부 치밀도 30% 증가"
-              width="184px"
-            />
-            <div style={{ marginTop: "8px" }}>
-              <span>피부톤을 나타내는 L*value가 퓨라셀</span>
-              <br />
-              <span>사용전과 비교하여 2주 사용후 2배 증가</span>
-            </div>
+              <div className={`${style.image2} ${style.imageContainer}`} />
+            </section>
 
-            <div
-              className={style.image2}
-              style={{
-                width: "380px",
-                height: "164px",
-                background: "rgba(255,255,255,0.5)",
-                marginTop: "20px",
-                borderRadius: "4px",
-                border: "1px solid #F2F3F7",
-              }}
-            />
-          </section>
+            <section style={{ marginRight: "75px" }}>
+              <ClinicalTestImageParts
+                title="피부톤(맑기) 2배 증가"
+                width="156px"
+              />
+              <span className={style.paperPara}>
+                <span>피부치밀도를 나타내는 Density 값이</span>
+                <br />
+                <span>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</span>
+              </span>
 
-          <section>
-            <ClinicalTestImageParts
-              title="피부톤(맑기) 2배 증가"
-              width="156px"
-            />
-            <div style={{ marginTop: "8px" }}>
-              <span>피부치밀도를 나타내는 Density 값이</span>
-              <br />
-              <span>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</span>
-            </div>
+              <div className={`${style.image3} ${style.imageContainer}`} />
+            </section>
+          </div>
 
-            <div
-              className={style.image3}
-              style={{
-                width: "380px",
-                height: "164px",
-                background: "rgba(255,255,255,0.5)",
-                marginTop: "20px",
-                borderRadius: "4px",
-                border: "1px solid #F2F3F7",
-              }}
-            />
-          </section>
+          <div style={{ display: "flex" }}>
+            {/* <section>empty</section> */}
+            <section style={{ marginRight: "75px" }}>
+              <ClinicalTestImageParts
+                title="색소 침착 개선"
+                color="#55576F"
+                sx={{ background: "#f2f3f7" }}
+                width="101px"
+              />
+              <span className={style.paperPara}></span>
+              <div className={`${style.image4} ${style.imageContainer}`} />
+            </section>
 
-          {/* <section>empty</section> */}
-          <section>
-            <ClinicalTestImageParts
-              title="색소 침착 개선"
-              color="#55576F"
-              sx={{ background: "#f2f3f7" }}
-              width="101px"
-            />
+            <section style={{ marginRight: "75px" }}>
+              <ClinicalTestImageParts
+                title="안티에이징 효과"
+                width={"112px"}
+                color={"#55576F"}
+                sx={{ background: "#f2f3f7" }}
+              />
 
-            <div
-              className={style.image4}
-              style={{
-                width: "380px",
-                height: "164px",
-                background: "rgba(255,255,255,0.5)",
-                marginTop: "20px",
-                borderRadius: "4px",
-                border: "1px solid #F2F3F7",
-              }}
-            />
-          </section>
-
-          <section>
-            <ClinicalTestImageParts
-              title="안티에이징 효과"
-              width={"112px"}
-              color={"#55576F"}
-              sx={{ background: "#f2f3f7" }}
-            />
-            <span style={{ marginTop: "16px" }}></span>
-
-            <div
-              className={style.image5}
-              style={{
-                width: "380px",
-                height: "164px",
-                background: "rgba(255,255,255,0.5)",
-                marginTop: "20px",
-                borderRadius: "4px",
-                border: "1px solid #F2F3F7",
-              }}
-            />
-          </section>
-
-          <section></section>
+              <span className={style.paperPara}></span>
+              <div className={`${style.image5} ${style.imageContainer}`} />
+            </section>
+          </div>
         </article>
       </div>
     </section>
