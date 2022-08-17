@@ -9,6 +9,8 @@
   /* flexdirection: "column"; */
   /* // justifyContent: "center"; */
 
+  width: 128px;
+  height: 64px;
   font-weight: 600;
   letter-spacing: -0.01em;
   font-size: 18px;

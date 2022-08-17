@@ -24,7 +24,7 @@ export default function Page0() {
         {/* <div
           style={{
             fontSize: "20px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             background: "#55576F",
             borderRadius: "4px",
             border: "0.78125px solid #FFF",
@@ -42,7 +42,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "48px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "300",
             marginBottom: "24px",
@@ -53,7 +53,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "96px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "300",
           }}
@@ -63,7 +63,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "96px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "300",
             marginBottom: "77px",
@@ -75,7 +75,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "40px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
           }}
@@ -86,7 +86,7 @@ export default function Page0() {
           <span
             style={{
               fontSize: "48px",
-              letterSpacing: "-2px",
+              letterSpacing: "-0.02em",
               color: "#55576F",
               fontWeight: "600",
             }}
@@ -96,7 +96,7 @@ export default function Page0() {
           <span
             style={{
               fontSize: "40px",
-              letterSpacing: "-2px",
+              letterSpacing: "-0.02em",
               color: "#4D5058",
               fontWeight: "300",
             }}
@@ -107,7 +107,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "24px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
           }}
@@ -117,7 +117,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "24px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
           }}
@@ -127,7 +127,7 @@ export default function Page0() {
         <span
           style={{
             fontSize: "24px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#4D5058",
             fontWeight: "300",
           }}

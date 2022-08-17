@@ -23,7 +23,7 @@ export default function Page0() {
         <div
           style={{
             fontSize: "20px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             background: "#55576F",
             borderRadius: "4px",
             border: "0.78125px solid #FFF",
@@ -41,7 +41,7 @@ export default function Page0() {
         <div
           style={{
             fontSize: "108px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             color: "#55576F",
             fontWeight: "800",
           }}
@@ -51,7 +51,7 @@ export default function Page0() {
         <div
           style={{
             fontSize: "56px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             fontWeight: "300",
             color: "#55576F",
           }}
@@ -61,7 +61,7 @@ export default function Page0() {
         <div
           style={{
             fontSize: "56px",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             fontWeight: "300",
             color: "#55576F",
             marginBottom: "76px",
@@ -83,7 +83,7 @@ export default function Page0() {
             alignItems: "center",
             fontSize: "24px",
             fontWeight: "700",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#4D5058",
             marginBottom: "32px",
           }}
@@ -94,7 +94,7 @@ export default function Page0() {
         <div
           style={{
             color: "#4D5058",
-            letterSpacing: "-2px",
+            letterSpacing: "-0.02em",
             fontSize: "20px",
             fontWeight: "300",
             width: "574px",

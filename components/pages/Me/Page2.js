@@ -13,10 +13,10 @@ const LaserExplain = (props) => {
         className={style.explainTitle}
         style={{
           fontSize: "24px",
-          letterSpacing: "-2px",
+          letterSpacing: "-0.02em",
           color: "#55576F",
           fontWeight: 600,
-          letterSpacing: "-2px",
+          letterSpacing: "-0.02em",
         }}
       >
         {meKr.Page2LaserTitle}
@@ -28,7 +28,11 @@ const LaserExplain = (props) => {
       <span>
         <span
           className={style.explainPara}
-          style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+          style={{
+            fontSize: "14px",
+            letterSpacing: "-0.01em",
+            color: "#7E818D",
+          }}
         >
           {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
           피부층에 약 100개의 작은 홀을 생성하여
@@ -37,7 +41,7 @@ const LaserExplain = (props) => {
         <span
           style={{
             fontSize: "14px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#7E818D",
           }}
         >
@@ -48,7 +52,7 @@ const LaserExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#A7ABB6",
             marginRight: "8px",
           }}
@@ -56,7 +60,11 @@ const LaserExplain = (props) => {
           {meKr.Page2LaserTechExplain1A}
         </span>
         <span
-          style={{ fontSize: "12px", letterSpacing: "-1px", color: "#7E818D" }}
+          style={{
+            fontSize: "12px",
+            letterSpacing: "-0.01em",
+            color: "#7E818D",
+          }}
         >
           {meKr.Page2LaserTechExplain1B}
         </span>
@@ -72,7 +80,7 @@ const GalvanicExplain = (props) => {
         className={style.explainTitle}
         style={{
           fontSize: "24px",
-          letterSpacing: "-2px",
+          letterSpacing: "-0.02em",
           color: "#55576F",
           fontWeight: 600,
         }}
@@ -86,7 +94,7 @@ const GalvanicExplain = (props) => {
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
       <span
         className={style.explainPara}
-        style={{ fontSize: "14px", letterSpacing: "-1px", color: "#7E818D" }}
+        style={{ fontSize: "14px", letterSpacing: "-0.01em", color: "#7E818D" }}
       >
         {/* {meKr.Page2GalvanicExplain} */}
         <span>
@@ -107,7 +115,7 @@ const GalvanicExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#4D5D58",
             fontWeight: 600,
           }}
@@ -119,7 +127,7 @@ const GalvanicExplain = (props) => {
           style={{
             marginRight: "81px",
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#A7ABB6",
             fontWeight: 300,
           }}
@@ -129,7 +137,7 @@ const GalvanicExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#4D5D58",
             fontWeight: 600,
           }}
@@ -140,7 +148,7 @@ const GalvanicExplain = (props) => {
         <span
           style={{
             fontSize: "12px",
-            letterSpacing: "-1px",
+            letterSpacing: "-0.01em",
             color: "#A7ABB6",
             fontWeight: 300,
           }}
@@ -271,7 +279,7 @@ export default function Page2(props) {
                 className={style.bookmarkUpperpara}
                 style={{
                   fontSize: "14px",
-                  letterSpacing: "-1px",
+                  letterSpacing: "-0.01em",
                 }}
               >
                 {meKr.Page2BookMarkLaser}

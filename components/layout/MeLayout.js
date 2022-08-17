@@ -37,7 +37,7 @@ export default function MeLayout({ children }) {
                 marginRight: "20px",
                 fontSize: "18px",
                 fontWeight: "600",
-                letterSpacing: "-1px",
+                letterSpacing: "-0.01em",
                 color: "#555768",
                 cursor: "pointer",
               }}
@@ -52,7 +52,7 @@ export default function MeLayout({ children }) {
                 marginRight: "20px",
                 fontSize: "18px",
                 fontWeight: "600",
-                letterSpacing: "-1px",
+                letterSpacing: "-0.01em",
                 color: "#555768",
               }}
               link="https://qwant.com"
@@ -69,7 +69,7 @@ export default function MeLayout({ children }) {
                 width: "425px",
                 fontSize: "18px",
                 fontWeight: "600",
-                letterSpacing: "-1px",
+                letterSpacing: "-0.01em",
                 color: "#555768",
               }}
               link="https://qwant.com"

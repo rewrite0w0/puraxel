@@ -27,7 +27,7 @@ import modalKr from "public/locales/kr/modal";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-import commonButtonStyle from "components/Footer/CommonButtons.module.css";
+import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
 
 import { AskIcon, Inquiry, ShopIcon } from "components/Parts/Icons";
 
@@ -162,7 +162,7 @@ export default function ModalComponent(props) {
         //   ...props.style,
         //   fontWeight: "600",
         //   fontSize: "18px",
-        //   letterSpacing: "-1px",
+        //   letterSpacing: "-0.01em",
         //   cursor: "pointer",
         // }}
         onClick={handleOpenModal}

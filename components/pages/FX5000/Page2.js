@@ -289,7 +289,7 @@ export default function Page2(props) {
                 className={style.bookmarkUpperpara}
                 style={{
                   fontSize: "14px",
-                  letterSpacing: "-1px",
+                  letterSpacing: "-0.01em",
                 }}
               >
                 {meKr.Page2BookMarkLaser}

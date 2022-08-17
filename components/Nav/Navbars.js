@@ -100,19 +100,18 @@ export default function Navbars(props) {
               opacity: currentPage === "me" ? "1" : undefined,
             }}
           />
-          <span style={{ all: "unset" }}></span>
           <NavIconButton
             onClick={() => {
               location.href = "/fx5000";
             }}
             title={layoutHeaderKr.fx5000}
             className={navStyle.gnbMenu}
-            // sx={{
-            //   textDecoration: currentPage === "fx5000" ? "underline" : "none",
-            //   textDecorationThickness:
-            //     currentPage === "fx5000" ? "2px" : "none",
-            //   opacity: currentPage === "fx5000" ? "1" : undefined,
-            // }}
+            style={{
+              //   textDecoration: currentPage === "fx5000" ? "underline" : "none",
+              //   textDecorationThickness:
+              //     currentPage === "fx5000" ? "2px" : "none",
+              opacity: currentPage === "fx5000" ? "1" : undefined,
+            }}
           />
 
           <NavIconButton
@@ -121,11 +120,11 @@ export default function Navbars(props) {
             }}
             title={layoutHeaderKr.hair}
             className={navStyle.gnbMenu}
-            // sx={{
-            //   textDecoration: currentPage === "hair" ? "underline" : "none",
-            //   textDecorationThickness: currentPage === "hair" ? "2px" : "none",
-            //   opacity: currentPage === "hair" ? "1" : undefined,
-            // }}
+            style={{
+              //   textDecoration: currentPage === "hair" ? "underline" : "none",
+              //   textDecorationThickness: currentPage === "hair" ? "2px" : "none",
+              opacity: currentPage === "hair" ? "1" : undefined,
+            }}
           />
 
           <NavIconButton
@@ -135,11 +134,11 @@ export default function Navbars(props) {
             // title={layoutHeaderKr.puraTech}
             title={"tech"}
             className={navStyle.gnbMenu}
-            // sx={{
-            //   textDecoration: currentPage === "tech" ? "underline" : "none",
-            //   textDecorationThickness: currentPage === "tech" ? "2px" : "none",
-            //   opacity: currentPage === "tehc" ? "1" : undefined,
-            // }}
+            style={{
+              //   textDecoration: currentPage === "tech" ? "underline" : "none",
+              //   textDecorationThickness: currentPage === "tech" ? "2px" : "none",
+              opacity: currentPage === "tehc" ? "1" : undefined,
+            }}
           />
         </div>
       </section>

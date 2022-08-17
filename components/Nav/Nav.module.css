@@ -259,15 +259,15 @@
   color: #55576f;
 }
 
-.titleStyle {
-  /* font-size: 100px; */
+/* .titleStyle {
+
   padding-bottom: 4px;
   position: relative;
   text-decoration: none;
-}
+} */
 
-.titleStyle::after {
-  /* background: #f00; */
+/* .titleStyle::after {
+
   background: linear-gradient(
     to right,
     transparent 0%,
@@ -280,4 +280,4 @@
   left: 0;
   height: 2px;
   width: 100%;
-}
+} */

@@ -29,7 +29,7 @@ const PaperLeftBot = (props) => {
         borderBottom: "1px solid #F2F3F6",
         width: "300px",
         fontSize: "16px",
-        letterSpacing: "-1px",
+        letterSpacing: "-0.01em",
       }}
     >
       <div style={{ color: "#A7ABB6" }}>{props.title}</div>
@@ -52,7 +52,7 @@ const PaperRightBot = (props) => {
       }}
     >
       <div
-        style={{ fontSize: "16px", letterSpacing: "-1px", color: "#A7ABB6" }}
+        style={{ fontSize: "16px", letterSpacing: "-0.01em", color: "#A7ABB6" }}
       >
         {props.title}
       </div>
@@ -61,7 +61,7 @@ const PaperRightBot = (props) => {
         style={{
           color: "#4D5058",
           fontSize: "16px",
-          letterSpacing: "-1px",
+          letterSpacing: "-0.01em",
           marginLeft: "50px",
         }}
       >
@@ -184,7 +184,7 @@ export default function Page4(props) {
           <section className={style.paperLeftTop}>
             <span
               style={{
-                letterSpacing: "-2px",
+                letterSpacing: "-0.02em",
                 fontSize: "48px",
                 // background: "#55576F",
                 color: "#55576F",

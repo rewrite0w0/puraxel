@@ -159,7 +159,7 @@ export default function Page4(props) {
           <section className={style.paperLeftTop}>
             <span
               style={{
-                letterSpacing: "-2px",
+                letterSpacing: "-0.02em",
                 fontSize: "48px",
                 // background: "#55576F",
                 color: "#55576F",

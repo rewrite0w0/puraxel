@@ -71,7 +71,7 @@ export default function Page3() {
             //   marginRight: "16px",
             //   fontWeight: 500,
             //   fontSize: "16px",
-            //   letterSpacing: "-1px",
+            //   letterSpacing: "-0.01em",
             //   color: "#7E818D",
             // }}
           >
@@ -85,7 +85,7 @@ export default function Page3() {
             //   marginRight: "16px",
             //   fontWeight: 500,
             //   fontSize: "16px",
-            //   letterSpacing: "-1px",
+            //   letterSpacing: "-0.01em",
             //   color: "#7E818D",
             // }}
           >
