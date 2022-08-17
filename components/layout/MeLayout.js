@@ -11,70 +11,68 @@ import CommonPlainButtons from "components/Footer/CommonPlainButtons";
 export default function MeLayout({ children }) {
   return (
     <main className={style.meContainer}>
-      <article className={style.bodyContainer}>
-        {children}
+      <article className={style.bodyContainer}>{children}</article>
+      <footer
+        className={style.footerContainer}
+        // style={{ background: "black" }}
+      >
+        <div style={{ display: "flex" }}>
+          <CommonPlainButtons
+            title={layoutFooterKr.ShoppingMallLink}
+            link="https://lmdt.cafe24.com"
+            icon={
+              <ShopIcon
+                sx={{
+                  height: "50px",
+                  width: "25px",
+                  color: "#fff",
+                  marginRight: "7.25px",
+                }}
+              />
+            }
+            style={{
+              width: "100px",
+              marginRight: "20px",
+              fontSize: "18px",
+              fontWeight: "600",
+              letterSpacing: "-0.01em",
+              color: "#555768",
+              cursor: "pointer",
+            }}
+          />
 
-        <footer
-          className={style.footerContainer}
-          // style={{ background: "black" }}
-        >
-          <div style={{ display: "flex" }}>
-            <CommonPlainButtons
-              title={layoutFooterKr.ShoppingMallLink}
-              link="https://lmdt.cafe24.com"
-              icon={
-                <ShopIcon
-                  sx={{
-                    height: "50px",
-                    width: "25px",
-                    color: "#fff",
-                    marginRight: "7.25px",
-                  }}
-                />
-              }
-              style={{
-                width: "100px",
-                marginRight: "20px",
-                fontSize: "18px",
-                fontWeight: "600",
-                letterSpacing: "-0.01em",
-                color: "#555768",
-                cursor: "pointer",
-              }}
-            />
+          <CommonButtons
+            topLeft="퓨라셀 ME"
+            topRightDiscountPrice="1,890,000원"
+            bottomRightz="12개월"
+            bottomRightx="월 157,500원"
+            style={{
+              width: "277px",
+              marginRight: "20px",
+            }}
+            link="https://lmdt.cafe24.com"
+          />
 
-            <CommonButtons
-              topLeft="퓨라셀 ME"
-              topRightDiscountPrice="1,890,000원"
-              bottomRightz="12개월"
-              bottomRightx="월 157,500원"
-              style={{
-                width: "277px",
-                marginRight: "20px",
-              }}
-              link="https://lmdt.cafe24.com"
-            />
-
-            <CommonButtons
-              topLeft="퓨라셀 ME + 퓨라더마앰플"
-              // topRightOriginalPrice="2,433,000원 -> "
-              topRightOriginalPrice={<OriginalPrice />}
-              topRightDiscountPrice="1,977,600원"
-              bottomLeft="23% off"
-              bottomRightz="12개월"
-              bottomRightx="월 157,500원"
-              style={{
-                width: "417px",
-              }}
-              link="https://lmdt.cafe24.com"
-            />
-          </div>
-          {/* <CommonManualFractionButtons
+          <CommonButtons
+            topLeft="퓨라셀 ME + 퓨라더마앰플"
+            // topRightOriginalPrice="2,433,000원 -> "
+            topRightOriginalPrice={<OriginalPrice />}
+            topRightDiscountPrice="1,977,600원"
+            bottomLeft="23% off"
+            bottomRightz="12개월"
+            bottomRightx="월 157,500원"
+            style={{
+              width: "417px",
+            }}
+            link="https://lmdt.cafe24.com"
+          />
+        </div>
+        {/* <CommonManualFractionButtons
             title="여기에 캐러셀 혹은 수동 캐러셀"
             style={{ width: "92px", marginRight: "80px" }}
           /> */}
-        </footer>
-      </article>
+      </footer>
+      {/* </article> */}
     </main>
   );
 }

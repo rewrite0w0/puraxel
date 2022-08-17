@@ -162,3 +162,8 @@ img {
   object-fit: cover;
   object-position: top center;
 }
+
+/* .swiper-button-next,
+.swiper-button-prev {
+  color: pink;
+} */
