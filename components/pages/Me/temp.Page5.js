@@ -58,9 +58,7 @@ const ExplainFrame = (props) => {
   return (
     <section className={_.frameContainer}>
       <Bar />
-      {/* <br /> */}
       <span className={_.frameTitle}>{props.title}</span>
-      <br />
       <span className={_.frameExp}>{props.exp}</span>
     </section>
   );
