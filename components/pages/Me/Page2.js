@@ -26,25 +26,12 @@ const LaserExplain = (props) => {
       <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span> */}
       <span>
-        <span
-          className={style.explainPara}
-          style={{
-            fontSize: "14px",
-            letterSpacing: "-0.01em",
-            color: "#7E818D",
-          }}
-        >
+        <span className={style.explainPara}>
           {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
           피부층에 약 100개의 작은 홀을 생성하여
         </span>
         <br />
-        <span
-          style={{
-            fontSize: "14px",
-            letterSpacing: "-0.01em",
-            color: "#7E818D",
-          }}
-        >
+        <span className={style.explainPara}>
           {/* {나중에 json 넣어야함} */}
           크림과 앰플의 피부흡수율을 높이줍니다.
         </span>
@@ -55,6 +42,8 @@ const LaserExplain = (props) => {
             letterSpacing: "-0.01em",
             color: "#A7ABB6",
             marginRight: "8px",
+            fontWeight: "400",
+            lineHeight: "140%",
           }}
         >
           {meKr.Page2LaserTechExplain1A}
@@ -64,6 +53,8 @@ const LaserExplain = (props) => {
             fontSize: "12px",
             letterSpacing: "-0.01em",
             color: "#7E818D",
+            fontWeight: "600",
+            lineHeight: "140%",
           }}
         >
           {meKr.Page2LaserTechExplain1B}
@@ -92,10 +83,7 @@ const GalvanicExplain = (props) => {
       <span>{meKr.Page2GalvanicExplain1B}</span>
       <span>{meKr.Page2GalvanicExplain1C}</span>
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
-      <span
-        className={style.explainPara}
-        style={{ fontSize: "14px", letterSpacing: "-0.01em", color: "#7E818D" }}
-      >
+      <span className={style.explainPara}>
         {/* {meKr.Page2GalvanicExplain} */}
         <span>
           같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
@@ -118,6 +106,8 @@ const GalvanicExplain = (props) => {
             letterSpacing: "-0.01em",
             color: "#4D5D58",
             fontWeight: 600,
+            lineHeight: "150%",
+            marginRight: "8px",
           }}
         >
           {meKr.Page2GalvanicTechExplain1A}
@@ -130,6 +120,7 @@ const GalvanicExplain = (props) => {
             letterSpacing: "-0.01em",
             color: "#A7ABB6",
             fontWeight: 300,
+            lineHeight: "150%",
           }}
         >
           {meKr.Page2GalvanicTechExplain1B}
@@ -140,6 +131,8 @@ const GalvanicExplain = (props) => {
             letterSpacing: "-0.01em",
             color: "#4D5D58",
             fontWeight: 600,
+            lineHeight: "150%",
+            marginRight: "8px",
           }}
         >
           {meKr.Page2GalvanicTechExplain2A}
@@ -151,6 +144,7 @@ const GalvanicExplain = (props) => {
             letterSpacing: "-0.01em",
             color: "#A7ABB6",
             fontWeight: 300,
+            lineHeight: "150%",
           }}
         >
           {meKr.Page2GalvanicTechExplain2B}
@@ -198,7 +192,7 @@ export default function Page2(props) {
               <span className={style.leftPaperTopSecondPoint}>
                 {meKr.Page2Intro2A}
               </span>
-              <span>{meKr.Page2Intro2B}</span>
+              <span>{meKr.Page2Intro2B} &nbsp;</span>
               <span className={style.leftPaperTopSecondPoint}>
                 {meKr.Page2Intro2C}
               </span>
@@ -269,28 +263,22 @@ export default function Page2(props) {
             onClick={selectorLaser}
             className={style.bookmark}
             style={{
-              background: modeCondition ? "white" : DISABLECOLOR,
-              marginTop: "50px",
-              marginBottom: "8px",
+              // background: modeCondition ? "white" : DISABLECOLOR,
+              marginTop: "14px",
+              // marginBottom: "8px",
             }}
           >
-            <div className={style.bookmarkParaContainer}>
-              <span
-                className={style.bookmarkUpperpara}
-                style={{
-                  fontSize: "14px",
-                  letterSpacing: "-0.01em",
-                }}
-              >
+            <span className={style.bookmarkParaContainer}>
+              <span className={style.bookmarkUpperPara}>
                 {meKr.Page2BookMarkLaser}
               </span>
-              <br />
               <span className={style.bookmarkLowerPara}>
-                {meKr.Page2BookMarkDetail}
+                {/* {meKr.Page2BookMarkDetail} */}
+                작동 방식 보기 {">"}
               </span>
-            </div>
+            </span>
           </div>
-          <div
+          {/* <div
             onClick={selectorGalvanic}
             className={style.bookmark}
             style={{
@@ -306,7 +294,7 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkDetail}
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
