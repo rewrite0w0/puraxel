@@ -3,45 +3,80 @@
   margin-top: 140px;
   /* background-color: aquamarine; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .imageSelector {
   display: flex;
   flex-direction: column;
-  margin-right: 115px;
+  gap: 20px;
+  margin-left: 80px;
+  /* margin-right: 115px; */
+
+  /* background-color: black; */
+  height: 100%;
 }
 
 .imageCommon {
   height: 96px;
   width: 96px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header0 {
-  background-image: url(../../../src/image/ME/page4/me_01_active.svg);
+  content: url(../../../src/image/ME/page4/me_01_active.svg);
+  content: url(../../../src/image/ME/page4/01.svg);
   background-size: cover;
 }
 
 .header1 {
-  background-image: url(../../../src/image/ME/page4/me_02_active.svg);
+  content: url(../../../src/image/ME/page4/me_02_active.svg);
+  content: url(../../../src/image/ME/page4/02.svg);
   background-size: cover;
 }
 
 .header2 {
-  background-image: url(../../../src/image/ME/page4/me_03_active.svg);
+  content: url(../../../src/image/ME/page4/me_03_active.svg);
+  content: url(../../../src/image/ME/page4/03.svg);
   background-size: cover;
 }
 
 .header3 {
-  background-image: url(../../../src/image/ME/page4/me_04_active.svg);
+  content: url(../../../src/image/ME/page4/me_04_active.svg);
+  content: url(../../../src/image/ME/page4/04.svg);
+  background-size: cover;
+}
+
+.header00 {
+  content: url(../../../src/image/ME/page4/me_01_inactive.svg);
+  background-size: cover;
+}
+
+.header11 {
+  content: url(../../../src/image/ME/page4/me_02_inactive.svg);
+  background-size: cover;
+}
+
+.header22 {
+  content: url(../../../src/image/ME/page4/me_03_inactive.svg);
+  background-size: cover;
+}
+
+.header33 {
+  content: url(../../../src/image/ME/page4/me_04_inactive.svg);
   background-size: cover;
 }
 
 .imageContainer {
   display: flex;
-  width: 548px;
-  height: 674px;
-  margin-right: 280px;
+  width: 800px;
+  height: 880px;
+  width: auto;
+  height: 100%;
+  /* margin-right: 280px; */
+  margin-right: 20px;
+  margin-bottom: 126px;
 }
 
 .promo0 {
@@ -115,6 +150,7 @@
 .frameContainer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .frameTitle {
@@ -174,7 +210,7 @@
 }
 
 .subExplain {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 12px;
   line-height: 150%;
 

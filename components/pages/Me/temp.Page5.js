@@ -1,6 +1,38 @@
 import { useState, useEffect } from "react";
 import _ from "./temp.page5.module.css";
 
+const Header0 = () => {
+  return <div className={_.header0}></div>;
+};
+
+const Header00 = () => {
+  return <div className={_.header00}></div>;
+};
+
+const Header1 = () => {
+  return <div className={_.header1}></div>;
+};
+
+const Header11 = () => {
+  return <div className={_.header11}></div>;
+};
+
+const Header2 = () => {
+  return <div className={_.header2}></div>;
+};
+
+const Header22 = () => {
+  return <div className={_.header22}></div>;
+};
+
+const Header3 = () => {
+  return <div className={_.header3}></div>;
+};
+
+const Header33 = () => {
+  return <div className={_.header33}></div>;
+};
+
 const GrayButton = (props) => {
   return (
     <span
@@ -26,7 +58,7 @@ const ExplainFrame = (props) => {
   return (
     <section className={_.frameContainer}>
       <Bar />
-      <br />
+      {/* <br /> */}
       <span className={_.frameTitle}>{props.title}</span>
       <br />
       <span className={_.frameExp}>{props.exp}</span>
@@ -195,33 +227,45 @@ export default function Page5() {
     <section className={_.container}>
       <aside className={_.imageSelector}>
         <div
-          className={`${_.imageCommon} ${_.header0}`}
-          style={{
-            filter: parts === "pu" ? "grayScale(0)" : "grayScale(1)",
-          }}
+          // className={`${_.imageCommon} ${_.header0}`}
+          className={_.imageCommon}
+          // style={{
+          //   filter: parts === "pu" ? "grayScale(0)" : "grayScale(1)",
+          // }}
           onClick={imageOnClickHandler.onPu}
-        ></div>
+        >
+          {parts === "pu" ? <Header0 /> : <Header00 />}
+        </div>
         <div
-          className={`${_.imageCommon} ${_.header1}`}
-          style={{
-            filter: parts === "ra" ? "grayScale(0)" : "grayScale(1)",
-          }}
+          // className={`${_.imageCommon} ${_.header1}`}
+          className={_.imageCommon}
+          // style={{
+          //   filter: parts === "ra" ? "grayScale(0)" : "grayScale(1)",
+          // }}
           onClick={imageOnClickHandler.onRa}
-        ></div>
+        >
+          {parts === "ra" ? <Header1 /> : <Header11 />}
+        </div>
         <div
-          className={`${_.imageCommon} ${_.header2}`}
-          style={{
-            filter: parts === "xel" ? "grayScale(0)" : "grayScale(1)",
-          }}
+          // className={`${_.imageCommon} ${_.header2}`}
+          className={_.imageCommon}
+          // style={{
+          //   filter: parts === "xel" ? "grayScale(0)" : "grayScale(1)",
+          // }}
           onClick={imageOnClickHandler.onXel}
-        ></div>
+        >
+          {parts === "xel" ? <Header2 /> : <Header22 />}
+        </div>
         <div
-          className={`${_.imageCommon} ${_.header3}`}
-          style={{
-            filter: parts === "me" ? "grayScale(0)" : "grayScale(1)",
-          }}
+          // className={`${_.imageCommon} ${_.header3}`}
+          className={_.imageCommon}
+          // style={{
+          //   filter: parts === "me" ? "grayScale(0)" : "grayScale(1)",
+          // }}
           onClick={imageOnClickHandler.onMe}
-        ></div>
+        >
+          {parts === "me" ? <Header3 /> : <Header33 />}
+        </div>
       </aside>
       <article className={_.imageContainer}>
         <PartsViewer />
