@@ -1,17 +1,10 @@
 .oval {
-  /* content: url(../src/image/ME/oval_me.svg); */
   position: absolute;
-  /* color: black; */
-  /* width: 1000px;
-    height: 1000px; */
-  /* background-color: black; */
 
   box-sizing: border-box;
 
   width: 240px;
   height: 240px;
-  /* left: 1191px;
-    top: 686px; */
 
   background: linear-gradient(
     141.94deg,
@@ -20,33 +13,7 @@
   );
 
   border-radius: 50%;
-  /* background-color: pink; */
+
   box-shadow: 0px 16px 40px rgba(189, 46, 81, 0.03);
   backdrop-filter: blur(50px);
-  /* z-index: 9999; */
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* animation: 0.5s linear 1s infinite alternate heartBeat; */
 }
-
-/* @keyframes heartBeat {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-} */
-
-/* 
-.oval {
-  background: linear-gradient(
-    141.94deg,
-    rgba(255, 233, 228, 0.09) 17.48%,
-    rgba(255, 233, 228, 0.3) 84.05%
-  );
-  box-shadow: 0px 16px 40px rgba(189, 46, 81, 0.03);
-  backdrop-filter: blur(50px);
-} */
