@@ -126,9 +126,9 @@ export default function Swipers({ children }) {
       }}
       scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true }}
-      autoplay={{ delay: 500000 }}
+      autoplay={{ delay: 100000 }}
       className={slideStlye.slide}
-      speed={50}
+      speed={2000}
       preloadImages={false}
       lazy={{
         enabled: true,
