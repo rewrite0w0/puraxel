@@ -16,7 +16,9 @@ export default function Home() {
   return (
     <main>
       <Swipers>
-        <SwiperSlide>{Page1}</SwiperSlide>
+        <SwiperSlide>
+          <Page1 />
+        </SwiperSlide>
         {/* <SwiperSlide>{Page2}</SwiperSlide>
         <SwiperSlide>{Page3}</SwiperSlide>
         <SwiperSlide>{Page4}</SwiperSlide> */}

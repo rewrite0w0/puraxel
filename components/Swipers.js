@@ -25,7 +25,7 @@ export default function Swipers({ children }) {
       }}
       slidesPerView={1}
       allowTouchMove={false}
-      mousewheel={{ sensitivity: 0.25 }}
+      mousewheel={{ sensitivity: 0.25, invert: true }}
       // navigation={true}
       pagination={{
         type: "custom",
@@ -125,18 +125,24 @@ export default function Swipers({ children }) {
         },
       }}
       scrollbar={false}
-      keyboard={{ enabled: true, pageUpDown: true }}
+      keyboard={{ enabled: true, pageUpDown: true, onlyInViewport: true }}
+      // onKeyPress={(swiper, keycode) => {
+      //   if (keycode === 32) {
+      //     console.log(swiper);
+      //   }
+      // }}
+
       autoplay={{ delay: 100000 }}
       className={slideStlye.slide}
       speed={2000}
       preloadImages={false}
-      lazy={{
-        enabled: true,
-        loadPrevNext: false,
-        loadPrevNextAmount: 0,
-        loadOnTransitionStart: false,
-        checkInView: true,
-      }}
+      // lazy={{
+      //   enabled: true,
+      //   loadPrevNext: false,
+      //   loadPrevNextAmount: 0,
+      //   loadOnTransitionStart: false,
+      //   checkInView: true,
+      // }}
       rewind={true}
       effect={"fade"}
       fadeEffect={{ crossFade: true }}
