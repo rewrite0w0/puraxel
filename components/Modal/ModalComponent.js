@@ -144,26 +144,27 @@ export default function ModalComponent(props) {
 
       <Box
         // className={buttonStyle.priceButton}
+        className={commonButtonStyle.buttonContainer}
         // className={commonButtonStyle.buttonContainer}
-        style={{
-          background: "rgba(255,255,255,0.6)",
-          boxShadow: "0px 6px 20px rgba(127, 46, 190, 0.05)",
-          border: "1px solid #FFFFFF",
-          borderRadius: "4px",
-          display: "flex",
-          // gridTemplateRows: "1fr 1fr",
-          height: "64px",
-          // padding: "16px",
-          paddingLeft: "8px",
-          paddingRight: "8px",
-          alignItems: "center",
-          justifyContent: "center",
-          ...props.style,
-          fontWeight: "600",
-          fontSize: "18px",
-          letterSpacing: "-1px",
-          cursor: "pointer",
-        }}
+        // sx={{
+        //   background: "rgba(255,255,255,0.6)",
+        //   boxShadow: "0px 6px 20px rgba(127, 46, 190, 0.05)",
+        //   border: "1px solid #FFFFFF",
+        //   borderRadius: "4px",
+        //   display: "flex",
+        //   // gridTemplateRows: "1fr 1fr",
+        //   height: "64px",
+        //   // padding: "16px",
+        //   paddingLeft: "8px",
+        //   paddingRight: "8px",
+        //   alignItems: "center",
+        //   justifyContent: "center",
+        //   ...props.style,
+        //   fontWeight: "600",
+        //   fontSize: "18px",
+        //   letterSpacing: "-1px",
+        //   cursor: "pointer",
+        // }}
         onClick={handleOpenModal}
         {...props}
       >

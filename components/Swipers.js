@@ -25,7 +25,7 @@ export default function Swipers({ children }) {
       }}
       slidesPerView={1}
       allowTouchMove={false}
-      mousewheel={{ sensitivity: 0.25, invert: true }}
+      mousewheel={{ sensitivity: 0.25 }}
       // navigation={true}
       pagination={{
         type: "custom",
@@ -132,9 +132,10 @@ export default function Swipers({ children }) {
       //   }
       // }}
 
-      autoplay={{ delay: 100000 }}
+      navigation={{ enabled: true }}
+      autoplay={{ delay: 5000 }}
       className={slideStlye.slide}
-      speed={2000}
+      speed={1000}
       preloadImages={false}
       // lazy={{
       //   enabled: true,

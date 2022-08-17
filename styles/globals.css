@@ -143,7 +143,7 @@ a {
   margin-bottom: 36px;
   /* z-index: 100000; */
   /* cursor: pointer; */
-  animation: 0.5s linear 1s infinite alternate heartBeat;
+  /* animation: 0.5s linear 1s infinite alternate heartBeat; */
 }
 
 @keyframes heartBeat {

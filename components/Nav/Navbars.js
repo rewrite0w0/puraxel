@@ -93,37 +93,26 @@ export default function Navbars(props) {
               location.href = "/me";
             }}
             title={layoutHeaderKr.me}
-            sx={{
-              textDecoration: currentPage === "me" ? "underline" : "none",
-              textDecorationThickness: currentPage === "me" ? "2px" : "none",
-              opacity: currentPage === "me" ? "1" : undefined,
-
-              // background:
-              //   "linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%)",
-            }}
-            hoverSX={{ background: "black" }}
-            // sx={
-            //   {
-            // textDecoration: "underline",
-            // textDecorationThickness: "2px",
-            // opacity: 1,
-            // }
-            // }
             className={navStyle.gnbMenu}
+            style={{
+              // textDecoration: currentPage === "me" ? "underline" : "none",
+              // textDecorationThickness: currentPage === "me" ? "2px" : "none",
+              opacity: currentPage === "me" ? "1" : undefined,
+            }}
           />
-
+          <span style={{ all: "unset" }}></span>
           <NavIconButton
             onClick={() => {
               location.href = "/fx5000";
             }}
             title={layoutHeaderKr.fx5000}
             className={navStyle.gnbMenu}
-            sx={{
-              textDecoration: currentPage === "fx5000" ? "underline" : "none",
-              textDecorationThickness:
-                currentPage === "fx5000" ? "2px" : "none",
-              opacity: currentPage === "fx5000" ? "1" : undefined,
-            }}
+            // sx={{
+            //   textDecoration: currentPage === "fx5000" ? "underline" : "none",
+            //   textDecorationThickness:
+            //     currentPage === "fx5000" ? "2px" : "none",
+            //   opacity: currentPage === "fx5000" ? "1" : undefined,
+            // }}
           />
 
           <NavIconButton
@@ -132,11 +121,11 @@ export default function Navbars(props) {
             }}
             title={layoutHeaderKr.hair}
             className={navStyle.gnbMenu}
-            sx={{
-              textDecoration: currentPage === "hair" ? "underline" : "none",
-              textDecorationThickness: currentPage === "hair" ? "2px" : "none",
-              opacity: currentPage === "hair" ? "1" : undefined,
-            }}
+            // sx={{
+            //   textDecoration: currentPage === "hair" ? "underline" : "none",
+            //   textDecorationThickness: currentPage === "hair" ? "2px" : "none",
+            //   opacity: currentPage === "hair" ? "1" : undefined,
+            // }}
           />
 
           <NavIconButton
@@ -146,11 +135,11 @@ export default function Navbars(props) {
             // title={layoutHeaderKr.puraTech}
             title={"tech"}
             className={navStyle.gnbMenu}
-            sx={{
-              textDecoration: currentPage === "tech" ? "underline" : "none",
-              textDecorationThickness: currentPage === "tech" ? "2px" : "none",
-              opacity: currentPage === "tehc" ? "1" : undefined,
-            }}
+            // sx={{
+            //   textDecoration: currentPage === "tech" ? "underline" : "none",
+            //   textDecorationThickness: currentPage === "tech" ? "2px" : "none",
+            //   opacity: currentPage === "tehc" ? "1" : undefined,
+            // }}
           />
         </div>
       </section>

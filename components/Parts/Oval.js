@@ -26,9 +26,7 @@ const Oval = (props) => {
       }}
       {...props}
     >
-      <animated.div className={style.oval} style={{ ...styles }}>
-        ㅇㅋㄷㅋ
-      </animated.div>
+      <animated.div className={style.oval} style={{ ...styles }}></animated.div>
     </animated.div>
   );
 };

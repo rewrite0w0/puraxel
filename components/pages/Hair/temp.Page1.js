@@ -69,7 +69,7 @@ export default function Page0() {
             marginBottom: "77px",
           }}
         >
-          FX-5000
+          HAIR
         </span>
 
         <span
