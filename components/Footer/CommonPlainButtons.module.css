@@ -8,6 +8,10 @@
   align-items: center;
   /* flexdirection: "column"; */
   /* // justifyContent: "center"; */
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   width: 128px;
   height: 64px;
@@ -22,10 +26,10 @@
 }
 
 .buttonInnerContainer {
-  margin-right: "16px";
-  margin-top: "8px";
-  margin-bottom: "8px";
-  margin-left: "8px";
-  display: "flex";
-  justify-content: "space-between";
+  margin-right: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: space-between;
 }
