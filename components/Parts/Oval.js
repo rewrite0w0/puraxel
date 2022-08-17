@@ -9,12 +9,6 @@ const Oval = (props) => {
     ...props,
   });
 
-  const styles = useSpring({
-    loop: { reverse: true },
-    from: { y: 0, scale: 1 },
-    to: { y: 5, scale: 1.1 },
-    config: { duration: 1000 },
-  });
   return (
     <animated.div
       style={{
@@ -24,10 +18,9 @@ const Oval = (props) => {
         top: 0,
         ...transitionOval,
       }}
+      className={style.oval}
       {...props}
-    >
-      <animated.div className={style.oval} style={{ ...styles }}></animated.div>
-    </animated.div>
+    ></animated.div>
   );
 };
 
