@@ -1,7 +1,7 @@
 .container {
   height: 100%;
   display: flex;
-  margin-top: 225px;
+  /* margin-top: 225px; */
   margin-left: 228px;
 }
 
@@ -9,11 +9,13 @@
   display: flex;
   width: 50%;
   flex-direction: column;
+  justify-content: center;
 }
 
 .rightContainer {
   display: flex;
-  align-items: flex-end;
+  align-items: end;
+  justify-content: center;
 }
 
 .subTitle {
@@ -22,6 +24,8 @@
   letter-spacing: -0.02em;
   line-height: 128%;
   color: var(--primary01);
+
+  margin-bottom: 24px;
 }
 
 .title {
@@ -30,10 +34,22 @@
   letter-spacing: -0.02em;
   line-height: 120%;
   color: var(--primary01);
+
+  margin-bottom: 80px;
 }
 
 .mainExplain {
   font-weight: 300;
+  font-size: 40px;
+
+  letter-spacing: -0.02em;
+  line-height: 128%;
+
+  color: var(--grayScale07);
+}
+
+.mainExplainSub {
+  font-weight: 500;
   font-size: 40px;
 
   letter-spacing: -0.02em;
@@ -62,7 +78,5 @@
 
 .meImage {
   content: url(../../../src/image/ME/page1/me_main.svg);
-
-  height: 100%;
-  width: fit-content;
+  display: flex;
 }
