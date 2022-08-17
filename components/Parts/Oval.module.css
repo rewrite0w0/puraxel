@@ -39,3 +39,14 @@
     transform: scale(1.1);
   }
 } */
+
+/* 
+.oval {
+  background: linear-gradient(
+    141.94deg,
+    rgba(255, 233, 228, 0.09) 17.48%,
+    rgba(255, 233, 228, 0.3) 84.05%
+  );
+  box-shadow: 0px 16px 40px rgba(189, 46, 81, 0.03);
+  backdrop-filter: blur(50px);
+} */

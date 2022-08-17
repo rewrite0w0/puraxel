@@ -204,6 +204,12 @@
   cursor: pointer;
 }
 
+.imageCommon:hover .explainContainerNum {
+  background-color: var(--grayScale02);
+
+  /* background-color: pink; */
+}
+
 .explainContainer {
   /* display: flex; */
   background-color: transparent;
@@ -234,9 +240,14 @@
   letter-spacing: -0.01em;
   font-feature-settings: "tnum" on, "lnum" on, "case" on;
 
-  color: #f8f9fa;
+  /* color: #f8f9fa; */
+
+  color: var(--primary01);
+
   /* background: #f2f3f7; */
-  background-color: pink;
+  /* background-color: pink; */
+  background-color: var(--grayScale01);
+
   border-radius: 50%;
   /* margin-left: 12px; */
   margin-right: 8px;
@@ -247,6 +258,10 @@
   align-items: center;
   margin-left: 8px;
 }
+
+/* .explainContainerNum:hover {
+  background-color: var(--grayScale02);
+} */
 
 .CommonImageContainerMain {
   box-sizing: border-box;
