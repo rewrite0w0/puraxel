@@ -14,6 +14,8 @@ const Oval = (props) => {
       style={{
         position: "absolute",
         zIndex: 1,
+        left: 1400,
+        top: 400,
         ...transitionOval,
       }}
       className={style.oval}

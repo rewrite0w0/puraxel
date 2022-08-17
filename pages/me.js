@@ -33,8 +33,8 @@ export default function Me() {
           <Oval
             startX={0}
             startY={0}
-            EndX={1491}
-            EndY={686}
+            EndX={0}
+            EndY={300}
             // pause={ovalStart === "page1" ? false : true}
           />
           <Page0 />
@@ -43,10 +43,10 @@ export default function Me() {
         <SwiperSlide>
           <Page2 />
           <Oval
-            startX={1491}
-            startY={686}
-            EndX={824}
-            EndY={666}
+            startX={0}
+            startY={300}
+            EndX={-600}
+            EndY={300}
             // onUpdate={setOvalStart("page2")}
             // pause={ovalStart === "page3" ? false : true}
           />
@@ -55,10 +55,10 @@ export default function Me() {
         <SwiperSlide>
           <Page3 />
           <Oval
-            startX={824}
-            startY={666}
-            EndX={1491}
-            EndY={686}
+            startX={-600}
+            startY={300}
+            EndX={200}
+            EndY={-300}
             // pause={ovalStart === "page3" ? false : true}
           />
         </SwiperSlide>
@@ -66,10 +66,10 @@ export default function Me() {
         <SwiperSlide>
           <Page44 />
           <Oval
-            startX={1491}
-            startY={686}
-            EndX={441}
-            EndY={120}
+            startX={200}
+            startY={-300}
+            EndX={-450}
+            EndY={300}
             // pause={ovalStart === "page4" ? false : true}
           />
         </SwiperSlide>
