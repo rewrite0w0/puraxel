@@ -30,7 +30,7 @@ export default function Swipers({ children }) {
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {
-          console.log(swiper.pagination.textContent);
+          // console.log(swiper.pagination.textContent);
 
           // console.log(JSON.stringify(swiper));
 

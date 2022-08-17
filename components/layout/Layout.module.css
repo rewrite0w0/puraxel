@@ -37,6 +37,9 @@
 .layoutMain {
   /* background-image: url(../../src/image/main/bg.png); */
   /* background-size: cover; */
+
+  background-image: url(../../src/image/main/main_bg.svg);
+  /* background-size: cover; */
 }
 
 .layoutHeader {

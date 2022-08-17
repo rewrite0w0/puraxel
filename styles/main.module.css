@@ -1,0 +1,4 @@
+.container {
+  background-image: url(../src/image/main/main_bg.svg);
+  background-size: cover;
+}

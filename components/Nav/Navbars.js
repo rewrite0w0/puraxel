@@ -49,26 +49,18 @@ export default function Navbars(props) {
   const currentPageChecker = () => {
     if (document.documentURI.includes("hair")) {
       setCurrentPage("hair");
-    } else {
-      setCurrentPage(undefined);
     }
 
     if (document.documentURI.includes("fx5000")) {
       setCurrentPage("fx5000");
-    } else {
-      setCurrentPage(undefined);
     }
 
     if (document.documentURI.includes("me")) {
       setCurrentPage("me");
-    } else {
-      setCurrentPage(undefined);
     }
 
     if (document.documentURI.includes("tech")) {
       setCurrentPage("tech");
-    } else {
-      setCurrentPage(undefined);
     }
   };
 
@@ -80,8 +72,7 @@ export default function Navbars(props) {
   };
 
   useEffect(() => {
-    currentPageChecker();
-    console.log(currentPage);
+    return currentPageChecker();
   }, currentPage);
 
   return (
