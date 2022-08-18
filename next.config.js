@@ -16,11 +16,11 @@ const nextConfig = {
   //   defaultLocale: "en",
   //   locales: ["en", "kr"],
   // },
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  basePath: "/puraxel",
+  // images: {
+  //   loader: "akamai",
+  //   path: "",
+  // },
+  // basePath: "/puraxel",
 
   // assetPrefix: isProd ? "/puraxel/" : "",
 };
