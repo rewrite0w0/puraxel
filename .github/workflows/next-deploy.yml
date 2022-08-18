@@ -1,0 +1,41 @@
+name: github pages
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "npm"
+          # 처음 push할 때는 cache가 있으면 에러라서, cache를 지웠다가 두 번째부터 넣었다.
+
+      - name: npm install
+        run: npm install --frozen-lockfile
+
+      - name: next build
+        run: npm run build
+
+      - name: next export
+        run: npm run export
+
+      - name: add nojekyll
+        run: touch ./out/.nojekyll
+        # 폴더에 `_` 있으면 인식 안 되는 것 때문에
+
+      - name: next deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./out
