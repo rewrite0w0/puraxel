@@ -11,8 +11,8 @@ import style from "./page2.module.css";
 const LaserExplain = (props) => {
   const styles = useSpring({
     to: [{ opacity: 1 }],
-    from: { opacity: 0.8 },
-    delay: 500,
+    from: { opacity: 0.5 },
+    config: { duration: 500 },
   });
 
   return (
@@ -75,8 +75,8 @@ const LaserExplain = (props) => {
 const GalvanicExplain = (props) => {
   const styles = useSpring({
     to: [{ opacity: 1 }],
-    from: { opacity: 0.8 },
-    delay: 500,
+    from: { opacity: 0.5 },
+    config: { duration: 500 },
   });
 
   return (
@@ -172,13 +172,13 @@ const LaserImage = () => {
   const styles = useSpring({
     to: [{ opacity: 1, scale: 1 }],
     // to: async (next, cancel) => {
-    // await next({ opacity: 0.25, scale: 1 });
-    // await next({ opacity: 0.5, scale: 1 });
-    // await next({ opacity: 0.75, scale: 1 });
-    // await next({ opacity: 1, scale: 1 });
+    //   await next({ opacity: 0.25, scale: 1 });
+    //   await next({ opacity: 0.5, scale: 1 });
+    //   await next({ opacity: 0.75, scale: 1 });
+    //   await next({ opacity: 1, scale: 1 });
     // },
     from: { opacity: 0, scale: 0 },
-    delay: 500,
+    config: { duration: 500 },
   });
   return (
     <animated.div
@@ -192,7 +192,7 @@ const GalvanicImage = () => {
   const styles = useSpring({
     to: [{ opacity: 1, scale: 1 }],
     from: { opacity: 0, scale: 0 },
-    delay: 500,
+    config: { duration: 500 },
   });
   return (
     <animated.div

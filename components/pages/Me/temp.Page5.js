@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useSpring, animated, useTransition } from "react-spring";
 import _ from "./temp.page5.module.css";
 
 const Header0 = () => {
@@ -188,17 +189,37 @@ export default function Page5() {
   };
 
   const Parts01 = () => {
-    return <div className={_.promo0}></div>;
+    const styles = useSpring({
+      to: [{ opacity: 1, scale: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 1000 },
+    });
+    return <animated.div style={styles} className={_.promo0}></animated.div>;
   };
 
   const Parts02 = () => {
-    return <div className={_.promo1}></div>;
+    const styles = useSpring({
+      to: [{ opacity: 1, scale: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 1000 },
+    });
+    return <animated.div style={styles} className={_.promo1}></animated.div>;
   };
   const Parts03 = () => {
-    return <div className={_.promo2}></div>;
+    const styles = useSpring({
+      to: [{ opacity: 1, scale: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 1000 },
+    });
+    return <animated.div style={styles} className={_.promo2}></animated.div>;
   };
   const Parts04 = () => {
-    return <div className={_.promo3}></div>;
+    const styles = useSpring({
+      to: [{ opacity: 1, scale: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 1000 },
+    });
+    return <animated.div style={styles} className={_.promo3}></animated.div>;
   };
 
   const PartsViewer = () => {
