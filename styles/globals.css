@@ -167,3 +167,18 @@ img {
 .swiper-button-prev {
   color: pink;
 } */
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  margin-right: 40px;
+  content: url(../src/image/toRight.svg);
+}
+
+.swiper-button-prev {
+  margin-left: 40px;
+  content: url(../src/image/toLeft.svg);
+}

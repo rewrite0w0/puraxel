@@ -60,12 +60,6 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-
-  /* identical to box height, or 24px */
-  letter-spacing: -0.01em;
-
-  /* grayscale/07 */
-  color: #4d5058;
 }
 
 .topRight {
@@ -73,8 +67,6 @@
   font-size: 12px;
   line-height: 144%;
 
-  /* or 17px */
-  text-align: right;
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
 
@@ -90,6 +82,7 @@
   font-weight: 600;
   letter-spacing: -0.03em;
   margin-right: 16px;
+  line-height: 144%;
 }
 
 .botLeft {
@@ -98,12 +91,12 @@
   line-height: 140%;
 
   /* or 17px */
-  text-align: center;
+
   letter-spacing: -0.01em;
 
   /* primary/03 */
   color: #b398ad;
-  margin-left: 20px;
+  margin-left: 26px;
 }
 
 .botRightz {
@@ -115,7 +108,7 @@
   font-feature-settings: "tnum" on, "lnum" on;
 
   color: #c7cad3;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .botRightx {
