@@ -15,17 +15,11 @@ export default function Swipers({ children }) {
   return (
     <Swiper
       style={{
-        // maxHeight: "0%",
-        // minHeight: "100%",
-        // maxWidth: "0%",
-        // minWidth: "100%",
-        // width:"100%",
-        // height:"0%"
         height: "100vh",
       }}
       slidesPerView={1}
       allowTouchMove={false}
-      mousewheel={{ sensitivity: 0.25 }}
+      mousewheel={{ sensitivity: 0.1 }}
       // navigation={true}
       pagination={{
         type: "custom",
@@ -133,10 +127,10 @@ export default function Swipers({ children }) {
       // }}
 
       navigation={{ enabled: true }}
-      autoplay={{ delay: 500000 }}
+      autoplay={{ delay: 5000 }}
       className={slideStlye.slide}
-      speed={1000}
-      preloadImages={false}
+      speed={750}
+      preloadImages={true}
       // lazy={{
       //   enabled: true,
       //   loadPrevNext: false,
