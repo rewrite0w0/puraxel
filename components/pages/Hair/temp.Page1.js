@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from "./temp.page1.module.css";
 
-import tempME from "../../../src/image/FX5000/page1/fx5000.svg";
+// import tempME from "../../../src/image/FX5000/page1/fx5000.svg";
 
 export default function Page0() {
   return (
