@@ -12,10 +12,12 @@ const nextConfig = {
   //     unoptimized: true,
   //   },
   // },
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "kr"],
-  },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en", "kr"],
+  // },
+
+  basePath: "/puraxel",
 
   // assetPrefix: isProd ? "/puraxel/" : "",
 };
