@@ -22,6 +22,7 @@ export default function Page3() {
           marginTop: "120px",
           marginLeft: "227px",
           justifyItems: "flex-end",
+          alignSelf: "center",
         }}
       >
         <article

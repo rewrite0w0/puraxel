@@ -31,7 +31,7 @@ export default function MeLayout({ children }) {
               />
             }
             style={{
-              width: "100px",
+              width: "128px",
               marginRight: "20px",
               fontSize: "18px",
               fontWeight: "600",
