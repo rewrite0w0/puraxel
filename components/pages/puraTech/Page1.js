@@ -1,74 +1,81 @@
 import { useState } from "react";
 import meKr from "public/locales/kr/me";
-import style from "./page1.module.css";
+import _ from "./page1.module.css";
 import { ArrowLA, ArrowLI, ArrowRA, ArrowRI } from "components/Parts/Icons";
 
+import Fadein from "components/Parts/FadeIn";
+
 const MaruNumber = (props) => {
-  return <section className={style.maruNumber}>{props.num}</section>;
+  return <section className={_.maruNumber}>{props.num}</section>;
 };
 
 const PageTitle = () => {
-  return <div className={style.ExplainTitle}>Fractional 레이저</div>;
+  return <div className={_.ExplainTitle}>Fractional 레이저</div>;
 };
 
 const Page01 = () => {
   return (
-    <section className={style.ExplainContainer}>
-      <span className={style.ExplainCommonPara}>
-        Array Lens를 사용한 Fractional 형태의 레이저 출력
-      </span>
-      <div className={style.commonImage}>
-        <div className={style.page01Image}></div>
-      </div>
-    </section>
+    <Fadein>
+      <section className={_.ExplainContainer}>
+        <span className={_.ExplainCommonPara}>
+          Array Lens를 사용한 Fractional 형태의 레이저 출력
+        </span>
+        <div className={_.commonImage}>
+          <div className={_.page01Image}></div>
+        </div>
+      </section>
+    </Fadein>
   );
 };
 
 const Page02 = () => {
   return (
-    <section className={style.ExplainContainer}>
-      <span className={style.ExplainCommonPara}>
-        방사되는 레이저 에너지는 생체에 흡수되며 피부 내 물분자의 결합을
-        파괴하며 나오는
-      </span>
-      <br />
-      <span className={style.ExplainCommonPara}>
-        높은 에너지 통해 피부를 증발 시켜 Micro hole 생성
-      </span>
-      <br />
-      <span className={style.ExplainCommonParaSub}>
-        *1회 레이저 조사 시 약 100개 Micro holes생성
-      </span>
-      <div className={style.commonImage}>
-        <div className={style.page02Image}></div>
-      </div>
-    </section>
+    <Fadein>
+      <section className={_.ExplainContainer}>
+        <span className={_.ExplainCommonPara}>
+          방사되는 레이저 에너지는 생체에 흡수되며 피부 내 물분자의 결합을
+          파괴하며 나오는
+        </span>
+        <br />
+        <span className={_.ExplainCommonPara}>
+          높은 에너지 통해 피부를 증발 시켜 Micro hole 생성
+        </span>
+        <br />
+        <span className={_.ExplainCommonParaSub}>
+          *1회 레이저 조사 시 약 100개 Micro holes생성
+        </span>
+        <div className={_.commonImage}>
+          <div className={_.page02Image}></div>
+        </div>
+      </section>
+    </Fadein>
   );
 };
 
 const Page03 = () => {
   return (
-    <section className={style.ExplainContainer}>
-      <span className={style.ExplainCommonPara}>
-        0.2mm 이하 표피조직에만 최소한 침습 되어 기능성 화장품 등의 영양물질
-        흡수율 향상 시킴
-      </span>
-      <br />
-      <span className={style.ExplainCommonParaSub}>
-        퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 수 있습니다.
-      </span>
-      <div className={style.commonImage}>
-        <div className={style.page03Image}></div>
-      </div>
-    </section>
+    <Fadein>
+      <section className={_.ExplainContainer}>
+        <span className={_.ExplainCommonPara}>
+          0.2mm 이하 표피조직에만 최소한 침습 되어 기능성 화장품 등의 영양물질
+          흡수율 향상 시킴
+        </span>
+        <br />
+        <span className={_.ExplainCommonParaSub}>
+          퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 수 있습니다.
+        </span>
+        <div className={_.commonImage}>
+          <div className={_.page03Image}></div>
+        </div>
+      </section>
+    </Fadein>
   );
 };
 
 const ExplainFloatingTop = () => {
   return (
-    <section className={style.ExplainFloatingTop}>
+    <section className={_.ExplainFloatingTop}>
       <span>갈바닉, 초음파 LED, Cooling으로</span>
-      <br />
       <span>흡수율 향상</span>
     </section>
   );
@@ -76,24 +83,22 @@ const ExplainFloatingTop = () => {
 
 const ExplainFloatingBottom = () => {
   return (
-    <section className={style.ExplainFloatingBottom}>
+    <section className={_.ExplainFloatingBottom}>
       <span>
-        <span className={style.ExplainFloatingBottomBold}>
-          피부 재생 레이저
-        </span>{" "}
+        <span className={_.ExplainFloatingBottomBold}>
+          피부 재생 레이저&nbsp;
+        </span>
         적용,
       </span>
-      <br />
+
       <span>
-        피부에{" "}
-        <span className={style.ExplainFloatingBottomBold}>
-          Micro Hole을 생성해
-        </span>
+        피부에&nbsp;
+        <span className={_.ExplainFloatingBottomBold}>Micro Hole을 생성해</span>
       </span>
-      <br />
+
       <span>
-        화장품 등의{" "}
-        <span className={style.ExplainFloatingBottomBold}>
+        화장품 등의
+        <span className={_.ExplainFloatingBottomBold}>
           영양 물질의 흡수를 촉진
         </span>
         합니다.
@@ -183,41 +188,15 @@ export default function Page1() {
   };
 
   return (
-    <article
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        marginLeft: "228px",
-        marginRight: "228px",
-        marginTop: "164px",
-        marginBottom: "100px",
-      }}
-    >
-      <section>
-        <span
-          style={{
-            fontSize: "48px",
-            // fontWeight: "300",
-            letterSpacing: "-0.02em",
-            color: "#55576f",
-          }}
-          className={style.subTitle}
-        >
-          하이브리드 레이저의 에스테틱 솔루션
+    <article className={_.container}>
+      <section className={_.titleContainer}>
+        <span className={_.subTitle}>
+          <span>하이브리드 레이저의 에스테틱 솔루션</span>
           <br />
-          퓨라셀의 기술력
-          <br style={{ marginBottom: "24px" }} />
-          <span
-            style={{
-              fontSize: "96px",
-              fontWeight: "300",
-              letterSpacing: "-0.02em",
-              color: "#55576f",
-            }}
-          >
-            Fractional + MTS function
-          </span>
+          <span>퓨라셀의 기술력</span>
         </span>
+
+        <span className={_.mainTitle}>Fractional + MTS function</span>
       </section>
       <section style={{ display: "flex" }}>
         <div style={{ marginTop: "114px" }}>
@@ -233,7 +212,7 @@ export default function Page1() {
             }}
           >
             <PageTitle />
-            <span className={style.ExplainTitleSub}>작동 방식</span>
+            <span className={_.ExplainTitleSub}>작동 방식</span>
             <span>
               <CurrentNumber />
             </span>
