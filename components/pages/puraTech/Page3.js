@@ -74,7 +74,9 @@ const Step = (props) => {
         <span style={{ fontWeight: 800, fontSize: "16px" }}>{props.step}</span>
       </section>
       <section className={style.title}>
-        <span style={{ color: "#55576f", fontSize: "18px" }}>
+        <span
+          style={{ color: "#55576f", fontSize: "18px", marginRight: "8px" }}
+        >
           {props.title}
         </span>
         &nbsp;
