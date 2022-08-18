@@ -127,7 +127,7 @@ export default function Swipers({ children }) {
       // }}
 
       navigation={{ enabled: true }}
-      autoplay={{ delay: 5000 }}
+      autoplay={{ delay: 10000 }}
       className={slideStlye.slide}
       speed={750}
       preloadImages={true}

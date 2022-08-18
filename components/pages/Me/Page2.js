@@ -11,7 +11,7 @@ import style from "./page2.module.css";
 const LaserExplain = (props) => {
   const styles = useSpring({
     to: [{ opacity: 1 }],
-    from: { opacity: 0.5 },
+    from: { opacity: 0.25 },
     config: { duration: 500 },
   });
 
@@ -75,7 +75,7 @@ const LaserExplain = (props) => {
 const GalvanicExplain = (props) => {
   const styles = useSpring({
     to: [{ opacity: 1 }],
-    from: { opacity: 0.5 },
+    from: { opacity: 0.25 },
     config: { duration: 500 },
   });
 

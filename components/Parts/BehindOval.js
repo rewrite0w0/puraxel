@@ -1,7 +1,7 @@
-import { Spring, animated, useSpring, SpringRef, config } from "react-spring";
-import style from "./Oval.module.css";
+import _ from ".BehindOval.module.css";
+import { useSpring, animated, useTransition } from "react-spring";
 
-const Oval = (props) => {
+const BehindModal = (props) => {
   const transitionOval = useSpring({
     from: { y: props.startY, x: props.startX },
     to: { y: props.EndY, x: props.EndX },
@@ -14,14 +14,14 @@ const Oval = (props) => {
       style={{
         position: "absolute",
         zIndex: 1,
-        left: 1400,
-        top: 400,
+        left: 0,
+        top: 0,
         ...transitionOval,
       }}
-      className={style.oval}
+      className={_.oval}
       {...props}
     ></animated.div>
   );
 };
 
-module.exports = Oval;
+module.exports = BehindModal;
