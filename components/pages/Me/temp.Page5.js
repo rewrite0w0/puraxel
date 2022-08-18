@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { useSpring, animated, useTransition } from "react-spring";
+import { useSpring, useTransition } from "react-spring";
 import _ from "./temp.page5.module.css";
+import Fadein from "components/Parts/FadeIn";
 
 const Header0 = () => {
   return <div className={_.header0}></div>;
@@ -189,37 +190,33 @@ export default function Page5() {
   };
 
   const Parts01 = () => {
-    const styles = useSpring({
-      to: [{ opacity: 1, scale: 1 }],
-      from: { opacity: 0 },
-      config: { duration: 1000 },
-    });
-    return <animated.div style={styles} className={_.promo0}></animated.div>;
+    return (
+      <Fadein>
+        <div className={_.promo0}></div>
+      </Fadein>
+    );
   };
 
   const Parts02 = () => {
-    const styles = useSpring({
-      to: [{ opacity: 1, scale: 1 }],
-      from: { opacity: 0 },
-      config: { duration: 1000 },
-    });
-    return <animated.div style={styles} className={_.promo1}></animated.div>;
+    return (
+      <Fadein>
+        <div className={_.promo1}></div>
+      </Fadein>
+    );
   };
   const Parts03 = () => {
-    const styles = useSpring({
-      to: [{ opacity: 1, scale: 1 }],
-      from: { opacity: 0 },
-      config: { duration: 1000 },
-    });
-    return <animated.div style={styles} className={_.promo2}></animated.div>;
+    return (
+      <Fadein>
+        <div className={_.promo2}></div>
+      </Fadein>
+    );
   };
   const Parts04 = () => {
-    const styles = useSpring({
-      to: [{ opacity: 1, scale: 1 }],
-      from: { opacity: 0 },
-      config: { duration: 1000 },
-    });
-    return <animated.div style={styles} className={_.promo3}></animated.div>;
+    return (
+      <Fadein>
+        <div className={_.promo3}></div>
+      </Fadein>
+    );
   };
 
   const PartsViewer = () => {
@@ -245,44 +242,16 @@ export default function Page5() {
   return (
     <section className={_.container}>
       <aside className={_.imageSelector}>
-        <div
-          // className={`${_.imageCommon} ${_.header0}`}
-          className={_.imageCommon}
-          // style={{
-          //   filter: parts === "pu" ? "grayScale(0)" : "grayScale(1)",
-          // }}
-          onClick={imageOnClickHandler.onPu}
-        >
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onPu}>
           {parts === "pu" ? <Header0 /> : <Header00 />}
         </div>
-        <div
-          // className={`${_.imageCommon} ${_.header1}`}
-          className={_.imageCommon}
-          // style={{
-          //   filter: parts === "ra" ? "grayScale(0)" : "grayScale(1)",
-          // }}
-          onClick={imageOnClickHandler.onRa}
-        >
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onRa}>
           {parts === "ra" ? <Header1 /> : <Header11 />}
         </div>
-        <div
-          // className={`${_.imageCommon} ${_.header2}`}
-          className={_.imageCommon}
-          // style={{
-          //   filter: parts === "xel" ? "grayScale(0)" : "grayScale(1)",
-          // }}
-          onClick={imageOnClickHandler.onXel}
-        >
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onXel}>
           {parts === "xel" ? <Header2 /> : <Header22 />}
         </div>
-        <div
-          // className={`${_.imageCommon} ${_.header3}`}
-          className={_.imageCommon}
-          // style={{
-          //   filter: parts === "me" ? "grayScale(0)" : "grayScale(1)",
-          // }}
-          onClick={imageOnClickHandler.onMe}
-        >
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onMe}>
           {parts === "me" ? <Header3 /> : <Header33 />}
         </div>
       </aside>
