@@ -17,7 +17,7 @@ const nextConfig = {
     locales: ["en", "kr"],
   },
 
-  assetPrefix: isProd ? "/puraxel/" : "",
+  // assetPrefix: isProd ? "/puraxel/" : "",
 };
 
 module.exports = nextConfig;
