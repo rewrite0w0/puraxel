@@ -35,9 +35,6 @@ jobs:
       - name: npm install
         run: npm install --frozen-lockfile
 
-      - name: linter and formatter
-        run: npm run lint && npm run format
-
       - name: next build
         run: npm run build
         timeout-minutes: 5
