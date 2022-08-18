@@ -31,7 +31,7 @@ export default function Page1() {
           </div>
         </div>
         <div className={_.imageContainer}>
-          <div className={_.imageContent}>341</div>
+          <div className={_.imageContent}></div>
         </div>
       </article>
     </section>
