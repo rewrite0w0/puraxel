@@ -170,14 +170,14 @@ const GalvanicExplain = (props) => {
 
 const LaserImage = () => {
   const styles = useSpring({
-    to: [{ opacity: 1, scale: 1 }],
-    // to: async (next, cancel) => {
-    //   await next({ opacity: 0.25, scale: 1 });
-    //   await next({ opacity: 0.5, scale: 1 });
-    //   await next({ opacity: 0.75, scale: 1 });
-    //   await next({ opacity: 1, scale: 1 });
-    // },
-    from: { opacity: 0, scale: 0 },
+    // to: [{ opacity: 1 }],
+    to: async (next, cancel) => {
+      await next({ opacity: 0.25, scale: 1 });
+      await next({ opacity: 0.5, scale: 1 });
+      await next({ opacity: 0.75, scale: 1 });
+      await next({ opacity: 1, scale: 1 });
+    },
+    from: { opacity: 0 },
     config: { duration: 500 },
   });
   return (
@@ -190,8 +190,14 @@ const LaserImage = () => {
 
 const GalvanicImage = () => {
   const styles = useSpring({
-    to: [{ opacity: 1, scale: 1 }],
-    from: { opacity: 0, scale: 0 },
+    // to: [{ opacity: 1, scale: 1 }],
+    to: async (next, cancel) => {
+      await next({ opacity: 0.25, scale: 1 });
+      await next({ opacity: 0.5, scale: 1 });
+      await next({ opacity: 0.75, scale: 1 });
+      await next({ opacity: 1, scale: 1 });
+    },
+    from: { opacity: 0 },
     config: { duration: 500 },
   });
   return (
@@ -315,7 +321,10 @@ export default function Page2(props) {
         {/* 책갈피 grid */}
         <div>
           <div
-            onClick={selectorLaser}
+            // onClick={selectorLaser}
+            onClick={() => {
+              location.href = "/tech";
+            }}
             className={style.bookmark}
             style={{
               // background: modeCondition ? "white" : DISABLECOLOR,
