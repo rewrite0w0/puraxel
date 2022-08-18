@@ -1,76 +1,11 @@
-import Image from "next/image";
-import style from "./temp.page1.module.css";
-
-// import tempME from "../../../src/image/FX5000/page1/fx5000.svg";
+import _ from "./temp.page1.module.css";
 
 export default function Page0() {
   return (
-    <main
-      style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        // background: "black",
-        height: "100vh",
-      }}
-    >
-      <section
-        style={{
-          marginTop: "161px",
-          display: "flex",
-          flexDirection: "column",
-          marginLeft: "228px",
-        }}
-      >
-        {/* <div
-          style={{
-            fontSize: "20px",
-            letterSpacing: "-0.01em",
-            background: "#55576F",
-            borderRadius: "4px",
-            border: "0.78125px solid #FFF",
-            width: "120px",
-            height: "50px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#fff",
-            marginBottom: "16px",
-          }}
-        >
-          에스테틱의 시작
-        </div> */}
-        <span
-          style={{
-            fontSize: "48px",
-            letterSpacing: "-0.02em",
-            color: "#55576F",
-            fontWeight: "300",
-            marginBottom: "24px",
-          }}
-        >
-          에스테틱의 시작
-        </span>
-        <span
-          style={{
-            fontSize: "96px",
-            letterSpacing: "-0.02em",
-            color: "#55576F",
-            fontWeight: "300",
-          }}
-        >
-          PURAXEL
-        </span>
-        <span
-          style={{
-            fontSize: "96px",
-            letterSpacing: "-0.02em",
-            color: "#55576F",
-            fontWeight: "300",
-            marginBottom: "77px",
-          }}
-        >
-          HAIR
-        </span>
+    <main className={_.container}>
+      <section className={_.leftContainer}>
+        <span className={_.subTitle}>에스테틱의 시작</span>
+        <span className={_.title}>PURAXEL HAIR</span>
 
         <span
           style={{
@@ -136,17 +71,7 @@ export default function Page0() {
         </span>
       </section>
       <section style={{ display: "flex" }}>
-        <div className={style.rightImage}></div>
-        {/* <Image
-          src={tempME}
-          alt="puraxel FX5000"
-          className={style.rightImage}
-          // width={574}
-          // height={1422}
-          // layout="fixed"
-          // bottom="0"
-          // style={{ position: "absolute" }}
-        /> */}
+        <div className={_.rightImage}></div>
       </section>
     </main>
   );

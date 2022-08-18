@@ -1,8 +1,89 @@
-.rightImage {
-  background: "black";
-  margin-top: 180px;
-  margin-right: 80px;
+.container {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 228px; */
+  /* align-items: center; */
+  /* margin-right: ; */
+}
+
+.leftContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  justify-content: center;
+  height: 100%;
+  padding-left: 228px;
+}
+
+.subTitle {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 128%;
+
+  letter-spacing: -0.02em;
+
+  color: #55576f;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 120%;
+
+  letter-spacing: -0.02em;
+
+  color: #55576f;
+  margin-bottom: 80px;
+}
+
+.expTop {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 128%;
+
+  letter-spacing: -0.02em;
+
+  color: #4d5058;
+}
+
+.expBot {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 128%;
+
+  letter-spacing: -0.02em;
+
+  color: #55576f;
+  margin-bottom: 24px;
+}
+
+.explainDetail {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+
+  letter-spacing: -0.02em;
+
+  color: #4d5058;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
   width: 100%;
-  height: auto;
+}
+
+.rightImage {
+  padding-right: 80px;
+  height: max-content;
+  /* max-height: 100%; */
   content: url(../../../src/image/FX5000/page1/FX5000.svg);
 }
