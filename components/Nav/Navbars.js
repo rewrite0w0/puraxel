@@ -257,6 +257,7 @@ export default function Navbars(props) {
             marginRight: "16px",
             textDecoration: "underline",
             textDecorationThickness: "2px",
+            // opacity: 1,
           }}
         ></NavIconButton>
         <NavIconButton

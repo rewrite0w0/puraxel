@@ -68,7 +68,7 @@ export default function Me() {
           <Oval
             startX={200}
             startY={-300}
-            EndX={-450}
+            EndX={-500}
             EndY={300}
             // pause={ovalStart === "page4" ? false : true}
           />

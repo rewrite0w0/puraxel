@@ -1,11 +1,6 @@
 import style from "./page3.module.css";
 import ClinicalTestImageParts from "components/Parts/ClinicalTestImageParts";
 
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
-
 export default function Page3() {
   return (
     <section

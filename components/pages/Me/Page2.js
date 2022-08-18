@@ -2,13 +2,21 @@
 // import { ManualFractionPage2 } from "../../Parts/ManualFraction";
 // import Swipers from "../../Swipers";
 import { useState } from "react";
+
+import { useSpring, animated, useTransition } from "react-spring";
 import meKr from "public/locales/kr/me.json";
 
 import style from "./page2.module.css";
 
 const LaserExplain = (props) => {
+  const styles = useSpring({
+    to: [{ opacity: 1 }],
+    from: { opacity: 0.8 },
+    delay: 500,
+  });
+
   return (
-    <div>
+    <animated.div style={styles}>
       <span
         className={style.explainTitle}
         style={{
@@ -60,13 +68,19 @@ const LaserExplain = (props) => {
           {meKr.Page2LaserTechExplain1B}
         </span>
       </span>
-    </div>
+    </animated.div>
   );
 };
 
 const GalvanicExplain = (props) => {
+  const styles = useSpring({
+    to: [{ opacity: 1 }],
+    from: { opacity: 0.8 },
+    delay: 500,
+  });
+
   return (
-    <div>
+    <animated.div style={styles}>
       <span
         className={style.explainTitle}
         style={{
@@ -150,13 +164,54 @@ const GalvanicExplain = (props) => {
           {meKr.Page2GalvanicTechExplain2B}
         </span>
       </span>
-    </div>
+    </animated.div>
+  );
+};
+
+const LaserImage = () => {
+  const styles = useSpring({
+    to: [{ opacity: 1, scale: 1 }],
+    // to: async (next, cancel) => {
+    // await next({ opacity: 0.25, scale: 1 });
+    // await next({ opacity: 0.5, scale: 1 });
+    // await next({ opacity: 0.75, scale: 1 });
+    // await next({ opacity: 1, scale: 1 });
+    // },
+    from: { opacity: 0, scale: 0 },
+    delay: 500,
+  });
+  return (
+    <animated.div
+      className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
+      style={styles}
+    ></animated.div>
+  );
+};
+
+const GalvanicImage = () => {
+  const styles = useSpring({
+    to: [{ opacity: 1, scale: 1 }],
+    from: { opacity: 0, scale: 0 },
+    delay: 500,
+  });
+  return (
+    <animated.div
+      className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
+      style={styles}
+    ></animated.div>
   );
 };
 
 export default function Page2(props) {
   const [modeSelector, setModeSelector] = useState("Laser");
   const [laserSelector, setLaserSelector] = useState(true);
+
+  const styles = useSpring({
+    to: [{ opacity: 1 }],
+    from: { opacity: 0 },
+    delay: 500,
+  });
+
   // console.log(modeSelector);
 
   // const handlerLaserSelectorOnClick = () => {
@@ -301,15 +356,7 @@ export default function Page2(props) {
       {/* 오른쪽 grid */}
 
       {/* <div className={style.rightGridContainer}> */}
-      {modeCondition ? (
-        <div
-          className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
-        ></div>
-      ) : (
-        <div
-          className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
-        ></div>
-      )}
+      {modeCondition ? <LaserImage /> : <GalvanicImage />}
       {/* </div> */}
     </div>
   );

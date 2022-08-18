@@ -6,14 +6,30 @@
   width: 240px;
   height: 240px;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     141.94deg,
     rgba(255, 228, 249, 0.09) 17.48%,
     rgba(255, 228, 243, 0.3) 84.05%
-  );
+  ); */
 
   border-radius: 50%;
 
-  box-shadow: 0px 16px 40px rgba(189, 46, 81, 0.03);
+  /* box-shadow: 0px 16px 40px rgba(189, 46, 81, 0.03); */
   backdrop-filter: blur(50px);
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(244, 237, 255, 0.3) 0%,
+    rgba(233, 202, 244, 0.3) 100%
+  );
+
+  background: linear-gradient(
+    180deg,
+    rgba(244, 237, 255, 0.3) 0%,
+    rgba(233, 202, 244, 0.3) 100%
+  );
+
+  box-shadow: 0px 12px 24px 0px #f3e8ff4d;
 }
