@@ -86,13 +86,10 @@ export default function Page2() {
         <div className={_.paperLeftContainer}>
           <span className={_.textContainer}>
             <span className={_.subTitle}>레이저 초음파 기술을 활용한</span>
-            <br />
             <span className={_.title}>
               퓨라셀의 <span className={_.titleBold}>다섯가지 기능</span>
             </span>
-            <br style={{ marginTop: "12px" }} />
             <span className={_.instruction}>궁금한 기능을 클릭해보세요</span>
-            <br />
           </span>
           {/*  */}
           <section className={_.imageContainer}>
@@ -127,8 +124,10 @@ export default function Page2() {
                   background: currentMode === "Sonic" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageSonic}  ${_.imageCommon}`}>
-                  <ExplainContainer num={"2"} title={"초음파"} />
+                <div className={`${_.imageCommon}`}>
+                  <div className={_.imageSonic}>
+                    <ExplainContainer num={"2"} title={"초음파"} />
+                  </div>
                 </div>
               </div>
 
@@ -139,8 +138,10 @@ export default function Page2() {
                   background: currentMode === "Galvanic" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageGalvanic}  ${_.imageCommon}`}>
-                  <ExplainContainer num={"3"} title={"갈바닉"} />
+                <div className={`${_.imageCommon}`}>
+                  <div className={_.imageGalvanic}>
+                    <ExplainContainer num={"3"} title={"갈바닉"} />
+                  </div>
                 </div>
               </div>
 
@@ -151,8 +152,10 @@ export default function Page2() {
                   background: currentMode === "Cooling" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.imageCooling}  ${_.imageCommon}`}>
-                  <ExplainContainer num={"4"} title={"쿨링"} />
+                <div className={`${_.imageCommon}`}>
+                  <div className={_.imageCooling}>
+                    <ExplainContainer num={"4"} title={"쿨링"} />
+                  </div>
                 </div>
               </div>
 
@@ -164,8 +167,10 @@ export default function Page2() {
                 }}
                 onClick={modeHandler.led}
               >
-                <div className={`${_.imageLED} ${_.imageCommon}`}>
-                  <ExplainContainer num={"5"} title={"LED"} />
+                <div className={`${_.imageCommon}`}>
+                  <div className={_.imageLED}>
+                    <ExplainContainer num={"5"} title={"LED"} />
+                  </div>
                 </div>
               </div>
             </div>

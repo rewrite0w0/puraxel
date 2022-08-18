@@ -1,12 +1,7 @@
 .container {
-  /* display: grid; */
-  /* margin-left: 80px; */
-
   margin-right: 80px;
-  /* margin-top: 144px; */
   margin-bottom: 216px;
-  /* background-color: skyblue; */
-  /* width: auto; */
+
   display: flex;
   width: 100%;
 
@@ -63,7 +58,7 @@
   letter-spacing: -0.02em;
 
   /* primary/01 */
-  color: var(--primary05);
+  color: var(--primary01);
 }
 
 .titleBold {
@@ -81,6 +76,9 @@
 
   /* grayscale/06 */
   color: #7e818d;
+
+  margin-top: 12px;
+  /* margin-bottom: 36px; */
 }
 
 .imageContainer {
@@ -129,7 +127,7 @@
   cursor: pointer;
 }
 
-.rightImageCommon:hover .imageContainerLeft {
+.rightImageCommon:hover .imageContainerLeft:hover {
   background: #f2f3f7;
   border-radius: 4px;
   border: 1px solid #f2f3f7;
@@ -159,6 +157,12 @@
   margin-top: 20px;
   background-image: url(../../../src/image/FX5000/page2/_sonic.svg);
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
   /* margin-left: 12px; */
 }
 
@@ -166,31 +170,42 @@
   margin-top: 20px;
   background-image: url(../../../src/image/FX5000/page2/_gal.svg);
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .imageCooling {
   margin-top: 20px;
   background-size: cover;
   background-image: url(../../../src/image/FX5000/page2/_cooling.svg);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .imageLED {
   margin-top: 20px;
   background-image: url(../../../src/image/FX5000/page2/_led.svg);
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .rightContainer {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* background-color: pink; */
+
   width: 50%;
-  /* height: 100%; */
   height: 720px;
   margin-top: 120px;
-  /* background-color: black; */
 }
 
 .imageCommon {
@@ -199,10 +214,14 @@
   align-items: flex-end;
 }
 
+.imageCommon:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+
 .imageCommon:hover .explainContainerNum {
   background-color: var(--grayScale02);
-
-  /* background-color: pink; */
 }
 
 .explainContainer {
