@@ -64,13 +64,6 @@ export default function Navbars(props) {
     }
   };
 
-  const currentPageFeature = {
-    hair: currentPage === "hair" ? "2px solid pink" : "",
-    me: currentPage === "me" ? "2px solid pink" : "",
-    fx5000: currentPage === "fx5000" ? "2px solid pink" : "",
-    tech: currentPage === "tech" ? "2px solid pink" : "",
-  };
-
   useEffect(() => {
     return currentPageChecker();
   }, []);
@@ -114,7 +107,7 @@ export default function Navbars(props) {
             }}
           />
 
-          <NavIconButton
+          {/* <NavIconButton
             onClick={() => {
               location.href = "/hair";
             }}
@@ -125,7 +118,7 @@ export default function Navbars(props) {
               //   textDecorationThickness: currentPage === "hair" ? "2px" : "none",
               opacity: currentPage === "hair" ? "1" : undefined,
             }}
-          />
+          /> */}
 
           <NavIconButton
             onClick={() => {
@@ -143,7 +136,18 @@ export default function Navbars(props) {
         </div>
       </section>
 
-      <Box className={navStyle.rightNav}>
+      <div className={navStyle.rightNav}>
+        <NavIconButton
+          title={"notice"}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
+          sx={{ paddingRight: "10px", paddingLeft: "10px" }}
+        ></NavIconButton>
+
+        <NavIconButton
+          title={"newsletter"}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
+        ></NavIconButton>
+
         <Button
           onClick={handleSNSButton}
           className={(navStyle.buttonStyleKr, navStyle.subMenu)}
@@ -265,7 +269,7 @@ export default function Navbars(props) {
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
           sx={{ marginRight: "80px" }}
         ></NavIconButton>
-      </Box>
+      </div>
     </header>
   );
 }

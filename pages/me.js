@@ -1,26 +1,14 @@
 import Head from "next/head";
 import Swipers from "components/Swipers";
 import MeLayout from "components/layout/MeLayout";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Page1 from "components/pages/Me/Page1";
+import { SwiperSlide } from "swiper/react";
+import Page0 from "components/pages/Me/temp.Page1";
 import Page2 from "components/pages/Me/Page2";
 import Page3 from "components/pages/Me/Page3";
-import Page4 from "components/pages/Me/Page4";
-import CircleFloating from "components/Parts/CircleFloating";
-import { useEffect, useState } from "react";
-import Page0 from "components/pages/Me/temp.Page1";
 import Page44 from "components/pages/Me/temp.Page5";
-
 import Oval from "components/Parts/Oval";
 
-import { Spring, animated, useSpring, SpringRef, config } from "react-spring";
-
-import { motion } from "framer-motion";
-import style from "styles/me.module.css";
-
 export default function Me() {
-  const [ovalStart, setOvalStart] = useState(undefined);
-
   return (
     <MeLayout>
       <Head>
@@ -29,49 +17,25 @@ export default function Me() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Swipers>
+        <Oval startX={0} startY={0} EndX={0} EndY={300} />
         <SwiperSlide>
-          <Oval
-            startX={0}
-            startY={0}
-            EndX={0}
-            EndY={300}
-            // pause={ovalStart === "page1" ? false : true}
-          />
+          {/* <Oval startX={0} startY={0} EndX={0} EndY={300} /> */}
           <Page0 />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
-          <Oval
-            startX={0}
-            startY={300}
-            EndX={-600}
-            EndY={300}
-            // onUpdate={setOvalStart("page2")}
-            // pause={ovalStart === "page3" ? false : true}
-          />
+          {/* <Oval startX={0} startY={300} EndX={-600} EndY={300} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
-          <Oval
-            startX={-600}
-            startY={300}
-            EndX={200}
-            EndY={-300}
-            // pause={ovalStart === "page3" ? false : true}
-          />
+          {/* <Oval startX={-600} startY={300} EndX={200} EndY={-300} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page44 />
-          <Oval
-            startX={200}
-            startY={-300}
-            EndX={-500}
-            EndY={300}
-            // pause={ovalStart === "page4" ? false : true}
-          />
+          {/* <Oval startX={200} startY={-300} EndX={-500} EndY={300} /> */}
         </SwiperSlide>
       </Swipers>
     </MeLayout>

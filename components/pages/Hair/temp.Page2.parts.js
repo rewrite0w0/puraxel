@@ -1,4 +1,5 @@
 import { CaptionIcon } from "components/Parts/Icons";
+import { useEffect, useState } from "react";
 import style from "./temp.page2.parts.module.css";
 
 const FloatingContainer = (props) => {
@@ -32,197 +33,22 @@ const MaruPlus = () => {
   );
 };
 
-const ExplainContainerRightSide = (props) => {
+const MaruMinus = () => {
   return (
-    <section
-      style={{
-        marginLeft: "8px",
-        marginRight: "8px",
-        marginTop: "8px",
-        display: "flex",
-        flexDirection: "column",
-        alignSelf: "flex-start",
-        ...props.sx,
-      }}
+    <svg
+      width="11"
+      height="11"
+      viewBox="0 0 11 11"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      {props.title}
-      {props.content}
-    </section>
-  );
-};
-
-const UltraTopExplain = () => {
-  return (
-    <span
-      className={`${style.explainTitleCommon} ${style.explainTitleLineHeight}`}
-    >
-      기능성 솔루션을 바른 후 마사지하면
-      <br />
-      <span>높은 흡수력</span>으로 더 탄력있고 촘촘한
-      <br /> 피부 관리를 도와줍니다.
-    </span>
-  );
-};
-
-const UltraMiddleTopExplain = () => {
-  return (
-    <span
-      className={`${style.explainTitleCommon} ${style.explainTitleLineHeight}`}
-    >
-      같은 극끼리 밀어내는 갈바닉 기술을 활용하여
-      <br />
-      이온화된 화장품의 흡수율을 높입니다.
-      <br />
-      레이저 모드와 함께 사용하면 피부 흡수율을
-      <br />
-      극대화할 수 있습니다.
-    </span>
-  );
-};
-
-const UltraMiddleBottomExplain = () => {
-  return (
-    <span
-      className={style.explainTitleCommon}
-      style={{
-        marginTop: "8px",
-        letterSpacing: "-0.03em",
-        fontSize: "12px",
-        fontWeight: "600",
-        color: "#7e818d",
-      }}
-    >
-      갈바닉+이온(+ION)으로
-      <br />
-      노폐물을 배출
-      <br />
-      <br />
-      기능성 솔루션과 함께
-      <br />
-      음이온(-ION)으로 영양분 침투에 도움
-    </span>
-  );
-};
-
-const UltraBottomExplain = () => {
-  return (
-    <span className={style.explainTitleCommon}>
-      <span
-        style={{
-          letterSpacing: "-0.01em",
-          fontSize: "16px",
-          fontWeight: "300",
-          color: "#4d5058",
-        }}
-        className={style.explainTitleLineHeight}
-      >
-        차가운 쿨링효과로 피부를 진정시키고
-        <br />
-        모공 축소를 도와줍니다.
-      </span>
-      <br style={{ marginBottom: "11px" }} />
-      <span
-        style={{
-          letterSpacing: "-0.03em",
-          fontSize: "12px",
-          fontWeight: "600",
-          color: "#7e818d",
-        }}
-      >
-        레이저, 초음파, LED 사용 후 쿨링모드 사용시
-        <br />
-        피부를 차갑게 진정 시켜, 확장된 모공 축소에 도움을 줍니다.
-      </span>
-    </span>
-  );
-};
-
-const LaserExplainInLaser = (props) => {
-  return (
-    <span
-      className={`${style.explainTitleCommon} ${style.explainTitleLineHeight}`}
-      style={{ marginTop: "8px" }}
-    >
-      <span style={{ fontWeight: "500" }}>피부 재생용 레이저</span>를 피부에
-      조사하여,
-      <br />
-      5~200µm의 표피층에 1회 약 100개의 <br />
-      Multi-Micro pore을 만들어&nbsp;
-      <span style={{ fontWeight: "500" }}>
-        화장품 등의
-        <br />
-        약물 흡수율을 증가
-      </span>
-      시킵니다.
-    </span>
-  );
-};
-
-const LedExplainInLaser = (props) => {
-  return (
-    <span className={style.explainTitleCommon}>
-      <span className={style.explainTitleLineHeight}>
-        <span style={{ fontWeight: "500" }}>3가지 파장의 빛</span>으로 피부
-        깊숙한 곳까지
-        <br />
-        건강하고 탄력 있게 관리해줍니다.
-      </span>
-      <br style={{ marginBottom: "8px" }} />
-      <span
-        style={{
-          fontWeight: 600,
-          fontSize: "12px",
-          letterSpacing: "-0.03em",
-          color: "#7e818d",
-          lineHeight: "140%",
-        }}
-      >
-        <span>Red, Blue, Pink 모드 중 원하는 기능 사용으로</span>
-        <br />
-        <span>피부 진정과 보습・탄력, 트러블 완화에 도움을 줍니다.</span>
-      </span>
-    </span>
-  );
-};
-
-const ExplainContainerTitle = (props) => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        // height: "43px",
-        background: props.title ? "#f8f9fa" : "transparent",
-        // background: "pink",
-        borderRadius: "4px",
-        padding: "8px 12px",
-        width: "fit-content",
-        alignItems: "flex-end",
-        ...props.sx,
-      }}
-    >
-      <span
-        style={{
-          color: "#55576f",
-          fontSize: "18px",
-          fontWeight: 700,
-          letterSpacing: "-0.01em",
-          marginRight: "8px",
-        }}
-      >
-        {props.title}
-      </span>
-
-      <span
-        style={{
-          color: "#A292A3",
-          fontSize: "14px",
-          fontWeight: 700,
-          letterSpacing: "-0.01em",
-        }}
-      >
-        {props.subTitle}
-      </span>
-    </div>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M10 5.5C10 7.98528 7.98528 10 5.5 10C3.01472 10 1 7.98528 1 5.5C1 3.01472 3.01472 1 5.5 1C7.98528 1 10 3.01472 10 5.5ZM11 5.5C11 8.53757 8.53757 11 5.5 11C2.46243 11 0 8.53757 0 5.5C0 2.46243 2.46243 0 5.5 0C8.53757 0 11 2.46243 11 5.5ZM3.5 5C3.22386 5 3 5.22386 3 5.5C3 5.77614 3.22386 6 3.5 6H7.5C7.77614 6 8 5.77614 8 5.5C8 5.22386 7.77614 5 7.5 5H3.5Z"
+        fill="#7E818D"
+      />
+    </svg>
   );
 };
 
@@ -270,23 +96,19 @@ const GrayButton = (props) => {
   );
 };
 
-const LaserModeImage = ({ children }) => {
+const LaserModeImage = () => {
   return (
-    <div className={`${style.modeImageCommon} ${style.LaserModeImage}`}>
-      {children}
-    </div>
+    <div className={`${style.modeImageCommon} ${style.LaserModeImage}`}></div>
   );
 };
 
-const SonicModeImage = ({ children }) => {
+const SonicModeImage = () => {
   return (
-    <div className={`${style.modeImageCommon} ${style.SonicModeImage}`}>
-      {children}
-    </div>
+    <div className={`${style.modeImageCommon} ${style.SonicModeImage}`}></div>
   );
 };
 
-const GalvanicModeImage = ({ children }) => {
+const GalvanicModeImage = () => {
   return (
     <div>
       <div
@@ -300,18 +122,14 @@ const GalvanicModeImage = ({ children }) => {
   );
 };
 
-const CoolingModeImage = ({ children }) => {
+const CoolingModeImage = () => {
   return (
-    <div className={`${style.modeImageCommon} ${style.CoolingModeImage}`}>
-      {children}
-    </div>
+    <div className={`${style.modeImageCommon} ${style.CoolingModeImage}`}></div>
   );
 };
-const LedModeImage = ({ children }) => {
+const LedModeImage = () => {
   return (
-    <div className={`${style.modeImageCommon} ${style.LedModeImage}`}>
-      {children}
-    </div>
+    <div className={`${style.modeImageCommon} ${style.LedModeImage}`}></div>
   );
 };
 
@@ -436,6 +254,13 @@ const SafeFeature = (props) => {
 };
 
 export function Laser() {
+  const [maruStatus, setMaruStatus] = useState(1234);
+
+  // useEffect(() => {
+  //   return setMaruStatus("plus");
+  // }, []);
+
+  console.log(maruStatus);
   return (
     <article className={`${style.commonContainer}`}>
       <section style={{ marginTop: "18px", marginBottom: "20px" }}>
@@ -467,7 +292,10 @@ export function Laser() {
         </div>
       </section>
       <section style={{ marginTop: "75px" }}>
-        <span className={style.subExplainLaserWarning}>
+        <span
+          className={style.subExplainLaserWarning}
+          onClick={(e) => console.log(e)}
+        >
           안심하고 사용할 수 있는
         </span>
         <br />
@@ -487,7 +315,8 @@ export function Laser() {
             }}
           >
             <span className={style.laserWarning}>
-              주의사항 &nbsp; <MaruPlus />
+              주의사항 &nbsp;{" "}
+              {maruStatus === "plus" ? <MaruPlus /> : <MaruMinus />}
             </span>
           </span>
         </span>

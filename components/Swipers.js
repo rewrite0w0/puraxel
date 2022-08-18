@@ -24,13 +24,8 @@ export default function Swipers({ children }) {
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {
-          // console.log(swiper.pagination.textContent);
-
-          // console.log(JSON.stringify(swiper));
-
-          // return current + "    ㅡ    " + total;
-          // return `<span style="font-size: 20px; color:rgba(85, 87, 111, 1)">${current} ㅡ</span>&nbsp;<span style="font-size:20px; color:pink;">${total}</span>`;
-          // return swiper.pagination.textContent;
+          console.log(document.documentURI);
+          console.log(swiper.realIndex);
 
           return `<span
           class="customPagination"
@@ -111,25 +106,13 @@ export default function Swipers({ children }) {
           </span>
         </span>`;
         },
-        renderFraction: (currentClass, totalClass) => {
-          console.log(currentClass, totalClass);
-          // return currentClass + " ㅡ " + totalClass;
-          return `${currentClass} + " ㅡ " + ${totalClass}`;
-          // return <Temp>{currentClass}</Temp>;
-        },
       }}
       scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true, onlyInViewport: true }}
-      // onKeyPress={(swiper, keycode) => {
-      //   if (keycode === 32) {
-      //     console.log(swiper);
-      //   }
-      // }}
-
       navigation={{ enabled: true }}
-      autoplay={{ delay: 10000 }}
+      // autoplay={{ delay: 10000 }}
       className={slideStlye.slide}
-      speed={750}
+      speed={1000}
       preloadImages={true}
       // lazy={{
       //   enabled: true,
