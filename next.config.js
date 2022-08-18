@@ -6,12 +6,13 @@ const debug = process.env.NODE_ENV !== "production";
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // experimental: {
-  //   scrollRestoration: true,
-  //   images: {
-  //     unoptimized: true,
-  //   },
-  // },
+
+  experimental: {
+    scrollRestoration: true,
+    images: {
+      unoptimized: true,
+    },
+  },
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "kr"],
