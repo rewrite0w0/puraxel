@@ -3,21 +3,31 @@ import _ from "./page1.module.css";
 export default function Page1() {
   return (
     <section className={_.container}>
-      <article className={_.innerContainer}>
-        <div className={_.explainContainer}>
+      <article className={_.explainContainer}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "80%",
+            justifyContent: "space-evenly",
+          }}
+        >
           <div
             style={{
               display: "flex",
               flexDirection: "column",
-              marginBottom: "96px",
             }}
           >
-            <span className={_.icon}>고품격 홈 레이저 퓨라셀</span>
-            <span className={_.iconTitle}>
-              홈 에스테틱
-              <br />
-              레이저의 시작
-            </span>
+            <div style={{ marginBottom: "20px" }}>
+              <span className={_.icon}>고품격 홈 레이저 퓨라셀</span>
+            </div>
+            <div>
+              <span className={_.iconTitle}>
+                홈 에스테틱
+                <br />
+                레이저의 시작
+              </span>
+            </div>
           </div>
 
           <div>
@@ -41,9 +51,9 @@ export default function Page1() {
             </div>
           </div>
         </div>
-        <div className={_.imageContainer}>
-          <div className={_.imageContent}></div>
-        </div>
+      </article>
+      <article className={_.imageContainer}>
+        <div className={_.imageContent}></div>
       </article>
     </section>
   );
