@@ -8,9 +8,9 @@
   align-items: center;
   /* justify-content: center; */
   /* background-color: pink; */
-  margin-left: 80px;
+  /* margin-left: 80px;
   margin-right: 80px;
-  margin-top: 24px;
+  margin-top: 24px; */
 }
 
 /* 여기서 바디 색 전부를 고침 */
@@ -39,7 +39,7 @@
   /* background-size: cover; */
 
   background-image: url(../../src/image/main/main_bg.svg);
-  /* background-size: cover; */
+  background-size: cover;
 }
 
 .layoutHeader {
@@ -51,9 +51,9 @@
   align-items: center;
   /* justify-content: center; */
   /* background-color: pink; */
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: 24px;
+  /* padding-left: 80px; */
+  /* margin-right: 80px; */
+  /* margin-top: 24px; */
 }
 
 .layoutBody {

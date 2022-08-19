@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  padding-top: 24px;
 }
 
 .buttonStyle {
@@ -79,6 +80,9 @@
   color: var(--grayScale06);
   font-size: 12px;
   margin-right: 40px;
+  line-height: 140%;
+
+  letter-spacing: -0.01em;
 }
 
 .buttonStyle:hover {
@@ -114,13 +118,13 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
+  padding-left: 80px;
 }
 
 .rightNav {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  margin-right: 80px;
 }
 
 .applyENFont {
