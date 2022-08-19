@@ -125,23 +125,23 @@ export default function Navbars(props) {
               location.href = "/tech";
             }}
             // title={layoutHeaderKr.puraTech}
-            title={"tech"}
+            title={"핵심기술"}
             className={navStyle.gnbMenu}
             style={{
               //   textDecoration: currentPage === "tech" ? "underline" : "none",
               //   textDecorationThickness: currentPage === "tech" ? "2px" : "none",
-              opacity: currentPage === "tehc" ? "1" : undefined,
+              opacity: currentPage === "tech" ? "1" : undefined,
             }}
           />
         </div>
       </section>
 
       <div className={navStyle.rightNav}>
-        <NavIconButton
+        {/* <NavIconButton
           title={"notice"}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
           sx={{ paddingRight: "10px", paddingLeft: "10px" }}
-        ></NavIconButton>
+        ></NavIconButton> */}
 
         <NavIconButton
           title={"newsletter"}

@@ -9,8 +9,7 @@ export default function Page0() {
 
         <span className={style.mainExplain}>레이저 기술로</span>
         <span className={style.mainExplainSub} style={{ marginBottom: "24px" }}>
-          <span className={style.mainExplainBold}>에스테틱에 혁신</span>을
-          가져오다
+          에스테틱에 혁신을 가져오다
         </span>
 
         <span className={style.subExplain}>

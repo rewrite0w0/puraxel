@@ -13,14 +13,14 @@ export default function CommonButtons(props) {
       <div className={_.buttonInnerContainer}>
         <div className={_.lineContainer}>
           <span className={_.topLeft}>{props.topLeft}</span>
-          <span>
+          <div className={_.topRightContainer}>
             <span className={_.topRight}>
               {props.topRightOriginalPrice ? props.topRightOriginalPrice : ""}
             </span>
             <span className={_.topRightDiscount}>
               {props.topRightDiscountPrice}
             </span>
-          </span>
+          </div>
         </div>
 
         <div className={_.lineContainer}>

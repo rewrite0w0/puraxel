@@ -217,6 +217,38 @@ const GalvanicImage = () => {
   );
 };
 
+const LaserToggleActive = () => {
+  return (
+    <div
+      className={`${style.laserImageContainer} ${style.imageContainer} ${style.laserImage}`}
+    />
+  );
+};
+
+const LaserToggleInActive = () => {
+  return (
+    <div
+      className={`${style.laserImageContainer} ${style.imageContainer} ${style.laserInactiveImage}`}
+    />
+  );
+};
+
+const GalvanicToggleActive = () => {
+  return (
+    <div
+      className={`${style.galvanicImageContainer} ${style.imageContainer} ${style.galvanicImage}`}
+    />
+  );
+};
+
+const GalvanicToggleInActive = () => {
+  return (
+    <div
+      className={`${style.galvanicImageContainer} ${style.imageContainer} ${style.galvanicInactiveImage}`}
+    />
+  );
+};
+
 export default function Page2(props) {
   const [modeSelector, setModeSelector] = useState("Laser");
   const [laserSelector, setLaserSelector] = useState(true);
@@ -258,7 +290,7 @@ export default function Page2(props) {
           <div className={style.leftPaperTop}>
             <span className={style.leftPaperTopFirst}>{meKr.Page2Intro1}</span>
             <br />
-            <span className={style.leftPaperTopSecond}>
+            <div className={style.leftPaperTopSecond}>
               <span className={style.leftPaperTopSecondPoint}>
                 {meKr.Page2Intro2A}
               </span>
@@ -267,20 +299,15 @@ export default function Page2(props) {
                 {meKr.Page2Intro2C}
               </span>
               <span>{meKr.Page2Intro2D}</span>
-            </span>
+            </div>
           </div>
 
           {/* 두 번째 grid: 이미지 모음 */}
           <div className={style.leftPaperMiddle}>
             {/* 레이저 */}
-            <div
-              className={style.laserContainer}
-              onClick={selectorLaser}
-              style={{
-                // background: modeCondition ? WHITEGRADIENT : DISABLECOLOR,
-                filter: modeCondition ? "grayscale(0)" : "grayscale(0.7)",
-              }}
-            ></div>
+            <div className={style.laserContainer} onClick={selectorLaser}>
+              {modeCondition ? <LaserToggleActive /> : <LaserToggleInActive />}
+            </div>
             {/* 중앙 */}
             <div
               style={{
@@ -292,13 +319,13 @@ export default function Page2(props) {
               <div className={style.plusImage}></div>
             </div>
             {/* 갈바닉 */}
-            <div
-              onClick={selectorGalvanic}
-              className={style.galvanicContainer}
-              style={{
-                filter: !modeCondition ? "grayscale(0)" : "grayscale(0.7)",
-              }}
-            ></div>
+            <div onClick={selectorGalvanic} className={style.galvanicContainer}>
+              {!modeCondition ? (
+                <GalvanicToggleActive />
+              ) : (
+                <GalvanicToggleInActive />
+              )}
+            </div>
           </div>
 
           {/* 세 번째 grid: 설명 */}

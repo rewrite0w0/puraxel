@@ -59,7 +59,7 @@
 }
 
 .mainExplainBold {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 40px;
 
   letter-spacing: -0.02em;
@@ -68,7 +68,7 @@
 }
 
 .subExplain {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 24px;
 
   letter-spacing: -0.02em;

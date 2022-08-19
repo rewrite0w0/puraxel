@@ -17,9 +17,10 @@ export default function Me() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Swipers>
-        <Oval startX={0} startY={0} EndX={0} EndY={300} />
+        {/* <Oval startX={0} startY={0} EndX={0} EndY={300} /> */}
         <SwiperSlide>
           {/* <Oval startX={0} startY={0} EndX={0} EndY={300} /> */}
+          {/* <Oval startX={220} startY={300} EndX={220} EndY={300} /> */}
           <Page0 />
         </SwiperSlide>
 

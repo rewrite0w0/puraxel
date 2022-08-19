@@ -22,7 +22,7 @@ export default function FX5000() {
       </Head>
 
       <Swipers>
-        <Oval startX={0} startY={0} EndX={1191} EndY={686} />
+        {/* <Oval startX={0} startY={0} EndX={1191} EndY={686} /> */}
 
         <SwiperSlide>
           <Page0 />

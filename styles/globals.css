@@ -169,14 +169,18 @@ img {
 }
 
 .swiper-button-next {
-  margin-right: 40px;
+  /* margin-right: 40px; */
+  margin-right: -8px;
   content: url(../src/image/toRight.svg);
   width: 100px !important;
+
   height: 100px !important;
 }
 
 .swiper-button-prev {
-  margin-left: 40px;
+  /* margin-left: 40px; */
+  margin-left: -8px;
+
   content: url(../src/image/toLeft.svg);
   width: 100px !important;
   height: 100px !important;
