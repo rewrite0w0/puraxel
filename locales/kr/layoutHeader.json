@@ -1,0 +1,21 @@
+{
+  "me": "ME",
+  "hair": "HAIR",
+  "fx5000": "FX-5000",
+  "puraTech": "tech",
+  "sns": "SNS",
+  "lameditechInfoOpen": "LAMEDITECH +",
+  "lameditechInfoClose": "LAMEDITECH -",
+  "companyInfoCurrentStateClose": "사업자 정보 +",
+  "companyInfoCurrentStateOpen": "사업자 정보 -",
+  "kr": "KR",
+  "en": "EN",
+  "companyInfoName": "주식회사 라메디텍",
+  "companyInfoRep": "대표자 최종석 | 사업자번호: 119-86-51786",
+  "companyInfoLicense": "통신판매신고번호 : 제2017-서울금천-0999호",
+  "companyInfoAddress1A": "서울특별시 금천구 벚꽃로 234, 10층 1002호",
+  "companyInfoAddress1B": "(가산동, 에이스하이엔드타워 6차)",
+  "companyInfoTel": "T. 02-852-7980",
+  "companyInfoFax": "F. 02-852-7983",
+  "companyInfoEmail": "E. sales@lameditech.com"
+}
