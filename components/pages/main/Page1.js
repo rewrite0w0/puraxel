@@ -9,7 +9,7 @@ export default function Page1() {
             style={{
               display: "flex",
               flexDirection: "column",
-              marginBottom: "6000px",
+              marginBottom: "96px",
             }}
           >
             <span className={_.icon}>고품격 홈 레이저 퓨라셀</span>
@@ -21,20 +21,24 @@ export default function Page1() {
           </div>
 
           <div>
-            <span className={_.mainExp}>
-              프락셔널 레이저 모듈로 생성되는
-              <br />
-              5000개의 마이크로 홀.
-            </span>
-
-            <span className={_.subExp}>
-              레이저, 시작부터 프로페셔널.
-              <br />
-              홈 레이저 뷰티 케어의 시작.
-              <br />
-              퓨라셀 ME.
-              <br />
-            </span>
+            <div style={{ marginBottom: "24px" }}>
+              <span className={_.mainExp}>
+                프락셔널 레이저 모듈로 생성되는
+                <br />
+                5000개의 마이크로 홀.
+              </span>
+            </div>
+            <br />
+            <div>
+              <span className={_.subExp}>
+                레이저, 시작부터 프로페셔널.
+                <br />
+                홈 레이저 뷰티 케어의 시작.
+                <br />
+                퓨라셀 ME.
+                <br />
+              </span>
+            </div>
           </div>
         </div>
         <div className={_.imageContainer}>

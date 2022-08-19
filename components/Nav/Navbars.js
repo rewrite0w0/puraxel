@@ -107,7 +107,7 @@ export default function Navbars(props) {
             }}
           />
 
-          {/* <NavIconButton
+          <NavIconButton
             onClick={() => {
               location.href = "/hair";
             }}
@@ -118,7 +118,7 @@ export default function Navbars(props) {
               //   textDecorationThickness: currentPage === "hair" ? "2px" : "none",
               opacity: currentPage === "hair" ? "1" : undefined,
             }}
-          /> */}
+          />
 
           <NavIconButton
             onClick={() => {

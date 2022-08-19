@@ -111,7 +111,7 @@ export default function Swipers({ children }) {
       keyboard={{ enabled: true, pageUpDown: true, onlyInViewport: true }}
       navigation={{ enabled: true }}
       // autoplay={{ delay: 10000 }}
-      className={slideStlye.slide}
+      // className={slideStlye.slide}
       speed={1000}
       preloadImages={true}
       // lazy={{
@@ -121,7 +121,7 @@ export default function Swipers({ children }) {
       //   loadOnTransitionStart: false,
       //   checkInView: true,
       // }}
-      rewind={true}
+      // rewind={true}
       effect={"fade"}
       fadeEffect={{ crossFade: true }}
       modules={[
