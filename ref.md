@@ -26,6 +26,10 @@
 - https://stackoverflow.com/questions/3383923/css-moz-available-equivalent-in-webkit
 - https://newbedev.com/putting-moz-available-and-webkit-fill-available-in-one-width-css-property
 
+## 이미지
+
+- https://zenn.dev/catnose99/articles/883f7dbbe21632a5254e
+
 ## 유튜브 관련
 
 - https://stackoverflow.com/questions/13981310/embed-youtube-video-with-no-ads 유튜브 박기

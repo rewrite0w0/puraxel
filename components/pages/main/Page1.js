@@ -8,14 +8,19 @@ export default function Page1() {
           style={{
             display: "flex",
             flexDirection: "column",
-            height: "80%",
-            justifyContent: "space-evenly",
+            // height: "50%",
+            // justifyContent: "space-evenly",
+            justifyContent: "center",
+            // background: "blue",
+            padding: "20px",
+            height: "100%",
           }}
         >
           <div
             style={{
               display: "flex",
               flexDirection: "column",
+              marginTop: "48px",
             }}
           >
             <div style={{ marginBottom: "20px" }}>
@@ -30,7 +35,13 @@ export default function Page1() {
             </div>
           </div>
 
-          <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginTop: "96px",
+            }}
+          >
             <div style={{ marginBottom: "24px" }}>
               <span className={_.mainExp}>
                 프락셔널 레이저 모듈로 생성되는

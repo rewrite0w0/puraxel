@@ -28,26 +28,22 @@
 
 .header0 {
   content: url(../../../src/image/ME/page4/me_01_active.svg);
-  content: url(../../../src/image/ME/page4/01.svg);
-  background-size: cover;
+  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header1 {
   content: url(../../../src/image/ME/page4/me_02_active.svg);
-  content: url(../../../src/image/ME/page4/02.svg);
-  background-size: cover;
+  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header2 {
   content: url(../../../src/image/ME/page4/me_03_active.svg);
-  content: url(../../../src/image/ME/page4/03.svg);
-  background-size: cover;
+  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header3 {
   content: url(../../../src/image/ME/page4/me_04_active.svg);
-  content: url(../../../src/image/ME/page4/04.svg);
-  background-size: cover;
+  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header00 {

@@ -17,33 +17,38 @@ const LaserExplain = (props) => {
 
   return (
     <animated.div style={styles}>
-      <span
+      <div
         className={style.explainTitle}
         style={{
           fontSize: "24px",
           letterSpacing: "-0.02em",
           color: "#55576F",
-          fontWeight: 600,
+          fontWeight: "600",
           letterSpacing: "-0.02em",
+          lineHeight: "132%",
+          marginBottom: "8px",
         }}
       >
         {meKr.Page2LaserTitle}
-      </span>
-      <br style={{ margin: "8px" }} />
+      </div>
+
       {/* <span>{meKr.Page2LaserExplain1A}</span>
       <span>{meKr.Page2LaserExplain1B}</span>
       <span>{meKr.Page2LaserExplain1C}</span> */}
-      <span>
-        <span className={style.explainPara}>
+
+      <div className={style.explainPara} style={{ marginBottom: "30px" }}>
+        <div>
           {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
           피부층에 약 100개의 작은 홀을 생성하여
-        </span>
-        <br />
-        <span className={style.explainPara}>
+        </div>
+
+        <div className={style.explainPara}>
           {/* {나중에 json 넣어야함} */}
           크림과 앰플의 피부흡수율을 높이줍니다.
-        </span>
-        <br style={{ marginBottom: "30px" }} />
+        </div>
+      </div>
+
+      <div>
         <span
           style={{
             fontSize: "12px",
@@ -52,6 +57,7 @@ const LaserExplain = (props) => {
             marginRight: "8px",
             fontWeight: "400",
             lineHeight: "140%",
+            marginRight: "8px",
           }}
         >
           {meKr.Page2LaserTechExplain1A}
@@ -67,7 +73,7 @@ const LaserExplain = (props) => {
         >
           {meKr.Page2LaserTechExplain1B}
         </span>
-      </span>
+      </div>
     </animated.div>
   );
 };
@@ -81,39 +87,42 @@ const GalvanicExplain = (props) => {
 
   return (
     <animated.div style={styles}>
-      <span
+      <div
         className={style.explainTitle}
         style={{
           fontSize: "24px",
           letterSpacing: "-0.02em",
           color: "#55576F",
           fontWeight: 600,
+          marginBottom: "8px",
         }}
       >
         {meKr.Page2GalvanicTitle}
-      </span>
-      <br style={{ margin: "8px" }} />
+      </div>
+
       {/* <span>{meKr.Page2GalvanicExplain1A}</span>
       <span>{meKr.Page2GalvanicExplain1B}</span>
       <span>{meKr.Page2GalvanicExplain1C}</span>
       <span>{meKr.Page2GalvanicExplain1D}</span> */}
-      <span className={style.explainPara}>
-        {/* {meKr.Page2GalvanicExplain} */}
-        <span>
-          같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
-          흡수율을 높입니다.
-        </span>
-        <br />
-        <span>
-          레이저 모드와 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
-        </span>
-      </span>
-      <br
+
+      <div
+        className={style.explainPara}
         style={{
           marginBottom: "30px",
         }}
-      />
-      <span>
+      >
+        {/* {meKr.Page2GalvanicExplain} */}
+        <div>
+          같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
+          흡수율을 높입니다.
+        </div>
+
+        <div>
+          레이저 모드와 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
+        </div>
+      </div>
+
+      <div>
         <span
           style={{
             fontSize: "12px",
@@ -163,7 +172,7 @@ const GalvanicExplain = (props) => {
         >
           {meKr.Page2GalvanicTechExplain2B}
         </span>
-      </span>
+      </div>
     </animated.div>
   );
 };
@@ -295,24 +304,24 @@ export default function Page2(props) {
           {/* 세 번째 grid: 설명 */}
           <div className={style.leftPaperBottom}>
             {/* 인디케이터 */}
-            <span className={style.indicator}>
-              <span
+            <div className={style.indicator}>
+              <div
                 className={style.indicatorAtom}
                 style={{
                   background: modeCondition
                     ? indicatorActive
                     : indicatorInactive,
                 }}
-              ></span>
-              <span
+              ></div>
+              <div
                 className={style.indicatorAtom}
                 style={{
                   background: !modeCondition
                     ? indicatorActive
                     : indicatorInactive,
                 }}
-              ></span>
-            </span>
+              ></div>
+            </div>
             {/* 설명 */}
             {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
           </div>
