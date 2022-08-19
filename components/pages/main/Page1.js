@@ -5,7 +5,13 @@ export default function Page1() {
     <section className={_.container}>
       <article className={_.innerContainer}>
         <div className={_.explainContainer}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              marginBottom: "6000px",
+            }}
+          >
             <span className={_.icon}>고품격 홈 레이저 퓨라셀</span>
             <span className={_.iconTitle}>
               홈 에스테틱
@@ -13,6 +19,7 @@ export default function Page1() {
               레이저의 시작
             </span>
           </div>
+
           <div>
             <span className={_.mainExp}>
               프락셔널 레이저 모듈로 생성되는

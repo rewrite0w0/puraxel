@@ -48,6 +48,6 @@ jobs:
       - name: next deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.DEPLOYKEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           # apikey: ${{ secrets.APIKEY }}
           publish_dir: ./out
