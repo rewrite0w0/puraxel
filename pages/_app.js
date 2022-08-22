@@ -1,7 +1,12 @@
-import Head from "next/head";
 import "styles/globals.css";
-import "swiper/css/bundle";
 import Layout from "components/layout/Layout";
+import Head from "next/head";
+import "swiper/css/bundle";
+
+import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+
 // import Transition from "components/Transition";
 import { Provider } from "jotai";
 

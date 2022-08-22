@@ -178,7 +178,7 @@ img {
 .swiper-button-next {
   /* margin-right: 40px; */
   margin-right: -8px;
-  content: url(../src/image/toRight.svg);
+  content: url(../src/image/main/toRight.svg);
   width: 100px !important;
 
   height: 100px !important;
@@ -188,7 +188,8 @@ img {
   /* margin-left: 40px; */
   margin-left: -8px;
 
-  content: url(../src/image/toLeft.svg);
+  background-image: url(../src/image/main/toLeft.svg);
+  background-size: cover;
   width: 100px !important;
   height: 100px !important;
 }

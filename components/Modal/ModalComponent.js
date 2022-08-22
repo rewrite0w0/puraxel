@@ -532,7 +532,9 @@ export default function ModalComponent(props) {
         // sx={{ display: "flex" }}
       >
         <DialogTitle>{modalKr.modalDetailTitle}</DialogTitle>
-        <DialogContent dividers="scroll">
+        <DialogContent
+        // dividers="scroll"
+        >
           {modalKr.modalDetailContent}
         </DialogContent>
       </Dialog>

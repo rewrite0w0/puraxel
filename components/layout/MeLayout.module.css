@@ -55,7 +55,7 @@
   bottom: 0;
   width: -moz-available;
   width: -webkit-fill-available;
-  width: fill-available;
+  /* width: fill-available; */
 
   margin-right: 80px;
   margin-left: 80px;

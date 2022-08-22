@@ -7,12 +7,19 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
+  extends: "next",
+  rules: {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+  },
+
   experimental: {
     scrollRestoration: true,
     images: {
       unoptimized: true,
     },
   },
+
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "kr"],
@@ -23,7 +30,15 @@ const nextConfig = {
   // },
   // basePath: "/puraxel",
 
-  // assetPrefix: isProd ? "/puraxel/" : "",
+  assetPrefix: isProd ? "/puraxel" : "",
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      "/": { page: "/" },
+    };
+  },
 };
 
 module.exports = nextConfig;

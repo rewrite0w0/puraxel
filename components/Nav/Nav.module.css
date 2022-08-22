@@ -98,7 +98,7 @@
   height: 2vw;
   margin-left: 1vw;
   margin-right: 2vw; */
-  content: url(../../src/image/header/gnb_home_active_hover.svg);
+  content: url(../../src/image/main/gnb_home_active_hover.svg);
   /* size: 1rem; */
   /* background-image: url(../../src/image/header/gnb_logo_default.svg); */
   /* background-size: cover; */
@@ -241,7 +241,7 @@
 
 .companyLinkButton {
   cursor: "pointer";
-  content: url(../../src/image/header/lmdt_link.svg);
+  content: url(../../src/image/main/lmdt_link.svg);
   width: 114px;
   height: 21px;
 }
