@@ -4,6 +4,7 @@ import _ from "./page1.module.css";
 import { ArrowLA, ArrowLI, ArrowRA, ArrowRI } from "components/Parts/Icons";
 
 import Fadein from "components/Parts/FadeIn";
+import FadeOut from "components/Parts/FadeOut";
 
 const MaruNumber = (props) => {
   return <section className={_.maruNumber}>{props.num}</section>;

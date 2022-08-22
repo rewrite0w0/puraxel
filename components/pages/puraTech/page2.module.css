@@ -58,25 +58,48 @@
   width: 299px;
   height: 116px;
 
-  background: linear-gradient(
-    180deg,
-    rgba(233, 240, 250, 0.5) 0%,
-    rgba(213, 228, 250, 0.015) 54.12%,
-    rgba(255, 255, 255, 0.15) 100%
-  );
-
-  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(20px);
-
-  border-radius: 4px;
-
   display: flex;
   flex-direction: column;
 
   justify-content: center;
 
   padding-left: 20px;
+  padding-right: 20px;
+
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid;
+
+  border-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(85, 87, 111, 0.3) 100%
+    )
+    1 round space;
+  /* 아 어쩌라는거 이거? */
+
+  border-radius: 4px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(233, 240, 250, 0.5) 0%,
+    rgba(213, 228, 250, 0.015) 54.12%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
 }
+
+/* .expTop::after {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(85, 87, 111, 0.3) 100%
+  );
+  content: "";
+  z-index: -1;
+  position: relative;
+  border-radius: 4px;
+} */
 
 .expTopUpper {
   font-weight: 500;
@@ -84,7 +107,7 @@
   font-size: 16px;
 
   color: var(--primary01);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .expTopLower {
@@ -117,7 +140,8 @@
   font-weight: 300;
   /* font-weight: lighter; */
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   margin-left: 150px;
   margin-top: -30px;
@@ -131,7 +155,10 @@
 }
 
 .borderLineDash {
-  width: 337px;
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+
   border: 1px dashed var(--grayScale03);
   margin-top: 24px;
   margin-bottom: 24px;

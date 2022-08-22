@@ -121,7 +121,7 @@
 }
 .page03Image {
   /* content: url(../../../src/image/PURATECH/page1/tech_main_03.svg); */
-  content: url(../../../src/image/PURATECH/page1/tech_main_02.png);
+  content: url(../../../src/image/PURATECH/page1/tech_main_03.png);
   margin-top: 38px;
   width: 722px;
   height: 340px;
@@ -130,7 +130,7 @@
 .ExplainCommonPara {
   font-weight: 500;
   font-size: 16px;
-
+  line-height: 150%;
   letter-spacing: -0.01em;
 
   color: var(--grayScale07);
@@ -139,6 +139,7 @@
 .ExplainCommonParaSub {
   font-weight: 600;
   font-size: 12px;
+  line-height: 150%;
 
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;

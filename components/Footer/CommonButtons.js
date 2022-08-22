@@ -24,7 +24,7 @@ export default function CommonButtons(props) {
         </div>
 
         <div className={_.lineContainer}>
-          <span className={_.botLeft}>
+          <span className={_.botLeft} style={props.bot_left_style}>
             {props.bottomLeft ? props.bottomLeft : ""}
           </span>
           <span>

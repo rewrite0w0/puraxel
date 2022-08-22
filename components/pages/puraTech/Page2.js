@@ -15,11 +15,11 @@ const Title = () => {
 const ExplainTop = () => {
   return (
     <section className={style.expTop}>
-      <span className={style.expTopUpper}>
+      <div className={style.expTopUpper}>
         퓨라셀에 사용된 미용 레이저, 어븀야그
-      </span>
-      <br />
-      <span className={style.expTopLower}>Er : Yag, 2940nm</span>
+      </div>
+
+      <div className={style.expTopLower}>Er : Yag, 2940nm</div>
     </section>
   );
 };

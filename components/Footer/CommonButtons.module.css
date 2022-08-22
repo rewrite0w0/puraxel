@@ -112,6 +112,8 @@
   padding: 2px 4px;
   width: 55px;
   height: 22px;
+  place-content: center;
+  place-items: center;
 }
 
 .botRightz {

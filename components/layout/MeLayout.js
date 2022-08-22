@@ -59,6 +59,7 @@ export default function MeLayout({ children }) {
             topRightOriginalPrice={<OriginalPrice />}
             topRightDiscountPrice="1,977,600원"
             bottomLeft="23% off"
+            bot_left_style={{ backgroundColor: "#F2F3F7" }}
             bottomRightz="12개월"
             bottomRightx="월 157,500원"
             style={{
