@@ -1,10 +1,43 @@
 import { useState, useEffect } from "react";
 import _ from "./temp.page5.module.css";
+import Fadein from "components/Parts/FadeIn";
 
 import parts01onPaper from "src/image/FX5000/page5/fx-5000_01_active.svg";
 import parts02onPaper from "src/image/FX5000/page5/fx-5000_02_active.svg";
 import parts03onPaper from "src/image/FX5000/page5/fx-5000_03_active.svg";
 import parts04onPaper from "src/image/FX5000/page5/fx-5000_04_active.svg";
+
+const Header0 = () => {
+  return <div className={_.header0}></div>;
+};
+
+const Header00 = () => {
+  return <div className={_.header00}></div>;
+};
+
+const Header1 = () => {
+  return <div className={_.header1}></div>;
+};
+
+const Header11 = () => {
+  return <div className={_.header11}></div>;
+};
+
+const Header2 = () => {
+  return <div className={_.header2}></div>;
+};
+
+const Header22 = () => {
+  return <div className={_.header22}></div>;
+};
+
+const Header3 = () => {
+  return <div className={_.header3}></div>;
+};
+
+const Header33 = () => {
+  return <div className={_.header33}></div>;
+};
 
 const GrayButton = (props) => {
   return (
@@ -166,17 +199,33 @@ export default function Page5() {
   };
 
   const Parts01 = () => {
-    return <div className={_.promo0}></div>;
+    return (
+      <Fadein>
+        <div className={_.promo0}></div>
+      </Fadein>
+    );
   };
 
   const Parts02 = () => {
-    return <div className={_.promo1}></div>;
+    return (
+      <Fadein>
+        <div className={_.promo1}></div>
+      </Fadein>
+    );
   };
   const Parts03 = () => {
-    return <div className={_.promo2}></div>;
+    return (
+      <Fadein>
+        <div className={_.promo2}></div>
+      </Fadein>
+    );
   };
   const Parts04 = () => {
-    return <div className={_.promo3}></div>;
+    return (
+      <Fadein>
+        <div className={_.promo3}></div>
+      </Fadein>
+    );
   };
 
   const PartsViewer = () => {
@@ -202,37 +251,31 @@ export default function Page5() {
   return (
     <section className={_.container}>
       <aside className={_.imageSelector}>
-        <div
-          className={`${_.imageCommon} ${_.header0}`}
-          style={{
-            filter: parts === "pu" ? "grayScale(0)" : "grayScale(1)",
-          }}
-          onClick={imageOnClickHandler.onPu}
-        ></div>
-        <div
-          className={`${_.imageCommon} ${_.header1}`}
-          style={{
-            filter: parts === "ra" ? "grayScale(0)" : "grayScale(1)",
-          }}
-          onClick={imageOnClickHandler.onRa}
-        ></div>
-        <div
-          className={`${_.imageCommon} ${_.header2}`}
-          style={{
-            filter: parts === "xel" ? "grayScale(0)" : "grayScale(1)",
-          }}
-          onClick={imageOnClickHandler.onXel}
-        ></div>
-        <div
-          className={`${_.imageCommon} ${_.header3}`}
-          style={{
-            filter: parts === "me" ? "grayScale(0)" : "grayScale(1)",
-          }}
-          onClick={imageOnClickHandler.onMe}
-        ></div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onPu}>
+          {parts === "pu" ? <Header0 /> : <Header00 />}
+        </div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onRa}>
+          {parts === "ra" ? <Header1 /> : <Header11 />}
+        </div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onXel}>
+          {parts === "xel" ? <Header2 /> : <Header22 />}
+        </div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onMe}>
+          {parts === "me" ? <Header3 /> : <Header33 />}
+        </div>
       </aside>
       <article className={_.imageContainer}>
-        <PartsViewer />
+        <div
+          style={{
+            width: "800px",
+            height: "1000px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <PartsViewer />
+        </div>
       </article>
       <article className={_.explainContainer}>
         <div style={{ marginBottom: "24px" }}>

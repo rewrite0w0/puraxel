@@ -256,7 +256,17 @@ export default function Page5() {
         </div>
       </aside>
       <article className={_.imageContainer}>
-        <PartsViewer />
+        <div
+          style={{
+            width: "800px",
+            height: "800px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <PartsViewer />
+        </div>
       </article>
       <article className={_.explainContainer}>
         <div style={{ marginBottom: "24px" }}>

@@ -258,8 +258,8 @@ export default function Page5() {
       <article className={_.imageContainer}>
         <div
           style={{
-            width: "1000px",
-            height: "1000px",
+            width: "800px",
+            height: "800px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
