@@ -52,6 +52,11 @@
   display: none;
 }
 
+*::selection {
+  color: yellow;
+  background-color: blue;
+}
+
 html,
 body {
   padding: 0;
@@ -61,6 +66,8 @@ body {
 
   /* 1rem = 10px 변환 */
   /* font-size: 62.5%; */
+
+  font-size: 62.5%;
 }
 
 a {

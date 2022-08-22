@@ -33,7 +33,7 @@
   flex-direction: row;
   z-index: 1;
 
-  position: absolute;
+  position: fixed;
   /* position: fixed; */
 
   /* bottom: 100px; */

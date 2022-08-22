@@ -124,6 +124,8 @@ export default function Swipers({ children }) {
       // rewind={true}
       effect={"fade"}
       fadeEffect={{ crossFade: true }}
+      // onActiveIndexChange={true}
+      // onSlideChange={true}
       modules={[
         Mousewheel,
         Pagination,
