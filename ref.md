@@ -30,6 +30,11 @@
 
 - https://zenn.dev/catnose99/articles/883f7dbbe21632a5254e
 
+```
+max-width: 100%;
+display: block;
+```
+
 ## 유튜브 관련
 
 - https://stackoverflow.com/questions/13981310/embed-youtube-video-with-no-ads 유튜브 박기

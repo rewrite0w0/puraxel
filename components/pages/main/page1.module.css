@@ -166,3 +166,39 @@
 
   color: #7e818d;
 }
+
+@media all and (max-width: 1279px) {
+  .container {
+    visibility: hidden;
+  }
+}
+
+@media all and (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    background-color: pink;
+  }
+}
+
+@media all and (min-width: 1600px) and (max-width: 1919px) {
+  .container {
+    background-color: pink;
+  }
+}
+
+@media all and (min-width: 2560px) and (max-width: 3839px) {
+  .container {
+    background-color: red;
+  }
+}
+
+@media all and (min-width: 3840px) and (max-width: 4000px) {
+  .container {
+    background-color: royalblue;
+  }
+}
+
+@media all and (min-width: 4001px) {
+  .container {
+    visibility: hidden;
+  }
+}

@@ -1,37 +1,61 @@
-.main {
-  background-image: url(../src/image/main/main_bg.svg);
-  background-size: cover;
+@media all and (max-width: 1023px) {
+  * {
+    visibility: hidden;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  /* body {
+    background-color: teal;
+  } */
+
+  * {
+    visibility: hidden;
+  }
+}
+
+/*  */
+
+@media all and (min-width: 1920px) and (max-width: 2559px) {
+  body {
+    background-color: darkcyan;
+  }
 }
 
 @media all and (max-width: 1279px) {
-  .main {
+  * {
     visibility: hidden;
   }
 }
 
 @media all and (min-width: 1280px) and (max-width: 1599px) {
+  body {
+    background-color: blue;
+  }
 }
 
 @media all and (min-width: 1600px) and (max-width: 1919px) {
-  .main {
+  body {
     background-color: pink;
   }
 }
 
 @media all and (min-width: 2560px) and (max-width: 3839px) {
-  .main {
+  body {
     background-color: red;
   }
 }
 
 @media all and (min-width: 3840px) and (max-width: 4000px) {
-  .main {
+  body {
     background-color: royalblue;
   }
 }
 
 @media all and (min-width: 4001px) {
-  .main {
+  * {
     visibility: hidden;
   }
 }
+
+/*  */

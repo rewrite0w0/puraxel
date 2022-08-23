@@ -168,6 +168,8 @@ img {
   aspect-ratio: 2/1;
   object-fit: cover;
   object-position: top center;
+  max-width: 100%;
+  display: block;
 }
 
 .swiper-button-next::after,
@@ -197,3 +199,45 @@ img {
 .swiper-button-disabled {
   visibility: hidden;
 }
+
+/* @media (max-width: 1023px) {
+  * {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 3840px) and (max-width: 4400px) {
+  body {
+    background-color: royalblue;
+  }
+}
+
+@media (min-width: 4401px) {
+  * {
+    visibility: hidden;
+  }
+} */

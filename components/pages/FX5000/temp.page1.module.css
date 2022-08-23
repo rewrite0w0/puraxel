@@ -87,3 +87,93 @@
   /* max-height: 100%; */
   content: url(../../../src/image/FX5000/page1/FX5000.svg);
 }
+
+/* @media (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    background-color: skyblue;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .container {
+    background-color: yellowgreen;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .container {
+    background-color: turquoise;
+  }
+} */
+
+/* @media (max-width: 1023px) {
+  .container {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    background-color: teal;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .container {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .container {
+    background-color: red;
+  }
+} */
+
+@media (max-width: 1023px) {
+  .container {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    background-color: teal;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .container {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .container {
+    background-color: pink;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .container {
+    background-color: red;
+  }
+}
+
+@media (min-width: 3840px) and (max-width: 4400px) {
+  .container {
+    background-color: royalblue;
+  }
+}
+
+@media (min-width: 4401px) {
+  .container {
+    visibility: hidden;
+  }
+}
