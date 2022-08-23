@@ -56,6 +56,8 @@
   line-height: 128%;
 
   color: var(--grayScale07);
+
+  margin-bottom: 24px;
 }
 
 .mainExplainBold {
@@ -79,4 +81,17 @@
 .meImage {
   content: url(../../../src/image/ME/page1/me_main.svg);
   display: flex;
+}
+
+.explain_sub {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  /* identical to box height, or 34px */
+
+  letter-spacing: -0.02em;
+
+  /* grayscale/07 */
+
+  color: #4d5058;
 }
