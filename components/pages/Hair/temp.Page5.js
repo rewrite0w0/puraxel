@@ -2,41 +2,36 @@ import { useState, useEffect } from "react";
 import _ from "./temp.page5.module.css";
 import Fadein from "components/Parts/FadeIn";
 
-import parts01onPaper from "src/image/FX5000/page5/fx-5000_01_active.svg";
-import parts02onPaper from "src/image/FX5000/page5/fx-5000_02_active.svg";
-import parts03onPaper from "src/image/FX5000/page5/fx-5000_03_active.svg";
-import parts04onPaper from "src/image/FX5000/page5/fx-5000_04_active.svg";
-
 const Header0 = () => {
-  return <div className={_.header0}></div>;
+  return <div className={`${_.header0} ${_.imageCommon}`}></div>;
 };
 
 const Header00 = () => {
-  return <div className={_.header00}></div>;
+  return <div className={`${_.header00} ${_.imageCommon}`}></div>;
 };
 
 const Header1 = () => {
-  return <div className={_.header1}></div>;
+  return <div className={`${_.header1} ${_.imageCommon}`}></div>;
 };
 
 const Header11 = () => {
-  return <div className={_.header11}></div>;
+  return <div className={`${_.header11} ${_.imageCommon}`}></div>;
 };
 
 const Header2 = () => {
-  return <div className={_.header2}></div>;
+  return <div className={`${_.header2} ${_.imageCommon}`}></div>;
 };
 
 const Header22 = () => {
-  return <div className={_.header22}></div>;
+  return <div className={`${_.header22} ${_.imageCommon}`}></div>;
 };
 
 const Header3 = () => {
-  return <div className={_.header3}></div>;
+  return <div className={`${_.header3} ${_.imageCommon}`}></div>;
 };
 
 const Header33 = () => {
-  return <div className={_.header33}></div>;
+  return <div className={`${_.header33} ${_.imageCommon}`}></div>;
 };
 
 const GrayButton = (props) => {
@@ -268,7 +263,7 @@ export default function Page5() {
         <div
           style={{
             width: "800px",
-            height: "1000px",
+            height: "800px",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

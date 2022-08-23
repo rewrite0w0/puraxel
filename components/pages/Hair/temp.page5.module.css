@@ -22,68 +22,61 @@
 .imageCommon {
   height: 96px;
   width: 96px;
+
   display: flex;
   flex-wrap: wrap;
 }
 
 .header0 {
-  content: url(../../../src/image/HAIR/page5);
+  content: url(../../../src/image/HAIR/page5/me_01_active.png);
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header1 {
-  content: url(../../../src/image/ME/page4/me_02_active.svg);
+  content: url(../../../src/image/HAIR/page5/me_02_active.png);
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header2 {
-  content: url(../../../src/image/ME/page4/me_03_active.svg);
+  content: url(../../../src/image/HAIR/page5/me_03_active.png);
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header3 {
-  content: url(../../../src/image/ME/page4/me_04_active.svg);
+  content: url(../../../src/image/HAIR/page5/me_04_active.png);
   filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.12));
 }
 
 .header00 {
-  content: url(../../../src/image/ME/page4/me_01_inactive.svg);
-  background-size: cover;
+  content: url(../../../src/image/HAIR/page5/me_01_inactive.png);
 }
 
 .header11 {
-  content: url(../../../src/image/ME/page4/me_02_inactive.svg);
-  background-size: cover;
+  content: url(../../../src/image/HAIR/page5/me_02_inactive.png);
 }
 
 .header22 {
-  content: url(../../../src/image/ME/page4/me_03_inactive.svg);
-  background-size: cover;
+  content: url(../../../src/image/HAIR/page5/me_03_inactive.png);
 }
 
 .header33 {
-  content: url(../../../src/image/ME/page4/me_04_inactive.svg);
-  background-size: cover;
+  content: url(../../../src/image/HAIR/page5/me_04_inactive.png);
 }
 
 .promo0 {
   content: url(../../../src/image/FX5000/page5/fx-5000_img_01.svg);
-  background-size: cover;
 }
 
 .promo1 {
   content: url(../../../src/image/FX5000/page5/fx-5000_img_02.svg);
-  background-size: cover;
 }
 
 .promo2 {
   content: url(../../../src/image/FX5000/page5/fx-5000_img_03.svg);
-  background-size: cover;
 }
 
 .promo3 {
   content: url(../../../src/image/FX5000/page5/fx-5000_img_04.svg);
-  background-size: cover;
 }
 
 .imageContainer {
