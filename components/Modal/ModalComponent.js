@@ -1,6 +1,5 @@
 import { useState } from "react";
-import buttonStyle from "components/Footer/LinkPriceButton.module.css";
-import LinkButton from "components/Footer/LinkButton";
+
 import {
   Box,
   Button,

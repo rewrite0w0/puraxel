@@ -1,5 +1,3 @@
-import LinkButton from "components/Footer/LinkButton";
-import LinkPriceButton from "components/Footer/LinkPriceButton";
 import layoutFooterKr from "public/locales/kr/layoutFooter.json";
 
 import { ShopIcon } from "components/Parts/Icons";
@@ -12,10 +10,7 @@ export default function MeLayout({ children }) {
   return (
     <main className={style.meContainer}>
       <article className={style.bodyContainer}>{children}</article>
-      <footer
-        className={style.footerContainer}
-        // style={{ background: "black" }}
-      >
+      <footer className={style.footerContainer}>
         <div style={{ display: "flex" }}>
           <CommonPlainButtons
             title={layoutFooterKr.ShoppingMallLink}
@@ -68,12 +63,7 @@ export default function MeLayout({ children }) {
             link="https://lmdt.cafe24.com"
           />
         </div>
-        {/* <CommonManualFractionButtons
-            title="여기에 캐러셀 혹은 수동 캐러셀"
-            style={{ width: "92px", marginRight: "80px" }}
-          /> */}
       </footer>
-      {/* </article> */}
     </main>
   );
 }
