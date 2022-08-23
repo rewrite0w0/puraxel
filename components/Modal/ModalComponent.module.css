@@ -1,6 +1,4 @@
 .modalContainer {
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
   display: flex;
 
   width: 1580px;
@@ -26,17 +24,10 @@
 }
 
 .left {
-  /* background: skyblue; */
-  /* font-size: 1vw; */
-
-  /* display: grid;
-  grid-template-rows: repeat(5, 0.5fr) 4fr; */
   display: flex;
   flex-direction: column;
-  /* padding-left: 20px;
-  padding-right: 20px; */
+
   margin-top: 40px;
-  /* background-color: black; */
   width: 377px;
 }
 
@@ -47,22 +38,11 @@
   font-weight: 300;
 }
 
-/* .center {
-  width: 10vw;
-} */
-
 .right {
-  /* font-size: 1vw; */
-  /* background: yellowgreen; */
-  /* display: flex;
-  flex-direction: column; */
-  /* display: grid; */
-  /* grid-template-rows: 0.5fr 0.5fr 4fr 0.5fr; */
   display: flex;
   flex-direction: column;
   width: -moz-available;
   width: -webkit-fill-available;
-  /* width: fill-available; */
   margin-left: 40px;
 }
 
@@ -103,7 +83,6 @@
 
   letter-spacing: -0.01em;
 
-  /* grayscale/06 */
   color: var(--grayScale06);
 }
 
@@ -189,7 +168,6 @@
 
   letter-spacing: -0.01em;
 
-  /* grayscale/07 */
   color: #4d5058;
 }
 

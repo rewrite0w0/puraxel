@@ -9,12 +9,8 @@ import {
   FormControl,
   Select,
   MenuItem,
-  OutlinedInput,
-  InputLabel,
   ButtonGroup,
   Checkbox,
-  FormControlLabel,
-  Popper,
   Dialog,
   DialogTitle,
   DialogContent,
@@ -29,11 +25,6 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
 
 import { AskIcon, Inquiry, ShopIC } from "components/Parts/Icons";
-
-// import Box from "@mui/material/Box";
-// import Button from "@mui/material/Button";
-// import Typography from "@mui/material/Typography";
-// import Modal from "@mui/material/Modal";
 
 const bgStyle = {
   position: "absolute",
