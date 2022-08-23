@@ -1,97 +1,182 @@
-import { useState } from "react";
-import style from "./page5.module.css";
+import { useState, useEffect } from "react";
+import _ from "./page5.module.css";
+import Fadein from "components/Parts/FadeIn";
 
-import parts01 from "src/image/ME/page4/me_04_01.svg";
-import parts02 from "src/image/ME/page4/me_04_02.svg";
-import parts03 from "src/image/ME/page4/me_04_03.svg";
-import parts04 from "src/image/ME/page4/me_04_04.svg";
+const Header0 = () => {
+  return <div className={`${_.header0} ${_.imageCommon}`}></div>;
+};
 
-import parts01onPaper from "src/image/FX5000/page5/fx-5000_01_active.svg";
-import parts02onPaper from "src/image/FX5000/page5/fx-5000_02_active.svg";
-import parts03onPaper from "src/image/FX5000/page5/fx-5000_03_active.svg";
-import parts04onPaper from "src/image/FX5000/page5/fx-5000_04_active.svg";
+const Header00 = () => {
+  return <div className={`${_.header00} ${_.imageCommon}`}></div>;
+};
 
-import parts01onPaperOff from "src/image/ME/page4/me_01_inactive.svg";
-import parts02onPaperOff from "src/image/ME/page4/me_02_inactive.svg";
-import parts03onPaperOff from "src/image/ME/page4/me_03_inactive.svg";
-import parts04onPaperOff from "src/image/ME/page4/me_04_inactive.svg";
+const Header1 = () => {
+  return <div className={`${_.header1} ${_.imageCommon}`}></div>;
+};
 
-import Image from "next/image";
-import { Paper } from "@mui/material";
+const Header11 = () => {
+  return <div className={`${_.header11} ${_.imageCommon}`}></div>;
+};
 
-const PaperLeftBot = (props) => {
+const Header2 = () => {
+  return <div className={`${_.header2} ${_.imageCommon}`}></div>;
+};
+
+const Header22 = () => {
+  return <div className={`${_.header22} ${_.imageCommon}`}></div>;
+};
+
+const Header3 = () => {
+  return <div className={`${_.header3} ${_.imageCommon}`}></div>;
+};
+
+const Header33 = () => {
+  return <div className={`${_.header33} ${_.imageCommon}`}></div>;
+};
+
+const GrayButton = (props) => {
   return (
-    <section
+    <span
+      className={`${_.optionButtonCommon}`}
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 2fr",
-        padding: "24px",
-        borderBottom: "1px solid #F2F3F6",
-        width: "300px",
-        fontSize: "16px",
-        letterSpacing: "-0.01em",
+        width: props.width,
       }}
     >
-      <div style={{ color: "#A7ABB6" }}>{props.title}</div>
-      <div style={{ color: "#4D5058", marginLeft: "50px" }}>
-        {props.explain}
-      </div>
+      {props.title}
+    </span>
+  );
+};
+
+const Bar = () => {
+  return (
+    <div className={_.hrContainer}>
+      <hr className={_.commonHR} />
+    </div>
+  );
+};
+
+const ExplainFrame = (props) => {
+  return (
+    <section className={_.frameContainer}>
+      <Bar />
+      <br />
+      <span className={_.frameTitle}>{props.title}</span>
+      <br />
+      <span className={_.frameExp}>{props.exp}</span>
     </section>
   );
 };
 
-const PaperRightBot = (props) => {
+const ExplainFeatureMode = () => {
+  return (
+    <span>
+      1) 레이저 모드
+      <br />
+      2) 초음파 모드
+      <br />
+      3) 갈바닉 모드 <span className={_.subExplain}>(옵션)</span>
+      <br />
+      4) 쿨링 모드 <span className={_.subExplain}>(옵션)</span>
+      <br />
+      5) LED 모드 <span className={_.subExplain}>(옵션)</span>
+      <br />
+    </span>
+  );
+};
+
+const ProductWeight = () => {
+  return (
+    <span className={_.mainExplain}>
+      616g <span className={_.subExplain}>(Main body)</span>
+      <br />
+      503g <span className={_.subExplain}>(Cradle, 배터리 포함)</span>
+    </span>
+  );
+};
+
+const ProductSize = () => {
+  return (
+    <span>
+      82x201x225.3mm <span className={_.subExplain}>(Main body)</span>
+      <br />
+      250x169x135mm <span className={_.subExplain}>(Cradle)</span>
+    </span>
+  );
+};
+
+const ProductBattery = () => {
+  return (
+    <span>
+      11.1V 1,300mAh
+      <br />
+      Lithium-Polymer Battery
+      <br />
+      충전 어댑터: 14VDC / 1.71A
+    </span>
+  );
+};
+const ProductETC = () => {
+  return (
+    <span style={{ display: "flex", flexWrap: "wrap" }}>
+      <GrayButton title="제품 본체" width="76px" />
+      <GrayButton title="충전 크래들" width="88px" />
+      <GrayButton title="어댑터" width="61px" />
+      <GrayButton title="보안경(시술자용, 고객용)" width="161px" />
+      <GrayButton title="레이저 헤드팁(원형, 일자, 네모)" width="195px" />
+      <GrayButton title="초음파 헤드" width="88px" />
+      <GrayButton title="배터리(충전용) *2" width="124px" />
+      <GrayButton title="사용 설명서" width="88px" />
+      <GrayButton title="퀵 가이드" width="76px" />
+    </span>
+  );
+};
+
+const ExplainOnPaper = () => {
   return (
     <section
       style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 3fr",
-        padding: "24px",
-        borderBottom: "1px solid #F2F3F6",
-        width: "425px",
+        // display: "grid",
+        // gridTemplateColumns: "1fr 1fr auto",
+        display: "flex",
+        width: "100%",
+        flexWrap: "wrap",
       }}
     >
-      <div
-        style={{ fontSize: "16px", letterSpacing: "-0.01em", color: "#A7ABB6" }}
-      >
-        {props.title}
-      </div>
-
       <div
         style={{
-          color: "#4D5058",
-          fontSize: "16px",
-          letterSpacing: "-0.01em",
-          marginLeft: "50px",
+          display: "flex",
+          flexDirection: "column",
+          alignSelf: "flex-start",
+          justifyContent: "flex-start",
+          width: "50%",
         }}
       >
-        <div>{props.firstEX}</div>
-        <div>{props.secondEX}</div>
+        <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
+        <ExplainFrame title="레이저 종류" exp="Er:YAG" />
+        <ExplainFrame title="레이저 등급" exp="1등급(class 1)" />
+        <ExplainFrame title="레이저 레벨 범위" exp="1~3 level" />
+        <ExplainFrame title="기능 모드" exp={<ExplainFeatureMode />} />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignSelf: "flex-start",
+          justifyContent: "flex-start",
+          width: "50%",
+        }}
+      >
+        <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
+        <ExplainFrame title="제품 사이즈" exp={<ProductSize />} />
+        <ExplainFrame title="배터리" exp={<ProductBattery />} />
+        <ExplainFrame title="구성품" exp={<ProductETC />} />
       </div>
     </section>
   );
 };
 
-const Parts01 = () => {
-  return <div className={style.meParts01} imagenum="pu"></div>;
-  // return <Image src={parts01} />;
-};
-
-const Parts02 = () => {
-  return <div className={style.meParts02} imagenum="ra"></div>;
-  // return <Image src={parts02} />;
-};
-const Parts03 = () => {
-  return <div className={style.meParts03} imagenum="xel"></div>;
-  // return <Image src={parts03} />;
-};
-const Parts04 = () => {
-  return <div className={style.meParts04} imagenum="me"></div>;
-  // return <Image src={parts04} />;
-};
-
-export default function Page4(props) {
-  const [parts, setParts] = useState("pu");
+export default function Page5() {
+  const [parts, setParts] = useState(undefined);
 
   const imageOnClickHandler = {
     onPu: () => {
@@ -108,7 +193,37 @@ export default function Page4(props) {
     },
   };
 
-  const PartViewer = () => {
+  const Parts01 = () => {
+    return (
+      <Fadein>
+        <div className={_.promo0}></div>
+      </Fadein>
+    );
+  };
+
+  const Parts02 = () => {
+    return (
+      <Fadein>
+        <div className={_.promo1}></div>
+      </Fadein>
+    );
+  };
+  const Parts03 = () => {
+    return (
+      <Fadein>
+        <div className={_.promo2}></div>
+      </Fadein>
+    );
+  };
+  const Parts04 = () => {
+    return (
+      <Fadein>
+        <div className={_.promo3}></div>
+      </Fadein>
+    );
+  };
+
+  const PartsViewer = () => {
     if (parts === "pu") {
       return <Parts01 />;
     }
@@ -124,157 +239,50 @@ export default function Page4(props) {
     }
   };
 
+  useEffect(() => {
+    return setParts("pu");
+  }, []);
+
   return (
-    <div className={style.container}>
-      <div
-        style={{
-          // background: "pink",
-          display: "flex",
-          // width: "40%",
-          justifyContent: "center",
-          // marginTop: "500px",
-          padding: "25px",
-          marginTop: "145px",
-          marginRight: "266px",
-          marginLeft: "160px",
-          marginBottom: "100px",
-        }}
-      >
-        {<PartViewer />}
-      </div>
-      <div
-        style={{
-          display: "flex",
-          // width: "60%",
-          overflow: "inherit",
-          justifyContent: "flex-end",
-        }}
-      >
-        {/* {<PartViewer />} */}
-        <article
+    <section className={_.container}>
+      <aside className={_.imageSelector}>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onPu}>
+          {parts === "pu" ? <Header0 /> : <Header00 />}
+        </div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onRa}>
+          {parts === "ra" ? <Header1 /> : <Header11 />}
+        </div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onXel}>
+          {parts === "xel" ? <Header2 /> : <Header22 />}
+        </div>
+        <div className={_.imageCommon} onClick={imageOnClickHandler.onMe}>
+          {parts === "me" ? <Header3 /> : <Header33 />}
+        </div>
+      </aside>
+      <article className={_.imageContainer}>
+        <div
           style={{
-            width: "1124px",
-            heigth: "640px",
-            marginBottom: "220px",
-            marginTop: "220px",
-            borderRadius: "4px",
-            border: "1px solid #F2F3F7",
-            boxShadow: "border-box",
-            display: "grid",
-            gridTemplateRows: "1fr 4fr",
-            gridTemplateColumns: "1fr 1.2fr",
-            padding: "48px 80px",
-            background: "#fff",
+            width: "800px",
+            height: "800px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <section className={style.paperLeftTop}>
-            <span
-              style={{
-                letterSpacing: "-0.02em",
-                fontSize: "48px",
-                // background: "#55576F",
-                color: "#55576F",
-              }}
-            >
-              제품 구성 및 사양
-            </span>
-          </section>
-          <section className={style.paperRightTop}>
-            <div
-              className={style.paperRightTopImages}
-              partsid="pu"
-              onClick={imageOnClickHandler.onPu}
-              style={{
-                filter: parts === "pu" ? "grayScale(0)" : "grayScale(1)",
-              }}
-            >
-              <Image
-                src={parts01onPaper}
-                style={{
-                  marginBottom: parts === "pu" ? "10px" : "0px",
-                }}
-              />
-            </div>
-            <div
-              className={style.paperRightTopImages}
-              partsid="ra"
-              onClick={imageOnClickHandler.onRa}
-              style={{
-                filter: parts === "ra" ? "grayScale(0)" : "grayScale(1)",
-              }}
-            >
-              <Image
-                src={parts02onPaper}
-                style={{
-                  marginBottom: parts === "ra" ? "10px" : "0px",
-                }}
-              />
-            </div>
-            <div
-              className={style.paperRightTopImages}
-              partsid="xel"
-              onClick={imageOnClickHandler.onXel}
-              style={{
-                filter: parts === "xel" ? "grayScale(0)" : "grayScale(1)",
-              }}
-            >
-              <Image
-                src={parts03onPaper}
-                style={{
-                  marginBottom: parts === "xel" ? "10px" : "0px",
-                }}
-              />
-            </div>
-            <div
-              className={style.paperRightTopImages}
-              partsid="me"
-              onClick={imageOnClickHandler.onMe}
-              style={{
-                filter: parts === "me" ? "grayScale(0)" : "grayScale(1)",
-              }}
-            >
-              <Image
-                src={parts04onPaper}
-                style={{
-                  marginBottom: parts === "me" ? "10px" : "0px",
-                }}
-              />
-            </div>
-          </section>
-          <section className={style.paperLeftBottom}>
-            <PaperLeftBot title="제품명" explain="퓨라셀 me" />
-            <PaperLeftBot title="레이저 종류" explain="Er.YAG" />
-            <PaperLeftBot title="레이저 파장" explain="2940nm(+-1%)" />
-            <PaperLeftBot title="레이저 출력 범위" explain="80~140mJ(+-20%)" />
-            <PaperLeftBot title="레이저 레벨 범위" explain="1~2 level" />
-            <PaperLeftBot title="레이저 반복" explain="3~6 seconds interval" />
-          </section>
-          <section className={style.paperRightBottom}>
-            <PaperRightBot
-              title="기능모드"
-              firstEX="1) Fractional Laser"
-              secondEX="2) Galvanic"
-            />
+          <PartsViewer />
+        </div>
+      </article>
+      <article className={_.explainContainer}>
+        <div style={{ marginBottom: "24px" }}>
+          <span className={_.explainTitle}>제품 구성 및 사양</span>
+        </div>
 
-            <PaperRightBot
-              title="제품 무게"
-              firstEX="Main Body: 350g"
-              secondEX="Cradle: 110g"
-            />
-            <PaperRightBot
-              title="배터리 사양"
-              firstEX="50 x 57 x 220 mm (Main body)"
-              secondEX="98 x 98 x 85 mm (Cradle)"
-            />
-
-            <PaperRightBot
-              title="제품 치수"
-              firstEX="Built-in Rechargeable"
-              secondEX="11.1V 850mAh Lithium-Polymer Battery"
-            />
-          </section>
-        </article>
-      </div>
-    </div>
+        <div className={_.explainPaperContainer}>
+          <div className={_.explainContainerInner}>
+            <ExplainOnPaper />
+          </div>
+        </div>
+      </article>
+    </section>
   );
 }

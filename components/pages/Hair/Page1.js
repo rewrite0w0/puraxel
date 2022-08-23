@@ -1,94 +1,52 @@
-import { Box } from "@mui/material";
-import Image from "next/image";
-import meKr from "public/locales/kr/me";
-import flowerWithMe from "src/image/ME/me_main.png";
-import style from "./page1.module.css";
-// import { ManualFractionPage1 } from "./ManualFraction";
+import _ from "./page1.module.css";
 
-const Page1Intro1 = (props) => {
+export default function Page0() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        marginLeft: "15.5vw",
-      }}
-    >
-      <span style={{ fontSize: "2.5vw" }}>
-        <span style={{ color: "#A292A3" }}>{meKr.Page1Intro1A}</span>&nbsp;
-        <span style={{}}>{meKr.Page1Intro1B}</span>
-      </span>
+    <main className={_.container}>
+      <section className={_.leftContainer}>
+        <div className={_.subTitle}>두피 전문가를 위한 프락셔널 레이저</div>
+        <div className={_.title}>PURAXEL HAIR</div>
 
-      <span style={{ fontSize: "4.25vw" }} className={style.fontEN}>
-        {meKr.Page1Title}
-      </span>
-    </div>
-  );
-};
+        <div
+          style={{
+            fontSize: "40px",
+            letterSpacing: "-0.02em",
+            color: "#4D5058",
+            fontWeight: "300",
+            lineHeight: "128%",
+          }}
+        >
+          소형 레이저 기술로
+        </div>
 
-const Page1Explain = (props) => {
-  return (
-    <div style={{ fontSize: "1.2vw", marginLeft: "3.3vw" }}>
-      <span>
-        <span>{meKr.Page1Explain1A}</span>
-        <br />
-        <span>
-          <span>{meKr.Page1Explain1B}</span>
-          <span>{meKr.Page1Explain1C}</span>
-          <span>{meKr.Page1Explain1D}</span>
-        </span>
-        <br />
-        <br />
+        <div
+          style={{
+            fontSize: "48px",
+            letterSpacing: "-0.02em",
+            color: "#55576F",
+            fontWeight: "600",
+            marginBottom: "24px",
+            lineHeight: "128%",
+          }}
+        >
+          에스테틱에 혁신을 가져오다
+        </div>
 
-        <span style={{ fontWeight: "lighter" }}>
-          <span>{meKr.Page1Explain2A}</span>
-          <br />
-          <span>{meKr.Page1Explain2B}</span>
-          <br />
-          <span>{meKr.Page1Explain2C}</span>
-          <br />
-        </span>
-      </span>
-    </div>
-  );
-};
-
-const Page1Img = (props) => {
-  return (
-    <Image
-      src={flowerWithMe}
-      alt="flower with ME"
-      className={style.img}
-      width={800}
-      height={700}
-      style={{ ...props.sx }}
-    />
-  );
-};
-
-export default function Page1() {
-  return (
-    <div
-      className={style.container}
-      style={{
-        display: "grid",
-
-        gridTemplateRows: "50vh 50vh",
-        gridTemplateColumns: "1fr 1fr",
-      }}
-    >
-      <div className={style.containerLeftTop}>
-        <Page1Intro1 />
-        {/* <hr className={style.borderLine} /> */}
-      </div>
-      <div className={style.containerRightTop}>
-        <Page1Img />
-        {/* <Box className={style.img}></Box> */}
-      </div>
-      <div className={style.containerLeftBottom}>
-        <Page1Explain />
-      </div>
-      <div className={style.containerRightBottom}>{/* empty */}</div>
-    </div>
+        <div
+          style={{
+            fontSize: "24px",
+            letterSpacing: "-0.02em",
+            color: "#4D5058",
+            fontWeight: "300",
+            lineHeight: "140%",
+          }}
+        >
+          FX-5000은 에스테틱 샵에서만 구매 가능한 전문가용 제품입니다.
+        </div>
+      </section>
+      <section className={_.rightContainer}>
+        <div className={_.rightImage}></div>
+      </section>
+    </main>
   );
 }

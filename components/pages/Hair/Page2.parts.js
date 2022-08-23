@@ -1,7 +1,7 @@
 import { Popover, Typography } from "@mui/material";
-import { CaptionIcon } from "components/Parts/Icons";
+
 import { useEffect, useState } from "react";
-import style from "./temp.page2.parts.module.css";
+import style from "./page2.parts.module.css";
 
 const FloatingContainer = (props) => {
   return (
