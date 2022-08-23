@@ -4,18 +4,17 @@ export default function Page0() {
   return (
     <main className={_.container}>
       <section className={_.leftContainer}>
-        <span className={_.subTitle}>에스테틱의 시작</span>
-        <span className={_.title}>PURAXEL FX-5000</span>
+        <div className={_.subTitle}>피부 전문가를 위한 프락셔널 레이저</div>
+        <div className={_.title}>PURAXEL FX-5000</div>
 
-        <span className={_.expTop}>레이저 기술로</span>
+        <div className={_.expTop}>소형 레이저 기술로</div>
         {/* <br /> */}
-        <span className={_.expBot}>에스테틱에 혁신을 가져오다</span>
+        <div className={_.expBot}>에스테틱에 혁신을 가져오다</div>
 
         {/* <br style={{ marginBottom: "24px" }} /> */}
-        <span className={_.explainDetail}>
-          퓨라셀 PURAXEL은 <br />
-          에스테틱에서 만날 수 있는 고품격 미용 레이저입니다.
-        </span>
+        <div className={_.explainDetail}>
+          FX-5000은 에스테틱 샵에서만 구매 가능한 전문가용 제품입니다.
+        </div>
       </section>
       <section className={_.rightContainer}>
         <div className={_.rightImage}></div>
