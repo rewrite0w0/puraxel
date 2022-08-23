@@ -7,68 +7,20 @@
 }
 
 .bodyContainer {
-  /* margin-top: 80px; */
-  /* margin-right: 80px;
-  margin-left: 80px; */
-  /* background: black; */
-}
-
-.footerContainer {
-  /* margin-bottom: 48px;
-  margin-right: 80px;
-  margin-left: 80px; */
-}
-
-.meContainer {
-  background: var(--secondaryME);
-  /* height: 80vh; */
-  /* min-height: 100vh;
-  max-height: 100vh; */
-}
-
-.bodyContainer {
-  /* margin-top: 80px; */
-  /* margin-right: 80px;
-  margin-left: 80px; */
-  /* background: black; */
-  /* height: 50vh; */
-  /* min-height: 100vh;
-  max-height: 100vh; */
-  /* position: relative; */
   height: 100vh;
 }
 
 .footerContainer {
-  /* // position: "fixed", */
   display: flex;
   flex-direction: row;
   z-index: 1;
 
   position: absolute;
 
-  /* width: 95vw; */
-  /* width: "inherit"; */
   width: -moz-available;
   width: -webkit-fill-available;
-  /* width: fill-available; */
 
   justify-content: space-between;
-  /* bottom: 100px; */
-  /* z-index: 99; */
-  /* // height: "10vh", */
-  /* // backgroundColor: 'blue', */
-  /* // right: 0, */
-  /* // left: "4vw", */
-  /* // bottom: "1vh", */
-  /* // width: "100%", */
-  /* // justifyContent: "space-between", */
-  /* // justifyContent: "space-around", */
-  /* // justifyContent: "space-evenly", */
-  /* justify-items: center;
-  align-items: center; */
-  /* position: relative; */
-  /* background: blue; */
-  /* margin-bottom: 48px; */
   bottom: 0;
   margin-right: 80px;
   margin-left: 80px;
