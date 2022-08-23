@@ -4,7 +4,7 @@ export default function Page0() {
   return (
     <main className={_.container}>
       <section className={_.leftContainer}>
-        <div className={_.subTitle}>에스테틱의 시작</div>
+        <div className={_.subTitle}>두피 전문가를 위한 프락셔널 레이저</div>
         <div className={_.title}>PURAXEL HAIR</div>
 
         <div
@@ -16,7 +16,7 @@ export default function Page0() {
             lineHeight: "128%",
           }}
         >
-          레이저 기술로
+          소형 레이저 기술로
         </div>
 
         <div
@@ -41,18 +41,7 @@ export default function Page0() {
             lineHeight: "140%",
           }}
         >
-          퓨라셀 PURAXEL은
-        </div>
-        <div
-          style={{
-            fontSize: "24px",
-            letterSpacing: "-0.02em",
-            color: "#4D5058",
-            fontWeight: "300",
-            lineHeight: "140%",
-          }}
-        >
-          에스테틱에서 만날 수 있는 고품격 미용 레이저입니다.
+          FX-5000은 에스테틱 샵에서만 구매 가능한 전문가용 제품입니다.
         </div>
       </section>
       <section className={_.rightContainer}>
