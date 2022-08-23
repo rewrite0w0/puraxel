@@ -87,7 +87,7 @@ export default function Page2() {
           <span className={_.textContainer}>
             <span className={_.subTitle}>레이저 초음파 기술을 활용한</span>
             <span className={_.title}>
-              퓨라셀의 <span className={_.titleBold}>다섯가지 기능</span>
+              FX5000의 <span className={_.titleBold}>다섯가지 기능</span>
             </span>
             <span className={_.instruction}>궁금한 기능을 클릭해보세요</span>
           </span>
