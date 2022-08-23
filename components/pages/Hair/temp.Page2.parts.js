@@ -254,13 +254,12 @@ const SafeFeature = (props) => {
 };
 
 export function Laser() {
-  const [maruStatus, setMaruStatus] = useState(1234);
+  const [maruStatus, setMaruStatus] = useState(undefined);
 
-  // useEffect(() => {
-  //   return setMaruStatus("plus");
-  // }, []);
+  useEffect(() => {
+    return setMaruStatus(true);
+  }, []);
 
-  console.log(maruStatus);
   return (
     <article className={`${style.commonContainer}`}>
       <section style={{ marginTop: "18px", marginBottom: "20px" }}>
@@ -313,10 +312,11 @@ export function Laser() {
               justifyContent: "center",
               alignContent: "center",
             }}
+            onClick={() => setMaruStatus(!maruStatus)}
           >
             <span className={style.laserWarning}>
               주의사항 &nbsp;{" "}
-              {maruStatus === "plus" ? <MaruPlus /> : <MaruMinus />}
+              {maruStatus === true ? <MaruPlus /> : <MaruMinus />}
             </span>
           </span>
         </span>
