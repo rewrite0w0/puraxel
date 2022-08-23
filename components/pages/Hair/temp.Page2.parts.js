@@ -1,4 +1,4 @@
-import { Popover } from "@mui/material";
+import { Popover, Typography } from "@mui/material";
 import { CaptionIcon } from "components/Parts/Icons";
 import { useEffect, useState } from "react";
 import style from "./temp.page2.parts.module.css";
@@ -260,14 +260,16 @@ export function Laser() {
   const [popAnchor, setPopAnchor] = useState(undefined);
 
   const handlePopOpen = (e) => {
-    setMaruStatus(true);
+    setMaruStatus(false);
     setPopAnchor(e.currentTarget);
   };
 
   const handlePopClose = () => {
-    setMaruStatus(false);
+    setMaruStatus(true);
     setPopAnchor(false);
   };
+
+  const open = Boolean(popAnchor);
 
   useEffect(() => {
     return setMaruStatus(true);
@@ -332,9 +334,39 @@ export function Laser() {
               onMouseEnter={handlePopOpen}
               onMouseLeave={handlePopClose}
             >
-              주의사항 &nbsp;{" "}
+              주의사항 &nbsp;
               {maruStatus === true ? <MaruPlus /> : <MaruMinus />}
-              <Popover></Popover>
+              <Popover
+                open={open}
+                anchorEl={popAnchor}
+                disableRestoreFocus
+                onClose={handlePopClose}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "center",
+                }}
+                transformOrigin={{
+                  vertical: "bottom",
+                  horizontal: "center",
+                }}
+              >
+                <Typography
+                  sx={{
+                    padding: "12px",
+                    fontWeight: "400",
+                    fontSize: "12px",
+                    lineHeight: "144%",
+                    letterSpacing: "-0.02em",
+                    color: "#7e818d",
+                  }}
+                >
+                  본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에 직접
+                  또는 반사되는 레이저 조사 시 위험합니다.
+                  <br />
+                  반드시 보안경 착용 후 사용하며 절대 직·간접적으로 보지 말아야
+                  합니다.
+                </Typography>
+              </Popover>
             </span>
           </span>
         </span>
