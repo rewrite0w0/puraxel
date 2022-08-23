@@ -288,7 +288,7 @@ export default function Page2(props) {
         <div className={style.leftPaper}>
           {/* 첫 번째 grid: 제목/소개*/}
           <div className={style.leftPaperTop}>
-            <span className={style.leftPaperTopFirst}>{meKr.Page2Intro1}</span>
+            <span className={style.leftPaperTopFirst}>하나의 기기로</span>
             <br />
             <div className={style.leftPaperTopSecond}>
               <span className={style.leftPaperTopSecondPoint}>

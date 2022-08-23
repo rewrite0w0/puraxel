@@ -71,7 +71,7 @@ export default function Navbars(props) {
   // console.log(currentPage);
 
   return (
-    <header className={navStyle.header}>
+    <nav className={navStyle.header}>
       <section className={navStyle.leftNav}>
         <Box
           className={navStyle.logo}
@@ -136,7 +136,7 @@ export default function Navbars(props) {
         </div>
       </section>
 
-      <div className={navStyle.rightNav}>
+      <section className={navStyle.rightNav}>
         {/* <NavIconButton
           title={"notice"}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
@@ -269,7 +269,7 @@ export default function Navbars(props) {
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
           sx={{ marginRight: "80px" }}
         ></NavIconButton>
-      </div>
-    </header>
+      </section>
+    </nav>
   );
 }

@@ -529,6 +529,7 @@ export default function ModalComponent(props) {
       <Dialog
         open={agreeNoticeDialogOpen}
         onClose={handleCloseAgreeNoticeDialog}
+
         // sx={{ display: "flex" }}
       >
         <DialogTitle>{modalKr.modalDetailTitle}</DialogTitle>
