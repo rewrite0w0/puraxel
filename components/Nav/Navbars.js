@@ -3,14 +3,9 @@ import { Box, Menu, Button, MenuItem } from "@mui/material";
 
 import navStyle from "./Nav.module.css";
 
-import Image from "next/image";
 import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
 import NavIconButton from "components/Nav/NavIconButton";
-
-import lmdtInfo from "src/image/header/lmdt.svg";
-
-import { ArrowUpRight } from "components/Parts/Icons";
 
 export default function Navbars(props) {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
@@ -22,7 +17,6 @@ export default function Navbars(props) {
 
   const handleSNSButton = (e) => {
     setSnsAnchorState(e.currentTarget);
-    // console.log(e.currentTarget);
     setSnsOpenState(!snsOpenState);
   };
 
@@ -32,9 +26,7 @@ export default function Navbars(props) {
 
   const handleCompanyInfoButton = (e) => {
     setCompanyInfoAnchorState(e.currentTarget);
-    // console.log(e.currentTarget);
     setCompanyInfoOpenState(!companyOpenState);
-    // console.log(companyOpenState);
   };
 
   const handleCompanyInfoCloseButton = () => {
@@ -68,8 +60,6 @@ export default function Navbars(props) {
     return currentPageChecker();
   }, []);
 
-  // console.log(currentPage);
-
   return (
     <nav className={navStyle.header}>
       <section className={navStyle.leftNav}>
@@ -88,8 +78,8 @@ export default function Navbars(props) {
             title={layoutHeaderKr.me}
             className={navStyle.gnbMenu}
             style={{
-              // textDecoration: currentPage === "me" ? "underline" : "none",
-              // textDecorationThickness: currentPage === "me" ? "2px" : "none",
+              textDecoration: currentPage === "me" ? "underline" : "none",
+              textDecorationThickness: currentPage === "me" ? "2px" : "none",
               opacity: currentPage === "me" ? "1" : undefined,
             }}
           />
@@ -100,9 +90,9 @@ export default function Navbars(props) {
             title={layoutHeaderKr.fx5000}
             className={navStyle.gnbMenu}
             style={{
-              //   textDecoration: currentPage === "fx5000" ? "underline" : "none",
-              //   textDecorationThickness:
-              //     currentPage === "fx5000" ? "2px" : "none",
+              textDecoration: currentPage === "fx5000" ? "underline" : "none",
+              textDecorationThickness:
+                currentPage === "fx5000" ? "2px" : "none",
               opacity: currentPage === "fx5000" ? "1" : undefined,
             }}
           />
@@ -114,8 +104,8 @@ export default function Navbars(props) {
             title={layoutHeaderKr.hair}
             className={navStyle.gnbMenu}
             style={{
-              //   textDecoration: currentPage === "hair" ? "underline" : "none",
-              //   textDecorationThickness: currentPage === "hair" ? "2px" : "none",
+              textDecoration: currentPage === "hair" ? "underline" : "none",
+              textDecorationThickness: currentPage === "hair" ? "2px" : "none",
               opacity: currentPage === "hair" ? "1" : undefined,
             }}
           />
@@ -128,8 +118,8 @@ export default function Navbars(props) {
             title={"핵심기술"}
             className={navStyle.gnbMenu}
             style={{
-              //   textDecoration: currentPage === "tech" ? "underline" : "none",
-              //   textDecorationThickness: currentPage === "tech" ? "2px" : "none",
+              textDecoration: currentPage === "tech" ? "underline" : "none",
+              textDecorationThickness: currentPage === "tech" ? "2px" : "none",
               opacity: currentPage === "tech" ? "1" : undefined,
             }}
           />
