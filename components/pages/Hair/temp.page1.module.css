@@ -59,6 +59,8 @@
   width: 100%;
   height: auto;
   /* content: url(../../../src/image/HAIR/page1/hair.png); */
+
+  content: url(../../../src/image/HAIR/page1/hair.png);
   /* background-image: url(../../../src/image/Hair/page1/hair.png);
   background-size: cover; */
 }
