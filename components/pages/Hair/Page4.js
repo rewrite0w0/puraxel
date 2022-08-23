@@ -1,5 +1,5 @@
 import { useState } from "react";
-import style from "./page4.module.css";
+import _ from "./page4.module.css";
 
 const YTThumbnailContainer = (props) => {
   return (
@@ -70,39 +70,16 @@ export default function Page4(props) {
         }}
       >
         {/* 왼쪽 상단 */}
-        <div>
-          <span
-            style={{
-              fontWeight: "300",
-              fontSize: "32px",
-              letterSpacing: "-0.01rem",
-              color: "#A7ABB6",
-              // lineHeight: "132%",
-            }}
-          >
-            에스테틱에 관리 과정, 영상으로 자세히 보기
-          </span>
-          <br />
+        <article>
+          <div className={_.sub_title}>
+            이제 병원에서만 가능하던 프락셔널 레이저 시술을 에스테틱샵에서도
+            제공하실 수 있습니다.
+          </div>
 
-          <span
-            style={{
-              letterSpacing: "-0.02rem",
-              color: "#55576F",
-              fontSize: "64px",
-              lineHeight: "124px",
-            }}
-          >
-            <span
-              style={{
-                fontWeight: 300,
-              }}
-            >
-              퓨라셀
-            </span>
-            &nbsp;
-            <span style={{ fontWeight: 700 }}>사용방법</span>
-          </span>
-        </div>
+          <div className={_.main_title}>
+            바로 일상생활이 가능한 소형 프락셔널 레이저, 직접 경험해보세요.
+          </div>
+        </article>
 
         {/* <div style={{ display: "flex" }}>
           <YTThumbnailContainer
