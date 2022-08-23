@@ -1,94 +1,30 @@
-import { Box } from "@mui/material";
-import Image from "next/image";
-import meKr from "public/locales/kr/me";
-import flowerWithMe from "src/image/ME/me_main.png";
 import style from "./page1.module.css";
-// import { ManualFractionPage1 } from "./ManualFraction";
 
-const Page1Intro1 = (props) => {
+export default function Page0() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        marginLeft: "15.5vw",
-      }}
-    >
-      <span style={{ fontSize: "2.5vw" }}>
-        <span style={{ color: "#A292A3" }}>{meKr.Page1Intro1A}</span>&nbsp;
-        <span style={{}}>{meKr.Page1Intro1B}</span>
-      </span>
+    <main className={style.container}>
+      <section className={style.leftContainer}>
+        <div className={style.subTitle}>에스테틱 레이저의 시작</div>
+        <div className={style.title}>PURAXEL ME</div>
 
-      <span style={{ fontSize: "4.25vw" }} className={style.fontEN}>
-        {meKr.Page1Title}
-      </span>
-    </div>
-  );
-};
+        <div className={style.mainExplain}>전문 피부과에서만 사용하던</div>
+        <div className={style.mainExplainSub}>
+          프락셔널 레이저의 문턱을 낮췄습니다.
+        </div>
 
-const Page1Explain = (props) => {
-  return (
-    <div style={{ fontSize: "1.2vw", marginLeft: "3.3vw" }}>
-      <span>
-        <span>{meKr.Page1Explain1A}</span>
-        <br />
-        <span>
-          <span>{meKr.Page1Explain1B}</span>
-          <span>{meKr.Page1Explain1C}</span>
-          <span>{meKr.Page1Explain1D}</span>
-        </span>
-        <br />
-        <br />
-
-        <span style={{ fontWeight: "lighter" }}>
-          <span>{meKr.Page1Explain2A}</span>
-          <br />
-          <span>{meKr.Page1Explain2B}</span>
-          <br />
-          <span>{meKr.Page1Explain2C}</span>
-          <br />
-        </span>
-      </span>
-    </div>
-  );
-};
-
-const Page1Img = (props) => {
-  return (
-    <Image
-      src={flowerWithMe}
-      alt="flower with ME"
-      className={style.img}
-      width={800}
-      height={700}
-      style={{ ...props.sx }}
-    />
-  );
-};
-
-export default function Page1() {
-  return (
-    <div
-      className={style.container}
-      style={{
-        display: "grid",
-
-        gridTemplateRows: "50vh 50vh",
-        gridTemplateColumns: "1fr 1fr",
-      }}
-    >
-      <div className={style.containerLeftTop}>
-        <Page1Intro1 />
-        {/* <hr className={style.borderLine} /> */}
+        <div className={style.explain_sub}>
+          하루 10분, 이제 집에서 관리하세요.
+        </div>
+        {/* <div className={style.subExplain}>
+          병원, 의료기관에서만 볼 수 있던 프락셔널 레이저 기기,
+        </div>
+        <div className={style.subExplain}>
+          이제는 집에서도 편리하게 사용하실 수 있습니다.
+        </div> */}
+      </section>
+      <div className={style.rightContainer}>
+        <div className={style.meImage} />
       </div>
-      <div className={style.containerRightTop}>
-        <Page1Img />
-        {/* <Box className={style.img}></Box> */}
-      </div>
-      <div className={style.containerLeftBottom}>
-        <Page1Explain />
-      </div>
-      <div className={style.containerRightBottom}>{/* empty */}</div>
-    </div>
+    </main>
   );
 }

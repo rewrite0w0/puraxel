@@ -2,10 +2,10 @@ import Head from "next/head";
 import Swipers from "components/Swipers";
 import MeLayout from "components/layout/MeLayout";
 import { SwiperSlide } from "swiper/react";
-import Page0 from "components/pages/Me/temp.Page1";
+import Page1 from "components/pages/Me/Page1";
 import Page2 from "components/pages/Me/Page2";
 import Page3 from "components/pages/Me/Page3";
-import Page44 from "components/pages/Me/temp.Page5";
+import Page4 from "components/pages/Me/Page4";
 import Oval from "components/Parts/Oval";
 
 export default function Me() {
@@ -21,7 +21,7 @@ export default function Me() {
         <SwiperSlide>
           {/* <Oval startX={0} startY={0} EndX={0} EndY={300} /> */}
           {/* <Oval startX={220} startY={300} EndX={220} EndY={300} /> */}
-          <Page0 />
+          <Page1 />
         </SwiperSlide>
 
         <SwiperSlide>
@@ -35,7 +35,7 @@ export default function Me() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Page44 />
+          <Page4 />
           {/* <Oval startX={200} startY={-300} EndX={-500} EndY={300} /> */}
         </SwiperSlide>
       </Swipers>
