@@ -5,42 +5,13 @@
   height: 100vh;
 }
 
-.bodyContainer {
-  /* margin-top: 80px; */
-  /* margin-right: 80px;
-    margin-left: 80px; */
-  /* background: black; */
-  /* height: 50vh; */
-  /* min-height: 100vh;
-    max-height: 100vh; */
-  /* position: relative; */
-  height: 100vh;
-}
-
 .footerContainer {
-  /* // position: "fixed", */
   display: flex;
   flex-direction: row;
   z-index: 9999;
 
   position: absolute;
 
-  /* bottom: 100px; */
-  /* z-index: 99; */
-  /* // height: "10vh", */
-  /* // backgroundColor: 'blue', */
-  /* // right: 0, */
-  /* // left: "4vw", */
-  /* // bottom: "1vh", */
-  /* // width: "100%", */
-  /* // justifyContent: "space-between", */
-  /* // justifyContent: "space-around", */
-  /* // justifyContent: "space-evenly", */
-  /* justify-items: center;
-    align-items: center; */
-  /* position: relative; */
-  /* background: blue; */
-  /* margin-bottom: 48px; */
   bottom: 0;
   right: 0;
   margin-right: 80px;
