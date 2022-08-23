@@ -211,7 +211,9 @@
   /* background: #f2f3f7;
   border-radius: 4px; */
 
-  content: url(../../src/image/linkToLMDT.svg);
+  content: url(../../src/image/main/lmdt_link.png);
+  height: 21px;
+  width: 114px;
   cursor: pointer;
 }
 

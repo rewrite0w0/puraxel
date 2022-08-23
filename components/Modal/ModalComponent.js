@@ -29,7 +29,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
 
-import { AskIcon, Inquiry, ShopIcon } from "components/Parts/Icons";
+import { AskIcon, Inquiry, ShopIC } from "components/Parts/Icons";
 
 // import Box from "@mui/material/Box";
 // import Button from "@mui/material/Button";
@@ -399,7 +399,7 @@ export default function ModalComponent(props) {
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ display: "flex", marginTop: "16px" }}>
                   <span className={style.shopButton}>
-                    <ShopIcon
+                    <ShopIC
                       sx={{
                         height: "50px",
                         width: "25px",
