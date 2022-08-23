@@ -2,7 +2,7 @@ import { useSpring, animated } from "react-spring";
 import { useEffect, useState } from "react";
 
 import { CaptionIcon } from "components/Parts/Icons";
-import style from "./temp.page2.parts.module.css";
+import style from "./page2.parts.module.css";
 import { Popover, Typography } from "@mui/material";
 import Fadein from "components/Parts/FadeIn";
 
