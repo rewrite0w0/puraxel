@@ -1,12 +1,6 @@
 .FX5000Container {
-  /* background: var(--secondaryFX5000); */
-  /* background: url(../../src/image/FX5000/bg_fx-5000.png); */
   background: url(../../src/image/FX5000/productBg_fx-5000.png);
   background-size: cover;
-  height: 100vh;
-}
-
-.bodyContainer {
   height: 100vh;
 }
 
