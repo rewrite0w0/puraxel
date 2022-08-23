@@ -30,15 +30,15 @@ const nextConfig = {
   // },
   // basePath: "/puraxel",
 
-  assetPrefix: isProd ? "/puraxel" : "",
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      "/": { page: "/" },
-    };
-  },
+  // assetPrefix: isProd ? "/puraxel" : "",
+  // exportPathMap: async function (
+  //   defaultPathMap,
+  //   { dev, dir, outDir, distDir, buildId }
+  // ) {
+  //   return {
+  //     "/": { page: "/" },
+  //   };
+  // },
 };
 
 module.exports = nextConfig;

@@ -1,3 +1,4 @@
+import { Popover } from "@mui/material";
 import { CaptionIcon } from "components/Parts/Icons";
 import { useEffect, useState } from "react";
 import style from "./temp.page2.parts.module.css";
@@ -256,6 +257,18 @@ const SafeFeature = (props) => {
 export function Laser() {
   const [maruStatus, setMaruStatus] = useState(undefined);
 
+  const [popAnchor, setPopAnchor] = useState(undefined);
+
+  const handlePopOpen = (e) => {
+    setMaruStatus(true);
+    setPopAnchor(e.currentTarget);
+  };
+
+  const handlePopClose = () => {
+    setMaruStatus(false);
+    setPopAnchor(false);
+  };
+
   useEffect(() => {
     return setMaruStatus(true);
   }, []);
@@ -314,9 +327,14 @@ export function Laser() {
             }}
             onClick={() => setMaruStatus(!maruStatus)}
           >
-            <span className={style.laserWarning}>
+            <span
+              className={style.laserWarning}
+              onMouseEnter={handlePopOpen}
+              onMouseLeave={handlePopClose}
+            >
               주의사항 &nbsp;{" "}
               {maruStatus === true ? <MaruPlus /> : <MaruMinus />}
+              <Popover></Popover>
             </span>
           </span>
         </span>
