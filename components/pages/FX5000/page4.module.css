@@ -69,3 +69,30 @@
   height: 80px;
   border-radius: 4px;
 }
+
+.sub_title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 132%;
+  /* or 42px */
+
+  letter-spacing: -0.02em;
+
+  /* grayscale/05 */
+
+  color: #a7abb6;
+  margin-bottom: 16px;
+}
+
+.main_title {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 124%;
+  /* or 69px */
+
+  letter-spacing: -0.02em;
+
+  /* primary/01 */
+
+  color: #55576f;
+}
