@@ -38,6 +38,7 @@
   height: 100%;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 * {
@@ -46,6 +47,8 @@
     "Malgun Gothic", sans-serif;
   scrollbar-width: none;
   word-break: keep-all;
+
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {

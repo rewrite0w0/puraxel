@@ -23,6 +23,10 @@
   border: "2px solid #000";
 }
 
+.modal_left_title_container {
+  margin-bottom: 60px;
+}
+
 .left {
   display: flex;
   flex-direction: column;
@@ -48,6 +52,18 @@
 
 .timeReciverContainer {
   display: flex;
+}
+
+.time_reciver_mid {
+  display: flex;
+  align-items: center;
+  color: #7e818d;
+  font-size: 14px;
+}
+
+.agree_box_container {
+  display: flex;
+  margin-top: 160px;
 }
 
 .buttonStyle {
@@ -86,7 +102,7 @@
   color: var(--grayScale06);
 }
 
-.rightPrivayCollectAgree {
+.rightPrivacyCollectAgree {
   color: #a7abb6;
   letter-spacing: -0.01em;
   font-weight: 600;
@@ -94,6 +110,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.right_privacy_cursor {
+  cursor: pointer;
+  color: #a7abb6;
+  font-size: 12px;
 }
 
 .shopButton {
@@ -228,4 +250,59 @@
   letter-spacing: -0.02em;
 
   color: var(--grayScale05);
+}
+
+.ask_title_container {
+  margin-top: 20px;
+}
+
+.ask_details_container {
+  height: calc(1000px + 1vh);
+}
+
+.ask_details {
+  height: calc(100%);
+}
+
+.information__para {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #7e818d;
+}
+
+.shopic {
+  height: 50px;
+  width: 25px;
+  color: #fff;
+  margin-right: 7.25px;
+}
+
+.dialog__exit__contaier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog__send__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dialog__send__inner_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog__send__checked__ic {
+  color: pink;
+  height: 56px;
+  width: 56px;
+  margin-bottom: 16px;
 }

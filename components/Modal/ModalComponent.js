@@ -31,8 +31,7 @@ const bgStyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  // width: "60vw",
-  // height: "40vw",
+
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -123,38 +122,8 @@ export default function ModalComponent(props) {
 
   return (
     <>
-      {/* <ModalButton
-        title={modalKr.modalButtonTitle}
-        onClick={() => {
-          console.log("move?");
-        }}
-      /> */}
-
-      {/* 그리드 좌측 */}
-
       <Box
-        // className={buttonStyle.priceButton}
         className={commonButtonStyle.buttonContainer}
-        // className={commonButtonStyle.buttonContainer}
-        // sx={{
-        //   background: "rgba(255,255,255,0.6)",
-        //   boxShadow: "0px 6px 20px rgba(127, 46, 190, 0.05)",
-        //   border: "1px solid #FFFFFF",
-        //   borderRadius: "4px",
-        //   display: "flex",
-        //   // gridTemplateRows: "1fr 1fr",
-        //   height: "64px",
-        //   // padding: "16px",
-        //   paddingLeft: "8px",
-        //   paddingRight: "8px",
-        //   alignItems: "center",
-        //   justifyContent: "center",
-        //   ...props.style,
-        //   fontWeight: "600",
-        //   fontSize: "18px",
-        //   letterSpacing: "-0.01em",
-        //   cursor: "pointer",
-        // }}
         onClick={handleOpenModal}
         {...props}
       >
@@ -174,7 +143,7 @@ export default function ModalComponent(props) {
         <Box sx={bgStyle} className={style.modalContainer}>
           <Box className={style.left}>
             {/* 1 */}
-            <Box sx={{ marginBottom: "60px" }}>
+            <Box className={style.modal_left_title_container}>
               <span className={style.modealLeftTitle}>
                 {modalKr.modalTitle}
               </span>
@@ -229,16 +198,7 @@ export default function ModalComponent(props) {
                     </Select>
                   </FormControl>
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    color: "#7e818d",
-                    fontSize: "14px",
-                  }}
-                >
-                  ~
-                </Box>
+                <Box className={style.time_reciver_mid}>~</Box>
                 <Box>
                   <FormControl>
                     <Select
@@ -258,13 +218,7 @@ export default function ModalComponent(props) {
               </Box>
               {/*  */}
               {/* 7 */}
-              <Box
-                style={{
-                  display: "flex",
-                  // alignItems: "center",
-                  marginTop: "160px",
-                }}
-              >
+              <Box className={style.agree_box_container}>
                 <Checkbox
                   icon={<CheckCircleOutlineIcon />}
                   checkedIcon={<CheckCircleIcon />}
@@ -281,12 +235,7 @@ export default function ModalComponent(props) {
                   &nbsp;
                   <span
                     onClick={handleOpenAgreeNoticeDialog}
-                    className={style.rightPrivayCollectAgree}
-                    style={{
-                      cursor: "pointer",
-                      color: "#A7ABB6",
-                      fontSize: "12px",
-                    }}
+                    className={`${style.rightPrivacyCollectAgree} ${style.right_privacy_cursor}`}
                   >
                     {modalKr.modalAgreeDetail}
                   </span>
@@ -328,7 +277,7 @@ export default function ModalComponent(props) {
             </Box>
             {/* 2 */}
             {/* 문의 제목 */}
-            <Box sx={{ marginTop: "20px" }}>
+            <Box className={style.ask_title_container}>
               <TextField
                 fullWidth={true}
                 label={modalKr.modalAskTitle}
@@ -337,17 +286,13 @@ export default function ModalComponent(props) {
             </Box>
             {/* 3 */}
             {/* 문의 내용 */}
-            <Box sx={{ height: "1000px" }}>
+            <Box className={style.ask_details_container}>
               <TextField
                 maxRows={25}
                 fullWidth={true}
                 multiline={true}
                 label={modalKr.modalAskContent}
-                // onFocus={true}
-                // onClick={(e) => e.currentTarget.onfocus}
-                sx={{ height: "100%" }}
-                // placeholder={modalKr.modalAskContentPlaceholder}
-
+                className={style.ask_details}
                 required
               />
             </Box>
@@ -355,28 +300,14 @@ export default function ModalComponent(props) {
             {/* 여러가지 안내 사항 */}
             <Box>
               <Box style={{ display: "flex" }}>
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "14px",
-                    letterSpacing: "-0.01em",
-                    color: "#7e818d",
-                  }}
-                >
+                <Typography className={style.information__para}>
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain1}
                 </Typography>
               </Box>
 
               <Box style={{ display: "flex" }}>
-                <Typography
-                  sx={{
-                    fontWeight: 500,
-                    fontSize: "14px",
-                    letterSpacing: "-0.01em",
-                    color: "#7e818d",
-                  }}
-                >
+                <Typography className={style.information__para}>
                   {modalKr.modalExplainBar}
                   {modalKr.modalExplain2A}
                   <span style={{ fontWeight: 700, color: "#b298ad" }}>
@@ -389,14 +320,7 @@ export default function ModalComponent(props) {
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ display: "flex", marginTop: "16px" }}>
                   <span className={style.shopButton}>
-                    <ShopIC
-                      sx={{
-                        height: "50px",
-                        width: "25px",
-                        color: "#fff",
-                        marginRight: "7.25px",
-                      }}
-                    />
+                    <ShopIC className={style.shopic} />
                     {modalKr.modalLinkToShoppingMall}
                   </span>
                   <span className={style.helpButton}>
@@ -408,11 +332,6 @@ export default function ModalComponent(props) {
                 <div
                   className={style.sendButton}
                   onClick={handleOpenSendAgreeDialog}
-                  style={
-                    {
-                      // background
-                    }
-                  }
                 >
                   {modalKr.modalSendButton}
                 </div>
@@ -428,23 +347,8 @@ export default function ModalComponent(props) {
         onClose={handleCloseNoticeDialog}
         onClick={(e) => e.preventDefault}
       >
-        <section
-          style={{
-            // width: "296px",
-            // height: "150px",
-            display: "flex",
-            flexDirection: "column",
-            // justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <DialogTitle
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+        <section className={style.dialog__exit__contaier}>
+          <DialogTitle className={style.dialog__exit__contaier}>
             <span className={style.dialogTopPara}>
               {modalKr.modalExitModalPara2}
             </span>
@@ -473,23 +377,8 @@ export default function ModalComponent(props) {
         onClose={handleCloseSendAgreeDialog}
         onClick={(e) => e.preventDefault}
       >
-        <section
-          style={{
-            // width: "296px",
-            // height: "150px",
-            display: "flex",
-            flexDirection: "column",
-            // justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <DialogTitle
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+        <section className={style.dialog__exit__contaier}>
+          <DialogTitle className={style.dialog__exit__contaier}>
             <span className={style.dialogTopPara}>
               {/* {modalKr.modalExitModalPara2} */}
               문의 내용을 전달하시겠습니까?
@@ -519,8 +408,6 @@ export default function ModalComponent(props) {
       <Dialog
         open={agreeNoticeDialogOpen}
         onClose={handleCloseAgreeNoticeDialog}
-
-        // sx={{ display: "flex" }}
       >
         <DialogTitle>{modalKr.modalDetailTitle}</DialogTitle>
         <DialogContent
@@ -534,36 +421,11 @@ export default function ModalComponent(props) {
         open={sendedNoticeDialogOpen}
         onClose={handleCloseSendedNoticeDialog}
       >
-        <section
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            // height: "225px",
-            // width: "381px",
-            paddingLeft: "20px",
-            paddingRight: "20px",
-          }}
-        >
+        <section className={style.dialog__send__container}>
           {/* <DialogTitle></DialogTitle> */}
           <DialogContent>
-            <span
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <CheckCircleIcon
-                style={{
-                  color: "pink",
-                  height: "56px",
-                  width: "56px",
-                  marginBottom: "16px",
-                }}
-              />
+            <div className={style.dialog__send__inner_container}>
+              <CheckCircleIcon className={style.dialog__send__checked__ic} />
               <span className={style.sendASKPara}>
                 {modalKr.modalSendPara1}
               </span>
@@ -575,7 +437,7 @@ export default function ModalComponent(props) {
               <span className={style.sendASKSubPara}>
                 {modalKr.modalSendPara3}
               </span>
-            </span>
+            </div>
           </DialogContent>
         </section>
       </Dialog>
