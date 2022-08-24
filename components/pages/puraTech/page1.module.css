@@ -1,203 +1,104 @@
-.ExplatinContainer {
-  display: flex;
-  flex-direction: column;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 228px;
+  margin-right: 177px;
+  margin-top: 194px;
 }
 
-.ExplainFloatingTop {
-  box-sizing: border-box;
-
-  width: 426px;
-  height: 108px;
-
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(20px);
-
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  line-height: 140%;
-  font-size: 24px;
-  letter-spacing: -0.01em;
-  color: var(--grayScale07);
-  font-weight: 700;
-  padding-left: 20px;
-
-  box-shadow: 0px 20px 60px 0px #00000008;
-  border: 1px solid;
-
-  border-image-source: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0.93%,
-    rgba(85, 87, 111, 0.3) 100.93%
-  );
+.rightImageContainer {
+  margin-top: 186px;
+  margin-left: 131px;
+  content: url(../../../src/image/PURATECH/page3/right.svg);
 }
 
-.ExplainFloatingBottom {
-  width: 574px;
-  height: 159px;
-
-  margin-top: 13px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 43.4%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  backdrop-filter: blur(20px);
-
-  border-radius: 4px;
-
+.leftContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  line-height: 140%;
-  font-size: 24px;
-  letter-spacing: -0.02em;
-  color: var(--grayScale07);
   font-weight: 300;
-  padding-left: 20px;
-  margin-left: 20px;
+  letter-spacing: -0.02em;
 }
 
-.ExplainFloatingBottomBold {
-  font-weight: 500;
+.leftContainerBot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.ExplainTitle {
+.step {
+  width: 43px;
+  height: 45px;
+  color: var(--white);
+  background-color: var(--primary01);
+  opacity: 0.9;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 4px 8px; */
+  letter-spacing: -0.03em;
+}
+
+.title {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 0px 12px;
-  gap: 4px;
 
-  /* width: 201px; */
-  height: 46px;
+  /* width: 223px; */
+  height: 43px;
 
-  /* primary/01 */
-  background: var(--primary01);
+  background: var(--grayScale01);
   border-radius: 4px;
-
-  color: var(--grayScale01);
-  letter-spacing: -0.01em;
+  margin-left: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
 
   font-weight: 700;
-  font-size: 24px;
-}
-
-.ExplainTitleSub {
-  color: var(--grayScale07);
   letter-spacing: -0.01em;
-
-  margin-left: 12px;
-  font-weight: 500;
-  font-size: 24px;
+  /* background: #f8f9fa; */
 }
 
-.commonImage {
-  /* width: 722px;
-  height: 340px; */
+.StepContainer {
 }
 
-.page01Image {
-  /* content: url(../../../src/image/PURATECH/page1/tech_main_01.svg); */
-  content: url(../../../src/image/PURATECH/page1/tech_main_01.png);
-  /* background-size: cover; */
-  margin-top: 64px;
-  width: 722px;
-  height: 340px;
+.image1 {
+  content: url(../../../src/image/PURATECH/page3/1.svg);
+}
+.image2 {
+  content: url(../../../src/image/PURATECH/page3/2.svg);
+}
+.image3 {
+  content: url(../../../src/image/PURATECH/page3/3.svg);
+}
+.image4 {
+  content: url(../../../src/image/PURATECH/page3/4.svg);
 }
 
-.page02Image {
-  /* content: url(../../../src/image/PURATECH/page1/tech_main_02.svg); */
-  content: url(../../../src/image/PURATECH/page1/tech_main_02.png);
-  margin-top: 19px;
-  width: 722px;
-  height: 340px;
-}
-.page03Image {
-  /* content: url(../../../src/image/PURATECH/page1/tech_main_03.svg); */
-  content: url(../../../src/image/PURATECH/page1/tech_main_03.png);
-  margin-top: 38px;
-  width: 722px;
-  height: 340px;
+.explainContainer {
+  box-sizing: border-box;
+
+  width: 425px;
+  height: 210px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid #f2f3f7;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 48px;
+  margin-right: 20px;
 }
 
-.ExplainCommonPara {
-  font-weight: 500;
+.expBox {
+  font-weight: 300;
   font-size: 16px;
   line-height: 150%;
+  /* identical to box height, or 24px */
+
   letter-spacing: -0.01em;
 
-  color: var(--grayScale07);
-}
+  /* grayscale/07 */
 
-.ExplainCommonParaSub {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 150%;
-
-  letter-spacing: -0.03em;
-  font-feature-settings: "tnum" on, "lnum" on;
-
-  color: var(--grayScale05);
-}
-
-.maruNumber {
-  width: 20px;
-  height: 20px;
-  background: var(--grayScale02);
-  border-radius: 100px;
-  font-weight: 600;
-
-  font-size: 12px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: -0.03em;
-  font-feature-settings: "tnum" on, "lnum" on;
-  margin-left: 24px;
-  margin-right: 8px;
-
-  color: var(--grayScale06);
-}
-
-.subTitle {
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 128%;
-
-  letter-spacing: -0.02em;
-
-  color: #55576f;
-  margin-bottom: 24px;
-}
-
-.mainTitle {
-  font-weight: 300;
-  font-size: 96px;
-  line-height: 120%;
-
-  letter-spacing: -0.02em;
-
-  color: #55576f;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 228px;
-  margin-right: 228px;
-  margin-top: 164px;
-  margin-bottom: 100px;
-}
-
-.titleContainer {
-  display: flex;
-  flex-direction: column;
+  color: #4d5058;
 }

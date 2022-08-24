@@ -1,165 +1,146 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-right: 227px;
-  margin-left: 227px;
-  margin-top: 225px;
-}
-
-.rightSide {
   display: flex;
+  margin-left: 228px;
+  margin-right: 224px;
+  margin-top: 192px;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }
 
-.topImage {
-  content: url(../../../src/image/PURATECH/page2/tech_02_img01.svg);
+.ce {
+  content: url(../../../src/image/PURATECH/page4/ce.svg);
+}
+.gmp {
+  content: url(../../../src/image/PURATECH/page4/gmp.svg);
+}
+.innobiz {
+  content: url(../../../src/image/PURATECH/page4/innobiz.svg);
+}
+.iso {
+  content: url(../../../src/image/PURATECH/page4/iso.svg);
+}
+.KBeauty {
+  content: url(../../../src/image/PURATECH/page4/k.svg);
+}
+.kibo {
+  content: url(../../../src/image/PURATECH/page4/kibo.svg);
+}
+.koita {
+  content: url(../../../src/image/PURATECH/page4/koita.svg);
 }
 
-.rightBottomSide {
-  display: flex;
-  margin-top: -24px;
-}
-
-.bottomLeftImage {
-  content: url(../../../src/image/PURATECH/page2/tech_02_img02.svg);
-  margin-right: 25px;
-}
-
-.bottomRightImage {
-  content: url(../../../src/image/PURATECH/page2/tech_02_img03.svg);
-}
-
-.title {
-  font-weight: 300;
-  font-size: 32px;
-
-  /* or 42px */
-  letter-spacing: -0.02em;
-  font-weight: 300;
-  /* grayscale/05 */
-  margin-bottom: 80px;
-}
-
-.titleTop {
-  font-size: 32px;
-  color: var(--grayScale05);
-}
-
-.titleBot {
-  font-size: 48px;
-  color: var(--primary01);
-}
-
-.expTop {
+.CertiContainer {
   box-sizing: border-box;
 
-  width: 299px;
-  height: 116px;
+  width: 195px;
+  height: 80px;
 
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-
-  padding-left: 20px;
-  padding-right: 20px;
-
-  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(20px);
-
-  border: 1px solid;
-
-  border-image: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(85, 87, 111, 0.3) 100%
-    )
-    1 round space;
-  /* 아 어쩌라는거 이거? */
-
-  border-radius: 4px;
-
-  background: linear-gradient(
-    180deg,
-    rgba(233, 240, 250, 0.5) 0%,
-    rgba(213, 228, 250, 0.015) 54.12%,
-    rgba(255, 255, 255, 0.15) 100%
-  );
-}
-
-/* .expTop::after {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(85, 87, 111, 0.3) 100%
-  );
-  content: "";
-  z-index: -1;
-  position: relative;
-  border-radius: 4px;
-} */
-
-.expTopUpper {
-  font-weight: 500;
-  letter-spacing: -0.01em;
-  font-size: 16px;
-
-  color: var(--primary01);
-  margin-bottom: 12px;
-}
-
-.expTopLower {
-  font-weight: 700;
-  font-size: 32px;
-  letter-spacing: -0.01em;
-  color: var(--grayScale07);
-}
-
-.expBot {
-  box-sizing: border-box;
-
-  width: 425px;
-  height: 466px;
-  padding-top: 36px;
   background: #ffffff;
 
   border: 1px solid #f2f3f7;
-  backdrop-filter: blur(20px);
-
   border-radius: 4px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-
-  color: var(--grayScale07);
-  letter-spacing: -0.03em;
-  line-height: 144%;
-
-  font-weight: 300;
-  /* font-weight: lighter; */
-  font-size: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-
-  margin-left: 150px;
-  margin-top: -30px;
-  position: sticky;
-  z-index: -1;
-}
-
-.expBotBold {
-  font-weight: 500;
-  /* font-weight: medium; */
-}
-
-.borderLineDash {
   display: flex;
-  align-self: flex-start;
-  width: 100%;
+  /* justify-content: center; */
+  padding-left: 10px;
+  /* padding-left: 5px; */
+  align-items: center;
+  margin-right: 12px;
+}
 
-  border: 1px dashed var(--grayScale03);
-  margin-top: 24px;
-  margin-bottom: 24px;
+.certiContainerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.certiContainerDate {
+  font-weight: 600;
+  font-size: 12px;
+
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: var(--grayScale05);
+}
+
+.certiContainerDetail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--grayScale07);
+}
+
+.headerTitle {
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+
+.headerTitleUpper {
+  color: var(--grayScale05);
+  font-size: 32px;
+  line-height: 132%;
+}
+
+.headerTitleLower {
+  color: var(--primary01);
+  font-size: 48px;
+  line-height: 132%;
+}
+
+.CertiTitleContainer {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.CertiTitleContainerTitle {
+  border-radius: 4px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  height: 48px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  padding: 0px 12px;
+  letter-spacing: -0.01em;
+}
+
+.CertiTitleContainerSubject {
+  margin-left: 12px;
+  color: var(--grayScale05);
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.class1__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.class1__image {
+  width: calc(292px);
+  height: calc(80px);
+  content: url(../../../src/image/PURATECH/page4/class1Laser.png);
+}
+
+.class1__explain {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+  /* or 17px */
+
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  /* grayscale/08 */
+
+  color: #28292e;
 }

@@ -17,22 +17,11 @@ export default function PuraTech() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Swipers>
-        {/* <Oval startX={0} startY={0} EndX={1600} EndY={164} /> */}
         <SwiperSlide>
           <Page1 />
-          {/* <Oval startX={0} startY={0} EndX={1600} EndY={164} /> */}
         </SwiperSlide>
         <SwiperSlide>
           <Page2 />
-          {/* <Oval startX={1600} startY={164} EndX={1584} EndY={540} /> */}
-        </SwiperSlide>
-        <SwiperSlide>
-          <Page3 />
-          {/* <Oval startX={1584} startY={540} EndX={1423} EndY={423} /> */}
-        </SwiperSlide>
-        <SwiperSlide>
-          <Page4 />
-          {/* <Oval startX={1423} startY={423} EndX={284} EndY={405} /> */}
         </SwiperSlide>
       </Swipers>
     </TechLayout>

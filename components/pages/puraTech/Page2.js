@@ -1,93 +1,138 @@
 import style from "./page2.module.css";
 
-const Title = () => {
+const CE = () => {
+  return <section className={style.ce}></section>;
+};
+
+const GMP = () => {
+  return <section className={style.gmp}></section>;
+};
+
+const INNOBIZ = () => {
+  return <section className={style.innobiz}></section>;
+};
+
+const ISO = () => {
+  return <section className={style.iso}></section>;
+};
+
+const KBeauty = () => {
+  return <section className={style.KBeauty}></section>;
+};
+
+const KIBO = () => {
+  return <section className={style.kibo}></section>;
+};
+
+const KOITA = () => {
+  return <section className={style.koita}></section>;
+};
+
+const CLASS1 = () => {
   return (
-    <section className={style.title}>
-      <span className={style.titleTop}>Critical Technology</span>
-      <br />
-      <span className={style.titleBot}>
-        에너지 세기에 따른 <span style={{ fontWeight: 700 }}>천공 깊이</span>
+    <section className={style.class1__container}>
+      <div className={style.class1__image}></div>
+      <div className={style.class1__explain}>IEC60825인증(Class 1)</div>
+    </section>
+  );
+};
+
+const CertiContainer = (props) => {
+  return (
+    <section className={style.CertiContainer}>
+      <div>{props.image}</div>
+      <div className={style.certiContainerText}>
+        <span className={style.certiContainerDate}>{props.date}</span>
+        <span className={style.certiContainerDetail}>{props.detail}</span>
+      </div>
+    </section>
+  );
+};
+
+const CertiTitleContainer = (props) => {
+  return (
+    <span className={style.CertiTitleContainer}>
+      <span
+        className={style.CertiTitleContainerTitle}
+        style={{ color: props.color, background: props.background }}
+      >
+        {props.title}
       </span>
-    </section>
+      <span className={style.CertiTitleContainerSubject}>{props.subject}</span>
+    </span>
   );
 };
 
-const ExplainTop = () => {
+const HeaderTitle = () => {
   return (
-    <section className={style.expTop}>
-      <div className={style.expTopUpper}>
-        퓨라셀에 사용된 미용 레이저, 어븀야그
-      </div>
-
-      <div className={style.expTopLower}>Er : Yag, 2940nm</div>
+    <section className={style.headerTitle}>
+      <span className={style.headerTitleUpper}>
+        인증 받은 레이저 기기로 마음까지 편한 관리!
+      </span>
+      <br />
+      <span className={style.headerTitleLower}>퓨라셀 인증</span>
     </section>
   );
 };
 
-const ExplainBottom = () => {
-  return (
-    <section className={style.expBot}>
-      <div>
-        <span>수분에 대한 에너지 흡수도가 높아 레이저 조사 시</span>
-        <br />
-        <span className={style.expBotBold}>
-          피부의 물분자 결합을 깨면서 나오는
-        </span>
-        <br />
-        <span className={style.expBotBold}>
-          높은 에너지로 피부표면을 순간적으로 증발시켜
-        </span>
-        <br />
-        <span>
-          <span className={style.expBotBold}>미세한 홀을 만드는 원리</span>의
-          미용 레이저입니다.
-        </span>
-      </div>
-
-      <hr className={style.borderLineDash} />
-      <div>
-        <span>레이저로 인한 천공 깊이는&nbsp;</span>
-        <span className={style.expBotBold}>
-          단위면적당 레이저 <br />
-          에너지 밀도(세기)
-        </span>
-
-        <span>
-          에 따라 실제{" "}
-          <span className={style.expBotBold}>피부에 천공되는 깊이에 차이</span>
-          를 줍니다.
-        </span>
-      </div>
-      <hr className={style.borderLineDash} />
-      <div>
-        <span>
-          때문에{" "}
-          <span className={style.expBotBold}>
-            동일한 에너지로 단위면적이 작으면
-          </span>
-        </span>
-        <br />
-        <span>에너지 밀도가 높아 레이저 침투 깊이가 깊어지고</span>
-        <br />
-        <span>이에 따라 천공되는 깊이도 차이가 발생됩니다.</span>
-      </div>
-    </section>
-  );
-};
-
-export default function Page2(props) {
+export default function Page4(props) {
   return (
     <section className={style.container}>
-      <div className={style.leftSide}>
-        <Title />
-        <ExplainTop />
-        <ExplainBottom />
+      <HeaderTitle />
+
+      <div style={{ marginTop: "48px", marginLeft: "445px" }}>
+        <CertiTitleContainer
+          color="#F8F9FA"
+          background="#55576F"
+          title="PURAXEL Certifications"
+          subject="제품 인증"
+        />
+
+        <div style={{ display: "flex", marginTop: "32px" }}>
+          <CertiContainer
+            image={<KBeauty />}
+            date="2020. 03"
+            detail="미용기기 전파 인증"
+          />
+          <CertiContainer
+            image={<CE />}
+            date="2021. 05"
+            detail="유럽 CE 인증"
+          />
+
+          <CLASS1 />
+        </div>
       </div>
-      <div className={style.rightSide}>
-        <div className={style.topImage}></div>
-        <div className={style.rightBottomSide}>
-          <div className={style.bottomLeftImage}></div>
-          <div className={style.bottomRightImage}></div>
+
+      <div style={{ marginTop: "73px", marginLeft: "445px" }}>
+        <CertiTitleContainer
+          // color=""
+          background="#f2f3f7"
+          title="LaMeditech Certifications"
+          subject="기업 인증"
+        />
+        <div style={{ display: "flex", marginTop: "24px" }}>
+          <CertiContainer image={<GMP />} date="2017. 06" detail="KGMP 인증" />
+          <CertiContainer
+            image={<ISO />}
+            date="2012. 02"
+            detail="ISO 13485 인증"
+          />
+          <CertiContainer
+            image={<KIBO />}
+            date="2016. 04"
+            detail="벤처기업 인증"
+          />
+          <CertiContainer
+            image={<KOITA />}
+            date="2012. 04"
+            detail="기업부설연구소 인증"
+          />
+          <CertiContainer
+            image={<INNOBIZ />}
+            date="2020. 05"
+            detail="이노비즈 인증"
+          />
         </div>
       </div>
     </section>
