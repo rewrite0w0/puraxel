@@ -85,9 +85,9 @@ export default function Page2() {
       <section className={_.leftContainer}>
         <div className={_.paperLeftContainer}>
           <span className={_.textContainer}>
-            <span className={_.subTitle}>레이저 초음파 기술을 활용한</span>
+            <span className={_.subTitle}>FX-5000 전문가용 기기로서</span>
             <span className={_.title}>
-              FX5000의 <span className={_.titleBold}>다섯가지 기능</span>
+              <span className={_.titleBold}>다섯가지 기능</span>을 제공합니다.
             </span>
             <span className={_.instruction}>궁금한 기능을 클릭해보세요</span>
           </span>
