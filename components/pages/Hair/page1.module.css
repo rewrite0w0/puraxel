@@ -1,13 +1,9 @@
 .container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  height: 100%;
-
+  height: calc(100%);
   display: flex;
 }
 
 .leftContainer {
-  /* margin-top: 161px; */
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -15,7 +11,7 @@
   justify-content: center;
 
   align-items: flex-start;
-  /* background-color: blue; */
+
   margin-left: 228px;
 }
 
@@ -26,6 +22,7 @@
   font-weight: 300;
   margin-bottom: 24px;
   line-height: 128%;
+  width: calc(100vw);
 }
 
 .title {
@@ -43,24 +40,19 @@
 }
 
 .rightContainer {
-  width: 50%;
-
   display: flex;
   justify-content: center;
   align-items: flex-end;
-
-  margin-right: 180px;
 }
 
 .rightImage {
-  background: "black";
-  /* margin-top: 180px;
-  margin-right: 80px; */
-  width: 100%;
-  height: auto;
-  /* content: url(../../../src/image/HAIR/page1/hair.png); */
+  width: calc(100% - 60%);
+  height: calc(100% - 10%);
+  z-index: -1;
+
+  position: absolute;
+  right: 0;
+  margin-right: 180px;
 
   content: url(../../../src/image/HAIR/page1/hair.png);
-  /* background-image: url(../../../src/image/Hair/page1/hair.png);
-  background-size: cover; */
 }

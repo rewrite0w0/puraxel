@@ -181,8 +181,11 @@ const SafeFeature = (props) => {
         display: "flex",
         width: "594px",
         height: "60px",
-        background:
-          "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%)",
+        background: "rgba(255, 255, 255, 1)",
+
+        boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.04)",
+        // background:
+        //   "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%)",
         // background:
         //   "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6), #ffffff",
         border: "1px solid #f8f9fa",
@@ -194,14 +197,15 @@ const SafeFeature = (props) => {
       <span
         style={{
           width: "136px",
-          background:
-            "linear-gradient(90deg, rgba(248,249,250,0) 0%, #f8f9fa 100%)",
+          // background:
+          //   "linear-gradient(90deg, rgba(248,249,250,0) 0%, #f8f9fa 100%)",
 
           // linear-gradient(90deg, rgba(248, 249, 250, 0) 0%, #F8F9FA 100%);
           display: "flex",
           alignItems: "center",
           paddingRight: "10px",
           paddingLeft: "8px",
+          boxSizing: "content-box",
         }}
       >
         <span
@@ -235,6 +239,22 @@ const SafeFeature = (props) => {
           {props.title}
         </span>
       </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#55576F",
+          opacity: "0.1",
+        }}
+      >
+        <hr
+          style={{
+            width: 0,
+            height: "calc(24px)",
+          }}
+        />
+      </div>
       <span
         style={{
           width: "100%",
