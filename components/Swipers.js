@@ -91,7 +91,7 @@ export default function Swipers({ children }) {
                 letter-spacing: -0.01em;
                 margin-right: 8px;
               "
-              >${current}<span style="margin-left: 8px">ㅡ</span></span
+              >0${current}<span style="margin-left: 8px">ㅡ</span></span
             ><span
               style="
                 font-size: 20px;
@@ -101,7 +101,7 @@ export default function Swipers({ children }) {
                 letter-spacing: -0.01em;
                 font-weight: 500;
               "
-              >${total}</span
+              >0${total}</span
             >
           </span>
         </span>`;
