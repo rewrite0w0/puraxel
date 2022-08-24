@@ -6,15 +6,6 @@ import style from "./page2.parts.module.css";
 import { Popover, Typography } from "@mui/material";
 import Fadein from "components/Parts/FadeIn";
 
-// const Fadein = ({ children }) => {
-//   const styles = useSpring({
-//     to: [{ opacity: 1 }],
-//     from: { opacity: 0.25 },
-//     config: { duration: 500 },
-//   });
-//   return <animated.div style={styles}>{children}</animated.div>;
-// };
-
 const FloatingContainer = (props) => {
   return (
     <section
@@ -188,78 +179,19 @@ const Explain4 = () => {
 
 const SafeFeature = (props) => {
   return (
-    <article
-      style={{
-        display: "flex",
-        width: "594px",
-        height: "60px",
-        background:
-          "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%)",
-        // background:
-        //   "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6), #ffffff",
-        border: "1px solid #f8f9fa",
-        borderRadius: "4px",
-        // marginBottom: "16px",
-        marginTop: "8px",
-      }}
-    >
-      <span
-        style={{
-          width: "136px",
-          background:
-            "linear-gradient(90deg, rgba(248,249,250,0) 0%, #f8f9fa 100%)",
-
-          // linear-gradient(90deg, rgba(248, 249, 250, 0) 0%, #F8F9FA 100%);
-          display: "flex",
-          alignItems: "center",
-          paddingRight: "10px",
-          paddingLeft: "8px",
-        }}
-      >
+    <article className={style.safefeature__container}>
+      <span className={style.safefeature__inner_container}>
         <span
+          className={style.safefeature__number}
           style={{
             background: props.maruColor ? "#CA797E" : "#b298ad",
-            width: "18px",
-            height: "18px",
-            borderRadius: "50%",
-            color: "#fff",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "10px",
-            fontWeight: "700",
-            // margin: "8px",
-            marginLeft: "8px",
-            marginRight: "8px",
           }}
         >
           {props.number}
         </span>
-        <span
-          style={{
-            color: "#55576f",
-            fontWeight: "700",
-            fontSize: "16px",
-            letterSpacing: "-0.01em",
-            lineHeight: "150%",
-          }}
-        >
-          {props.title}
-        </span>
+        <span className={style.safefeature__title}>{props.title}</span>
       </span>
-      <span
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "flex-start",
-          alignItems: "center",
-          color: "#4d5058",
-          fontSize: "16px",
-          letterSpacing: "-0.01rem",
-          fontWeight: "500",
-          background: "#fff",
-        }}
-      >
+      <span className={style.safefeature__explain}>
         &nbsp; &nbsp;{props.explain}
       </span>
     </article>
@@ -290,7 +222,7 @@ export function Laser() {
   return (
     <Fadein>
       <article className={`${style.commonContainer}`}>
-        <section style={{ marginTop: "18px", marginBottom: "20px" }}>
+        <section className={`${style.laser__container}`}>
           <span className={style.laserTitle}>레이저 모드</span>
           <span className={style.laserSubTitle}>
             <span style={{ marginRight: "8px" }}>#피부 속 채널 생성</span>{" "}

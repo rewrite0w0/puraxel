@@ -175,6 +175,11 @@
   margin-right: 8px;
 }
 
+.laser__container {
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
 .laserTitle {
   font-weight: 500;
   font-size: 40px;
@@ -254,4 +259,65 @@
 .explainContainerBold {
   font-weight: 500;
   color: var(--grayScale07);
+}
+
+.safefeature__container {
+  display: flex;
+  width: 594px;
+  height: 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+
+  margin-top: 8px;
+}
+
+.safefeature__inner_container {
+  width: 136px;
+  background: linear-gradient(90deg, rgba(248, 249, 250, 0) 0%, #f8f9fa 100%);
+
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 8px;
+}
+
+.safefeature__number {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.safefeature__title {
+  color: #55576f;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 150%;
+}
+
+.safefeature__explain {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #4d5058;
+  font-size: 16px;
+  letter-spacing: -0.01rem;
+  font-weight: 500;
+  background: #fff;
 }
