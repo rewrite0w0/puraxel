@@ -148,7 +148,7 @@ export default function Navbars(props) {
             open={snsOpenState}
             onClose={handleSNSCloseButton}
             anchorEl={snsAnchorState}
-            sx={{ Left: "1601px", Top: "64px", margin: 0, padding: 0 }}
+            className={navStyle.menu__sns__container}
           >
             <div className={navStyle.SNSContainer}>
               <MenuItem
@@ -246,9 +246,8 @@ export default function Navbars(props) {
         </Button>
         <NavIconButton
           title={layoutHeaderKr.kr}
-          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_kr}`}
           sx={{
-            marginRight: "16px",
             textDecoration: "underline",
             textDecorationThickness: "2px",
             // opacity: 1,
@@ -256,8 +255,7 @@ export default function Navbars(props) {
         ></NavIconButton>
         <NavIconButton
           title={layoutHeaderKr.en}
-          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
-          sx={{ marginRight: "80px" }}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_en}`}
         ></NavIconButton>
       </section>
     </nav>

@@ -287,3 +287,18 @@
   height: 2px;
   width: 100%;
 } */
+
+.menu__sns__container {
+  left: 1601px;
+  top: 64px;
+  margin: 0;
+  padding: 0;
+}
+
+.lang__button__kr {
+  margin-right: 16px;
+}
+
+.lang__button_en {
+  margin-right: 80px;
+}
