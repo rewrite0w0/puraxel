@@ -26,13 +26,13 @@
 }
 
 .movie__container {
-  height: 70%;
+  height: inherit;
 }
 
 .title__container {
-  height: 30%;
   display: flex;
   flex-direction: column;
-  padding: 80px 120px;
-  justify-content: flex-end;
+  padding-left: 80px;
+  padding-top: 120px;
+  padding-bottom: 74px;
 }
