@@ -1,28 +1,24 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 228px;
-  margin-right: 177px;
-  margin-top: 194px;
+  display: flex;
+  width: calc(100%);
+  height: calc(100%);
+  justify-content: center;
+  align-items: center;
+  padding-right: 228px;
+  padding-left: 228px;
+  padding-top: 104px;
+  padding-bottom: 80px;
 }
 
-.rightImageContainer {
-  margin-top: 186px;
-  margin-left: 131px;
-  content: url(../../../src/image/PURATECH/page3/right.svg);
-}
-
-.leftContainer {
+.inner__container {
   display: flex;
   flex-direction: column;
-  font-weight: 300;
-  letter-spacing: -0.02em;
 }
 
-.leftContainerBot {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.inner__container__left {
+}
+
+.inner__container__right {
 }
 
 .step {
@@ -45,7 +41,6 @@
   flex-direction: row;
   align-items: center;
 
-  /* width: 223px; */
   height: 43px;
 
   background: var(--grayScale01);
@@ -56,10 +51,6 @@
 
   font-weight: 700;
   letter-spacing: -0.01em;
-  /* background: #f8f9fa; */
-}
-
-.StepContainer {
 }
 
 .image1 {
@@ -79,7 +70,7 @@
   box-sizing: border-box;
 
   width: 425px;
-  height: 210px;
+  height: 200px;
 
   background: rgba(255, 255, 255, 0.7);
 
@@ -94,11 +85,106 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
 
   letter-spacing: -0.01em;
 
-  /* grayscale/07 */
-
   color: #4d5058;
+}
+
+.puraxel__title__sub {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 128%;
+
+  letter-spacing: -0.02em;
+
+  color: #55576f;
+
+  margin-bottom: 24px;
+}
+
+.puraxel__title__main {
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 120%;
+
+  letter-spacing: -0.02em;
+
+  color: #55576f;
+  margin-bottom: 18px;
+}
+
+.puraxel__title__image {
+  content: url(../../../src/image/PURATECH/page1/puraxel_title_image.png);
+  width: calc(100% - 35%);
+  height: calc(100%);
+}
+
+.puraxel__explain__step__container {
+  display: grid;
+  grid-template-areas:
+    "x y"
+    "z o";
+}
+
+.puraxel__explain__title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 132%;
+
+  letter-spacing: -0.02em;
+
+  color: #55576f;
+}
+
+.puraxel__explain__title__bold {
+  letter-spacing: -0.01em;
+  line-height: 132%;
+  font-weight: 700;
+}
+
+.puraxel__explain__float__container {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.puraxel__explain__float__container__upper {
+  margin-bottom: 8px;
+  width: calc(721px);
+  height: calc(127px);
+}
+
+.puraxel__explain__float__container__lower {
+  width: calc(722px);
+  height: calc(98px);
+  margin-left: 128px;
+}
+
+.puraxel__explain__para {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 144%;
+  /* or 29px */
+
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  /* grayscale/06 */
+
+  color: #7e818d;
+}
+
+.puraxel__explain__para__bold {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.puraxel__explain__container__upper {
+  margin-bottom: calc(3.6rem + 1vh);
 }

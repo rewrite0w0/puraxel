@@ -23,7 +23,7 @@
     background-color: blue;
   }
 }
-
+/* 1024 1440 1920  */
 @media all and (min-width: 1600px) and (max-width: 1919px) {
   body {
     background-color: pink;
