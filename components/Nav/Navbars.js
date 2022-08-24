@@ -81,6 +81,7 @@ export default function Navbars(props) {
               textDecoration: currentPage === "me" ? "underline" : "none",
               textDecorationThickness: currentPage === "me" ? "2px" : "none",
               opacity: currentPage === "me" ? "1" : undefined,
+              textUnderlineOffset: "4px",
             }}
           />
           <NavIconButton
@@ -94,6 +95,7 @@ export default function Navbars(props) {
               textDecorationThickness:
                 currentPage === "fx5000" ? "2px" : "none",
               opacity: currentPage === "fx5000" ? "1" : undefined,
+              textUnderlineOffset: "4px",
             }}
           />
 
@@ -107,6 +109,7 @@ export default function Navbars(props) {
               textDecoration: currentPage === "hair" ? "underline" : "none",
               textDecorationThickness: currentPage === "hair" ? "2px" : "none",
               opacity: currentPage === "hair" ? "1" : undefined,
+              textUnderlineOffset: "4px",
             }}
           />
 
@@ -121,6 +124,7 @@ export default function Navbars(props) {
               textDecoration: currentPage === "tech" ? "underline" : "none",
               textDecorationThickness: currentPage === "tech" ? "2px" : "none",
               opacity: currentPage === "tech" ? "1" : undefined,
+              textUnderlineOffset: "4px",
             }}
           />
         </div>

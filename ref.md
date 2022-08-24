@@ -25,6 +25,7 @@
 - https://stackoverflow.com/questions/8200204/fit-background-image-to-div
 - https://stackoverflow.com/questions/3383923/css-moz-available-equivalent-in-webkit
 - https://newbedev.com/putting-moz-available-and-webkit-fill-available-in-one-width-css-property
+- https://stackoverflow.com/questions/36267507/is-it-possible-to-animate-a-css-line-through-text-decoration
 
 ## 이미지
 
