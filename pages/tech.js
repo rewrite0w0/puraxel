@@ -4,8 +4,7 @@ import Swipers from "components/Swipers";
 import { SwiperSlide } from "swiper/react";
 import Page1 from "components/pages/puraTech/Page1";
 import Page2 from "components/pages/puraTech/Page2";
-import Page3 from "components/pages/puraTech/Page3";
-import Page4 from "components/pages/puraTech/Page4";
+
 import Oval from "components/Parts/Oval";
 
 export default function PuraTech() {
