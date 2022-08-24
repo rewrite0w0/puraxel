@@ -72,12 +72,11 @@ export default function Page4(props) {
         {/* 왼쪽 상단 */}
         <article>
           <div className={_.sub_title}>
-            이제 병원에서만 가능하던 프락셔널 레이저 시술을 에스테틱샵에서도
-            제공하실 수 있습니다.
+            PURAXEL Hair와 함께 하는 탈모 클리닉
           </div>
 
           <div className={_.main_title}>
-            바로 일상생활이 가능한 소형 프락셔널 레이저, 직접 경험해보세요.
+            PURAXEL Hair가 자신 있는 일상을 찾아 드립니다.
           </div>
         </article>
 
