@@ -1,42 +1,52 @@
 .container {
-  height: calc(100%);
+  height: calc(100vh);
   display: flex;
 }
 
 .leftContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: calc(50%);
 
   justify-content: center;
 
   align-items: flex-start;
 
-  margin-left: 228px;
+  margin-left: 22.8rem;
 }
 
 .subTitle {
-  font-size: 48px;
+  font-size: 4.8rem;
   letter-spacing: -0.02em;
   color: #55576f;
   font-weight: 300;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   line-height: 128%;
   width: calc(100vw);
 }
 
 .title {
-  font-size: 96px;
+  font-size: 9.6rem;
   letter-spacing: -0.02em;
   color: #55576f;
   font-weight: 300;
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
   line-height: 120%;
 }
 
 .explain {
+  font-size: 4.8rem;
+  letter-spacing: -0.02em;
+  color: #55576f;
+  font-weight: 600;
+  line-height: 128%;
 }
 .subExplain {
+  font-size: 4rem;
+  letter-spacing: -0.02em;
+  color: #4d5058;
+  font-weight: 300;
+  line-height: 128%;
 }
 
 .rightContainer {
@@ -52,7 +62,7 @@
 
   position: absolute;
   right: 0;
-  margin-right: 180px;
+  margin-right: 18rem;
 
   content: url(../../../src/image/HAIR/page1/hair.png);
 }
