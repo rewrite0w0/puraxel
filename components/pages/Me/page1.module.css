@@ -80,6 +80,7 @@
 .meImage {
   content: url(../../../src/image/ME/page1/me_main.svg);
   display: flex;
+  height: calc(100% - 20%);
 }
 
 .explain_sub {
