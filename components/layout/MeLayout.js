@@ -58,7 +58,7 @@ export default function MeLayout({ children }) {
             bottomRightz="12개월"
             bottomRightx="월 157,500원"
             style={{
-              width: "41.7px",
+              width: "41.7rem",
             }}
             link="https://lmdt.cafe24.com"
           />
