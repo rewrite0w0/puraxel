@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import slideStlye from "./Slide.module.css";
+import _ from "./Swipers.module.css";
 import {
   Mousewheel,
   Pagination,
@@ -14,9 +14,7 @@ import {
 export default function Swipers({ children }) {
   return (
     <Swiper
-      style={{
-        height: "100vh",
-      }}
+      className={_.container}
       slidesPerView={1}
       allowTouchMove={false}
       mousewheel={{ sensitivity: 0.1 }}

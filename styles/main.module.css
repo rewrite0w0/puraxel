@@ -2,36 +2,3 @@
   background-image: url(../src/image/main/main_bg.svg);
   background-size: cover;
 }
-
-@media all and (max-width: 1279px) {
-  .main {
-    visibility: hidden;
-  }
-}
-
-@media all and (min-width: 1280px) and (max-width: 1599px) {
-}
-
-@media all and (min-width: 1600px) and (max-width: 1919px) {
-  .main {
-    background-color: pink;
-  }
-}
-
-@media all and (min-width: 2560px) and (max-width: 3839px) {
-  .main {
-    background-color: red;
-  }
-}
-
-@media all and (min-width: 3840px) and (max-width: 4000px) {
-  .main {
-    background-color: royalblue;
-  }
-}
-
-@media all and (min-width: 4001px) {
-  .main {
-    visibility: hidden;
-  }
-}

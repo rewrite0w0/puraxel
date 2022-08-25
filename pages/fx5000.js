@@ -21,30 +21,23 @@ export default function FX5000() {
       </Head>
 
       <Swipers>
-        {/* <Oval startX={0} startY={0} EndX={1191} EndY={686} /> */}
-
         <SwiperSlide>
           <Page1 />
-          {/* <Oval startX={0} startY={0} EndX={1191} EndY={686} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
-          {/* <Oval startX={618} startY={822} EndX={822} EndY={618} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
-          {/* <Oval startX={822} startY={618} EndX={1434} EndY={728} /> */}
         </SwiperSlide>
         <SwiperSlide>
           <Page4 />
-          {/* <Oval startX={1434} startY={728} EndX={612} EndY={235} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page5 />
-          {/* <Oval startX={612} startY={235} EndX={396} EndY={499} /> */}
         </SwiperSlide>
       </Swipers>
     </FX5000Layout>

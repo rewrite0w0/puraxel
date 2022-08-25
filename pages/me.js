@@ -17,26 +17,20 @@ export default function Me() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Swipers>
-        {/* <Oval startX={0} startY={0} EndX={0} EndY={300} /> */}
         <SwiperSlide>
-          {/* <Oval startX={0} startY={0} EndX={0} EndY={300} /> */}
-          {/* <Oval startX={220} startY={300} EndX={220} EndY={300} /> */}
           <Page1 />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
-          {/* <Oval startX={0} startY={300} EndX={-600} EndY={300} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
-          {/* <Oval startX={-600} startY={300} EndX={200} EndY={-300} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page4 />
-          {/* <Oval startX={200} startY={-300} EndX={-500} EndY={300} /> */}
         </SwiperSlide>
       </Swipers>
     </MeLayout>
