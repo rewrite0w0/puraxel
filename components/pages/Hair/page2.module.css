@@ -11,26 +11,24 @@
 .leftContainer {
   display: flex;
   width: 50%;
-  margin-right: 15.6rem;
-  justify-content: space-between;
+  margin-left: 22.8rem;
 }
 
 .paperLeftContainer {
-  width: 95.8rem;
-  height: 72rem;
+  width: 66.4rem;
+  height: 68.6rem;
   background: #ffffff;
 
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
-  padding-left: 23.6rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 4.8rem;
-  margin-bottom: 3rem;
 }
 
 .subTitle {
@@ -127,8 +125,7 @@
   flex-direction: column;
 
   width: 50%;
-  height: 72rem;
-  margin-top: 12rem;
+  height: 65%;
 }
 
 .imageCommon {
