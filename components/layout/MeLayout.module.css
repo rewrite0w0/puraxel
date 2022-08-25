@@ -1,5 +1,5 @@
 .meContainer {
-  height: calc(100vmin);
+  height: 100vh;
 
   background: url(../../src/image/ME/productBg_me.png);
   background-size: cover;

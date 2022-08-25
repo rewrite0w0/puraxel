@@ -1,8 +1,6 @@
 import { useState } from "react";
-
 import { useSpring, animated } from "react-spring";
 import meKr from "public/locales/kr/me.json";
-
 import style from "./page2.module.css";
 
 const LaserExplain = () => {
@@ -172,24 +170,22 @@ export default function Page2() {
   const indicatorActive = "#A590FA";
   const indicatorInactive = "#DFE1E8";
 
-  return (
-    <section className={style.page2Container}>
-      {/* 왼쪽 grid */}
+  const LeftPaperContainer = () => {
+    return (
       <div className={style.leftGridContainer}>
         <div className={style.leftPaper}>
           {/* 첫 번째 grid: 제목/소개*/}
           <div className={style.leftPaperTop}>
-            <span className={style.leftPaperTopFirst}>하나의 기기로</span>
-            <br />
+            <div className={style.leftPaperTopFirst}>하나의 기기로</div>
             <div className={style.leftPaperTopSecond}>
-              <span className={style.leftPaperTopSecondPoint}>
+              <div className={style.leftPaperTopSecondPoint}>
                 {meKr.Page2Intro2A}
-              </span>
-              <span>{meKr.Page2Intro2B} &nbsp;</span>
-              <span className={style.leftPaperTopSecondPoint}>
+              </div>
+              <div>{meKr.Page2Intro2B} &nbsp;</div>
+              <div className={style.leftPaperTopSecondPoint}>
                 {meKr.Page2Intro2C}
-              </span>
-              <span>{meKr.Page2Intro2D}</span>
+              </div>
+              <div>{meKr.Page2Intro2D}</div>
             </div>
           </div>
 
@@ -200,13 +196,7 @@ export default function Page2() {
               {modeCondition ? <LaserToggleActive /> : <LaserToggleInActive />}
             </div>
             {/* 중앙 */}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
+            <div className={style.paper__image__container}>
               <div className={style.plusImage}></div>
             </div>
             {/* 갈바닉 */}
@@ -252,9 +242,6 @@ export default function Page2() {
               location.href = "/tech";
             }}
             className={style.bookmark}
-            style={{
-              marginTop: "14px",
-            }}
           >
             <span className={style.bookmarkParaContainer}>
               <span className={style.bookmarkUpperPara}>
@@ -267,9 +254,14 @@ export default function Page2() {
           </div>
         </div>
       </div>
+    );
+  };
 
+  return (
+    <section className={style.page2Container}>
+      {/* 왼쪽 grid */}
+      <LeftPaperContainer />
       {/* 오른쪽 grid */}
-
       {modeCondition ? <LaserImage /> : <GalvanicImage />}
     </section>
   );

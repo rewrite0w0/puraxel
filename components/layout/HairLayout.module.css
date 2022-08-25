@@ -1,7 +1,7 @@
 .HairContainer {
   background: url(../../src/image/HAIR/productBg_hair.png);
   background-size: cover;
-  height: calc(100vmin);
+  height: 100vh;
 }
 
 .footerContainer {
