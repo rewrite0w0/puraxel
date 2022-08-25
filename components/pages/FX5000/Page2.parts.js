@@ -164,17 +164,13 @@ const Explain4 = () => {
 const SafeFeature = (props) => {
   return (
     <article className={style.safefeature__container}>
-      <span className={style.safefeature__inner_container}>
-        <span
-          className={style.safefeature__number}
-          style={{
-            background: props.maruColor ? "#CA797E" : "#b298ad",
-          }}
-        >
-          {props.number}
-        </span>
+      <span className={style.safefeature__inner__container}>
+        <span className={style.safefeature__number}>{props.number}</span>
         <span className={style.safefeature__title}>{props.title}</span>
       </span>
+      <div className={style.safefeature__hr__container}>
+        <hr className={style.safefeature__hr} />
+      </div>
       <span className={style.safefeature__explain}>
         &nbsp; &nbsp;{props.explain}
       </span>
