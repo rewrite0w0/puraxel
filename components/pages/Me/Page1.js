@@ -15,12 +15,6 @@ export default function Page0() {
         <div className={style.explain_sub}>
           하루 10분, 이제 집에서 관리하세요.
         </div>
-        {/* <div className={style.subExplain}>
-          병원, 의료기관에서만 볼 수 있던 프락셔널 레이저 기기,
-        </div>
-        <div className={style.subExplain}>
-          이제는 집에서도 편리하게 사용하실 수 있습니다.
-        </div> */}
       </section>
       <div className={style.rightContainer}>
         <div className={style.meImage} />

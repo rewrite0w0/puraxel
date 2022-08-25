@@ -1,13 +1,12 @@
 .container {
-  height: 100%;
+  height: calc(100%);
   display: flex;
-  /* margin-top: 225px; */
-  margin-left: 228px;
+  margin-left: 22.8rem;
 }
 
 .leftContainer {
   display: flex;
-  width: 50%;
+  width: calc(50%);
   flex-direction: column;
   justify-content: center;
 }
@@ -20,27 +19,27 @@
 
 .subTitle {
   font-weight: 300;
-  font-size: 48px;
+  font-size: 4.8rem;
   letter-spacing: -0.02em;
   line-height: 128%;
   color: var(--primary01);
 
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .title {
   font-weight: 300;
-  font-size: 96px;
+  font-size: 9.6rem;
   letter-spacing: -0.02em;
   line-height: 120%;
   color: var(--primary01);
 
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
 }
 
 .mainExplain {
   font-weight: 300;
-  font-size: 40px;
+  font-size: 4rem;
 
   letter-spacing: -0.02em;
   line-height: 128%;
@@ -50,19 +49,19 @@
 
 .mainExplainSub {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 4rem;
 
   letter-spacing: -0.02em;
   line-height: 128%;
 
   color: var(--grayScale07);
 
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .mainExplainBold {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 4rem;
 
   letter-spacing: -0.02em;
 
@@ -71,7 +70,7 @@
 
 .subExplain {
   font-weight: 200;
-  font-size: 24px;
+  font-size: 2.4rem;
 
   letter-spacing: -0.02em;
   line-height: 140%;
@@ -85,13 +84,10 @@
 
 .explain_sub {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 140%;
-  /* identical to box height, or 34px */
 
   letter-spacing: -0.02em;
-
-  /* grayscale/07 */
 
   color: #4d5058;
 }
