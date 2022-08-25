@@ -202,8 +202,8 @@
 }
 
 .image__container {
-  width: calc(100%);
-  height: calc(100% - 60%);
+  width: calc(80rem);
+  height: calc(80rem);
   display: flex;
   justify-content: center;
   align-items: center;
