@@ -148,9 +148,9 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 36px;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  margin-bottom: 3.6rem;
   /* z-index: 100000; */
   /* cursor: pointer; */
   /* animation: 0.5s linear 1s infinite alternate heartBeat; */
@@ -181,66 +181,22 @@ img {
 }
 
 .swiper-button-next {
-  /* margin-right: 40px; */
-  margin-right: -8px;
+  margin-right: -0.8rem;
   content: url(../src/image/main/toRight.svg);
-  width: 100px !important;
+  width: 10rem !important;
 
-  height: 100px !important;
+  height: 10rem !important;
 }
 
 .swiper-button-prev {
-  /* margin-left: 40px; */
-  margin-left: -8px;
+  margin-left: -0.8rem;
 
   background-image: url(../src/image/main/toLeft.svg);
   background-size: cover;
-  width: 100px !important;
-  height: 100px !important;
+  width: 100rem !important;
+  height: 100rem !important;
 }
 
 .swiper-button-disabled {
   visibility: hidden;
 }
-
-/* @media (max-width: 1023px) {
-  * {
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-  body {
-    background-color: teal;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1599px) {
-  body {
-    background-color: blue;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1919px) {
-  body {
-    background-color: pink;
-  }
-}
-
-@media (min-width: 2560px) and (max-width: 3839px) {
-  body {
-    background-color: red;
-  }
-}
-
-@media (min-width: 3840px) and (max-width: 4400px) {
-  body {
-    background-color: royalblue;
-  }
-}
-
-@media (min-width: 4401px) {
-  * {
-    visibility: hidden;
-  }
-} */
