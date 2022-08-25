@@ -251,7 +251,7 @@
 .underliner::after {
   content: " ";
   position: absolute;
-  top: 65%;
+  top: 72.5%;
   left: 0;
   width: 100%;
   height: 0.2rem;
