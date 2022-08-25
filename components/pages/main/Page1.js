@@ -5,16 +5,9 @@ export default function Page1() {
     <section className={_.container}>
       <article className={_.explainContainer}>
         <div className={_.explain_inner_container}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              marginTop: "48px",
-            }}
-            className={_.explain_wrap_container}
-          >
+          <div className={_.explain_wrap_container}>
             <div className={_.explain_top}>
-              <span style={{ fontWeight: "500" }}>홀</span>로 빛나다
+              <span className={_.explain_top__bold}>홀</span>로 빛나다
             </div>
             <div className={_.explain_mid}>
               <div>레이저의 미세한 홀이</div>
