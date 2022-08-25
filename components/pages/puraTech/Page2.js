@@ -75,12 +75,12 @@ const HeaderTitle = () => {
   );
 };
 
-export default function Page4(props) {
+export default function Page4() {
   return (
     <section className={style.container}>
       <HeaderTitle />
 
-      <div style={{ marginTop: "48px", marginLeft: "445px" }}>
+      <div className={style.puraxel__certifications__container}>
         <CertiTitleContainer
           color="#F8F9FA"
           background="#55576F"
@@ -88,7 +88,7 @@ export default function Page4(props) {
           subject="제품 인증"
         />
 
-        <div style={{ display: "flex", marginTop: "32px" }}>
+        <div className={style.puraxel__certifications__container__inner}>
           <CertiContainer
             image={<KBeauty />}
             date="2020. 03"
@@ -104,14 +104,14 @@ export default function Page4(props) {
         </div>
       </div>
 
-      <div style={{ marginTop: "73px", marginLeft: "445px" }}>
+      <div className={style.lameditech__certifications__container}>
         <CertiTitleContainer
           // color=""
           background="#f2f3f7"
           title="LaMeditech Certifications"
           subject="기업 인증"
         />
-        <div style={{ display: "flex", marginTop: "24px" }}>
+        <div className={style.lameditech__certifications__container__inner}>
           <CertiContainer image={<GMP />} date="2017. 06" detail="KGMP 인증" />
           <CertiContainer
             image={<ISO />}

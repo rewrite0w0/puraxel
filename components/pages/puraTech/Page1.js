@@ -17,8 +17,7 @@ const Image1 = () => {
 const Exp1 = () => {
   return (
     <span className={_.expBox}>
-      퓨라셀 레이저 침투 깊이{" "}
-      <span style={{ fontWeight: 500 }}>0.06~0.2mm</span>
+      퓨라셀 레이저 침투 깊이 <span className={_.expBox__bold}>0.06~0.2mm</span>
     </span>
   );
 };
@@ -30,7 +29,7 @@ const Image2 = () => {
 const Exp2 = () => {
   return (
     <span className={_.expBox}>
-      1회 약 <span style={{ fontWeight: 500 }}>100개의 미세한 마이크로홀</span>{" "}
+      1회 약 <span className={_.expBox__bold}>100개의 미세한 마이크로홀</span>{" "}
       생성
     </span>
   );
@@ -44,7 +43,7 @@ const Exp3 = () => {
   return (
     <span className={_.expBox}>
       생성된 마이크로홀을 통해{" "}
-      <span style={{ fontWeight: 500 }}>유효성분을 피부 속으로 전달</span>
+      <span className={_.expBox__bold}>유효성분을 피부 속으로 전달</span>
     </span>
   );
 };
@@ -56,33 +55,27 @@ const Image4 = () => {
 const Exp4 = () => {
   return (
     <span className={_.expBox}>
-      화장품의 <span style={{ fontWeight: 500 }}>흡수율을 향상</span>시켜{" "}
-      <span style={{ fontWeight: 500 }}>효능 극대화</span>
+      화장품의 <span className={_.expBox__bold}>흡수율을 향상</span>시켜{" "}
+      <span className={_.expBox__bold}>효능 극대화</span>
     </span>
   );
 };
 
 const Step = (props) => {
   return (
-    <section style={{ display: "flex", marginBottom: "8px" }}>
+    <section className={_.step__container}>
       <section className={_.step}>
-        <span style={{ fontWeight: 600, fontSize: "12px" }}>
+        <span className={_.step__step}>
           STEP
           <br />
         </span>
 
-        <span style={{ fontWeight: 800, fontSize: "16px" }}>{props.step}</span>
+        <span className={_.step__bold}>{props.step}</span>
       </section>
       <section className={_.title}>
-        <span
-          style={{ color: "#55576f", fontSize: "18px", marginRight: "8px" }}
-        >
-          {props.title}
-        </span>
+        <span className={_.step__title}>{props.title}</span>
         &nbsp;
-        <span style={{ color: "#a292a3", fontSize: "14px" }}>
-          {props.subtitle}
-        </span>
+        <span className={_.ste__subtitle}>{props.subtitle}</span>
       </section>
     </section>
   );
@@ -150,10 +143,7 @@ const PuraxelExplain = () => {
         <div
           className={`${_.puraxel__explain__float__container} ${_.puraxel__explain__float__container__upper}`}
         >
-          <span
-            className={_.puraxel__explain__para}
-            style={{ alignItems: "flex-end" }}
-          >
+          <span className={_.puraxel__explain__para}>
             레이저 빔이 Array Lens를 통과하며, 피부에 약 100개의 미세한
             구멍(마이크로 홀)을
             <br />

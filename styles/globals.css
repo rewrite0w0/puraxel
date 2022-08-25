@@ -193,8 +193,8 @@ img {
 
   background-image: url(../src/image/main/toLeft.svg);
   background-size: cover;
-  width: 100rem !important;
-  height: 100rem !important;
+  width: 10rem !important;
+  height: 10rem !important;
 }
 
 .swiper-button-disabled {

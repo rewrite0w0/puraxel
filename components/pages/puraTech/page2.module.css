@@ -1,8 +1,8 @@
 .container {
   display: flex;
-  margin-left: 228px;
-  margin-right: 224px;
-  margin-top: 192px;
+  margin-left: 22.8rem;
+  margin-right: 22.4rem;
+  margin-top: 19.2rem;
   flex-direction: column;
 }
 
@@ -31,19 +31,19 @@
 .CertiContainer {
   box-sizing: border-box;
 
-  width: 195px;
-  height: 80px;
+  width: 19.5rem;
+  height: 8rem;
 
   background: #ffffff;
 
   border: 1px solid #f2f3f7;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   display: flex;
   /* justify-content: center; */
-  padding-left: 10px;
+  padding-left: 1rem;
   /* padding-left: 5px; */
   align-items: center;
-  margin-right: 12px;
+  margin-right: 1.2rem;
 }
 
 .certiContainerText {
@@ -53,7 +53,7 @@
 
 .certiContainerDate {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2rem;
 
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
@@ -64,7 +64,7 @@
 .certiContainerDetail {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
   letter-spacing: -0.01em;
   color: var(--grayScale07);
@@ -77,13 +77,13 @@
 
 .headerTitleUpper {
   color: var(--grayScale05);
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 132%;
 }
 
 .headerTitleLower {
   color: var(--primary01);
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 132%;
 }
 
@@ -94,53 +94,69 @@
 }
 
 .CertiTitleContainerTitle {
-  border-radius: 4px;
+  border-radius: 0.4rem;
   display: flex;
   /* justify-content: center; */
   align-items: center;
 
-  height: 48px;
+  height: 4.8rem;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 140%;
-  padding: 0px 12px;
+  padding: 0rem 1.2rem;
   letter-spacing: -0.01em;
 }
 
 .CertiTitleContainerSubject {
-  margin-left: 12px;
+  margin-left: 1.2rem;
   color: var(--grayScale05);
   letter-spacing: -0.01em;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 150%;
   font-style: normal;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .class1__container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.8rem;
   align-items: flex-end;
 }
 
 .class1__image {
-  width: calc(292px);
-  height: calc(80px);
+  width: calc(29.2rem);
+  height: calc(8rem);
   content: url(../../../src/image/PURATECH/page4/class1Laser.png);
 }
 
 .class1__explain {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 144%;
-  /* or 17px */
 
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
 
-  /* grayscale/08 */
-
   color: #28292e;
+}
+
+.puraxel__certifications__container {
+  margin-top: 4.8rem;
+  margin-left: 44.5rem;
+}
+
+.puraxel__certifications__container__inner {
+  display: flex;
+  margin-top: 3.2rem;
+}
+
+.lameditech__certifications__container {
+  margin-top: 7.3rem;
+  margin-left: 44.5rem;
+}
+.lameditech__certifications__container__inner {
+  display: flex;
+  margin-top: 2.4rem;
 }
