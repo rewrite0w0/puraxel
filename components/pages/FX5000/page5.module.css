@@ -81,6 +81,14 @@
   margin-right: 28rem;
 }
 
+.imageContainer__inner {
+  width: calc(80rem);
+  height: calc(80rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .explainContainer {
   margin-right: 22.7rem;
 }
@@ -113,7 +121,6 @@
 
 .hrContainer {
   width: 1rem;
-  height: 1.2rem;
 }
 
 .commonHR {
@@ -207,4 +214,8 @@
   align-self: flex-start;
   justify-content: flex-start;
   width: calc(50%);
+}
+
+.margin__bottom {
+  margin-bottom: 2.4rem;
 }

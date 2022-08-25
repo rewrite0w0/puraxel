@@ -235,20 +235,12 @@ export default function Page5() {
         </div>
       </aside>
       <article className={_.imageContainer}>
-        <div
-          style={{
-            width: "800px",
-            height: "800px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div className={_.imageContainer__inner}>
           <PartsViewer />
         </div>
       </article>
       <article className={_.explainContainer}>
-        <div style={{ marginBottom: "24px" }}>
+        <div className={_.margin__bottom}>
           <span className={_.explainTitle}>제품 구성 및 사양</span>
         </div>
 

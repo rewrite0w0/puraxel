@@ -117,55 +117,31 @@ const ProductBattery = () => {
 };
 const ProductETC = () => {
   return (
-    <span style={{ display: "flex", flexWrap: "wrap" }}>
-      <GrayButton title="제품 본체" width="76px" />
-      <GrayButton title="충전 크래들" width="88px" />
-      <GrayButton title="어댑터" width="61px" />
-      <GrayButton title="보안경(시술자용, 고객용)" width="161px" />
-      <GrayButton title="레이저 헤드팁(원형, 일자, 네모)" width="195px" />
-      <GrayButton title="초음파 헤드" width="88px" />
-      <GrayButton title="배터리(충전용) *2" width="124px" />
-      <GrayButton title="사용 설명서" width="88px" />
-      <GrayButton title="퀵 가이드" width="76px" />
+    <span className={_.product__etc__container}>
+      <GrayButton title="제품 본체" width="7.6rem" />
+      <GrayButton title="충전 크래들" width="8.8rem" />
+      <GrayButton title="어댑터" width="6.1rem" />
+      <GrayButton title="보안경(시술자용, 고객용)" width="16.1rem" />
+      <GrayButton title="레이저 헤드팁(원형, 일자, 네모)" width="19.5rem" />
+      <GrayButton title="초음파 헤드" width="8.8rem" />
+      <GrayButton title="배터리(충전용) *2" width="12.4rem" />
+      <GrayButton title="사용 설명서" width="8.8rem" />
+      <GrayButton title="퀵 가이드" width="7.6rem" />
     </span>
   );
 };
 
 const ExplainOnPaper = () => {
   return (
-    <section
-      style={{
-        // display: "grid",
-        // gridTemplateColumns: "1fr 1fr auto",
-        display: "flex",
-        width: "100%",
-        flexWrap: "wrap",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignSelf: "flex-start",
-          justifyContent: "flex-start",
-          width: "50%",
-        }}
-      >
+    <section className={_.explain__on__paper__container}>
+      <div className={_.explain__on__paper__container__inner}>
         <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
         <ExplainFrame title="레이저 종류" exp="Er:YAG" />
         <ExplainFrame title="레이저 등급" exp="1등급(class 1)" />
         <ExplainFrame title="레이저 레벨 범위" exp="1~3 level" />
         <ExplainFrame title="기능 모드" exp={<ExplainFeatureMode />} />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignSelf: "flex-start",
-          justifyContent: "flex-start",
-          width: "50%",
-        }}
-      >
+      <div className={_.explain__on__paper__container__inner}>
         <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
         <ExplainFrame title="제품 사이즈" exp={<ProductSize />} />
         <ExplainFrame title="배터리" exp={<ProductBattery />} />
@@ -260,20 +236,12 @@ export default function Page5() {
         </div>
       </aside>
       <article className={_.imageContainer}>
-        <div
-          style={{
-            width: "800px",
-            height: "800px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div className={_.imageContainer__inner}>
           <PartsViewer />
         </div>
       </article>
       <article className={_.explainContainer}>
-        <div style={{ marginBottom: "24px" }}>
+        <div className={_.margin__bottom}>
           <span className={_.explainTitle}>제품 구성 및 사양</span>
         </div>
 
