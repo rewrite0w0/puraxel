@@ -32,11 +32,11 @@ export default function Swipers({ children }) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 92px;
-            height: 59px;
+            width: 9.2rem;
+            height: 5.9rem;
           "
         >
-          <span style="margin-bottom: 8px; width: 38px; height: 22px">
+          <span style="margin-bottom: 0.8rem; width: 3.8rem; height: 2.2rem">
             <svg
               width="40"
               height="22"
@@ -83,19 +83,19 @@ export default function Swipers({ children }) {
           <span>
             <span
               style="
-                font-size: 20px;
+                font-size: 2rem;
                 color: #55576f;
                 font-weight: 500;
                 letter-spacing: -0.01em;
-                margin-right: 8px;
+                margin-right: 0.8rem;
               "
-              >0${current}<span style="margin-left: 8px">ㅡ</span></span
+              >0${current}<span style="margin-left: 0.8rem">ㅡ</span></span
             ><span
               style="
-                font-size: 20px;
+                font-size: 2rem;
                 color: #55576f;
                 opacity: 0.3;
-                font-size: 20px;
+                font-size: 2rem;
                 letter-spacing: -0.01em;
                 font-weight: 500;
               "
