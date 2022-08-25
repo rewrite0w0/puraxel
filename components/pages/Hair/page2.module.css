@@ -1,68 +1,56 @@
 .container {
-  /* display: grid; */
-  /* margin-left: 80px; */
-
-  margin-right: 80px;
-  /* margin-top: 144px; */
-  margin-bottom: 216px;
-  /* background-color: skyblue; */
-  /* width: auto; */
+  margin-right: 8rem;
+  margin-bottom: 21.6rem;
   display: flex;
-  width: 100%;
+  width: calc(100vw);
 
-  height: 100%;
+  height: calc(100vh);
   align-items: center;
 }
 
 .leftContainer {
   display: flex;
-  /* background-color: red; */
   width: 50%;
-  margin-right: 156px;
+  margin-right: 15.6rem;
   justify-content: space-between;
 }
 
 .paperLeftContainer {
-  width: 958px;
-  height: 720px;
+  width: 95.8rem;
+  height: 72rem;
   background: #ffffff;
 
-  /* grayscale/02 */
   border: 1px solid #f2f3f7;
-  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-  padding-left: 236px;
+  box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
+  border-radius: 0.4rem;
+  padding-left: 23.6rem;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
-  margin-bottom: 30px;
+  margin-top: 4.8rem;
+  margin-bottom: 3rem;
 }
 
 .subTitle {
   font-style: normal;
   font-weight: 300;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 132%;
 
-  /* or 42px */
   letter-spacing: -0.02em;
 
-  /* grayscale/05 */
   color: var(--grayScale05);
 }
 
 .title {
   font-weight: 300;
-  font-size: 48px;
+  font-size: 4.8rem;
   line-height: 128%;
 
-  /* or 61px */
   letter-spacing: -0.02em;
 
-  /* primary/01 */
   color: var(--primary01);
 }
 
@@ -73,20 +61,18 @@
 .instruction {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
 
-  /* identical to box height, or 21px */
   letter-spacing: -0.01em;
 
-  /* grayscale/06 */
   color: #7e818d;
 }
 
 .imageContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.8rem;
 }
 
 .imageLaser {
@@ -98,96 +84,51 @@
   align-items: flex-end;
 }
 
-/* .imageLaser:hover {
-  background-color: white;
-  opacity: 0.8;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-} */
-
 .rightImageCommon {
   box-sizing: border-box;
 
-  width: 288px;
-  height: 148px;
+  width: 28.8rem;
+  height: 14.8rem;
 
-  /* basic/white */
   background: #ffffff;
 
-  /* grayscale/02 */
   border: 1px solid #f2f3f7;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-/* .rightImageCommon:hover {
-  background-color: white;
-  opacity: 0.8;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-} */
-
 .imageContainerLeft {
   background: #f2f3f7;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   border: 1px solid #f2f3f7;
   background-color: #f2f3f6;
 }
 
 .leftImageCommon {
-  width: 285px;
-  height: 460px;
+  width: 28.5rem;
+  height: 46rem;
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
   border: 1px solid #f2f3f7;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   background-color: #f2f3f6;
 }
 
 .imageContainerRight {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.imageSonic {
-  margin-top: 20px;
-  background-image: url(../../../src/image/FX5000/page2/_sonic.svg);
-  background-size: cover;
-  /* margin-left: 12px; */
-}
-
-.imageGalvanic {
-  margin-top: 20px;
-  background-image: url(../../../src/image/FX5000/page2/_gal.svg);
-  background-size: cover;
-}
-
-.imageCooling {
-  margin-top: 20px;
-  background-size: cover;
-  background-image: url(../../../src/image/FX5000/page2/_cooling.svg);
-}
-
-.imageLED {
-  margin-top: 20px;
-  background-image: url(../../../src/image/FX5000/page2/_led.svg);
-  background-size: cover;
+  gap: 0.8rem;
 }
 
 .rightContainer {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* background-color: pink; */
+
   width: 50%;
-  /* height: 100%; */
-  height: 720px;
-  margin-top: 120px;
-  /* background-color: black; */
+  height: 72rem;
+  margin-top: 12rem;
 }
 
 .imageCommon {
@@ -197,98 +138,78 @@
 }
 
 .imageCommon:hover {
-  /* background-color: blue; */
   background-color: white;
   opacity: 0.8;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0rem 0rem 2.4rem rgba(0, 0, 0, 0.08);
   cursor: pointer;
 }
 
 .imageCommon:hover .explainContainerNum {
   background-color: var(--grayScale02);
-
-  /* background-color: pink; */
 }
 
 .explainContainer {
-  /* display: flex; */
   background-color: transparent;
-  backdrop-filter: blur(0.7px);
+  backdrop-filter: blur(0.07rem);
   width: 100%;
 }
 
 .explainContainerSpan {
   font-weight: 700;
-  font-size: 16.2909px;
+  font-size: 1.62909rem;
   line-height: 132%;
 
-  /* identical to box height, or 22px */
   text-align: center;
   letter-spacing: -0.01em;
 
-  /* primary/01 */
   color: #55576f;
 }
 
 .explainContainerNum {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
 
-  /* or 21px */
   text-align: center;
   letter-spacing: -0.01em;
   font-feature-settings: "tnum" on, "lnum" on, "case" on;
 
-  /* color: #f8f9fa; */
-
   color: var(--primary01);
 
-  /* background: #f2f3f7; */
-  /* background-color: pink; */
   background-color: var(--grayScale01);
 
   border-radius: 50%;
-  /* margin-left: 12px; */
-  margin-right: 8px;
-  width: 22px;
-  height: 22px;
+  margin-right: 0.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
-
-/* .explainContainerNum:hover {
-  background-color: var(--grayScale02);
-} */
 
 .CommonImageContainerMain {
   box-sizing: border-box;
 
-  width: 288px;
-  height: 460px;
+  width: 28.8rem;
+  height: 46rem;
 
-  /* basic/white */
   background: #ffffff;
 
-  /* grayscale/02 */
   border: 1px solid #f2f3f7;
-  border-radius: 4px;
+  border-radius: 0.4rem;
 }
 
 .CommonImageContainer {
   box-sizing: border-box;
 
-  width: 288px;
-  height: 148px;
+  width: 28.8rem;
+  height: 14.8rem;
 
-  /* basic/white */
   background: #ffffff;
 
-  /* grayscale/02 */
   border: 1px solid #f2f3f7;
-  border-radius: 4px;
+  border-radius: 0.4rem;
 }
 
 .LaserImage {
@@ -309,4 +230,8 @@
 .CoolingImage {
   background-size: cover;
   background-image: url(../../../src/image/HAIR/page2/4cooling.svg);
+}
+
+.flex__container {
+  display: flex;
 }

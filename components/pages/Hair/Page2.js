@@ -5,14 +5,14 @@ import { Laser, Sonic, Galvanic, Cooling, Led } from "./Page2.parts";
 
 const ExplainContainer = (props) => {
   return (
-    <span style={{ display: "flex" }} className={_.explainContainer}>
+    <span className={`${_.explainContainer} ${_.flex__container}`}>
       <span
         className={_.explainContainerNum}
         style={{
-          fontSize: props.maruSize ? props.maruSize : "12px",
-          marginLeft: props.marginLeft ? props.marginLeft : "12px",
-          width: props.width ? props.width : "22px",
-          height: props.height ? props.height : "22px",
+          fontSize: props.maruSize ? props.maruSize : "1.2rem",
+          marginLeft: props.marginLeft ? props.marginLeft : "1.2rem",
+          width: props.width ? props.width : "2.2rem",
+          height: props.height ? props.height : "2.2rem",
         }}
       >
         {props.num}
@@ -20,8 +20,8 @@ const ExplainContainer = (props) => {
       <span
         className={_.explainContainerSpan}
         style={{
-          fontSize: props.size ? props.size : "16.2909px",
-          marginBottom: "16px",
+          fontSize: props.size ? props.size : "1.62909rem",
+          marginBottom: "1.6rem",
         }}
       >
         {props.title}
@@ -90,7 +90,7 @@ export default function Page2() {
             <span className={_.title}>
               <span className={_.titleBold}>4가지 기능</span>을 제공합니다.
             </span>
-            <br style={{ marginTop: "12px" }} />
+            <br />
             <span className={_.instruction}>궁금한 기능을 클릭해보세요</span>
             <br />
           </span>
@@ -109,11 +109,11 @@ export default function Page2() {
                   <ExplainContainer
                     num={"1"}
                     title={"레이저"}
-                    marginLeft={"20px"}
-                    maruSize={"14px"}
-                    size={"24px"}
-                    height={"28px"}
-                    width={"28px"}
+                    marginLeft={"2rem"}
+                    maruSize={"1.4rem"}
+                    size={"2.4rem"}
+                    height={"2.8rem"}
+                    width={"2.8rem"}
                   />
                 </div>
               </div>
