@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useSpring, useTransition } from "react-spring";
 import _ from "./page4.module.css";
 import Fadein from "components/Parts/FadeIn";
 
@@ -33,19 +32,6 @@ const Header3 = () => {
 
 const Header33 = () => {
   return <div className={_.header33}></div>;
-};
-
-const GrayButton = (props) => {
-  return (
-    <span
-      className={`${_.optionButtonCommon}`}
-      style={{
-        width: props.width,
-      }}
-    >
-      {props.title}
-    </span>
-  );
 };
 
 const Bar = () => {
@@ -134,17 +120,8 @@ const ProductSpec = () => {
 
 const ExplainOnPaper = () => {
   return (
-    <section style={{ display: "flex", width: "100%" }}>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignSelf: "flex-start",
-          justifyContent: "flex-start",
-          // background: "red",
-          width: "50%",
-        }}
-      >
+    <section className={_.explain__container}>
+      <div className={_.explain__container__inner}>
         <ExplainFrame title="제품명" exp="퓨라셀 me" />
         <ExplainFrame title="레이저 파장" exp={<LaserWave />} />
         <ExplainFrame title="레이저 레벨 범위" exp="1~2 level" />
@@ -152,16 +129,7 @@ const ExplainOnPaper = () => {
         <ExplainFrame title="레이저 출력 범위" exp={<LaserPowerRange />} />
         <ExplainFrame title="레이저 반복" exp={<LaserRepeat />} />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignSelf: "flex-start",
-          justifyContent: "flex-start",
-          // background: "blue",
-          width: "50%",
-        }}
-      >
+      <div className={_.explain__container__inner}>
         <ExplainFrame title="기능 모드" exp={<ProductFeature />} />
         <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
         <ExplainFrame title="제품 사이즈" exp={<ProducetSize />} />
@@ -255,21 +223,13 @@ export default function Page5() {
           {parts === "me" ? <Header3 /> : <Header33 />}
         </div>
       </aside>
-      <article className={_.imageContainer}>
-        <div
-          style={{
-            width: "800px",
-            height: "800px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <article className={_.image}>
+        <div className={_.image__container}>
           <PartsViewer />
         </div>
       </article>
       <article className={_.explainContainer}>
-        <div style={{ marginBottom: "24px" }}>
+        <div className={_.explainTitle__container}>
           <span className={_.explainTitle}>제품 구성 및 사양</span>
         </div>
 

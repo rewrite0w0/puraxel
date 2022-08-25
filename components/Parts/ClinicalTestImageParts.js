@@ -8,6 +8,7 @@ export default function ClinicalTestImageParts(props) {
         ...props.sx,
         color: props.color ? props.color : "#ffffff",
       }}
+      {...props}
     >
       <span className={style.para}>{props.title}</span>
     </div>
