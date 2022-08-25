@@ -79,9 +79,9 @@ export default function Navbars(props) {
             className={navStyle.gnbMenu}
             style={{
               textDecoration: currentPage === "me" ? "underline" : "none",
-              textDecorationThickness: currentPage === "me" ? "2px" : "none",
+              textDecorationThickness: currentPage === "me" ? "0.2rem" : "none",
               opacity: currentPage === "me" ? "1" : undefined,
-              textUnderlineOffset: "4px",
+              textUnderlineOffset: "0.4rem",
             }}
           />
           <NavIconButton
@@ -93,9 +93,9 @@ export default function Navbars(props) {
             style={{
               textDecoration: currentPage === "fx5000" ? "underline" : "none",
               textDecorationThickness:
-                currentPage === "fx5000" ? "2px" : "none",
+                currentPage === "fx5000" ? "0.2rem" : "none",
               opacity: currentPage === "fx5000" ? "1" : undefined,
-              textUnderlineOffset: "4px",
+              textUnderlineOffset: "0.4rem",
             }}
           />
 
@@ -107,9 +107,10 @@ export default function Navbars(props) {
             className={navStyle.gnbMenu}
             style={{
               textDecoration: currentPage === "hair" ? "underline" : "none",
-              textDecorationThickness: currentPage === "hair" ? "2px" : "none",
+              textDecorationThickness:
+                currentPage === "hair" ? "0.2rem" : "none",
               opacity: currentPage === "hair" ? "1" : undefined,
-              textUnderlineOffset: "4px",
+              textUnderlineOffset: "0.4rem",
             }}
           />
 
@@ -122,9 +123,10 @@ export default function Navbars(props) {
             className={navStyle.gnbMenu}
             style={{
               textDecoration: currentPage === "tech" ? "underline" : "none",
-              textDecorationThickness: currentPage === "tech" ? "2px" : "none",
+              textDecorationThickness:
+                currentPage === "tech" ? "0.2rem" : "none",
               opacity: currentPage === "tech" ? "1" : undefined,
-              textUnderlineOffset: "4px",
+              textUnderlineOffset: "0.4rem",
             }}
           />
         </div>
@@ -234,7 +236,7 @@ export default function Navbars(props) {
                 <span>대표자 최종석 | 사업자번호 : 119-86-51786</span>
                 <br />
                 <span>통신판매업신고번호 : 제2017-서울금천-0999호</span>
-                <br style={{ marginBottom: "8px" }} />
+                <br style={{ marginBottom: "0.8rem" }} />
                 <span>서울특별시 금천구 벚꽃로 234, 10층 1002호</span>
                 <br />
                 <span>(가산동, 에이스하이엔드타워 6차)</span>
@@ -253,7 +255,7 @@ export default function Navbars(props) {
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_kr}`}
           sx={{
             textDecoration: "underline",
-            textDecorationThickness: "2px",
+            textDecorationThickness: "0.2rem",
             // opacity: 1,
           }}
         ></NavIconButton>
