@@ -144,16 +144,12 @@ a {
 }
 
 .customPagination {
-  /* background: black; */
   position: absolute;
   bottom: 0;
   right: 0;
   margin-right: 8rem;
   margin-left: 8rem;
   margin-bottom: 3.6rem;
-  /* z-index: 100000; */
-  /* cursor: pointer; */
-  /* animation: 0.5s linear 1s infinite alternate heartBeat; */
 }
 
 @keyframes heartBeat {

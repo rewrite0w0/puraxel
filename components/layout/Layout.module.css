@@ -9,7 +9,7 @@
 /* 상태변수로 ME 밑줄과 같이 처리하면 될 듯? */
 
 .layoutHeader {
-  z-index: 9999;
+  z-index: 10;
   position: absolute;
   display: flex;
   justify-content: space-between;

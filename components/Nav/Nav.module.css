@@ -141,18 +141,18 @@
 }
 
 .SNSMenuFirst {
-  margin-top: 1.2rem;
+  /* margin-top: 1.2rem; */
 }
 
 .SNSMenuLast {
-  margin-bottom: 1.6rem;
+  /* margin-bottom: 1.6rem; */
 }
 
 .companyInfoMenuContainer {
   padding-top: 1.6rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-  height: 17.6rem;
+  height: 19.25rem;
   width: 29.6rem;
 }
 
@@ -224,8 +224,6 @@
 }
 
 .menu__sns__container {
-  left: 160.1rem;
-  top: 6.4rem;
   margin: 0;
   padding: 0;
 }

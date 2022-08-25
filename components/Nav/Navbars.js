@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { Box, Menu, Button, MenuItem } from "@mui/material";
 
 import navStyle from "./Nav.module.css";
@@ -7,7 +7,7 @@ import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
 import NavIconButton from "components/Nav/NavIconButton";
 
-export default function Navbars(props) {
+export default function Navbars() {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
   const [companyInfoAnchorState, setCompanyInfoAnchorState] =
     useState(undefined);
@@ -175,7 +175,6 @@ export default function Navbars(props) {
                     "_blank"
                   );
                 }}
-                onWheelCapture
               >
                 FACEBOOK
               </MenuItem>
