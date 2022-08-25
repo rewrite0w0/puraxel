@@ -55,13 +55,7 @@ const MaruMinus = () => {
 
 const RedButton = () => {
   return (
-    <span
-      className={`${style.optionButtonCommon}`}
-      style={{
-        background: "#DD7A8C",
-        color: "#fff",
-      }}
-    >
+    <span className={`${style.optionButtonCommon} ${style.parts__red__button}`}>
       기본 기능
     </span>
   );
@@ -70,11 +64,7 @@ const RedButton = () => {
 const BlackButton = () => {
   return (
     <span
-      className={`${style.optionButtonCommon}`}
-      style={{
-        background: "#7e818d",
-        color: "#fff",
-      }}
+      className={`${style.optionButtonCommon} ${style.parts__black__button}`}
     >
       옵션 기능
     </span>
@@ -84,12 +74,9 @@ const BlackButton = () => {
 const GrayButton = (props) => {
   return (
     <span
-      className={`${style.optionButtonCommon}`}
+      className={`${style.optionButtonCommon} ${style.parts__gray__button}`}
       style={{
-        color: "#4d5058",
-        background: "#f2f3f7",
         ...props.sx,
-        marginRight: "8px",
       }}
     >
       {props.title}
@@ -113,7 +100,6 @@ const GalvanicModeImage = () => {
   return (
     <div>
       <div
-        style={{ marginBottom: "13px" }}
         className={`${style.modeImageCommon} ${style.GalvanicModeImageTop}`}
       ></div>
       <div
@@ -138,7 +124,7 @@ const Explain1 = () => {
   return (
     <span>
       응급 시 제품을 놓을 경우, 센서에 의해 &nbsp;
-      <span style={{ fontWeight: "700" }}>즉시 동작이 멈춥니다.</span>
+      <span className={style.explain__bold}>즉시 동작이 멈춥니다.</span>
     </span>
   );
 };
@@ -146,8 +132,8 @@ const Explain1 = () => {
 const Explain2 = () => {
   return (
     <span>
-      접촉 센서에 의해&nbsp;{" "}
-      <span style={{ fontWeight: "700" }}>
+      접촉 센서에 의해&nbsp;
+      <span className={style.explain__bold}>
         레이저 헤드가 두피에 닿아야만 작동
       </span>
       합니다.
@@ -159,7 +145,8 @@ const Explain3 = () => {
   return (
     <span>
       적외선 센서에 의해&nbsp;
-      <span style={{ fontWeight: "700" }}>손잡이 파지 시에만 작동</span>합니다.
+      <span className={style.explain__bold}>손잡이 파지 시에만 작동</span>
+      합니다.
     </span>
   );
 };
@@ -168,7 +155,7 @@ const Explain4 = () => {
   return (
     <span>
       조사&nbsp;
-      <span style={{ fontWeight: "700" }}>버튼을 누를 때만 레이저 조사</span>
+      <span className={style.explain__bold}>버튼을 누를 때만 레이저 조사</span>
       됩니다.
     </span>
   );
@@ -176,98 +163,15 @@ const Explain4 = () => {
 
 const SafeFeature = (props) => {
   return (
-    <article
-      style={{
-        display: "flex",
-        width: "594px",
-        height: "60px",
-        background: "rgba(255, 255, 255, 1)",
-
-        boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.04)",
-        // background:
-        //   "linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%)",
-        // background:
-        //   "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6), #ffffff",
-        border: "1px solid #f8f9fa",
-        borderRadius: "4px",
-        // marginBottom: "16px",
-        marginTop: "8px",
-      }}
-    >
-      <span
-        style={{
-          width: "136px",
-          // background:
-          //   "linear-gradient(90deg, rgba(248,249,250,0) 0%, #f8f9fa 100%)",
-
-          // linear-gradient(90deg, rgba(248, 249, 250, 0) 0%, #F8F9FA 100%);
-          display: "flex",
-          alignItems: "center",
-          paddingRight: "10px",
-          paddingLeft: "8px",
-          boxSizing: "content-box",
-        }}
-      >
-        <span
-          style={{
-            background: props.maruColor ? "#CA797E" : "#b298ad",
-            width: "18px",
-            height: "18px",
-            borderRadius: "50%",
-            color: "#fff",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "10px",
-            fontWeight: "700",
-            // margin: "8px",
-            marginLeft: "8px",
-            marginRight: "8px",
-          }}
-        >
-          {props.number}
-        </span>
-        <span
-          style={{
-            color: "#55576f",
-            fontWeight: "700",
-            fontSize: "16px",
-            letterSpacing: "-0.01em",
-            lineHeight: "150%",
-          }}
-        >
-          {props.title}
-        </span>
+    <article className={style.safefeature__container}>
+      <span className={style.safefeature__inner__container}>
+        <span className={style.safefeature__number}>{props.number}</span>
+        <span className={style.safefeature__title}>{props.title}</span>
       </span>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "#55576F",
-          opacity: "0.1",
-        }}
-      >
-        <hr
-          style={{
-            width: 0,
-            height: "calc(24px)",
-          }}
-        />
+      <div className={style.safefeature__hr__container}>
+        <hr className={style.safefeature__hr} />
       </div>
-      <span
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "flex-start",
-          alignItems: "center",
-          color: "#4d5058",
-          fontSize: "16px",
-          letterSpacing: "-0.01rem",
-          fontWeight: "500",
-          background: "#fff",
-        }}
-      >
+      <span className={style.safefeature__explain}>
         &nbsp; &nbsp;{props.explain}
       </span>
     </article>
@@ -297,35 +201,36 @@ export function Laser() {
 
   return (
     <article className={`${style.commonContainer}`}>
-      <section style={{ marginTop: "18px", marginBottom: "20px" }}>
+      <section className={`${style.margin__top__bottom}`}>
         <span className={style.laserTitle}>레이저 모드</span>
         <span className={style.laserSubTitle}>
-          <span style={{ marginRight: "8px" }}>#두피 속 채널 생성</span>{" "}
+          <span className={style.margin__right}>#두피 속 채널 생성</span>{" "}
           <span>#모공 관리</span>
         </span>
       </section>
 
-      <section style={{ display: "flex" }}>
+      <section className={style.flex__container}>
         <LaserModeImage />
-        <div style={{ marginLeft: "16px" }}>
-          <div style={{ display: "flex", marginBottom: "16px" }}>
+        <div className={style.margin__left}>
+          <div className={style.button__container}>
             <RedButton />
             <GrayButton
               title="모공관리 (레벨:1~3)"
-              sx={{ width: "148px", fontWeight: "500", fontSize: "16px" }}
+              sx={{ width: "14.8rem", fontWeight: "500", fontSize: "1.6rem" }}
             />
           </div>
           <span className={style.commonText}>
             두피 두께에 맞는 단계 설정으로 원하는
             <br />
-            부위에 레이저를 조사하여{" "}
+            부위에 레이저를 조사하여&nbsp;
             <span className={style.commonTextBold}>두피 속 마이크로</span>
-            <br /> <span className={style.commonTextBold}>채널을 생성</span>
+            <br />
+            <span className={style.commonTextBold}>채널을 생성</span>
             합니다.
           </span>
         </div>
       </section>
-      <section style={{ marginTop: "75px" }}>
+      <section className={style.margin__top}>
         <span
           className={style.subExplainLaserWarning}
           onClick={(e) => console.log(e)}
@@ -333,20 +238,10 @@ export function Laser() {
           안심하고 사용할 수 있는
         </span>
         <br />
-        <span
-          style={{
-            display: "flex",
-            alignContent: "center",
-            justifyContent: "flex-start",
-          }}
-        >
+        <span className={style.laser__explain__title}>
           <span className={style.explainLaserWarning}>레이저 안전 기능</span>
           <span
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "center",
-            }}
+            className={style.laser__warning__container}
             onClick={() => setMaruStatus(!maruStatus)}
           >
             <span
@@ -370,16 +265,7 @@ export function Laser() {
                   horizontal: "center",
                 }}
               >
-                <Typography
-                  sx={{
-                    padding: "12px",
-                    fontWeight: "400",
-                    fontSize: "12px",
-                    lineHeight: "144%",
-                    letterSpacing: "-0.02em",
-                    color: "#7e818d",
-                  }}
-                >
+                <Typography className={style.laser__warning__para}>
                   본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에 직접
                   또는 반사되는 레이저 조사 시 위험합니다.
                   <br />
@@ -434,23 +320,23 @@ export function Laser() {
 export function Sonic() {
   return (
     <article className={`${style.commonContainer}`}>
-      <section style={{ marginTop: "18px", marginBottom: "20px" }}>
+      <section className={style.margin__top__bottom}>
         <span className={style.laserTitle}>초음파 모드</span>
 
         <span className={style.laserSubTitle}>
-          <span style={{ marginRight: "8px" }}>#영양 흡수</span>{" "}
+          <span className={style.margin__right}>#영양 흡수</span>{" "}
           <span>#영양 공급</span>
         </span>
       </section>
 
-      <section style={{ display: "flex" }}>
+      <section className={style.flex__container}>
         <SonicModeImage />
-        <div style={{ marginLeft: "16px" }}>
-          <div style={{ display: "flex", marginBottom: "16px" }}>
+        <div className={style.margin__left}>
+          <div className={style.button__container}>
             <RedButton />
             <GrayButton
               title="사용: 5분"
-              sx={{ width: "75px", fontWeight: "500", fontSize: "16px" }}
+              sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
             />
           </div>
 
@@ -467,32 +353,20 @@ export function Sonic() {
         </div>
       </section>
 
-      <section
-        style={{
-          display: "flex",
-          marginTop: "78px",
-          // , background: "pink"
-        }}
-      >
-        <section style={{ position: "absolute" }}>
+      <section className={style.sonic__comment__container}>
+        <section className={style.absolute__container}>
           <FloatingContainer
             explain={<SonicExp1 />}
-            height={"166px"}
-            width={"426px"}
+            height={"16.6rem"}
+            width={"42.6rem"}
           />
         </section>
 
-        <section
-          style={{
-            position: "absolute",
-            marginLeft: "149px",
-            marginTop: "142px",
-          }}
-        >
+        <section className={style.sonic__comment__container__inner__bot}>
           <FloatingContainer
             explain={<SonicExp2 />}
-            height={"116px"}
-            width={"425px"}
+            height={"11.6rem"}
+            width={"42.5rem"}
           />
         </section>
       </section>
@@ -503,23 +377,23 @@ export function Sonic() {
 export function Galvanic() {
   return (
     <article className={`${style.commonContainer}`}>
-      <section style={{ marginTop: "18px", marginBottom: "20px" }}>
+      <section className={style.margin__top__bottom}>
         <span className={style.laserTitle}>갈바닉 모드</span>
         <span className={style.laserSubTitle}>
-          <span style={{ marginRight: "8px" }}>#딥 클렌징</span>{" "}
+          <span className={style.margin__right}>#딥 클렌징</span>{" "}
           <span>#피부 속 영양분 침투 촉진</span>
         </span>
       </section>
 
-      <section style={{ display: "flex" }}>
+      <section className={style.flex__container}>
         <GalvanicModeImage />
 
-        <div style={{ marginLeft: "16px" }}>
-          <div style={{ display: "flex", marginBottom: "16px" }}>
+        <div className={style.margin__left}>
+          <div className={style.button__container}>
             <BlackButton />
             <GrayButton
               title="사용: 4분"
-              sx={{ width: "75px", fontWeight: "500", fontSize: "16px" }}
+              sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
             />
           </div>
           <span className={style.commonText}>
@@ -541,18 +415,18 @@ export function Galvanic() {
         </div>
       </section>
 
-      <section style={{ marginTop: "67px" }}>
-        <section style={{ display: "flex", gap: "20px" }}>
+      <section className={style.margin__top__sub}>
+        <section className={style.galvanic__flex__container}>
           <FloatingContainer
             explain={<GalvanicExp1 />}
-            height="150px"
-            width="277px"
+            height="15rem"
+            width="27.7rem"
           />
 
           <FloatingContainer
             explain={<GalvanicExp2 />}
-            height="116px"
-            width="277px"
+            height="11.6rem"
+            width="27.7rem"
           />
         </section>
       </section>
@@ -563,26 +437,26 @@ export function Galvanic() {
 export function Cooling() {
   return (
     <article className={`${style.commonContainer}`}>
-      <section style={{ marginTop: "18px", marginBottom: "20px" }}>
+      <section className={style.margin__top__bottom}>
         <span className={style.laserTitle}>쿨링 모드</span>
         <span className={style.laserSubTitle}>
-          <span style={{ marginRight: "8px" }}>#피부 진정</span>{" "}
+          <span className={style.margin__right}>#피부 진정</span>{" "}
           <span>#모공 축소</span>
         </span>
       </section>
 
-      <section style={{ display: "flex" }}>
+      <section className={style.flex__container}>
         <CoolingModeImage />
-        <div style={{ marginLeft: "16px" }}>
-          <div style={{ display: "flex", marginBottom: "16px" }}>
+        <div className={style.margin__left}>
+          <div className={style.button__container}>
             <BlackButton />
             <GrayButton
               title="사용: 3분"
-              sx={{ width: "75px", fontWeight: "500", fontSize: "16px" }}
+              sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
             />
           </div>
           <span className={style.commonText}>
-            차가운 쿨링효과로{" "}
+            차가운 쿨링효과로
             <span className={style.commonTextBold}>피부를 진정</span>시키고
             <br />
             <span className={style.commonTextBold}>모공 축소</span>를
@@ -591,87 +465,24 @@ export function Cooling() {
         </div>
       </section>
 
-      <section style={{ marginTop: "67px" }}>
-        <section style={{ position: "absolute" }}>
+      <section className={style.margin__top__sub}>
+        <section className={style.absolute__container}>
           <FloatingContainer
             explain={
               <CoolingExp1
-                width="425px"
-                height="140px"
+                width="42.5rem"
+                height="14rem"
                 explain={<CoolingExp1 />}
               />
             }
           />
         </section>
 
-        <section
-          style={{
-            position: "absolute",
-            marginLeft: "186px",
-            marginTop: "96px",
-          }}
-        >
+        <section className={style.cooling__comment__container__inner__bot}>
           <FloatingContainer
             explain={<CoolingExp2 />}
-            width="425px"
-            height="82px"
-          />
-        </section>
-      </section>
-    </article>
-  );
-}
-
-export function Led() {
-  return (
-    <article className={`${style.commonContainer}`}>
-      <section style={{ marginTop: "18px", marginBottom: "20px" }}>
-        <span className={style.laserTitle}>LED 모드</span>
-        <span className={style.laserSubTitle}>
-          <span style={{ marginRight: "8px" }}>#보습</span>{" "}
-          <span>#탄력 및 트러블 진정</span>
-        </span>
-      </section>
-
-      <section style={{ display: "flex" }}>
-        <LedModeImage />
-        <div style={{ marginLeft: "16px" }}>
-          <div style={{ display: "flex", marginBottom: "16px" }}>
-            <RedButton />
-            <GrayButton
-              title="사용: 3분"
-              sx={{ width: "75px", fontWeight: "500", fontSize: "16px" }}
-            />
-          </div>
-          <span className={style.commonText}>
-            <span className={style.commonTextBold}>3가지 파장의 빛</span>으로
-            피부 깊숙한 곳까지
-            <br />
-            건강하고 탄력 있게 관리해줍니다.
-          </span>
-        </div>
-      </section>
-
-      <section style={{ marginTop: "80px" }}>
-        <section style={{ position: "absolute" }}>
-          <FloatingContainer
-            explain={<LedExp1 />}
-            width={"277px"}
-            height={"140px"}
-          />
-        </section>
-
-        <section
-          style={{
-            position: "absolute",
-            marginTop: "116px",
-            marginLeft: "149px",
-          }}
-        >
-          <FloatingContainer
-            explain={<LedExp2 />}
-            width={"425px"}
-            height={"116px"}
+            width="42.5rem"
+            height="8.2rem"
           />
         </section>
       </section>
@@ -743,26 +554,6 @@ const CoolingExp2 = () => {
     <span className={style.explainContainer}>
       확장된 <span className={style.explainContainerBold}>모공 축소</span>에
       도움을 줍니다.
-    </span>
-  );
-};
-const LedExp1 = () => {
-  return (
-    <span className={style.explainContainer}>
-      Red, Blue, Pink 모드 중<br />
-      원하는 기능 사용으로
-    </span>
-  );
-};
-
-const LedExp2 = () => {
-  return (
-    <span className={style.explainContainer}>
-      피부{" "}
-      <span className={style.explainContainerBold}>
-        진정과 보습・탄력, 트러블 완화에
-      </span>
-      <br /> 도움을 줍니다.
     </span>
   );
 };

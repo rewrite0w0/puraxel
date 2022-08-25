@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import _ from "./page2.module.css";
 
-import { Laser, Sonic, Galvanic, Cooling, Led } from "./Page2.parts";
+import { Laser, Sonic, Galvanic, Cooling } from "./Page2.parts";
 
 const ExplainContainer = (props) => {
   return (
@@ -73,10 +73,6 @@ export default function Page2() {
 
     if (currentMode === "Cooling") {
       return <Cooling />;
-    }
-
-    if (currentMode === "Led") {
-      return <Led />;
     }
   };
 

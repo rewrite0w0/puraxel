@@ -202,7 +202,7 @@ export function Laser() {
   return (
     <Fadein>
       <article className={`${style.commonContainer}`}>
-        <section className={`${style.laser__container}`}>
+        <section className={`${style.margin__top__bottom}`}>
           <span className={style.laserTitle}>레이저 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#피부 속 채널 생성</span>
@@ -217,7 +217,7 @@ export function Laser() {
               <RedButton />
               <GrayButton
                 title="모공관리 (레벨:1~3)"
-                sx={{ width: "148px", fontWeight: "500", fontSize: "1.6rem" }}
+                sx={{ width: "14.8rem", fontWeight: "500", fontSize: "1.6rem" }}
               />
             </div>
             <span className={style.commonText}>
