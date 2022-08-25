@@ -131,9 +131,9 @@ export default function ModalComponent(props) {
         {
           <Inquiry
             style={{
-              height: "50px",
-              width: "25px",
-              marginRight: "7.25px",
+              height: "5rem",
+              width: "2.5rem",
+              marginRight: "0.725rem",
             }}
           />
         }
@@ -318,7 +318,7 @@ export default function ModalComponent(props) {
               </Box>
 
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <div style={{ display: "flex", marginTop: "16px" }}>
+                <div style={{ display: "flex", marginTop: "1.6rem" }}>
                   <span className={style.shopButton}>
                     <ShopIC className={style.shopic} />
                     {modalKr.modalLinkToShoppingMall}

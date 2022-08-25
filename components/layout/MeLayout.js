@@ -28,7 +28,7 @@ export default function MeLayout({ children }) {
             style={{
               width: "12.8rem",
               marginRight: "2rem",
-              fontSize: "1.8px",
+              fontSize: "1.8rem",
               fontWeight: "600",
               letterSpacing: "-0.01em",
               color: "#555768",

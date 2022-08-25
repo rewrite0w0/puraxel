@@ -1,11 +1,11 @@
 .modalContainer {
   display: flex;
 
-  width: 1580px;
-  height: 860px;
+  width: 158rem;
+  height: 86rem;
   background: #ffffff;
-  box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  box-shadow: 0rem 2.4rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.8rem;
   z-index: 9999;
 
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
@@ -24,19 +24,19 @@
 }
 
 .modal_left_title_container {
-  margin-bottom: 60px;
+  margin-bottom: 0.6rem;
 }
 
 .left {
   display: flex;
   flex-direction: column;
 
-  margin-top: 40px;
-  width: 377px;
+  margin-top: 4rem;
+  width: 37.7rem;
 }
 
 .modealLeftTitle {
-  font-size: 40px;
+  font-size: 4rem;
   letter-spacing: -0.02em;
   color: "#434343";
   font-weight: 300;
@@ -47,7 +47,7 @@
   flex-direction: column;
   width: -moz-available;
   width: -webkit-fill-available;
-  margin-left: 40px;
+  margin-left: 4rem;
 }
 
 .timeReciverContainer {
@@ -58,12 +58,12 @@
   display: flex;
   align-items: center;
   color: #7e818d;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .agree_box_container {
   display: flex;
-  margin-top: 160px;
+  margin-top: 16rem;
 }
 
 .buttonStyle {
@@ -79,7 +79,7 @@
 
 .kanouJikan {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.4rem;
 
   letter-spacing: -0.01em;
 
@@ -88,14 +88,14 @@
 
 .leftInputField {
   border-bottom: 1px solid pink;
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .wave {
   display: flex;
   align-items: center;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.4rem;
 
   letter-spacing: -0.01em;
 
@@ -106,7 +106,7 @@
   color: #a7abb6;
   letter-spacing: -0.01em;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,30 +115,30 @@
 .right_privacy_cursor {
   cursor: pointer;
   color: #a7abb6;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .shopButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 99px;
-  height: 29px;
+  width: 9.9rem;
+  height: 2.9rem;
 
   background: var(--primary01);
-  border-radius: 4px;
+  border-radius: 0.4rem;
 
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2rem;
 
   display: flex;
   align-items: center;
   letter-spacing: -0.01em;
 
   color: #ffffff;
-  margin-right: 8px;
-  padding-left: 4px;
-  padding-right: 4px;
+  margin-right: 0.8rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 
   cursor: pointer;
 }
@@ -150,15 +150,15 @@
   justify-content: center;
   align-items: center;
 
-  width: 119px;
-  height: 29px;
+  width: 11.9rem;
+  height: 2.9rem;
 
   background: #ffffff;
 
   border: 1px solid #55576f;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2rem;
 
   letter-spacing: -0.01em;
 
@@ -170,13 +170,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 154px;
-  height: 60px;
+  width: 15.4rem;
+  height: 6rem;
 
   background: var(--grayScale03);
-  border-radius: 8px;
+  border-radius: 0.8rem;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 2rem;
 
   text-align: center;
 
@@ -186,7 +186,7 @@
 
 .dialogTopPara {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
 
   letter-spacing: -0.01em;
 
@@ -195,22 +195,22 @@
 
 .dialogBotPara {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
 
   letter-spacing: -0.01em;
   color: #a7abb6;
 }
 
 .exitButton {
-  width: 128px;
-  height: 48px;
+  width: 12.8rem;
+  height: 4.8rem;
 
   background: #dfe1e8;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   color: var(--grayScale08);
   letter-spacing: -0.01em;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,15 +218,15 @@
 }
 
 .stayButton {
-  width: 128px;
-  height: 48px;
+  width: 12.8rem;
+  height: 4.8rem;
 
   background: #444444;
-  border-radius: 4px;
+  border-radius: 0.4rem;
   color: white;
   letter-spacing: -0.01em;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,7 +235,7 @@
 
 .sendASKPara {
   font-weight: 300;
-  font-size: 24px;
+  font-size: 2.4rem;
 
   letter-spacing: -0.02em;
 
@@ -243,9 +243,9 @@
 }
 
 .sendASKSubPara {
-  margin-top: 16px;
+  margin-top: 1.6rem;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.4rem;
 
   letter-spacing: -0.02em;
 
@@ -253,11 +253,11 @@
 }
 
 .ask_title_container {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .ask_details_container {
-  height: calc(1000px + 1vh);
+  height: calc(100rem + 1vh);
 }
 
 .ask_details {
@@ -266,16 +266,16 @@
 
 .information__para {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: -0.01em;
   color: #7e818d;
 }
 
 .shopic {
-  height: 50px;
-  width: 25px;
+  height: 5rem;
+  width: 2.5rem;
   color: #fff;
-  margin-right: 7.25px;
+  margin-right: 0.725rem;
 }
 
 .dialog__exit__contaier {
@@ -289,8 +289,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .dialog__send__inner_container {
@@ -302,7 +302,7 @@
 
 .dialog__send__checked__ic {
   color: pink;
-  height: 56px;
-  width: 56px;
-  margin-bottom: 16px;
+  height: 5.6rem;
+  width: 5.6rem;
+  margin-bottom: 1.6rem;
 }

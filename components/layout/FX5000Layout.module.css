@@ -7,16 +7,12 @@
 .footerContainer {
   display: flex;
   flex-direction: row;
-  z-index: 1;
+  z-index: 9999;
 
   position: absolute;
 
-  width: -moz-available;
-  width: -webkit-fill-available;
-
-  justify-content: space-between;
   bottom: 0;
-  margin-right: 0.8rem;
-  margin-left: 0.8rem;
+  margin-right: 8rem;
+  margin-left: 8rem;
   margin-bottom: 4.8rem;
 }
