@@ -1,11 +1,11 @@
 .oval {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   background: rgba(190, 142, 227, 0.5);
   opacity: 0.7;
-  filter: blur(100px);
+  filter: blur(10rem);
 
   z-index: -1;
 }
