@@ -173,7 +173,7 @@ export default function Page2() {
   const indicatorInactive = "#DFE1E8";
 
   return (
-    <div className={style.page2Container}>
+    <section className={style.page2Container}>
       {/* 왼쪽 grid */}
       <div className={style.leftGridContainer}>
         <div className={style.leftPaper}>
@@ -271,6 +271,6 @@ export default function Page2() {
       {/* 오른쪽 grid */}
 
       {modeCondition ? <LaserImage /> : <GalvanicImage />}
-    </div>
+    </section>
   );
 }
