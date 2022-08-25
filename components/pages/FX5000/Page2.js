@@ -5,14 +5,14 @@ import { Laser, Sonic, Galvanic, Cooling, Led } from "./Page2.parts";
 
 const ExplainContainer = (props) => {
   return (
-    <span style={{ display: "flex" }} className={_.explainContainer}>
+    <span className={_.explainContainer}>
       <span
         className={_.explainContainerNum}
         style={{
-          fontSize: props.maruSize ? props.maruSize : "12px",
-          marginLeft: props.marginLeft ? props.marginLeft : "12px",
-          width: props.width ? props.width : "22px",
-          height: props.height ? props.height : "22px",
+          fontSize: props.maruSize ? props.maruSize : "1.2rem",
+          marginLeft: props.marginLeft ? props.marginLeft : "1.2rem",
+          width: props.width ? props.width : "2.2rem",
+          height: props.height ? props.height : "2.2rem",
         }}
       >
         {props.num}
@@ -20,8 +20,8 @@ const ExplainContainer = (props) => {
       <span
         className={_.explainContainerSpan}
         style={{
-          fontSize: props.size ? props.size : "16.2909px",
-          marginBottom: "16px",
+          fontSize: props.size ? props.size : "1.62909rem",
+          marginBottom: "1.6rem",
         }}
       >
         {props.title}
@@ -106,11 +106,11 @@ export default function Page2() {
                   <ExplainContainer
                     num={"1"}
                     title={"레이저"}
-                    marginLeft={"20px"}
-                    maruSize={"14px"}
-                    size={"24px"}
-                    height={"28px"}
-                    width={"28px"}
+                    marginLeft={"2rem"}
+                    maruSize={"1.4rem"}
+                    size={"2.4rem"}
+                    height={"2.8rem"}
+                    width={"2.8rem"}
                   />
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function Page2() {
                 }}
               >
                 <div className={`${_.imageCommon}`}>
-                  <div className={_.imageSonic}>
+                  <div className={`${_.imageSonic} ${_.image__common__spec}`}>
                     <ExplainContainer num={"2"} title={"초음파"} />
                   </div>
                 </div>
@@ -139,7 +139,9 @@ export default function Page2() {
                 }}
               >
                 <div className={`${_.imageCommon}`}>
-                  <div className={_.imageGalvanic}>
+                  <div
+                    className={`${_.imageGalvanic} ${_.image__common__spec}`}
+                  >
                     <ExplainContainer num={"3"} title={"갈바닉"} />
                   </div>
                 </div>
@@ -153,7 +155,7 @@ export default function Page2() {
                 }}
               >
                 <div className={`${_.imageCommon}`}>
-                  <div className={_.imageCooling}>
+                  <div className={`${_.imageCooling} ${_.image__common__spec}`}>
                     <ExplainContainer num={"4"} title={"쿨링"} />
                   </div>
                 </div>
@@ -161,14 +163,13 @@ export default function Page2() {
 
               <div
                 className={`${_.rightImageCommon}`}
-                // 여기서 상태관리 잡은거 백그라운드 컬러 주면됨
                 style={{
                   background: currentMode === "Led" ? ACTIVE : INACTIVE,
                 }}
                 onClick={modeHandler.led}
               >
                 <div className={`${_.imageCommon}`}>
-                  <div className={_.imageLED}>
+                  <div className={`${_.imageLED} ${_.image__common__spec}`}>
                     <ExplainContainer num={"5"} title={"LED"} />
                   </div>
                 </div>
@@ -178,7 +179,6 @@ export default function Page2() {
         </div>
       </section>
       <section className={_.rightContainer}>
-        {/* <Laser /> */}
         <ExplainViewer />
       </section>
     </article>
