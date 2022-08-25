@@ -145,7 +145,7 @@
 
 .puraxel__title__image {
   content: url(../../../src/image/PURATECH/page1/puraxel_laser_tech_explain.png);
-  width: calc(100% - 10%);
+  width: calc(100% - 40%);
   height: calc(100%);
 }
 
