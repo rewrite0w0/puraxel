@@ -215,19 +215,6 @@
   margin-left: 4.8rem;
 }
 
-.graph01 {
-  content: url(../../../src/image/HAIR/page3/1.svg);
-}
-.graph02 {
-  content: url(../../../src/image/HAIR/page3/2.svg);
-}
-.graph03 {
-  content: url(../../../src/image/HAIR/page3/3.svg);
-}
-.graph04 {
-  content: url(../../../src/image/HAIR/page3/4.svg);
-}
-
 .graph__container {
   margin-left: 4rem;
   display: flex;
