@@ -1,69 +1,59 @@
 .page2Container {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  /* margin-top: 144px; */
-  /* margin-right: 149px; */
-  /* background: black; */
-  height: 100%;
-  /* width: 100%; */
+
+  height: calc(100vh);
   align-items: center;
 }
 
 .leftGridContainer {
   display: grid;
   grid-template-columns: 2fr 0.4fr;
-  /* margin-top: 144px; */
-  width: 958px;
-  height: 680px;
-  /* height: 680px; */
-  /* background: var(--grayScale02); */
+  width: 95.8rem;
+  height: 68rem;
+
   background: var(--white);
 
-  /* grayscale/02 */
   border: 1px solid #f2f3f7;
-  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
-  border-radius: 4px;
+  box-shadow: 0rem 2rem 6rem rgba(0, 0, 0, 0.03);
+  border-radius: 0.4rem;
 }
 
 .leftPaper {
   display: flex;
   flex-direction: column;
-  /* grid-template-rows: 0.8fr 2fr 2fr; */
-  padding-top: 48px;
-  padding-left: 236px;
-  /* padding-right: 152px; */
-  padding-right: 120px;
+  padding-top: 4.8rem;
+  padding-left: 23.6rem;
+  padding-right: 12rem;
 }
 
 .leftPaperTop {
-  height: 107px;
-  width: 570px;
+  height: 10.7rem;
+  width: 57rem;
 
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .leftPaperTopFirst {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: var(--grayScale05);
 
   font-weight: 300;
 
   line-height: 132%;
 
-  /* or 42px */
   letter-spacing: -0.02em;
 }
 
 .leftPaperTopSecond {
   display: flex;
   flex-wrap: wrap;
-  font-size: 48px;
+  font-size: 4.8rem;
   width: max-content;
   color: var(--primary01);
   letter-spacing: -0.02em;
   line-height: 132%;
-  margin-bottom: 56px;
+  margin-bottom: 5.6rem;
 }
 
 .leftPaperTopSecondPoint {
@@ -77,17 +67,11 @@
 .leftPaperBottom {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .plusImage {
   border: 1px solid var(--mePage2Plus);
-
-  /* border-image-source: linear-gradient(
-    135.82deg,
-    #f3f3f3 13.3%,
-    rgba(255, 255, 255, 0.3) 98.46%
-  ); */
 
   background: linear-gradient(
       135.82deg,
@@ -97,8 +81,8 @@
     linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
 
   position: fixed;
-  width: 58px;
-  height: 58px;
+  width: 5.8rem;
+  height: 5.8rem;
   content: url(../../../src/image/ME/ic_functionPlus.svg);
 
   z-index: 1;
@@ -106,10 +90,8 @@
   border-radius: 50%;
 
   background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(50px);
-  /* margin-right: 18px; */
-  margin-right: -16px;
-  /* margin-bottom: 55px; */
+  backdrop-filter: blur(5rem);
+  margin-right: -1.6rem;
 }
 
 .laserImage {
@@ -117,22 +99,15 @@
 }
 
 .laserImageContainer {
-  margin-left: -20px;
+  margin-left: -2rem;
 }
 
 .laserInactiveImage {
-  /* content: url(../../../src/image/ME/me_laser_active.svg); */
   content: url(../../../src/image/ME/page2/LASERINA.png);
-
-  /* background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
-    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column; */
 }
 
 .galvanicImageContainer {
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
 .galvanicImage {
@@ -140,56 +115,37 @@
 }
 
 .galvanicInactiveImage {
-  /* content: url(../../../src/image/ME/me_galvanic_active.svg); */
   content: url(../../../src/image/ME/page2/GALINA.png);
-
-  /* margin-left: -20px; */
-
-  /* background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
-    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%);
-
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column; */
 }
 
 .imageContainer {
-  /* background: linear-gradient(0deg, #f2f3f7, #f2f3f7),
-    linear-gradient(180deg, #f9f5fd 0%, rgba(255, 255, 255, 0) 50%); */
-  height: 300px;
-  width: 300px;
+  height: 30rem;
+  width: 30rem;
 
-  border-radius: 8px;
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
 }
 
 .indicator {
   display: flex;
-  /* margin-top: -63px; */
-  /* background-color: black; */
 
-  margin-bottom: 4px;
-}
-
-.indicatorLeft {
-}
-.indicatorRight {
+  margin-bottom: 0.4rem;
 }
 
 .indicatorAtom {
-  width: 6px;
-  height: 6px;
+  width: 0.6rem;
+  height: 0.6rem;
   opacity: 0.7;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 0.8rem;
 
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 .explainTitle {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
 
   letter-spacing: -0.01em;
@@ -199,7 +155,7 @@
 
 .explainPara {
   color: var(--grayScale06);
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: -0.01em;
 
   font-weight: 300;
@@ -207,19 +163,53 @@
   line-height: 150%;
 }
 
+.explain__title__sub {
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+  color: #55576f;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 132%;
+  margin-bottom: 8px;
+}
+
+.explain__para_sub {
+  margin-bottom: 3rem;
+}
+
+.sub__explain__para__margin__right {
+  margin-right: 8rem;
+}
+
+.sub__explain__para {
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: #a7abb6;
+  margin-right: 0.8rem;
+  font-weight: 400;
+  line-height: 140%;
+  margin-right: 0.8rem;
+}
+
+.sub__explain__para__bold {
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  color: #7e818d;
+  font-weight: 600;
+  line-height: 140%;
+}
+
 .bookmark {
-  width: 123px;
-  height: 63px;
+  width: 12.3rem;
+  height: 6.3rem;
   display: flex;
   flex-direction: column;
 
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
   justify-content: center;
 
   background: #ffffff;
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.03);
-  border-radius: 4px;
+  box-shadow: 0rem 4rem 2.4rem rgba(0, 0, 0, 0.03);
+  border-radius: 0.4rem;
   border: 1px solid #f2f3f7;
 }
 
@@ -230,20 +220,20 @@
 .bookmarkParaContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 12px;
+  margin-left: 1.2rem;
   color: #4d5058;
 
   letter-spacing: -0.01em;
 }
 
 .bookmarkUpperPara {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
   font-weight: 800;
 }
 
 .bookmarkLowerPara {
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 120%;
 }
@@ -252,29 +242,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 123px;
-  margin-top: 40px;
-  margin-right: 40px; */
-  /* background: white; */
-  /* width: 1000px;
-  height: 1000px; */
+
   width: auto;
   height: 100%;
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 
 .laserImageRightContainer {
-  /* content: url(../../../src/image/ME/img_pura_01.png); */
-  /* content: url(../../../src/image/ME/page2/las.svg); */
-  /* content: url(../../../src/image/ME/page2/las.png); */
   background-image: url(../../../src/image/ME/page2/las.png);
   background-size: cover;
 }
 
 .galvanicImageRightContainer {
-  /* content: url(../../../src/image/ME/img_pura_02.png); */
-  /* content: url(../../../src/image/ME/page2/gal.svg); */
-  /* content: url(../../../src/image/ME/page2/gal.png); */
   background-image: url(../../../src/image/ME/page2/gal.png);
   background-size: cover;
 }

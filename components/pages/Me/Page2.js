@@ -1,14 +1,11 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { ManualFractionPage2 } from "../../Parts/ManualFraction";
-// import Swipers from "../../Swipers";
 import { useState } from "react";
 
-import { useSpring, animated, useTransition } from "react-spring";
+import { useSpring, animated } from "react-spring";
 import meKr from "public/locales/kr/me.json";
 
 import style from "./page2.module.css";
 
-const LaserExplain = (props) => {
+const LaserExplain = () => {
   const styles = useSpring({
     to: [{ opacity: 1 }],
     from: { opacity: 0.25 },
@@ -17,60 +14,26 @@ const LaserExplain = (props) => {
 
   return (
     <animated.div style={styles}>
-      <div
-        className={style.explainTitle}
-        style={{
-          fontSize: "24px",
-          letterSpacing: "-0.02em",
-          color: "#55576F",
-          fontWeight: "600",
-          letterSpacing: "-0.02em",
-          lineHeight: "132%",
-          marginBottom: "8px",
-        }}
-      >
+      <div className={`${style.explainTitle} ${style.explain__title__sub}`}>
         {meKr.Page2LaserTitle}
       </div>
 
-      {/* <span>{meKr.Page2LaserExplain1A}</span>
-      <span>{meKr.Page2LaserExplain1B}</span>
-      <span>{meKr.Page2LaserExplain1C}</span> */}
-
-      <div className={style.explainPara} style={{ marginBottom: "30px" }}>
+      <div className={`${style.explainPara} ${style.explain__para_sub}`}>
         <div>
-          {/* {meKr.Page2LaserExplain} */}한 번의 레이저로 0.02mm 이하의 얕은
-          피부층에 약 100개의 작은 홀을 생성하여
+          한 번의 레이저로 0.02mm 이하의 얕은 피부층에 약 100개의 작은 홀을
+          생성하여
         </div>
 
         <div className={style.explainPara}>
-          {/* {나중에 json 넣어야함} */}
           크림과 앰플의 피부흡수율을 높이줍니다.
         </div>
       </div>
 
       <div>
-        <span
-          style={{
-            fontSize: "12px",
-            letterSpacing: "-0.01em",
-            color: "#A7ABB6",
-            marginRight: "8px",
-            fontWeight: "400",
-            lineHeight: "140%",
-            marginRight: "8px",
-          }}
-        >
+        <span className={style.sub__explain__para}>
           {meKr.Page2LaserTechExplain1A}
         </span>
-        <span
-          style={{
-            fontSize: "12px",
-            letterSpacing: "-0.01em",
-            color: "#7E818D",
-            fontWeight: "600",
-            lineHeight: "140%",
-          }}
-        >
+        <span className={style.sub__explain__para__bold}>
           {meKr.Page2LaserTechExplain1B}
         </span>
       </div>
@@ -78,7 +41,7 @@ const LaserExplain = (props) => {
   );
 };
 
-const GalvanicExplain = (props) => {
+const GalvanicExplain = () => {
   const styles = useSpring({
     to: [{ opacity: 1 }],
     from: { opacity: 0.25 },
@@ -87,31 +50,11 @@ const GalvanicExplain = (props) => {
 
   return (
     <animated.div style={styles}>
-      <div
-        className={style.explainTitle}
-        style={{
-          fontSize: "24px",
-          letterSpacing: "-0.02em",
-          color: "#55576F",
-          fontWeight: 600,
-          marginBottom: "8px",
-        }}
-      >
+      <div className={`${style.explainTitle} ${style.explain__title__sub}`}>
         {meKr.Page2GalvanicTitle}
       </div>
 
-      {/* <span>{meKr.Page2GalvanicExplain1A}</span>
-      <span>{meKr.Page2GalvanicExplain1B}</span>
-      <span>{meKr.Page2GalvanicExplain1C}</span>
-      <span>{meKr.Page2GalvanicExplain1D}</span> */}
-
-      <div
-        className={style.explainPara}
-        style={{
-          marginBottom: "30px",
-        }}
-      >
-        {/* {meKr.Page2GalvanicExplain} */}
+      <div className={`${style.explainPara} ${style.explain__para_sub}`}>
         <div>
           같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
           흡수율을 높입니다.
@@ -123,53 +66,20 @@ const GalvanicExplain = (props) => {
       </div>
 
       <div>
-        <span
-          style={{
-            fontSize: "12px",
-            letterSpacing: "-0.01em",
-            color: "#4D5D58",
-            fontWeight: 600,
-            lineHeight: "150%",
-            marginRight: "8px",
-          }}
-        >
+        <span className={style.sub__explain__para__bold}>
           {meKr.Page2GalvanicTechExplain1A}
         </span>
         &nbsp;
         <span
-          style={{
-            marginRight: "81px",
-            fontSize: "12px",
-            letterSpacing: "-0.01em",
-            color: "#A7ABB6",
-            fontWeight: 300,
-            lineHeight: "150%",
-          }}
+          className={`${style.sub__explain__para} ${style.sub__explain__para__margin__right}`}
         >
           {meKr.Page2GalvanicTechExplain1B}
         </span>
-        <span
-          style={{
-            fontSize: "12px",
-            letterSpacing: "-0.01em",
-            color: "#4D5D58",
-            fontWeight: 600,
-            lineHeight: "150%",
-            marginRight: "8px",
-          }}
-        >
+        <span className={style.sub__explain__para__bold}>
           {meKr.Page2GalvanicTechExplain2A}
         </span>
         &nbsp;
-        <span
-          style={{
-            fontSize: "12px",
-            letterSpacing: "-0.01em",
-            color: "#A7ABB6",
-            fontWeight: 300,
-            lineHeight: "150%",
-          }}
-        >
+        <span className={style.sub__explain__para}>
           {meKr.Page2GalvanicTechExplain2B}
         </span>
       </div>
@@ -179,7 +89,6 @@ const GalvanicExplain = (props) => {
 
 const LaserImage = () => {
   const styles = useSpring({
-    // to: [{ opacity: 1 }],
     to: async (next, cancel) => {
       await next({ opacity: 0.25, scale: 1 });
       await next({ opacity: 0.5, scale: 1 });
@@ -199,7 +108,6 @@ const LaserImage = () => {
 
 const GalvanicImage = () => {
   const styles = useSpring({
-    // to: [{ opacity: 1, scale: 1 }],
     to: async (next, cancel) => {
       await next({ opacity: 0.25, scale: 1 });
       await next({ opacity: 0.5, scale: 1 });
@@ -249,22 +157,8 @@ const GalvanicToggleInActive = () => {
   );
 };
 
-export default function Page2(props) {
+export default function Page2() {
   const [modeSelector, setModeSelector] = useState("Laser");
-  const [laserSelector, setLaserSelector] = useState(true);
-
-  const styles = useSpring({
-    to: [{ opacity: 1 }],
-    from: { opacity: 0 },
-    delay: 500,
-  });
-
-  // console.log(modeSelector);
-
-  // const handlerLaserSelectorOnClick = () => {
-  //   laserSelector ? setLaserSelector(false) : setLaserSelector(true);
-  //   !modeCondition ? setModeSelector("Laser") : setModeSelector("Galvanic");
-  // };
 
   const selectorLaser = () => {
     return setModeSelector("Laser");
@@ -274,9 +168,6 @@ export default function Page2(props) {
     return setModeSelector("Galvanic");
   };
   const modeCondition = modeSelector === "Laser";
-  // const laserCondition = laserSelector === true;
-
-  const DISABLECOLOR = "#F2F3F6";
 
   const indicatorActive = "#A590FA";
   const indicatorInactive = "#DFE1E8";
@@ -357,15 +248,12 @@ export default function Page2(props) {
         {/* 책갈피 grid */}
         <div>
           <div
-            // onClick={selectorLaser}
             onClick={() => {
               location.href = "/tech";
             }}
             className={style.bookmark}
             style={{
-              // background: modeCondition ? "white" : DISABLECOLOR,
               marginTop: "14px",
-              // marginBottom: "8px",
             }}
           >
             <span className={style.bookmarkParaContainer}>
@@ -373,36 +261,16 @@ export default function Page2(props) {
                 {meKr.Page2BookMarkLaser}
               </span>
               <span className={style.bookmarkLowerPara}>
-                {/* {meKr.Page2BookMarkDetail} */}
                 작동 방식 보기 {">"}
               </span>
             </span>
           </div>
-          {/* <div
-            onClick={selectorGalvanic}
-            className={style.bookmark}
-            style={{
-              background: !modeCondition ? "white" : DISABLECOLOR,
-            }}
-          >
-            <div className={style.bookmarkParaContainer}>
-              <span className={style.bookmarkUpperpara}>
-                {meKr.Page2BookMarkGalvanic}
-              </span>
-              <br />
-              <span className={style.bookmarkLowerPara}>
-                {meKr.Page2BookMarkDetail}
-              </span>
-            </div>
-          </div> */}
         </div>
       </div>
 
       {/* 오른쪽 grid */}
 
-      {/* <div className={style.rightGridContainer}> */}
       {modeCondition ? <LaserImage /> : <GalvanicImage />}
-      {/* </div> */}
     </div>
   );
 }
