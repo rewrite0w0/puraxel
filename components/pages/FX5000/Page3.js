@@ -32,9 +32,7 @@ export default function Page3() {
           </span>
           <br />
           <span>
-            <span className={_.testTitle} style={{ marginRight: "42px" }}>
-              부위
-            </span>
+            <span className={`${_.testTitle} ${_.margin__right}`}>부위</span>
             <span className={_.testDetail}>
               안면 부위와 전완부위 2주 사용 후 2배 증가
             </span>
@@ -46,8 +44,7 @@ export default function Page3() {
         <section className={_.gridPadding}>
           <ClinicalTestImageParts
             title="피부 보습력 3배 증가"
-            // width="171px"
-            sx={{ marginBottom: "8px" }}
+            sx={{ marginBottom: "0.8rem" }}
           />
 
           <span className={_.commonText}>
@@ -66,8 +63,7 @@ export default function Page3() {
         <section>
           <ClinicalTestImageParts
             title="피부 치밀도 30% 증가"
-            // width="184px"
-            sx={{ marginBottom: "8px" }}
+            sx={{ marginBottom: "0.8rem" }}
           />
 
           <span className={_.commonText}>
@@ -86,8 +82,7 @@ export default function Page3() {
         <section>
           <ClinicalTestImageParts
             title="피부톤(맑기) 2배 증가"
-            // width="156px"
-            sx={{ marginBottom: "8px" }}
+            sx={{ marginBottom: "0.8rem" }}
           />
           <span className={_.commonText}>
             <span>
@@ -108,7 +103,6 @@ export default function Page3() {
             title="색소 침착 개선"
             color="#55576F"
             sx={{ background: "#f2f3f7" }}
-            // width="101px"
           />
           <div className={`${_.compareImageContainer} ${_.image4}`} />
         </section>
@@ -116,11 +110,9 @@ export default function Page3() {
         <section>
           <ClinicalTestImageParts
             title="안티에이징 효과"
-            // width={"112px"}
             color={"#55576F"}
             sx={{ background: "#f2f3f7" }}
           />
-          <span style={{ marginTop: "16px" }}></span>
 
           <div className={`${_.compareImageContainer} ${_.image1}`} />
         </section>
