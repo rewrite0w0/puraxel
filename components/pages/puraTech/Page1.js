@@ -182,7 +182,7 @@ const PuraxelExplain = () => {
   );
 };
 
-export default function Page3() {
+export default function Page1() {
   return (
     <section className={_.container}>
       <PuraxelTitle />

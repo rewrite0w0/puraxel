@@ -15,6 +15,14 @@
   flex-direction: column;
 }
 
+.inner__container__right {
+  /* background-color: blue; */
+}
+
+.inner__container__left {
+  /* background-color: pink; */
+}
+
 .step__container {
   display: flex;
   margin-bottom: 0.8rem;
@@ -96,7 +104,7 @@
   border: 1px solid #f2f3f7;
   border-radius: 0.4rem;
   padding: 0.8rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 3.2rem;
   margin-right: 2rem;
 }
 
@@ -122,8 +130,6 @@
   letter-spacing: -0.02em;
 
   color: #55576f;
-
-  margin-bottom: 2.4rem;
 }
 
 .puraxel__title__main {
@@ -134,12 +140,12 @@
   letter-spacing: -0.02em;
 
   color: #55576f;
-  margin-bottom: 1.8rem;
+  margin-bottom: 6rem;
 }
 
 .puraxel__title__image {
-  content: url(../../../src/image/PURATECH/page1/puraxel_title_image.png);
-  width: calc(100% - 35%);
+  content: url(../../../src/image/PURATECH/page1/puraxel_laser_tech_explain.png);
+  width: calc(100% - 10%);
   height: calc(100%);
 }
 
