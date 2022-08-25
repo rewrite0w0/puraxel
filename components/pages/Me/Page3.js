@@ -50,44 +50,33 @@ const ImageGrid = () => {
     <article className={style.paperContainer}>
       <div className={style.paper__container__inner}>
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts
-            title="피부 보습력 3배 증가"
-            width="17.1rem"
-          />
+          <ClinicalTestImageParts title="피부 보습력 3배 증가" />
 
-          <span className={style.paperPara}>
-            <span>피부 수분 변화에 대한 통계분석 결과,</span>
-            <br />
-            <span>화장품+퓨라셀 1회 사용 직후 300%이상 증가</span>
-          </span>
+          <div className={style.paperPara}>
+            <div>피부 수분 변화에 대한 통계분석 결과,</div>
+
+            <div>화장품+퓨라셀 1회 사용 직후 300%이상 증가</div>
+          </div>
 
           <div className={`${style.image1} ${style.imageContainer}`} />
         </section>
 
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts
-            title="피부 치밀도 30% 증가"
-            width="18.4rem"
-          />
-          <span className={style.paperPara}>
-            <span>피부톤을 나타내는 L*value가 퓨라셀</span>
-            <br />
-            <span>사용전과 비교하여 2주 사용후 2배 증가</span>
-          </span>
+          <ClinicalTestImageParts title="피부 치밀도 30% 증가" />
+          <div className={style.paperPara}>
+            <div>피부톤을 나타내는 L*value가 퓨라셀</div>
+            <div>사용전과 비교하여 2주 사용후 2배 증가</div>
+          </div>
 
           <div className={`${style.image2} ${style.imageContainer}`} />
         </section>
 
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts
-            title="피부톤(맑기) 2배 증가"
-            width="15.6rem"
-          />
-          <span className={style.paperPara}>
-            <span>피부치밀도를 나타내는 Density 값이</span>
-            <br />
-            <span>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</span>
-          </span>
+          <ClinicalTestImageParts title="피부톤(맑기) 2배 증가" />
+          <div className={style.paperPara}>
+            <div>피부치밀도를 나타내는 Density 값이</div>
+            <div>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</div>
+          </div>
 
           <div className={`${style.image3} ${style.imageContainer}`} />
         </section>
@@ -95,23 +84,13 @@ const ImageGrid = () => {
 
       <div className={style.paper__container__inner}>
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts
-            title="색소 침착 개선"
-            color="#55576F"
-            sx={{ background: "#f2f3f7" }}
-            width="10.1rem"
-          />
+          <ClinicalTestImageParts title="색소 침착 개선" />
           <span className={style.paperPara}></span>
           <div className={`${style.image4} ${style.imageContainer}`} />
         </section>
 
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts
-            title="안티에이징 효과"
-            width={"11.2rem"}
-            color={"#55576F"}
-            sx={{ background: "#f2f3f7" }}
-          />
+          <ClinicalTestImageParts title="안티에이징 효과" />
 
           <span className={style.paperPara}></span>
           <div className={`${style.image5} ${style.imageContainer}`} />

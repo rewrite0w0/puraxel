@@ -101,8 +101,8 @@
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
-  width: 169.9;
-  height: 66.1rem;
+  width: 130rem;
+  height: 53.6rem;
   padding-left: 4rem;
 }
 
@@ -111,23 +111,24 @@
 }
 
 .paper__explain__container {
-  margin-right: 7.5rem;
+  margin-right: 4rem;
 }
 
 .paperPara {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 144%;
 
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   font-feature-settings: "tnum" on, "lnum" on;
 
   color: #4d5058;
+  margin-left: 1rem;
 }
 
 .imageContainer {
   width: 38rem;
-  height: 16.4rem;
+  height: 13.6rem;
   background: rgba(255, 255, 255, 0.5);
   margin-top: 2rem;
   border-radius: 0.4rem;

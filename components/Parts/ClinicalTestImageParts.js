@@ -6,10 +6,11 @@ export default function ClinicalTestImageParts(props) {
       className={style.icon}
       style={{
         ...props.sx,
-        color: props.color ? props.color : "#ffffff",
       }}
       {...props}
     >
+      <hr className={style.dot} />
+
       <span className={style.para}>{props.title}</span>
     </div>
   );
