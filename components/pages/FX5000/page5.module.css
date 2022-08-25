@@ -209,5 +209,21 @@
   color: var(--grayScale05);
 }
 
-@media screen and(min-height: 1920px) {
+.product__etc__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.explain__on__paper__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100vw);
+}
+
+.explain__on__paper__container__inner {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: calc(50%);
 }
