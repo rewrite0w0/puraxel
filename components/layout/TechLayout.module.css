@@ -2,7 +2,7 @@
   /* background: skyblue; */
   background: url(../../src/image/PURATECH/productBg.svg);
   background-size: cover;
-  height: 100vh;
+  height: calc(100vmin);
 }
 
 .footerContainer {
@@ -14,7 +14,7 @@
 
   bottom: 0;
   right: 0;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 48px;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  margin-bottom: 4.8rem;
 }

@@ -1,7 +1,7 @@
 .FX5000Container {
   background: url(../../src/image/FX5000/productBg_fx-5000.png);
   background-size: cover;
-  height: 100vh;
+  height: calc(100vmin);
 }
 
 .footerContainer {
@@ -16,7 +16,7 @@
 
   justify-content: space-between;
   bottom: 0;
-  margin-right: 80px;
-  margin-left: 80px;
-  margin-bottom: 48px;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
+  margin-bottom: 4.8rem;
 }

@@ -18,17 +18,17 @@ export default function MeLayout({ children }) {
             icon={
               <ShopIcon
                 sx={{
-                  height: "50px",
-                  width: "25px",
+                  height: "5rem",
+                  width: "2.5rem",
                   color: "#fff",
-                  marginRight: "7.25px",
+                  marginRight: "0.725rem",
                 }}
               />
             }
             style={{
-              width: "128px",
-              marginRight: "20px",
-              fontSize: "18px",
+              width: "12.8rem",
+              marginRight: "2rem",
+              fontSize: "1.8px",
               fontWeight: "600",
               letterSpacing: "-0.01em",
               color: "#555768",
@@ -42,8 +42,8 @@ export default function MeLayout({ children }) {
             bottomRightz="12개월"
             bottomRightx="월 157,500원"
             style={{
-              width: "277px",
-              marginRight: "20px",
+              width: "27.7rem",
+              marginRight: "2rem",
             }}
             link="https://lmdt.cafe24.com"
           />
@@ -58,7 +58,7 @@ export default function MeLayout({ children }) {
             bottomRightz="12개월"
             bottomRightx="월 157,500원"
             style={{
-              width: "417px",
+              width: "41.7px",
             }}
             link="https://lmdt.cafe24.com"
           />
@@ -71,7 +71,7 @@ export default function MeLayout({ children }) {
 const OriginalPrice = () => {
   return (
     <span>
-      <span style={{ marginRight: "4px" }}>2,433,000원</span>
+      <span style={{ marginRight: "0.4rem" }}>2,433,000원</span>
       <svg
         width="11"
         height="8"
