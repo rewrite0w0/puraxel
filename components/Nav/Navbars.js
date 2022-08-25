@@ -76,27 +76,18 @@ export default function Navbars() {
               location.href = "/me";
             }}
             title={layoutHeaderKr.me}
-            className={navStyle.gnbMenu}
-            style={{
-              textDecoration: currentPage === "me" ? "underline" : "none",
-              textDecorationThickness: currentPage === "me" ? "0.2rem" : "none",
-              opacity: currentPage === "me" ? "1" : undefined,
-              textUnderlineOffset: "0.4rem",
-            }}
+            className={`${navStyle.gnbMenu} ${
+              currentPage === "me" ? navStyle.underliner : undefined
+            }`}
           />
           <NavIconButton
             onClick={() => {
               location.href = "/fx5000";
             }}
             title={layoutHeaderKr.fx5000}
-            className={navStyle.gnbMenu}
-            style={{
-              textDecoration: currentPage === "fx5000" ? "underline" : "none",
-              textDecorationThickness:
-                currentPage === "fx5000" ? "0.2rem" : "none",
-              opacity: currentPage === "fx5000" ? "1" : undefined,
-              textUnderlineOffset: "0.4rem",
-            }}
+            className={`${navStyle.gnbMenu} ${
+              currentPage === "fx5000" ? navStyle.underliner : undefined
+            }`}
           />
 
           <NavIconButton
@@ -104,14 +95,9 @@ export default function Navbars() {
               location.href = "/hair";
             }}
             title={layoutHeaderKr.hair}
-            className={navStyle.gnbMenu}
-            style={{
-              textDecoration: currentPage === "hair" ? "underline" : "none",
-              textDecorationThickness:
-                currentPage === "hair" ? "0.2rem" : "none",
-              opacity: currentPage === "hair" ? "1" : undefined,
-              textUnderlineOffset: "0.4rem",
-            }}
+            className={`${navStyle.gnbMenu} ${
+              currentPage === "hair" ? navStyle.underliner : undefined
+            }`}
           />
 
           <NavIconButton
@@ -120,14 +106,9 @@ export default function Navbars() {
             }}
             // title={layoutHeaderKr.puraTech}
             title={"핵심기술"}
-            className={navStyle.gnbMenu}
-            style={{
-              textDecoration: currentPage === "tech" ? "underline" : "none",
-              textDecorationThickness:
-                currentPage === "tech" ? "0.2rem" : "none",
-              opacity: currentPage === "tech" ? "1" : undefined,
-              textUnderlineOffset: "0.4rem",
-            }}
+            className={`${navStyle.gnbMenu} ${
+              currentPage === "tech" ? navStyle.underliner : undefined
+            }`}
           />
         </div>
       </section>
