@@ -1,26 +1,61 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
-  margin-left: 227px;
-  margin-bottom: 202px;
+  margin-top: 12rem;
+  margin-left: 22.7rem;
+  margin-bottom: 20.2rem;
   justify-content: center;
   align-items: center;
 }
 
 .topContainer {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: row;
-  margin-right: 471px;
-  width: 1300px;
-  height: 120px;
+  margin-right: 47.1rem;
+  width: 130rem;
+  height: 12rem;
+}
+
+.top__container__title {
+  margin-right: 6.5rem;
+  width: 60rem;
+}
+
+.top__container__title__sub {
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  line-height: 132%;
+  color: #a7abb6;
+}
+
+.top__container__title__main {
+  font-size: 4.8rem;
+  letter-spacing: -0.02em;
+  line-height: 124%;
+  color: #55576f;
+}
+
+.top__container__title__main__bold {
+  font-weight: 700;
+}
+
+.top__container__testinfo {
+  margin-right: 9.8rem;
+  margin-top: 4rem;
+  width: 27.5rem;
+}
+
+.top__container__testdetail {
+  margin-top: 4rem;
+  width: 33rem;
 }
 
 .testTitle {
-  margin-right: 16px;
+  margin-right: 1.6rem;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: -0.01em;
   color: var(--grayScale06);
   line-height: 150%;
@@ -28,21 +63,43 @@
 
 .testDetail {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: -0.01em;
   color: var(--grayScale07);
 }
 
+.margin__left {
+  margin-left: calc(22.5%);
+}
+
+.margin__right {
+  margin-right: calc(14%);
+}
+
+.margin__bottom {
+  margin-bottom: 2rem;
+}
+
+.margin__bottom__graph__8 {
+  margin-bottom: 0.8rem;
+}
+
+.margin__bottom__graph__24 {
+  margin-bottom: 2.4rem;
+}
+
+.margin__top {
+  margin-top: 1.8rem;
+}
+
 .testDetailSub {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 144%;
 
-  /* or 17px */
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
 
-  /* grayscale/05 */
   color: #a7abb6;
 }
 
@@ -64,8 +121,8 @@
 }
 
 .paperContainer {
-  width: 1704px;
-  height: 600px;
+  width: 170.4rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
 
@@ -73,28 +130,26 @@
 
   /* grayscale/02 */
   border: 1px solid #f2f3f7;
-  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.03);
-  border-radius: 4px;
+  box-shadow: 0rem 20rem 60rem rgba(0, 0, 0, 0.03);
+  border-radius: 0.4rem;
   align-self: flex-end;
 }
 
 .paperExplainContainer {
   display: flex;
   align-items: flex-end;
-  padding-left: 40px;
+  padding-left: 4rem;
 }
 
 .titleExplain {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
 
-  /* identical to box height, or 24px */
   letter-spacing: -0.01em;
 
-  /* grayscale/06 */
   color: #7e818d;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .paperInnerContainer {
@@ -105,12 +160,12 @@
 .paperInnerContainerTop {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .paperInnerContainerBottom {
   display: flex;
-  margin-right: 208px;
+  margin-right: 20.8rem;
 }
 
 .topLeftImage {
@@ -127,8 +182,8 @@
 }
 
 .imageCommon {
-  width: 386px;
-  height: 169px;
+  width: 38.6rem;
+  height: 16.9rem;
 }
 
 .topright_Image {
@@ -140,38 +195,34 @@
 }
 
 .right_ImageCommon {
-  height: 169px;
-  width: 220px;
+  height: 16.9rem;
+  width: 22rem;
 }
 
 .right_SubExp {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
 
-  /* identical to box height, or 21px */
   letter-spacing: -0.01em;
 
-  /* grayscale/07 */
   color: #4d5058;
 }
 
 .right_Exp {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 140%;
 
-  /* identical to box height, or 34px */
   letter-spacing: -0.01em;
 
-  /* grayscale/07 */
   color: #4d5058;
 }
 
 .right_Container {
   display: flex;
   flex-direction: column;
-  margin-left: 48px;
+  margin-left: 4.8rem;
 }
 
 .graph01 {
@@ -185,4 +236,12 @@
 }
 .graph04 {
   content: url(../../../src/image/HAIR/page3/4.svg);
+}
+
+.graph__container {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  width: 5rem;
 }

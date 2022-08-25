@@ -3,100 +3,51 @@ import ClinicalTestImageParts from "components/Parts/ClinicalTestImageParts";
 
 export default function Page3() {
   return (
-    <main className={style.container}>
+    <div className={style.container}>
       <article className={style.topContainer}>
-        <section
-          style={{
-            marginRight: "65px",
-            width: "600px",
-          }}
-        >
-          <span
-            style={{
-              fontSize: "32px",
-              letterSpacing: "-0.02em",
-              fontWeight: "300",
-              color: "#A7ABB6",
-              lineHeight: "132%",
-            }}
-          >
+        <section className={style.top__container__title}>
+          <span className={style.top__container__title__sub}>
             퓨라셀 각 효능에 특화된 앰플 사용 후 결과
           </span>
           <br />
-          <span
-            style={{
-              fontSize: "48px",
-              letterSpacing: "-0.02em",
-              lineHeight: "124%",
-              color: "#55576F",
-            }}
-          >
+          <span className={style.top__container__title__main}>
             <span>퓨라셀</span>
             &nbsp;
-            <span style={{ fontWeight: "700" }}>임상 실험</span>
+            <span className={style.top__container__title__main__bold}>
+              임상 실험
+            </span>
           </span>
         </section>
         {/*  */}
-        <section
-          style={{
-            marginRight: "98px",
-            marginTop: "40px",
-            width: "255px",
-          }}
-        >
-          <span
-            className={style.testTitle}
-            // style={{
-            //   marginRight: "16px",
-            //   fontWeight: 500,
-            //   fontSize: "16px",
-            //   letterSpacing: "-0.01em",
-            //   color: "#7E818D",
-            // }}
-          >
-            시험 기간
-          </span>
+        <section className={style.top__container__testinfo}>
+          <span className={style.testTitle}>시험 기간</span>
           <span className={style.testDetail}>2020년 8월 21일~ 5월 30일</span>
           <br />
-          <span
-            className={style.testTitle}
-            // style={{
-            //   marginRight: "16px",
-            //   fontWeight: 500,
-            //   fontSize: "16px",
-            //   letterSpacing: "-0.01em",
-            //   color: "#7E818D",
-            // }}
-          >
-            시험 기관
-          </span>
+          <span className={style.testTitle}>시험 기관</span>
           <span className={style.testDetail}>**성형외과의원</span>
         </section>
         {/*  */}
-        <section style={{ marginTop: "40px", width: "330px" }}>
+        <section className={style.top__container__testdetail}>
           <span>
             <span className={style.testTitle}>피시험자</span>
             <span className={style.testDetail}>30~60세 성인 남성</span>
           </span>
           <br />
           <span>
-            <span className={style.testTitle} style={{ marginRight: "42px" }}>
+            <span className={`${style.testTitle} ${style.margin__right}`}>
               부위
             </span>
             <span className={style.testDetail}>
-              피시험자의 정수리와 M자{" "}
+              피시험자의 정수리와 M자&nbsp;
               <span className={style.testDetailSub}>앞머리 측면</span>
             </span>
             <br />
-            <span
-              className={style.testTitle}
-              style={{ marginRight: "66px" }}
-            ></span>
-            <span className={style.testDetail}>
+
+            <div className={`${style.testDetail} ${style.margin__left}`}>
               <span className={style.testDetailSub}>
                 (시험제품의 용법 기준)
               </span>
-            </span>
+            </div>
           </span>
         </section>
       </article>
@@ -107,7 +58,7 @@ export default function Page3() {
             <div className={style.paperInnerContainerTop}>
               <ClinicalTestImageParts
                 title="정수리 탈모"
-                sx={{ marginRight: "18px" }}
+                sx={{ marginRight: "1.8rem" }}
               />
 
               <span className={style.titleExplain}>
@@ -128,7 +79,7 @@ export default function Page3() {
             <div className={style.paperInnerContainerTop}>
               <ClinicalTestImageParts
                 title="모량 테스트"
-                sx={{ marginRight: "18px", backgroundColor: "#f8f9fa" }}
+                sx={{ marginRight: "1.8rem", backgroundColor: "#f8f9fa" }}
                 color="#55576F"
               />
 
@@ -142,49 +93,37 @@ export default function Page3() {
               ></div>
               <div className={style.right_Container}>
                 <span className={style.right_SubExp}>원형 탈모 부위</span>
-                <span
-                  className={style.right_Exp}
-                  style={{ marginBottom: "20px" }}
-                >
+                <span className={`${style.right_Exp} ${style.margin__bottom}`}>
                   31.0% 증가
                 </span>
                 <span className={style.right_SubExp}>M자 탈모 부위</span>
                 <span className={style.right_Exp}>11.5% 증가</span>
               </div>
 
-              <div
-                style={{
-                  marginLeft: "40px",
-                  display: "flex",
-                  flexDirection: "column",
-                  height: "50px",
-                  width: "50px",
-                }}
-              >
-                <div className={style.graph01} style={{ marginBottom: "8px" }}>
-                  이미지?
-                </div>
-                <div className={style.graph02} style={{ marginBottom: "24px" }}>
-                  이미지?
-                </div>
-                <div className={style.graph03} style={{ marginBottom: "8px" }}>
-                  이미지?
-                </div>
-                <div className={style.graph04}>이미지?</div>
+              <div className={style.graph__container}>
+                <div
+                  className={`${style.graph01} ${style.margin__bottom__graph__8}`}
+                ></div>
+                <div
+                  className={`${style.graph02} ${style.margin__bottom__graph__24}`}
+                ></div>
+                <div
+                  className={`${style.graph03} ${style.margin__bottom__graph__8}`}
+                ></div>
+                <div className={style.graph04}></div>
               </div>
             </div>
           </div>
         </section>
 
         <section
-          className={style.paperExplainContainer}
-          style={{ marginTop: "18px" }}
+          className={`${style.paperExplainContainer} ${style.margin__top}`}
         >
           <div className={style.paperInnerContainer}>
             <div className={style.paperInnerContainerTop}>
               <ClinicalTestImageParts
                 title="M자 탈모"
-                sx={{ marginRight: "18px" }}
+                sx={{ marginRight: "1.8rem" }}
               />
 
               <span className={style.titleExplain}>
@@ -206,12 +145,8 @@ export default function Page3() {
               <ClinicalTestImageParts
                 title="모발 테스트"
                 color="#55576F"
-                sx={{ marginRight: "18px", backgroundColor: "#f8f9fa" }}
+                sx={{ marginRight: "1.8rem", backgroundColor: "#f8f9fa" }}
               />
-
-              {/* <span className={style.titleExplain}>
-                퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
-              </span> */}
             </div>
             <div className={style.paperInnerContainerBottom}>
               <div
@@ -219,10 +154,7 @@ export default function Page3() {
               ></div>
               <div className={style.right_Container}>
                 <span className={style.right_SubExp}>원형 탈모 부위</span>
-                <span
-                  className={style.right_Exp}
-                  style={{ marginBottom: "20px" }}
-                >
+                <span className={`${style.right_Exp} ${style.margin__bottom}`}>
                   28.6% 증가
                 </span>
                 <span className={style.right_SubExp}>M자 탈모 부위</span>
@@ -232,6 +164,6 @@ export default function Page3() {
           </div>
         </section>
       </article>
-    </main>
+    </div>
   );
 }
