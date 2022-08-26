@@ -80,7 +80,14 @@
 .meImage {
   content: url(../../../src/image/ME/page1/me_main.svg);
   display: flex;
-  height: calc(100% - 20%);
+  /* height: calc(100% - 20%);
+  width: cacl(); */
+
+  width: 56.4rem;
+  height: 100.9rem;
+
+  width: calc(100vw / 3.4);
+  height: calc(100vh / 1.1);
 }
 
 .explain_sub {
