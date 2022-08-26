@@ -269,3 +269,9 @@
 .image__hair04 {
   content: url(../../../src/image/HAIR/page3/image4.png);
 }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+}

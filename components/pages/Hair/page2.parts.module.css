@@ -417,3 +417,9 @@
   margin-left: 14.9rem;
   margin-top: 11.6rem;
 }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+}

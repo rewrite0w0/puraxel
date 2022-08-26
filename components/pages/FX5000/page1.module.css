@@ -68,3 +68,9 @@
   height: max-content;
   content: url(../../../src/image/FX5000/page1/FX5000.svg);
 }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+}

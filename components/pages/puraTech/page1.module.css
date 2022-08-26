@@ -216,3 +216,9 @@
 .puraxel__explain__container__upper {
   margin-bottom: calc(3.6rem + 1vh);
 }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+}

@@ -92,3 +92,9 @@
 
   color: #4d5058;
 }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+}

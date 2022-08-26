@@ -26,3 +26,9 @@
 
   box-shadow: 0rem 1.2rem 2.4rem 0rem #f3e8ff4d;
 }
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+}
