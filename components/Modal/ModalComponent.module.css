@@ -2,9 +2,9 @@
   display: flex;
 
   width: calc(158rem);
-  min-width: calc(50% + 1vw);
+  /* min-width: calc(50% + 1vw); */
   height: calc(86rem);
-  min-height: calc(50% + 1vh);
+  /* min-height: calc(50% + 1vh); */
   background: #ffffff;
   box-shadow: 0rem 2.4rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 0.8rem;
@@ -13,6 +13,9 @@
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
+
+  width: calc(100vw / 1.25);
+  height: calc(100vh / 1.25);
 }
 
 .container {
