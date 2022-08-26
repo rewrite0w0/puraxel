@@ -65,7 +65,9 @@
 
 .rightImage {
   padding-right: 5rem;
-  height: max-content;
+
+  height: calc(100vh / 1.1);
+  width: calc(100vw / 2);
   content: url(../../../src/image/FX5000/page1/FX5000.svg);
 }
 
