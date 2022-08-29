@@ -107,7 +107,7 @@ a {
 }
 
 .MuiOutlinedInput-input {
-  color: pink;
+  /* color: pink; */
 }
 
 .MuiOutlinedInput-notchedOutline {
@@ -120,7 +120,14 @@ a {
 } */
 
 .MuiSelect-select {
-  color: gray;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #4d5058;
 }
 
 .MuiMenuItem-root {
@@ -202,3 +209,72 @@ img {
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
 }
+
+.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #c7cad3;
+}
+
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 132%;
+  letter-spacing: -0.02em;
+  color: #c7cad3;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #4d5058;
+}
+
+.MuiFormLabel-asterisk {
+  color: #ed8d87;
+}
+
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #4d5058;
+}
+
+/* .css-wb57ya-MuiFormControl-root-MuiTextField-root
+  > .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 128%;
+  letter-spacing: -0.01em;
+  color: #c7cad3;
+}
+
+.css-qb6sbg-MuiFormControl-root-MuiTextField-root
+  > .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #c7cad3;
+} */

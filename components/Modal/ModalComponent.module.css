@@ -1,9 +1,9 @@
 .modalContainer {
   display: flex;
 
-  width: calc(158rem);
+  /* width: calc(158rem); */
   /* min-width: calc(50% + 1vw); */
-  height: calc(86rem);
+  /* height: calc(86rem); */
   /* min-height: calc(50% + 1vh); */
   background: #ffffff;
   box-shadow: 0rem 2.4rem 4rem rgba(0, 0, 0, 0.2);
@@ -68,7 +68,17 @@
 
 .agree_box_container {
   display: flex;
-  margin-top: 16rem;
+  margin-top: 24rem;
+}
+
+.privacy__collect__agree {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #4d5058;
 }
 
 .buttonStyle {
@@ -76,10 +86,16 @@
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
 }
 
 .buttonStyle:hover {
-  color: pink;
+  color: #7e818d;
 }
 
 .kanouJikan {
@@ -92,8 +108,8 @@
 }
 
 .leftInputField {
-  border-bottom: 1px solid pink;
-  margin-bottom: 4rem;
+  border-bottom: 1px solid #dfe1e8;
+  margin-bottom: 2rem;
 }
 
 .wave {
@@ -117,10 +133,22 @@
   align-items: center;
 }
 
+.rightPrivayCollectAgree {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .right_privacy_cursor {
   cursor: pointer;
-  color: #a7abb6;
   font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 140%;
+
+  letter-spacing: -0.01em;
+
+  color: #a7abb6;
 }
 
 .shopButton {
@@ -142,10 +170,32 @@
 
   color: #ffffff;
   margin-right: 0.8rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+
+  /* padding: 0.4rem 0.8rem 0.4rem 0.4rem; */
 
   cursor: pointer;
+
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 140%;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+}
+
+.shopic {
+  height: 5rem;
+  width: 2.5rem;
+  color: #fff;
+  /* margin-right: 0.725rem; */
+}
+
+.askic {
+  width: 2rem;
+  height: 2rem;
 }
 
 .helpButton {
@@ -259,6 +309,7 @@
 
 .ask_title_container {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .ask_details_container {
@@ -266,7 +317,8 @@
 }
 
 .ask_details {
-  height: calc(100%);
+  /* height: calc(100%); */
+  font-size: 100rem;
 }
 
 .information__para {
@@ -274,13 +326,6 @@
   font-size: 1.4rem;
   letter-spacing: -0.01em;
   color: #7e818d;
-}
-
-.shopic {
-  height: 5rem;
-  width: 2.5rem;
-  color: #fff;
-  margin-right: 0.725rem;
 }
 
 .dialog__exit__contaier {
@@ -310,6 +355,16 @@
   height: 5.6rem;
   width: 5.6rem;
   margin-bottom: 1.6rem;
+}
+
+.time__reciver__title {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+
+  color: #7e818d;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {

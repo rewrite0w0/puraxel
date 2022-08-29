@@ -38,6 +38,14 @@ const bgStyle = {
   p: 4,
 };
 
+const Temp = () => {
+  return (
+    <span style={{ color: "blue" }}>
+      ssssssssssssshe<span style={{ color: "pink" }}>yyyyyyyyyyyy</span>
+    </span>
+  );
+};
+
 export default function ModalComponent(props) {
   //  모달
   const [modalOpen, setModalOpen] = useState(false);
@@ -154,6 +162,7 @@ export default function ModalComponent(props) {
                 label={modalKr.modalName}
                 required
                 className={style.leftInputField}
+                margin={"dense"}
               />
             </Box>
             {/* 3 */}
@@ -162,6 +171,7 @@ export default function ModalComponent(props) {
                 label={modalKr.modalTel}
                 required
                 className={style.leftInputField}
+                margin={"dense"}
               />
             </Box>
             {/* 4 */}
@@ -170,6 +180,7 @@ export default function ModalComponent(props) {
                 label={modalKr.modalEmail}
                 required
                 className={style.leftInputField}
+                margin={"dense"}
               />
             </Box>
             {/* 5 */}
@@ -177,11 +188,14 @@ export default function ModalComponent(props) {
               <TextField
                 label={modalKr.modalCompanyName}
                 className={style.leftInputField}
+                margin={"dense"}
               />
             </Box>
             {/* 6 */}
             <Box>
-              <p>{modalKr.modalAvailableTime}</p>
+              <span className={style.time__reciver__title}>
+                {modalKr.modalAvailableTime}
+              </span>
               {/* timer */}
               <Box className={style.timeReciverContainer}>
                 <Box>
@@ -192,7 +206,7 @@ export default function ModalComponent(props) {
                     >
                       {timeZone.map((time) => (
                         <MenuItem key={time} value={time}>
-                          {time}
+                          {time < 10 ? `0${time} 시` : time + " 시"}
                         </MenuItem>
                       ))}
                     </Select>
@@ -209,7 +223,7 @@ export default function ModalComponent(props) {
                         .filter((time) => time >= startAvailableTime)
                         .map((time) => (
                           <MenuItem key={time} value={time}>
-                            {time}
+                            {time < 10 ? `0${time} 시` : time + " 시"}
                           </MenuItem>
                         ))}
                     </Select>
@@ -230,16 +244,18 @@ export default function ModalComponent(props) {
                     },
                   }}
                 />
-                <Typography className={style.rightPrivayCollectAgree}>
-                  <span>{modalKr.modalAgreeCheck}</span>
-                  &nbsp;
+                <div className={style.rightPrivayCollectAgree}>
+                  <span className={style.privacy__collect__agree}>
+                    {modalKr.modalAgreeCheck}
+                  </span>
+                  &nbsp; &nbsp;
                   <span
                     onClick={handleOpenAgreeNoticeDialog}
                     className={`${style.rightPrivacyCollectAgree} ${style.right_privacy_cursor}`}
                   >
                     {modalKr.modalAgreeDetail}
                   </span>
-                </Typography>
+                </div>
               </Box>
               {/*  */}
             </Box>
@@ -256,6 +272,13 @@ export default function ModalComponent(props) {
                   disableRipple
                   variant="text"
                   className={style.buttonStyle}
+                  sx={{
+                    color: "#7E818D",
+                    textDecoration: "underline",
+                    textDecorationColor: "#7E818D",
+                    textUnderlineOffset: "0.5rem",
+                    textDecorationThickness: "0.2rem",
+                  }}
                 >
                   {modalKr.modalLangKr}
                 </Button>
@@ -288,12 +311,15 @@ export default function ModalComponent(props) {
             {/* 문의 내용 */}
             <Box className={style.ask_details_container}>
               <TextField
-                maxRows={25}
+                minRows={20}
+                maxRows={20}
                 fullWidth={true}
                 multiline={true}
                 label={modalKr.modalAskContent}
+                // label={<Temp />}
                 className={style.ask_details}
                 required
+                inputProps={{ maxLength: 300 }}
               />
             </Box>
             {/* 4 */}
@@ -319,12 +345,17 @@ export default function ModalComponent(props) {
 
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <div style={{ display: "flex", marginTop: "1.6rem" }}>
-                  <span className={style.shopButton}>
+                  <span
+                    className={style.shopButton}
+                    onClick={() => {
+                      window.open("https://lmdt.cafe24.com", "_blank");
+                    }}
+                  >
                     <ShopIC className={style.shopic} />
                     {modalKr.modalLinkToShoppingMall}
                   </span>
                   <span className={style.helpButton}>
-                    <AskIcon />
+                    <AskIcon className={style.askic} />
                     {modalKr.modalLinkToAsk}
                   </span>
                 </div>
