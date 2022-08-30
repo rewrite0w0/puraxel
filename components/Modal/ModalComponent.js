@@ -274,6 +274,7 @@ export default function ModalComponent(props) {
               />
             </Box>
             {/* 6 */}
+
             <Box>
               <span className={style.time__reciver__title}>
                 {modalKr.modalAvailableTime}
@@ -342,6 +343,8 @@ export default function ModalComponent(props) {
               </Box>
               {/*  */}
             </Box>
+
+            {/*  */}
           </Box>
 
           {/* 그리드 우측 */}
@@ -409,7 +412,7 @@ export default function ModalComponent(props) {
             </Box>
             {/* 4 */}
             {/* 여러가지 안내 사항 */}
-            <Box>
+            <Box className={style.information__container}>
               <Box style={{ display: "flex" }}>
                 <Typography className={style.information__para}>
                   {modalKr.modalExplainBar}

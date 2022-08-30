@@ -68,7 +68,10 @@
 
 .agree_box_container {
   display: flex;
-  margin-top: 24rem;
+  /* margin-top: 24rem; */
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 4.2rem;
 }
 
 .privacy__collect__agree {
@@ -321,6 +324,12 @@
   font-size: 100rem;
 }
 
+.information__container {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 4.2rem;
+}
+
 .information__para {
   font-weight: 500;
   font-size: 1.4rem;
@@ -382,7 +391,13 @@
 }
 
 .send__button__container {
+  /* display: flex; */
+  position: fixed;
+  right: 0;
+  bottom: 0;
   display: flex;
+  padding-right: 5rem;
+  padding-bottom: 4rem;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
