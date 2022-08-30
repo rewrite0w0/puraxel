@@ -2,10 +2,13 @@ import "../styles/globals.css";
 import Layout from "components/layout/Layout";
 import Head from "next/head";
 import "swiper/css/bundle";
-
 import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "@mui/material";
+import "@mui/icons-material";
+import "@emotion/react";
+import "@emotion/styled";
 
 // import Transition from "components/Transition";
 import { Provider } from "jotai";
