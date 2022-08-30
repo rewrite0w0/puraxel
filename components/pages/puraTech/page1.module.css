@@ -1,13 +1,13 @@
 .container {
   display: flex;
-  width: calc(100vw);
-  height: calc(100vh);
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-right: 22.8rem;
-  padding-left: 22.8rem;
-  padding-top: 10.4rem;
-  padding-bottom: 8rem;
+  padding-right: calc(22.8rem - 1vw);
+  padding-left: calc(22.8rem - 1vw);
+  padding-top: calc(10.4rem - 1vh);
+  padding-bottom: calc(8rem - 1vh);
 }
 
 .inner__container {
@@ -217,8 +217,412 @@
   margin-bottom: calc(3.6rem + 1vh);
 }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
-}
+/* qr */
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-top: 10.4rem;
+    padding-bottom: 11.4rem;
+  }
+
+  .inner__container__left {
+  }
+
+  .inner__container__right {
+    margin-left: 2.8rem;
+  }
+
+  .step {
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+
+  .step__step {
+    font-size: 1.2rem;
+  }
+
+  .step__bold {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+
+  .step__title {
+    font-size: 1.8rem;
+  }
+
+  .step__subtitle {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  .title {
+    height: 4.3rem;
+  }
+
+  .StepContainer {
+    width: fit-content;
+  }
+
+  .image1 {
+    content: url(../../../src/image/PURATECH/page3/1.svg);
+    width: 29rem;
+    height: 10.4rem;
+  }
+  .image2 {
+    content: url(../../../src/image/PURATECH/page3/2.svg);
+    width: 29rem;
+    height: 10.4rem;
+  }
+  .image3 {
+    content: url(../../../src/image/PURATECH/page3/3.svg);
+    width: 29rem;
+    height: 10.4rem;
+  }
+  .image4 {
+    content: url(../../../src/image/PURATECH/page3/4.svg);
+    width: 29rem;
+    height: 10.4rem;
+  }
+
+  .explainContainer {
+    width: 30.5rem;
+    height: 14.9rem;
+
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    margin-right: 1.9rem;
+  }
+
+  .expBox {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #4d5058;
+  }
+
+  .expBox__bold {
+    font-weight: 500;
+  }
+
+  .puraxel__title__sub {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 128%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+  }
+
+  .puraxel__title__main {
+    font-weight: 300;
+    font-size: 8.4rem;
+    line-height: 124%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+    margin-bottom: 6rem;
+  }
+
+  .puraxel__title__image {
+    content: url(../../../src/image/PURATECH/page1/puraxel_laser_tech_explain.png);
+    width: 363.47px;
+    height: 500px;
+  }
+
+  .puraxel__explain__step__container {
+    display: grid;
+    grid-template-areas:
+      "x y"
+      "z o";
+    width: fit-content;
+  }
+
+  .puraxel__explain__title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 140%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+  }
+
+  .puraxel__explain__title__bold {
+    letter-spacing: -0.01em;
+    line-height: 140%;
+    font-weight: 700;
+  }
+
+  .puraxel__explain__float__container {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(2rem);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .puraxel__explain__float__container__upper {
+    margin-bottom: 0.8rem;
+    width: 56rem;
+    /* height: 15.6rem; */
+  }
+
+  .puraxel__explain__float__container__lower {
+    width: 60rem;
+    /* height: 10.4rem; */
+    margin-left: 12.8rem;
+    margin-top: -4rem;
+  }
+
+  .puraxel__explain__para {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    letter-spacing: -0.01em;
+
+    /* grayscale/06 */
+    color: #7e818d;
+  }
+
+  .puraxel__explain__para__bold {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .puraxel__explain__container__upper {
+    margin-bottom: calc(3.6rem + 1vh);
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    display: flex;
+    width: calc(100vw);
+    height: calc(100vh);
+    justify-content: center;
+    align-items: center;
+    padding-right: 22.8rem;
+    padding-left: 22.8rem;
+    padding-top: 10.4rem;
+    padding-bottom: 8rem;
+  }
+
+  .inner__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner__container__right {
+    width: 50%;
+  }
+
+  .inner__container__left {
+    width: 50%;
+  }
+
+  .step__container {
+    display: flex;
+    margin-bottom: 0.8rem;
+  }
+
+  .step {
+    width: 4.3rem;
+    height: 4.5rem;
+    color: var(--white);
+    background-color: var(--primary01);
+    opacity: 0.9;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.03em;
+  }
+
+  .step__step {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .step__bold {
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+
+  .step__title {
+    color: #55576f;
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+  }
+
+  .step__subtitle {
+    color: #a292a3;
+    font-size: 1.4rem;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 4.3rem;
+
+    background: var(--grayScale01);
+    border-radius: 0.4rem;
+    margin-left: 0.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .image1 {
+    content: url(../../../src/image/PURATECH/page3/1.svg);
+  }
+  .image2 {
+    content: url(../../../src/image/PURATECH/page3/2.svg);
+  }
+  .image3 {
+    content: url(../../../src/image/PURATECH/page3/3.svg);
+  }
+  .image4 {
+    content: url(../../../src/image/PURATECH/page3/4.svg);
+  }
+
+  .explainContainer {
+    box-sizing: border-box;
+
+    width: 42.5rem;
+    height: 20rem;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border: 1px solid #f2f3f7;
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    margin-bottom: 3.2rem;
+    margin-right: 2rem;
+  }
+
+  .expBox {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #4d5058;
+  }
+
+  .expBox__bold {
+    font-weight: 500;
+  }
+
+  .puraxel__title__sub {
+    font-weight: 300;
+    font-size: 4.8rem;
+    line-height: 128%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+  }
+
+  .puraxel__title__main {
+    font-weight: 300;
+    font-size: 9.6rem;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+    margin-bottom: 6rem;
+  }
+
+  .puraxel__title__image {
+    content: url(../../../src/image/PURATECH/page1/puraxel_laser_tech_explain.png);
+    width: calc(100% - 40%);
+    height: calc(100%);
+  }
+
+  .puraxel__explain__step__container {
+    display: grid;
+    grid-template-areas:
+      "x y"
+      "z o";
+  }
+
+  .puraxel__explain__title {
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 132%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+
+    margin-bottom: 1.6rem;
+  }
+
+  .puraxel__explain__title__bold {
+    letter-spacing: -0.01em;
+    line-height: 132%;
+    font-weight: 700;
+  }
+
+  .puraxel__explain__float__container {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(2rem);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .puraxel__explain__float__container__upper {
+    margin-bottom: 0.8rem;
+    width: calc(72.1rem);
+    height: calc(12.7rem);
+  }
+
+  .puraxel__explain__float__container__lower {
+    width: calc(72.2rem);
+    height: calc(9.8rem);
+    margin-left: 12.8rem;
+  }
+
+  .puraxel__explain__para {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 144%;
+
+    letter-spacing: -0.03em;
+    font-feature-settings: "tnum" on, "lnum" on;
+
+    color: #7e818d;
+  }
+
+  .puraxel__explain__para__bold {
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  .puraxel__explain__container__upper {
+    margin-bottom: calc(3.6rem + 1vh);
+  }
 }

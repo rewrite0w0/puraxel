@@ -1,4 +1,5 @@
-import "../styles/temp/globals.css";
+// import "../styles/globals.css";
+import "../public/globals.css";
 import Layout from "components/layout/Layout";
 import Head from "next/head";
 import "swiper/css/bundle";

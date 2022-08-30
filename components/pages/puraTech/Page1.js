@@ -42,7 +42,7 @@ const Image3 = () => {
 const Exp3 = () => {
   return (
     <span className={_.expBox}>
-      생성된 마이크로홀을 통해{" "}
+      생성된 마이크로홀로&nbsp;
       <span className={_.expBox__bold}>유효성분을 피부 속으로 전달</span>
     </span>
   );
@@ -75,7 +75,7 @@ const Step = (props) => {
       <section className={_.title}>
         <span className={_.step__title}>{props.title}</span>
         &nbsp;
-        <span className={_.ste__subtitle}>{props.subtitle}</span>
+        <span className={_.step__subtitle}>{props.subtitle}</span>
       </section>
     </section>
   );

@@ -6,8 +6,8 @@ export default function Page4() {
       <section className={_.title__container}>
         <article>
           <div className={_.sub_title}>
-            이제 병원에서만 가능하던 프락셔널 레이저 시술을 에스테틱샵에서도
-            제공하실 수 있습니다.
+            합리적인 비용의 퓨라셀로 에스테틱의 프리미엄 가치를 높일 수
+            있습니다.
           </div>
 
           <div className={_.main_title}>
