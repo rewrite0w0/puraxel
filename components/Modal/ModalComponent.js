@@ -72,6 +72,41 @@ export default function ModalComponent(props) {
     setEndAvailableTime(evt.target.value);
   };
 
+  // 현재 값
+
+  const [customerName, setCustomerName] = useState(undefined);
+  const [customerTel, setCustomerTel] = useState(undefined);
+  const [customerMail, setCustomerMail] = useState(undefined);
+  const [customerCompanyName, setCustomerCompanyName] = useState(undefined);
+  const [customerTitle, setCustomerTitle] = useState(undefined);
+  const [customerContent, setCustomerContent] = useState(undefined);
+  const [customerPrivacyAggre, setCustomerPrivacyAggre] = useState(undefined);
+
+  const privacyCollectAggre = () => {
+    return setCustomerPrivacyAggre(!customerPrivacyAggre);
+  };
+
+  const resetState = () => {
+    setCustomerName(undefined);
+    setCustomerTel(undefined);
+    setCustomerMail(undefined);
+    setCustomerCompanyName(undefined);
+    setCustomerTitle(undefined);
+    setCustomerContent(undefined);
+    setStartAvailableTime(timeZone[0]);
+    setEndAvailableTime(18);
+    setCustomerPrivacyAggre(false);
+  };
+
+  const AlertNeedMoreCustomerData = () => {
+    return (
+      <div className={style.alert__need__more__custommer__data}>
+        <Bitkuri />
+        입력하지 않은 필수 정보가 있습니다.
+      </div>
+    );
+  };
+
   // 자세히보기
 
   const [agreeNoticeDialogOpen, setAgreeNoticeDialogOpen] = useState(false);
@@ -125,7 +160,8 @@ export default function ModalComponent(props) {
     // setSendAgreeDialogOpen(false);
     // handleOpenSendedNoticeDialog();
     // resetState();
-
+    // console.log(mail);
+    // console.log(mail.filter((x) => x === undefined || ""));
     if (mail.filter((x) => x === undefined || "" || false).length > 1) {
       // alert("nono");
       setSendAgreeDialogOpen(false);
@@ -160,41 +196,6 @@ export default function ModalComponent(props) {
 
   const handleCloseRequiredValueEmptyDialog = () => {
     setRequiredValueEmptyDialogOpen(false);
-  };
-
-  // 현재 값
-
-  const [customerName, setCustomerName] = useState(undefined);
-  const [customerTel, setCustomerTel] = useState(undefined);
-  const [customerMail, setCustomerMail] = useState(undefined);
-  const [customerCompanyName, setCustomerCompanyName] = useState(undefined);
-  const [customerTitle, setCustomerTitle] = useState(undefined);
-  const [customerContent, setCustomerContent] = useState(undefined);
-  const [customerPrivacyAggre, setCustomerPrivacyAggre] = useState(false);
-
-  const privacyCollectAggre = () => {
-    return setCustomerPrivacyAggre(!customerPrivacyAggre);
-  };
-
-  const resetState = () => {
-    setCustomerName(undefined);
-    setCustomerTel(undefined);
-    setCustomerMail(undefined);
-    setCustomerCompanyName(undefined);
-    setCustomerTitle(undefined);
-    setCustomerContent(undefined);
-    setStartAvailableTime(timeZone[0]);
-    setEndAvailableTime(18);
-    setCustomerPrivacyAggre(false);
-  };
-
-  const AlertNeedMoreCustomerData = () => {
-    return (
-      <div className={style.alert__need__more__custommer__data}>
-        <Bitkuri />
-        입력하지 않은 필수 정보가 있습니다.
-      </div>
-    );
   };
 
   return (
