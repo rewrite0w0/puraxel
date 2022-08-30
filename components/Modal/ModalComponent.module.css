@@ -367,6 +367,24 @@
   color: #7e818d;
 }
 
+.alert__need__more__custommer__data {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 140%;
+
+  letter-spacing: -0.01em;
+
+  color: #7e818d;
+  display: flex;
+  margin-right: 1.1rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.send__button__container {
+  display: flex;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
 }
 

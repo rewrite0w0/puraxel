@@ -24,7 +24,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
 
-import { AskIcon, Inquiry, ShopIC } from "components/Parts/Icons";
+import { AskIcon, Bitkuri, Inquiry, ShopIC } from "components/Parts/Icons";
 
 const bgStyle = {
   position: "absolute",
@@ -93,6 +93,7 @@ export default function ModalComponent(props) {
   const handleCloseNoticeDialog = () => {
     setCloseNoticeDialogOpen(false);
     setModalOpen(false);
+    resetState();
   };
 
   const handleCloseNoticeYesOrNo = () => {
@@ -112,9 +113,29 @@ export default function ModalComponent(props) {
   };
 
   const handleSendAgreeYes = () => {
-    setModalOpen(false);
-    setSendAgreeDialogOpen(false);
-    handleOpenSendedNoticeDialog();
+    const mail = [
+      customerName,
+      customerTel,
+      customerMail,
+      customerTitle,
+      customerContent,
+      customerPrivacyAggre,
+    ];
+    // setModalOpen(false);
+    // setSendAgreeDialogOpen(false);
+    // handleOpenSendedNoticeDialog();
+    // resetState();
+
+    if (mail.filter((x) => x === undefined || "" || false).length > 1) {
+      // alert("nono");
+      setSendAgreeDialogOpen(false);
+    } else {
+      // alert("ㅇㅋㄷㅋ");
+      setModalOpen(false);
+      setSendAgreeDialogOpen(false);
+      handleOpenSendedNoticeDialog();
+      resetState();
+    }
   };
 
   // 전송 완료 알림
@@ -126,6 +147,54 @@ export default function ModalComponent(props) {
   };
   const handleCloseSendedNoticeDialog = () => {
     setSendedNoticeDialogOpen(false);
+  };
+
+  // 미입력 알림
+
+  const [requiredValueEmptyDialogOpen, setRequiredValueEmptyDialogOpen] =
+    useState(false);
+
+  const handleOpenRequiredValueEmptyDialog = () => {
+    setRequiredValueEmptyDialogOpen(true);
+  };
+
+  const handleCloseRequiredValueEmptyDialog = () => {
+    setRequiredValueEmptyDialogOpen(false);
+  };
+
+  // 현재 값
+
+  const [customerName, setCustomerName] = useState(undefined);
+  const [customerTel, setCustomerTel] = useState(undefined);
+  const [customerMail, setCustomerMail] = useState(undefined);
+  const [customerCompanyName, setCustomerCompanyName] = useState(undefined);
+  const [customerTitle, setCustomerTitle] = useState(undefined);
+  const [customerContent, setCustomerContent] = useState(undefined);
+  const [customerPrivacyAggre, setCustomerPrivacyAggre] = useState(false);
+
+  const privacyCollectAggre = () => {
+    return setCustomerPrivacyAggre(!customerPrivacyAggre);
+  };
+
+  const resetState = () => {
+    setCustomerName(undefined);
+    setCustomerTel(undefined);
+    setCustomerMail(undefined);
+    setCustomerCompanyName(undefined);
+    setCustomerTitle(undefined);
+    setCustomerContent(undefined);
+    setStartAvailableTime(timeZone[0]);
+    setEndAvailableTime(18);
+    setCustomerPrivacyAggre(false);
+  };
+
+  const AlertNeedMoreCustomerData = () => {
+    return (
+      <div className={style.alert__need__more__custommer__data}>
+        <Bitkuri />
+        입력하지 않은 필수 정보가 있습니다.
+      </div>
+    );
   };
 
   return (
@@ -163,6 +232,9 @@ export default function ModalComponent(props) {
                 required
                 className={style.leftInputField}
                 margin={"dense"}
+                onChange={(e) => {
+                  setCustomerName(e.target.value);
+                }}
               />
             </Box>
             {/* 3 */}
@@ -172,6 +244,9 @@ export default function ModalComponent(props) {
                 required
                 className={style.leftInputField}
                 margin={"dense"}
+                onChange={(e) => {
+                  setCustomerTel(e.target.value);
+                }}
               />
             </Box>
             {/* 4 */}
@@ -181,6 +256,9 @@ export default function ModalComponent(props) {
                 required
                 className={style.leftInputField}
                 margin={"dense"}
+                onChange={(e) => {
+                  setCustomerMail(e.target.value);
+                }}
               />
             </Box>
             {/* 5 */}
@@ -189,6 +267,9 @@ export default function ModalComponent(props) {
                 label={modalKr.modalCompanyName}
                 className={style.leftInputField}
                 margin={"dense"}
+                onChange={(e) => {
+                  setCustomerCompanyName(e.target.value);
+                }}
               />
             </Box>
             {/* 6 */}
@@ -234,6 +315,7 @@ export default function ModalComponent(props) {
               {/* 7 */}
               <Box className={style.agree_box_container}>
                 <Checkbox
+                  onClick={privacyCollectAggre}
                   icon={<CheckCircleOutlineIcon />}
                   checkedIcon={<CheckCircleIcon />}
                   sx={{
@@ -305,6 +387,7 @@ export default function ModalComponent(props) {
                 fullWidth={true}
                 label={modalKr.modalAskTitle}
                 required
+                onChange={(e) => setCustomerTitle(e.target.value)}
               />
             </Box>
             {/* 3 */}
@@ -320,6 +403,7 @@ export default function ModalComponent(props) {
                 className={style.ask_details}
                 required
                 inputProps={{ maxLength: 300 }}
+                onChange={(e) => setCustomerContent(e.target.value)}
               />
             </Box>
             {/* 4 */}
@@ -360,12 +444,18 @@ export default function ModalComponent(props) {
                   </span>
                 </div>
                 {/* 전송 */}
-                <div
-                  className={style.sendButton}
-                  onClick={handleOpenSendAgreeDialog}
-                >
-                  {modalKr.modalSendButton}
+                <div className={style.send__button__container}>
+                  {!customerPrivacyAggre ? (
+                    <AlertNeedMoreCustomerData />
+                  ) : undefined}
+                  <div
+                    className={style.sendButton}
+                    onClick={handleOpenSendAgreeDialog}
+                  >
+                    {modalKr.modalSendButton}
+                  </div>
                 </div>
+                {/*  */}
               </div>
             </Box>
             {/*  */}
@@ -472,6 +562,23 @@ export default function ModalComponent(props) {
           </DialogContent>
         </section>
       </Dialog>
+
+      {/* <Dialog
+        open={requiredValueEmptyDialogOpen}
+        onClose={handleCloseRequiredValueEmptyDialog}
+      >
+        <section className={style.dialog__require__value__dialog}>
+          <DialogContent>
+            <div
+              className={style.dialog__require__value__inner__container}
+            >
+
+
+
+            </div>
+          </DialogContent>
+        </section>
+      </Dialog> */}
     </>
   );
 }
