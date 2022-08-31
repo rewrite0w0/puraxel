@@ -99,6 +99,8 @@
   line-height: 128%;
 
   letter-spacing: -0.02em;
+
+  color: #55576f;
 }
 
 .explainPaperContainer {
@@ -142,6 +144,7 @@
   letter-spacing: -0.01em;
 
   color: #a7abb6;
+  margin-bottom: 0.4rem;
 }
 
 .frameExp {
@@ -149,9 +152,11 @@
   font-size: 1.6rem;
   line-height: 150%;
 
+  margin-bottom: 1.8rem;
+
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .optionButtonCommon {
@@ -179,21 +184,17 @@
 
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .subExplain {
-  font-weight: 300;
+  font-weight: 600;
   font-size: 1.2rem;
   line-height: 150%;
 
   letter-spacing: -0.03em;
 
   color: var(--grayScale05);
-}
-
-.margin__bottom {
-  margin-bottom: 2.4rem;
 }
 
 .product__etc__container {
@@ -213,6 +214,10 @@
   align-self: flex-start;
   justify-content: flex-start;
   width: calc(50%);
+}
+
+.margin__bottom {
+  margin-bottom: 2.4rem;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {

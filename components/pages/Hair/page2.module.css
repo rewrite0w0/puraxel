@@ -93,7 +93,9 @@
   border: 1px solid #f2f3f7;
   border-radius: 0.4rem;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+
+  /* align-items: flex-end; */
 }
 
 .imageContainerLeft {
@@ -132,6 +134,15 @@
   width: inherit;
   display: flex;
   align-items: flex-end;
+}
+
+.image__common__spec {
+  height: calc(95%);
+  width: calc(95%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 2rem;
 }
 
 .imageCommon:hover {

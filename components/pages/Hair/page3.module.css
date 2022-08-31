@@ -114,6 +114,7 @@
   border-radius: 0.4rem;
   align-self: flex-end;
   padding-left: 4rem;
+  margin-right: 4rem;
 }
 
 .paperContainer__left {
@@ -227,7 +228,8 @@
 .flex__container {
   display: flex;
   width: 100vw;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: calc(100vw / 5);
 }
 
 .image__container {

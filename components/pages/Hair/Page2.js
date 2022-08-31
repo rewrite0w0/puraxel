@@ -123,8 +123,10 @@ export default function Page2() {
                   background: currentMode === "Sonic" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.SonicImage}  ${_.imageCommon}`}>
-                  <ExplainContainer num={"2"} title={"초음파"} />
+                <div className={`${_.imageCommon}`}>
+                  <div className={`${_.SonicImage}  ${_.image__common__spec}`}>
+                    <ExplainContainer num={"2"} title={"초음파"} />
+                  </div>
                 </div>
               </div>
 
@@ -135,8 +137,12 @@ export default function Page2() {
                   background: currentMode === "Galvanic" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.GalvanicImage}  ${_.imageCommon}`}>
-                  <ExplainContainer num={"3"} title={"갈바닉"} />
+                <div className={`${_.imageCommon}`}>
+                  <div
+                    className={`${_.GalvanicImage}  ${_.image__common__spec}`}
+                  >
+                    <ExplainContainer num={"3"} title={"갈바닉"} />
+                  </div>
                 </div>
               </div>
 
@@ -147,8 +153,12 @@ export default function Page2() {
                   background: currentMode === "Cooling" ? ACTIVE : INACTIVE,
                 }}
               >
-                <div className={`${_.CoolingImage}  ${_.imageCommon}`}>
-                  <ExplainContainer num={"4"} title={"쿨링"} />
+                <div className={`${_.imageCommon}`}>
+                  <div
+                    className={`${_.CoolingImage}  ${_.image__common__spec}`}
+                  >
+                    <ExplainContainer num={"4"} title={"쿨링"} />
+                  </div>
                 </div>
               </div>
             </div>
