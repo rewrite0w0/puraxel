@@ -46,75 +46,75 @@ const ExplainFrame = (props) => {
   return (
     <section className={_.frameContainer}>
       <Bar />
-      <span className={_.frameTitle}>{props.title}</span>
-      <span className={_.frameExp}>{props.exp}</span>
+      <div className={_.frameTitle}>{props.title}</div>
+      <div className={_.frameExp}>{props.exp}</div>
     </section>
   );
 };
 
 const LaserWave = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       2940nm<span className={_.subExplain}>(±1%)</span>
-    </span>
+    </div>
   );
 };
 
 const LaserPowerRange = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       80~140mJ <span className={_.subExplain}>(±20)</span>
-    </span>
+    </div>
   );
 };
 
 const LaserRepeat = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       3~5 seconds <span className={_.subExplain}>interval</span>
-    </span>
+    </div>
   );
 };
 
 const ProductFeature = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       1) Fractional Laser
       <br />
       2) Galvanic
-    </span>
+    </div>
   );
 };
 
 const ProductWeight = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       350g <span className={_.subExplain}>(Main body)</span>
       <br />
       Cradle: 110g <span className={_.subExplain}>(Cradle)</span>
-    </span>
+    </div>
   );
 };
 
 const ProducetSize = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       50x57x220mm <span className={_.subExplain}>(Main body)</span>
       <br />
       98x98x85mm <span className={_.subExplain}>(Cradle)</span>
-    </span>
+    </div>
   );
 };
 
 const ProductSpec = () => {
   return (
-    <span className={_.mainExplain}>
+    <div className={_.mainExplain}>
       Built-in Rechargeable
       <br />
       11.1V 850mAh
       <br />
       Lithium-Polymer Battery
-    </span>
+    </div>
   );
 };
 
@@ -230,7 +230,7 @@ export default function Page5() {
       </article>
       <article className={_.explainContainer}>
         <div className={_.explainTitle__container}>
-          <span className={_.explainTitle}>제품 구성 및 사양</span>
+          <div className={_.explainTitle}>제품 구성 및 사양</div>
         </div>
 
         <div className={_.explainPaperContainer}>

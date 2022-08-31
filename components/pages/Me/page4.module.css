@@ -62,7 +62,7 @@
   display: flex;
 
   margin-right: 2rem;
-  margin-bottom: 12.6rem;
+  /* margin-bottom: 12.6rem; */
 }
 
 .promo0 {
@@ -113,12 +113,12 @@
 
 .hrContainer {
   width: 1rem;
-  height: 1.2rem;
+  height: 0.8rem;
 }
 
 .commonHR {
   width: 0.8rem;
-  color: #c7cad3;
+  color: #cacfd8;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -136,7 +136,8 @@
 
   letter-spacing: -0.01em;
 
-  color: #a7abb6;
+  color: #b6bcc7;
+
   margin-bottom: 0.8rem;
 }
 
@@ -148,7 +149,7 @@
   margin-bottom: 2.4rem;
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .optionButtonCommon {
@@ -175,17 +176,17 @@
 
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .subExplain {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 1.2rem;
   line-height: 150%;
 
   letter-spacing: -0.03em;
 
-  color: var(--grayScale05);
+  color: #808591;
 }
 
 .explain__container {

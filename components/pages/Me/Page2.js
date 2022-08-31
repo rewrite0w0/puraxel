@@ -23,7 +23,9 @@ const LaserExplain = () => {
         </div>
 
         <div className={style.explainPara}>
-          크림과 앰플의 피부흡수율을 높이줍니다.
+          크림과 앰플의 피부흡수율을 높여줍니다.
+          <br />
+          (5~10분 사용시 약 5,000개 이상의 홀 생성)
         </div>
       </div>
 
@@ -54,12 +56,10 @@ const GalvanicExplain = () => {
 
       <div className={`${style.explainPara} ${style.explain__para_sub}`}>
         <div>
-          같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
-          흡수율을 높입니다.
-        </div>
-
-        <div>
-          레이저 모드와 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
+          갈바닉은 같은 극끼리 밀어내고, 반대 극끼리는 당기는 성질의 갈바닉
+          전류를 활용하여
+          <br />
+          화장품 및 앰플 등의 유효성분을 이온화시켜 피부 깊숙이 침투시킵니다.
         </div>
       </div>
 
@@ -153,6 +153,10 @@ const GalvanicToggleInActive = () => {
       className={`${style.galvanicImageContainer} ${style.imageContainer} ${style.galvanicInactiveImage}`}
     />
   );
+};
+
+const HeadTips = () => {
+  return <div className={style.head__tips}></div>;
 };
 
 export default function Page2() {
@@ -262,7 +266,10 @@ export default function Page2() {
       {/* 왼쪽 grid */}
       <LeftPaperContainer />
       {/* 오른쪽 grid */}
+
       {modeCondition ? <LaserImage /> : <GalvanicImage />}
+
+      <HeadTips />
     </section>
   );
 }
