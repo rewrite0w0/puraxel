@@ -15,6 +15,9 @@ export default function Navbars() {
   const [snsOpenState, setSnsOpenState] = useState(false);
   const [snsAnchorState, setSnsAnchorState] = useState(undefined);
 
+  const [productOpenState, setProductOpenState] = useState(false);
+  const [productAnchorState, setProductAnchorState] = useState(undefined);
+
   const handleSNSButton = (e) => {
     setSnsAnchorState(e.currentTarget);
     setSnsOpenState(!snsOpenState);
@@ -33,32 +36,41 @@ export default function Navbars() {
     setCompanyInfoAnchorState(undefined);
   };
 
-  const companyInfoOpenStateCodition = companyOpenState === false;
-  const snsCodition = snsOpenState === false;
-
-  const [currentPage, setCurrentPage] = useState(undefined);
-
-  const currentPageChecker = () => {
-    if (document.documentURI.includes("hair")) {
-      setCurrentPage("hair");
-    }
-
-    if (document.documentURI.includes("fx5000")) {
-      setCurrentPage("fx5000");
-    }
-
-    if (document.documentURI.includes("me")) {
-      setCurrentPage("me");
-    }
-
-    if (document.documentURI.includes("tech")) {
-      setCurrentPage("tech");
-    }
+  const handleProductInfoButton = (e) => {
+    setProductAnchorState(e.currentTarget);
+    setProductOpenState(!productOpenState);
   };
 
-  useEffect(() => {
-    return currentPageChecker();
-  }, []);
+  const handleProductInfoCloseButton = () => {
+    setProductAnchorState(undefined);
+  };
+
+  const companyInfoOpenStateCodition = companyOpenState === false;
+  // const snsCodition = snsOpenState === false;
+
+  // const [currentPage, setCurrentPage] = useState(undefined);
+
+  // const currentPageChecker = () => {
+  //   if (document.documentURI.includes("hair")) {
+  //     setCurrentPage("hair");
+  //   }
+
+  //   if (document.documentURI.includes("fx5000")) {
+  //     setCurrentPage("fx5000");
+  //   }
+
+  //   if (document.documentURI.includes("me")) {
+  //     setCurrentPage("me");
+  //   }
+
+  //   if (document.documentURI.includes("tech")) {
+  //     setCurrentPage("tech");
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   return currentPageChecker();
+  // }, []);
 
   return (
     <nav className={navStyle.header}>
@@ -71,44 +83,56 @@ export default function Navbars() {
         ></Box>
 
         <div className={navStyle.rightNav}>
-          <NavIconButton
-            onClick={() => {
-              location.href = "/me";
-            }}
-            title={layoutHeaderKr.me}
-            className={`${navStyle.gnbMenu} ${
-              currentPage === "me" ? navStyle.underliner : undefined
-            }`}
-          />
-          <NavIconButton
-            onClick={() => {
-              location.href = "/fx5000";
-            }}
-            title={layoutHeaderKr.fx5000}
-            className={`${navStyle.gnbMenu} ${
-              currentPage === "fx5000" ? navStyle.underliner : undefined
-            }`}
-          />
-
-          <NavIconButton
-            onClick={() => {
-              location.href = "/hair";
-            }}
-            title={layoutHeaderKr.hair}
-            className={`${navStyle.gnbMenu} ${
-              currentPage === "hair" ? navStyle.underliner : undefined
-            }`}
-          />
+          <Button
+            onClick={handleProductInfoButton}
+            className={navStyle.gnbMenu}
+            disableRipple
+          >
+            제품
+            <Menu
+              open={productOpenState}
+              onClose={handleProductInfoCloseButton}
+              anchorEl={productAnchorState}
+              className={navStyle.gnb__location__menu}
+            >
+              <div className={navStyle.gnb__container}>
+                <MenuItem
+                  disableRipple
+                  className={`${navStyle.gnb__location__menu} ${navStyle.SNSMenuFirst}`}
+                  onClick={() => {
+                    location.href = "/me";
+                  }}
+                >
+                  PURAXEL-Me
+                </MenuItem>
+                <MenuItem
+                  disableRipple
+                  className={navStyle.gnb__location__menu}
+                  onClick={() => {
+                    location.href = "/fx5000";
+                  }}
+                >
+                  PURAXEL
+                </MenuItem>
+                <MenuItem
+                  disableRipple
+                  className={`${navStyle.gnb__location__menu} ${navStyle.SNSMenuLast}`}
+                  onClick={() => {
+                    location.href = "/hair";
+                  }}
+                >
+                  PURAXEL-Hair
+                </MenuItem>
+              </div>
+            </Menu>
+          </Button>
 
           <NavIconButton
             onClick={() => {
               location.href = "/tech";
             }}
-            // title={layoutHeaderKr.puraTech}
             title={"핵심기술"}
-            className={`${navStyle.gnbMenu} ${
-              currentPage === "tech" ? navStyle.underliner : undefined
-            }`}
+            className={`${navStyle.gnbMenu}`}
           />
         </div>
       </section>
@@ -120,14 +144,14 @@ export default function Navbars() {
           sx={{ paddingRight: "10px", paddingLeft: "10px" }}
         ></NavIconButton> */}
 
-        <NavIconButton
+        {/* <NavIconButton
           title={"newsletter"}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
-        ></NavIconButton>
+        ></NavIconButton> */}
 
         <Button
           onClick={handleSNSButton}
-          className={(navStyle.buttonStyleKr, navStyle.subMenu)}
+          className={`${navStyle.subMenu}`}
           disableRipple
         >
           {layoutHeaderKr.sns}
