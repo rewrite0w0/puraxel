@@ -19,7 +19,7 @@ export default function Page1() {
 
             <div className={_.explain_bot_sub}>
               <div>레이저 전문 기업이 만들어</div>
-              <div>더욱 안전한 소형 프락셔널 레이저</div>
+              <div>더욱 안전한 개인용 프락셔널 레이저</div>
             </div>
           </div>
         </div>
