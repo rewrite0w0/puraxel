@@ -147,22 +147,29 @@ export default function ModalComponent(props) {
     setSendAgreeDialogOpen(false);
   };
 
+  const mail = [
+    customerName,
+    customerTel,
+    customerMail,
+    customerTitle,
+    customerContent,
+    customerPrivacyAggre,
+  ];
+
+  const requireInputDataChecker = () =>
+    mail.filter((x) => x === undefined || "" || false).length > 0;
+
+  console.log(requireInputDataChecker());
+  console.log(mail);
+
   const handleSendAgreeYes = () => {
-    const mail = [
-      customerName,
-      customerTel,
-      customerMail,
-      customerTitle,
-      customerContent,
-      customerPrivacyAggre,
-    ];
     // setModalOpen(false);
     // setSendAgreeDialogOpen(false);
     // handleOpenSendedNoticeDialog();
     // resetState();
     // console.log(mail);
     // console.log(mail.filter((x) => x === undefined || ""));
-    if (mail.filter((x) => x === undefined || "" || false).length > 1) {
+    if (requireInputDataChecker()) {
       // alert("nono");
       setSendAgreeDialogOpen(false);
     } else {
@@ -456,12 +463,17 @@ export default function ModalComponent(props) {
                 </div>
                 {/* 전송 */}
                 <div className={style.send__button__container}>
-                  {!customerPrivacyAggre ? (
+                  {requireInputDataChecker() ? (
                     <AlertNeedMoreCustomerData />
                   ) : undefined}
                   <div
                     className={style.sendButton}
                     onClick={handleOpenSendAgreeDialog}
+                    style={{
+                      background: requireInputDataChecker()
+                        ? "#D9DEE5"
+                        : "#55576F",
+                    }}
                   >
                     {modalKr.modalSendButton}
                   </div>
