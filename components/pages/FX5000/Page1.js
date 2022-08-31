@@ -11,7 +11,7 @@ export default function Page0() {
         <div className={_.expBot}>에스테틱에 혁신을 가져오다</div>
 
         <div className={_.explainDetail}>
-          FX-5000은 에스테틱 샵에서만 구매 가능한 전문가용 제품입니다.
+          FX-5000은 에스테틱 샵 전문가용 제품입니다.
         </div>
       </section>
       <section className={_.rightContainer}>
