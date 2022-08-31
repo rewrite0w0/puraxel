@@ -55,6 +55,16 @@
   margin-left: 4rem;
 }
 
+.right__top__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right__exit__button {
+  content: url(../../src/image/modal/exit__button.png);
+  cursor: pointer;
+}
+
 .timeReciverContainer {
   display: flex;
 }

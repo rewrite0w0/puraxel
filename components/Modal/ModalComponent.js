@@ -352,7 +352,7 @@ export default function ModalComponent(props) {
           <Box className={style.right}>
             {/* 1 */}
             {/* 언어 버튼 선택 */}
-            <Box>
+            <div className={style.right__top__container}>
               <ButtonGroup style={{ display: "flex" }}>
                 <Button
                   disableRipple
@@ -383,7 +383,14 @@ export default function ModalComponent(props) {
                   {modalKr.modalLangCh}
                 </Button>
               </ButtonGroup>
-            </Box>
+
+              <div>
+                <div
+                  className={style.right__exit__button}
+                  onClick={handleCloseModal}
+                ></div>
+              </div>
+            </div>
             {/* 2 */}
             {/* 문의 제목 */}
             <Box className={style.ask_title_container}>
