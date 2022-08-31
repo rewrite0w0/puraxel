@@ -48,29 +48,37 @@ export default function Navbars() {
   const companyInfoOpenStateCodition = companyOpenState === false;
   // const snsCodition = snsOpenState === false;
 
-  // const [currentPage, setCurrentPage] = useState(undefined);
+  const [currentPage, setCurrentPage] = useState(undefined);
 
-  // const currentPageChecker = () => {
-  //   if (document.documentURI.includes("hair")) {
-  //     setCurrentPage("hair");
-  //   }
+  const currentPageProductList = ["hair", "fx5000", "me"];
 
-  //   if (document.documentURI.includes("fx5000")) {
-  //     setCurrentPage("fx5000");
-  //   }
+  const currentPageChecker = () => {
+    if (document.documentURI.includes("tech")) {
+      return setCurrentPage("tech");
+    } else {
+      return setCurrentPage("product");
+    }
 
-  //   if (document.documentURI.includes("me")) {
-  //     setCurrentPage("me");
-  //   }
+    // if (document.documentURI.includes("hair")) {
+    //   setCurrentPage("hair");
+    // }
 
-  //   if (document.documentURI.includes("tech")) {
-  //     setCurrentPage("tech");
-  //   }
-  // };
+    // if (document.documentURI.includes("fx5000")) {
+    //   setCurrentPage("fx5000");
+    // }
 
-  // useEffect(() => {
-  //   return currentPageChecker();
-  // }, []);
+    // if (document.documentURI.includes("me")) {
+    //   setCurrentPage("me");
+    // }
+
+    // if (document.documentURI.includes("tech")) {
+    //   setCurrentPage("tech");
+    // }
+  };
+
+  useEffect(() => {
+    return currentPageChecker();
+  }, []);
 
   return (
     <nav className={navStyle.header}>
@@ -85,7 +93,9 @@ export default function Navbars() {
         <div className={navStyle.rightNav}>
           <Button
             onClick={handleProductInfoButton}
-            className={navStyle.gnbMenu}
+            className={`${navStyle.gnbMenu} ${
+              currentPage === "product" ? navStyle.underliner__gnb : undefined
+            }`}
             disableRipple
           >
             제품
@@ -132,7 +142,9 @@ export default function Navbars() {
               location.href = "/tech";
             }}
             title={"핵심기술"}
-            className={`${navStyle.gnbMenu}`}
+            className={`${navStyle.gnbMenu} ${
+              currentPage === "tech" ? navStyle.underliner : undefined
+            }`}
           />
         </div>
       </section>
