@@ -19,9 +19,9 @@ export default function PuraTech() {
         <SwiperSlide>
           <Page1 />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Page2 />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swipers>
     </TechLayout>
   );

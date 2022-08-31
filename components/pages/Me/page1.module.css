@@ -100,8 +100,154 @@
   color: #4d5058;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    margin-left: 18.8rem;
+  }
+
+  .leftContainer {
+  }
+
+  .rightContainer {
+  }
+
+  .subTitle {
+    font-size: 4rem;
+  }
+
+  .title {
+    font-size: 8.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .mainExplain {
+  }
+
+  .mainExplainSub {
+    margin-bottom: 1.6rem;
+  }
+
+  .mainExplainBold {
+  }
+
+  .subExplain {
+  }
+
+  .explain_sub {
+  }
+
+  .rightContainer {
+    margin-left: 9.2rem;
+  }
+
+  .meImage {
+    content: url(../../../src/image/ME/page1/me_main.svg);
+
+    width: calc(100vw / 3.4);
+    height: calc(100vh / 1.1);
+  }
 }
 
-@media all and (min-width: 1440px) and (max-width: 1919px) {
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    height: calc(100%);
+    display: flex;
+    margin-left: 22.8rem;
+  }
+
+  .leftContainer {
+    display: flex;
+    width: calc(50%);
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rightContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .subTitle {
+    font-weight: 300;
+    font-size: 4.8rem;
+    letter-spacing: -0.02em;
+    line-height: 128%;
+    color: var(--primary01);
+
+    margin-bottom: 2.4rem;
+  }
+
+  .title {
+    font-weight: 300;
+    font-size: 9.6rem;
+    letter-spacing: -0.02em;
+    line-height: 120%;
+    color: var(--primary01);
+
+    margin-bottom: 8rem;
+  }
+
+  .mainExplain {
+    font-weight: 300;
+    font-size: 4rem;
+
+    letter-spacing: -0.02em;
+    line-height: 128%;
+
+    color: var(--grayScale07);
+  }
+
+  .mainExplainSub {
+    font-weight: 500;
+    font-size: 4rem;
+
+    letter-spacing: -0.02em;
+    line-height: 128%;
+
+    color: var(--grayScale07);
+
+    margin-bottom: 2.4rem;
+  }
+
+  .mainExplainBold {
+    font-weight: 500;
+    font-size: 4rem;
+
+    letter-spacing: -0.02em;
+
+    color: var(--primary01);
+  }
+
+  .subExplain {
+    font-weight: 200;
+    font-size: 2.4rem;
+
+    letter-spacing: -0.02em;
+    line-height: 140%;
+    color: var(--grayScale07);
+  }
+
+  .meImage {
+    content: url(../../../src/image/ME/page1/me_main.svg);
+    display: flex;
+    /* height: calc(100% - 20%);
+    width: cacl(); */
+
+    width: 56.4rem;
+    height: 100.9rem;
+
+    width: calc(100vw / 3.4);
+    height: calc(100vh / 1.1);
+  }
+
+  .explain_sub {
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 140%;
+
+    letter-spacing: -0.02em;
+
+    color: #4d5058;
+  }
 }

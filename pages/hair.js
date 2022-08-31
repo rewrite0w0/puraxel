@@ -8,6 +8,7 @@ import Page4 from "components/pages/Hair/Page4";
 import Page0 from "components/pages/Hair/Page1";
 import Page22 from "components/pages/Hair/Page2";
 import Page5 from "components/pages/Hair/Page5";
+import Page6 from "components/pages/puraTech/Page2";
 import Oval from "components/Parts/Oval";
 
 export default function Hair() {
@@ -33,6 +34,10 @@ export default function Hair() {
         </SwiperSlide>
         <SwiperSlide>
           <Page5 />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Page6 />
         </SwiperSlide>
       </Swipers>
     </HairLayout>

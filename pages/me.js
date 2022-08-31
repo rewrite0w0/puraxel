@@ -6,6 +6,7 @@ import Page1 from "components/pages/Me/Page1";
 import Page2 from "components/pages/Me/Page2";
 import Page3 from "components/pages/Me/Page3";
 import Page4 from "components/pages/Me/Page4";
+import Page5 from "components/pages/puraTech/Page2";
 import Oval from "components/Parts/Oval";
 
 export default function Me() {
@@ -31,6 +32,10 @@ export default function Me() {
 
         <SwiperSlide>
           <Page4 />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Page5 />
         </SwiperSlide>
       </Swipers>
     </MeLayout>

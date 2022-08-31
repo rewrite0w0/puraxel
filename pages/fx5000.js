@@ -9,6 +9,8 @@ import Page4 from "components/pages/FX5000/Page4";
 import Page1 from "components/pages/FX5000/Page1";
 import Page2 from "components/pages/FX5000/Page2";
 import Page5 from "components/pages/FX5000/Page5";
+
+import Page6 from "components/pages/puraTech/Page2";
 import Oval from "components/Parts/Oval";
 
 export default function FX5000() {
@@ -38,6 +40,10 @@ export default function FX5000() {
 
         <SwiperSlide>
           <Page5 />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Page6 />
         </SwiperSlide>
       </Swipers>
     </FX5000Layout>
