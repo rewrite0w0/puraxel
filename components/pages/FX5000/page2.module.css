@@ -171,7 +171,7 @@
 }
 
 .image__common__spec {
-  height: calc(100%);
+  height: calc(90%);
   width: calc(100%);
   display: flex;
   justify-content: flex-end;
