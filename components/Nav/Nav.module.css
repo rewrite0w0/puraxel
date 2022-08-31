@@ -53,6 +53,10 @@
   color: #a7abb6;
 }
 
+.gnb__location__menu:hover {
+  color: #4d5058;
+}
+
 .gnbMenu:hover {
   opacity: 1;
 }
