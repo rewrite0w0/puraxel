@@ -17,10 +17,12 @@ const LaserExplain = () => {
       </div>
 
       <div className={`${style.explainPara} ${style.explain__para_sub}`}>
-        <div>피부층에 약 100개의 작은 홀을 생성하여</div>
+        <div>
+          피부층에 레이저로 한 번에 100개의 0.02mm 이하의 작은 홀을 생성하여
+        </div>
 
         <div className={style.explainPara}>
-          크림과 앰플의 피부흡수율을 높여줍니다.
+          화장품 및 앰플 등의 피부 흡수를 높여줍니다.
           <br />
           (5~10분 사용시 약 5,000개 이상의 홀 생성)
         </div>
