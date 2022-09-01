@@ -8,7 +8,7 @@ import CommonPlainButtons from "components/Footer/CommonPlainButtons";
 
 export default function MeLayout({ children }) {
   return (
-    <main className={style.meContainer}>
+    <section className={style.meContainer}>
       <article className={style.bodyContainer}>{children}</article>
       <footer className={style.footerContainer}>
         <div style={{ display: "flex" }}>
@@ -64,7 +64,7 @@ export default function MeLayout({ children }) {
           />
         </div>
       </footer>
-    </main>
+    </section>
   );
 }
 

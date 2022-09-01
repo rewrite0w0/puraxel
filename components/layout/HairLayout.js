@@ -3,7 +3,7 @@ import ModalComponent from "components/Modal/ModalComponent";
 
 export default function HairLayout({ children }) {
   return (
-    <main className={style.HairContainer}>
+    <section className={style.HairContainer}>
       <article className={style.bodyContainer}>
         {children}
 
@@ -11,6 +11,6 @@ export default function HairLayout({ children }) {
           <ModalComponent />
         </footer>
       </article>
-    </main>
+    </section>
   );
 }

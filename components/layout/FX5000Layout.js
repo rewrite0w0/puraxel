@@ -3,7 +3,7 @@ import ModalComponent from "components/Modal/ModalComponent";
 
 export default function FX5000Layout({ children }) {
   return (
-    <main className={style.FX5000Container}>
+    <section className={style.FX5000Container}>
       <article className={style.bodyContainer}>
         {children}
 
@@ -11,6 +11,6 @@ export default function FX5000Layout({ children }) {
           <ModalComponent />
         </footer>
       </article>
-    </main>
+    </section>
   );
 }
