@@ -55,7 +55,7 @@ const GalvanicExplain = () => {
         <div>
           갈바닉은 같은 극끼리 밀어내고, 반대 극끼리는 당기는 성질의 갈바닉
           전류를 활용하여
-          <br />
+          <br className={style.galavnic__br} />
           화장품 및 앰플 등의 유효성분을 이온화시켜 피부 깊숙이 침투시킵니다.
         </div>
       </div>
@@ -70,6 +70,7 @@ const GalvanicExplain = () => {
         >
           {meKr.Page2GalvanicTechExplain1B}
         </span>
+        <br className={style.galavanic__br} />
         <span className={style.sub__explain__para__bold}>
           {meKr.Page2GalvanicTechExplain2A}
         </span>

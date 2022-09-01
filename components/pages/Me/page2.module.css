@@ -72,6 +72,14 @@
   margin-top: 3rem;
 }
 
+.galavnic__br {
+  display: block;
+}
+
+.galavanic__br {
+  display: none;
+}
+
 .plusImage {
   border: 1px solid var(--mePage2Plus);
 
@@ -369,6 +377,14 @@
   }
 
   .explainPara {
+  }
+
+  .galavnic__br {
+    display: none;
+  }
+
+  .galavnic__br {
+    display: block;
   }
 
   .explain__title__sub {
