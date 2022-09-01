@@ -50,30 +50,24 @@ export default function Navbars() {
 
   const [currentPage, setCurrentPage] = useState(undefined);
 
-  const currentPageProductList = ["hair", "fx5000", "me"];
-
   const currentPageChecker = () => {
-    if (document.documentURI.includes("tech")) {
-      return setCurrentPage("tech");
-    } else {
-      return setCurrentPage("product");
+    if (document.documentURI.includes("hair")) {
+      setCurrentPage("product");
     }
 
-    // if (document.documentURI.includes("hair")) {
-    //   setCurrentPage("hair");
-    // }
+    if (document.documentURI.includes("fx5000")) {
+      setCurrentPage("product");
+    }
 
-    // if (document.documentURI.includes("fx5000")) {
-    //   setCurrentPage("fx5000");
-    // }
+    if (document.documentURI.includes("me")) {
+      setCurrentPage("product");
+    }
 
-    // if (document.documentURI.includes("me")) {
-    //   setCurrentPage("me");
-    // }
-
-    // if (document.documentURI.includes("tech")) {
-    //   setCurrentPage("tech");
-    // }
+    if (document.documentURI.includes("tech")) {
+      setCurrentPage("tech");
+    } else {
+      setCurrentPage(undefined);
+    }
   };
 
   useEffect(() => {
