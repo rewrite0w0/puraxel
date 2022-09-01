@@ -22,8 +22,8 @@ export default function Swipers({ children }) {
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {
-          console.log(document.documentURI);
-          console.log(swiper.realIndex);
+          // console.log(document.documentURI);
+          // console.log(swiper.realIndex);
 
           return `<span
           class="customPagination"
@@ -112,13 +112,13 @@ export default function Swipers({ children }) {
       // className={slideStlye.slide}
       speed={1000}
       preloadImages={true}
-      // lazy={{
-      //   enabled: true,
-      //   loadPrevNext: false,
-      //   loadPrevNextAmount: 0,
-      //   loadOnTransitionStart: false,
-      //   checkInView: true,
-      // }}
+      lazy={{
+        enabled: true,
+        loadPrevNext: false,
+        loadPrevNextAmount: 0,
+        loadOnTransitionStart: false,
+        checkInView: true,
+      }}
       // rewind={true}
       effect={"fade"}
       fadeEffect={{ crossFade: true }}
