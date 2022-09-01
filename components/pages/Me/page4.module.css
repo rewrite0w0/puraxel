@@ -214,8 +214,165 @@
   margin-bottom: 2.4rem;
 }
 
+/*  */
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    height: calc(100vh);
+    width: calc(100vw);
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0rem;
+  }
+
+  .imageSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 11.2rem;
+    justify-content: center;
+  }
+
+  .imageCommon {
+    height: 9.6rem;
+    width: 9.6rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header0 {
+  }
+
+  .header1 {
+  }
+
+  .header2 {
+  }
+
+  .header3 {
+  }
+
+  .header00 {
+  }
+
+  .header11 {
+  }
+
+  .header22 {
+  }
+
+  .header33 {
+  }
+
+  .image {
+    margin-right: 0rem;
+    /* margin-bottom: 12.6rem; */
+  }
+
+  .promo0 {
+  }
+
+  .promo1 {
+  }
+
+  .promo2 {
+  }
+
+  .promo3 {
+  }
+
+  .explainContainer {
+    margin-right: 0rem;
+  }
+
+  .explainTitle {
+    font-weight: 300;
+    font-size: 4.8rem;
+    line-height: 128%;
+
+    letter-spacing: -0.02em;
+
+    color: #55576f;
+  }
+
+  .explainPaperContainer {
+    width: 52.2rem;
+    height: 60.6rem;
+
+    background: #ffffff;
+
+    border: 1px solid #f2f3f7;
+    box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
+    border-radius: 0.4rem;
+  }
+
+  .explainContainerInner {
+    margin: 4.8rem;
+    display: flex;
+  }
+
+  .hrContainer {
+    width: 1rem;
+    height: 0.8rem;
+  }
+
+  .commonHR {
+    width: 0.8rem;
+    color: #cacfd8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .frameContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frameTitle {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 150%;
+
+    letter-spacing: -0.01em;
+
+    color: #b6bcc7;
+
+    margin-bottom: 0.8rem;
+  }
+
+  .frameExp {
+    font-size: 1.6rem;
+
+    margin-bottom: 0rem;
+  }
+
+  .optionButtonCommon {
+  }
+
+  .mainExplain {
+    font-size: 1.6rem;
+  }
+
+  .subExplain {
+    font-size: 1.2rem;
+  }
+
+  .explain__container {
+  }
+
+  .explain__container__inner {
+  }
+
+  .image__container {
+    width: calc(60rem);
+    height: calc(60rem);
+  }
+
+  .explainTitle__container {
+    margin-bottom: 0rem;
+  }
 }

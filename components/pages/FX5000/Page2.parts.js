@@ -486,13 +486,9 @@ export function Cooling() {
         <section className={style.margin__top__sub}>
           <section className={style.absolute__container}>
             <FloatingContainer
-              explain={
-                <CoolingExp1
-                  width="42.5rem"
-                  height="14rem"
-                  explain={<CoolingExp1 />}
-                />
-              }
+              explain={<CoolingExp1 />}
+              width="42.5rem"
+              height="14rem"
             />
           </section>
 
