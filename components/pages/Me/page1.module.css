@@ -15,6 +15,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-direction: column;
+}
+
+.margin__bottom {
+  margin-bottom: 28rem;
 }
 
 .subTitle {
@@ -79,13 +84,13 @@
 }
 
 .meImage {
-  content: url(../../../src/image/ME/page1/me_main.svg);
+  content: url(../../../src/image/ME/page1/puraxel_me_me_me.png);
   display: flex;
   /* height: calc(100% - 20%);
   width: cacl(); */
 
-  width: 56.4rem;
-  height: 100.9rem;
+  /* width: 56.4rem;
+  height: 100.9rem; */
 
   width: calc(100vw / 3.4);
   height: calc(100vh / 1.1);
@@ -125,6 +130,10 @@
   .rightContainer {
   }
 
+  .margin__bottom {
+    display: none;
+  }
+
   .subTitle {
     font-size: 4rem;
     margin-bottom: 0.8rem;
@@ -154,6 +163,8 @@
   }
 
   .meImage {
+    height: calc(100vh / 1.26);
+    width: calc(100vw / 4.17);
   }
 
   .explain_sub {
@@ -173,5 +184,62 @@
     top: calc(100vh / 1.19);
   }
 }
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+  }
+
+  .leftContainer {
+    margin-left: 17.6rem;
+  }
+
+  .rightContainer {
+    margin-right: 12rem;
+  }
+
+  .margin__bottom {
+    display: none;
+  }
+
+  .subTitle {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .title {
+    font-size: 5.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .mainExplain {
+    font-size: 2.4rem;
+  }
+
+  .mainExplainSub {
+    font-size: 2.4rem;
+
+    margin-bottom: 1.2rem;
+  }
+
+  .mainExplainBold {
+    font-size: 2.4rem;
+  }
+
+  .subExplain {
+    font-size: 2.4rem;
+  }
+
+  .meImage {
+    height: calc(100vh / 1.36);
+    width: calc(100vw / 3.36);
+  }
+
+  .explain_sub {
+    font-size: 2.4rem;
+  }
+
+  .me__caption {
+    left: calc(100vw / 1.27);
+    top: calc(100vh / 1.25);
+  }
 }

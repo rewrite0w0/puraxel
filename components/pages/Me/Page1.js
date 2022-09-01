@@ -17,6 +17,7 @@ export default function Page0() {
         </div>
       </section>
       <div className={style.rightContainer}>
+        <div className={style.margin__bottom}></div>
         <div className={style.meImage} />
       </div>
       <div className={style.me__caption}>※ 이 제품은 “미용기기” 입니다</div>
