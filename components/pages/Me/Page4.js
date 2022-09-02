@@ -142,6 +142,87 @@ const ExplainOnPaper = () => {
 export default function Page5() {
   const [parts, setParts] = useState(undefined);
 
+  const [productTitleState, setProductTitleState] = useState(true);
+  const [productSpecState, setProductSpecState] = useState(false);
+  const [productState, setProductState] = useState(true);
+
+  const handlerToggle = () => {
+    setProductTitleState(false);
+    setProductSpecState(true);
+  };
+
+  const ProductInfo = () => {
+    return (
+      <div className={_.product__common__container}>
+        <div style={{ marginRight: "6rem" }}>
+          <ExplainFrame title="제품명" exp="퓨라셀 me" />
+          <ExplainFrame title="레이저 파장" exp={<LaserWave />} />
+          <ExplainFrame title="레이저 레벨 범위" exp="1~2 level" />
+        </div>
+        <div>
+          <ExplainFrame title="레이저 종류" exp="Er:YAG" />
+          <ExplainFrame title="레이저 출력 범위" exp={<LaserPowerRange />} />
+          <ExplainFrame title="레이저 반복" exp={<LaserRepeat />} />
+        </div>
+      </div>
+    );
+  };
+
+  const ProductSpecDetail = () => {
+    return (
+      <div
+        className={_.product__common__container}
+        style={{ justifyContent: "space-between" }}
+      >
+        <div>
+          <ExplainFrame title="기능 모드" exp={<ProductFeature />} />
+          <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
+        </div>
+        <div>
+          <ExplainFrame title="제품 사이즈" exp={<ProducetSize />} />
+          <ExplainFrame title="배터리 사양" exp={<ProductSpec />} />
+        </div>
+      </div>
+    );
+  };
+
+  const ProductContainer = () => {
+    return (
+      <section className={_.product__container}>
+        <article className={_.product__button__container}>
+          <div
+            onClick={() => {
+              setProductTitleState(true);
+              setProductSpecState(false);
+            }}
+            className={`${
+              productTitleState
+                ? _.product__button__common__state__on
+                : _.product__button__common__state__off
+            } ${_.product__button__common}`}
+          >
+            제품명/레이저
+          </div>
+          <div
+            onClick={() => {
+              setProductTitleState(false);
+              setProductSpecState(true);
+            }}
+            className={`${
+              productSpecState
+                ? _.product__button__common__state__on
+                : _.product__button__common__state__off
+            } ${_.product__button__common}`}
+          >
+            기능/사양
+          </div>
+        </article>
+
+        {productTitleState ? <ProductInfo /> : <ProductSpecDetail />}
+      </section>
+    );
+  };
+
   const imageOnClickHandler = {
     onPu: () => {
       setParts("pu");
@@ -252,6 +333,7 @@ export default function Page5() {
         <div className={_.explainPaperContainer}>
           <div className={_.explainContainerInner}>
             <ExplainOnPaper />
+            <ProductContainer />
           </div>
         </div>
       </article>
