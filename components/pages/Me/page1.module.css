@@ -194,7 +194,7 @@
   }
 
   .rightContainer {
-    margin-right: 12rem;
+    margin-right: 11rem;
   }
 
   .margin__bottom {
@@ -232,6 +232,7 @@
   .meImage {
     height: calc(100vh / 1.36);
     width: calc(100vw / 3.36);
+    z-index: -1;
   }
 
   .explain_sub {
