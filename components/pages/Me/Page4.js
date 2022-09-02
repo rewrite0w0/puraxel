@@ -3,35 +3,35 @@ import _ from "./page4.module.css";
 import Fadein from "components/Parts/FadeIn";
 
 const Header0 = () => {
-  return <div className={_.header0}></div>;
+  return <div className={`${_.header0} ${_.header__image__common}`}></div>;
 };
 
 const Header00 = () => {
-  return <div className={_.header00}></div>;
+  return <div className={`${_.header00} ${_.header__image__common}`}></div>;
 };
 
 const Header1 = () => {
-  return <div className={_.header1}></div>;
+  return <div className={`${_.header1} ${_.header__image__common}`}></div>;
 };
 
 const Header11 = () => {
-  return <div className={_.header11}></div>;
+  return <div className={`${_.header11} ${_.header__image__common}`}></div>;
 };
 
 const Header2 = () => {
-  return <div className={_.header2}></div>;
+  return <div className={`${_.header2} ${_.header__image__common}`}></div>;
 };
 
 const Header22 = () => {
-  return <div className={_.header22}></div>;
+  return <div className={`${_.header22} ${_.header__image__common}`}></div>;
 };
 
 const Header3 = () => {
-  return <div className={_.header3}></div>;
+  return <div className={`${_.header3} ${_.header__image__common}`}></div>;
 };
 
 const Header33 = () => {
-  return <div className={_.header33}></div>;
+  return <div className={`${_.header33} ${_.header__image__common}`}></div>;
 };
 
 const Bar = () => {
@@ -160,7 +160,11 @@ export default function Page5() {
   const Parts01 = () => {
     return (
       <Fadein>
-        <div className={_.promo0}></div>
+        <div className={_.product__image__container}>
+          <div
+            className={`${_.promo0} ${_.product__image__inner__container}`}
+          ></div>
+        </div>
       </Fadein>
     );
   };
@@ -168,21 +172,33 @@ export default function Page5() {
   const Parts02 = () => {
     return (
       <Fadein>
-        <div className={_.promo1}></div>
+        <div className={_.product__image__container}>
+          <div
+            className={`${_.promo1} ${_.product__image__inner__container}`}
+          ></div>
+        </div>
       </Fadein>
     );
   };
   const Parts03 = () => {
     return (
       <Fadein>
-        <div className={_.promo2}></div>
+        <div className={_.product__image__container}>
+          <div
+            className={`${_.promo2} ${_.product__image__inner__container}`}
+          ></div>
+        </div>
       </Fadein>
     );
   };
   const Parts04 = () => {
     return (
       <Fadein>
-        <div className={_.promo3}></div>
+        <div className={_.product__image__container}>
+          <div
+            className={`${_.promo3} ${_.product__image__inner__container}`}
+          ></div>
+        </div>
       </Fadein>
     );
   };
