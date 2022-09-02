@@ -109,6 +109,9 @@
   width: 130rem;
   height: 53.6rem;
   padding-left: 4rem;
+
+  width: calc(100vw / 1.48);
+  height: calc(100vh / 2.05);
 }
 
 .paper__container__inner {
@@ -138,6 +141,8 @@
   margin-top: 2rem;
   border-radius: 0.4rem;
   border: 1px solid #f2f3f7;
+  width: calc(100vw / 5.05);
+  height: calc(100vh / 7.95);
 }
 
 /*  */
