@@ -1,29 +1,22 @@
 .container {
-  margin-right: 8rem;
-  margin-bottom: 21.6rem;
   display: flex;
-  width: calc(100vw);
-
   height: calc(100vh);
   align-items: center;
+  justify-content: center;
 }
 
 .leftContainer {
-  display: flex;
-  width: 50%;
-  margin-left: 22.8rem;
+  margin-right: 22rem;
 }
 
 .paperLeftContainer {
-  width: 66.4rem;
-  height: 68.6rem;
   background: #ffffff;
-
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
   padding-left: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 4rem;
 }
 
 .textContainer {
@@ -36,7 +29,7 @@
   font-weight: 300;
   font-size: 3.2rem;
   line-height: 132%;
-
+  margin-top: 4rem;
   letter-spacing: -0.02em;
 
   color: var(--grayScale05);
@@ -65,11 +58,12 @@
   letter-spacing: -0.01em;
 
   color: #7e818d;
+
+  margin-top: 1.2rem;
 }
 
 .imageContainer {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.8rem;
 }
 
@@ -83,19 +77,13 @@
 }
 
 .rightImageCommon {
-  box-sizing: border-box;
-
   width: 28.8rem;
   height: 14.8rem;
-
-  background: #ffffff;
-
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid #f2f3f7;
   border-radius: 0.4rem;
-  display: flex;
-  /* flex-wrap: wrap; */
-
-  /* align-items: flex-end; */
+  background-color: #f2f3f6;
 }
 
 .imageContainerLeft {
@@ -123,11 +111,9 @@
 }
 
 .rightContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
-
-  width: 50%;
-  height: 65%;
 }
 
 .imageCommon {
@@ -157,8 +143,9 @@
 }
 
 .explainContainer {
+  display: flex;
   background-color: transparent;
-  backdrop-filter: blur(0.07rem);
+  backdrop-filter: blur(0.7px);
   width: 100%;
 }
 
@@ -244,8 +231,60 @@
   display: flex;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .leftContainer {
+    margin-right: 7rem;
+  }
+  .paperLeftContainer {
+    padding-left: 3.6rem;
+    padding-bottom: 3.6rem;
+    padding-right: 3.6rem;
+  }
+  .subTitle {
+    font-size: 2.4rem;
+    margin-top: 3.6rem;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .instruction {
+    margin-top: 0.8rem;
+  }
+  .leftImageCommon {
+    width: 22rem;
+    height: 40.8rem;
+  }
+  .rightImageCommon {
+    width: 22rem;
+    height: 13.1rem;
+  }
 }
 
-@media all and (min-width: 1440px) and (max-width: 1919px) {
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .leftContainer {
+    margin-right: 3.3rem;
+  }
+  .paperLeftContainer {
+    padding-left: 2.8rem;
+    padding-bottom: 2.8rem;
+    padding-right: 2.8rem;
+  }
+  .subTitle {
+    font-size: 2rem;
+    margin-top: 2.8rem;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .instruction {
+    margin-top: 0.8rem;
+  }
+  .leftImageCommon {
+    width: 16.8rem;
+    height: 32rem;
+  }
+  .rightImageCommon {
+    width: 16.8rem;
+    height: 10.1rem;
+  }
 }

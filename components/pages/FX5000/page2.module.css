@@ -2,25 +2,21 @@
   display: flex;
   height: calc(100vh);
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .leftContainer {
-  display: flex;
-  width: 50%;
-  margin-right: 22.9rem;
+  margin-right: 22rem;
 }
 
 .paperLeftContainer {
-  width: 65.3rem;
-  height: 68.6rem;
   background: #ffffff;
-
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
-  margin-left: 22.8rem;
   padding-left: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 4rem;
 }
 
 .textContainer {
@@ -68,7 +64,6 @@
 
 .imageContainer {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.8rem;
 }
 
@@ -97,7 +92,6 @@
   height: 22.6rem;
   display: flex;
   flex-wrap: wrap;
-
   border: 1px solid #f2f3f7;
   border-radius: 0.4rem;
   background-color: #f2f3f6;
@@ -157,11 +151,9 @@
 }
 
 .rightContainer {
+  position: relative;
   display: flex;
   flex-direction: column;
-
-  width: 50%;
-  height: 65%;
 }
 
 .imageCommon {
@@ -230,9 +222,62 @@
   align-items: center;
   margin-left: 0.8rem;
 }
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .leftContainer {
+    margin-right: 7.6rem;
+  }
+  .paperLeftContainer {
+    padding-left: 3.6rem;
+    padding-bottom: 3.6rem;
+    padding-right: 3.6rem;
+  }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .subTitle {
+    font-size: 2.4rem;
+    margin-top: 3.6rem;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .instruction {
+    margin-top: 0.8rem;
+  }
+  .leftImageCommon {
+    width: 22rem;
+    height: 40.8rem;
+  }
+  .rightImageCommon {
+    width: 10.4rem;
+    height: 20rem;
+  }
 }
 
-@media all and (min-width: 1440px) and (max-width: 1919px) {
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  .leftContainer {
+    margin-right: 2.9rem;
+  }
+  .paperLeftContainer {
+    padding-left: 2.8rem;
+    padding-bottom: 2.8rem;
+    padding-right: 2.8rem;
+  }
+
+  .subTitle {
+    font-size: 2rem;
+    margin-top: 2.8rem;
+  }
+  .title {
+    font-size: 3.2rem;
+  }
+  .instruction {
+    margin-top: 0.8rem;
+  }
+  .leftImageCommon {
+    width: 16.8rem;
+    height: 32rem;
+  }
+  .rightImageCommon {
+    width: 8rem;
+    height: 15.6rem;
+  }
 }
