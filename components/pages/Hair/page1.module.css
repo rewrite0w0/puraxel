@@ -1,37 +1,73 @@
 .container {
+  padding-left: 22.7rem;
+  padding-right: 5rem;
   height: calc(100vh);
   display: flex;
+  justify-content: space-between;
 }
 
 .leftContainer {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  width: calc(50%);
-
   justify-content: center;
-
-  align-items: flex-start;
-
-  margin-left: 22.8rem;
+  height: calc(100vh);
 }
 
 .subTitle {
+  font-weight: 300;
   font-size: 4.8rem;
+  line-height: 128%;
   letter-spacing: -0.02em;
   color: #55576f;
-  font-weight: 300;
-  margin-bottom: 2.4rem;
-  line-height: 128%;
-  width: calc(100vw);
 }
 
 .title {
+  font-weight: 300;
   font-size: 9.6rem;
+  line-height: 120%;
   letter-spacing: -0.02em;
   color: #55576f;
-  font-weight: 300;
   margin-bottom: 8rem;
-  line-height: 120%;
+}
+
+.expTop {
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  color: #808591;
+}
+
+.expBot {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  color: #55576f;
+  margin-bottom: 2.4rem;
+}
+
+.explainDetail {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #808591;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: calc(100vh);
+  width: calc(100vw);
+}
+
+.rightImage {
+  height: calc(100vh / 1.1);
+  width: calc(100vw / 2);
+  content: url(../../../src/image/HAIR/page1/1440_hair_main.svg);
 }
 
 .explain {
@@ -49,26 +85,34 @@
   line-height: 128%;
 }
 
-.rightContainer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.rightImage {
-  width: calc(100vw / 2.52);
-  height: calc(100vh / 1.1);
-  z-index: -1;
-
-  position: absolute;
-  right: 0;
-  margin-right: 18rem;
-
-  content: url(../../../src/image/HAIR/page1/hair.png);
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    padding-left: 18.8rem;
+  }
+  .subTitle {
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 8.4rem;
+    margin-bottom: 4.8rem;
+  }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .container {
+    padding-left: 12rem;
+  }
+  .subTitle {
+    font-size: 2.4rem;
+  }
+  .title {
+    font-size: 5.6rem;
+    margin-bottom: 4rem;
+  }
+  .expTop {
+    font-size: 2.4rem;
+  }
+  .expBot {
+    font-size: 2.4rem;
+  }
 }

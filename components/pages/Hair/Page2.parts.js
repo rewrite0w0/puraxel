@@ -355,19 +355,11 @@ export function Sonic() {
 
       <section className={style.sonic__comment__container}>
         <section className={style.absolute__container}>
-          <FloatingContainer
-            explain={<SonicExp1 />}
-            height={"16.6rem"}
-            width={"42.6rem"}
-          />
+          <FloatingContainer explain={<SonicExp1 />} />
         </section>
 
         <section className={style.sonic__comment__container__inner__bot}>
-          <FloatingContainer
-            explain={<SonicExp2 />}
-            height={"11.6rem"}
-            width={"42.5rem"}
-          />
+          <FloatingContainer explain={<SonicExp2 />} />
         </section>
       </section>
     </article>
@@ -415,19 +407,11 @@ export function Galvanic() {
         </div>
       </section>
 
-      <section className={style.margin__top__sub}>
+      <section className={style.galvanic__comment__container}>
         <section className={style.galvanic__flex__container}>
-          <FloatingContainer
-            explain={<GalvanicExp1 />}
-            height="15rem"
-            width="27.7rem"
-          />
+          <FloatingContainer explain={<GalvanicExp1 />} />
 
-          <FloatingContainer
-            explain={<GalvanicExp2 />}
-            height="11.6rem"
-            width="27.7rem"
-          />
+          <FloatingContainer explain={<GalvanicExp2 />} />
         </section>
       </section>
     </article>
@@ -465,25 +449,15 @@ export function Cooling() {
         </div>
       </section>
 
-      <section className={style.margin__top__sub}>
+      <section className={style.cooling__comment__container}>
         <section className={style.absolute__container}>
           <FloatingContainer
-            explain={
-              <CoolingExp1
-                width="42.5rem"
-                height="14rem"
-                explain={<CoolingExp1 />}
-              />
-            }
+            explain={<CoolingExp1 explain={<CoolingExp1 />} />}
           />
         </section>
 
         <section className={style.cooling__comment__container__inner__bot}>
-          <FloatingContainer
-            explain={<CoolingExp2 />}
-            width="42.5rem"
-            height="8.2rem"
-          />
+          <FloatingContainer explain={<CoolingExp2 />} />
         </section>
       </section>
     </article>
