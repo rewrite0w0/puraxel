@@ -72,6 +72,14 @@
   margin-top: 3rem;
 }
 
+.galavnic__br {
+  display: block;
+}
+
+.galavanic__br {
+  display: none;
+}
+
 .plusImage {
   border: 1px solid var(--mePage2Plus);
 
@@ -286,10 +294,14 @@
   content: url(../../../src/image/ME/page2/tipset.png);
   position: absolute;
   left: calc(100vw / 1.24);
-  top: calc(100vh / 1.32);
+  top: calc(100vh / 1.38);
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
+  .page2Container {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
   .leftGridContainer {
     width: 38.2rem;
     height: 45.1rem;
@@ -371,6 +383,14 @@
   .explainPara {
   }
 
+  .galavnic__br {
+    display: none;
+  }
+
+  .galavnic__br {
+    display: block;
+  }
+
   .explain__title__sub {
   }
 
@@ -412,12 +432,12 @@
   }
 
   .laserImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440las.png);
+    background-image: url(../../../src/image/ME/page2/1024gal.png);
     background-size: cover;
   }
 
   .galvanicImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440gal.png);
+    background-image: url(../../../src/image/ME/page2/1024las.png);
     background-size: cover;
   }
 
@@ -552,12 +572,12 @@
   }
 
   .laserImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440las.png);
+    background-image: url(../../../src/image/ME/page2/1440gal.png);
     background-size: cover;
   }
 
   .galvanicImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440gal.png);
+    background-image: url(../../../src/image/ME/page2/1440las.png);
     background-size: cover;
   }
 

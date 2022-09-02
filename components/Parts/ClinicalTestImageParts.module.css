@@ -28,7 +28,25 @@
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
+  .icon {
+  }
+
+  .para {
+    font-size: 1.2rem;
+  }
+
+  .dot {
+  }
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
+  .icon {
+  }
+
+  .para {
+    font-size: 1.6rem;
+  }
+
+  .dot {
+  }
 }

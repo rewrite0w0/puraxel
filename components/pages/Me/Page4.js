@@ -55,7 +55,7 @@ const ExplainFrame = (props) => {
 const LaserWave = () => {
   return (
     <div className={_.mainExplain}>
-      2940nm<span className={_.subExplain}>(±1%)</span>
+      2940nm <span className={_.subExplain}>(±1%)</span>
     </div>
   );
 };

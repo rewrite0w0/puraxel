@@ -1,7 +1,6 @@
 .container {
   height: calc(100%);
   display: flex;
-  margin-left: 22.8rem;
 }
 
 .leftContainer {
@@ -9,12 +8,18 @@
   width: calc(50%);
   flex-direction: column;
   justify-content: center;
+  margin-left: 22.8rem;
 }
 
 .rightContainer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  flex-direction: column;
+}
+
+.margin__bottom {
+  margin-bottom: 28rem;
 }
 
 .subTitle {
@@ -44,47 +49,48 @@
   letter-spacing: -0.02em;
   line-height: 128%;
 
-  color: var(--grayScale07);
+  color: #808591;
 }
 
 .mainExplainSub {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 4rem;
 
   letter-spacing: -0.02em;
   line-height: 128%;
 
-  color: var(--grayScale07);
+  color: #808591;
 
   margin-bottom: 2.4rem;
 }
 
 .mainExplainBold {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 4rem;
+  line-height: 128%;
 
   letter-spacing: -0.02em;
 
-  color: var(--primary01);
+  color: #808591;
 }
 
 .subExplain {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2.4rem;
 
   letter-spacing: -0.02em;
   line-height: 140%;
-  color: var(--grayScale07);
+  color: #808591;
 }
 
 .meImage {
-  content: url(../../../src/image/ME/page1/me_main.svg);
+  content: url(../../../src/image/ME/page1/puraxel_me_me_me.png);
   display: flex;
   /* height: calc(100% - 20%);
   width: cacl(); */
 
-  width: 56.4rem;
-  height: 100.9rem;
+  /* width: 56.4rem;
+  height: 100.9rem; */
 
   width: calc(100vw / 3.4);
   height: calc(100vh / 1.1);
@@ -97,22 +103,40 @@
 
   letter-spacing: -0.02em;
 
-  color: #4d5058;
+  color: #808591;
+}
+
+.me__caption {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 132%;
+
+  letter-spacing: -0.02em;
+
+  color: #767676;
+  left: calc(100vw / 1.16);
+  top: calc(100vh / 1.19);
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
   .container {
-    margin-left: 18.8rem;
   }
 
   .leftContainer {
+    margin-left: 18.8rem;
   }
 
   .rightContainer {
   }
 
+  .margin__bottom {
+    display: none;
+  }
+
   .subTitle {
     font-size: 4rem;
+    margin-bottom: 0.8rem;
   }
 
   .title {
@@ -121,133 +145,101 @@
   }
 
   .mainExplain {
+    font-size: 4rem;
   }
 
   .mainExplainSub {
-    margin-bottom: 1.6rem;
+    font-size: 4rem;
+
+    margin-bottom: 2.4rem;
   }
 
   .mainExplainBold {
+    font-size: 4rem;
   }
 
   .subExplain {
-  }
-
-  .explain_sub {
-  }
-
-  .rightContainer {
-    margin-left: 9.2rem;
+    font-size: 2.4rem;
   }
 
   .meImage {
-    content: url(../../../src/image/ME/page1/me_main.svg);
+    height: calc(100vh / 1.26);
+    width: calc(100vw / 4.17);
+  }
 
-    width: calc(100vw / 3.4);
-    height: calc(100vh / 1.1);
+  .explain_sub {
+    font-size: 2.4rem;
+  }
+
+  .me__caption {
+    position: absolute;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 132%;
+
+    letter-spacing: -0.02em;
+
+    color: #767676;
+    left: calc(100vw / 1.16);
+    top: calc(100vh / 1.19);
   }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    height: calc(100%);
-    display: flex;
-    margin-left: 22.8rem;
   }
 
   .leftContainer {
-    display: flex;
-    width: calc(50%);
-    flex-direction: column;
-    justify-content: center;
+    margin-left: 17.6rem;
   }
 
   .rightContainer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    margin-right: 12rem;
+  }
+
+  .margin__bottom {
+    display: none;
   }
 
   .subTitle {
-    font-weight: 300;
-    font-size: 4.8rem;
-    letter-spacing: -0.02em;
-    line-height: 128%;
-    color: var(--primary01);
-
-    margin-bottom: 2.4rem;
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
   }
 
   .title {
-    font-weight: 300;
-    font-size: 9.6rem;
-    letter-spacing: -0.02em;
-    line-height: 120%;
-    color: var(--primary01);
-
-    margin-bottom: 8rem;
+    font-size: 5.6rem;
+    margin-bottom: 4rem;
   }
 
   .mainExplain {
-    font-weight: 300;
-    font-size: 4rem;
-
-    letter-spacing: -0.02em;
-    line-height: 128%;
-
-    color: var(--grayScale07);
+    font-size: 2.4rem;
   }
 
   .mainExplainSub {
-    font-weight: 500;
-    font-size: 4rem;
+    font-size: 2.4rem;
 
-    letter-spacing: -0.02em;
-    line-height: 128%;
-
-    color: var(--grayScale07);
-
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
   }
 
   .mainExplainBold {
-    font-weight: 500;
-    font-size: 4rem;
-
-    letter-spacing: -0.02em;
-
-    color: var(--primary01);
+    font-size: 2.4rem;
   }
 
   .subExplain {
-    font-weight: 200;
     font-size: 2.4rem;
-
-    letter-spacing: -0.02em;
-    line-height: 140%;
-    color: var(--grayScale07);
   }
 
   .meImage {
-    content: url(../../../src/image/ME/page1/me_main.svg);
-    display: flex;
-    /* height: calc(100% - 20%);
-    width: cacl(); */
-
-    width: 56.4rem;
-    height: 100.9rem;
-
-    width: calc(100vw / 3.4);
-    height: calc(100vh / 1.1);
+    height: calc(100vh / 1.36);
+    width: calc(100vw / 3.36);
   }
 
   .explain_sub {
-    font-weight: 300;
     font-size: 2.4rem;
-    line-height: 140%;
+  }
 
-    letter-spacing: -0.02em;
-
-    color: #4d5058;
+  .me__caption {
+    left: calc(100vw / 1.27);
+    top: calc(100vh / 1.25);
   }
 }

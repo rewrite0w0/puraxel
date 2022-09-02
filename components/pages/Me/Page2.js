@@ -17,10 +17,12 @@ const LaserExplain = () => {
       </div>
 
       <div className={`${style.explainPara} ${style.explain__para_sub}`}>
-        <div>피부층에 약 100개의 작은 홀을 생성하여</div>
+        <div>
+          피부층에 레이저로 한 번에 100개의 0.02mm 이하의 작은 홀을 생성하여
+        </div>
 
         <div className={style.explainPara}>
-          크림과 앰플의 피부흡수율을 높여줍니다.
+          화장품 및 앰플 등의 피부 흡수를 높여줍니다.
           <br />
           (5~10분 사용시 약 5,000개 이상의 홀 생성)
         </div>
@@ -55,7 +57,7 @@ const GalvanicExplain = () => {
         <div>
           갈바닉은 같은 극끼리 밀어내고, 반대 극끼리는 당기는 성질의 갈바닉
           전류를 활용하여
-          <br />
+          <br className={style.galavnic__br} />
           화장품 및 앰플 등의 유효성분을 이온화시켜 피부 깊숙이 침투시킵니다.
         </div>
       </div>
@@ -70,6 +72,7 @@ const GalvanicExplain = () => {
         >
           {meKr.Page2GalvanicTechExplain1B}
         </span>
+        <br className={style.galavanic__br} />
         <span className={style.sub__explain__para__bold}>
           {meKr.Page2GalvanicTechExplain2A}
         </span>

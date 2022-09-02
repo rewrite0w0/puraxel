@@ -65,8 +65,6 @@ export default function Navbars() {
 
     if (document.documentURI.includes("tech")) {
       setCurrentPage("tech");
-    } else {
-      setCurrentPage(undefined);
     }
   };
 
