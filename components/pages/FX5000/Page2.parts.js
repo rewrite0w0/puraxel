@@ -466,9 +466,7 @@ export function Cooling() {
 
         <section className={style.cooling__comment__container}>
           <section className={style.absolute__container}>
-            <FloatingContainer
-              explain={<CoolingExp1 explain={<CoolingExp1 />} />}
-            />
+            <FloatingContainer explain={<CoolingExp1 />} />
           </section>
 
           <section className={style.cooling__comment__container__inner__bot}>
