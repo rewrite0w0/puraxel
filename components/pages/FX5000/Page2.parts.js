@@ -123,7 +123,7 @@ const LedModeImage = () => {
 const Explain1 = () => {
   return (
     <span>
-      응급 시 제품을 놓을 경우, 센서에 의해 &nbsp;
+      제품을 놓을 경우, 센서에 의해 &nbsp;
       <span className={style.explain__bold}>즉시 동작이 멈춥니다.</span>
     </span>
   );
@@ -132,11 +132,8 @@ const Explain1 = () => {
 const Explain2 = () => {
   return (
     <span>
-      접촉 센서에 의해&nbsp;
-      <span className={style.explain__bold}>
-        레이저 헤드가 피부에 닿아야만 작동
-      </span>
-      합니다.
+      <span className={style.explain__bold}>레이저 헤드가 피부에 닿아야만</span>
+      작동 합니다.
     </span>
   );
 };
@@ -350,12 +347,12 @@ export function Sonic() {
               <RedButton />
               <GrayButton
                 title="사용: 5분"
-                sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
+                sx={{ width: "7.5rem", fontWeight: "500" }}
               />
             </div>
 
             <span className={style.commonText}>
-              기능성 솔루션을 바른 후 마사지하면 &nbsp;
+              기능성 솔루션을 바른 후 마사지하면
               <span className={style.commonTextBold}>
                 높은
                 <br />
@@ -369,19 +366,11 @@ export function Sonic() {
 
         <section className={style.sonic__comment__container}>
           <section className={style.absolute__container}>
-            <FloatingContainer
-              explain={<SonicExp1 />}
-              height={"16.6rem"}
-              width={"42.6rem"}
-            />
+            <FloatingContainer explain={<SonicExp1 />} />
           </section>
 
           <section className={style.sonic__comment__container__inner__bot}>
-            <FloatingContainer
-              explain={<SonicExp2 />}
-              height={"11.6rem"}
-              width={"42.5rem"}
-            />
+            <FloatingContainer explain={<SonicExp2 />} />
           </section>
         </section>
       </article>
@@ -431,19 +420,11 @@ export function Galvanic() {
           </div>
         </section>
 
-        <section className={style.margin__top__sub}>
+        <section className={style.galvanic__comment__container}>
           <section className={style.galvanic__flex__container}>
-            <FloatingContainer
-              explain={<GalvanicExp1 />}
-              height="15rem"
-              width="27.7rem"
-            />
+            <FloatingContainer explain={<GalvanicExp1 />} />
 
-            <FloatingContainer
-              explain={<GalvanicExp2 />}
-              height="11.6rem"
-              width="27.7rem"
-            />
+            <FloatingContainer explain={<GalvanicExp2 />} />
           </section>
         </section>
       </article>
@@ -483,25 +464,15 @@ export function Cooling() {
           </div>
         </section>
 
-        <section className={style.margin__top__sub}>
+        <section className={style.cooling__comment__container}>
           <section className={style.absolute__container}>
             <FloatingContainer
-              explain={
-                <CoolingExp1
-                  width="42.5rem"
-                  height="14rem"
-                  explain={<CoolingExp1 />}
-                />
-              }
+              explain={<CoolingExp1 explain={<CoolingExp1 />} />}
             />
           </section>
 
           <section className={style.cooling__comment__container__inner__bot}>
-            <FloatingContainer
-              explain={<CoolingExp2 />}
-              width="42.5rem"
-              height="8.2rem"
-            />
+            <FloatingContainer explain={<CoolingExp2 />} />
           </section>
         </section>
       </article>
@@ -540,21 +511,13 @@ export function Led() {
           </div>
         </section>
 
-        <section className={style.margin__top}>
+        <section className={style.led__comment__container}>
           <section className={style.absolute__container}>
-            <FloatingContainer
-              explain={<LedExp1 />}
-              width={"27.7rem"}
-              height={"14rem"}
-            />
+            <FloatingContainer explain={<LedExp1 />} />
           </section>
 
           <section className={style.led__comment__container__inner__bot}>
-            <FloatingContainer
-              explain={<LedExp2 />}
-              width={"42.5rem"}
-              height={"11.6rem"}
-            />
+            <FloatingContainer explain={<LedExp2 />} />
           </section>
         </section>
       </article>
