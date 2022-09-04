@@ -144,12 +144,6 @@ export default function Page5() {
 
   const [productTitleState, setProductTitleState] = useState(true);
   const [productSpecState, setProductSpecState] = useState(false);
-  const [productState, setProductState] = useState(true);
-
-  const handlerToggle = () => {
-    setProductTitleState(false);
-    setProductSpecState(true);
-  };
 
   const ProductInfo = () => {
     return (
@@ -191,9 +185,10 @@ export default function Page5() {
       <section className={_.product__container}>
         <article className={_.product__button__container}>
           <div
-            onClick={() => {
+            onClick={(e) => {
               setProductTitleState(true);
               setProductSpecState(false);
+              e.preventDefault();
             }}
             className={`${
               productTitleState
@@ -204,9 +199,10 @@ export default function Page5() {
             제품명/레이저
           </div>
           <div
-            onClick={() => {
+            onClick={(e) => {
               setProductTitleState(false);
               setProductSpecState(true);
+              e.preventDefault();
             }}
             className={`${
               productSpecState

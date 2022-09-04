@@ -6,11 +6,11 @@ const Title = () => {
     <article className={style.title__container}>
       <section className={style.title__container__title}>
         <span className={style.title__container__title__para}>
-          퓨라셀 각 효능에 특화된 앰플 사용 후 결과
+          퓨라셀 각 효능
         </span>
         <br />
         <span className={style.title__container__title__sub}>
-          <span>퓨라셀</span>
+          <span className={style.title__container__light}>ME</span>
           &nbsp;
           <span className={style.title__container__title__bold}>임상 실험</span>
         </span>
@@ -64,8 +64,8 @@ const ImageGrid = () => {
         <section className={style.paper__explain__container}>
           <ClinicalTestImageParts title="피부 치밀도 30% 증가" />
           <div className={style.paperPara}>
-            <div>피부톤을 나타내는 L*value가 퓨라셀</div>
-            <div>사용전과 비교하여 2주 사용후 2배 증가</div>
+            <div>피부치밀도를 나타내는 Density 값이</div>
+            <div>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</div>
           </div>
 
           <div className={`${style.image2} ${style.imageContainer}`} />
@@ -74,8 +74,8 @@ const ImageGrid = () => {
         <section className={style.paper__explain__container}>
           <ClinicalTestImageParts title="피부톤(맑기) 2배 증가" />
           <div className={style.paperPara}>
-            <div>피부치밀도를 나타내는 Density 값이</div>
-            <div>퓨라셀 사용전과 비교하여 4주 사용후 30% 증가</div>
+            <div>피부톤을 나타내는 L*value가 퓨라셀</div>
+            <div>사용전과 비교하여 2주 사용후 2배 증가</div>
           </div>
 
           <div className={`${style.image3} ${style.imageContainer}`} />
@@ -100,7 +100,7 @@ const ImageGrid = () => {
 
 export default function Page3() {
   return (
-    <section>
+    <section className={style.container}>
       <div className={style.container__inner}>
         <Title />
         <ImageGrid />
