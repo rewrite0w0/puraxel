@@ -6,11 +6,11 @@ const Title = () => {
     <article className={style.title__container}>
       <section className={style.title__container__title}>
         <span className={style.title__container__title__para}>
-          퓨라셀 각 효능
+          퓨라셀과 각 효능에 특화된 앰플 사용후 결과
         </span>
         <br />
         <span className={style.title__container__title__sub}>
-          <span className={style.title__container__light}>ME</span>
+          <span className={style.title__container__light}>FX5000</span>
           &nbsp;
           <span className={style.title__container__title__bold}>임상 실험</span>
         </span>

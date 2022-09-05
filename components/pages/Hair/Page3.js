@@ -3,48 +3,43 @@ import ClinicalTestImageParts from "components/Parts/ClinicalTestImageParts";
 
 const Title = () => {
   return (
-    <article className={style.topContainer}>
-      <section className={style.top__container__title}>
-        <span className={style.top__container__title__sub}>
-          퓨라셀 각 효능에 특화된 앰플 사용 후 결과
+    <article className={style.title__container}>
+      <section className={style.title__container__title}>
+        <span className={style.title__container__title__para}>
+          퓨라셀과 각 효능에 특화된 앰플 사용후 결과
         </span>
         <br />
-        <span className={style.top__container__title__main}>
-          <span>퓨라셀</span>
+        <span className={style.title__container__title__sub}>
+          <span className={style.title__container__light}>PURAXEL Hair</span>
           &nbsp;
-          <span className={style.top__container__title__main__bold}>
-            임상 실험
-          </span>
+          <span className={style.title__container__title__bold}>임상 실험</span>
         </span>
       </section>
       {/*  */}
-      <section className={style.top__container__testinfo}>
+      <section className={style.title__testinfo__container}>
         <span className={style.testTitle}>시험 기간</span>
-        <span className={style.testDetail}>2020년 8월 21일~ 5월 30일</span>
+        <span className={style.testDetail}>2020. 5. 21 ~ 7. 13</span>
         <br />
         <span className={style.testTitle}>시험 기관</span>
-        <span className={style.testDetail}>**성형외과의원</span>
+        <span className={style.testDetail}>한국피부과학연구원</span>
       </section>
       {/*  */}
-      <section className={style.top__container__testdetail}>
+      <section className={style.title__testdetail__container}>
         <span>
           <span className={style.testTitle}>피시험자</span>
           <span className={style.testDetail}>30~60세 성인 남성</span>
         </span>
         <br />
         <span>
-          <span className={`${style.testTitle} ${style.margin__right}`}>
-            부위
+          <span
+            className={`${style.testTitle} ${style.title__testTitle__margin__right}`}
+          >
+            부위⠀⠀⠀
           </span>
-          <span className={style.testDetail}>
-            피시험자의 정수리와 M자&nbsp;
-            <span className={style.testDetailSub}>앞머리 측면</span>
-          </span>
-          <br />
 
-          <div className={`${style.testDetail} ${style.margin__left}`}>
-            <span className={style.testDetailSub}>(시험제품의 용법 기준)</span>
-          </div>
+          <span className={style.testDetail}>
+            피시험자의 정수리와 M자앞머리 측면
+          </span>
         </span>
       </section>
     </article>
@@ -62,7 +57,8 @@ const Explain = () => {
         >
           <ClinicalTestImageParts title="정수리 탈모" />
           <div className={style.image__para}>
-            퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
+            퓨라셀 + 미스터케어 발모개선 앰플
+            <br className={style.br1440} /> 3개월 적용 후 사진
           </div>
 
           <div className={style.image__container}>
@@ -85,7 +81,8 @@ const Explain = () => {
         >
           <ClinicalTestImageParts title="M자 탈모" />
           <div className={style.image__para}>
-            퓨라셀 + 미스터케어 발모개선 앰플 3개월 적용 후 사진
+            퓨라셀 + 미스터케어 발모개선 앰플
+            <br className={style.br1440} /> 3개월 적용 후 사진
           </div>
           <div className={style.image__container}>
             <div className={style.image__container__inner}>

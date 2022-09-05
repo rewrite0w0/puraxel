@@ -2,6 +2,9 @@
 
 &nbsp;
 
+`공백`
+ㅁ⠀ㅁ
+
 ## 스타일 관련
 
 - https://developer.mozilla.org/ja/docs/Web/CSS/grid-area
