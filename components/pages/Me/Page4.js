@@ -316,8 +316,8 @@ export default function Page5() {
           {parts === "me" ? <Header3 /> : <Header33 />}
         </div>
       </aside>
-      <article className={_.image}>
-        <div className={_.image__container}>
+      <article className={_.imageContainer}>
+        <div className={_.imageContainer__inner}>
           <PartsViewer />
         </div>
       </article>

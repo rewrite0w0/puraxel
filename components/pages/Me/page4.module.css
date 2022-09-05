@@ -1,9 +1,7 @@
 .container {
-  margin-left: 8rem;
-
   display: flex;
   height: calc(100vh);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -11,7 +9,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-left: 8rem;
+  margin-left: 16.2rem;
   justify-content: center;
 }
 
@@ -82,7 +80,7 @@
 }
 .product__image__container {
   height: calc(100vh / 1.25);
-  width: calc(100vw / 2);
+  width: calc(100vw / 3);
   display: flex;
   justify-content: center;
 }
@@ -251,11 +249,6 @@
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    height: calc(100vh);
-    width: calc(100vw);
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 0rem;
   }
 
   .imageSelector {
@@ -302,7 +295,6 @@
 
   .product__image__container {
     height: 55rem;
-    width: 100%;
   }
   .product__image__inner__container {
   }
@@ -319,7 +311,7 @@
   }
 
   .explainContainer {
-    margin-right: 0rem;
+    margin-right: 4rem;
   }
 
   .explainTitle {
@@ -451,11 +443,6 @@
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
   .container {
-    height: calc(100vh);
-    width: calc(100vw);
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 0rem;
   }
 
   .imageSelector {
@@ -519,7 +506,7 @@
   }
 
   .explainContainer {
-    margin-right: 0rem;
+    margin-right: 8rem;
   }
 
   .explainTitle {
@@ -548,11 +535,6 @@
   }
 
   .commonHR {
-    width: 0.8rem;
-    color: #cacfd8;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .frameContainer {
