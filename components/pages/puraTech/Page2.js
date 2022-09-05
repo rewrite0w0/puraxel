@@ -85,7 +85,7 @@ export default function Page4() {
           color="#F8F9FA"
           background="#55576F"
           title="PURAXEL Certifications"
-          subject="제품 인증"
+          subject="퓨라셀 인증"
         />
 
         <div className={style.puraxel__certifications__container__inner}>
@@ -106,13 +106,14 @@ export default function Page4() {
 
       <div className={style.lameditech__certifications__container}>
         <CertiTitleContainer
-          // color=""
+          color="#808591"
           background="#f2f3f7"
           title="LaMeditech Certifications"
           subject="기업 인증"
         />
         <div className={style.lameditech__certifications__container__inner}>
           <CertiContainer image={<GMP />} date="2017. 06" detail="KGMP 인증" />
+
           <CertiContainer
             image={<ISO />}
             date="2012. 02"
