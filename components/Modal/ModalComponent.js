@@ -159,8 +159,8 @@ export default function ModalComponent(props) {
   const requireInputDataChecker = () =>
     mail.filter((x) => x === undefined || "" || false).length > 0;
 
-  console.log(requireInputDataChecker());
-  console.log(mail);
+  // console.log(requireInputDataChecker());
+  // console.log(mail);
 
   const handleSendAgreeYes = () => {
     // setModalOpen(false);

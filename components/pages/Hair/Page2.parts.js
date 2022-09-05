@@ -233,7 +233,7 @@ export function Laser() {
       <section className={style.margin__top}>
         <span
           className={style.subExplainLaserWarning}
-          onClick={(e) => console.log(e)}
+          // onClick={(e) => console.log(e)}
         >
           안심하고 사용할 수 있는
         </span>
