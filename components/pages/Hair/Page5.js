@@ -59,9 +59,7 @@ const ExplainFrame = (props) => {
   return (
     <section className={_.frameContainer}>
       <Bar />
-      <br />
       <span className={_.frameTitle}>{props.title}</span>
-      <br />
       <span className={_.frameExp}>{props.exp}</span>
     </section>
   );
@@ -77,6 +75,9 @@ const ExplainFeatureMode = () => {
       3) 갈바닉 모드 <span className={_.subExplain}>(옵션)</span>
       <br />
       4) 쿨링 모드 <span className={_.subExplain}>(옵션)</span>
+      <br />
+      5) LED 모드 <span className={_.subExplain}>(옵션)</span>
+      <br />
     </span>
   );
 };
@@ -121,6 +122,10 @@ const LaserWave = () => {
   );
 };
 
+const LaserLevel = () => {
+  return <div className={_.mainExplain}>1등급(class 1)</div>;
+};
+
 const LaserPowerRange = () => {
   return (
     <div className={_.mainExplain}>
@@ -147,12 +152,16 @@ const ProductFeature = () => {
   );
 };
 
-const ProductWeight_ = () => {
+const ProductWeight1024 = () => {
   return (
     <div className={_.mainExplain}>
-      350g <span className={_.subExplain}>(Main body)</span>
+      <span className={_.subExplain}>Main body</span>
       <br />
-      Cradle: 110g <span className={_.subExplain}>(Cradle)</span>
+      616g
+      <br />
+      <span className={_.subExplain}>Cradle, 배터리 포함</span>
+      <br />
+      503g
     </div>
   );
 };
@@ -160,14 +169,18 @@ const ProductWeight_ = () => {
 const ProducetSize = () => {
   return (
     <div className={_.mainExplain}>
-      50x57x220mm <span className={_.subExplain}>(Main body)</span>
+      <span className={_.subExplain}>Main body</span>
       <br />
-      98x98x85mm <span className={_.subExplain}>(Cradle)</span>
+      82x201x225.3mm
+      <br />
+      <span className={_.subExplain}>Cradle</span>
+      <br />
+      250x169x135mm
     </div>
   );
 };
 
-const ProductSpec = () => {
+const ProductBattery1024 = () => {
   return (
     <div className={_.mainExplain}>
       Built-in Rechargeable
@@ -195,11 +208,27 @@ const ProductETC = () => {
   );
 };
 
+const ProductETC1024 = () => {
+  return (
+    <span className={_.product__etc__container}>
+      <GrayButton title="제품 본체" width="5.9rem" />
+      <GrayButton title="충전 크래들" width="6.9rem" />
+      <GrayButton title="보안경(시술자용, 고객용)" width="13rem" />
+      <GrayButton title="어댑터" width="3.2rem" />
+      <GrayButton title="레이저 헤드팁(원형, 일자, 네모)" width="15.9rem" />
+      <GrayButton title="초음파 헤드" width="6.9rem" />
+      <GrayButton title="배터리(충전용) *2" width="9.2rem" />
+      <GrayButton title="사용 설명서" width="6.9rem" />
+      <GrayButton title="퀵 가이드" width="5.9rem" />
+    </span>
+  );
+};
+
 const ExplainOnPaper = () => {
   return (
     <section className={_.explain__container}>
       <div className={_.explain__container__inner}>
-        <ExplainFrame title="제품명" exp="퓨라셀 Hair" />
+        <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
         <ExplainFrame title="레이저 종류" exp="Er:YAG" />
         <ExplainFrame title="레이저 등급" exp="1등급(class 1)" />
         <ExplainFrame title="레이저 레벨 범위" exp="1~3 level" />
@@ -224,15 +253,14 @@ export default function Page5() {
   const ProductInfo = () => {
     return (
       <div className={_.product__common__container}>
-        <div style={{ marginRight: "6rem" }}>
+        <div style={{ width: "50%" }}>
           <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
-          <ExplainFrame title="레이저 등급" exp={<LaserWave />} />
+          <ExplainFrame title="레이저 등급" exp="1등급(class 1)" />
           <ExplainFrame title="레이저 레벨 범위" exp="1~3 level" />
         </div>
-        <div>
+        <div style={{ width: "50%" }}>
           <ExplainFrame title="레이저 종류" exp="Er:YAG" />
-          <ExplainFrame title="레이저 출력 범위" exp={<LaserPowerRange />} />
-          <ExplainFrame title="레이저 반복" exp={<LaserRepeat />} />
+          <ExplainFrame title="구성품" exp={<ProductETC1024 />} />
         </div>
       </div>
     );
@@ -244,13 +272,13 @@ export default function Page5() {
         className={_.product__common__container}
         style={{ justifyContent: "space-between" }}
       >
-        <div>
-          <ExplainFrame title="기능 모드" exp={<ProductFeature />} />
-          <ExplainFrame title="제품 무게" exp={<ProductWeight />} />
+        <div style={{ width: "50%" }}>
+          <ExplainFrame title="기능 모드" exp={<ExplainFeatureMode />} />
+          <ExplainFrame title="제품 무게" exp={<ProductWeight1024 />} />
         </div>
-        <div>
+        <div style={{ width: "50%" }}>
           <ExplainFrame title="제품 사이즈" exp={<ProducetSize />} />
-          <ExplainFrame title="배터리 사양" exp={<ProductSpec />} />
+          <ExplainFrame title="배터리" exp={<ProductBattery />} />
         </div>
       </div>
     );
