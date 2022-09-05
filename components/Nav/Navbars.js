@@ -74,7 +74,7 @@ export default function Navbars() {
 
   return (
     <nav className={navStyle.header}>
-      <section className={navStyle.leftNav}>
+      <section className={navStyle.inner__nav__logos__container}>
         <Box
           className={navStyle.logo}
           onClick={() => {
@@ -82,7 +82,7 @@ export default function Navbars() {
           }}
         ></Box>
 
-        <div className={navStyle.rightNav}>
+        <div className={navStyle.inner__nav__common}>
           <Button
             onClick={handleProductInfoButton}
             className={`${navStyle.gnbMenu} ${
@@ -141,7 +141,7 @@ export default function Navbars() {
         </div>
       </section>
 
-      <section className={navStyle.rightNav}>
+      <section className={navStyle.inner__nav__common}>
         {/* <NavIconButton
           title={"notice"}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
@@ -258,6 +258,7 @@ export default function Navbars() {
             </section>
           </Menu>
         </Button>
+
         <NavIconButton
           title={layoutHeaderKr.kr}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_kr}`}
@@ -266,11 +267,12 @@ export default function Navbars() {
             textDecorationThickness: "0.2rem",
             // opacity: 1,
           }}
-        ></NavIconButton>
+        />
+
         <NavIconButton
           title={layoutHeaderKr.en}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_en}`}
-        ></NavIconButton>
+        />
       </section>
     </nav>
   );
