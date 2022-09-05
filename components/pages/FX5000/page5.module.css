@@ -135,7 +135,6 @@
 }
 
 .explainContainerInner {
-  margin: 4.8rem;
   display: flex;
 }
 
@@ -353,16 +352,10 @@
   .explainPaperContainer {
     width: 38.2rem;
     height: 36rem;
-
-    background: #ffffff;
-
-    border: 1px solid #f2f3f7;
-    box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
-    border-radius: 0.4rem;
   }
 
   .explainContainerInner {
-    margin: 2.4rem;
+    margin: 2.4rem 1.6rem 0rem 2.4rem;
     display: flex;
   }
 
@@ -373,6 +366,7 @@
   }
 
   .frameContainer {
+    gap: 0.4;
   }
 
   .frameTitle {
@@ -384,6 +378,19 @@
   }
 
   .optionButtonCommon {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 144%;
+
+    letter-spacing: -0.03em;
+    font-feature-settings: "tnum" on, "lnum" on;
+
+    color: #55576f;
+
+    margin-right: 0.4rem;
+
+    margin-top: 0.4rem;
+    padding: 0.4rem 0rem;
   }
 
   .mainExplain {
@@ -392,6 +399,9 @@
 
   .subExplain {
     font-size: 1.4rem;
+  }
+
+  .product__etc__container {
   }
 
   .explain__container {
@@ -574,8 +584,6 @@
   }
 
   .frameContainer {
-    display: flex;
-    flex-direction: column;
   }
 
   .frameTitle {
