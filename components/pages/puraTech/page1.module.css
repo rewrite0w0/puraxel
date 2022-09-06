@@ -16,11 +16,9 @@
 }
 
 .inner__container__right {
-  /* background-color: blue; */
 }
 
 .inner__container__left {
-  /* background-color: pink; */
 }
 
 .step__container {
@@ -219,6 +217,130 @@
 
 /* qr */
 
+.puraxel__explain__container__1024 {
+  display: none;
+}
+
+.puraxel__explain__container__main {
+}
+
+.step1024__container {
+}
+
+.step1024__image__common {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 0.735632px solid #eceff4;
+  border-radius: 4px;
+}
+
+.step1024__image__container {
+  height: 7.7rem;
+  width: 12.5rem;
+}
+
+.step1024__image01 {
+  content: url(../../../src/image/PURATECH/page1/tech_img_01.png);
+}
+
+.step1024__image02 {
+  content: url(../../../src/image/PURATECH/page1/tech_img_02.png);
+}
+
+.step1024__image03 {
+  content: url(../../../src/image/PURATECH/page1/tech_img_03.png);
+}
+
+.step1024__image04 {
+  content: url(../../../src/image/PURATECH/page1/tech_img_04.png);
+}
+
+.step1024__explain__common {
+  margin-top: -0.5rem;
+  z-index: 1;
+  position: sticky;
+}
+
+.step1024__explain__container {
+  background: linear-gradient(
+      180deg,
+      rgba(243, 165, 161, 0.15) 0%,
+      rgba(255, 255, 255, 0) 43.23%
+    ),
+    #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  width: 125px;
+  height: 116px;
+
+  padding-top: 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.step1024__image__containers {
+}
+
+.step1024__explain__common__para {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+
+  /* or 21px */
+  letter-spacing: -0.01em;
+
+  /* grayscale/06 */
+  color: #a0a5b1;
+}
+
+.step1024__explain__common__para__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+  font-feature-settings: "tnum" on, "lnum" on, "case" on;
+
+  /* primary/01 */
+  color: #55576f;
+  margin-bottom: 0.8rem;
+}
+
+.step1024__explain__common__para__bold {
+  color: #555a63;
+  font-weight: 500;
+}
+
+.puraxel__explain__container__step__container__1024 {
+  display: flex;
+  gap: 0.8rem;
+  /* flex-wrap: wrap; */
+  height: 100%;
+  width: 100%;
+}
+
+.puraxel__explain__container__sub {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 144%;
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #b6bcc7;
+}
+
+.puraxel__explain__container__title {
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #55576f;
+  margin-bottom: 1.2rem;
+}
+
+/*  */
+
 @media all and (min-width: 1440px) and (max-width: 1919px) {
   .container {
     padding-right: 8rem;
@@ -266,22 +388,18 @@
   }
 
   .image1 {
-    content: url(../../../src/image/PURATECH/page3/1.svg);
     width: 29rem;
     height: 10.4rem;
   }
   .image2 {
-    content: url(../../../src/image/PURATECH/page3/2.svg);
     width: 29rem;
     height: 10.4rem;
   }
   .image3 {
-    content: url(../../../src/image/PURATECH/page3/3.svg);
     width: 29rem;
     height: 10.4rem;
   }
   .image4 {
-    content: url(../../../src/image/PURATECH/page3/4.svg);
     width: 29rem;
     height: 10.4rem;
   }
@@ -331,55 +449,30 @@
   }
 
   .puraxel__title__image {
-    content: url(../../../src/image/PURATECH/page1/puraxel_laser_tech_explain.png);
-    width: 363.47px;
-    height: 500px;
+    width: 40rem;
+    height: 50rem;
   }
 
   .puraxel__explain__step__container {
-    display: grid;
-    grid-template-areas:
-      "x y"
-      "z o";
-    width: fit-content;
   }
 
   .puraxel__explain__title {
-    font-weight: 300;
     font-size: 2.4rem;
-    line-height: 140%;
-
-    letter-spacing: -0.02em;
-
-    color: #55576f;
   }
 
   .puraxel__explain__title__bold {
-    letter-spacing: -0.01em;
-    line-height: 140%;
-    font-weight: 700;
   }
 
   .puraxel__explain__float__container {
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.03);
-    backdrop-filter: blur(2rem);
-    border-radius: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .puraxel__explain__float__container__upper {
     margin-bottom: 0.8rem;
     width: 56rem;
-    /* height: 15.6rem; */
   }
 
   .puraxel__explain__float__container__lower {
     width: 60rem;
-    /* height: 10.4rem; */
     margin-left: 12.8rem;
     margin-top: -4rem;
   }
@@ -402,53 +495,34 @@
   }
 
   .puraxel__explain__container__upper {
-    margin-bottom: calc(3.6rem + 1vh);
   }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .container {
-    display: flex;
-    width: calc(100vw);
-    height: calc(100vh);
-    justify-content: center;
-    align-items: center;
-    padding-right: 22.8rem;
-    padding-left: 22.8rem;
-    padding-top: 10.4rem;
-    padding-bottom: 8rem;
+    padding-top: 8rem;
+    padding-right: 5.5rem;
+    padding-bottom: 10.3rem;
+    padding-left: 8rem;
   }
 
   .inner__container {
-    display: flex;
-    flex-direction: column;
   }
 
   .inner__container__right {
-    width: 50%;
+    width: 58%;
+    height: 100%;
   }
 
   .inner__container__left {
-    width: 50%;
+    width: 42%;
   }
 
   .step__container {
-    display: flex;
     margin-bottom: 0.8rem;
   }
 
   .step {
-    width: 4.3rem;
-    height: 4.5rem;
-    color: var(--white);
-    background-color: var(--primary01);
-    opacity: 0.9;
-    border-radius: 0.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: -0.03em;
   }
 
   .step__step {
@@ -462,13 +536,11 @@
   }
 
   .step__title {
-    color: #55576f;
     font-size: 1.8rem;
     margin-right: 0.8rem;
   }
 
   .step__subtitle {
-    color: #a292a3;
     font-size: 1.4rem;
   }
 
@@ -490,16 +562,12 @@
   }
 
   .image1 {
-    content: url(../../../src/image/PURATECH/page3/1.svg);
   }
   .image2 {
-    content: url(../../../src/image/PURATECH/page3/2.svg);
   }
   .image3 {
-    content: url(../../../src/image/PURATECH/page3/3.svg);
   }
   .image4 {
-    content: url(../../../src/image/PURATECH/page3/4.svg);
   }
 
   .explainContainer {
@@ -533,8 +601,8 @@
 
   .puraxel__title__sub {
     font-weight: 300;
-    font-size: 4.8rem;
-    line-height: 128%;
+    font-size: 3.2rem;
+    line-height: 124%;
 
     letter-spacing: -0.02em;
 
@@ -543,7 +611,7 @@
 
   .puraxel__title__main {
     font-weight: 300;
-    font-size: 9.6rem;
+    font-size: 5.6rem;
     line-height: 120%;
 
     letter-spacing: -0.02em;
@@ -553,68 +621,60 @@
   }
 
   .puraxel__title__image {
-    content: url(../../../src/image/PURATECH/page1/puraxel_laser_tech_explain.png);
-    width: calc(100% - 40%);
-    height: calc(100%);
+    width: 34rem;
+    height: 38rem;
   }
 
   .puraxel__explain__step__container {
-    display: grid;
-    grid-template-areas:
-      "x y"
-      "z o";
+    display: none;
+  }
+
+  .puraxel__explain__container__1024 {
+    display: flex;
   }
 
   .puraxel__explain__title {
-    font-weight: 300;
-    font-size: 3.2rem;
-    line-height: 132%;
+    font-size: 2.4rem;
 
-    letter-spacing: -0.02em;
-
-    color: #55576f;
-
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.8rem;
   }
 
   .puraxel__explain__title__bold {
-    letter-spacing: -0.01em;
-    line-height: 132%;
-    font-weight: 700;
   }
 
   .puraxel__explain__float__container {
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0rem 0rem 6rem rgba(0, 0, 0, 0.03);
-    backdrop-filter: blur(2rem);
-    border-radius: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .puraxel__explain__float__container__upper {
-    margin-bottom: 0.8rem;
-    width: calc(72.1rem);
-    height: calc(12.7rem);
+    margin-bottom: 0rem;
+    width: 46.2rem;
+    height: 12.4rem;
+
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .puraxel__explain__float__container__lower {
-    width: calc(72.2rem);
-    height: calc(9.8rem);
-    margin-left: 12.8rem;
+    margin-left: 4rem;
+    width: 46.2rem;
+    height: 9.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: -1.6rem;
+    /* z-index: -1;
+    position: fixed; */
   }
 
   .puraxel__explain__para {
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 144%;
+    font-size: 1.4rem;
+    line-height: 150%;
 
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" on, "lnum" on;
+    /* or 21px */
+    letter-spacing: -0.01em;
 
-    color: #7e818d;
+    /* grayscale/06 */
+    color: #a0a5b1;
   }
 
   .puraxel__explain__para__bold {
@@ -624,5 +684,15 @@
 
   .puraxel__explain__container__upper {
     margin-bottom: calc(3.6rem + 1vh);
+  }
+
+  .puraxel__expliain__br__1024 {
+    display: none;
+  }
+
+  .puraxel__explain__container__inner__1024 {
+    display: flex;
+
+    flex-direction: column;
   }
 }
