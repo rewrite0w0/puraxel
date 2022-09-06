@@ -84,12 +84,12 @@ const ImageGrid = () => {
 
       <div className={style.paper__container__inner}>
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts title="색소 침착 개선" />
+          <ClinicalTestImageParts title="미백 효과" />
           <div className={`${style.image4} ${style.imageContainer}`} />
         </section>
 
         <section className={style.paper__explain__container}>
-          <ClinicalTestImageParts title="안티에이징 효과" />
+          <ClinicalTestImageParts title="주름 개선" />
 
           <div className={`${style.image5} ${style.imageContainer}`} />
         </section>
