@@ -413,9 +413,8 @@ export function Galvanic() {
               높입니다. 레이저 모드와
               <span className={style.commonTextBold}>
                 함께 사용하면 피부
-                <br /> 흡수율을 극대화
+                <br /> 흡수율을 높일 수 있습니다.
               </span>
-              할 수 있습니다.
             </span>
           </div>
         </section>

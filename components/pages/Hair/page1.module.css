@@ -71,18 +71,34 @@
 }
 
 .explain {
-  font-size: 4.8rem;
-  letter-spacing: -0.02em;
-  color: #55576f;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 4rem;
   line-height: 128%;
+
+  letter-spacing: -0.02em;
+
+  color: #808591;
 }
+
 .subExplain {
   font-size: 4rem;
   letter-spacing: -0.02em;
   color: #4d5058;
   font-weight: 300;
   line-height: 128%;
+}
+
+.hair__caption {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 132%;
+
+  letter-spacing: -0.02em;
+
+  color: #767676;
+  left: calc(100vw / 1.16);
+  top: calc(100vh / 1.19);
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
