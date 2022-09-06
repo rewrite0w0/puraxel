@@ -219,8 +219,8 @@ export function Laser() {
             </div>
             <span className={style.commonText}>
               <span>
-                <span className={style.commonTextBold}>피부 재생용 레이저</span>
-                를 피부에 조사하여,
+                <span className={style.commonTextBold}>프락셔널 레이저</span>를
+                피부에 조사하여,
               </span>
               <br />
               <span>5~200µm의 표피층에 1회 약 100개의</span>
@@ -458,7 +458,7 @@ export function Cooling() {
               차가운 쿨링효과로{" "}
               <span className={style.commonTextBold}>피부를 진정</span>시키고
               <br />
-              <span className={style.commonTextBold}>모공 축소</span>를
+              <span className={style.commonTextBold}>모공관리</span>를
               도와줍니다.
             </span>
           </div>
@@ -585,7 +585,7 @@ const CoolingExp1 = () => {
 const CoolingExp2 = () => {
   return (
     <span className={style.explainContainer}>
-      확장된 <span className={style.explainContainerBold}>모공 축소</span>에
+      확장된 <span className={style.explainContainerBold}>모공관리</span>에
       도움을 줍니다.
     </span>
   );
