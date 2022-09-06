@@ -208,8 +208,9 @@ export default function ModalComponent(props) {
   return (
     <>
       <Box
-        className={commonButtonStyle.buttonContainer}
+        // className={commonButtonStyle.buttonContainer}
         onClick={handleOpenModal}
+        className={props.class}
         {...props}
       >
         {/* ~icon~ */}

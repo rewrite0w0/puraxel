@@ -70,6 +70,26 @@
   width: 41.7rem;
 }
 
+.modalStyle {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0rem 0.6rem 2rem rgba(127, 46, 190, 0.05);
+  border: 1px solid #ffffff;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 6.4rem;
+  width: 12.8rem;
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #555768;
+  cursor: pointer;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .shoppingMall {
     width: 10.4rem;

@@ -1,5 +1,6 @@
 import style from "./FX5000Layout.module.css";
 import ModalComponent from "components/Modal/ModalComponent";
+import modalStyle from "./MeLayout.module.css";
 
 export default function FX5000Layout({ children }) {
   return (
@@ -8,7 +9,7 @@ export default function FX5000Layout({ children }) {
         {children}
 
         <footer className={style.footerContainer}>
-          <ModalComponent />
+          <ModalComponent class={modalStyle.shoppingMall} />
         </footer>
       </article>
     </section>
