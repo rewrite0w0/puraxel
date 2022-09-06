@@ -273,6 +273,12 @@ img {
   color: #c7cad3;
 } */
 
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+
 @media all and (max-width: 1023px) {
   * {
     visibility: hidden;
