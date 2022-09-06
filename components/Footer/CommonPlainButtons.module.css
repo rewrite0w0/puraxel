@@ -4,15 +4,18 @@
   border: 1px solid #ffffff;
   border-radius: 0.4rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
-  width: 12.8rem;
-  height: 6.4rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   font-size: 1.8rem;
   color: var(--primary01);
+
+  /* width: 12.8rem;
+  height: 6.4rem;
+  width: calc(100vw / 15);
+  height: calc(100vh / 16.875); */
 }
 
 .buttonContainer:hover {
@@ -25,6 +28,10 @@
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
+  .buttonContainer {
+    /* width: 104px;
+    height: 52px; */
+  }
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {

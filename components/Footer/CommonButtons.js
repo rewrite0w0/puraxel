@@ -5,7 +5,7 @@ export default function CommonButtons(props) {
     <section
       {...props}
       style={{ ...props.style }}
-      className={_.buttonContainer}
+      className={`${props.class}`}
       onClick={() => {
         window.open(props.link ? props.link : "/", "_blank");
       }}

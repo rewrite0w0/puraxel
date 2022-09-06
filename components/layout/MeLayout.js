@@ -25,15 +25,18 @@ export default function MeLayout({ children }) {
                 }}
               />
             }
-            style={{
-              width: "12.8rem",
-              marginRight: "2rem",
-              fontSize: "1.8rem",
-              fontWeight: "600",
-              letterSpacing: "-0.01em",
-              color: "#555768",
-              cursor: "pointer",
-            }}
+            class={style.shoppingMall}
+            style={
+              {
+                // width: "12.8rem",
+                // marginRight: "2rem",
+                // fontSize: "1.8rem",
+                // fontWeight: "600",
+                // letterSpacing: "-0.01em",
+                // color: "#555768",
+                // cursor: "pointer",
+              }
+            }
           />
 
           <CommonButtons
@@ -41,10 +44,7 @@ export default function MeLayout({ children }) {
             topRightDiscountPrice="1,890,000원"
             bottomRightz="12개월"
             bottomRightx="월 157,500원"
-            style={{
-              width: "27.7rem",
-              marginRight: "2rem",
-            }}
+            class={style.single}
             link="https://lmdt.cafe24.com"
           />
 
@@ -56,10 +56,8 @@ export default function MeLayout({ children }) {
             bottomLeft="23% off"
             bot_left_style={{ backgroundColor: "#F2F3F7" }}
             bottomRightz="12개월"
-            bottomRightx="월 157,500원"
-            style={{
-              width: "41.7rem",
-            }}
+            bottomRightx="월 164,800원"
+            class={style.set}
             link="https://lmdt.cafe24.com"
           />
         </div>

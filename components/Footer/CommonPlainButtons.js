@@ -4,7 +4,7 @@ export default function CommonPlainButtons(props) {
   return (
     <section
       {...props}
-      className={_.buttonContainer}
+      className={`${props.class}`}
       onClick={() => {
         window.open(props.link ? props.link : "/", "_blank");
       }}

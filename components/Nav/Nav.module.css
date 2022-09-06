@@ -348,6 +348,7 @@
   }
 
   .inner__nav__logos__container {
+    padding-left: 4rem;
   }
 
   .inner__nav__common {
@@ -459,6 +460,7 @@
   }
 
   .inner__nav__logos__container {
+    /* padding-left: 8rem; */
   }
 
   .inner__nav__common {
