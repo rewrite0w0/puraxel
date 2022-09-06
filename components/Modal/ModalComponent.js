@@ -230,9 +230,7 @@ export default function ModalComponent(props) {
           <Box className={style.left}>
             {/* 1 */}
             <Box className={style.modal_left_title_container}>
-              <span className={style.modealLeftTitle}>
-                {modalKr.modalTitle}
-              </span>
+              <span className={style.modalLeftTitle}>{modalKr.modalTitle}</span>
             </Box>
             {/* 2 */}
             <Box>

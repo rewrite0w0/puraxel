@@ -19,13 +19,13 @@
 }
 
 .container {
-  position: "absolute";
-  top: "50vw";
-  left: "50vw";
-  transform: "translate(-50%, -50%)";
-  width: 1000;
-  height: 1000;
-  border: "2px solid #000";
+  position: absolute;
+  top: 50vw;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid #000;
 }
 
 .modal_left_title_container {
@@ -40,7 +40,7 @@
   width: 37.7rem;
 }
 
-.modealLeftTitle {
+.modalLeftTitle {
   font-size: 4rem;
   letter-spacing: -0.02em;
   color: "#434343";
@@ -411,6 +411,199 @@
 }
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
+  .modalContainer {
+  }
+
+  .container {
+  }
+
+  .modal_left_title_container {
+    margin-bottom: 0.6rem;
+  }
+
+  .left {
+    margin-top: 2rem;
+    width: 27.7rem;
+  }
+
+  .modalLeftTitle {
+    font-size: 2rem;
+  }
+
+  .right {
+    margin-left: 4rem;
+  }
+
+  .right__top__container {
+  }
+
+  .right__exit__button {
+  }
+
+  .timeReciverContainer {
+  }
+
+  .time_reciver_mid {
+    font-size: 1.4rem;
+  }
+
+  .agree_box_container {
+    padding-bottom: 4.2rem;
+  }
+
+  .privacy__collect__agree {
+    font-size: 0.9rem;
+  }
+
+  .buttonStyle {
+    font-size: 1.2rem;
+  }
+
+  .buttonStyle:hover {
+  }
+
+  .kanouJikan {
+    font-size: 1.4rem;
+  }
+
+  .leftInputField {
+    margin-bottom: 1.25rem;
+  }
+
+  .wave {
+    font-size: 1.4rem;
+  }
+
+  .rightPrivacyCollectAgree {
+    font-size: 0.9rem;
+  }
+
+  .rightPrivayCollectAgree {
+  }
+
+  .right_privacy_cursor {
+    font-size: 0.9rem;
+  }
+
+  .shopButton {
+    width: 9.9rem;
+    height: 2.9rem;
+
+    font-size: 1.2rem;
+
+    margin-right: 0.8rem;
+
+    font-size: 1.2rem;
+  }
+
+  .shopic {
+    height: 5rem;
+    width: 2.5rem;
+  }
+
+  .askic {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .helpButton {
+    width: 11.9rem;
+    height: 2.9rem;
+
+    font-size: 1.2rem;
+  }
+
+  .sendButton {
+    width: 15.4rem;
+    height: 6rem;
+
+    font-size: 2rem;
+  }
+
+  .dialogTopPara {
+    font-size: 1.6rem;
+  }
+
+  .dialogBotPara {
+    font-size: 1.6rem;
+  }
+
+  .exitButton {
+    width: 12.8rem;
+    height: 4.8rem;
+
+    font-size: 1.6rem;
+  }
+
+  .stayButton {
+    width: 12.8rem;
+    height: 4.8rem;
+
+    font-size: 1.6rem;
+  }
+
+  .sendASKPara {
+    font-size: 2.4rem;
+  }
+
+  .sendASKSubPara {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  .ask_title_container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .ask_details_container {
+    height: calc(100rem + 1vh);
+  }
+
+  .ask_details {
+    font-size: 100rem;
+  }
+
+  .information__container {
+    padding-bottom: 4.2rem;
+  }
+
+  .information__para {
+    font-size: 1.4rem;
+  }
+
+  .dialog__exit__contaier {
+  }
+
+  .dialog__send__container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .dialog__send__inner_container {
+  }
+
+  .dialog__send__checked__ic {
+    height: 5.6rem;
+    width: 5.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .time__reciver__title {
+    font-size: 1.4rem;
+  }
+
+  .alert__need__more__custommer__data {
+    font-size: 1.2rem;
+
+    margin-right: 1.1rem;
+  }
+
+  .send__button__container {
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    bottom: -2.6rem;
+  }
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
