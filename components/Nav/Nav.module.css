@@ -106,7 +106,7 @@
   display: flex;
   align-self: center;
 
-  content: url(../../src/image/main/gnb_home_active_hover.svg);
+  content: url(../../src/image/main/logo.svg);
 
   height: 3.6rem;
   width: 8rem;
@@ -116,6 +116,7 @@
 .logo:hover {
   cursor: pointer;
   filter: opacity(50%);
+  color: #55576f;
 }
 
 .inner__nav__logos__container {

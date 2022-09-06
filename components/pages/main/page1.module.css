@@ -52,7 +52,7 @@
 .explain_wrap_container {
   display: flex;
   flex-direction: column;
-  margin-top: 4.8rem;
+  /* margin-top: 4.8rem; */
 }
 
 .explain_top {
@@ -106,7 +106,7 @@
 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .imageContainer {
-    margin-right: 11.8rem;
+    margin-right: 3.8rem;
   }
 
   .imageContent {
@@ -116,7 +116,7 @@
   }
 
   .explainContainer {
-    margin-left: 12rem;
+    /* margin-left: 12rem; */
   }
 
   .explain_wrap_container {

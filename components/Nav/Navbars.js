@@ -6,6 +6,7 @@ import navStyle from "./Nav.module.css";
 import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 
 import NavIconButton from "components/Nav/NavIconButton";
+import { LogoIcon } from "components/Parts/Icons";
 
 export default function Navbars() {
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
@@ -80,7 +81,9 @@ export default function Navbars() {
           onClick={() => {
             location.href = "/";
           }}
-        ></Box>
+        >
+          {/* <LogoIcon /> */}
+        </Box>
 
         <div className={navStyle.inner__nav__common}>
           <Button
