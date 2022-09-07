@@ -461,11 +461,11 @@ export default function ModalComponent(props) {
                   </span>
                 </div>
                 {/* 전송 */}
-                <div className={style.send__button__container}>
+                <section className={style.send__button__container}>
                   {requireInputDataChecker() ? (
                     <AlertNeedMoreCustomerData />
                   ) : undefined}
-                  <div
+                  <section
                     className={style.sendButton}
                     onClick={handleOpenSendAgreeDialog}
                     style={{
@@ -475,8 +475,8 @@ export default function ModalComponent(props) {
                     }}
                   >
                     {modalKr.modalSendButton}
-                  </div>
-                </div>
+                  </section>
+                </section>
                 {/*  */}
               </div>
             </Box>

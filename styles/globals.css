@@ -44,7 +44,7 @@
 * {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif !important;
   scrollbar-width: none;
   word-break: break-all;
 
@@ -84,36 +84,69 @@ a {
 
 /* 위아래 스크롤 막아야하는뎅.... */
 
-.MuiTypography-root {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+.customPagination {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  margin-bottom: 3.6rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  margin-right: -0.8rem;
+  content: url(../src/image/main/toRight.svg);
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+.swiper-button-prev {
+  margin-left: -0.8rem;
+
+  background-image: url(../src/image/main/toLeft.svg);
+  background-size: cover;
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+.swiper-button-disabled {
+  visibility: hidden;
 }
 
 /* .swiper-slide {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+  "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+  "Malgun Gothic", sans-serif;
 } */
 
-.MuiFormControl-root > * {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+.MuiTypography-root {
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
+}
+.MuiFormControl-root > * {
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif; */
 }
 
 .MuiButton-root:hover {
-  background: transparent;
+  /* background: transparent; */
 }
 
 .MuiOutlinedInput-input {
   /* color: pink; */
 }
 
-.MuiOutlinedInput-notchedOutline {
+/* .MuiOutlinedInput-notchedOutline {
   border: 0;
   outline: 0;
-}
+} */
 
 /* .muioutlinedinput-input::placeholder {
   color: red;
@@ -147,134 +180,51 @@ a {
 }
 
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-  transition: none;
-}
-
-.customPagination {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-right: 8rem;
-  margin-left: 8rem;
-  margin-bottom: 3.6rem;
-}
-
-@keyframes heartBeat {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
-
-img {
-  max-inline-size: 100%;
-  block-size: auto;
-  aspect-ratio: 2/1;
-  object-fit: cover;
-  object-position: top center;
-  max-width: 100%;
-  display: block;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-}
-
-.swiper-button-next {
-  margin-right: -0.8rem;
-  content: url(../src/image/main/toRight.svg);
-  width: 10rem !important;
-
-  height: 10rem !important;
-}
-
-.swiper-button-prev {
-  margin-left: -0.8rem;
-
-  background-image: url(../src/image/main/toLeft.svg);
-  background-size: cover;
-  width: 10rem !important;
-  height: 10rem !important;
-}
-
-.swiper-button-disabled {
-  visibility: hidden;
-}
-
-@media all and (min-width: 1024px) and (max-width: 1439px) {
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
+  /* transition: none; */
 }
 
 .css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
-  font-weight: 300;
+  /* font-weight: 300;
   font-size: 1.6rem;
   line-height: 150%;
-
   letter-spacing: -0.01em;
-
-  color: #c7cad3;
+  color: red;
+  background-color: blue; */
 }
 
 .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
-  font-weight: 300;
+  /* font-weight: 300;
   font-size: 3.2rem;
   line-height: 132%;
   letter-spacing: -0.02em;
-  color: #c7cad3;
+  color: #c7cad3; */
+  /* color: red; */
+  /* background-color: blue; */
 }
 
 .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  font-weight: 300;
+  /* font-weight: 300;
   font-size: 1.4rem;
   line-height: 150%;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.01em; */
 }
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
-
   letter-spacing: -0.01em;
-
-  color: #4d5058;
-}
-
-.MuiFormLabel-asterisk {
-  color: #ed8d87;
+  color: #4d5058; */
 }
 
 .css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
-  font-weight: 300;
+  /* font-weight: 300;
   font-size: 1.6rem;
   line-height: 150%;
-
   letter-spacing: -0.01em;
-
-  color: #4d5058;
+  color: #4d5058; */
 }
 
-/* .css-wb57ya-MuiFormControl-root-MuiTextField-root
-  > .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 128%;
-  letter-spacing: -0.01em;
-  color: #c7cad3;
+.MuiFormLabel-asterisk {
+  /* color: #ed8d87; */
 }
-
-.css-qb6sbg-MuiFormControl-root-MuiTextField-root
-  > .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 150%;
-
-  letter-spacing: -0.01em;
-
-  color: #c7cad3;
-} */

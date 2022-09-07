@@ -125,6 +125,64 @@
   margin-bottom: 2rem;
 }
 
+/* 좌측 텍스트필드 스타일 */
+
+.left > div > div > div > fieldset,
+.right > div > div > div > fieldset {
+  border: 0;
+  outline: 0;
+}
+/* 별 */
+.left > div > div > label > span,
+.right > div > div > label > span {
+  color: #ed8d87;
+}
+
+/* 좌측 입력 제목 */
+
+.left > div > div > label {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+.ask_title_container > div > div > input {
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 132%;
+  letter-spacing: -0.02em;
+  color: #c7cad3;
+}
+
+.ask_details_container > div > div > textarea {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+/* 인풋 스타일*/
+
+.left > div > div > div > input,
+.right > div > div > div > input {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #4d5058;
+}
+
+/* 우측 텍스트 필드 스타일 */
+
+.right > div > div > div > textarea {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #4d5058;
+}
+
 .wave {
   display: flex;
   align-items: center;

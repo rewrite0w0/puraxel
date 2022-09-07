@@ -11,6 +11,7 @@ import "@mui/icons-material";
 import "@emotion/react";
 import "@emotion/styled";
 
+("../");
 // import Transition from "components/Transition";
 import { Provider } from "jotai";
 
