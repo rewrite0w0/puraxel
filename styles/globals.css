@@ -164,23 +164,25 @@ a {
 }
 
 .MuiMenuItem-root {
-  transition: none;
+  /* transition: none;
   padding: 0;
-  margin: 0;
+  margin: 0; */
 }
 
 .MuiMenuItem-root:hover {
-  transition: none;
-  background: transparent;
+  /* transition: none;
+  background: transparent; */
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list {
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
+  /* background-color: blue; */
 }
 
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-  /* transition: none; */
+  /* transition: none;
+  background-color: blue; */
 }
 
 .css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {

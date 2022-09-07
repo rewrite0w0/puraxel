@@ -308,6 +308,34 @@
   animation-fill-mode: forwards;
 }
 
+.gnb__location__menu > div > ul > div > li {
+  transition: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gnb__location__menu > div > ul > div > li:hover {
+  transition: none;
+  background: transparent;
+}
+
+.gnb__location__menu > div > ul,
+.menu__sns__container > div > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.menu__sns__container > div > ul > div > li:hover {
+  transition: none;
+  background: transparent;
+}
+
+.header > section > div > button:hover,
+.header > section > button:hover {
+  transition: none;
+  background-color: transparent;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .header {
     padding-top: 2rem;
