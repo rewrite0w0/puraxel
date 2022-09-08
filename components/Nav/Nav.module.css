@@ -336,6 +336,50 @@
   background-color: transparent;
 }
 
+.inner__nav__logos__container > .inner__nav__common > button {
+  color: var(--primary01);
+  opacity: 0.5;
+  margin-right: 4rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}
+
+.header > .inner__nav__common > button {
+  color: var(--grayScale06);
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+}
+
+.gnb__location__menu > div > ul > div > li {
+  transition: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #a7abb6;
+  cursor: pointer;
+}
+
+.menu__sns__container > div > ul > div > li {
+  color: var(--grayScale06);
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 0;
+  margin-left: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .header {
     padding-top: 2rem;
