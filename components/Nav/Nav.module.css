@@ -106,7 +106,8 @@
   display: flex;
   align-self: center;
 
-  content: url(../../src/image/main/logo.svg);
+  /* content: url(../../src/image/main/logo.svg); */
+  content: url(https://imagekit.io/blog/content/images/2020/06/Server_User.png);
 
   height: 3.6rem;
   width: 8rem;
