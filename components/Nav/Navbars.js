@@ -91,6 +91,10 @@ export default function Navbars() {
             className={`${navStyle.gnbMenu} ${
               currentPage === "product" ? navStyle.underliner__gnb : undefined
             }`}
+            style={{
+              color: currentPage === "product" ? "#55576F" : "#55576",
+              opacity: currentPage === "product" ? "1" : "0.5",
+            }}
             disableRipple
           >
             제품

@@ -479,6 +479,10 @@
   padding-bottom: 4rem;
 }
 
+.dialog__send__inner_container > .dialog__send__checked__ic {
+  font-size: 3.5rem;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .modalContainer {
   }
