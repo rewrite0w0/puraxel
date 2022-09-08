@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Box, Menu, Button, MenuItem } from "@mui/material";
 
-import navStyle from "./Nav.module.css";
+// import navStyle from "./Nav.module.css";
+import navStyle from "components/Nav/Nav.module.css";
 
 import layoutHeaderKr from "public/locales/kr/layoutHeader.json";
 

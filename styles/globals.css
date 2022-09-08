@@ -39,6 +39,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  /* --temp: url(/src/image/main.logo.svg); */
+  /* --temp-img: url(../src/image/main/logo.svg); */
+  /* --temp-img: url(./logo.svg); */
 }
 
 * {
@@ -101,6 +105,7 @@ a {
 .swiper-button-next {
   margin-right: -0.8rem;
   content: url(../src/image/main/toRight.svg);
+  content: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel/src/image/main/toRight.svg);
   width: 10rem !important;
   height: 10rem !important;
 }
@@ -109,6 +114,7 @@ a {
   margin-left: -0.8rem;
 
   background-image: url(../src/image/main/toLeft.svg);
+  content: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel/src/image/main/toLeft.svg);
   background-size: cover;
   width: 10rem !important;
   height: 10rem !important;

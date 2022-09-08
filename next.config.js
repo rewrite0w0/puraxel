@@ -20,6 +20,14 @@ const nextConfig = {
     },
   },
 
+  webpack: (
+    config,
+    { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
+  ) => {
+    // Important: return the modified config
+    return config;
+  },
+
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "kr"],

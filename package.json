@@ -12,7 +12,8 @@
     "build:export": "next build && next export",
     "serve": "serve out",
     "serve:build": "serve .next",
-    "info": "next info"
+    "info": "next info",
+    "start:production": "NODE_ENV=production node ./server.js"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

@@ -107,8 +107,9 @@
   align-self: center;
 
   /* content: url(../../src/image/main/logo.svg); */
-  content: url(https://imagekit.io/blog/content/images/2020/06/Server_User.png);
 
+  content: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel/src/image/main/logo.svg);
+  /* content: var(--temp-img); */
   height: 3.6rem;
   width: 8rem;
   margin-right: 8rem;
@@ -187,7 +188,7 @@
 }
 
 .companyInfoMenuContainerLink {
-  content: url(../../src/image/main/lmdt_link.png);
+  content: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel/src/image/main//lmdt_link.png);
   height: 2.1rem;
   width: 11.4rem;
   cursor: pointer;
@@ -217,7 +218,7 @@
 
 .companyLinkButton {
   cursor: "pointer";
-  content: url(../../src/image/main/lmdt_link.svg);
+  content: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel/src/image/main//lmdt_link.png);
   width: 11.4rem;
   height: 2.1rem;
 }
