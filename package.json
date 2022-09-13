@@ -20,7 +20,6 @@
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.7",
-    "dotenv": "^16.0.2",
     "form-data": "^4.0.0",
     "framer-motion": "^6.4.3",
     "fzo": "^0.1.3",

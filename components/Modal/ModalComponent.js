@@ -29,9 +29,7 @@ import { AskIcon, Bitkuri, Inquiry, ShopIC } from "components/Parts/Icons";
 import formData from "form-data";
 import Mailgun from "mailgun.js";
 
-import * as dotenv from "dotenv"; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-dotenv.config();
-
+import { DOMAIN, USERAPI } from "lib/api";
 // const formData = require("form-data");
 // const Mailgun = require("mailgun.js");
 
@@ -165,21 +163,22 @@ export default function ModalComponent(props) {
   const handleSendAgreeYes = () => {
     // 개발버전
     const mailgun = new Mailgun(formData);
-    const mailID = "tjoh@lameditech.com";
+    const mailID = "dev@lameditech.com";
     // const mailID = "sales@lameditech.com";
     // console.log(process.env);
-
+    // console.log(mg);
+    // console.log(USERAPI, DOMAIN);
     const mg = mailgun.client({
-      username: process.env.USERAPI,
-      key: process.env.USERAPI,
-      domain: process.env.DOMAIN,
+      username: USERAPI || process.env.USERAPI,
+      key: USERAPI || process.env.USERAPI,
+      domain: DOMAIN || process.env.DOMAIN,
     });
 
     const sendMail = () => {
       mg.messages
-        .create(process.env.DOMAIN, {
+        .create(DOMAIN || process.env.DOMAIN, {
           // from: `${customerName} <${customerMail}>`,
-          from: "퓨라셀문의 <infra.mgmt@lameditech.com>",
+          from: "퓨라셀문의 <dev@lameditech.com>",
           to: [mailID],
           subject: customerTitle,
           // text: "Testing some Mailgun awesomness!",
@@ -194,13 +193,13 @@ export default function ModalComponent(props) {
           문의내용: ${customerContent}
           `,
         })
-        .then(
-          (msg) => console.log(msg)
-          // console.log("nice")
+        .then((msg) =>
+          // console.log(msg)
+          console.log("nice")
         ) // logs response data
-        .catch(
-          (err) => console.error(err)
-          // console.log("oh no....")
+        .catch((err) =>
+          // console.error(err)
+          console.log("oh no....")
         ); // logs any error
     };
 
