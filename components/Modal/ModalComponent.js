@@ -164,12 +164,12 @@ export default function ModalComponent(props) {
     const mailgun = new Mailgun(formData);
     const mailID = "tjoh@lameditech.com";
     // const mailID = "sales@lameditech.com";
-    console.log(process.env);
+    // console.log(process.env);
 
     const mg = mailgun.client({
-      username: "3dbd0178f52ea074714e43ce7931d592-680bcd74-a7fd467c",
-      key: "3dbd0178f52ea074714e43ce7931d592-680bcd74-a7fd467c",
-      domain: "sandboxc5b58827dca74ddca832f5d4b299614c.mailgun.org",
+      username: process.env.USERAPI,
+      key: process.env.USERAPI,
+      domain: process.env.DOMAIN,
     });
 
     const sendMail = () => {
