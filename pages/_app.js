@@ -21,6 +21,7 @@ import {
   MobileView,
   isBrowser,
   isMobile,
+  isTablet,
 } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
@@ -38,7 +39,7 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  return !isMobile ? (
+  return !isMobile || !isTablet ? (
     <BrowserView>
       <Provider>
         <Layout>

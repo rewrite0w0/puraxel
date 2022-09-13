@@ -135,7 +135,7 @@ a {
   }
 }
 
-@media all and (max-height: 759px) {
+@media all and (max-height: 719px) {
   * {
     display: none;
   }
