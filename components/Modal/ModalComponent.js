@@ -26,6 +26,19 @@ import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
 
 import { AskIcon, Bitkuri, Inquiry, ShopIC } from "components/Parts/Icons";
 
+import formData from "form-data";
+import Mailgun from "mailgun.js";
+
+// const formData = require("form-data");
+// const Mailgun = require("mailgun.js");
+
+const mailgun = new Mailgun(formData);
+const DOMAIN = "sandboxb52bbaf7b166484e939828638555326b.mailgun.org";
+const APIKEY = "07a637b8-33875160";
+const USERAPI = "a9df95e2ace519d1b936ac0173862b3b-07a637b8-d06bfd5d";
+const URL =
+  "https://api.mailgun.net/v3/sandboxb52bbaf7b166484e939828638555326b.mailgun.org";
+
 const bgStyle = {
   position: "absolute",
   top: "50%",
@@ -37,6 +50,17 @@ const bgStyle = {
   boxShadow: 24,
   p: 4,
 };
+
+// 개발버전
+
+const mailID = "infra.mgmt@lameditech.com";
+// const mailID = "sales@lameditech.com";
+
+const mg = mailgun.client({
+  username: USERAPI,
+  key: USERAPI,
+  domain: DOMAIN,
+});
 
 const Temp = () => {
   return (
@@ -139,8 +163,38 @@ export default function ModalComponent(props) {
 
   const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
 
-  const handleOpenSendAgreeDialog = () => {
-    setSendAgreeDialogOpen(true);
+  const handleOpenSendAgreeDialog = (e) => {
+    const sendMail = () => {
+      setSendAgreeDialogOpen(true);
+      mg.messages
+        .create(DOMAIN, {
+          // from: `${customerName} <${customerMail}>`,
+          from: "퓨라셀문의 <infra.mgmt@lameditech.com>",
+          to: [mailID],
+          subject: customerTitle,
+          // text: "Testing some Mailgun awesomness!",
+          // html: "<h1>Testing some Mailgun awesomness!</h1>",
+          text: `
+          성명: ${customerName}\n
+          연락처: ${customerTel}]\n
+          메일: ${customerMail}\n
+          상호명: ${customerCompanyName}\n
+          연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이\n
+          문의제목: ${customerTitle}\n
+          문의내용: ${customerContent}
+          `,
+        })
+        .then((msg) =>
+          // console.log(msg)
+          console.log("nice")
+        ) // logs response data
+        .catch((err) =>
+          // console.error(err)
+          console.log("oh no....")
+        ); // logs any error
+    };
+
+    requireInputDataChecker() ? e.preventDefault() : sendMail();
   };
 
   const handleCloseSendAgreeDialog = () => {
@@ -460,7 +514,7 @@ export default function ModalComponent(props) {
                     {modalKr.modalLinkToAsk}
                   </span>
                 </div>
-                {/* 전송 */}
+                {/* 문의 신청 */}
                 <section className={style.send__button__container}>
                   {requireInputDataChecker() ? (
                     <AlertNeedMoreCustomerData />
