@@ -20,12 +20,14 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouterChange = (url) => {
+    const handleRouteChange = (url) => {
       gtag.pageView(url);
     };
-    router.events.on("routeChangeComplete", handleRouterChange);
+    router.events.on("routeChangeComplete", handleRouteChange);
+    router.events.on("hashChangeComplete", handleRouteChange);
     return () => {
-      router.events.off("routeChangeComplete", handleRouterChange);
+      router.events.off("routeChangeComplete", handleRouteChange);
+      router.events.off("hashChangeComplete", handleRouteChange);
     };
   }, [router.events]);
 
