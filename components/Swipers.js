@@ -19,6 +19,7 @@ export default function Swipers({ children }) {
       allowTouchMove={false}
       mousewheel={{ sensitivity: 0.1 }}
       // navigation={true}
+      onSlideChange={(e) => console.log(e)}
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {

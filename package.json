@@ -32,6 +32,7 @@
     "react-device-detect": "^2.2.2",
     "react-dom": "18.2.0",
     "react-i18next": "^11.18.1",
+    "react-responsive": "^9.0.0-beta.10",
     "react-spring": "^9.4.5",
     "serve": "^14.0.1",
     "swiper": "^8.3.0",
