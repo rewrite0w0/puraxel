@@ -135,5 +135,8 @@ a {
   }
 }
 
-@media screen {
+@media all and (max-height: 759px) {
+  * {
+    display: none;
+  }
 }
