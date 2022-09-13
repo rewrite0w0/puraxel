@@ -14,10 +14,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* min-width: 1024px; */
+  /* min-height: 720px; */
 }
-
+/* 
 @media all and (min-width: 1024px) and (max-width: 1439px) {
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
-}
+} */

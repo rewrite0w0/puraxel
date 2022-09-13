@@ -32,8 +32,9 @@
     rgba(255, 255, 255, 0.3) 98.46%
   );
   /* position: absolute; */
-  min-width: 100%;
-  min-height: 100%;
+  /* min-width: 100%;
+  min-height: 100%; */
+
   width: 100%;
   height: 100%;
   padding: 0;
@@ -124,115 +125,15 @@ a {
   visibility: hidden;
 }
 
-/* .swiper-slide {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-  "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-  "Malgun Gothic", sans-serif;
-} */
-
-.MuiTypography-root {
-  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif; */
-}
-.MuiFormControl-root > * {
-  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif; */
+#__next {
+  min-width: 1024px;
 }
 
-.MuiButton-root:hover {
-  /* background: transparent; */
+@media all and (max-width: 1023px) {
+  * {
+    display: none;
+  }
 }
 
-.MuiOutlinedInput-input {
-  /* color: pink; */
-}
-
-/* .MuiOutlinedInput-notchedOutline {
-  border: 0;
-  outline: 0;
-} */
-
-/* .muioutlinedinput-input::placeholder {
-  color: red;
-} */
-
-.MuiSelect-select {
-  /* font-weight: 300;
-  font-size: 14px;
-  line-height: 150%;
-
-  text-align: center;
-  letter-spacing: -0.01em;
-
-  color: #4d5058; */
-}
-
-.MuiMenuItem-root {
-  /* transition: none;
-  padding: 0;
-  margin: 0; */
-}
-
-.MuiMenuItem-root:hover {
-  /* transition: none;
-  background: transparent; */
-}
-
-.css-6hp17o-MuiList-root-MuiMenu-list {
-  /* padding: 0;
-  margin: 0; */
-  /* background-color: blue; */
-}
-
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-  /* transition: none;
-  background-color: blue; */
-}
-
-.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
-  /* font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 150%;
-  letter-spacing: -0.01em;
-  color: red;
-  background-color: blue; */
-}
-
-.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
-  /* font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 132%;
-  letter-spacing: -0.02em;
-  color: #c7cad3; */
-  /* color: red; */
-  /* background-color: blue; */
-}
-
-.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  /* font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 150%;
-  letter-spacing: -0.01em; */
-}
-
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  /* font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 150%;
-  letter-spacing: -0.01em;
-  color: #4d5058; */
-}
-
-.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
-  /* font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 150%;
-  letter-spacing: -0.01em;
-  color: #4d5058; */
-}
-
-.MuiFormLabel-asterisk {
-  /* color: #ed8d87; */
+@media screen {
 }
