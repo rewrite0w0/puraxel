@@ -29,7 +29,7 @@ import { AskIcon, Bitkuri, Inquiry, ShopIC } from "components/Parts/Icons";
 import formData from "form-data";
 import Mailgun from "mailgun.js";
 
-import { DOMAIN, USERAPI } from "lib/api";
+// import { DOMAIN, USERAPI } from "lib/api";
 // const formData = require("form-data");
 // const Mailgun = require("mailgun.js");
 
