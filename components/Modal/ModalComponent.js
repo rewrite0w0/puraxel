@@ -169,14 +169,14 @@ export default function ModalComponent(props) {
     // console.log(mg);
     // console.log(USERAPI, DOMAIN);
     const mg = mailgun.client({
-      username: USERAPI || process.env.USERAPI,
-      key: USERAPI || process.env.USERAPI,
-      domain: DOMAIN || process.env.DOMAIN,
+      username: process.env.USERAPI || USERAPI,
+      key: process.env.USERAPI || USERAPI,
+      domain: process.env.DOMAIN || DOMAIN,
     });
 
     const sendMail = () => {
       mg.messages
-        .create(DOMAIN || process.env.DOMAIN, {
+        .create(process.env.DOMAIN || DOMAIN, {
           // from: `${customerName} <${customerMail}>`,
           from: "퓨라셀문의 <dev@lameditech.com>",
           to: [mailID],
