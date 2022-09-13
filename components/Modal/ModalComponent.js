@@ -32,8 +32,6 @@ import Mailgun from "mailgun.js";
 // const formData = require("form-data");
 // const Mailgun = require("mailgun.js");
 
-const mailgun = new Mailgun(formData);
-
 const bgStyle = {
   position: "absolute",
   top: "50%",
@@ -44,25 +42,6 @@ const bgStyle = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-};
-
-// 개발버전
-
-const mailID = "infra.mgmt@lameditech.com";
-// const mailID = "sales@lameditech.com";
-
-const mg = mailgun.client({
-  username: USERAPI,
-  key: USERAPI,
-  domain: DOMAIN,
-});
-
-const Temp = () => {
-  return (
-    <span style={{ color: "blue" }}>
-      ssssssssssssshe<span style={{ color: "pink" }}>yyyyyyyyyyyy</span>
-    </span>
-  );
 };
 
 export default function ModalComponent(props) {
@@ -159,37 +138,9 @@ export default function ModalComponent(props) {
   const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
 
   const handleOpenSendAgreeDialog = (e) => {
-    const sendMail = () => {
-      setSendAgreeDialogOpen(true);
-      mg.messages
-        .create(DOMAIN, {
-          // from: `${customerName} <${customerMail}>`,
-          from: "퓨라셀문의 <infra.mgmt@lameditech.com>",
-          to: [mailID],
-          subject: customerTitle,
-          // text: "Testing some Mailgun awesomness!",
-          // html: "<h1>Testing some Mailgun awesomness!</h1>",
-          text: `
-          성명: ${customerName}\n
-          연락처: ${customerTel}]\n
-          메일: ${customerMail}\n
-          상호명: ${customerCompanyName}\n
-          연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이\n
-          문의제목: ${customerTitle}\n
-          문의내용: ${customerContent}
-          `,
-        })
-        .then((msg) =>
-          // console.log(msg)
-          console.log("nice")
-        ) // logs response data
-        .catch((err) =>
-          // console.error(err)
-          console.log("oh no....")
-        ); // logs any error
-    };
-
-    requireInputDataChecker() ? e.preventDefault() : sendMail();
+    requireInputDataChecker()
+      ? e.preventDefault()
+      : setSendAgreeDialogOpen(true);
   };
 
   const handleCloseSendAgreeDialog = () => {
@@ -208,26 +159,53 @@ export default function ModalComponent(props) {
   const requireInputDataChecker = () =>
     mail.filter((x) => x === undefined || "" || false).length > 0;
 
-  // console.log(requireInputDataChecker());
-  // console.log(mail);
-
   const handleSendAgreeYes = () => {
-    // setModalOpen(false);
-    // setSendAgreeDialogOpen(false);
-    // handleOpenSendedNoticeDialog();
-    // resetState();
-    // console.log(mail);
-    // console.log(mail.filter((x) => x === undefined || ""));
-    if (requireInputDataChecker()) {
-      // alert("nono");
-      setSendAgreeDialogOpen(false);
-    } else {
-      // alert("ㅇㅋㄷㅋ");
-      setModalOpen(false);
-      setSendAgreeDialogOpen(false);
-      handleOpenSendedNoticeDialog();
-      resetState();
-    }
+    // 개발버전
+    const mailgun = new Mailgun(formData);
+    const mailID = "tjoh@lameditech.com";
+    // const mailID = "sales@lameditech.com";
+    console.log(process.env);
+
+    const mg = mailgun.client({
+      username: "3dbd0178f52ea074714e43ce7931d592-680bcd74-a7fd467c",
+      key: "3dbd0178f52ea074714e43ce7931d592-680bcd74-a7fd467c",
+      domain: "sandboxc5b58827dca74ddca832f5d4b299614c.mailgun.org",
+    });
+
+    const sendMail = () => {
+      mg.messages
+        .create(process.env.DOMAIN, {
+          // from: `${customerName} <${customerMail}>`,
+          from: "퓨라셀문의 <infra.mgmt@lameditech.com>",
+          to: [mailID],
+          subject: customerTitle,
+          // text: "Testing some Mailgun awesomness!",
+          // html: "<h1>Testing some Mailgun awesomness!</h1>",
+          text: `
+          성명: ${customerName}\n
+          연락처: ${customerTel}]\n
+          메일: ${customerMail}\n
+          상호명: ${customerCompanyName}\n
+          연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이\n
+          문의제목: ${customerTitle}\n
+          문의내용: ${customerContent}
+          `,
+        })
+        .then(
+          (msg) => console.log(msg)
+          // console.log("nice")
+        ) // logs response data
+        .catch(
+          (err) => console.error(err)
+          // console.log("oh no....")
+        ); // logs any error
+    };
+
+    sendMail();
+    setModalOpen(false);
+    setSendAgreeDialogOpen(false);
+    handleOpenSendedNoticeDialog();
+    resetState();
   };
 
   // 전송 완료 알림
