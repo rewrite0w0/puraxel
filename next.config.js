@@ -19,12 +19,9 @@ const nextConfig = {
       unoptimized: true,
     },
   },
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
 
-  webpack: (
-    config,
-    { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
-  ) => {
-    // Important: return the modified config
     return config;
   },
 
