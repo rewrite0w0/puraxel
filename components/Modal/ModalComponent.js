@@ -33,11 +33,6 @@ import Mailgun from "mailgun.js";
 // const Mailgun = require("mailgun.js");
 
 const mailgun = new Mailgun(formData);
-const DOMAIN = "sandboxb52bbaf7b166484e939828638555326b.mailgun.org";
-const APIKEY = "07a637b8-33875160";
-const USERAPI = "a9df95e2ace519d1b936ac0173862b3b-07a637b8-d06bfd5d";
-const URL =
-  "https://api.mailgun.net/v3/sandboxb52bbaf7b166484e939828638555326b.mailgun.org";
 
 const bgStyle = {
   position: "absolute",
