@@ -22,6 +22,7 @@ import {
   isMobile,
   isTablet,
 } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -44,6 +45,13 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   useEffect(() => {
+    window.innerHeight < MINHEIGHT
+      ? (location.href = REDIRECT_MOBILE)
+      : undefined;
+    window.innerWidth < MINWIDTH
+      ? (location.href = REDIRECT_MOBILE)
+      : undefined;
+
     window.onresize = function (e) {
       window.innerHeight < MINHEIGHT
         ? (location.href = REDIRECT_MOBILE)
