@@ -110,6 +110,21 @@ function MyApp({ Component, pageProps }) {
           `,
             }}
           />
+
+          <Script strategy="afterInteractive" src="//wcs.naver.net/wcslog.js" />
+          <Script
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            if(!wcs_add) var wcs_add = {};
+            wcs_add["wa"] = "cbebc90131a410";
+            if(window.wcs) {
+              wcs_do();
+            }`,
+            }}
+            id="naver"
+          />
+
           <Head>
             <meta
               name="viewport"
