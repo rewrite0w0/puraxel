@@ -32,6 +32,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
+      console.log(gtag.pageView(url));
       gtag.pageView(url);
     };
     router.events.on("routeChangeComplete", handleRouteChange);
@@ -55,7 +56,7 @@ function MyApp({ Component, pageProps }) {
         ? (location.href = REDIRECT_MOBILE)
         : undefined;
     };
-  });
+  }, []);
 
   return !isMobile || !isTablet ? (
     <BrowserView>
