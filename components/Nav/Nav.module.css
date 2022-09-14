@@ -396,6 +396,10 @@
     font-size: 1.6rem;
   }
 
+  .inner__nav__logos__container > .inner__nav__common > button {
+    font-size: 1.6rem;
+  }
+
   .gnb__container {
   }
 
@@ -503,6 +507,10 @@
 
   .gnbMenu {
     margin-right: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .inner__nav__logos__container > .inner__nav__common > button {
     font-size: 1.8rem;
   }
 
