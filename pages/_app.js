@@ -45,10 +45,6 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     window.onresize = function (e) {
-      // console.log(e);
-      // console.log(window.innerHeight);
-      // console.log(window.innerWidth);
-
       window.innerHeight < MINHEIGHT
         ? (location.href = REDIRECT_MOBILE)
         : undefined;
