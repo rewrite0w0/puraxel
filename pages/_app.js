@@ -19,13 +19,16 @@ import Script from "next/script";
 import {
   BrowserView,
   MobileView,
-  isBrowser,
   isMobile,
   isTablet,
 } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
+  const MINHEIGHT = 720;
+  const MINWIDTH = 1024;
+  const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -38,6 +41,21 @@ function MyApp({ Component, pageProps }) {
       router.events.off("hashChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    window.onresize = function (e) {
+      console.log(e);
+      console.log(window.innerHeight);
+      console.log(window.innerWidth);
+
+      window.innerHeight < MINHEIGHT
+        ? (location.href = REDIRECT_MOBILE)
+        : undefined;
+      window.innerWidth < MINWIDTH
+        ? (location.href = REDIRECT_MOBILE)
+        : undefined;
+    };
+  });
 
   return !isMobile || !isTablet ? (
     <BrowserView>
@@ -72,7 +90,7 @@ function MyApp({ Component, pageProps }) {
       </Provider>
     </BrowserView>
   ) : (
-    <MobileView>{(location.href = "https://lmdtwoo.netlify.app/")}</MobileView>
+    <>{(location.href = REDIRECT_MOBILE)}</>
   );
 }
 
