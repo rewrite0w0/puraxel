@@ -12,6 +12,10 @@ import {
 } from "swiper";
 
 export default function Swipers({ children }) {
+  useEffect(() => {
+    console.log(document.documentURI);
+  }, []);
+
   return (
     <Swiper
       className={_.container}
