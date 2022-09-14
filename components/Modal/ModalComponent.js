@@ -30,8 +30,13 @@ import formData from "form-data";
 import Mailgun from "mailgun.js";
 
 // import { DOMAIN, USERAPI } from "lib/api";
-// const formData = require("form-data");
-// const Mailgun = require("mailgun.js");
+// 개발버전
+const mailgun = new Mailgun(formData);
+const mailID = "dev@lameditech.com";
+// const mailID = "sales@lameditech.com";
+// console.log(process.env.USERAPI, process.env.DOMAIN);
+
+// console.log(USERAPI, DOMAIN);
 
 const bgStyle = {
   position: "absolute",
@@ -161,22 +166,15 @@ export default function ModalComponent(props) {
     mail.filter((x) => x === undefined || "" || false).length > 0;
 
   const handleSendAgreeYes = () => {
-    // 개발버전
-    const mailgun = new Mailgun(formData);
-    const mailID = "dev@lameditech.com";
-    // const mailID = "sales@lameditech.com";
-    // console.log(process.env);
-    // console.log(mg);
-    // console.log(USERAPI, DOMAIN);
-    const mg = mailgun.client({
-      username: process.env.USERAPI || USERAPI,
-      key: process.env.USERAPI || USERAPI,
-      domain: process.env.DOMAIN || DOMAIN,
-    });
-
     const sendMail = () => {
+      const mg = mailgun.client({
+        username: process.env.USERAPI,
+        key: process.env.USERAPI,
+        domain: process.env.DOMAIN,
+      });
+
       mg.messages
-        .create(process.env.DOMAIN || DOMAIN, {
+        .create(process.env.DOMAIN, {
           // from: `${customerName} <${customerMail}>`,
           from: "퓨라셀문의 <dev@lameditech.com>",
           to: [mailID],

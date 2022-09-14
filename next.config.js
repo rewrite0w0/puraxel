@@ -7,26 +7,32 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 
-  extends: "next",
-  rules: {
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off",
-  },
+  // extends: "next",
+  // rules: {
+  //   "react/no-unescaped-entities": "off",
+  //   "@next/next/no-page-custom-font": "off",
+  // },
+  // images: {
+  //   unoptimized: false,
+  // },
 
-  experimental: {
-    scrollRestoration: true,
-    images: {
-      unoptimized: true,
-    },
-  },
+  // experimental: {
+  //   scrollRestoration: true,
+  //   images: {
+  //     unoptimized: true,
+  //   },
+  // },
 
-  webpack: (
-    config,
-    { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
-  ) => {
-    // Important: return the modified config
-    return config;
-  },
+  // webpack: (
+  //   config,
+  //   { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
+  // ) => {
+  //   // Important: return the modified config
+  //   return config;
+  // },
+  // env: {
+  //   customKey: "my-value",
+  // },
 
   // i18n: {
   //   defaultLocale: "en",

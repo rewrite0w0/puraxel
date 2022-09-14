@@ -483,6 +483,18 @@
   font-size: 3.5rem;
 }
 
+.right__top__container > div > button {
+  color: var(--grayScale04);
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1439px) {
   .modalContainer {
   }
