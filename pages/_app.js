@@ -44,14 +44,7 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  useEffect(() => {
-    window.innerHeight < MINHEIGHT
-      ? (location.href = REDIRECT_MOBILE)
-      : undefined;
-    window.innerWidth < MINWIDTH
-      ? (location.href = REDIRECT_MOBILE)
-      : undefined;
-
+  const reSizeDetector = () => {
     window.onresize = function (e) {
       window.innerHeight < MINHEIGHT
         ? (location.href = REDIRECT_MOBILE)
@@ -60,6 +53,39 @@ function MyApp({ Component, pageProps }) {
         ? (location.href = REDIRECT_MOBILE)
         : undefined;
     };
+  };
+
+  const reSizeHandler = (e) => {
+    window.onresize = function (e) {
+      window.innerHeight < MINHEIGHT
+        ? (location.href = REDIRECT_MOBILE)
+        : undefined;
+      window.innerWidth < MINWIDTH
+        ? (location.href = REDIRECT_MOBILE)
+        : undefined;
+    };
+  };
+
+  useEffect(() => {
+    const windowSizeDetectCondition =
+      window.innerHeight < MINHEIGHT || window.innerWidth < MINWIDTH;
+    // 초기 접속시 크기 판별
+    // window.innerHeight < MINHEIGHT
+    //   ? (location.href = REDIRECT_MOBILE)
+    //   : undefined;
+    // window.innerWidth < MINWIDTH
+    // ? (location.href = REDIRECT_MOBILE)
+    // : undefined;
+    windowSizeDetectCondition ? (location.href = REDIRECT_MOBILE) : undefined;
+  }, []);
+
+  useEffect(() => {
+    // 접속 이후 크기 판별
+
+    const windowSizeDetectConditionForRedirect =
+      window.innerHeight < MINHEIGHT || window.innerWidth < MINWIDTH;
+
+    windowSizeDetectConditionForRedirect ? undefined : reSizeHandler();
   }, []);
 
   return !isMobile || !isTablet ? (
