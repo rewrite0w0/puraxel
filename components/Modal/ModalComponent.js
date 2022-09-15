@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import {
   Box,
@@ -53,6 +53,10 @@ const bgStyle = {
 export default function ModalComponent(props) {
   //  모달
   const [modalOpen, setModalOpen] = useState(false);
+
+  const form = useRef();
+  // console.log(form);
+  // console.log(form.current);
 
   const handleOpenModal = () => {
     setModalOpen(true);
@@ -202,7 +206,12 @@ export default function ModalComponent(props) {
     // };
 
     const sendMail = () => {
-      emailjs.sendForm("service_9qs0j5d", "template_n8l1fl9");
+      emailjs.sendForm(
+        "service_9qs0j5d",
+        "template_n8l1fl9",
+        form.current,
+        "tbbTJ2BB3TAc4sJRz"
+      );
     };
 
     sendMail();
@@ -237,7 +246,7 @@ export default function ModalComponent(props) {
   };
 
   return (
-    <>
+    <Box>
       <Box
         // className={commonButtonStyle.buttonContainer}
         onClick={handleOpenModal}
@@ -256,7 +265,12 @@ export default function ModalComponent(props) {
         }
         {modalKr.modalButtonTitle}
       </Box>
-      <Modal open={modalOpen} onClose={handleCloseModal}>
+      <Modal
+        open={modalOpen}
+        onClose={handleCloseModal}
+        component="form"
+        ref={form}
+      >
         <Box sx={bgStyle} className={style.modalContainer}>
           <Box className={style.left}>
             {/* 1 */}
@@ -273,6 +287,7 @@ export default function ModalComponent(props) {
                 onChange={(e) => {
                   setCustomerName(e.target.value);
                 }}
+                name="to_customerName"
               />
             </Box>
             {/* 3 */}
@@ -282,6 +297,7 @@ export default function ModalComponent(props) {
                 required
                 className={style.leftInputField}
                 margin={"dense"}
+                name="to_customerTel"
                 onChange={(e) => {
                   setCustomerTel(e.target.value);
                 }}
@@ -297,6 +313,7 @@ export default function ModalComponent(props) {
                 onChange={(e) => {
                   setCustomerMail(e.target.value);
                 }}
+                name="to_customerMail"
               />
             </Box>
             {/* 5 */}
@@ -308,6 +325,7 @@ export default function ModalComponent(props) {
                 onChange={(e) => {
                   setCustomerCompanyName(e.target.value);
                 }}
+                name="to_customerCompanyName"
               />
             </Box>
             {/* 6 */}
@@ -323,6 +341,7 @@ export default function ModalComponent(props) {
                     <Select
                       value={startAvailableTime}
                       onChange={handleStartTimeChange}
+                      name="to_startAvailableTime"
                     >
                       {timeZone.map((time) => (
                         <MenuItem key={time} value={time}>
@@ -338,6 +357,7 @@ export default function ModalComponent(props) {
                     <Select
                       value={endAvailableTime}
                       onChange={handleEndTimeChange}
+                      name="to_endAvailableTime"
                     >
                       {timeZone
                         .filter((time) => time >= startAvailableTime)
@@ -436,6 +456,7 @@ export default function ModalComponent(props) {
                 label={modalKr.modalAskTitle}
                 required
                 onChange={(e) => setCustomerTitle(e.target.value)}
+                name="to_customerTitle"
               />
             </Box>
             {/* 3 */}
@@ -452,6 +473,7 @@ export default function ModalComponent(props) {
                 required
                 inputProps={{ maxLength: 300 }}
                 onChange={(e) => setCustomerContent(e.target.value)}
+                name="to_customerContent"
               />
             </Box>
             {/* 4 */}
@@ -570,7 +592,11 @@ export default function ModalComponent(props) {
               {/* {modalKr.modalExitModalYes} */}
               아니오
             </div>
-            <div className={style.stayButton} onClick={handleSendAgreeYes}>
+            <div
+              className={style.stayButton}
+              onClick={handleSendAgreeYes}
+              type="submit"
+            >
               {/* {modalKr.modalExitModalNo} */}네
             </div>
           </DialogActions>
@@ -632,7 +658,7 @@ export default function ModalComponent(props) {
           </DialogContent>
         </section>
       </Dialog> */}
-    </>
+    </Box>
   );
 }
 
