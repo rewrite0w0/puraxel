@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import Script from "next/script";
 
 import { useMediaQuery } from "react-responsive";
+import { isMobile, isTablet } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -31,19 +32,19 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  useEffect(() => {
-    window.innerWidth < MINWIDTH
-      ? (location.href = REDIRECT_MOBILE)
-      : undefined;
+  // useEffect(() => {
+  //   window.innerWidth < MINWIDTH
+  //     ? (location.href = REDIRECT_MOBILE)
+  //     : undefined;
 
-    window.onresize = function (e) {
-      window.innerWidth < MINWIDTH
-        ? (location.href = REDIRECT_MOBILE)
-        : undefined;
-    };
-  }, []);
+  //   window.onresize = function (e) {
+  //     window.innerWidth < MINWIDTH
+  //       ? (location.href = REDIRECT_MOBILE)
+  //       : undefined;
+  //   };
+  // }, []);
 
-  return (
+  return !isMobile || !isTablet ? (
     <Provider>
       <Layout>
         <Script
@@ -87,6 +88,8 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
     </Provider>
+  ) : (
+    <>{(location.href = REDIRECT_MOBILE)}</>
   );
 }
 

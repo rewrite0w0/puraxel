@@ -104,7 +104,7 @@
   color: #7e818d;
 }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (max-width: 1439px) {
   .imageContainer {
     margin-right: 3.8rem;
   }

@@ -297,7 +297,7 @@
   top: calc(100vh / 1.38);
 }
 
-@media all and (min-width: 1024px) and (max-width: 1439px) {
+@media all and (max-width: 1439px) {
   .page2Container {
     grid-template-columns: 1fr 1.2fr;
   }

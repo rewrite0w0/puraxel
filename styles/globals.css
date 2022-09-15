@@ -127,9 +127,10 @@ a {
 
 #__next {
   min-width: 1024px;
+  min-height: 720px;
 }
 
-@media all and (max-width: 1023px) {
+/* @media all and (max-width: 1023px) {
   * {
     display: none;
   }
@@ -139,4 +140,4 @@ a {
   * {
     display: none;
   }
-}
+} */
