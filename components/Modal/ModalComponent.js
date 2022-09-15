@@ -22,10 +22,10 @@ import modalKr from "public/locales/kr/modal";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
+// import commonButtonStyle from "components/Footer/CommonPlainButtons.module.css";
 
 import { AskIcon, Bitkuri, Inquiry, ShopIC } from "components/Parts/Icons";
-
+import emailjs from "@emailjs/browser";
 import formData from "form-data";
 import Mailgun from "mailgun.js";
 

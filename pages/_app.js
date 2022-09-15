@@ -2,13 +2,14 @@ import "styles/globals.css";
 import Layout from "components/layout/Layout";
 import Head from "next/head";
 import "swiper/css/bundle";
+
 import { Provider } from "jotai";
 import * as gtag from "lib/gtag";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-import { isMobile, isTablet } from "react-device-detect";
+import { useMediaQuery } from "react-responsive";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -31,12 +32,18 @@ function MyApp({ Component, pageProps }) {
   }, [router.events]);
 
   useEffect(() => {
-    const windowSizeDetectCondition =
-      window.innerHeight < MINHEIGHT || window.innerWidth < MINWIDTH;
-    windowSizeDetectCondition ? (location.href = REDIRECT_MOBILE) : undefined;
+    window.innerWidth < MINWIDTH
+      ? (location.href = REDIRECT_MOBILE)
+      : undefined;
+
+    window.onresize = function (e) {
+      window.innerWidth < MINWIDTH
+        ? (location.href = REDIRECT_MOBILE)
+        : undefined;
+    };
   }, []);
 
-  return !isMobile || !isTablet ? (
+  return (
     <Provider>
       <Layout>
         <Script
@@ -80,8 +87,6 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
     </Provider>
-  ) : (
-    <>{(location.href = REDIRECT_MOBILE)}</>
   );
 }
 
