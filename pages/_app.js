@@ -89,18 +89,16 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return !isMobile || !isTablet ? (
-    <BrowserView>
-      <Provider>
-        <Layout>
-          <Script
-            strategy="afterInteractive"
-            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-          />
-          <Script
-            id="gtag-init"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+    <Provider>
+      <Layout>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+        />
+        <Script
+          id="gtag-init"
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -108,33 +106,32 @@ function MyApp({ Component, pageProps }) {
               page_path: window.location.pathname,
             });
           `,
-            }}
-          />
+          }}
+        />
 
-          <Script strategy="afterInteractive" src="//wcs.naver.net/wcslog.js" />
-          <Script
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+        <Script strategy="afterInteractive" src="//wcs.naver.net/wcslog.js" />
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             if(!wcs_add) var wcs_add = {};
             wcs_add["wa"] = "cbebc90131a410";
             if(window.wcs) {
               wcs_do();
             }`,
-            }}
-            id="naver"
-          />
+          }}
+          id="naver"
+        />
 
-          <Head>
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1.0"
-            />
-          </Head>
-          <Component {...pageProps} />
-        </Layout>
-      </Provider>
-    </BrowserView>
+        <Head>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+        </Head>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   ) : (
     <>{(location.href = REDIRECT_MOBILE)}</>
   );
