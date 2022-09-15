@@ -166,39 +166,43 @@ export default function ModalComponent(props) {
     mail.filter((x) => x === undefined || "" || false).length > 0;
 
   const handleSendAgreeYes = () => {
-    const sendMail = () => {
-      const mg = mailgun.client({
-        username: process.env.USERAPI,
-        key: process.env.USERAPI,
-        domain: process.env.DOMAIN,
-      });
+    // const sendMail = () => {
+    //   const mg = mailgun.client({
+    //     username: process.env.USERAPI,
+    //     key: process.env.USERAPI,
+    //     domain: process.env.DOMAIN,
+    //   });
 
-      mg.messages
-        .create(process.env.DOMAIN, {
-          // from: `${customerName} <${customerMail}>`,
-          from: "퓨라셀문의 <dev@lameditech.com>",
-          to: [mailID],
-          subject: customerTitle,
-          // text: "Testing some Mailgun awesomness!",
-          // html: "<h1>Testing some Mailgun awesomness!</h1>",
-          text: `
-          성명: ${customerName}\n
-          연락처: ${customerTel}]\n
-          메일: ${customerMail}\n
-          상호명: ${customerCompanyName}\n
-          연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이\n
-          문의제목: ${customerTitle}\n
-          문의내용: ${customerContent}
-          `,
-        })
-        .then((msg) =>
-          // console.log(msg)
-          console.log("nice")
-        ) // logs response data
-        .catch((err) =>
-          // console.error(err)
-          console.log("oh no....")
-        ); // logs any error
+    //   mg.messages
+    //     .create(process.env.DOMAIN, {
+    //       // from: `${customerName} <${customerMail}>`,
+    //       from: "퓨라셀문의 <dev@lameditech.com>",
+    //       to: [mailID],
+    //       subject: customerTitle,
+    //       // text: "Testing some Mailgun awesomness!",
+    //       // html: "<h1>Testing some Mailgun awesomness!</h1>",
+    //       text: `
+    //       성명: ${customerName}\n
+    //       연락처: ${customerTel}]\n
+    //       메일: ${customerMail}\n
+    //       상호명: ${customerCompanyName}\n
+    //       연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이\n
+    //       문의제목: ${customerTitle}\n
+    //       문의내용: ${customerContent}
+    //       `,
+    //     })
+    //     .then((msg) =>
+    //       // console.log(msg)
+    //       console.log("nice")
+    //     ) // logs response data
+    //     .catch((err) =>
+    //       // console.error(err)
+    //       console.log("oh no....")
+    //     ); // logs any error
+    // };
+
+    const sendMail = () => {
+      emailjs.sendForm("service_9qs0j5d", "template_n8l1fl9");
     };
 
     sendMail();
