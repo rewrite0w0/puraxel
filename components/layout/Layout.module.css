@@ -17,7 +17,12 @@
   /* min-width: 1024px; */
   /* min-height: 720px; */
 }
-/* 
+
+.layoutBody {
+  min-height: 720px;
+}
+
+/*
 @media all and (max-width: 1439px) {
 }
 
