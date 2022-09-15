@@ -1,28 +1,14 @@
 import "styles/globals.css";
-// import "public/globals.css";
 import Layout from "components/layout/Layout";
 import Head from "next/head";
 import "swiper/css/bundle";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "@mui/material";
-// import "@mui/icons-material";
-// import "@emotion/react";
-// import "@emotion/styled";
 import { Provider } from "jotai";
 import * as gtag from "lib/gtag";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-import {
-  BrowserView,
-  MobileView,
-  isMobile,
-  isTablet,
-} from "react-device-detect";
-import { useMediaQuery } from "react-responsive";
+import { isMobile, isTablet } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -44,48 +30,10 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  const reSizeDetector = () => {
-    window.onresize = function (e) {
-      window.innerHeight < MINHEIGHT
-        ? (location.href = REDIRECT_MOBILE)
-        : undefined;
-      window.innerWidth < MINWIDTH
-        ? (location.href = REDIRECT_MOBILE)
-        : undefined;
-    };
-  };
-
-  const reSizeHandler = (e) => {
-    window.onresize = function (e) {
-      window.innerHeight < MINHEIGHT
-        ? (location.href = REDIRECT_MOBILE)
-        : undefined;
-      window.innerWidth < MINWIDTH
-        ? (location.href = REDIRECT_MOBILE)
-        : undefined;
-    };
-  };
-
   useEffect(() => {
     const windowSizeDetectCondition =
       window.innerHeight < MINHEIGHT || window.innerWidth < MINWIDTH;
-    // 초기 접속시 크기 판별
-    // window.innerHeight < MINHEIGHT
-    //   ? (location.href = REDIRECT_MOBILE)
-    //   : undefined;
-    // window.innerWidth < MINWIDTH
-    // ? (location.href = REDIRECT_MOBILE)
-    // : undefined;
     windowSizeDetectCondition ? (location.href = REDIRECT_MOBILE) : undefined;
-  }, []);
-
-  useEffect(() => {
-    // 접속 이후 크기 판별
-
-    const windowSizeDetectConditionForRedirect =
-      window.innerHeight < MINHEIGHT || window.innerWidth < MINWIDTH;
-
-    windowSizeDetectConditionForRedirect ? undefined : reSizeHandler();
   }, []);
 
   return !isMobile || !isTablet ? (
