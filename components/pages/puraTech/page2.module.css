@@ -34,8 +34,8 @@
   width: 19.5rem;
   height: 8rem;
 
-  width: calc(100vw / 9.84);
-  height: calc(100vh / 13.5);
+  /* width: calc(100vw / 9.84);
+  height: calc(100vh / 13.5); */
 
   background: #ffffff;
 
@@ -129,11 +129,11 @@
 }
 
 .class1__image {
-  /* width: calc(29.2rem);
-  height: calc(8rem); */
+  width: calc(29.2rem);
+  height: calc(8rem);
   content: url(../../../src/image/PURATECH/page4/class1Laser.png);
-  width: calc(100vw / 9.84);
-  height: calc(100vh / 13.5);
+  /* width: calc(100vw / 9.84);
+  height: calc(100vh / 13.5); */
 }
 
 .class1__explain {
