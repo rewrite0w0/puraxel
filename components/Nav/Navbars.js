@@ -279,7 +279,8 @@ export default function Navbars() {
 
         <NavIconButton
           onClick={() => {
-            window.open("http://en.puraxel.co.kr/index");
+            // window.open("http://en.puraxel.co.kr/index");
+            location.href = "http://en.puraxel.co.kr/index";
           }}
           title={layoutHeaderKr.en}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_en}`}
