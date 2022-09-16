@@ -316,11 +316,11 @@ export default function Page5() {
           {parts === "me" ? <Header3 /> : <Header33 />}
         </div>
       </aside>
-      <article className={_.imageContainer}>
-        <div className={_.imageContainer__inner}>
-          <PartsViewer />
-        </div>
-      </article>
+      {/* <article className={_.imageContainer}>
+        <div className={_.imageContainer__inner}> */}
+      <PartsViewer />
+      {/* </div>
+      </article> */}
       <article className={_.explainContainer}>
         <div className={_.explainTitle__container}>
           <div className={_.explainTitle}>제품 구성 및 사양</div>

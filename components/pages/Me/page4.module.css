@@ -79,8 +79,10 @@
   /* margin-bottom: 12.6rem; */
 }
 .product__image__container {
-  height: calc(100vh / 1.25);
-  width: calc(100vw / 3);
+  /* height: calc(100vh / 1.25);
+  width: calc(100vw / 3); */
+  height: 800px;
+  width: 800px;
   display: flex;
   justify-content: center;
 }
@@ -294,7 +296,8 @@
   }
 
   .product__image__container {
-    height: 55rem;
+    width: 422px;
+    height: 720px;
   }
   .product__image__inner__container {
   }
@@ -490,6 +493,8 @@
   }
 
   .product__image__container {
+    width: 630px;
+    height: 864px;
   }
   .product__image__inner__container {
   }
