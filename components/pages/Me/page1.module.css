@@ -86,14 +86,8 @@
 .meImage {
   content: url(../../../src/image/ME/page1/puraxel_me_me_me.png);
   display: flex;
-  /* height: calc(100% - 20%);
-  width: cacl(); */
 
-  /* width: 56.4rem;
-  height: 100.9rem; */
-
-  width: calc(100vw / 3.4);
-  height: calc(100vh / 1.1);
+  width: 56.4rem;
 }
 
 .explain_sub {
@@ -115,8 +109,12 @@
   letter-spacing: -0.02em;
 
   color: #767676;
-  left: calc(100vw / 1.16);
-  top: calc(100vh / 1.19);
+  /* left: calc(100vw / 1.16);
+  top: calc(100vh / 1.19); */
+  /* left: 1665px;
+  top: 901px; */
+  left: 82%;
+  top: 82%;
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
@@ -163,8 +161,9 @@
   }
 
   .meImage {
-    height: calc(100vh / 1.26);
-    width: calc(100vw / 4.17);
+    /* height: calc(100vh / 1.26);
+    width: calc(100vw / 4.17); */
+    width: 454px;
   }
 
   .explain_sub {
@@ -172,16 +171,18 @@
   }
 
   .me__caption {
-    position: absolute;
+    /* position: absolute;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 132%;
 
     letter-spacing: -0.02em;
 
-    color: #767676;
-    left: calc(100vw / 1.16);
-    top: calc(100vh / 1.19);
+    color: #767676; */
+    /* left: calc(100vw / 1.16);
+    top: calc(100vh / 1.19); */
+    /* left: 1171px;
+    top: 843px; */
   }
 }
 
@@ -230,8 +231,9 @@
   }
 
   .meImage {
-    height: calc(100vh / 1.36);
-    width: calc(100vw / 3.36);
+    /* height: calc(100vh / 1.36);
+    width: calc(100vw / 3.36); */
+    width: 304px;
     z-index: -1;
   }
 
@@ -240,7 +242,9 @@
   }
 
   .me__caption {
-    left: calc(100vw / 1.27);
-    top: calc(100vh / 1.25);
+    /* left: calc(100vw / 1.27);
+    top: calc(100vh / 1.25); */
+    /* left: 806px;
+    top: 575px; */
   }
 }
