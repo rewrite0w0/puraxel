@@ -100,7 +100,9 @@ const LaserImage = () => {
     <animated.div
       className={`${style.laserImageRightContainer} ${style.rightGridContainer}`}
       style={styles}
-    ></animated.div>
+    >
+      <HeadTips />
+    </animated.div>
   );
 };
 
@@ -119,7 +121,9 @@ const GalvanicImage = () => {
     <animated.div
       className={`${style.galvanicImageRightContainer}  ${style.rightGridContainer}`}
       style={styles}
-    ></animated.div>
+    >
+      <HeadTips />
+    </animated.div>
   );
 };
 
@@ -269,7 +273,7 @@ export default function Page2() {
 
       {modeCondition ? <LaserImage /> : <GalvanicImage />}
 
-      <HeadTips />
+      {/* <HeadTips /> */}
     </section>
   );
 }

@@ -277,11 +277,15 @@
 .laserImageRightContainer {
   background-image: url(../../../src/image/ME/page2/las.png);
   background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .galvanicImageRightContainer {
   background-image: url(../../../src/image/ME/page2/gal.png);
   background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .right__container {
@@ -289,12 +293,16 @@
 }
 
 .head__tips {
-  height: calc(100vh / 7.95);
-  width: calc(100vw / 6.55);
+  /* height: calc(100vh / 7.95);
+  width: calc(100vw / 6.55); */
   content: url(../../../src/image/ME/page2/tipset.png);
   position: absolute;
-  left: calc(100vw / 1.24);
-  top: calc(100vh / 1.38);
+  /* left: calc(100vw / 1.24);
+  top: calc(100vh / 1.38); */
+
+  right: 3%;
+
+  bottom: 12%;
 }
 
 @media all and (max-width: 1439px) {
@@ -432,13 +440,11 @@
   }
 
   .laserImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1024gal.png);
-    background-size: cover;
+    background-image: url(../../../src/image/ME/page2/1024las.png);
   }
 
   .galvanicImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1024las.png);
-    background-size: cover;
+    background-image: url(../../../src/image/ME/page2/1024gal.png);
   }
 
   .right__container {
@@ -572,12 +578,12 @@
   }
 
   .laserImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440gal.png);
+    background-image: url(../../../src/image/ME/page2/1440las.png);
     background-size: cover;
   }
 
   .galvanicImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440las.png);
+    background-image: url(../../../src/image/ME/page2/1440gal.png);
     background-size: cover;
   }
 
