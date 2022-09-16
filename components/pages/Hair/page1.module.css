@@ -1,17 +1,18 @@
 .container {
   padding-left: 22.7rem;
-  padding-right: 5rem;
+  /* padding-right: 5rem; */
   height: calc(100vh);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .leftContainer {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh);
+  /* height: calc(100vh);
+  width: 50%; */
 }
 
 .subTitle {
@@ -56,23 +57,9 @@
   color: #808591;
 }
 
-.rightContainer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  height: calc(100vh);
-  width: calc(100vw);
-}
-
-.rightImage {
-  height: calc(100vh / 1.1);
-  width: calc(100vw / 2);
-  content: url(../../../src/image/HAIR/page1/1440_hair_main.svg);
-}
-
 .explain {
   font-weight: 300;
-  font-size: 4rem;
+  font-size: 3.8rem;
   line-height: 128%;
 
   letter-spacing: -0.02em;
@@ -80,12 +67,19 @@
   color: #808591;
 }
 
-.subExplain {
-  font-size: 4rem;
-  letter-spacing: -0.02em;
-  color: #4d5058;
-  font-weight: 300;
-  line-height: 128%;
+.rightContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: calc(100vh);
+  width: 50%;
+}
+
+.rightImage {
+  /* height: calc(100vh / 1.1);
+  width: calc(100vw / 2); */
+  width: 900px;
+  content: url(../../../src/image/HAIR/page1/1440_hair_main.svg);
 }
 
 .hair__caption {
@@ -97,32 +91,65 @@
   letter-spacing: -0.02em;
 
   color: #767676;
-  left: calc(100vw / 1.16);
-  top: calc(100vh / 1.19);
+  /* left: calc(100vw / 1.16);
+  top: calc(100vh / 1.19); */
+  /* left: 1665px;
+  top: 901px; */
+  left: 82%;
+  top: 82%;
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
   .container {
     padding-left: 18.8rem;
+    padding-right: 6.7rem;
   }
   .subTitle {
     font-size: 4rem;
   }
   .title {
-    font-size: 8.4rem;
+    font-size: 7.4rem;
     margin-bottom: 4.8rem;
+  }
+
+  .leftContainer {
+    width: 100vw;
+  }
+
+  .rightContainer {
+    align-items: center;
+    width: 0;
+  }
+
+  .rightImage {
+    width: 600px;
+    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
+    position: absolute;
+    z-index: -10;
+  }
+  .explain {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 128%;
+
+    /* or 51px */
+    letter-spacing: -0.02em;
+
+    /* grayscale/07 */
+    color: #808591;
   }
 }
 
 @media all and (max-width: 1439px) {
   .container {
     padding-left: 12rem;
+    padding-right: 4.6rem;
   }
   .subTitle {
     font-size: 2.4rem;
   }
   .title {
-    font-size: 5.6rem;
+    font-size: 4.6rem;
     margin-bottom: 4rem;
   }
   .expTop {
@@ -130,5 +157,30 @@
   }
   .expBot {
     font-size: 2.4rem;
+  }
+  .leftContainer {
+    width: 100vw;
+  }
+  .rightContainer {
+    align-items: center;
+    width: 0%;
+  }
+
+  .rightImage {
+    width: 410px;
+    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
+    position: absolute;
+    z-index: -10;
+  }
+  .explain {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+
+    /* identical to box height, or 34px */
+    letter-spacing: -0.01em;
+
+    /* grayscale/07 */
+    color: #808591;
   }
 }

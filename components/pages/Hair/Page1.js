@@ -5,13 +5,14 @@ export default function Page0() {
     <main className={_.container}>
       <section className={_.leftContainer}>
         <div className={_.subTitle}>
-          레이저 기술로 극복하는 탈모 증상, 자신있는 삶의 회복
+          레이저 기술로 극복하는 탈모 증상,
+          <br /> 자신있는 삶의 회복
         </div>
         <div className={_.title}>PURAXEL HAIR</div>
 
         <div className={_.explain}>
           프락셔널 레이저는 기능성 앰플의 두피 흡수를 도와
-          <br /> 탈모관리에 효과적입니다.
+          <br className={_.explainBR} /> 탈모관리에 효과적입니다.
         </div>
         {/* <div className={_.subExplain}>경험하실 수 있습니다.</div> */}
       </section>
