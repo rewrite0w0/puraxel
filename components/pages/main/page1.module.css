@@ -2,12 +2,8 @@
   display: flex;
 
   height: 100vh;
+  /* min-height: 1080px; */
   flex-direction: row;
-}
-
-.wrap {
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
 .explainContainer {
@@ -18,6 +14,7 @@
   justify-content: center;
   align-items: center;
   height: calc(100%);
+  /* min-height: 1080px; */
   width: calc(50%);
 }
 
@@ -31,6 +28,7 @@
   align-items: center;
   /* height: 100%; */
   width: calc(96%);
+
   /* background-color: blue; */
   /* float: right; */
 }

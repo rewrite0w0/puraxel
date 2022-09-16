@@ -133,7 +133,7 @@ a {
 
 @media all and (max-width: 1439px) {
   .wrap {
-    width: 1024px;
+    min-width: 1024px;
   }
 }
 
