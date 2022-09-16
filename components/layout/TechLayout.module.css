@@ -4,7 +4,10 @@
   background-size: cover;
   height: 100vh;
 }
-
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 .footerContainer {
   display: flex;
   flex-direction: row;
@@ -20,7 +23,13 @@
 }
 
 @media all and (max-width: 1439px) {
+  .wrap {
+    min-width: 1024px;
+  }
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
+  .wrap {
+    min-width: 1440px;
+  }
 }

@@ -1,5 +1,5 @@
-.HairContainer {
-  background: url(../../src/image/HAIR/productBg_hair.png);
+.container {
+  background: url(../../src/image/main/main_bg.svg);
   background-size: cover;
   background-position: 50%;
   height: 100vh;
@@ -24,11 +24,10 @@
 }
 
 /*
-@media all and (max-width: 1439px) {
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-} */
+  @media all and (max-width: 1439px) {
+  }
+  @media all and (min-width: 1440px) and (max-width: 1919px) {
+  } */
 
 @media all and (max-width: 1439px) {
   .wrap {

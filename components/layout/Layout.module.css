@@ -1,9 +1,18 @@
-.header {
-  display: flex;
+.layoutMain {
+  /* display: flex;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
+  /* max-width: 1920px;
+  margin: 0 auto; */
+
+  /* max-height: 1080px; */
 }
+
+/* .wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+} */
 
 /* 여기서 바디 색 전부를 고침 */
 /* 상태변수로 ME 밑줄과 같이 처리하면 될 듯? */
@@ -19,7 +28,19 @@
 }
 
 .layoutBody {
-  min-height: 720px;
+  /* min-height: 720px; */
+}
+
+@media all and (max-width: 1439px) {
+  .wrap {
+    min-width: 1024px;
+  }
+}
+
+@media all and (min-width: 1440px) and (max-width: 1919px) {
+  .wrap {
+    min-width: 1440px;
+  }
 }
 
 /*

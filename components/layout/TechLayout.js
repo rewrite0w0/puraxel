@@ -3,11 +3,13 @@ import style from "./TechLayout.module.css";
 export default function TechLayout({ children }) {
   return (
     <section className={style.TechContainer}>
-      <article className={style.bodyContainer}>
-        {children}
+      <div className={style.wrap}>
+        <article className={style.bodyContainer}>
+          {children}
 
-        <footer className={style.footerContainer}></footer>
-      </article>
+          <footer className={style.footerContainer}></footer>
+        </article>
+      </div>
     </section>
   );
 }

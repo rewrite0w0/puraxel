@@ -5,13 +5,15 @@ import modalStyle from "./MeLayout.module.css";
 export default function HairLayout({ children }) {
   return (
     <section className={style.HairContainer}>
-      <article className={style.bodyContainer}>
-        {children}
+      <div className={style.wrap}>
+        <article className={style.bodyContainer}>
+          {children}
 
-        <footer className={style.footerContainer}>
-          <ModalComponent class={modalStyle.shoppingMall} />
-        </footer>
-      </article>
+          <footer className={style.footerContainer}>
+            <ModalComponent class={modalStyle.shoppingMall} />
+          </footer>
+        </article>
+      </div>
     </section>
   );
 }
