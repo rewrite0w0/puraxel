@@ -3,10 +3,7 @@
   background: url(../../src/image/ME/productBg_me.png);
   background-size: cover;
 }
-.wrap {
-  max-width: 1920px;
-  margin: 0 auto;
-}
+
 .footerContainer {
   display: flex;
   flex-direction: row;
@@ -139,14 +136,19 @@
   }
 }
 
-@media all and (max-width: 1439px) {
-  .meContainer {
+/* .wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1024px) {
+  .wrap {
     min-width: 1024px;
   }
 }
 
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .meContainer {
-    min-width: 1440px;
+@media all and (min-width: 1025px) and (max-width: 1919px) {
+  .wrap {
+    max-width: 1440px;
   }
-}
+} */

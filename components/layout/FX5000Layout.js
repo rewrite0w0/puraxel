@@ -5,7 +5,8 @@ import modalStyle from "./MeLayout.module.css";
 export default function FX5000Layout({ children }) {
   return (
     <section className={style.FX5000Container}>
-      <div className={style.wrap}>
+      {/* <div className={style.wrap}> */}
+      <div className="wrap">
         <article className={style.bodyContainer}>
           {children}
 
