@@ -68,7 +68,8 @@
 .rightImage {
   /* height: calc(100vh / 1.1);
   width: calc(100vw / 2); */
-  width: 900px;
+  /* width: 900px; */
+  width: 100%;
   content: url(../../../src/image/FX5000/page1/fx-5000_main.png);
 }
 

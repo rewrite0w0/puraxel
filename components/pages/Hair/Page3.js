@@ -147,8 +147,10 @@ const Explain = () => {
 export default function Page3() {
   return (
     <div className={style.container}>
-      <Title />
-      <Explain />
+      <div className={style.container__inner}>
+        <Title />
+        <Explain />
+      </div>
     </div>
   );
 }
