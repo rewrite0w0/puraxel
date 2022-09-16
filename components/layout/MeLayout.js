@@ -9,7 +9,7 @@ import CommonPlainButtons from "components/Footer/CommonPlainButtons";
 export default function MeLayout({ children }) {
   return (
     <section className={style.meContainer}>
-      <div className={style.wrap}>
+      <div className="wrap">
         <article className={style.bodyContainer}>{children}</article>
         <footer className={style.footerContainer}>
           <div style={{ display: "flex" }}>

@@ -5,7 +5,7 @@ import modalStyle from "./MeLayout.module.css";
 export default function HairLayout({ children }) {
   return (
     <section className={style.HairContainer}>
-      <div className={style.wrap}>
+      <div className="wrap">
         <article className={style.bodyContainer}>
           {children}
 
