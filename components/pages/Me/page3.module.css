@@ -154,8 +154,8 @@
 
 @media all and (max-width: 1439px) {
   .container {
-    margin-top: 8rem;
-    margin-left: 7rem;
+    /* margin-top: 8rem;
+    margin-left: 7rem; */
   }
 
   .container__inner {
@@ -248,8 +248,8 @@
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
   .container {
-    height: calc(100vh);
-    margin-left: 14.3rem;
+    /* height: calc(100vh);
+    margin-left: 14.3rem; */
   }
 
   .container__inner {
