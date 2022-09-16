@@ -127,17 +127,18 @@ a {
 
 .wrap {
   max-width: 1920px;
+  /* max-height: 1080px; */
   margin: 0 auto;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1439px) {
   .wrap {
-    min-width: 1024px;
+    width: 1024px;
   }
 }
 
-@media all and (min-width: 1025px) and (max-width: 1919px) {
+@media all and (min-width: 1440px) and (max-width: 1919px) {
   .wrap {
-    max-width: 1440px;
+    min-width: 1440px;
   }
 }
