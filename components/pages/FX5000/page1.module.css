@@ -3,15 +3,16 @@
   padding-right: 5rem;
   height: calc(100vh);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .leftContainer {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh);
+  /* height: calc(100vh);
+  width: 50%; */
 }
 
 .subTitle {
@@ -61,13 +62,14 @@
   align-items: flex-end;
   justify-content: flex-end;
   height: calc(100vh);
-  width: calc(100vw);
+  width: 50%;
 }
 
 .rightImage {
-  height: calc(100vh / 1.1);
-  width: calc(100vw / 2);
-  content: url(../../../src/image/FX5000/page1/1440_fx-5000_main.svg);
+  /* height: calc(100vh / 1.1);
+  width: calc(100vw / 2); */
+  width: 900px;
+  content: url(../../../src/image/FX5000/page1/fx-5000_main.png);
 }
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
@@ -78,8 +80,17 @@
     font-size: 4rem;
   }
   .title {
-    font-size: 8.4rem;
+    font-size: 7.4rem;
     margin-bottom: 4.8rem;
+  }
+
+  .rightContainer {
+    align-items: center;
+  }
+
+  .rightImage {
+    width: 600px;
+    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
   }
 }
 
@@ -91,7 +102,7 @@
     font-size: 2.4rem;
   }
   .title {
-    font-size: 5.6rem;
+    font-size: 4.6rem;
     margin-bottom: 4rem;
   }
   .expTop {
@@ -99,5 +110,14 @@
   }
   .expBot {
     font-size: 2.4rem;
+  }
+
+  .rightContainer {
+    align-items: center;
+  }
+
+  .rightImage {
+    width: 410px;
+    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
   }
 }
