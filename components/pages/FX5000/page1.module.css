@@ -1,5 +1,5 @@
 .container {
-  padding-left: 22.7rem;
+  padding-left: 18.8rem;
   padding-right: 5rem;
   height: 100%;
   display: flex;
@@ -17,7 +17,7 @@
 
 .subTitle {
   font-weight: 300;
-  font-size: 4.8rem;
+  font-size: 4rem;
   line-height: 128%;
   letter-spacing: -0.02em;
   color: #55576f;
@@ -25,11 +25,11 @@
 
 .title {
   font-weight: 300;
-  font-size: 9.6rem;
+  font-size: 7.4rem;
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #55576f;
-  margin-bottom: 8rem;
+  margin-bottom: 4.8rem;
 }
 
 .expTop {
@@ -59,7 +59,7 @@
 
 .rightContainer {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   height: 100%;
   width: 50%;
@@ -69,56 +69,6 @@
   /* height: calc(100vh / 1.1);
   width: calc(100vw / 2); */
   /* width: 900px; */
-  width: 100%;
-  content: url(../../../src/image/FX5000/page1/fx-5000_main.png);
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-    padding-left: 18.8rem;
-  }
-  .subTitle {
-    font-size: 4rem;
-  }
-  .title {
-    font-size: 7.4rem;
-    margin-bottom: 4.8rem;
-  }
-
-  .rightContainer {
-    align-items: center;
-  }
-
-  .rightImage {
-    width: 600px;
-    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
-  }
-}
-
-@media all and (max-width: 1439px) {
-  .container {
-    padding-left: 12rem;
-  }
-  .subTitle {
-    font-size: 2.4rem;
-  }
-  .title {
-    font-size: 4.6rem;
-    margin-bottom: 4rem;
-  }
-  .expTop {
-    font-size: 2.4rem;
-  }
-  .expBot {
-    font-size: 2.4rem;
-  }
-
-  .rightContainer {
-    align-items: center;
-  }
-
-  .rightImage {
-    width: 410px;
-    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
-  }
+  width: 600px;
+  content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
 }
