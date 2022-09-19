@@ -25,7 +25,7 @@
   height: 3.2rem;
   padding: 0.4rem 0.8rem;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   opacity: 0.95;
   border-radius: 0.4rem;
   letter-spacing: -0.03em;
@@ -43,8 +43,8 @@
 }
 
 .modeImageCommon {
-  max-width: 29.2rem;
-  max-height: 16.5rem;
+  max-width: 25rem;
+  max-height: 15rem;
   border-radius: 0.4rem;
   margin-left: 0.8rem;
 }
@@ -169,7 +169,7 @@
 
 .laserTitle {
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 128%;
 
   letter-spacing: -0.02em;
@@ -190,7 +190,7 @@
 
 .commonText {
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 150%;
 
   letter-spacing: -0.01em;
@@ -232,7 +232,7 @@
 
 .safefeature__container {
   display: flex;
-  width: 59.4rem;
+  width: 55.4rem;
   height: 6rem;
   background-color: rgba(255, 255, 255, 1);
 
@@ -246,12 +246,8 @@
 
 .safefeature__inner__container {
   width: 13.6rem;
-  /* background: linear-gradient(90deg, rgba(248, 249, 250, 0) 0%, #f8f9fa 100%); */
-
   display: flex;
   align-items: center;
-  padding-right: 1rem;
-  padding-left: 0.8rem;
   box-sizing: content-box;
 }
 
@@ -332,7 +328,7 @@
 }
 
 .margin__top {
-  margin-top: 10rem;
+  margin-top: 6.1rem;
 }
 
 .margin__top__sub {
@@ -345,7 +341,7 @@
 }
 
 .margin__top__bottom {
-  margin-top: 1.8rem;
+  margin-top: 5.8rem;
   margin-bottom: 2rem;
 }
 
@@ -381,36 +377,38 @@
 }
 
 .sonic__comment__container {
-  margin-top: 22rem;
-}
-
-.cooling__comment__container {
-  margin-top: 28rem;
-}
-
-.led__comment__container {
-  margin-top: 25rem;
-}
-.galvanic__comment__container {
   margin-top: 15rem;
 }
 
+.cooling__comment__container {
+  margin-top: 20rem;
+}
+
+.led__comment__container {
+  margin-top: 15rem;
+}
+.galvanic__comment__container {
+  margin-top: 10rem;
+}
+
 .absolute__container {
-  width: 100%;
+  width: 42.5rem;
+  height: 16.6rem;
 }
 
 .sonic__comment__container__inner__bot {
-  width: 100%;
+  width: 42.5rem;
   position: relative;
-  bottom: 20px;
-  left: 200px;
+  bottom: 3.6rem;
+  left: 13.6rem;
 }
 
 .cooling__comment__container__inner__bot {
-  width: 100%;
+  width: 36.5rem;
+  height: 6.9rem;
   position: relative;
-  bottom: 20px;
-  left: 200px;
+  bottom: 70px;
+  left: 125px;
 }
 
 .led__comment__container__inner__bot {
@@ -418,166 +416,4 @@
   position: relative;
   bottom: 20px;
   left: 200px;
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .laserTitle {
-    font-size: 3.2rem;
-  }
-  .optionButtonCommon {
-    font-size: 1.4rem;
-  }
-  .commonText {
-    font-size: 1.4rem;
-  }
-  .modeImageCommon {
-    max-width: 25rem;
-    max-height: 15rem;
-    border-radius: 0.4rem;
-    margin-left: 0.8rem;
-  }
-
-  .margin__top {
-    margin-top: 6.1rem;
-  }
-  .absolute__container {
-    width: 100%;
-  }
-
-  .sonic__comment__container__inner__bot {
-    width: 100%;
-    position: relative;
-    bottom: 20px;
-    left: 200px;
-  }
-
-  .cooling__comment__container__inner__bot {
-    width: 100%;
-    position: relative;
-    bottom: 20px;
-    left: 200px;
-  }
-
-  .led__comment__container__inner__bot {
-    width: 100%;
-    position: relative;
-    bottom: 20px;
-    left: 200px;
-  }
-  .sonic__comment__container {
-    margin-top: 15rem;
-  }
-
-  .cooling__comment__container {
-    margin-top: 20rem;
-  }
-
-  .led__comment__container {
-    margin-top: 18rem;
-  }
-  .galvanic__comment__container {
-    margin-top: 10rem;
-  }
-}
-
-@media all and (max-width: 1439px) {
-  .laserTitle {
-    font-size: 2.8rem;
-  }
-  .laserSubTitle {
-    font-size: 1.4rem;
-  }
-  .button__container {
-    margin-bottom: 1.2rem;
-  }
-  .optionButtonCommon {
-    font-size: 1.4rem;
-  }
-  .commonText {
-    font-size: 1.4rem;
-  }
-  .modeImageCommon {
-    max-width: 20.4rem;
-    max-height: 11.5rem;
-    border-radius: 0.4rem;
-    margin-left: 0.8rem;
-  }
-
-  .margin__top {
-    margin-top: 2.7rem;
-  }
-  .explainLaserWarning {
-    font-size: 2rem;
-  }
-  .safefeature__container {
-    width: 42rem;
-    height: 4rem;
-  }
-  .safefeature__inner__container {
-    width: 12rem;
-  }
-
-  .safefeature__container:nth-child(4) > .safefeature__inner__container {
-    width: 14rem;
-  }
-  .safefeature__title {
-    font-size: 1.4rem;
-  }
-  .safefeature__explain {
-    font-size: 1.4rem;
-  }
-  .explainContainer {
-    font-size: 1.6rem;
-  }
-
-  .floatingContainer {
-    box-sizing: border-box;
-    padding: 1.6rem;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0rem 0rem 3.57491rem rgba(0, 0, 0, 0.03);
-    backdrop-filter: blur(1.19164rem);
-    border-radius: 0.4rem;
-    font-weight: 300;
-    font-size: 1.6rem;
-    letter-spacing: -0.02em;
-    color: #7e818d;
-  }
-  .absolute__container {
-    width: 70%;
-  }
-
-  .sonic__comment__container__inner__bot {
-    width: 60%;
-    position: relative;
-    bottom: 20px;
-    left: 200px;
-  }
-
-  .cooling__comment__container__inner__bot {
-    width: 60%;
-    position: relative;
-    bottom: 20px;
-    left: 200px;
-  }
-
-  .led__comment__container__inner__bot {
-    width: 70%;
-    position: relative;
-    bottom: 20px;
-    left: 200px;
-  }
-  .sonic__comment__container {
-    margin-top: 15rem;
-  }
-
-  .cooling__comment__container {
-    margin-top: 20rem;
-  }
-
-  .led__comment__container {
-    margin-top: 18rem;
-  }
-  .galvanic__comment__container {
-    margin-top: 10rem;
-  }
 }

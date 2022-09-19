@@ -341,14 +341,10 @@ export function Sonic() {
           </div>
 
           <span className={style.commonText}>
-            기능성 솔루션을 바른 후 마사지하면 &nbsp;
-            <span className={style.commonTextBold}>
-              높은
-              <br />
-              흡수력
-            </span>
-            으로 더 탄력있고 촘촘한 피부 관리를
-            <br /> 도와줍니다.
+            기능성 솔루션을 바른 후 마사지하면 <br />
+            <span className={style.commonTextBold}>높은 흡수력</span>
+            으로 더 탄력있고 촘촘한
+            <br /> 피부 관리를 도와줍니다.
           </span>
         </div>
       </section>
