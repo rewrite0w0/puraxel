@@ -467,8 +467,8 @@ export default function ModalComponent(props) {
             {/* 문의 내용 */}
             <Box className={style.ask_details_container}>
               <TextField
-                minRows={20}
-                maxRows={20}
+                minRows={16}
+                maxRows={16}
                 fullWidth={true}
                 multiline={true}
                 label={modalKr.modalAskContent}
