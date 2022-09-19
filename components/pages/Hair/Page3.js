@@ -58,7 +58,7 @@ const Explain = () => {
           <ClinicalTestImageParts title="정수리 탈모" />
           <div className={style.image__para}>
             퓨라셀 + 미스터케어 발모개선 앰플
-            <br className={style.br1440} /> 3개월 적용 후 사진
+            <br /> 3개월 적용 후 사진
           </div>
 
           <div className={style.image__container}>
@@ -81,8 +81,8 @@ const Explain = () => {
         >
           <ClinicalTestImageParts title="M자 탈모" />
           <div className={style.image__para}>
-            퓨라셀 + 미스터케어 발모개선 앰플
-            <br className={style.br1440} /> 3개월 적용 후 사진
+            퓨라셀 + 미스터케어 발모개선 앰플 <br />
+            3개월 적용 후 사진
           </div>
           <div className={style.image__container}>
             <div className={style.image__container__inner}>

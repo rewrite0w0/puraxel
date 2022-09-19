@@ -38,7 +38,7 @@
 }
 
 .title__container__title__para {
-  font-size: 3.2rem;
+  font-size: 2rem;
   letter-spacing: -0.02em;
   font-weight: 300;
   color: #b6bcc7;
@@ -46,7 +46,7 @@
 }
 
 .title__container__title__sub {
-  font-size: 5.6rem;
+  font-size: 4rem;
   letter-spacing: -0.02em;
   line-height: 124%;
   color: #55576f;
@@ -184,11 +184,13 @@
 }
 
 .paperContainer__left {
-  width: 88rem;
+  height: 40.2rem;
+  width: 69.6rem;
 }
 
 .paperContainer__right {
-  width: 51.8rem;
+  height: 40.2rem;
+  width: 42.1rem;
 }
 
 .paperContainer__inner {
@@ -242,8 +244,9 @@
 }
 
 .hair__graph__image__common {
-  height: 15.4rem;
-  width: 19.1rem;
+  height: 13.2rem;
+  width: 16.2rem;
+  margin-top: 2.6rem;
 }
 
 .right_ImageCommon {
@@ -275,8 +278,8 @@
   display: flex;
   flex-direction: column;
 
-  margin-left: 3rem;
-  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-top: 2.4rem;
 }
 
 .graph__container {
@@ -291,11 +294,12 @@
 }
 
 .image__container {
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 .image__container__inner {
   /* background: rgba(255, 255, 255, 0.5); */
+  margin-top: 1.2rem;
 }
 
 .image__para {
@@ -310,8 +314,8 @@
 }
 
 .image__common {
-  width: 38rem;
-  height: 13.6rem;
+  width: 30rem;
+  height: 11.2rem;
   margin-bottom: 0.8rem;
 }
 
@@ -328,461 +332,4 @@
 }
 .image__hair04 {
   content: url(../../../src/image/HAIR/page3/image4.png);
-}
-
-@media all and (max-width: 1439px) {
-  .container {
-  }
-
-  .container__inner {
-  }
-
-  .title__container {
-    margin-bottom: 2.4rem;
-  }
-
-  .title__container__light {
-  }
-
-  .title__container__title {
-  }
-
-  .title__container__title__para {
-    font-size: 1.6rem;
-  }
-
-  .title__container__title__sub {
-    font-size: 3.2rem;
-  }
-
-  .title__container__title__bold {
-  }
-
-  .title__testinfo__container {
-  }
-
-  .title__testdetail__container {
-  }
-
-  .topContainer {
-  }
-
-  .top__container__title {
-  }
-  .title__testTitle__margin__right {
-  }
-
-  .testTitle {
-    font-size: 1.2rem;
-  }
-
-  .testDetail {
-    font-size: 1.2rem;
-  }
-
-  .margin__bottom {
-    margin-bottom: 2rem;
-  }
-
-  .margin__bottom__graph__8 {
-    margin-bottom: 0.8rem;
-  }
-
-  .margin__bottom__graph__24 {
-    margin-bottom: 2.4rem;
-  }
-
-  .margin__top {
-    margin-top: 1.8rem;
-  }
-
-  .br1440 {
-    display: block;
-  }
-  .testDetailSub {
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 144%;
-
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" on, "lnum" on;
-
-    color: #a7abb6;
-  }
-
-  .paperContainer {
-    display: flex;
-
-    background: rgba(255, 255, 255, 0.7);
-    height: 46rem;
-    border: 1px solid #f2f3f7;
-    box-shadow: 0rem 20rem 60rem rgba(0, 0, 0, 0.03);
-    border-radius: 0.4rem;
-    align-self: flex-end;
-    padding-left: 4rem;
-    margin-right: 4rem;
-  }
-
-  .paperContainer__left {
-    height: 34.1rem;
-    width: 59.2rem;
-  }
-
-  .paperContainer__right {
-    height: 34.1rem;
-    width: 30.1rem;
-  }
-
-  .paperContainer__inner {
-  }
-
-  .paperContainer__inner__left {
-    width: 50%;
-  }
-  .paperContainer__inner__right {
-    width: 50%;
-  }
-
-  .paperExplainContainer {
-    display: flex;
-    align-items: flex-end;
-    padding-left: 4rem;
-  }
-
-  .titleExplain {
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 150%;
-
-    letter-spacing: -0.01em;
-
-    color: #7e818d;
-    margin-bottom: 1.2rem;
-  }
-
-  .paperInnerContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .paperInnerContainerTop {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 1.2rem;
-  }
-
-  .paperInnerContainerBottom {
-    display: flex;
-    margin-right: 20.8rem;
-  }
-
-  .image__hair__volume {
-  }
-
-  .image__hair__strong {
-  }
-
-  .hair__graph__image__common {
-    height: 9.4rem;
-    width: 11.2rem;
-    margin-top: 2rem;
-  }
-
-  .right_ImageCommon {
-    height: 16.9rem;
-    width: 22rem;
-  }
-
-  .right_SubExp {
-    font-size: 1.2rem;
-  }
-
-  .right_Exp {
-    font-size: 1.6rem;
-  }
-
-  .right_Container {
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 2rem;
-    margin-top: 2.4rem;
-  }
-
-  .graph__container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex__container {
-  }
-
-  .image__container {
-    margin-top: 0rem;
-  }
-
-  .image__container__inner {
-    margin-top: 0.5rem;
-  }
-
-  .image__para {
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 150%;
-
-    letter-spacing: -0.01em;
-
-    color: #4d5058;
-    margin-left: 1rem;
-  }
-
-  .image__common {
-    width: 25.2rem;
-    height: 9.6rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .image__hair01 {
-  }
-  .image__hair02 {
-  }
-
-  .image__hair03 {
-  }
-  .image__hair04 {
-  }
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-  }
-
-  .container__inner {
-  }
-
-  .title__container {
-    margin-bottom: 2.4rem;
-  }
-
-  .title__container__light {
-  }
-
-  .title__container__title {
-  }
-
-  .title__container__title__para {
-    font-size: 2rem;
-  }
-
-  .title__container__title__sub {
-    font-size: 4rem;
-  }
-
-  .title__container__title__bold {
-  }
-
-  .title__testinfo__container {
-  }
-
-  .title__testdetail__container {
-  }
-
-  .topContainer {
-  }
-
-  .top__container__title {
-  }
-  .title__testTitle__margin__right {
-  }
-
-  .testTitle {
-    font-size: 1.6rem;
-  }
-
-  .testDetail {
-  }
-
-  .margin__bottom {
-    margin-bottom: 2rem;
-  }
-
-  .margin__bottom__graph__8 {
-    margin-bottom: 0.8rem;
-  }
-
-  .margin__bottom__graph__24 {
-    margin-bottom: 2.4rem;
-  }
-
-  .margin__top {
-    margin-top: 1.8rem;
-  }
-
-  .br1440 {
-    display: block;
-  }
-  .testDetailSub {
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 144%;
-
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" on, "lnum" on;
-
-    color: #a7abb6;
-  }
-
-  .paperContainer {
-    display: flex;
-
-    background: rgba(255, 255, 255, 0.7);
-    height: 46rem;
-    border: 1px solid #f2f3f7;
-    box-shadow: 0rem 20rem 60rem rgba(0, 0, 0, 0.03);
-    border-radius: 0.4rem;
-    align-self: flex-end;
-    padding-left: 4rem;
-    /* margin-right: 4rem; */
-  }
-
-  .paperContainer__left {
-    height: 40.2rem;
-    width: 69.6rem;
-  }
-
-  .paperContainer__right {
-    height: 40.2rem;
-    width: 42.1rem;
-  }
-
-  .paperContainer__inner {
-  }
-
-  .paperContainer__inner__left {
-    width: 50%;
-  }
-  .paperContainer__inner__right {
-    width: 50%;
-  }
-
-  .paperExplainContainer {
-    display: flex;
-    align-items: flex-end;
-    padding-left: 4rem;
-  }
-
-  .titleExplain {
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 150%;
-
-    letter-spacing: -0.01em;
-
-    color: #7e818d;
-    margin-bottom: 1.2rem;
-  }
-
-  .paperInnerContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .paperInnerContainerTop {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 1.2rem;
-  }
-
-  .paperInnerContainerBottom {
-    display: flex;
-    margin-right: 20.8rem;
-  }
-
-  .image__hair__volume {
-  }
-
-  .image__hair__strong {
-  }
-
-  .hair__graph__image__common {
-    height: 13.2rem;
-    width: 16.2rem;
-    margin-top: 2.6rem;
-  }
-
-  .right_ImageCommon {
-    height: 16.9rem;
-    width: 22rem;
-  }
-
-  .right_SubExp {
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 150%;
-
-    letter-spacing: -0.01em;
-
-    color: #808591;
-  }
-
-  .right_Exp {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 140%;
-
-    letter-spacing: -0.01em;
-
-    color: #808591;
-  }
-
-  .right_Container {
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 2rem;
-    margin-top: 2.4rem;
-  }
-
-  .graph__container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex__container {
-  }
-
-  .image__container {
-    margin-top: 0rem;
-  }
-
-  .image__container__inner {
-    margin-top: 1.2rem;
-  }
-
-  .image__para {
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 150%;
-
-    letter-spacing: -0.01em;
-
-    color: #4d5058;
-    margin-left: 1rem;
-  }
-
-  .image__common {
-    width: 30rem;
-    height: 11.2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .image__hair01 {
-  }
-  .image__hair02 {
-  }
-
-  .image__hair03 {
-  }
-  .image__hair04 {
-  }
 }
