@@ -1,8 +1,8 @@
 .container {
   display: flex;
-  margin-left: 22.8rem;
-  margin-right: 22.4rem;
-  margin-top: 19.2rem;
+  margin-left: 18.8rem;
+  margin-right: 5.1rem;
+  margin-top: 16rem;
   flex-direction: column;
 }
 
@@ -31,8 +31,8 @@
 .CertiContainer {
   box-sizing: border-box;
 
+  height: 8.1rem;
   width: 19.5rem;
-  height: 8rem;
 
   /* width: calc(100vw / 9.84);
   height: calc(100vh / 13.5); */
@@ -148,8 +148,8 @@
 }
 
 .puraxel__certifications__container {
-  margin-top: 4.8rem;
-  margin-left: 42.5rem;
+  margin-top: 7rem;
+  margin-left: 16rem;
 }
 
 .puraxel__certifications__container__inner {
@@ -158,8 +158,8 @@
 }
 
 .lameditech__certifications__container {
-  margin-top: 7.3rem;
-  margin-left: 42.5rem;
+  margin-top: 7rem;
+  margin-left: 16rem;
 }
 
 .lameditech__certifications__container__inner {
@@ -167,168 +167,4 @@
   margin-top: 2.4rem;
   flex-wrap: wrap;
   /* gap: 0.8rem; */
-}
-
-@media all and (max-width: 1439px) {
-  .container {
-    margin-left: 12rem;
-    margin-right: 12.6rem;
-    margin-top: 8rem;
-  }
-
-  .ce {
-  }
-  .gmp {
-  }
-  .innobiz {
-  }
-  .iso {
-  }
-  .KBeauty {
-  }
-  .kibo {
-  }
-  .koita {
-  }
-
-  .CertiContainer {
-    width: 19.5rem;
-    height: 8rem;
-    margin-right: 0.8rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .certiContainerText {
-  }
-
-  .certiContainerDate {
-  }
-
-  .certiContainerDetail {
-  }
-
-  .headerTitle {
-  }
-
-  .headerTitleUpper {
-    font-size: 2rem;
-  }
-
-  .headerTitleLower {
-    font-size: 3.2rem;
-  }
-  .CertiTitleContainer {
-  }
-
-  .CertiTitleContainerTitle {
-  }
-
-  .CertiTitleContainerSubject {
-  }
-
-  .class1__container {
-  }
-
-  .class1__image {
-  }
-
-  .class1__explain {
-  }
-
-  .puraxel__certifications__container {
-    margin-top: 4.8rem;
-    margin-left: 10rem;
-  }
-
-  .puraxel__certifications__container__inner {
-    margin-top: 1.6rem;
-  }
-
-  .lameditech__certifications__container {
-    margin-top: 3.2rem;
-    margin-left: 10rem;
-  }
-
-  .lameditech__certifications__container__inner {
-    margin-top: 1.6rem;
-  }
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-    margin-left: 18.8rem;
-    margin-right: 5.1rem;
-    margin-top: 16rem;
-  }
-
-  .ce {
-  }
-  .gmp {
-  }
-  .innobiz {
-  }
-  .iso {
-  }
-  .KBeauty {
-  }
-  .kibo {
-  }
-  .koita {
-  }
-
-  .CertiContainer {
-    height: 8.1rem;
-    width: 19.5rem;
-  }
-
-  .certiContainerText {
-  }
-
-  .certiContainerDate {
-  }
-
-  .certiContainerDetail {
-  }
-
-  .headerTitle {
-  }
-
-  .headerTitleUpper {
-  }
-
-  .headerTitleLower {
-  }
-
-  .CertiTitleContainer {
-  }
-
-  .CertiTitleContainerTitle {
-  }
-
-  .CertiTitleContainerSubject {
-  }
-
-  .class1__container {
-  }
-
-  .class1__image {
-  }
-
-  .class1__explain {
-  }
-
-  .puraxel__certifications__container {
-    margin-top: 7rem;
-    margin-left: 16rem;
-  }
-
-  .puraxel__certifications__container__inner {
-  }
-
-  .lameditech__certifications__container {
-    margin-top: 7rem;
-    margin-left: 16rem;
-  }
-  .lameditech__certifications__container__inner {
-  }
 }
