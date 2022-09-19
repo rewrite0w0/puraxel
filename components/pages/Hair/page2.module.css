@@ -127,8 +127,8 @@
 }
 
 .image__common__spec {
-  height: calc(95%);
-  width: calc(95%);
+  height: 95%;
+  width: 95%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
