@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 100vw;
   padding-top: 2.4rem;
-  min-width: 1024px;
+  /* min-width: 1024px; */
 }
 
 .buttonStyle {

@@ -275,7 +275,7 @@ const PuraxelExplain = () => {
       >
         <div className={`${_.puraxel__explain__title}`}>
           <span>
-            프라셔널 레이저&nbsp;
+            프락셔널 레이저&nbsp;
             <span className={_.puraxel__explain__title__bold}>원리</span>
           </span>
         </div>

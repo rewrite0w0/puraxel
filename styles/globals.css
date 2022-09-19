@@ -131,6 +131,12 @@ a {
   margin: 0 auto;
 }
 
+#__next {
+  /* height: 1080px;
+  width: 1440px;
+  margin: 0 auto; */
+}
+
 @media all and (max-width: 1439px) {
   .wrap {
     min-width: 1024px;
