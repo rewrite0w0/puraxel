@@ -123,7 +123,7 @@
 
   .rightImage {
     width: 600px;
-    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
+    content: url(../../../src/image/HAIR/page1/hair_main.png);
     position: absolute;
     z-index: -10;
   }
@@ -168,7 +168,7 @@
 
   .rightImage {
     width: 410px;
-    content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
+    content: url(../../../src/image/HAIR/page1/hair_main.png);
     position: absolute;
     z-index: -10;
   }

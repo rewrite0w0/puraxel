@@ -20,7 +20,6 @@ const ExplainContainer = (props) => {
       <span
         className={_.explainContainerSpan}
         style={{
-          fontSize: props.size ? props.size : "1.62909rem",
           marginBottom: "1.6rem",
         }}
       >
