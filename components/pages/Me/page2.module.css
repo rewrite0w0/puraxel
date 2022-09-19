@@ -301,6 +301,8 @@
   top: calc(100vh / 1.38); */
 
   right: 3%;
+  height: 128px;
+  width: 240px;
 
   bottom: 12%;
 }
@@ -451,6 +453,10 @@
   }
 
   .head__tips {
+    height: 86px;
+    width: 160px;
+    bottom: 16%;
+    right: 5%;
   }
 }
 
