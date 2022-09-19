@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-left: 16.2rem;
+  margin-left: 11.2rem;
   justify-content: center;
 }
 
@@ -73,8 +73,8 @@
 }
 
 .product__image__container {
-  height: 800px;
-  width: 800px;
+  width: 630px;
+  height: 864px;
   display: flex;
   justify-content: center;
 }
@@ -110,12 +110,12 @@
 }
 
 .explainContainer {
-  margin-right: 22.7rem;
+  margin-right: 8rem;
 }
 
 .explainTitle {
   font-weight: 300;
-  font-size: 4.8rem;
+  font-size: 4rem;
   line-height: 128%;
 
   letter-spacing: -0.02em;
@@ -124,8 +124,8 @@
 }
 
 .explainPaperContainer {
-  width: 57.5rem;
-  height: 66.5rem;
+  width: 52.2rem;
+  height: 66.8rem;
 
   background: #ffffff;
 
@@ -136,11 +136,12 @@
 
 .explainContainerInner {
   display: flex;
-  margin: 4.8rem;
+  margin: 4.4rem 0rem 0rem 4.4rem;
 }
 
 .hrContainer {
   width: 1rem;
+  height: 0.8rem;
 }
 
 .commonHR {
@@ -172,7 +173,7 @@
   font-size: 1.6rem;
   line-height: 150%;
 
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.4rem;
 
   letter-spacing: -0.01em;
 
@@ -250,12 +251,12 @@
   flex-direction: column;
   align-self: flex-start;
   justify-content: flex-start;
-  width: calc(50%);
+  width: 50%;
 }
 
 .image__container {
-  width: calc(80rem);
-  height: calc(80rem);
+  width: 60rem;
+  height: 60rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,362 +276,4 @@
 
 .product__container {
   display: none;
-}
-
-/*  */
-
-@media all and (max-width: 1439px) {
-  .container {
-  }
-
-  .imageSelector {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-left: 9.6rem;
-    justify-content: center;
-  }
-
-  .imageCommon {
-    height: 6.4rem;
-    width: 6.4rem;
-  }
-
-  .header0 {
-  }
-
-  .header1 {
-  }
-
-  .header2 {
-  }
-
-  .header3 {
-  }
-
-  .header00 {
-  }
-
-  .header11 {
-  }
-
-  .header22 {
-  }
-
-  .header33 {
-  }
-
-  .image {
-    margin-right: 0rem;
-    /* margin-bottom: 12.6rem; */
-  }
-
-  .product__image__container {
-    width: 422px;
-    height: 620px;
-  }
-  .product__image__inner__container {
-  }
-  .promo0 {
-  }
-
-  .promo1 {
-  }
-
-  .promo2 {
-  }
-
-  .promo3 {
-  }
-
-  .explainContainer {
-    margin-right: 4rem;
-  }
-
-  .explainTitle {
-    font-size: 4rem;
-  }
-
-  .explainPaperContainer {
-    width: 38.2rem;
-    height: 36rem;
-  }
-
-  .explainContainerInner {
-    margin: 2.4rem 1.6rem 0rem 2.4rem;
-    display: flex;
-  }
-
-  .hrContainer {
-  }
-
-  .commonHR {
-  }
-
-  .frameContainer {
-    gap: 0.4;
-  }
-
-  .frameTitle {
-    font-size: 1.2rem;
-  }
-
-  .frameExp {
-    font-size: 1.4rem;
-  }
-
-  .optionButtonCommon {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 144%;
-
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" on, "lnum" on;
-
-    color: #55576f;
-
-    margin-right: 0.4rem;
-
-    margin-top: 0.4rem;
-    padding: 0.4rem 0rem;
-  }
-
-  .mainExplain {
-    font-size: 1.4rem;
-  }
-
-  .subExplain {
-    font-size: 1.4rem;
-  }
-
-  .product__etc__container {
-  }
-
-  .explain__container {
-    display: none;
-  }
-
-  .explain__container__inner {
-    /* display: none; */
-  }
-
-  .image__container {
-    width: calc(40rem);
-    height: calc(40rem);
-  }
-
-  .explainTitle__container {
-    margin-bottom: 2.4rem;
-  }
-
-  .product__info {
-    /* display: flex; */
-  }
-
-  .product__spec {
-    /* display: flex; */
-  }
-  .product__container {
-    display: flex;
-    flex-direction: column;
-
-    width: -moz-available;
-    width: -webkit-fill-available;
-  }
-
-  .product__button__container {
-    display: flex;
-    gap: 0.8rem;
-
-    border-radius: 4px;
-  }
-
-  .product__button__title {
-  }
-
-  .product__button__spec {
-  }
-
-  .product__common__container {
-    display: flex;
-
-    width: -moz-available;
-    width: -webkit-fill-available;
-  }
-
-  .product__button__common {
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 144%;
-    width: 81px;
-    height: 25px;
-    letter-spacing: -0.03em;
-    font-feature-settings: "tnum" on, "lnum" on;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    padding: 4px 8px;
-    margin-bottom: 2rem;
-  }
-
-  .product__button__common__state__on {
-    background-color: #55576f;
-    color: #ffffff;
-  }
-
-  .product__button__common__state__off {
-    background-color: #eceff4;
-    color: #b6bcc7;
-  }
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-  }
-
-  .imageSelector {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-left: 11.2rem;
-    justify-content: center;
-  }
-
-  .imageCommon {
-    height: 9.6rem;
-    width: 9.6rem;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .header0 {
-  }
-
-  .header1 {
-  }
-
-  .header2 {
-  }
-
-  .header3 {
-  }
-
-  .header00 {
-  }
-
-  .header11 {
-  }
-
-  .header22 {
-  }
-
-  .header33 {
-  }
-
-  .image {
-    margin-right: 0rem;
-  }
-
-  .product__image__container {
-    width: 630px;
-    height: 864px;
-  }
-  .product__image__inner__container {
-  }
-  .promo0 {
-  }
-
-  .promo1 {
-  }
-
-  .promo2 {
-  }
-
-  .promo3 {
-  }
-
-  .explainContainer {
-    margin-right: 8rem;
-  }
-
-  .explainTitle {
-    font-size: 4rem;
-  }
-
-  .explainPaperContainer {
-    width: 52.2rem;
-    height: 66.8rem;
-
-    background: #ffffff;
-
-    border: 1px solid #f2f3f7;
-    box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
-    border-radius: 0.4rem;
-  }
-
-  .explainContainerInner {
-    margin: 4.4rem 0rem 0rem 4.4rem;
-    display: flex;
-  }
-
-  .hrContainer {
-    width: 1rem;
-    height: 0.8rem;
-  }
-
-  .commonHR {
-    width: 0.8rem;
-    color: #cacfd8;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .frameContainer {
-  }
-
-  .frameTitle {
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 150%;
-
-    letter-spacing: -0.01em;
-
-    color: #b6bcc7;
-
-    margin-bottom: 0.8rem;
-  }
-
-  .frameExp {
-    font-size: 1.6rem;
-
-    margin-bottom: 2.4rem;
-  }
-
-  .optionButtonCommon {
-  }
-
-  .mainExplain {
-    font-size: 1.6rem;
-  }
-
-  .subExplain {
-    font-size: 1.2rem;
-  }
-
-  .explain__container {
-  }
-
-  .explain__container__inner {
-  }
-
-  .image__container {
-    width: calc(60rem);
-    height: calc(60rem);
-  }
-
-  .explainTitle__container {
-    margin-bottom: 2.4rem;
-  }
 }
