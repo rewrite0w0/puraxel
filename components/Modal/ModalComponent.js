@@ -278,129 +278,133 @@ export default function ModalComponent(props) {
               <span className={style.modalLeftTitle}>{modalKr.modalTitle}</span>
             </Box>
             {/* 2 */}
-            <Box>
-              <TextField
-                label={modalKr.modalName}
-                required
-                className={style.leftInputField}
-                margin={"dense"}
-                onChange={(e) => {
-                  setCustomerName(e.target.value);
-                }}
-                name="to_customerName"
-              />
-            </Box>
-            {/* 3 */}
-            <Box>
-              <TextField
-                label={modalKr.modalTel}
-                required
-                className={style.leftInputField}
-                margin={"dense"}
-                name="to_customerTel"
-                onChange={(e) => {
-                  setCustomerTel(e.target.value);
-                }}
-              />
-            </Box>
-            {/* 4 */}
-            <Box>
-              <TextField
-                label={modalKr.modalEmail}
-                required
-                className={style.leftInputField}
-                margin={"dense"}
-                onChange={(e) => {
-                  setCustomerMail(e.target.value);
-                }}
-                name="to_customerMail"
-              />
-            </Box>
-            {/* 5 */}
-            <Box>
-              <TextField
-                label={modalKr.modalCompanyName}
-                className={style.leftInputField}
-                margin={"dense"}
-                onChange={(e) => {
-                  setCustomerCompanyName(e.target.value);
-                }}
-                name="to_customerCompanyName"
-              />
-            </Box>
-            {/* 6 */}
-
-            <Box>
-              <span className={style.time__reciver__title}>
-                {modalKr.modalAvailableTime}
-              </span>
-              {/* timer */}
-              <Box className={style.timeReciverContainer}>
-                <Box>
-                  <FormControl>
-                    <Select
-                      value={startAvailableTime}
-                      onChange={handleStartTimeChange}
-                      name="to_startAvailableTime"
-                    >
-                      {timeZone.map((time) => (
-                        <MenuItem key={time} value={time}>
-                          {time < 10 ? `0${time} 시` : time + " 시"}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </Box>
-                <Box className={style.time_reciver_mid}>~</Box>
-                <Box>
-                  <FormControl>
-                    <Select
-                      value={endAvailableTime}
-                      onChange={handleEndTimeChange}
-                      name="to_endAvailableTime"
-                    >
-                      {timeZone
-                        .filter((time) => time >= startAvailableTime)
-                        .map((time) => (
-                          <MenuItem key={time} value={time}>
-                            {time < 10 ? `0${time} 시` : time + " 시"}
-                          </MenuItem>
-                        ))}
-                    </Select>
-                  </FormControl>
-                </Box>
+            <div className={style.modal__input__datas}>
+              <Box>
+                <TextField
+                  label={modalKr.modalName}
+                  required
+                  className={style.leftInputField}
+                  margin={"dense"}
+                  onChange={(e) => {
+                    setCustomerName(e.target.value);
+                  }}
+                  name="to_customerName"
+                />
               </Box>
-              {/*  */}
-              {/* 7 */}
-              <Box className={style.agree_box_container}>
-                <Checkbox
-                  onClick={privacyCollectAggre}
-                  icon={<CheckCircleOutlineIcon />}
-                  checkedIcon={<CheckCircleIcon />}
-                  sx={{
-                    "& .MuiSvgIcon-root": { background: "transparent" },
-                    color: "#A7ABB6",
-                    "&.Mui-checked": {
-                      color: "#4d5058",
-                    },
+              {/* 3 */}
+              <Box>
+                <TextField
+                  label={modalKr.modalTel}
+                  required
+                  className={style.leftInputField}
+                  margin={"dense"}
+                  name="to_customerTel"
+                  onChange={(e) => {
+                    setCustomerTel(e.target.value);
                   }}
                 />
-                <div className={style.rightPrivayCollectAgree}>
-                  <span className={style.privacy__collect__agree}>
-                    {modalKr.modalAgreeCheck}
-                  </span>
-                  &nbsp; &nbsp;
-                  <span
-                    onClick={handleOpenAgreeNoticeDialog}
-                    className={`${style.rightPrivacyCollectAgree} ${style.right_privacy_cursor}`}
-                  >
-                    {modalKr.modalAgreeDetail}
-                  </span>
+              </Box>
+              {/* 4 */}
+              <Box>
+                <TextField
+                  label={modalKr.modalEmail}
+                  required
+                  className={style.leftInputField}
+                  margin={"dense"}
+                  onChange={(e) => {
+                    setCustomerMail(e.target.value);
+                  }}
+                  name="to_customerMail"
+                />
+              </Box>
+              {/* 5 */}
+              <Box>
+                <TextField
+                  label={modalKr.modalCompanyName}
+                  className={style.leftInputField}
+                  margin={"dense"}
+                  onChange={(e) => {
+                    setCustomerCompanyName(e.target.value);
+                  }}
+                  name="to_customerCompanyName"
+                />
+              </Box>
+              {/* 6 */}
+
+              <Box>
+                <div className={style.time__reciver__container}>
+                  <div className={style.time__reciver__title}>
+                    {modalKr.modalAvailableTime}
+                  </div>
+                  {/* timer */}
+                  <Box className={style.timeReciverContainer}>
+                    <Box>
+                      <FormControl>
+                        <Select
+                          value={startAvailableTime}
+                          onChange={handleStartTimeChange}
+                          name="to_startAvailableTime"
+                        >
+                          {timeZone.map((time) => (
+                            <MenuItem key={time} value={time}>
+                              {time < 10 ? `0${time} 시` : time + " 시"}
+                            </MenuItem>
+                          ))}
+                        </Select>
+                      </FormControl>
+                    </Box>
+                    <Box className={style.time_reciver_mid}>~</Box>
+                    <Box>
+                      <FormControl>
+                        <Select
+                          value={endAvailableTime}
+                          onChange={handleEndTimeChange}
+                          name="to_endAvailableTime"
+                        >
+                          {timeZone
+                            .filter((time) => time >= startAvailableTime)
+                            .map((time) => (
+                              <MenuItem key={time} value={time}>
+                                {time < 10 ? `0${time} 시` : time + " 시"}
+                              </MenuItem>
+                            ))}
+                        </Select>
+                      </FormControl>
+                    </Box>
+                  </Box>
+
+                  {/*  */}
+                  {/* 7 */}
+                  <Box className={style.agree_box_container}>
+                    <Checkbox
+                      onClick={privacyCollectAggre}
+                      icon={<CheckCircleOutlineIcon />}
+                      checkedIcon={<CheckCircleIcon />}
+                      sx={{
+                        "& .MuiSvgIcon-root": { background: "transparent" },
+                        color: "#A7ABB6",
+                        "&.Mui-checked": {
+                          color: "#4d5058",
+                        },
+                      }}
+                    />
+                    <div className={style.rightPrivayCollectAgree}>
+                      <span className={style.privacy__collect__agree}>
+                        {modalKr.modalAgreeCheck}
+                      </span>
+                      &nbsp; &nbsp;
+                      <span
+                        onClick={handleOpenAgreeNoticeDialog}
+                        className={`${style.rightPrivacyCollectAgree} ${style.right_privacy_cursor}`}
+                      >
+                        {modalKr.modalAgreeDetail}
+                      </span>
+                    </div>
+                  </Box>
+                  {/*  */}
                 </div>
               </Box>
-              {/*  */}
-            </Box>
-
+            </div>
             {/*  */}
           </Box>
 
@@ -425,7 +429,7 @@ export default function ModalComponent(props) {
                 >
                   {modalKr.modalLangKr}
                 </Button>
-                <Button
+                {/* <Button
                   disableRipple
                   variant="text"
                   className={style.buttonStyle}
@@ -438,7 +442,7 @@ export default function ModalComponent(props) {
                   className={style.buttonStyle}
                 >
                   {modalKr.modalLangCh}
-                </Button>
+                </Button> */}
               </ButtonGroup>
 
               <div>
@@ -508,10 +512,10 @@ export default function ModalComponent(props) {
                     <ShopIC className={style.shopic} />
                     {modalKr.modalLinkToShoppingMall}
                   </span>
-                  <span className={style.helpButton}>
+                  {/* <span className={style.helpButton}>
                     <AskIcon className={style.askic} />
                     {modalKr.modalLinkToAsk}
-                  </span>
+                  </span> */}
                 </div>
                 {/* 문의 신청 */}
                 <section className={style.send__button__container}>

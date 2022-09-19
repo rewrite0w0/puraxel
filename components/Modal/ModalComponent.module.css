@@ -74,6 +74,16 @@
   align-items: center;
   color: #7e818d;
   font-size: 1.4rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.time__reciver__container > div > div > div > div > fieldset {
+  border: none;
+}
+
+.time__reciver__container > div > div > div > div > svg {
+  display: none;
 }
 
 .agree_box_container {
@@ -95,7 +105,7 @@
 }
 
 .buttonStyle {
-  color: var(--grayScale04);
+  /* color: var(--grayScale04); */
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
@@ -120,20 +130,26 @@
   color: var(--grayScale06);
 }
 
-.leftInputField {
-  border-bottom: 1px solid #dfe1e8;
-  margin-bottom: 2rem;
-}
-
 /* 좌측 텍스트필드 스타일 */
 
-.left > div > div > div > fieldset,
+.left > div > div > div > div > fieldset,
 .right > div > div > div > fieldset {
   border: 0;
   outline: 0;
 }
+
+.left > div > div > div > label,
+.right > div > div > label {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+
+  letter-spacing: -0.01em;
+}
+
 /* 별 */
-.left > div > div > label > span,
+
+.left > div > div > div > label > span,
 .right > div > div > label > span {
   color: #ed8d87;
 }
@@ -164,13 +180,16 @@
 
 /* 인풋 스타일*/
 
-.left > div > div > div > input,
-.right > div > div > div > input {
+.left > div > div > div > div > input,
+.right > div > div > div > input,
+.right > div > div > div > textarea {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 150%;
   letter-spacing: -0.01em;
   color: #4d5058;
+  border-bottom: 1px solid #dfe1e8;
+  margin-bottom: 2rem;
 }
 
 /* 우측 텍스트 필드 스타일 */
@@ -181,6 +200,10 @@
   line-height: 150%;
   letter-spacing: -0.01em;
   color: #4d5058;
+}
+
+.time__reciver__container {
+  margin-top: 48px;
 }
 
 .timeReciverContainer > div > div > div > div {
@@ -453,6 +476,7 @@
   letter-spacing: -0.01em;
 
   color: #7e818d;
+  margin-bottom: 12px;
 }
 
 .alert__need__more__custommer__data {
@@ -484,7 +508,7 @@
 }
 
 .right__top__container > div > button {
-  color: var(--grayScale04);
+  /* color: var(--grayScale04); */
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif;
@@ -529,7 +553,6 @@
   }
 
   .time_reciver_mid {
-    font-size: 1.4rem;
   }
 
   .agree_box_container {

@@ -93,7 +93,7 @@ export default function Navbars() {
               currentPage === "product" ? navStyle.underliner__gnb : undefined
             }`}
             style={{
-              color: currentPage === "product" ? "#55576F" : "#55576",
+              color: currentPage === "product" ? "#55576F" : "#55576F",
               opacity: currentPage === "product" ? "1" : "0.5",
             }}
             disableRipple

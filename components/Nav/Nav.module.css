@@ -61,6 +61,9 @@
 .gnbMenu:hover {
   opacity: 1;
 }
+.inner__nav__common > button:hover {
+  color: pink;
+}
 
 @keyframes opa {
   /* 0% {
@@ -347,6 +350,11 @@
   font-size: 2rem;
   line-height: 120%;
   letter-spacing: -0.03em;
+}
+
+.inner__nav__logos__container > .inner__nav__common > button:hover {
+  color: var(--primary01);
+  opacity: 0;
 }
 
 .header > .inner__nav__common > button {

@@ -32,13 +32,6 @@
     rgba(255, 255, 255, 0.3) 98.46%
   );
   /* position: absolute; */
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 * {
@@ -47,7 +40,8 @@
     "Malgun Gothic", sans-serif;
   scrollbar-width: none;
   word-break: keep-all;
-
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -62,14 +56,6 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-
-  /* 1rem = 10px 변환 */
-  /* font-size: 62.5%; */
-
   font-size: 62.5%;
 }
 
@@ -84,72 +70,6 @@ a {
 
 /* 위아래 스크롤 막아야하는뎅.... */
 
-.MuiTypography-root {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
-}
-
-/* .swiper-slide {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
-} */
-
-.MuiFormControl-root > * {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
-}
-
-.MuiButton-root:hover {
-  background: transparent;
-}
-
-.MuiOutlinedInput-input {
-  /* color: pink; */
-}
-
-.MuiOutlinedInput-notchedOutline {
-  border: 0;
-  outline: 0;
-}
-
-/* .muioutlinedinput-input::placeholder {
-  color: red;
-} */
-
-.MuiSelect-select {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 150%;
-
-  text-align: center;
-  letter-spacing: -0.01em;
-
-  color: #4d5058;
-}
-
-.MuiMenuItem-root {
-  transition: none;
-  padding: 0;
-  margin: 0;
-}
-
-.MuiMenuItem-root:hover {
-  transition: none;
-  background: transparent;
-}
-
-.css-6hp17o-MuiList-root-MuiMenu-list {
-  padding: 0;
-  margin: 0;
-}
-
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-  transition: none;
-}
-
 .customPagination {
   position: absolute;
   bottom: 0;
@@ -157,25 +77,6 @@ a {
   margin-right: 8rem;
   margin-left: 8rem;
   margin-bottom: 3.6rem;
-}
-
-@keyframes heartBeat {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
-
-img {
-  max-inline-size: 100%;
-  block-size: auto;
-  aspect-ratio: 2/1;
-  object-fit: cover;
-  object-position: top center;
-  max-width: 100%;
-  display: block;
 }
 
 .swiper-button-next::after,
@@ -204,85 +105,7 @@ img {
   visibility: hidden;
 }
 
-.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 150%;
-
-  letter-spacing: -0.01em;
-
-  color: #c7cad3;
-}
-
-.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root {
-  font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 132%;
-  letter-spacing: -0.02em;
-  color: #c7cad3;
-}
-
-.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 150%;
-  letter-spacing: -0.01em;
-}
-
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 150%;
-
-  letter-spacing: -0.01em;
-
-  color: #4d5058;
-}
-
-.MuiFormLabel-asterisk {
-  color: #ed8d87;
-}
-
-.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 150%;
-
-  letter-spacing: -0.01em;
-
-  color: #4d5058;
-}
-
-/* .css-wb57ya-MuiFormControl-root-MuiTextField-root
-  > .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 128%;
-  letter-spacing: -0.01em;
-  color: #c7cad3;
-}
-
-.css-qb6sbg-MuiFormControl-root-MuiTextField-root
-  > .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 150%;
-
-  letter-spacing: -0.01em;
-
-  color: #c7cad3;
-} */
-
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
-}
-
 @media all and (max-width: 1023px) {
-  * {
-    visibility: hidden;
-  }
 }
 
 @media all and (max-width: 1439px) {

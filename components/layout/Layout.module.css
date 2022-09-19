@@ -19,7 +19,7 @@
 
 .layoutHeader {
   z-index: 10;
-  position: absolute;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
