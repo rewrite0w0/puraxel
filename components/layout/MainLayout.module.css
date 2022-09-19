@@ -2,7 +2,7 @@
   background: url(../../src/image/main/main_bg.svg);
   background-size: cover;
   background-position: 50%;
-  height: 100vh;
+  height: 100%;
 }
 
 .footerContainer {
