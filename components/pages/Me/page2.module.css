@@ -8,20 +8,16 @@
 
 .leftGridContainer {
   display: flex;
-  /* grid-template-columns: 2fr 0.4fr; */
 
-  width: 65.4rem;
-  height: 64.3rem;
+  width: 53.6rem;
+  height: 58.5rem;
 
+  margin-left: 16rem;
   background: var(--white);
 
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 2rem 6rem rgba(0, 0, 0, 0.03);
   border-radius: 0.4rem;
-  margin-left: 22.8rem;
-
-  /* height: calc(100vh / 1.64);
-  width: calc(100vw / 2.93); */
 }
 
 .leftPaper {
@@ -37,7 +33,7 @@
 }
 
 .leftPaperTopFirst {
-  font-size: 3.2rem;
+  font-size: 2rem;
   color: var(--grayScale05);
 
   font-weight: 300;
@@ -50,12 +46,14 @@
 .leftPaperTopSecond {
   display: flex;
   flex-wrap: wrap;
-  font-size: 4.8rem;
+
   width: max-content;
   color: var(--primary01);
   letter-spacing: -0.02em;
   line-height: 132%;
-  margin-bottom: 5.6rem;
+  font-size: 3.2rem;
+
+  margin-bottom: 3.8rem;
 }
 
 .leftPaperTopSecondPoint {
@@ -91,8 +89,8 @@
     linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
 
   position: fixed;
-  width: 5.8rem;
-  height: 5.8rem;
+  width: 4.8rem;
+  height: 4.8rem;
   content: url(../../../src/image/ME/ic_functionPlus.svg);
 
   z-index: 1;
@@ -115,6 +113,7 @@
 }
 
 .laserImageContainer {
+  margin-left: 1.6rem;
 }
 
 .laserInactiveImage {
@@ -134,8 +133,8 @@
 }
 
 .imageContainer {
-  height: 27.6rem;
-  width: 27.6rem;
+  height: 22rem;
+  width: 22rem;
 
   border-radius: 0.8rem;
   display: flex;
@@ -189,7 +188,7 @@
 }
 
 .explain__para_sub {
-  margin-bottom: 3rem;
+  margin-bottom: 1.6rem;
 }
 
 .sub__explain__para__margin__right {
@@ -214,13 +213,13 @@
   line-height: 140%;
 }
 .bookmark__container {
-  margin-left: 2.8rem;
+  /* margin-left: 2.8rem; */
   /* margin-left: calc(100vw / 68.5); */
 }
 
 .bookmark {
-  width: 12.4rem;
-  height: 6.3rem;
+  width: 11rem;
+  height: 6rem;
   display: flex;
   flex-direction: column;
 
@@ -250,7 +249,7 @@
 }
 
 .bookmarkUpperPara {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 150%;
   font-weight: 800;
 }
@@ -275,14 +274,14 @@
 }
 
 .laserImageRightContainer {
-  background-image: url(../../../src/image/ME/page2/las.png);
+  background-image: url(../../../src/image/ME/page2/1440las.png);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .galvanicImageRightContainer {
-  background-image: url(../../../src/image/ME/page2/gal.png);
+  background-image: url(../../../src/image/ME/page2/1440gal.png);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -293,309 +292,12 @@
 }
 
 .head__tips {
-  /* height: calc(100vh / 7.95);
-  width: calc(100vw / 6.55); */
   content: url(../../../src/image/ME/page2/tipset.png);
   position: absolute;
-  /* left: calc(100vw / 1.24);
-  top: calc(100vh / 1.38); */
 
   right: 3%;
   height: 128px;
   width: 240px;
 
   bottom: 12%;
-}
-
-@media all and (max-width: 1439px) {
-  .page2Container {
-    grid-template-columns: 1fr 1.2fr;
-  }
-
-  .leftGridContainer {
-    width: 38.2rem;
-    height: 45.1rem;
-    margin-left: 12rem;
-  }
-
-  .leftPaper {
-    margin-left: 3.2rem;
-  }
-
-  .leftPaperTop {
-    margin-top: 3.2rem;
-    height: 7rem;
-  }
-
-  .leftPaperTopFirst {
-    font-size: 1.6rem;
-  }
-
-  .leftPaperTopSecond {
-    font-size: 2.4rem;
-
-    margin-bottom: 2rem;
-  }
-
-  .leftPaperTopSecondPoint {
-  }
-
-  .leftPaperMiddle {
-  }
-
-  .leftPaperBottom {
-    margin-top: 2rem;
-  }
-
-  .plusImage {
-    width: 3.2rem;
-    height: 3.2rem;
-    margin-right: -0.6rem;
-  }
-
-  .paper__image__container {
-  }
-
-  .laserImage {
-  }
-
-  .laserImageContainer {
-  }
-
-  .laserInactiveImage {
-  }
-
-  .galvanicImageContainer {
-    margin-left: 0.8rem;
-  }
-
-  .galvanicImage {
-  }
-
-  .galvanicInactiveImage {
-  }
-
-  .imageContainer {
-    height: 14rem;
-    width: 14rem;
-  }
-
-  .indicator {
-  }
-
-  .indicatorAtom {
-  }
-
-  .explainTitle {
-    font-size: 2rem;
-  }
-
-  .explainPara {
-  }
-
-  .galavnic__br {
-    display: none;
-  }
-
-  .galavnic__br {
-    display: block;
-  }
-
-  .explain__title__sub {
-  }
-
-  .explain__para_sub {
-    margin-bottom: 0.8rem;
-  }
-
-  .sub__explain__para__margin__right {
-  }
-
-  .sub__explain__para {
-  }
-
-  .sub__explain__para__bold {
-  }
-
-  .bookmark__container {
-    visibility: hidden;
-  }
-
-  .bookmark {
-  }
-
-  .bookmark:hover {
-  }
-
-  .bookmarkParaContainer {
-  }
-
-  .bookmarkUpperPara {
-    font-size: 1.2rem;
-  }
-
-  .bookmarkLowerPara {
-    font-size: 1.2rem;
-  }
-
-  .rightGridContainer {
-  }
-
-  .laserImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1024las.png);
-  }
-
-  .galvanicImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1024gal.png);
-  }
-
-  .right__container {
-  }
-
-  .head__tips {
-    height: 86px;
-    width: 160px;
-    bottom: 16%;
-    right: 5%;
-  }
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .leftGridContainer {
-    width: 53.6rem;
-    height: 58.5rem;
-
-    margin-left: 16rem;
-  }
-
-  .leftPaper {
-    display: flex;
-    flex-direction: column;
-    margin-left: 4rem;
-  }
-
-  .leftPaperTop {
-    margin-top: 4rem;
-  }
-
-  .leftPaperTopFirst {
-    font-size: 2rem;
-  }
-
-  .leftPaperTopSecond {
-    font-size: 3.2rem;
-
-    margin-bottom: 3.8rem;
-  }
-
-  .leftPaperTopSecondPoint {
-  }
-
-  .leftPaperMiddle {
-  }
-
-  .leftPaperBottom {
-    margin-top: 3rem;
-  }
-
-  .plusImage {
-    width: 4.8rem;
-    height: 4.8rem;
-  }
-
-  .paper__image__container {
-  }
-
-  .laserImage {
-  }
-
-  .laserImageContainer {
-  }
-
-  .laserInactiveImage {
-  }
-
-  .galvanicImageContainer {
-    margin-left: 1.6rem;
-  }
-
-  .galvanicImage {
-  }
-
-  .galvanicInactiveImage {
-  }
-
-  .imageContainer {
-    height: 22rem;
-    width: 22rem;
-  }
-
-  .indicator {
-  }
-
-  .indicatorAtom {
-  }
-
-  .explainTitle {
-  }
-
-  .explainPara {
-  }
-
-  .explain__title__sub {
-  }
-
-  .explain__para_sub {
-    margin-bottom: 1.6rem;
-  }
-
-  .sub__explain__para__margin__right {
-  }
-
-  .sub__explain__para {
-  }
-
-  .sub__explain__para__bold {
-  }
-
-  .bookmark__container {
-  }
-
-  .bookmark {
-    width: 11rem;
-    height: 6rem;
-  }
-
-  .bookmark:hover {
-  }
-
-  .bookmarkParaContainer {
-  }
-
-  .bookmarkUpperPara {
-    font-size: 1.2rem;
-  }
-
-  .bookmarkLowerPara {
-    font-size: 1.2rem;
-  }
-
-  .rightGridContainer {
-  }
-
-  .laserImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440las.png);
-    background-size: cover;
-  }
-
-  .galvanicImageRightContainer {
-    background-image: url(../../../src/image/ME/page2/1440gal.png);
-    background-size: cover;
-  }
-
-  .right__container {
-  }
-
-  .head__tips {
-  }
 }
