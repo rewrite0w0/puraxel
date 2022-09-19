@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh);
+  height: 100%;
   /* margin-top: 16rem;
   margin-left: 31rem; */
   display: flex;

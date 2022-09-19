@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh);
+  height: 100%;
   /* margin-top: 16rem;
   margin-left: 31rem; */
   display: flex;
@@ -248,7 +248,7 @@
 
 @media all and (min-width: 1440px) and (max-width: 1919px) {
   .container {
-    /* height: calc(100vh);
+    /* height: 100%;
     margin-left: 14.3rem; */
   }
 
