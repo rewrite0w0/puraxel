@@ -10,7 +10,8 @@ export default function Page4() {
           </div>
 
           <div className={_.main_title}>
-            PURAXEL Hair가 자신 있는 일상을 찾아 드립니다.
+            PURAXEL Hair가
+            <br /> 자신 있는 일상을 찾아 드립니다.
           </div>
         </article>
       </section>
