@@ -88,7 +88,6 @@
 
 .agree_box_container {
   display: flex;
-  /* margin-top: 24rem; */
   position: fixed;
   bottom: 0;
   padding-bottom: 4.2rem;
