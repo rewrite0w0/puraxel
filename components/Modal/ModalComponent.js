@@ -186,12 +186,12 @@ export default function ModalComponent(props) {
     //       // text: "Testing some Mailgun awesomness!",
     //       // html: "<h1>Testing some Mailgun awesomness!</h1>",
     //       text: `
-    //       성명: ${customerName}\n
-    //       연락처: ${customerTel}]\n
-    //       메일: ${customerMail}\n
-    //       상호명: ${customerCompanyName}\n
-    //       연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이\n
-    //       문의제목: ${customerTitle}\n
+    //       성명: ${customerName}
+    //       연락처: ${customerTel}]
+    //       메일: ${customerMail}
+    //       상호명: ${customerCompanyName}
+    //       연락가능시간: ${startAvailableTime} 시 부터 ${endAvailableTime} 시 사이
+    //       문의제목: ${customerTitle}
     //       문의내용: ${customerContent}
     //       `,
     //     })
@@ -613,11 +613,27 @@ export default function ModalComponent(props) {
         open={agreeNoticeDialogOpen}
         onClose={handleCloseAgreeNoticeDialog}
       >
-        <DialogTitle>{modalKr.modalDetailTitle}</DialogTitle>
+        <DialogTitle sx={{ fontSize: "50px" }}>
+          {modalKr.modalDetailTitle}
+        </DialogTitle>
         <DialogContent
-        // dividers="scroll"
+          sx={{ fontSize: "25px" }}
+          // dividers="scroll"
         >
-          {modalKr.modalDetailContent}
+          {/* {modalKr.modalDetailContent} */}
+          <p>당사는 아래와 같이 개인정보를 수집·이용하고자 합니다.</p>
+          <p>
+            내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오. 본 방침은
+            2022년 1월 1일부터 시행됩니다.
+          </p>
+          <p> - 수집 항목 : 이름, 전화번호, 상호명, 이메일</p>
+          <p> - 수집 목적 : 고객의 제품문의 사항 대응</p>
+          <p>- 보유 기간 : 1년</p>
+          <p>
+            * 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다.
+            그러나 동의를 거부할 경우 문의 사항에 대해 원활한 고객 대응에 제한을
+            받을 수 있습니다.
+          </p>
         </DialogContent>
       </Dialog>
 
