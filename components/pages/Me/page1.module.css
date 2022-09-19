@@ -8,7 +8,7 @@
   width: calc(50%);
   flex-direction: column;
   justify-content: center;
-  margin-left: 22.8rem;
+  margin-left: 18.8rem;
 }
 
 .rightContainer {
@@ -20,26 +20,26 @@
 
 .margin__bottom {
   margin-bottom: 28rem;
+  display: none;
 }
 
 .subTitle {
   font-weight: 300;
-  font-size: 4.8rem;
+  font-size: 4rem;
+  margin-bottom: 0.8rem;
   letter-spacing: -0.02em;
   line-height: 128%;
   color: var(--primary01);
-
-  margin-bottom: 2.4rem;
 }
 
 .title {
   font-weight: 300;
-  font-size: 9.6rem;
+  font-size: 8.4rem;
   letter-spacing: -0.02em;
   line-height: 120%;
   color: var(--primary01);
 
-  margin-bottom: 8rem;
+  margin-bottom: 4.8rem;
 }
 
 .mainExplain {
@@ -85,9 +85,9 @@
 
 .meImage {
   content: url(../../../src/image/ME/page1/puraxel_me_me_me.png);
-  display: flex;
+  /* display: flex; */
 
-  width: 56.4rem;
+  width: 454px;
 }
 
 .explain_sub {
@@ -183,68 +183,5 @@
     top: calc(100vh / 1.19); */
     /* left: 1171px;
     top: 843px; */
-  }
-}
-
-@media all and (max-width: 1439px) {
-  .container {
-  }
-
-  .leftContainer {
-    margin-left: 17.6rem;
-  }
-
-  .rightContainer {
-    margin-right: 11rem;
-  }
-
-  .margin__bottom {
-    display: none;
-  }
-
-  .subTitle {
-    font-size: 2.4rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .title {
-    font-size: 5.6rem;
-    margin-bottom: 4rem;
-  }
-
-  .mainExplain {
-    font-size: 2.4rem;
-  }
-
-  .mainExplainSub {
-    font-size: 2.4rem;
-
-    margin-bottom: 1.2rem;
-  }
-
-  .mainExplainBold {
-    font-size: 2.4rem;
-  }
-
-  .subExplain {
-    font-size: 2.4rem;
-  }
-
-  .meImage {
-    /* height: calc(100vh / 1.36);
-    width: calc(100vw / 3.36); */
-    width: 304px;
-    z-index: -1;
-  }
-
-  .explain_sub {
-    font-size: 2.4rem;
-  }
-
-  .me__caption {
-    /* left: calc(100vw / 1.27);
-    top: calc(100vh / 1.25); */
-    /* left: 806px;
-    top: 575px; */
   }
 }
