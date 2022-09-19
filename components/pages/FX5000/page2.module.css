@@ -1,12 +1,15 @@
 .container {
   display: flex;
   height: 100%;
+  width: 100%;
+
   align-items: center;
   justify-content: center;
 }
 
 .leftContainer {
-  margin-right: 22rem;
+  margin-left: 11.8rem;
+  margin-right: 7.6rem;
 }
 
 .paperLeftContainer {
@@ -14,9 +17,9 @@
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
-  padding-left: 4rem;
-  padding-bottom: 4rem;
-  padding-right: 4rem;
+  padding-left: 3.6rem;
+  padding-bottom: 3.6rem;
+  padding-right: 3.6rem;
 }
 
 .textContainer {
@@ -27,9 +30,10 @@
 .subTitle {
   font-style: normal;
   font-weight: 300;
-  font-size: 3.2rem;
+
   line-height: 132%;
-  margin-top: 4rem;
+  font-size: 2.4rem;
+  margin-top: 3.6rem;
   letter-spacing: -0.02em;
 
   color: var(--grayScale05);
@@ -37,7 +41,7 @@
 
 .title {
   font-weight: 300;
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   line-height: 128%;
 
   letter-spacing: -0.02em;
@@ -221,67 +225,4 @@
   justify-content: center;
   align-items: center;
   margin-left: 0.8rem;
-}
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .leftContainer {
-    margin-right: 7.6rem;
-  }
-  .paperLeftContainer {
-    padding-left: 3.6rem;
-    padding-bottom: 3.6rem;
-    padding-right: 3.6rem;
-  }
-
-  .subTitle {
-    font-size: 2.4rem;
-    margin-top: 3.6rem;
-  }
-  .title {
-    font-size: 3.2rem;
-  }
-  .instruction {
-    margin-top: 0.8rem;
-  }
-  .leftImageCommon {
-    width: 22rem;
-    height: 40.8rem;
-  }
-  .rightImageCommon {
-    width: 10.4rem;
-    height: 20rem;
-  }
-}
-
-@media all and (max-width: 1439px) {
-  .leftContainer {
-    margin-right: 2.9rem;
-  }
-  .paperLeftContainer {
-    padding-left: 2.8rem;
-    padding-bottom: 2.8rem;
-    padding-right: 2.8rem;
-  }
-
-  .subTitle {
-    font-size: 2rem;
-    margin-top: 2.8rem;
-  }
-  .title {
-    font-size: 3.2rem;
-  }
-  .instruction {
-    margin-top: 0.8rem;
-  }
-  .leftImageCommon {
-    width: 16.8rem;
-    height: 32rem;
-  }
-  .rightImageCommon {
-    width: 8rem;
-    height: 15.6rem;
-  }
-
-  .explainContainerSpan {
-    font-size: 1.4rem;
-  }
 }
