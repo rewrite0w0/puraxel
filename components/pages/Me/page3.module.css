@@ -111,12 +111,9 @@
   border: 1px solid #f2f3f7;
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
-  width: 130rem;
-  height: 53.6rem;
+  width: 115rem;
+  height: 46rem;
   padding-left: 4rem;
-
-  /* width: calc(100vw / 1.48);
-  height: calc(100vh / 2.05); */
 }
 
 .paper__container__inner {
@@ -140,10 +137,11 @@
 }
 
 .imageContainer {
-  width: 38rem;
-  height: 13.6rem;
+  width: 30rem;
+  height: 11.2rem;
+  margin-top: 1.6rem;
   background: rgba(255, 255, 255, 0.5);
-  margin-top: 2rem;
+
   border-radius: 0.4rem;
   border: 1px solid #f2f3f7;
   /* width: calc(100vw / 5.05);
