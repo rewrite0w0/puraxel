@@ -2,7 +2,7 @@
   display: flex;
   /* width: 100vw; */
   height: 100vh;
-  min-height: 1080px;
+  /* min-height: 1080px; */
   justify-content: center;
   align-items: center;
   padding-right: calc(22.8rem - 1vw);
