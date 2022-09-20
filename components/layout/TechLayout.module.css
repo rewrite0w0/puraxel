@@ -1,6 +1,7 @@
 .TechContainer {
-  background: url(../../src/image/PURATECH/productBg.png);
+  /* background: url(../../src/image/PURATECH/productBg.png);
   background-size: cover;
+  background-position: 50%; */
   height: 100%;
 }
 

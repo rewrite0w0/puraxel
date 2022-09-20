@@ -1,7 +1,8 @@
 .meContainer {
   height: 100%;
-  background: url(../../src/image/ME/productBg_me.png);
+  /* background: url(../../src/image/ME/productBg_me.png);
   background-size: cover;
+  background-position: 50%; */
 }
 
 .footerContainer {
@@ -9,15 +10,16 @@
   flex-direction: row;
   z-index: 10;
 
-  position: fixed;
-
-  bottom: 0;
   width: -moz-available;
   width: -webkit-fill-available;
 
-  margin-right: 8rem;
+  position: fixed;
+
+  /* bottom: 0; */
+  top: 985px;
+  /* margin-right: 8rem; */
   margin-left: 8rem;
-  margin-bottom: 4.8rem;
+  /* margin-bottom: 4.8rem; */
   justify-content: space-between;
 }
 

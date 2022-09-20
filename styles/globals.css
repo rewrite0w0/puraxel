@@ -31,7 +31,7 @@
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", sans-serif !important;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   word-break: break-all;
 
   box-sizing: border-box;
@@ -42,8 +42,8 @@
 }
 
 *::selection {
-  color: yellow;
-  background-color: blue;
+  /* color: yellow;
+  background-color: blue; */
 }
 
 html,
@@ -105,11 +105,17 @@ a {
   /* margin: 0 auto; */
 }
 
-#__next {
+@media all and (min-width: 1440px) and (min-height: 1080px) {
+  * {
+    scrollbar-width: none;
+  }
+}
+
+/* #__next {
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-}
+} */
 
 /* @media all and (max-width: 1439px) {
   .wrap {
