@@ -43,6 +43,7 @@
   font-weight: 300;
   color: #b6bcc7;
   line-height: 132%;
+  margin-bottom: 1.3rem;
 }
 
 .title__container__title__sub {
@@ -120,7 +121,7 @@
   font-weight: 500;
   font-size: 1.6rem;
   letter-spacing: -0.01em;
-  color: var(--grayScale06);
+  color: #a0a5b1;
   line-height: 150%;
 }
 

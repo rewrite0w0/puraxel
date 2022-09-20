@@ -6,7 +6,6 @@
 }
 
 .leftContainer {
-  margin-right: 8rem;
   width: 50%;
   margin-left: 18.8rem;
 }
@@ -19,6 +18,8 @@
   padding-left: 3.6rem;
   padding-bottom: 3.6rem;
   padding-right: 3.6rem;
+  width: 520px;
+  height: 630px;
 }
 
 .textContainer {
@@ -31,11 +32,11 @@
   font-weight: 300;
   font-size: 2.4rem;
   margin-top: 3.6rem;
-  line-height: 132%;
+  line-height: 140%;
 
   letter-spacing: -0.02em;
 
-  color: var(--grayScale05);
+  color: #b6bcc7;
 }
 
 .title {
@@ -53,16 +54,18 @@
 }
 
 .instruction {
-  font-style: normal;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 150%;
 
+  /* or 21px */
   letter-spacing: -0.01em;
 
-  color: #7e818d;
+  /* grayscale/05 */
+  color: #b6bcc7;
 
   margin-top: 0.8rem;
+  margin-bottom: 2.4rem;
 }
 
 .imageContainer {

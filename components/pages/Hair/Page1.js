@@ -5,10 +5,10 @@ export default function Page0() {
     <main className={_.container}>
       <section className={_.leftContainer}>
         <div className={_.subTitle}>
-          레이저 기술로 극복하는 탈모 증상,
+          레이저 기술을 이용한 두피 관리,
           <br /> 자신있는 삶의 회복
         </div>
-        <div className={_.title}>PURAXEL HAIR</div>
+        <div className={_.title}>PURAXEL Hair</div>
 
         <div className={_.explain}>
           프락셔널 레이저는 기능성 앰플의 두피 흡수를 도와

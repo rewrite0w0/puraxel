@@ -189,13 +189,19 @@
 }
 
 .commonText {
-  font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 150%;
 
+  /* or 21px */
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  /* grayscale/07 */
+  color: #808591;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .commonTextBold {
@@ -227,7 +233,7 @@
 
 .explainContainerBold {
   font-weight: 500;
-  color: var(--grayScale07);
+  color: #808591;
 }
 
 .safefeature__container {
@@ -311,9 +317,26 @@
 }
 
 .parts__gray__button {
-  color: #4d5058;
+  color: #808591;
   background: #f2f3f7;
   margin-right: 0.8rem;
+}
+
+.explain__normal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  /* identical to box height, or 24px */
+  letter-spacing: -0.01em;
+
+  /* grayscale/07 */
+  color: #808591;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .explain__bold {

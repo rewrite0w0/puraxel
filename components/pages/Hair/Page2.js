@@ -87,7 +87,11 @@ export default function Page2() {
               <span className={_.titleBold}>4가지 기능</span>을 제공합니다.
             </span>
             <br />
-            <span className={_.instruction}>궁금한 기능을 클릭해보세요</span>
+            <span className={_.instruction}>
+              레이저 조사 후, 초음파, 갈바닉, 쿨링 등의 모드를 함께 사용하시면
+              <br />
+              효과를 높일 수 있습니다.
+            </span>
             <br />
           </span>
           {/*  */}

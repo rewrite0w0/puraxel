@@ -122,16 +122,18 @@ const LedModeImage = () => {
 
 const Explain1 = () => {
   return (
-    <span>
-      응급 시 제품을 놓을 경우, 센서에 의해 &nbsp;
-      <span className={style.explain__bold}>즉시 동작이 멈춥니다.</span>
+    <span className={style.explain__normal}>
+      응급 시 제품을 놓을 경우,&nbsp;
+      <span className={style.explain__bold}>
+        센서에 의해 즉시 동작이 멈춥니다.
+      </span>
     </span>
   );
 };
 
 const Explain2 = () => {
   return (
-    <span>
+    <span className={style.explain__normal}>
       접촉 센서에 의해&nbsp;
       <span className={style.explain__bold}>
         레이저 헤드가 두피에 닿아야만 작동
@@ -143,7 +145,7 @@ const Explain2 = () => {
 
 const Explain3 = () => {
   return (
-    <span>
+    <span className={style.explain__normal}>
       적외선 센서에 의해&nbsp;
       <span className={style.explain__bold}>손잡이 파지 시에만 작동</span>
       합니다.
@@ -153,7 +155,7 @@ const Explain3 = () => {
 
 const Explain4 = () => {
   return (
-    <span>
+    <span className={style.explain__normal}>
       조사&nbsp;
       <span className={style.explain__bold}>버튼을 누를 때만 레이저 조사</span>
       됩니다.
@@ -206,7 +208,7 @@ export function Laser() {
           <span className={style.laserTitle}>레이저 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#두피 속 채널 생성</span>{" "}
-            <span>#모공 관리</span>
+            <span className={style.explain__normal}>#모공 관리</span>
           </span>
         </section>
 
@@ -333,7 +335,7 @@ export function Sonic() {
 
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#영양 흡수</span>{" "}
-            <span>#영양 공급</span>
+            <span className={style.explain__normal}>#영양 공급</span>
           </span>
         </section>
 
@@ -379,7 +381,9 @@ export function Galvanic() {
           <span className={style.laserTitle}>갈바닉 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#딥 클렌징</span>{" "}
-            <span>#피부 속 영양분 침투 촉진</span>
+            <span className={style.explain__normal}>
+              #피부 속 영양분 침투 촉진
+            </span>
           </span>
         </section>
 
@@ -433,7 +437,7 @@ export function Cooling() {
           <span className={style.laserTitle}>쿨링 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#피부 진정</span>{" "}
-            <span>#모공 축소</span>
+            <span className={style.explain__normal}>#모공 축소</span>
           </span>
         </section>
 

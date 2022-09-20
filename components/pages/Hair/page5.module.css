@@ -146,7 +146,8 @@
 
 .commonHR {
   width: 0.8rem;
-  color: #c7cad3;
+  height: 0.1rem;
+  background-color: #c7cad3;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
