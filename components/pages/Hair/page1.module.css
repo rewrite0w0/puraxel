@@ -1,6 +1,6 @@
 .container {
-  padding-left: 22.7rem;
-  /* padding-right: 5rem; */
+  padding-left: 18.8rem;
+  padding-right: 6.7rem;
   height: 100%;
   display: flex;
   /* justify-content: space-between; */
@@ -13,11 +13,12 @@
   justify-content: center;
   /* height: 100%;
   width: 50%; */
+  width: 100vw;
 }
 
 .subTitle {
   font-weight: 300;
-  font-size: 4.8rem;
+  font-size: 4rem;
   line-height: 128%;
   letter-spacing: -0.02em;
   color: #55576f;
@@ -25,11 +26,11 @@
 
 .title {
   font-weight: 300;
-  font-size: 9.6rem;
+  font-size: 7.4rem;
+  margin-bottom: 4.8rem;
   line-height: 120%;
   letter-spacing: -0.02em;
   color: #55576f;
-  margin-bottom: 8rem;
 }
 
 .expTop {
@@ -59,7 +60,7 @@
 
 .explain {
   font-weight: 300;
-  font-size: 3.8rem;
+  font-size: 4rem;
   line-height: 128%;
 
   letter-spacing: -0.02em;
@@ -71,15 +72,15 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  height: 100%;
-  width: 50%;
+  align-items: center;
+  width: 0;
 }
 
 .rightImage {
-  /* height: calc(100vh / 1.1);
-  width: calc(100vw / 2); */
-  width: 900px;
-  content: url(../../../src/image/HAIR/page1/1440_hair_main.png);
+  width: 600px;
+  content: url(../../../src/image/HAIR/page1/hair_main.png);
+  position: absolute;
+  z-index: -10;
 }
 
 .hair__caption {
@@ -97,90 +98,4 @@
   top: 901px; */
   left: 82%;
   top: 82%;
-}
-
-@media all and (min-width: 1440px) and (max-width: 1919px) {
-  .container {
-    padding-left: 18.8rem;
-    padding-right: 6.7rem;
-  }
-  .subTitle {
-    font-size: 4rem;
-  }
-  .title {
-    font-size: 7.4rem;
-    margin-bottom: 4.8rem;
-  }
-
-  .leftContainer {
-    width: 100vw;
-  }
-
-  .rightContainer {
-    align-items: center;
-    width: 0;
-  }
-
-  .rightImage {
-    width: 600px;
-    content: url(../../../src/image/HAIR/page1/hair_main.png);
-    position: absolute;
-    z-index: -10;
-  }
-  .explain {
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 128%;
-
-    /* or 51px */
-    letter-spacing: -0.02em;
-
-    /* grayscale/07 */
-    color: #808591;
-  }
-}
-
-@media all and (max-width: 1439px) {
-  .container {
-    padding-left: 12rem;
-    padding-right: 4.6rem;
-  }
-  .subTitle {
-    font-size: 2.4rem;
-  }
-  .title {
-    font-size: 4.6rem;
-    margin-bottom: 4rem;
-  }
-  .expTop {
-    font-size: 2.4rem;
-  }
-  .expBot {
-    font-size: 2.4rem;
-  }
-  .leftContainer {
-    width: 100vw;
-  }
-  .rightContainer {
-    align-items: center;
-    width: 0%;
-  }
-
-  .rightImage {
-    width: 410px;
-    content: url(../../../src/image/HAIR/page1/hair_main.png);
-    position: absolute;
-    z-index: -10;
-  }
-  .explain {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 140%;
-
-    /* identical to box height, or 34px */
-    letter-spacing: -0.01em;
-
-    /* grayscale/07 */
-    color: #808591;
-  }
 }
