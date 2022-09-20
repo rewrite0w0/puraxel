@@ -106,6 +106,16 @@ a {
   /* margin: 0 auto; */
 }
 
+form {
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+}
+
+form > div {
+  z-index: 1 !important;
+}
+
 /* @media all and (min-width: 1440px) and (min-height: 1080px) {
   * {
     scrollbar-width: none;

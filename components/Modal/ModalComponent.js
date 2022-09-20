@@ -445,12 +445,10 @@ export default function ModalComponent(props) {
                 </Button> */}
               </ButtonGroup>
 
-              <div>
-                <div
-                  className={style.right__exit__button}
-                  onClick={handleCloseModal}
-                ></div>
-              </div>
+              <div
+                className={style.right__exit__button}
+                onClick={handleCloseModal}
+              />
             </div>
             {/* 2 */}
             {/* 문의 제목 */}

@@ -4,7 +4,7 @@
   background: #ffffff;
   box-shadow: 0rem 2.4rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 0.8rem;
-  z-index: 1;
+  z-index: 10;
 
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
@@ -12,6 +12,8 @@
 
   width: 1240px;
   height: 760px;
+  position: absolute;
+  top: 488px;
 }
 
 .modal_left_title_container {
