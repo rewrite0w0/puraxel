@@ -13,7 +13,7 @@
   width: -moz-available;
   width: -webkit-fill-available;
 
-  position: fixed;
+  position: absolute;
 
   /* bottom: 0; */
   top: 985px;

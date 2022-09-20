@@ -33,12 +33,11 @@
     "Malgun Gothic", sans-serif !important;
   /* scrollbar-width: none; */
   word-break: break-all;
-
   box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 *::selection {
@@ -105,11 +104,11 @@ a {
   /* margin: 0 auto; */
 }
 
-@media all and (min-width: 1440px) and (min-height: 1080px) {
+/* @media all and (min-width: 1440px) and (min-height: 1080px) {
   * {
     scrollbar-width: none;
   }
-}
+} */
 
 /* #__next {
   width: 1440px;

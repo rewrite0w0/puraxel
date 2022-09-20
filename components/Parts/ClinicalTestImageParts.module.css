@@ -12,7 +12,7 @@
 .para {
   font-weight: 700;
   line-height: 150%;
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: -0.01em;
   color: #55576f;
   margin-bottom: 0.4rem;
@@ -27,7 +27,7 @@
   margin-bottom: 4rem;
 }
 
-@media all and (max-width: 1439px) {
+/* @media all and (max-width: 1439px) {
   .icon {
   }
 
@@ -49,4 +49,4 @@
 
   .dot {
   }
-}
+} */
