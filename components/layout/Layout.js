@@ -41,7 +41,7 @@ export default function Layout({ children }) {
   background-position: 50%;
   background-attachment: fixed;`;
 
-  const MAIN_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/main/main_bg.svg);
+  const MAIN_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/main/productBg_home.png);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;`;

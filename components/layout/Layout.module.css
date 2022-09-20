@@ -4,7 +4,7 @@
 }
 
 .layout__background__main {
-  background: url(../../src/image/main/main_bg.svg);
+  background: url(../../src/image/main/productBg_home.png);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;
