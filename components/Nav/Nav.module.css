@@ -9,18 +9,18 @@
 }
 
 .buttonStyle {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   color: var(--primary01);
   font-size: 2rem;
   margin-right: 4rem;
 }
 
 .gnbMenu {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   font-weight: 500;
   color: var(--primary01);
   opacity: 0.5;
@@ -90,9 +90,9 @@
 }
 
 .subMenu {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   color: var(--grayScale06);
   font-size: 1.2rem;
   margin-right: 2rem;
@@ -140,9 +140,9 @@
 }
 
 .applyKRFont {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
 }
 
 .SNSContainer {
@@ -155,9 +155,9 @@
 }
 
 .SNSMenu {
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   color: var(--grayScale06);
   font-size: 1.2rem;
   margin: 0;

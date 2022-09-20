@@ -6,9 +6,9 @@
   border-radius: 0.8rem;
   z-index: 10;
 
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
 
   width: 1240px;
   height: 760px;
@@ -93,9 +93,9 @@
 
 .buttonStyle {
   /* color: var(--grayScale04); */
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   font-weight: 600;
   font-size: 12px;
   line-height: 144%;
@@ -496,9 +496,9 @@
 
 .right__top__container > div > button {
   /* color: var(--grayScale04); */
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif;
+    "Malgun Gothic", sans-serif; */
   font-weight: 600;
   font-size: 12px;
   line-height: 144%;
