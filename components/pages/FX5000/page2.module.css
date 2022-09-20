@@ -10,6 +10,7 @@
 .leftContainer {
   margin-left: 11.8rem;
   margin-right: 7.6rem;
+  width: 50%;
 }
 
 .paperLeftContainer {
@@ -158,6 +159,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .imageCommon {

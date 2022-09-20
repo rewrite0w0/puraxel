@@ -1,7 +1,7 @@
 import { Popover, Typography } from "@mui/material";
-
 import { useEffect, useState } from "react";
 import style from "./page2.parts.module.css";
+import Fadein from "components/Parts/FadeIn";
 
 const FloatingContainer = (props) => {
   return (
@@ -200,263 +200,276 @@ export function Laser() {
   }, []);
 
   return (
-    <article className={`${style.commonContainer}`}>
-      <section className={`${style.margin__top__bottom}`}>
-        <span className={style.laserTitle}>레이저 모드</span>
-        <span className={style.laserSubTitle}>
-          <span className={style.margin__right}>#두피 속 채널 생성</span>{" "}
-          <span>#모공 관리</span>
-        </span>
-      </section>
-
-      <section className={style.flex__container}>
-        <LaserModeImage />
-        <div className={style.margin__left}>
-          <div className={style.button__container}>
-            <RedButton />
-            <GrayButton
-              title="모공관리 (레벨:1~3)"
-              sx={{ width: "14.8rem", fontWeight: "500", fontSize: "1.6rem" }}
-            />
-          </div>
-          <span className={style.commonText}>
-            두피 두께에 맞는 단계 설정으로 원하는
-            <br />
-            부위에 레이저를 조사하여&nbsp;
-            <span className={style.commonTextBold}>두피 속 마이크로</span>
-            <br />
-            <span className={style.commonTextBold}>채널을 생성</span>
-            합니다.
+    <Fadein>
+      <article className={`${style.commonContainer}`}>
+        <section className={`${style.margin__top__bottom}`}>
+          <span className={style.laserTitle}>레이저 모드</span>
+          <span className={style.laserSubTitle}>
+            <span className={style.margin__right}>#두피 속 채널 생성</span>{" "}
+            <span>#모공 관리</span>
           </span>
-        </div>
-      </section>
-      <section className={style.margin__top}>
-        <span
-          className={style.subExplainLaserWarning}
-          // onClick={(e) => console.log(e)}
-        >
-          안심하고 사용할 수 있는
-        </span>
-        <br />
-        <span className={style.laser__explain__title}>
-          <span className={style.explainLaserWarning}>레이저 안전 기능</span>
+        </section>
+
+        <section className={style.flex__container}>
+          <LaserModeImage />
+          <div className={style.margin__left}>
+            <div className={style.button__container}>
+              <RedButton />
+              <GrayButton
+                title="모공관리 (레벨:1~3)"
+                sx={{ width: "14.8rem", fontWeight: "500", fontSize: "1.6rem" }}
+              />
+            </div>
+            <span className={style.commonText}>
+              두피 두께에 맞는 단계 설정으로 원하는
+              <br />
+              부위에 레이저를 조사하여&nbsp;
+              <span className={style.commonTextBold}>두피 속 마이크로</span>
+              <br />
+              <span className={style.commonTextBold}>채널을 생성</span>
+              합니다.
+            </span>
+          </div>
+        </section>
+        <section className={style.margin__top}>
           <span
-            className={style.laser__warning__container}
-            onClick={() => setMaruStatus(!maruStatus)}
+            className={style.subExplainLaserWarning}
+            // onClick={(e) => console.log(e)}
           >
+            안심하고 사용할 수 있는
+          </span>
+          <br />
+          <span className={style.laser__explain__title}>
+            <span className={style.explainLaserWarning}>레이저 안전 기능</span>
             <span
-              className={style.laserWarning}
-              onMouseEnter={handlePopOpen}
-              onMouseLeave={handlePopClose}
+              className={style.laser__warning__container}
+              onClick={() => setMaruStatus(!maruStatus)}
             >
-              주의사항 &nbsp;
-              {maruStatus === true ? <MaruPlus /> : <MaruMinus />}
-              <Popover
-                open={open}
-                anchorEl={popAnchor}
-                disableRestoreFocus
-                onClose={handlePopClose}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "center",
-                }}
-                transformOrigin={{
-                  vertical: "bottom",
-                  horizontal: "center",
-                }}
+              <span
+                className={style.laserWarning}
+                onMouseEnter={handlePopOpen}
+                onMouseLeave={handlePopClose}
               >
-                <Typography className={style.laser__warning__para}>
-                  본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에 직접
-                  또는 반사되는 레이저 조사 시 위험합니다.
-                  <br />
-                  반드시 보안경 착용 후 사용하며 절대 직·간접적으로 보지 말아야
-                  합니다.
-                </Typography>
-              </Popover>
+                주의사항 &nbsp;
+                {maruStatus === true ? <MaruPlus /> : <MaruMinus />}
+                <Popover
+                  open={open}
+                  anchorEl={popAnchor}
+                  disableRestoreFocus
+                  onClose={handlePopClose}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "center",
+                  }}
+                  transformOrigin={{
+                    vertical: "bottom",
+                    horizontal: "center",
+                  }}
+                >
+                  <Typography className={style.laser__warning__para}>
+                    본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에 직접
+                    또는 반사되는 레이저 조사 시 위험합니다.
+                    <br />
+                    반드시 보안경 착용 후 사용하며 절대 직·간접적으로 보지
+                    말아야 합니다.
+                  </Typography>
+                </Popover>
+              </span>
             </span>
           </span>
-        </span>
-      </section>
+        </section>
 
-      <section>
-        <SafeFeature
-          maruColor="a"
-          number="1"
-          title="긴급 멈춤"
-          explain={<Explain1 />}
-        />
+        <section>
+          <SafeFeature
+            maruColor="a"
+            number="1"
+            title="긴급 멈춤"
+            explain={<Explain1 />}
+          />
 
-        <SafeFeature
-          maruColor="a"
-          number="2"
-          title="접속 센서"
-          explain={<Explain2 />}
-        />
+          <SafeFeature
+            maruColor="a"
+            number="2"
+            title="접속 센서"
+            explain={<Explain2 />}
+          />
 
-        <SafeFeature
-          maruColor="a"
-          number="3"
-          title="그립 센서"
-          explain={<Explain3 />}
-        />
+          <SafeFeature
+            maruColor="a"
+            number="3"
+            title="그립 센서"
+            explain={<Explain3 />}
+          />
 
-        <SafeFeature
-          maruColor="a"
-          number="4"
-          title="조사 스위치"
-          explain={<Explain4 />}
-        />
+          <SafeFeature
+            maruColor="a"
+            number="4"
+            title="조사 스위치"
+            explain={<Explain4 />}
+          />
 
-        <article className={style.laserButton}>
-          <span className={style.laserButtonBold}>프락셔널 레이저</span>
-          &nbsp;
-          <span className={style.laserButtonLight}>작동 방식 보기 {">"}</span>
-        </article>
-      </section>
-    </article>
+          <article
+            className={style.laserButton}
+            onClick={() => {
+              location.href = "/tech";
+            }}
+          >
+            <span className={style.laserButtonBold}>프락셔널 레이저</span>
+            &nbsp;
+            <span className={style.laserButtonLight}>작동 방식 보기 {">"}</span>
+          </article>
+        </section>
+      </article>
+    </Fadein>
   );
 }
 
 export function Sonic() {
   return (
-    <article className={`${style.commonContainer}`}>
-      <section className={style.margin__top__bottom}>
-        <span className={style.laserTitle}>초음파 모드</span>
+    <Fadein>
+      <article className={`${style.commonContainer}`}>
+        <section className={style.margin__top__bottom}>
+          <span className={style.laserTitle}>초음파 모드</span>
 
-        <span className={style.laserSubTitle}>
-          <span className={style.margin__right}>#영양 흡수</span>{" "}
-          <span>#영양 공급</span>
-        </span>
-      </section>
-
-      <section className={style.flex__container}>
-        <SonicModeImage />
-        <div className={style.margin__left}>
-          <div className={style.button__container}>
-            <RedButton />
-            <GrayButton
-              title="사용: 5분"
-              sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
-            />
-          </div>
-
-          <span className={style.commonText}>
-            기능성 솔루션을 바른 후 마사지하면 <br />
-            <span className={style.commonTextBold}>높은 흡수력</span>
-            으로 더 탄력있고 촘촘한
-            <br /> 피부 관리를 도와줍니다.
+          <span className={style.laserSubTitle}>
+            <span className={style.margin__right}>#영양 흡수</span>{" "}
+            <span>#영양 공급</span>
           </span>
-        </div>
-      </section>
-
-      <section className={style.sonic__comment__container}>
-        <section className={style.absolute__container}>
-          <FloatingContainer explain={<SonicExp1 />} />
         </section>
 
-        <section className={style.sonic__comment__container__inner__bot}>
-          <FloatingContainer explain={<SonicExp2 />} />
+        <section className={style.flex__container}>
+          <SonicModeImage />
+          <div className={style.margin__left}>
+            <div className={style.button__container}>
+              <RedButton />
+              <GrayButton
+                title="사용: 5분"
+                sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
+              />
+            </div>
+
+            <span className={style.commonText}>
+              기능성 솔루션을 바른 후 마사지하면 <br />
+              <span className={style.commonTextBold}>높은 흡수력</span>
+              으로 더 탄력있고 촘촘한
+              <br /> 피부 관리를 도와줍니다.
+            </span>
+          </div>
         </section>
-      </section>
-    </article>
+
+        <section className={style.sonic__comment__container}>
+          <section className={style.absolute__container}>
+            <FloatingContainer explain={<SonicExp1 />} />
+          </section>
+
+          <section className={style.sonic__comment__container__inner__bot}>
+            <FloatingContainer explain={<SonicExp2 />} />
+          </section>
+        </section>
+      </article>
+    </Fadein>
   );
 }
 
 export function Galvanic() {
   return (
-    <article className={`${style.commonContainer}`}>
-      <section className={style.margin__top__bottom}>
-        <span className={style.laserTitle}>갈바닉 모드</span>
-        <span className={style.laserSubTitle}>
-          <span className={style.margin__right}>#딥 클렌징</span>{" "}
-          <span>#피부 속 영양분 침투 촉진</span>
-        </span>
-      </section>
-
-      <section className={style.flex__container}>
-        <GalvanicModeImage />
-
-        <div className={style.margin__left}>
-          <div className={style.button__container}>
-            <BlackButton />
-            <GrayButton
-              title="사용: 4분"
-              sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
-            />
-          </div>
-          <span className={style.commonText}>
-            같은 극끼리 밀어내는 갈바닉 기술을
-            <br />
-            활용하여{" "}
-            <span className={style.commonTextBold}>
-              이온화된 화장품의 흡수율
-            </span>
-            을
-            <br />
-            높입니다. 레이저 모드와{" "}
-            <span className={style.commonTextBold}>
-              함께 사용하면 피부
-              <br /> 흡수율을 극대화
-            </span>
-            할 수 있습니다.
+    <Fadein>
+      <article className={`${style.commonContainer}`}>
+        <section className={style.margin__top__bottom}>
+          <span className={style.laserTitle}>갈바닉 모드</span>
+          <span className={style.laserSubTitle}>
+            <span className={style.margin__right}>#딥 클렌징</span>{" "}
+            <span>#피부 속 영양분 침투 촉진</span>
           </span>
-        </div>
-      </section>
-
-      <section className={style.galvanic__comment__container}>
-        <section className={style.galvanic__flex__container}>
-          <FloatingContainer explain={<GalvanicExp1 />} />
-
-          <FloatingContainer explain={<GalvanicExp2 />} />
         </section>
-      </section>
-    </article>
+
+        <section className={style.flex__container}>
+          <GalvanicModeImage />
+
+          <div className={style.margin__left}>
+            <div className={style.button__container}>
+              <BlackButton />
+              <GrayButton
+                title="사용: 4분"
+                sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
+              />
+            </div>
+            <span className={style.commonText}>
+              같은 극끼리 밀어내는 갈바닉 기술을
+              <br />
+              활용하여{" "}
+              <span className={style.commonTextBold}>
+                이온화된 화장품의 흡수율
+              </span>
+              을
+              <br />
+              높입니다. 레이저 모드와{" "}
+              <span className={style.commonTextBold}>
+                함께 사용하면 피부
+                <br /> 흡수율을 극대화
+              </span>
+              할 수 있습니다.
+            </span>
+          </div>
+        </section>
+
+        <section className={style.galvanic__comment__container}>
+          <section className={style.galvanic__flex__container}>
+            <FloatingContainer explain={<GalvanicExp1 />} />
+
+            <FloatingContainer explain={<GalvanicExp2 />} />
+          </section>
+        </section>
+      </article>
+    </Fadein>
   );
 }
 
 export function Cooling() {
   return (
-    <article className={`${style.commonContainer}`}>
-      <section className={style.margin__top__bottom}>
-        <span className={style.laserTitle}>쿨링 모드</span>
-        <span className={style.laserSubTitle}>
-          <span className={style.margin__right}>#피부 진정</span>{" "}
-          <span>#모공 축소</span>
-        </span>
-      </section>
-
-      <section className={style.flex__container}>
-        <CoolingModeImage />
-        <div className={style.margin__left}>
-          <div className={style.button__container}>
-            <BlackButton />
-            <GrayButton
-              title="사용: 3분"
-              sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
-            />
-          </div>
-          <span className={style.commonText}>
-            차가운 쿨링효과로
-            <span className={style.commonTextBold}>피부를 진정</span>시키고
-            <br />
-            <span className={style.commonTextBold}>모공 축소</span>를
-            도와줍니다.
+    <Fadein>
+      <article className={`${style.commonContainer}`}>
+        <section className={style.margin__top__bottom}>
+          <span className={style.laserTitle}>쿨링 모드</span>
+          <span className={style.laserSubTitle}>
+            <span className={style.margin__right}>#피부 진정</span>{" "}
+            <span>#모공 축소</span>
           </span>
-        </div>
-      </section>
-
-      <section className={style.cooling__comment__container}>
-        <section className={style.absolute__container}>
-          <FloatingContainer
-            explain={<CoolingExp1 explain={<CoolingExp1 />} />}
-          />
         </section>
 
-        <section className={style.cooling__comment__container__inner__bot}>
-          <FloatingContainer explain={<CoolingExp2 />} />
+        <section className={style.flex__container}>
+          <CoolingModeImage />
+          <div className={style.margin__left}>
+            <div className={style.button__container}>
+              <BlackButton />
+              <GrayButton
+                title="사용: 3분"
+                sx={{ width: "7.5rem", fontWeight: "500", fontSize: "1.6rem" }}
+              />
+            </div>
+            <span className={style.commonText}>
+              차가운 쿨링효과로
+              <span className={style.commonTextBold}>피부를 진정</span>시키고
+              <br />
+              <span className={style.commonTextBold}>모공 축소</span>를
+              도와줍니다.
+            </span>
+          </div>
         </section>
-      </section>
-    </article>
+
+        <section className={style.cooling__comment__container}>
+          <section className={style.absolute__container}>
+            <FloatingContainer
+              explain={<CoolingExp1 explain={<CoolingExp1 />} />}
+            />
+          </section>
+
+          <section className={style.cooling__comment__container__inner__bot}>
+            <FloatingContainer explain={<CoolingExp2 />} />
+          </section>
+        </section>
+      </article>
+    </Fadein>
   );
 }
 
