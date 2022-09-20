@@ -285,8 +285,11 @@ const PuraxelExplain = () => {
         >
           <span className={_.puraxel__explain__para}>
             레이저 빔이 Array Lens를 통과하며, 피부에 약 100개의 미세한 구멍
+            <br />
             (마이크로 홀)을 생성합니다. 이 때, 생성되는 마이크로 홀은 피부의 약
+            <br />
             0.2mm 이하의 표피 조직에 위치하게 되며, 이 미세한 홀들을 통해 기능성
+            <br />
             화장품 등의 영양 물질 흡수율을 높일 수 있습니다.
           </span>
         </div>
@@ -296,7 +299,9 @@ const PuraxelExplain = () => {
         >
           <span className={_.puraxel__explain__para}>
             퓨라셀은 2940nm 파장 대의 Er:Yag 레이저를 사용합니다. Er:Yag는
+            <br />
             표피의 수분에 대부분 흡수되는 성질을 갖고 있으며, 열손상이 적어 천공
+            <br />
             깊이의 조절이 가능한 장점이 있습니다.
           </span>
         </div>
