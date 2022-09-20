@@ -5,7 +5,7 @@ export default function Page0() {
     <article className={style.container}>
       <section className={style.leftContainer}>
         <div className={style.subTitle}>홈 에스테틱 레이저의 시작</div>
-        <div className={style.title}>PURAXEL-ME</div>
+        <div className={style.title}>PURAXEL-Me</div>
 
         <div className={style.mainExplain}>
           전문적으로 사용하던 프락셔널 레이저의 효능을

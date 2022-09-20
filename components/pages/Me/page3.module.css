@@ -70,7 +70,7 @@
   font-weight: 500;
   font-size: 1.6rem;
   letter-spacing: -0.01em;
-  color: var(--grayScale06);
+  color: #a0a5b1;
   line-height: 150%;
 }
 
@@ -82,7 +82,7 @@
   font-weight: 300;
   font-size: 1.6rem;
   letter-spacing: -0.01em;
-  color: var(--grayScale07);
+  color: #808591;
 }
 
 .image1 {

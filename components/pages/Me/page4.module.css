@@ -129,12 +129,13 @@
 
 .hrContainer {
   width: 1rem;
-  height: 0.8rem;
+  height: 0.4rem;
 }
 
 .commonHR {
   width: 0.8rem;
-  color: #cacfd8;
+  height: 0.1rem;
+  background-color: #a0a5b1;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;

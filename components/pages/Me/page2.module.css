@@ -208,13 +208,12 @@
 .sub__explain__para__bold {
   font-size: 1.2rem;
   letter-spacing: -0.01em;
-  color: #7e818d;
+  color: #a0a5b1;
   font-weight: 600;
   line-height: 140%;
 }
 .bookmark__container {
-  /* margin-left: 2.8rem; */
-  /* margin-left: calc(100vw / 68.5); */
+  margin-left: 1.8rem;
 }
 
 .bookmark {
@@ -296,7 +295,7 @@
   position: absolute;
 
   right: 3%;
-  height: 128px;
+
   width: 240px;
 
   bottom: 12%;
