@@ -51,7 +51,10 @@ function MyApp({ Component, pageProps }) {
         }}
       />
 
-      <Script strategy="afterInteractive" src="//wcs.naver.net/wcslog.js" />
+      <Script
+        strategy="afterInteractive"
+        src="http://wcs.naver.net/wcslog.js"
+      />
       <Script
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
