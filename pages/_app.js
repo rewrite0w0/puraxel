@@ -8,18 +8,10 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-import {
-  BrowserView,
-  isMobile,
-  isTablet,
-  MobileView,
-} from "react-device-detect";
+import { isMobile, isTablet } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
-  const MINHEIGHT = 720;
-  const MINWIDTH = 1024;
   const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
 
   useEffect(() => {
@@ -35,29 +27,20 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  // useEffect(() => {
-  //   window.innerWidth < MINWIDTH
-  //     ? (location.href = REDIRECT_MOBILE)
-  //     : undefined;
+  useEffect(() => {
+    isMobile || isTablet ? (location.href = REDIRECT_MOBILE) : undefined;
+  }, []);
 
-  //   window.onresize = function (e) {
-  //     window.innerWidth < MINWIDTH
-  //       ? (location.href = REDIRECT_MOBILE)
-  //       : undefined;
-  //   };
-  // }, []);
-
-  return !isMobile || !isTablet ? (
-    <BrowserView>
-      <Layout>
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
-        />
-        <Script
-          id="gtag-init"
-          dangerouslySetInnerHTML={{
-            __html: `
+  return (
+    <Layout>
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        dangerouslySetInnerHTML={{
+          __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -65,34 +48,28 @@ function MyApp({ Component, pageProps }) {
               page_path: window.location.pathname,
             });
           `,
-          }}
-        />
+        }}
+      />
 
-        <Script strategy="afterInteractive" src="//wcs.naver.net/wcslog.js" />
-        <Script
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
+      <Script strategy="afterInteractive" src="//wcs.naver.net/wcslog.js" />
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
             if(!wcs_add) var wcs_add = {};
             wcs_add["wa"] = "cbebc90131a410";
             if(window.wcs) {
               wcs_do();
             }`,
-          }}
-          id="naver"
-        />
+        }}
+        id="naver"
+      />
 
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-        </Head>
-        <Component {...pageProps} />
-      </Layout>
-    </BrowserView>
-  ) : (
-    <MobileView>{(location.href = REDIRECT_MOBILE)}</MobileView>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 
