@@ -3,14 +3,17 @@ import Layout from "components/layout/Layout";
 import Head from "next/head";
 import "swiper/css/bundle";
 
-import { Provider } from "jotai";
 import * as gtag from "lib/gtag";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-import { useMediaQuery } from "react-responsive";
-import { isMobile, isTablet } from "react-device-detect";
+import {
+  BrowserView,
+  isMobile,
+  isTablet,
+  MobileView,
+} from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -45,7 +48,7 @@ function MyApp({ Component, pageProps }) {
   // }, []);
 
   return !isMobile || !isTablet ? (
-    <Provider>
+    <BrowserView>
       <Layout>
         <Script
           strategy="afterInteractive"
@@ -87,9 +90,9 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <Component {...pageProps} />
       </Layout>
-    </Provider>
+    </BrowserView>
   ) : (
-    <>{(location.href = REDIRECT_MOBILE)}</>
+    <MobileView>{(location.href = REDIRECT_MOBILE)}</MobileView>
   );
 }
 
