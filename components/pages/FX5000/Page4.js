@@ -11,7 +11,8 @@ export default function Page4() {
           </div>
 
           <div className={_.main_title}>
-            바로 일상생활이 가능한 소형 프락셔널 레이저,
+            바로 일상생활이 가능한{" "}
+            <span className={_.main_title__bold}>소형 프락셔널 레이저,</span>
             <br />
             직접 경험해보세요.
           </div>

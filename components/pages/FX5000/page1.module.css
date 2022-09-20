@@ -21,6 +21,7 @@
   line-height: 128%;
   letter-spacing: -0.02em;
   color: #55576f;
+  margin-bottom: 0.8rem;
 }
 
 .title {
@@ -41,11 +42,11 @@
 }
 
 .expBot {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 4rem;
   line-height: 128%;
   letter-spacing: -0.02em;
-  color: #55576f;
+  color: #808591;
   margin-bottom: 2.4rem;
 }
 
@@ -66,9 +67,6 @@
 }
 
 .rightImage {
-  /* height: calc(100vh / 1.1);
-  width: calc(100vw / 2); */
-  /* width: 900px; */
-  width: 600px;
+  width: 700px;
   content: url(../../../src/image/FX5000/page1/fx-5000_main_1440.png);
 }

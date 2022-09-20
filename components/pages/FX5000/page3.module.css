@@ -36,11 +36,17 @@
 }
 
 .title__container__title__para {
-  font-size: 3.2rem;
-  letter-spacing: -0.02em;
   font-weight: 300;
-  color: #808591;
-  line-height: 132%;
+  font-size: 20px;
+  line-height: 144%;
+
+  /* identical to box height, or 29px */
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  /* grayscale/05 */
+  color: #b6bcc7;
+  margin-bottom: 1.3rem;
 }
 
 .title__container__title__sub {
@@ -112,7 +118,7 @@
   box-shadow: 0rem 0rem 8rem rgba(0, 0, 0, 0.06);
   border-radius: 0.4rem;
   width: 115rem;
-  height: 46rem;
+  height: 48rem;
   padding-left: 4rem;
 }
 
@@ -127,13 +133,13 @@
 .paperPara {
   font-weight: 300;
   font-size: 1.6rem;
-  line-height: 144%;
+  line-height: 150%;
 
   letter-spacing: -0.01em;
   font-feature-settings: "tnum" on, "lnum" on;
 
   color: #808591;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
 }
 
 .imageContainer {

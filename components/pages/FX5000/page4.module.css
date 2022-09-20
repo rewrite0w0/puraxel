@@ -6,12 +6,15 @@
 
 .sub_title {
   font-weight: 300;
-  font-size: 3.2rem;
-  line-height: 132%;
+  font-size: 20px;
+  line-height: 144%;
 
-  letter-spacing: -0.02em;
+  /* identical to box height, or 29px */
+  letter-spacing: -0.03em;
+  font-feature-settings: "tnum" on, "lnum" on;
 
-  color: #a7abb6;
+  /* grayscale/05 */
+  color: #b6bcc7;
   margin-bottom: 1.6rem;
 }
 
@@ -23,6 +26,10 @@
   letter-spacing: -0.02em;
 
   color: #55576f;
+}
+
+.main_title__bold {
+  font-weight: 500;
 }
 
 .movie__container {

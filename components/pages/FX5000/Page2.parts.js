@@ -122,25 +122,29 @@ const LedModeImage = () => {
 
 const Explain1 = () => {
   return (
-    <span>
-      제품을 놓을 경우, 센서에 의해 &nbsp;
-      <span className={style.explain__bold}>즉시 동작이 멈춥니다.</span>
+    <span className={style.explain__normal}>
+      응급 시 제품을 놓을 경우,&nbsp;
+      <span className={style.explain__bold}>
+        센서에 의해 즉시 동작이 멈춥니다.
+      </span>
     </span>
   );
 };
 
 const Explain2 = () => {
   return (
-    <span>
-      <span className={style.explain__bold}>레이저 헤드가 피부에 닿아야만</span>
-      작동 합니다.
+    <span className={style.explain__normal}>
+      접촉 센서에 의해&nbsp;
+      <span className={style.explain__bold}>
+        레이저 헤드가 피부에 닿아야만 작동합니다.
+      </span>
     </span>
   );
 };
 
 const Explain3 = () => {
   return (
-    <span>
+    <span className={style.explain__normal}>
       적외선 센서에 의해&nbsp;
       <span className={style.explain__bold}>손잡이 파지 시에만 작동</span>
       합니다.
@@ -150,7 +154,7 @@ const Explain3 = () => {
 
 const Explain4 = () => {
   return (
-    <span>
+    <span className={style.explain__normal}>
       조사&nbsp;
       <span className={style.explain__bold}>버튼을 누를 때만 레이저 조사</span>
       됩니다.
@@ -203,7 +207,7 @@ export function Laser() {
           <span className={style.laserTitle}>레이저 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#피부 속 채널 생성</span>
-            <span>#모공 관리</span>
+            <span className={style.explain__normal}>#모공 관리</span>
           </span>
         </section>
 
@@ -218,19 +222,21 @@ export function Laser() {
               />
             </div>
             <span className={style.commonText}>
-              <span>
+              <span className={style.explain__normal}>
                 <span className={style.commonTextBold}>프락셔널 레이저</span>를
                 피부에 조사하여,
               </span>
               <br />
-              <span>5~200µm의 표피층에 1회 약 100개의</span>
+              <span className={style.explain__normal}>
+                5~200µm의 표피층에 1회 약 100개의
+              </span>
               <br />
-              <span>
+              <span className={style.explain__normal}>
                 Multi-Micro pore을 만들어&nbsp;
                 <span className={style.commonTextBold}>화장품 등의</span>
               </span>
               <br />
-              <span>
+              <span className={style.explain__normal}>
                 <span className={style.commonTextBold}>약물 흡수율을 증가</span>
                 시킵니다.
               </span>
@@ -318,7 +324,7 @@ export function Laser() {
             }}
           >
             <span className={style.laserButtonBold}>프락셔널 레이저</span>
-            &nbsp;
+            &nbsp;&nbsp;&nbsp;
             <span className={style.laserButtonLight}>작동 방식 보기 {">"}</span>
           </article>
         </section>
@@ -336,7 +342,7 @@ export function Sonic() {
 
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#영양 흡수</span>
-            <span>#영양 공급</span>
+            <span className={style.explain__normal}>#영양 공급</span>
           </span>
         </section>
 
@@ -386,7 +392,9 @@ export function Galvanic() {
           <span className={style.laserTitle}>갈바닉 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#딥 클렌징</span>{" "}
-            <span>#피부 속 영양분 침투 촉진</span>
+            <span className={style.explain__normal}>
+              #피부 속 영양분 침투 촉진
+            </span>
           </span>
         </section>
 
@@ -404,7 +412,7 @@ export function Galvanic() {
             <span className={style.commonText}>
               같은 극끼리 밀어내는 갈바닉 기술을
               <br />
-              활용하여
+              활용하여 &nbsp;
               <span className={style.commonTextBold}>
                 이온화된 화장품의 흡수율
               </span>
@@ -439,7 +447,7 @@ export function Cooling() {
           <span className={style.laserTitle}>쿨링 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#피부 진정</span>{" "}
-            <span>#모공 축소</span>
+            <span className={style.explain__normal}>#모공 축소</span>
           </span>
         </section>
 
@@ -485,7 +493,7 @@ export function Led() {
           <span className={style.laserTitle}>LED 모드</span>
           <span className={style.laserSubTitle}>
             <span className={style.margin__right}>#보습</span>{" "}
-            <span>#탄력 및 트러블 진정</span>
+            <span className={style.explain__normal}>#탄력 및 트러블 진정</span>
           </span>
         </section>
 
@@ -575,7 +583,7 @@ const CoolingExp1 = () => {
   return (
     <span className={style.explainContainer}>
       레이저, 초음파, LED 사용 후<br />
-      쿨링모드 사용시
+      쿨링모드 사용시&nbsp;
       <span className={style.explainContainerBold}>피부를 차갑게 진정시켜</span>
     </span>
   );
@@ -603,9 +611,11 @@ const LedExp2 = () => {
     <span className={style.explainContainer}>
       피부&nbsp;
       <span className={style.explainContainerBold}>
-        진정과 보습・탄력, 트러블 완화에
-      </span>
-      <br /> 도움을 줍니다.
+        진정과 보습・탄력,
+        <br />
+        트러블 완화에
+      </span>{" "}
+      도움을 줍니다.
     </span>
   );
 };

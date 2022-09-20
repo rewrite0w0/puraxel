@@ -39,7 +39,7 @@
   text-align: center;
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .modeImageCommon {
@@ -106,7 +106,7 @@
 
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .laserButtonLight {
@@ -116,7 +116,7 @@
 
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  color: #808591;
 }
 
 .laserWarning {
@@ -189,13 +189,19 @@
 }
 
 .commonText {
-  font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 150%;
 
+  /* or 21px */
   letter-spacing: -0.01em;
 
-  color: #4d5058;
+  /* grayscale/07 */
+  color: #808591;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .commonTextBold {
@@ -220,14 +226,16 @@
   font-size: 2.4rem;
   line-height: 140%;
 
+  /* or 34px */
   letter-spacing: -0.02em;
 
-  color: #7e818d;
+  /* grayscale/06 */
+  color: #a0a5b1;
 }
 
 .explainContainerBold {
   font-weight: 500;
-  color: var(--grayScale07);
+  color: #808591;
 }
 
 .safefeature__container {
@@ -292,12 +300,13 @@
   justify-content: center;
   align-items: center;
   color: #55576f;
-  opacity: 0.1;
+  /* opacity: 0.1; */
 }
 
 .safefeature__hr {
-  width: 0;
-  height: calc(2.4rem);
+  width: 0.1rem;
+  height: 2.4rem;
+  background-color: #eceff4;
 }
 
 .parts__red__button {
@@ -311,9 +320,26 @@
 }
 
 .parts__gray__button {
-  color: #4d5058;
+  color: #808591;
   background: #f2f3f7;
   margin-right: 0.8rem;
+}
+
+.explain__normal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  /* identical to box height, or 24px */
+  letter-spacing: -0.01em;
+
+  /* grayscale/07 */
+  color: #808591;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .explain__bold {
