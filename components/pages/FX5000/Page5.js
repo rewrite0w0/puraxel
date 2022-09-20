@@ -198,7 +198,7 @@ const ProductETC = () => {
       <GrayButton title="제품 본체" width="7.6rem" />
       <GrayButton title="충전 크래들" width="8.8rem" />
       <GrayButton title="어댑터" width="6.1rem" />
-      <GrayButton title="보안경(시술자용, 고객용)" width="16.1rem" />
+      <GrayButton title="보안경(시술자용, 고객용)" width="15.8rem" />
       <GrayButton title="레이저 헤드팁(원형, 일자, 네모)" width="19.5rem" />
       <GrayButton title="초음파 헤드" width="8.8rem" />
       <GrayButton title="배터리(충전용) *2" width="12.4rem" />
