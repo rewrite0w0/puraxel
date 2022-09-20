@@ -601,7 +601,7 @@ const LedExp1 = () => {
 const LedExp2 = () => {
   return (
     <span className={style.explainContainer}>
-      피부
+      피부&nbsp;
       <span className={style.explainContainerBold}>
         진정과 보습・탄력, 트러블 완화에
       </span>
