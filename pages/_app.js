@@ -57,6 +57,10 @@ function MyApp({ Component, pageProps }) {
       />
       <Script
         strategy="afterInteractive"
+        src="https://wcs.naver.net/wcslog.js"
+      />
+      <Script
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             if(!wcs_add) var wcs_add = {};
