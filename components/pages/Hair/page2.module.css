@@ -127,12 +127,11 @@
 }
 
 .image__common__spec {
-  height: 95%;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 2rem;
 }
 
 .imageCommon:hover {
@@ -148,7 +147,7 @@
 
 .explainContainer {
   display: flex;
-  background-color: transparent;
+  background-image: linear-gradient(#fff0 0%, #fff 100%);
   backdrop-filter: blur(0.7px);
   width: 100%;
 }
@@ -212,23 +211,31 @@
 }
 
 .LaserImage {
-  background-size: cover;
   background-image: url(../../../src/image/HAIR/page2/1laser.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .SonicImage {
-  background-size: cover;
   background-image: url(../../../src/image/HAIR/page2/2sonic.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .GalvanicImage {
-  background-size: cover;
   background-image: url(../../../src/image/HAIR/page2/3gal.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .CoolingImage {
-  background-size: cover;
   background-image: url(../../../src/image/HAIR/page2/4cooling.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .flex__container {
