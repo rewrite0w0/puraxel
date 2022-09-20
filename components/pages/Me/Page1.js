@@ -8,7 +8,8 @@ export default function Page0() {
         <div className={style.title}>PURAXEL-ME</div>
 
         <div className={style.mainExplain}>
-          프락셔널 레이저의 효능을 직접 확인하실 수 있습니다.
+          전문적으로 사용하던 프락셔널 레이저의 효능을
+          <br /> 직접 확인하실 수 있습니다.
         </div>
         {/* <div className={style.mainExplainSub}>직접 확인하실 수 있습니다.</div> */}
 
