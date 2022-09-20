@@ -75,9 +75,6 @@ const ExplainFeatureMode = () => {
       3) 갈바닉 모드 <span className={_.subExplain}>(옵션)</span>
       <br />
       4) 쿨링 모드 <span className={_.subExplain}>(옵션)</span>
-      <br />
-      5) LED 모드 <span className={_.subExplain}>(옵션)</span>
-      <br />
     </span>
   );
 };
@@ -228,7 +225,7 @@ const ExplainOnPaper = () => {
   return (
     <section className={_.explain__container}>
       <div className={_.explain__container__inner}>
-        <ExplainFrame title="제품명" exp="퓨라셀 fx-5000" />
+        <ExplainFrame title="제품명" exp="퓨라셀 hair" />
         <ExplainFrame title="레이저 종류" exp="Er:YAG" />
         <ExplainFrame title="레이저 등급" exp="1등급(class 1)" />
         <ExplainFrame title="레이저 레벨 범위" exp="1~3 level" />

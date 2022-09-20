@@ -29,70 +29,70 @@
 }
 
 .header0 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_01_active.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_01_active.png);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header1 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_02_active.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_02_active.png);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header2 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_03_active.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_03_active.png);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header3 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_04_active.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_04_active.png);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header00 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_01_inactive.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_01_inactive.png);
   background-size: cover;
 }
 
 .header11 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_02_inactive.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_02_inactive.png);
   background-size: cover;
 }
 
 .header22 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_03_inactive.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_03_inactive.png);
   background-size: cover;
 }
 
 .header33 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_04_inactive.png);
+  background-image: url(../../../src/image/HAIR/page5/hair_04_inactive.png);
   background-size: cover;
 }
 
 .product__image__container {
-  width: 630px;
-  height: 864px;
+  width: 530px;
+  height: 764px;
   display: flex;
   justify-content: center;
 }
 
 .promo0 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_01.png);
+  content: url(../../../src/image/HAIR/page5/hair_img_01.png);
 }
 
 .promo1 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_02.png);
+  content: url(../../../src/image/HAIR/page5/hair_img_02.png);
 }
 
 .promo2 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_03.png);
+  content: url(../../../src/image/HAIR/page5/hair_img_03.png);
 }
 
 .promo3 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_04.png);
+  content: url(../../../src/image/HAIR/page5/hair_img_04.png);
 }
 
 .imageContainer {
@@ -135,7 +135,7 @@
 }
 
 .explainContainerInner {
-  margin: 4.4rem 0rem 0rem 4.4rem;
+  margin: 2.5rem;
   display: flex;
 }
 

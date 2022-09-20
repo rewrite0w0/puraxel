@@ -73,8 +73,8 @@
 }
 
 .product__image__container {
-  width: 630px;
-  height: 864px;
+  width: 530px;
+  height: 764px;
   display: flex;
   justify-content: center;
 }
@@ -136,7 +136,7 @@
 
 .explainContainerInner {
   display: flex;
-  margin: 4.4rem 0rem 0rem 4.4rem;
+  margin: 2.5rem;
 }
 
 .hrContainer {
