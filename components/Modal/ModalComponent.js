@@ -320,17 +320,17 @@ export default function ModalComponent(props) {
                   //     : e.key;
                   // }}
                   // onBlur={(e) => console.log(e)}
-                  onKeyDown={(e) => {
-                    const numberChecker = (data) => {
-                      console.log(data);
-                      console.log(typeof data);
-                      data.value.length > 8
-                        ? data.substring(0, 8)
-                        : data.replace(/[^0-9]/gim, "");
-                    };
+                  // onKeyDown={(e) => {
+                  //   const numberChecker = (data) => {
+                  //     console.log(data);
+                  //     console.log(typeof data);
+                  //     data.value.length > 8
+                  //       ? data.substring(0, 8)
+                  //       : data.replace(/[^0-9]/gim, "");
+                  //   };
 
-                    numberChecker(e.target.value);
-                  }}
+                  //   numberChecker(e.target.value);
+                  // }}
                   // onChangeCapture={(e) => console.log(e)}
 
                   onChange={(e) => {
