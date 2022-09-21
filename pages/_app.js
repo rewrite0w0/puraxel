@@ -12,7 +12,7 @@ import { isMobile, isTablet } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
+  const REDIRECT_MOBILE = "https://m.puraxel.co.kr/";
 
   useEffect(() => {
     const handleRouteChange = (url) => {

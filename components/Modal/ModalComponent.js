@@ -155,7 +155,7 @@ export default function ModalComponent(props) {
   const requireInputDataChecker = () => mail.filter((x) => x).length === 6;
 
   // console.log(mail);
-  console.log(requireInputDataChecker());
+  // console.log(requireInputDataChecker());
 
   // useEffect(() => {
   //   requireInputDataChecker();
@@ -273,6 +273,7 @@ export default function ModalComponent(props) {
         }
         {modalKr.modalButtonTitle}
       </Box>
+
       <Modal
         open={modalOpen}
         onClose={handleCloseModal}
@@ -296,6 +297,8 @@ export default function ModalComponent(props) {
                   onChange={(e) => {
                     setCustomerName(e.target.value);
                   }}
+                  placeholder="고객님의 성명을 입력해주세요"
+                  inputProps={{ maxLength: 10 }}
                   name="to_customerName"
                 />
               </Box>
@@ -307,6 +310,29 @@ export default function ModalComponent(props) {
                   className={style.leftInputField}
                   margin={"dense"}
                   name="to_customerTel"
+                  placeholder="고객님의 연락처를 번호만 입력해주세요"
+                  inputProps={{ maxLength: 13 }}
+                  // onKeyDownCapture={(e) => {
+                  //   isNaN(Number(e.key))
+                  //     ? e.key !== "Backspace"
+                  //       ? e.preventDefault()
+                  //       : e.key
+                  //     : e.key;
+                  // }}
+                  // onBlur={(e) => console.log(e)}
+                  onKeyDown={(e) => {
+                    const numberChecker = (data) => {
+                      console.log(data);
+                      console.log(typeof data);
+                      data.value.length > 8
+                        ? data.substring(0, 8)
+                        : data.replace(/[^0-9]/gim, "");
+                    };
+
+                    numberChecker(e.target.value);
+                  }}
+                  // onChangeCapture={(e) => console.log(e)}
+
                   onChange={(e) => {
                     setCustomerTel(e.target.value);
                   }}
@@ -322,7 +348,9 @@ export default function ModalComponent(props) {
                   onChange={(e) => {
                     setCustomerMail(e.target.value);
                   }}
+                  inputProps={{ maxLength: 50 }}
                   name="to_customerMail"
+                  placeholder="고객님의 메일을 입력해주세요"
                 />
               </Box>
               {/* 5 */}
@@ -331,10 +359,12 @@ export default function ModalComponent(props) {
                   label={modalKr.modalCompanyName}
                   className={style.leftInputField}
                   margin={"dense"}
+                  inputProps={{ maxLength: 50 }}
                   onChange={(e) => {
                     setCustomerCompanyName(e.target.value);
                   }}
                   name="to_customerCompanyName"
+                  placeholder="고객님의 사명을 입력해주세요"
                 />
               </Box>
               {/* 6 */}
@@ -467,6 +497,8 @@ export default function ModalComponent(props) {
                 required
                 onChange={(e) => setCustomerTitle(e.target.value)}
                 name="to_customerTitle"
+                inputProps={{ maxLength: 50 }}
+                placeholder="문의 제목을 입력해주세요"
               />
             </Box>
             {/* 3 */}
@@ -481,9 +513,10 @@ export default function ModalComponent(props) {
                 // label={<Temp />}
                 className={style.ask_details}
                 required
-                inputProps={{ maxLength: 300 }}
+                inputProps={{ maxLength: 2000 }}
                 onChange={(e) => setCustomerContent(e.target.value)}
                 name="to_customerContent"
+                placeholder="문의 내용을 입력해주세요"
               />
             </Box>
             {/* 4 */}
