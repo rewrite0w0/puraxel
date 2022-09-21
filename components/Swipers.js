@@ -13,7 +13,7 @@ import {
 
 export default function Swipers({ children }) {
   useEffect(() => {
-    console.log(document.documentURI);
+    // console.log(document.documentURI);
   }, []);
 
   return (
@@ -24,8 +24,9 @@ export default function Swipers({ children }) {
       mousewheel={{ sensitivity: 0.1 }}
       // navigation={true}
 
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={(e) => console.log(e.activeIndex)}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={(e) => console.log(e.activeIndex)}
+
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {
