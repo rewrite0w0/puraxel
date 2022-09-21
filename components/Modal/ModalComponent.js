@@ -415,7 +415,7 @@ export default function ModalComponent(props) {
             {/* 언어 버튼 선택 */}
             <div className={style.right__top__container}>
               <ButtonGroup style={{ display: "flex" }}>
-                <Button
+                {/* <Button
                   disableRipple
                   variant="text"
                   className={style.buttonStyle}
@@ -428,7 +428,7 @@ export default function ModalComponent(props) {
                   }}
                 >
                   {modalKr.modalLangKr}
-                </Button>
+                </Button> */}
                 {/* <Button
                   disableRipple
                   variant="text"

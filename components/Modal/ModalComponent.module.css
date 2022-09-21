@@ -247,14 +247,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 9.9rem;
+  width: 11rem;
   height: 2.9rem;
 
   background: var(--primary01);
   border-radius: 0.4rem;
 
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
 
   display: flex;
   align-items: center;
@@ -262,24 +262,12 @@
 
   color: #ffffff;
   margin-right: 0.8rem;
-
-  /* padding: 0.4rem 0.8rem 0.4rem 0.4rem; */
-
   cursor: pointer;
-
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 140%;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.01em;
-
-  color: #ffffff;
+  /* padding: 0.4rem 0.8rem 0.4rem 0.4rem; */
 }
 
 .shopic {
-  height: 5rem;
+  height: 2.5rem;
   width: 2.5rem;
   color: #fff;
   /* margin-right: 0.725rem; */
