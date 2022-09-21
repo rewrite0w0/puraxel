@@ -245,7 +245,7 @@ export function Laser() {
             <span className={style.explainLaserWarning}>레이저 안전 기능</span>
             <span
               className={style.laser__warning__container}
-              onClick={() => setMaruStatus(!maruStatus)}
+              // onClick={() => setMaruStatus(!maruStatus)}
             >
               <span
                 className={style.laserWarning}
@@ -268,13 +268,21 @@ export function Laser() {
                     horizontal: "center",
                   }}
                 >
-                  <Typography className={style.laser__warning__para}>
-                    본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에 직접
-                    또는 반사되는 레이저 조사 시 위험합니다.
-                    <br />
-                    반드시 보안경 착용 후 사용하며 절대 직·간접적으로 보지
-                    말아야 합니다.
-                  </Typography>
+                  <div className={style.popover__container}>
+                    <Typography className={style.laser__warning__para}>
+                      본 장비는 눈에 보이지 않는 레이저를 사용하고 있어 눈에
+                      직접 또는 반사되는 레이저 조사 시 위험합니다.
+                      <br />
+                      반드시 보안경 착용 후 사용하며 절대 직·간접적으로 보지
+                      말아야 합니다.
+                    </Typography>
+                    <div className={style.right__exit__button__container}>
+                      <div
+                        className={style.right__exit__button}
+                        onClick={handlePopClose}
+                      />
+                    </div>
+                  </div>
                 </Popover>
               </span>
             </span>
