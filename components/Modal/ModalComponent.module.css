@@ -505,3 +505,9 @@
   letter-spacing: -0.03em;
   font-feature-settings: "tnum" on, "lnum" on;
 }
+
+.modalContainer > .right > .information__container > div > p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+}
