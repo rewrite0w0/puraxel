@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import {
   Box,
@@ -90,6 +90,15 @@ export default function ModalComponent(props) {
   const [customerContent, setCustomerContent] = useState(undefined);
   const [customerPrivacyAggre, setCustomerPrivacyAggre] = useState(undefined);
 
+  const mail = [
+    customerName,
+    customerTel,
+    customerMail,
+    customerTitle,
+    customerContent,
+    customerPrivacyAggre,
+  ];
+
   const privacyCollectAggre = () => {
     return setCustomerPrivacyAggre(!customerPrivacyAggre);
   };
@@ -143,12 +152,23 @@ export default function ModalComponent(props) {
     setCloseNoticeDialogOpen(false);
   };
 
+  const requireInputDataChecker = () => mail.filter((x) => x).length === 6;
+
+  // console.log(mail);
+  console.log(requireInputDataChecker());
+
+  // useEffect(() => {
+  //   requireInputDataChecker();
+  //   console.log(mail);
+  //   return console.log(requireInputDataChecker());
+  // });
+
   // 전송 확인 알림
 
   const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
 
   const handleOpenSendAgreeDialog = (e) => {
-    requireInputDataChecker()
+    !requireInputDataChecker()
       ? e.preventDefault()
       : setSendAgreeDialogOpen(true);
   };
@@ -156,18 +176,6 @@ export default function ModalComponent(props) {
   const handleCloseSendAgreeDialog = () => {
     setSendAgreeDialogOpen(false);
   };
-
-  const mail = [
-    customerName,
-    customerTel,
-    customerMail,
-    customerTitle,
-    customerContent,
-    customerPrivacyAggre,
-  ];
-
-  const requireInputDataChecker = () =>
-    mail.filter((x) => x === undefined || "" || false).length > 0;
 
   const handleSendAgreeYes = () => {
     // const sendMail = () => {
@@ -517,20 +525,20 @@ export default function ModalComponent(props) {
                 </div>
                 {/* 문의 신청 */}
                 <section className={style.send__button__container}>
-                  {requireInputDataChecker() ? (
+                  {!requireInputDataChecker() === true ? (
                     <AlertNeedMoreCustomerData />
                   ) : undefined}
-                  <section
+                  <div
                     className={style.sendButton}
                     onClick={handleOpenSendAgreeDialog}
                     style={{
-                      background: requireInputDataChecker()
+                      background: !requireInputDataChecker()
                         ? "#D9DEE5"
                         : "#55576F",
                     }}
                   >
                     {modalKr.modalSendButton}
-                  </section>
+                  </div>
                 </section>
                 {/*  */}
               </div>
