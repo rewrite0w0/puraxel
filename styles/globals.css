@@ -117,7 +117,7 @@ form > div {
   z-index: 1 !important;
 }
 
-@media all and (min-width: 1400px) and (min-height: 900px) {
+@media all and (min-width: 1600px) and (min-height: 1200px) {
   * {
     scrollbar-width: none;
   }
