@@ -1,0 +1,158 @@
+.oval__common {
+  position: absolute;
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+  border-radius: 50%;
+}
+
+.oval__134 {
+  position: absolute;
+  /* left: 30.56%;
+  right: 60.14%;
+  top: 32.52%;
+  bottom: 54.39%; */
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0.01%,
+    rgba(235, 243, 248, 0.05) 100%
+  );
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+  backdrop-filter: blur(20px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  transform: rotate(-180deg);
+
+  height: 133.99998474121145px;
+  width: 134.00001525878957px;
+  left: 344px;
+  top: 184px;
+  border-radius: 50%;
+
+  /* background-color: blue; */
+}
+
+.oval__48 {
+  position: absolute;
+  /* left: 35.21%;
+  right: 61.46%;
+  top: 12.11%;
+  bottom: 83.2%; */
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0.01%,
+    rgba(235, 243, 248, 0.05) 100%
+  );
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+  backdrop-filter: blur(20px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  transform: rotate(-180deg);
+  height: 48.000000000000185px;
+  width: 48.000000000000185px;
+  left: 503px;
+  top: 54px;
+  border-radius: 50%;
+
+  /* background-color: red; */
+}
+
+.oval__80 {
+  position: absolute;
+
+  /* left: 36.32%;
+  right: 58.12%;
+  top: 15.82%;
+  bottom: 76.27%; */
+
+  background: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+
+  backdrop-filter: blur(16px);
+
+  border-radius: 50%;
+
+  height: 81px;
+  width: 80px;
+
+  left: 533px;
+  top: 130px;
+  /* Note: backdrop-filter has minimal browser support */
+  /* background-color: pink; */
+}
+
+.oval__160 {
+  position: absolute;
+  /* left: 53.26%;
+  right: 29.31%;
+  top: -3.42%;
+  bottom: 78.91%; */
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0.01%,
+    rgba(235, 243, 248, 0.05) 100%
+  );
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+  backdrop-filter: blur(20px);
+  transform: rotate(90deg);
+
+  /* Note: backdrop-filter has minimal browser support */
+  height: 160.00000000000014px;
+  width: 160.00000000000014px;
+
+  left: 547px;
+  top: 50px;
+
+  border-radius: 50%;
+  /* background-color: green; */
+}
+
+.oval__251 {
+  position: absolute;
+  left: 53.26%;
+  right: 29.31%;
+  top: -3.42%;
+  bottom: 78.91%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0.01%,
+    rgba(235, 243, 248, 0.05) 100%
+  );
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+  backdrop-filter: blur(20px);
+  height: 251px;
+  width: 251px;
+  left: 767px;
+  top: -35px;
+  border-radius: 50%;
+  /* background-color: purple; */
+
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.oval__104 {
+  position: absolute;
+  left: 72.22%;
+  right: 20.56%;
+  top: 15.53%;
+  bottom: 74.32%;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0.01%,
+    rgba(235, 243, 248, 0.05) 100%
+  );
+  box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
+  backdrop-filter: blur(20px);
+  height: 104px;
+  width: 104px;
+  left: 1040px;
+  top: 159px;
+  border-radius: 50%;
+
+  /* Note: backdrop-filter has minimal browser support */
+  /* background-color: cyan; */
+}
