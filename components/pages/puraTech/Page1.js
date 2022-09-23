@@ -1,5 +1,7 @@
-import { useState } from "react";
 import _ from "./page1.module.css";
+
+import TechOval from "./Effect/TechOval";
+import TechColorOval from "./Effect/TechColorOval";
 
 const ExplainContainer = (props) => {
   return (
@@ -349,6 +351,8 @@ export default function Page1() {
     <section className={_.container}>
       <PuraxelTitle />
       <PuraxelExplain />
+      <TechOval />
+      <TechColorOval />
     </section>
   );
 }
