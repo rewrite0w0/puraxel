@@ -11,14 +11,14 @@ export default function MainOval(props) {
     },
     config: {
       // config: config.stiff,
-      // duration: 2000,
+      duration: 8000,
       // easing: easings.easeInOutBounce,
       // mass: 1,
       // tension: 80,
       // friction: 1,
 
-      tension: 200,
-      friction: 100,
+      tension: 100,
+      friction: 50,
     },
 
     loop: { reverse: true },

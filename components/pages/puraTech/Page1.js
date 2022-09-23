@@ -121,7 +121,7 @@ const Step4 = () => {
 const PuraxelTitle = () => {
   return (
     <article className={`${_.inner__container} ${_.inner__container__left}`}>
-      <div className={_.puraxel__title__sub}>프라셔널 레이저</div>
+      <div className={_.puraxel__title__sub}>프락셔널 레이저</div>
       <div className={_.puraxel__title__main}>퓨라셀의 기술</div>
       <div className={_.puraxel__title__image}></div>
     </article>
