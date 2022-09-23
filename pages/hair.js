@@ -10,13 +10,9 @@ import Page3 from "components/pages/Hair/Page3";
 import Page4 from "components/pages/Hair/Page4";
 import Page5 from "components/pages/Hair/Page5";
 import Page6 from "components/pages/puraTech/Page2";
-import Oval from "components/Parts/Oval";
 
-// const Page2 = React.lazy(() => import("components/pages/Hair/Page2"));
-// const Page3 = React.lazy(() => import("components/pages/Hair/Page3"));
-// const Page4 = React.lazy(() => import("components/pages/Hair/Page4"));
-// const Page5 = React.lazy(() => import("components/pages/Hair/Page5"));
-// const Page6 = React.lazy(() => import("components/pages/puraTech/Page2"));
+import Oval from "components/pages/Hair/Effect/HairOval";
+import ColorOval from "components/pages/Hair/Effect/HairColorOval";
 
 export default function Hair() {
   return (
@@ -37,23 +33,38 @@ export default function Hair() {
       <Swipers>
         <SwiperSlide>
           <Page1 />
+          <Oval style={{ top: "66%", left: "60%" }} />
+          <ColorOval style={{ top: "34%", left: "80%" }} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
+          <Oval style={{ top: "72%", left: "43%" }} />
+          <ColorOval style={{ top: "8%", left: "5%" }} />
         </SwiperSlide>
+
         <SwiperSlide>
           <Page3 />
+          <Oval style={{ top: "73.5%", left: "76%" }} />
+          <ColorOval style={{ top: "24%", left: "3%" }} />
         </SwiperSlide>
+
         <SwiperSlide>
           <Page4 />
+          <Oval style={{ top: "12%", left: "82%" }} />
+          <ColorOval style={{ top: "24%", left: "73%" }} />
         </SwiperSlide>
+
         <SwiperSlide>
           <Page5 />
+          <Oval style={{ top: "74%", left: "52%" }} />
+          <ColorOval style={{ top: "74%", left: "59%" }} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page6 />
+          <Oval style={{ top: "70%", left: "61%" }} />
+          <ColorOval style={{ top: "34%", left: "18%" }} />
         </SwiperSlide>
       </Swipers>
     </HairLayout>

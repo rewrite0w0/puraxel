@@ -1,0 +1,46 @@
+.oval__transparent {
+  position: absolute;
+  border-radius: 50%;
+
+  height: 180px;
+  width: 180px;
+
+  background: linear-gradient(
+      135deg,
+      rgba(228, 241, 255, 0.09) 0%,
+      rgba(228, 241, 255, 0.3) 100%
+    ),
+    linear-gradient(135.82deg, #e4f1ff 13.3%, rgba(255, 255, 255, 0.5) 98.46%);
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    #e4f1ff 13.3%,
+    rgba(255, 255, 255, 0.5) 98.46%
+  );
+
+  box-shadow: 0px 16px 32px 0px #1029880a;
+
+  background: linear-gradient(
+    135deg,
+    rgba(228, 241, 255, 0.09) 0%,
+    rgba(228, 241, 255, 0.3) 100%
+  );
+  box-shadow: 0px 16px 32px rgba(16, 41, 136, 0.04);
+  backdrop-filter: blur(25px);
+}
+
+.oval__color {
+  position: absolute;
+  border-radius: 50%;
+
+  height: 180px;
+  width: 180px;
+
+  filter: blur(50px);
+  z-index: -1;
+  backdrop-filter: blur(50px);
+  opacity: 0.5;
+  background: #d881b0aa;
+}

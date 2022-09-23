@@ -12,17 +12,9 @@ import Page4 from "components/pages/FX5000/Page4";
 import Page5 from "components/pages/FX5000/Page5";
 
 import Page6 from "components/pages/puraTech/Page2";
-import Oval from "components/Parts/Oval";
 
-// const FX5000Layout = React.lazy(() => import("components/layout/FX5000Layout"));
-// const Swipers = React.lazy(() => import("components/Swipers"));
-
-// const Page1 = React.lazy(() => import("components/pages/FX5000/Page1"));
-// const Page2 = React.lazy(() => import("components/pages/FX5000/Page2"));
-// const Page3 = React.lazy(() => import("components/pages/FX5000/Page3"));
-// const Page4 = React.lazy(() => import("components/pages/FX5000/Page4"));
-// const Page5 = React.lazy(() => import("components/pages/FX5000/Page5"));
-// const Page6 = React.lazy(() => import("components/pages/puraTech/Page2"));
+import Oval from "components/pages/FX5000/Effect/FX5000Oval";
+import ColorOval from "components/pages/FX5000/Effect/FX5000ColorOval";
 
 export default function FX5000() {
   return (
@@ -44,25 +36,38 @@ export default function FX5000() {
       <Swipers>
         <SwiperSlide>
           <Page1 />
+          <Oval style={{ top: "72%", left: "67%" }} />
+          <ColorOval style={{ top: "34%", left: "61%" }} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
+          <Oval style={{ top: "72%", left: "46%" }} />
+          <ColorOval style={{ top: "8%", left: "2.5%" }} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
+          <Oval style={{ top: "69%", left: "72%" }} />
+          <ColorOval style={{ top: "60%", left: "61%" }} />
         </SwiperSlide>
+
         <SwiperSlide>
           <Page4 />
+          <Oval style={{ top: "12%", left: "82%" }} />
+          <ColorOval style={{ top: "24%", left: "73%" }} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page5 />
+          <Oval style={{ top: "74%", left: "52%" }} />
+          <ColorOval style={{ top: "74%", left: "59%" }} />
         </SwiperSlide>
 
         <SwiperSlide>
           <Page6 />
+          <Oval style={{ top: "70%", left: "61%" }} />
+          <ColorOval style={{ top: "34%", left: "18%" }} />
         </SwiperSlide>
       </Swipers>
     </FX5000Layout>
