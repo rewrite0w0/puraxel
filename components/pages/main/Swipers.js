@@ -28,11 +28,11 @@ export default function Swipers({ children }) {
       allowTouchMove={true}
       mousewheel={{ sensitivity: 0.1 }}
       // navigation={true}
-      zoom={true}
+      // zoom={true}
       scrollbar={false}
       keyboard={{ enabled: true, pageUpDown: true, onlyInViewport: true }}
       navigation={{ enabled: true }}
-      autoplay={{ delay: 4000 }}
+      // autoplay={{ delay: 4000 }}
       speed={2000}
       preloadImages={true}
       lazy={{
@@ -42,6 +42,7 @@ export default function Swipers({ children }) {
         loadOnTransitionStart: false,
         checkInView: true,
       }}
+      loop={true}
       rewind={true}
       effect={"fade"}
       fadeEffect={{ crossFade: true }}
