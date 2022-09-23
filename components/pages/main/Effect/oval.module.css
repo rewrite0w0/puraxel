@@ -17,7 +17,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
 
   /* Note: backdrop-filter has minimal browser support */
   transform: rotate(-180deg);
@@ -44,7 +44,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
 
   /* Note: backdrop-filter has minimal browser support */
   transform: rotate(-180deg);
@@ -95,7 +95,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   transform: rotate(90deg);
 
   /* Note: backdrop-filter has minimal browser support */
@@ -122,7 +122,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   height: 251px;
   width: 251px;
   left: 767px;
@@ -146,7 +146,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   height: 104px;
   width: 104px;
   left: 1040px;
