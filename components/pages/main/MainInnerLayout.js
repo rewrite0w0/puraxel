@@ -24,7 +24,7 @@ function FadeIn({ children }) {
 export default function Page0(props) {
   const randomPostion = () => {
     // console.log(Math.floor(Math.random() * (300 - -100) + -100));
-    return Math.floor(Math.random() * (300 - -100) + -100);
+    return Math.floor(Math.random() * (200 - -100) + -100);
   };
 
   const [realPage, setRealPage] = useState(undefined);
