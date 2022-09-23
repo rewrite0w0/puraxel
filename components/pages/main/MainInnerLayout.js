@@ -1,6 +1,7 @@
 import _ from "./MainInnerLayout.module.css";
 import MainOval from "components/pages/main/Effect/MainOval";
 import ovalStyle from "components/pages/main/Effect/oval.module.css";
+import Swipers from "./Swipers";
 
 export default function Page0(props) {
   const randomPostion = () => {
@@ -14,7 +15,11 @@ export default function Page0(props) {
       </div>
       <div className={_.expalin__para}>레이저의 미세한 홀이</div>
       <div className={_.expalin__para}>당신의 피부를 지켜줍니다.</div>
-      <div className={_.image__container}>{props.image}</div>
+
+      <div className={_.image__container}>
+        <Swipers />
+      </div>
+
       <div className={_.product__exlain}>※ 이 제품은 “미용기기” 입니다</div>
 
       <MainOval

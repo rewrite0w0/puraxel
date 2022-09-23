@@ -6,6 +6,10 @@
 
   justify-content: center;
   align-items: center;
+  height: 1024px;
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .page__title {

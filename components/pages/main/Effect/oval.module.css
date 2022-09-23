@@ -28,7 +28,7 @@
   top: 184px;
   border-radius: 50%;
 
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .oval__48 {
@@ -54,7 +54,7 @@
   top: 54px;
   border-radius: 50%;
 
-  background-color: red;
+  /* background-color: red; */
 }
 
 .oval__80 {
@@ -79,7 +79,7 @@
   left: 533px;
   top: 130px;
   /* Note: backdrop-filter has minimal browser support */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .oval__160 {
@@ -106,7 +106,7 @@
   top: 50px;
 
   border-radius: 50%;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .oval__251 {
@@ -128,7 +128,7 @@
   left: 767px;
   top: -35px;
   border-radius: 50%;
-  background-color: purple;
+  /* background-color: purple; */
 
   /* Note: backdrop-filter has minimal browser support */
 }
@@ -154,5 +154,5 @@
   border-radius: 50%;
 
   /* Note: backdrop-filter has minimal browser support */
-  background-color: cyan;
+  /* background-color: cyan; */
 }
