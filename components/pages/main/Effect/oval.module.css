@@ -52,6 +52,13 @@
   /* background-color: blue; */
 
   backdrop-filter: blur(2px);
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 .oval__48 {
@@ -101,6 +108,13 @@
   box-shadow: 0px 16px 40px 0px #70748a0a;
   z-index: -1;
   backdrop-filter: blur(2px);
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 .oval__80 {
@@ -146,6 +160,13 @@
 
   z-index: -1;
   backdrop-filter: blur(2px);
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 .oval__160 {
@@ -199,6 +220,13 @@
 
   z-index: -1;
   backdrop-filter: blur(2px);
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 .oval__251 {
@@ -249,6 +277,13 @@
 
   z-index: -1;
   backdrop-filter: blur(2px);
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }
 
 .oval__104 {
@@ -296,4 +331,11 @@
 
   z-index: -1;
   backdrop-filter: blur(2px);
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 }

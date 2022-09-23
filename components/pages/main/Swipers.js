@@ -62,7 +62,7 @@ export default function Swipers(props) {
       rewind={true}
       effect={"fade"}
       // effect={"slide"}
-      fadeEffect={{ crossFade: true }}
+      // fadeEffect={{ crossFade: true }}
       // onSlideChange={(e) => setRealPage(e.realIndex)}
       modules={[
         Mousewheel,
