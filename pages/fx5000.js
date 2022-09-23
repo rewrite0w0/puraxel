@@ -36,38 +36,38 @@ export default function FX5000() {
       <Swipers>
         <SwiperSlide>
           <Page1 />
-          <Oval style={{ top: "72%", left: "67%" }} />
-          <ColorOval style={{ top: "34%", left: "61%" }} />
+          {/* <Oval style={{ top: "72%", left: "67%" }} />
+          <ColorOval style={{ top: "34%", left: "61%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
-          <Oval style={{ top: "72%", left: "46%" }} />
-          <ColorOval style={{ top: "8%", left: "2.5%" }} />
+          {/* <Oval style={{ top: "72%", left: "46%" }} />
+          <ColorOval style={{ top: "8%", left: "2.5%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
-          <Oval style={{ top: "69%", left: "72%" }} />
-          <ColorOval style={{ top: "60%", left: "61%" }} />
+          {/* <Oval style={{ top: "69%", left: "72%" }} />
+          <ColorOval style={{ top: "60%", left: "61%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page4 />
-          <Oval style={{ top: "12%", left: "82%" }} />
-          <ColorOval style={{ top: "24%", left: "73%" }} />
+          {/* <Oval style={{ top: "12%", left: "82%" }} />
+          <ColorOval style={{ top: "24%", left: "73%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page5 />
-          <Oval style={{ top: "74%", left: "52%" }} />
-          <ColorOval style={{ top: "74%", left: "59%" }} />
+          {/* <Oval style={{ top: "74%", left: "52%" }} />
+          <ColorOval style={{ top: "74%", left: "59%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page6 />
-          <Oval style={{ top: "70%", left: "61%" }} />
-          <ColorOval style={{ top: "34%", left: "18%" }} />
+          {/* <Oval style={{ top: "70%", left: "61%" }} />
+          <ColorOval style={{ top: "34%", left: "18%" }} /> */}
         </SwiperSlide>
       </Swipers>
     </FX5000Layout>

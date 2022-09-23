@@ -32,32 +32,32 @@ export default function Me() {
       <Swipers>
         <SwiperSlide>
           <Page1 />
-          <Oval style={{ top: "60%", left: "74%" }} />
-          <ColorOval style={{ top: "28%", left: "69%" }} />
+          {/* <Oval style={{ top: "60%", left: "74%" }} />
+          <ColorOval style={{ top: "28%", left: "69%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page2 />
-          <Oval style={{ top: "69%", left: "43%" }} />
-          <ColorOval style={{ top: "8%", left: "5%" }} />
+          {/* <Oval style={{ top: "69%", left: "43%" }} />
+          <ColorOval style={{ top: "8%", left: "5%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page3 />
-          <Oval style={{ top: "69%", left: "76%" }} />
-          <ColorOval style={{ top: "69%", left: "80%" }} />
+          {/* <Oval style={{ top: "69%", left: "76%" }} />
+          <ColorOval style={{ top: "69%", left: "80%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page4 />
-          <Oval style={{ top: "74%", left: "80%" }} />
-          <ColorOval style={{ top: "74%", left: "73%" }} />
+          {/* <Oval style={{ top: "74%", left: "80%" }} />
+          <ColorOval style={{ top: "74%", left: "73%" }} /> */}
         </SwiperSlide>
 
         <SwiperSlide>
           <Page5 />
-          <Oval style={{ top: "70%", left: "61%" }} />
-          <ColorOval style={{ top: "34%", left: "18%" }} />
+          {/* <Oval style={{ top: "70%", left: "61%" }} />
+          <ColorOval style={{ top: "34%", left: "18%" }} /> */}
         </SwiperSlide>
       </Swipers>
     </MeLayout>

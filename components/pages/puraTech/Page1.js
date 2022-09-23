@@ -351,8 +351,8 @@ export default function Page1() {
     <section className={_.container}>
       <PuraxelTitle />
       <PuraxelExplain />
-      <TechOval />
-      <TechColorOval />
+      {/* <TechOval />
+      <TechColorOval /> */}
     </section>
   );
 }
