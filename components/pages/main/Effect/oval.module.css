@@ -24,8 +24,8 @@
 
   height: 133.99998474121145px;
   width: 134.00001525878957px;
-  left: 344px;
-  top: 184px;
+  left: 300px;
+  top: 160px;
   border-radius: 50%;
 
   /* background-color: blue; */
@@ -51,7 +51,7 @@
   height: 48.000000000000185px;
   width: 48.000000000000185px;
   left: 503px;
-  top: 54px;
+  top: 13px;
   border-radius: 50%;
 
   /* background-color: red; */
@@ -77,7 +77,7 @@
   width: 80px;
 
   left: 533px;
-  top: 130px;
+  top: 117px;
   /* Note: backdrop-filter has minimal browser support */
   /* background-color: pink; */
 }
@@ -103,7 +103,7 @@
   width: 160.00000000000014px;
 
   left: 547px;
-  top: 50px;
+  top: 18px;
 
   border-radius: 50%;
   /* background-color: green; */
@@ -125,8 +125,8 @@
   /* backdrop-filter: blur(20px); */
   height: 251px;
   width: 251px;
-  left: 767px;
-  top: -35px;
+  left: 769px;
+  top: -80px;
   border-radius: 50%;
   /* background-color: purple; */
 
@@ -149,8 +149,8 @@
   /* backdrop-filter: blur(20px); */
   height: 104px;
   width: 104px;
-  left: 1040px;
-  top: 159px;
+  left: 1016px;
+  top: 133px;
   border-radius: 50%;
 
   /* Note: backdrop-filter has minimal browser support */

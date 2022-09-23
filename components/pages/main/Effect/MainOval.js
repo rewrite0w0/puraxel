@@ -6,6 +6,8 @@ export default function MainOval(props) {
     to: {
       y: props.toy,
       x: props.tox,
+      // y: 0,
+      // x: 0,
     },
     config: {
       // config: config.stiff,
