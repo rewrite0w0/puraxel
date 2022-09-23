@@ -39,7 +39,6 @@ export default function Swipers(props) {
     <Swiper
       // className={_.container}
       style={{ height: "100%", zIndex: 0, borderRadius: "0.8rem" }}
-      className={style.swiper__container}
       slidesPerView={1}
       allowTouchMove={true}
       mousewheel={{ sensitivity: 0.1 }}
@@ -76,13 +75,13 @@ export default function Swipers(props) {
       ]}
       {...props}
     >
-      <SwiperSlide className={`${style.swiper__container} ${style.bg1}`}>
+      <SwiperSlide>
         <Page1 />
       </SwiperSlide>
-      <SwiperSlide className={`${style.swiper__container} ${style.bg2}`}>
+      <SwiperSlide>
         <Page2 />
       </SwiperSlide>
-      <SwiperSlide className={`${style.swiper__container} ${style.bg3}`}>
+      <SwiperSlide>
         <Page3 />
       </SwiperSlide>
     </Swiper>

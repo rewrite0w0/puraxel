@@ -16,7 +16,7 @@ export default function MainOval(props) {
       // friction: 1,
 
       tension: 200,
-      friction: 70,
+      friction: 100,
     },
 
     loop: { reverse: true },

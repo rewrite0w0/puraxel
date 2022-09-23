@@ -1,4 +1,6 @@
 import { useSpring, animated, useTransition } from "react-spring";
+import _ from "./FadeIn.module.css";
+
 export default function Fadein({ children }) {
   const styles = useSpring({
     to: [{ opacity: 1 }],
@@ -6,5 +8,9 @@ export default function Fadein({ children }) {
     config: { duration: 1000 },
   });
 
-  return <animated.div style={styles}>{children}</animated.div>;
+  return (
+    <animated.div style={styles} className={_.container}>
+      {children}
+    </animated.div>
+  );
 }

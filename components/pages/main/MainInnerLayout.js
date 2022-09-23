@@ -3,17 +3,40 @@ import MainOval from "components/pages/main/Effect/MainOval";
 import ovalStyle from "components/pages/main/Effect/oval.module.css";
 import Swipers from "./Swipers";
 
-export default function Page0(props) {
-  const randomPostion = () => {
-    return Math.random() * (300 - -100) + -100;
-  };
+import { useSpring, animated, useTransition } from "react-spring";
+
+import { useState } from "react";
+
+function FadeIn({ children }) {
+  const styles = useSpring({
+    to: [{ opacity: 1 }],
+    from: { opacity: 0.5 },
+    config: { duration: 2000 },
+  });
 
   return (
-    <section className={`${_.container} ${props.class}`}>
+    <animated.div style={styles} className={_.bg}>
+      {children}
+    </animated.div>
+  );
+}
+
+export default function Page0(props) {
+  const randomPostion = () => {
+    // console.log(Math.floor(Math.random() * (300 - -100) + -100));
+    return Math.floor(Math.random() * (300 - -100) + -100);
+  };
+
+  const [realPage, setRealPage] = useState(undefined);
+
+  return (
+    <section className={`${_.container}`}>
       <div className={_.page__title}>
         <span className={_.page__title__bold}>홀</span>로 빛나다
       </div>
+
       <div className={_.expalin__para}>레이저의 미세한 홀이</div>
+
       <div className={_.expalin__para}>당신의 피부를 지켜줍니다.</div>
 
       <div className={_.image__container}>
@@ -52,6 +75,16 @@ export default function Page0(props) {
         toy={randomPostion()}
         tox={randomPostion()}
       />
+
+      {/* <div className={`${_.bg}`}> */}
+      {/* <FadeIn>
+        <div
+          className={`${_.bg} ${
+            realPage === 0 ? _.bg1 : realPage === 1 ? _.bg2 : _.bg3
+          }`}
+        />
+      </FadeIn> */}
+      {/* </div> */}
     </section>
   );
 }
