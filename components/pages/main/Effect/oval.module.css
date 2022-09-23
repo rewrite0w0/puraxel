@@ -50,6 +50,8 @@
   box-shadow: 0px 16px 40px 0px #70748a0a;
 
   /* background-color: blue; */
+
+  backdrop-filter: blur(2px);
 }
 
 .oval__48 {
@@ -98,6 +100,7 @@
 
   box-shadow: 0px 16px 40px 0px #70748a0a;
   z-index: -1;
+  backdrop-filter: blur(2px);
 }
 
 .oval__80 {
@@ -142,6 +145,7 @@
   box-shadow: 0px 16px 40px 0px #70748a0a;
 
   z-index: -1;
+  backdrop-filter: blur(2px);
 }
 
 .oval__160 {
@@ -194,6 +198,7 @@
   box-shadow: 0px 16px 40px 0px #70748a0a;
 
   z-index: -1;
+  backdrop-filter: blur(2px);
 }
 
 .oval__251 {
@@ -243,6 +248,7 @@
   /* Note: backdrop-filter has minimal browser support */
 
   z-index: -1;
+  backdrop-filter: blur(2px);
 }
 
 .oval__104 {
@@ -289,4 +295,5 @@
   box-shadow: 0px 16px 40px 0px #70748a0a;
 
   z-index: -1;
+  backdrop-filter: blur(2px);
 }
