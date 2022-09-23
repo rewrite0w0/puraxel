@@ -17,7 +17,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
 
   /* Note: backdrop-filter has minimal browser support */
   transform: rotate(-180deg);
@@ -27,6 +27,27 @@
   left: 300px;
   top: 160px;
   border-radius: 50%;
+
+  background: linear-gradient(
+      135.82deg,
+      #ffffff 13.3%,
+      rgba(233, 240, 244, 0.3) 98.46%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0.01%,
+      rgba(235, 243, 248, 0.05) 100%
+    );
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    #ffffff 13.3%,
+    rgba(233, 240, 244, 0.3) 98.46%
+  );
+
+  box-shadow: 0px 16px 40px 0px #70748a0a;
 
   /* background-color: blue; */
 }
@@ -44,7 +65,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
 
   /* Note: backdrop-filter has minimal browser support */
   transform: rotate(-180deg);
@@ -55,6 +76,28 @@
   border-radius: 50%;
 
   /* background-color: red; */
+
+  background: linear-gradient(
+      135.82deg,
+      #ffffff 13.3%,
+      rgba(235, 243, 249, 0.5) 98.46%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0.01%,
+      rgba(235, 243, 248, 0.05) 100%
+    );
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    #ffffff 13.3%,
+    rgba(235, 243, 249, 0.5) 98.46%
+  );
+
+  box-shadow: 0px 16px 40px 0px #70748a0a;
+  z-index: -1;
 }
 
 .oval__80 {
@@ -69,7 +112,7 @@
 
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
 
-  /* backdrop-filter: blur(16px); */
+  backdrop-filter: blur(16px);
 
   border-radius: 50%;
 
@@ -80,6 +123,25 @@
   top: 117px;
   /* Note: backdrop-filter has minimal browser support */
   /* background-color: pink; */
+
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    rgba(235, 243, 249, 0.5) 13.3%,
+    #ffffff 98.46%
+  );
+
+  box-shadow: 0px 16px 40px 0px #70748a0a;
+
+  z-index: -1;
 }
 
 .oval__160 {
@@ -95,7 +157,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
   transform: rotate(90deg);
 
   /* Note: backdrop-filter has minimal browser support */
@@ -107,6 +169,31 @@
 
   border-radius: 50%;
   /* background-color: green; */
+
+  background: linear-gradient(
+      135.82deg,
+      #eeeeee 13.3%,
+      #ebf3f9 78.06%,
+      rgba(255, 255, 255, 0.3) 98.46%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0.01%,
+      rgba(235, 243, 248, 0.05) 100%
+    );
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    #eeeeee 13.3%,
+    #ebf3f9 78.06%,
+    rgba(255, 255, 255, 0.3) 98.46%
+  );
+
+  box-shadow: 0px 16px 40px 0px #70748a0a;
+
+  z-index: -1;
 }
 
 .oval__251 {
@@ -122,7 +209,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
   height: 251px;
   width: 251px;
   left: 769px;
@@ -130,7 +217,32 @@
   border-radius: 50%;
   /* background-color: purple; */
 
+  background: linear-gradient(
+      135.82deg,
+      #eeeeee 13.3%,
+      #ebf3f9 78.06%,
+      rgba(255, 255, 255, 0.3) 98.46%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0.01%,
+      rgba(235, 243, 248, 0.05) 100%
+    );
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    #eeeeee 13.3%,
+    #ebf3f9 78.06%,
+    rgba(255, 255, 255, 0.3) 98.46%
+  );
+
+  box-shadow: 0px 16px 40px 0px #70748a0a;
+
   /* Note: backdrop-filter has minimal browser support */
+
+  z-index: -1;
 }
 
 .oval__104 {
@@ -146,7 +258,7 @@
     rgba(235, 243, 248, 0.05) 100%
   );
   box-shadow: 0px 16px 40px rgba(112, 116, 138, 0.04);
-  /* backdrop-filter: blur(20px); */
+  backdrop-filter: blur(20px);
   height: 104px;
   width: 104px;
   left: 1016px;
@@ -155,4 +267,26 @@
 
   /* Note: backdrop-filter has minimal browser support */
   /* background-color: cyan; */
+  background: linear-gradient(
+      135.82deg,
+      rgba(235, 243, 249, 0.5) 13.3%,
+      #ffffff 98.46%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0.01%,
+      rgba(235, 243, 248, 0.05) 100%
+    );
+
+  border: 1px solid;
+
+  border-image-source: linear-gradient(
+    135.82deg,
+    rgba(235, 243, 249, 0.5) 13.3%,
+    #ffffff 98.46%
+  );
+
+  box-shadow: 0px 16px 40px 0px #70748a0a;
+
+  z-index: -1;
 }
