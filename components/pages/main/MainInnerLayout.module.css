@@ -6,7 +6,7 @@
 
   /* justify-content: center; */
   align-items: center;
-  height: 1024px;
+  height: 848px;
   width: 1440px;
   margin: 0 auto;
   position: relative;
@@ -24,7 +24,7 @@
   /* primary/01 */
   color: #55576f;
   margin-bottom: 12px;
-  margin-top: 70px;
+  margin-top: 48px;
 }
 
 .page__title__bold {
@@ -57,7 +57,7 @@
 
 .product__exlain {
   /* margin-top: 24px; */
-  margin-top: 664px;
+  margin-top: 660px;
   font-weight: 600;
   font-size: 12px;
   line-height: 132%;
