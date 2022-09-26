@@ -39,7 +39,7 @@ export default function Page4() {
           className={_.youtube__modal}
           width="70%"
           height="70%"
-          src={`https://www.youtube-nocookie.com/embed/sNwV5GaGODY?controls=1&rel=0&disablekb=1&autoplay=1&loop=0&mute=0&modestbranding=1`}
+          src={`https://www.youtube-nocookie.com/embed/sNwV5GaGODY?controls=1&rel=0&disablekb=1&autoplay=1&loop=1&playlist=X6oDTHJnxq4&mute=0&modestbranding=1`}
           title="How to use PURAXEL"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

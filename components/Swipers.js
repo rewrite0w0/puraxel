@@ -14,7 +14,8 @@ import {
 export default function Swipers({ children }) {
   useEffect(() => {
     // console.log(document.documentURI);
-  }, []);
+    // return console.log(window.innerWidth);
+  });
 
   return (
     <Swiper
