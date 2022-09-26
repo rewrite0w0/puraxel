@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import FX5000Layout from "components/layout/FX5000Layout";
 import Swipers from "components/Swipers";
@@ -17,6 +17,53 @@ import Oval from "components/pages/FX5000/Effect/FX5000Oval";
 import ColorOval from "components/pages/FX5000/Effect/FX5000ColorOval";
 
 export default function FX5000() {
+  // const [realPage, setRealPage] = useState(undefined);
+
+  // console.log(realPage);
+
+  // const A = () => {
+  //   return (
+  //     <div>
+  //       <Oval style={{ top: "72%", left: "67%" }} />
+  //       <ColorOval style={{ top: "34%", left: "61%" }} />
+  //     </div>
+  //   );
+  // };
+
+  // const B = () => {
+  //   return (
+  //     <>
+  //       <Oval style={{ top: "0%", left: "0%" }} />
+  //       <ColorOval style={{ top: "0%", left: "0%" }} />
+  //     </>
+  //   );
+  // };
+
+  // const L = () => {
+  //   return (
+  //     <>
+  //       <Oval style={{ top: "100%", left: "100%" }} />
+  //       <ColorOval style={{ top: "100%", left: "100%" }} />
+  //     </>
+  //   );
+  // };
+
+  // const moveOval = () => {
+  //   if (realPage === 0) {
+  //     return A();
+  //   }
+  //   if (realPage === 1) {
+  //     return B();
+  //   }
+  //   if (realPage === 2) {
+  //     return L();
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   return moveOval();
+  // }, [realPage]);
+
   return (
     <FX5000Layout>
       <Head>
@@ -33,7 +80,13 @@ export default function FX5000() {
         <link rel="icon" href="/favicon_64_b.svg" />
       </Head>
 
-      <Swipers>
+      <Swipers
+        onSlideChange={(e) => {
+          e.realIndex === 0 ? (
+            <ColorOval style={{ top: "72%", left: "67%" }} />
+          ) : undefined;
+        }}
+      >
         <SwiperSlide>
           <Page1 />
           {/* <Oval style={{ top: "72%", left: "67%" }} />

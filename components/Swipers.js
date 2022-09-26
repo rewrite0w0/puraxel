@@ -25,8 +25,7 @@ export default function Swipers({ children }) {
       // navigation={true}
 
       // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={(e) => console.log(e.activeIndex)}
-
+      // onSlideChange={(e) => console.log(e.realIndex)}
       pagination={{
         type: "custom",
         renderCustom: (swiper, current, total) => {
