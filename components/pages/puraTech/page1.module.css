@@ -5,8 +5,9 @@
   /* align-items: center; */
   padding-right: 8rem;
   padding-left: 8rem;
-  padding-top: 1.4rem;
-  padding-bottom: 11.4rem;
+  /* padding-top: 1.4rem;
+  padding-bottom: 11.4rem; */
+  align-items: center;
 }
 
 .inner__container {
