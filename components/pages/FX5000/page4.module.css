@@ -36,6 +36,14 @@
   height: inherit;
 }
 
+.youtube__thumnail {
+  pointer-events: none;
+}
+
+.youtube__modal {
+  translate: 22.5% 18%;
+}
+
 .title__container {
   display: flex;
   flex-direction: column;
