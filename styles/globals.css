@@ -126,9 +126,9 @@ form > div {
   }
 }
 
-html {
+/* html {
   overflow: scroll !important;
-}
+} */
 
 /* #__next {
   width: 1440px;
