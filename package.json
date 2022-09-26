@@ -13,7 +13,8 @@
     "serve": "serve out",
     "serve:build": "serve .next",
     "info": "next info",
-    "start:production": "NODE_ENV=production node ./server.js"
+    "start:production": "NODE_ENV=production node ./server.js",
+    "i:build:export": "npm run i && next build && next export"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
