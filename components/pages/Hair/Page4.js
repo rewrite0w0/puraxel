@@ -31,7 +31,7 @@ export default function Page4() {
   const YoutubeModal = () => {
     return (
       <Modal
-        onClickCapture={(e) => console.log(e)}
+        // onClickCapture={(e) => console.log(e)}
         onClose={handleYoutubeModalClose}
         open={youtubeModalOpen}
       >
