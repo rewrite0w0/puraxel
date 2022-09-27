@@ -8,7 +8,8 @@ import Page1 from "components/pages/Me/Page1";
 import Page2 from "components/pages/Me/Page2";
 import Page3 from "components/pages/Me/Page3";
 import Page4 from "components/pages/Me/Page4";
-import Page5 from "components/pages/puraTech/Page2";
+import Page5 from "components/pages/Me/Page5";
+import Page6 from "components/pages/puraTech/Page2";
 
 import Oval from "components/pages/Me/Effect/MeOval";
 import ColorOval from "components/pages/Me/Effect/MeColorOval";
@@ -58,6 +59,10 @@ export default function Me() {
           <Page5 />
           {/* <Oval style={{ top: "70%", left: "61%" }} />
           <ColorOval style={{ top: "34%", left: "18%" }} /> */}
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Page6 />
         </SwiperSlide>
       </Swipers>
     </MeLayout>
