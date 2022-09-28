@@ -1,10 +1,10 @@
 .image {
-  content: url(../../../src/image/main/page1/main-img_01_b.png);
+  content: url(../../../src/image/main/page1/main-img_01_b.webp);
   height: 742px;
   width: 1274px;
   margin-top: 180px;
 }
 
 .bg {
-  background: url(../../../src/image/main/page1/1440_1024_bg_01.png);
+  background: url(../../../src/image/main/page1/1440_1024_bg_01.webp);
 }

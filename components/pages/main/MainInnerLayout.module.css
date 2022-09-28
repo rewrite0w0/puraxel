@@ -81,15 +81,15 @@
 }
 
 .bg1 {
-  background: url(../../../src/image/main/page1/1440_1024_bg_01.png);
+  background: url(../../../src/image/main/page1/1440_1024_bg_01.webp);
 }
 
 .bg2 {
-  background: url(../../../src/image/main/page2/1440_1024_bg_02.png);
+  background: url(../../../src/image/main/page2/1440_1024_bg_02.webp);
 }
 
 .bg3 {
-  background: url(../../../src/image/main/page3/1440_1024_bg_03.png);
+  background: url(../../../src/image/main/page3/1440_1024_bg_03.webp);
 }
 
 .swiper__container {
