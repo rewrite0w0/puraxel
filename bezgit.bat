@@ -1,7 +1,7 @@
 @echo off
 SETLOCAL
 
-git push build blakc
+git push build black
 git push origin black
 
 echo complete
