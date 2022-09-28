@@ -23,8 +23,8 @@
 
   /* primary/01 */
   color: #55576f;
-  margin-bottom: 12px;
-  margin-top: 48px;
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .page__title__bold {
@@ -57,7 +57,8 @@
 
 .product__exlain {
   /* margin-top: 24px; */
-  margin-top: 660px;
+  /* margin-top: 660px; */
+  margin-top: 4px;
   font-weight: 600;
   font-size: 12px;
   line-height: 132%;
@@ -68,9 +69,9 @@
   color: #b5b5b5;
 }
 
-.image {
+/* .image {
   content: url(../../../src/image/main/page1/main-img_01.png);
-}
+} */
 
 .bg {
   position: absolute;

@@ -39,11 +39,10 @@ export default function Page0(props) {
 
       <div className={_.expalin__para}>당신의 피부를 지켜줍니다.</div>
 
+      <div className={_.product__exlain}>※ 이 제품은 “미용기기” 입니다</div>
       <div className={_.image__container}>
         <Swipers />
       </div>
-
-      <div className={_.product__exlain}>※ 이 제품은 “미용기기” 입니다</div>
 
       <MainOval
         className={ovalStyle.oval__48}
