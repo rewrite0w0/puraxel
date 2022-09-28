@@ -390,3 +390,7 @@
   font-weight: 600;
   margin-top: 1.6rem;
 }
+
+.inner__nav__common > button:hover {
+  opacity: 1 !important;
+}
