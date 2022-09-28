@@ -261,7 +261,7 @@
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 50%;
-  color: #fff;
+  color: #fff !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,7 +308,7 @@
 
 .parts__red__button {
   background: #dd7a8c;
-  color: #fff;
+  color: #fff !important;
 }
 
 .parts__black__button {
