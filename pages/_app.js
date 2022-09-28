@@ -31,6 +31,13 @@ function MyApp({ Component, pageProps }) {
     isMobile || isTablet ? (location.href = REDIRECT_MOBILE) : undefined;
   }, []);
 
+  const getStaticPaths = async () => {
+    console.log("move?");
+    return { paths: ["/me", "/fx5000", "/hair"], fallback: true };
+  };
+
+  getStaticPaths();
+
   return (
     <Layout>
       <Script

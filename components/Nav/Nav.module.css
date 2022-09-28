@@ -9,9 +9,7 @@
 }
 
 .buttonStyle {
-  /* font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", sans-serif; */
+  /* font-family: Pretendard !important; */
   color: var(--primary01);
   font-size: 2rem;
   margin-right: 4rem;
