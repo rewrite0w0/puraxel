@@ -82,7 +82,7 @@ export default function Page4() {
 
       <div className={style.puraxel__certifications__container}>
         <CertiTitleContainer
-          color="#F8F9FA"
+          color="#F8F9FA !important"
           background="#55576F"
           title="PURAXEL Certifications"
           subject="퓨라셀 인증"

@@ -44,11 +44,13 @@
 .step__step {
   font-size: 1.2rem;
   font-weight: 600;
+  color: white !important;
 }
 
 .step__bold {
   font-weight: 800;
   font-size: 1.2rem;
+  color: white !important;
 }
 
 .step__title {
