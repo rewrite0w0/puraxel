@@ -43,6 +43,11 @@
   cursor: pointer;
 }
 
+.shoppingMall > div > svg,
+.shoppingMall > div > svg > path {
+  color: #fff !important;
+}
+
 .single {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0rem 0.6rem 2rem rgba(127, 46, 190, 0.05);
