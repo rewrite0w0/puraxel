@@ -32,8 +32,8 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   const getStaticPaths = async () => {
-    console.log("move?");
-    return { paths: ["/me", "/fx5000", "/hair"], fallback: true };
+    // console.log("move?");
+    return { paths: ["/me", "/fx5000", "/hair"], fallback: "blocking" };
   };
 
   getStaticPaths();
