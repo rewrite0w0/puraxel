@@ -1,5 +1,6 @@
 import Image from "next/image";
 import _ from "./page3.module.css";
+import image from "src/image/main/page3/main-img_03_b.webp";
 
 // export default function Page3() {
 //   return <div className={_.image}></div>;
@@ -8,7 +9,9 @@ import _ from "./page3.module.css";
 export default function Page1() {
   return (
     <Image
-      className={_.image}
+      // className={_.image}
+      style={{ marginTop: "180px !important" }}
+      src={image}
       alt="puraxel3"
       width={1274}
       height={742}
