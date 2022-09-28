@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
     // console.log("move?");
     return {
       paths: ["/", "/me", "/fx5000", "/hair", "tech"],
-      fallback: "blocking",
+      fallback: true,
     };
   };
 
