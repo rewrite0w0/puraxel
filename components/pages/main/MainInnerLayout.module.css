@@ -24,7 +24,7 @@
   /* primary/01 */
   color: #55576f;
   margin-bottom: 8px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .page__title__bold {
@@ -58,7 +58,7 @@
 .product__exlain {
   /* margin-top: 24px; */
   /* margin-top: 660px; */
-  margin-top: 4px;
+  margin-top: 8px;
   font-weight: 600;
   font-size: 12px;
   line-height: 132%;
