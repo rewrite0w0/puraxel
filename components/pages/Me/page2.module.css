@@ -109,7 +109,7 @@
 }
 
 .laserImage {
-  content: url(../../../src/image/ME/page2/PURAXEL_LASER.png);
+  content: url(../../../src/image/ME/page2/PURAXEL_LASER.webp);
 }
 
 .laserImageContainer {
@@ -117,7 +117,7 @@
 }
 
 .laserInactiveImage {
-  content: url(../../../src/image/ME/page2/LASERINA.png);
+  content: url(../../../src/image/ME/page2/LASERINA.webp);
 }
 
 .galvanicImageContainer {
@@ -125,11 +125,11 @@
 }
 
 .galvanicImage {
-  content: url(../../../src/image/ME/page2/PURAXEL_GAL.png);
+  content: url(../../../src/image/ME/page2/PURAXEL_GAL.webp);
 }
 
 .galvanicInactiveImage {
-  content: url(../../../src/image/ME/page2/GALINA.png);
+  content: url(../../../src/image/ME/page2/GALINA.webp);
 }
 
 .imageContainer {
@@ -273,14 +273,14 @@
 }
 
 .laserImageRightContainer {
-  background-image: url(../../../src/image/ME/page2/1440las.png);
+  background-image: url(../../../src/image/ME/page2/1440las.webp);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .galvanicImageRightContainer {
-  background-image: url(../../../src/image/ME/page2/1440gal.png);
+  background-image: url(../../../src/image/ME/page2/1440gal.webp);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@
 }
 
 .head__tips {
-  content: url(../../../src/image/ME/page2/tipset.png);
+  content: url(../../../src/image/ME/page2/tipset.webp);
   position: absolute;
 
   right: 3%;

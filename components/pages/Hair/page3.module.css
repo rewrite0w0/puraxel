@@ -237,11 +237,11 @@
 }
 
 .image__hair__volume {
-  content: url(../../../src/image/HAIR/page3/01.png);
+  content: url(../../../src/image/HAIR/page3/01.webp);
 }
 
 .image__hair__strong {
-  content: url(../../../src/image/HAIR/page3/02.png);
+  content: url(../../../src/image/HAIR/page3/02.webp);
 }
 
 .hair__graph__image__common {
@@ -321,16 +321,16 @@
 }
 
 .image__hair01 {
-  content: url(../../../src/image/HAIR/page3/image1.png);
+  content: url(../../../src/image/HAIR/page3/image1.webp);
   /* margin-top: 4rem; */
 }
 .image__hair02 {
-  content: url(../../../src/image/HAIR/page3/image2.png);
+  content: url(../../../src/image/HAIR/page3/image2.webp);
 }
 
 .image__hair03 {
-  content: url(../../../src/image/HAIR/page3/image3.png);
+  content: url(../../../src/image/HAIR/page3/image3.webp);
 }
 .image__hair04 {
-  content: url(../../../src/image/HAIR/page3/image4.png);
+  content: url(../../../src/image/HAIR/page3/image4.webp);
 }

@@ -29,46 +29,46 @@
 }
 
 .header0 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_01_active.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_01_active.webp);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header1 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_02_active.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_02_active.webp);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header2 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_03_active.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_03_active.webp);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header3 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_04_active.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_04_active.webp);
   filter: drop-shadow(0rem 0.8rem 2rem rgba(0, 0, 0, 0.12));
   background-size: cover;
 }
 
 .header00 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_01_inactive.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_01_inactive.webp);
   background-size: cover;
 }
 
 .header11 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_02_inactive.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_02_inactive.webp);
   background-size: cover;
 }
 
 .header22 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_03_inactive.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_03_inactive.webp);
   background-size: cover;
 }
 
 .header33 {
-  background-image: url(../../../src/image/FX5000/page5/fx-5000_04_inactive.png);
+  background-image: url(../../../src/image/FX5000/page5/fx-5000_04_inactive.webp);
   background-size: cover;
 }
 
@@ -80,19 +80,19 @@
 }
 
 .promo0 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_01.png);
+  content: url(../../../src/image/FX5000/page5/fx-5000_img_01.webp);
 }
 
 .promo1 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_02.png);
+  content: url(../../../src/image/FX5000/page5/fx-5000_img_02.webp);
 }
 
 .promo2 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_03.png);
+  content: url(../../../src/image/FX5000/page5/fx-5000_img_03.webp);
 }
 
 .promo3 {
-  content: url(../../../src/image/FX5000/page5/fx-5000_img_04.png);
+  content: url(../../../src/image/FX5000/page5/fx-5000_img_04.webp);
 }
 
 .imageContainer {

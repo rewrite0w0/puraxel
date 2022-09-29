@@ -316,7 +316,7 @@
 
 .parts__black__button {
   background: #7e818d;
-  color: #fff;
+  color: #fff !important;
 }
 
 .parts__gray__button {
@@ -453,7 +453,7 @@
 }
 
 .right__exit__button {
-  content: url(../../../src/image/modal/exit__button.png);
+  content: url(../../../src/image/modal/exit__button.webp);
   cursor: pointer;
   width: 20px;
   margin-right: 1rem;

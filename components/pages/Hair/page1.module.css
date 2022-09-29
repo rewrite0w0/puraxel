@@ -79,7 +79,7 @@
 
 .rightImage {
   width: 600px;
-  content: url(../../../src/image/HAIR/page1/hair_main.png);
+  content: url(../../../src/image/HAIR/page1/hair_main.webp);
   position: absolute;
   z-index: -10;
 }

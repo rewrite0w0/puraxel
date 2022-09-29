@@ -49,7 +49,7 @@
 }
 
 .right__exit__button {
-  content: url(../../src/image/modal/exit__button.png);
+  content: url(../../src/image/modal/exit__button.webp);
   cursor: pointer;
 }
 
