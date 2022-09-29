@@ -36,7 +36,7 @@ export default function Layout({ children }) {
   const FX5000_BG = style.layout__background__fx5000;
   const ERROR_BG = style.layout__background__404;
 
-  const HAIR_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/HAIR/productBg_hair.png);
+  const HAIR_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/HAIR/productBg_hair.webp);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;`;
@@ -46,17 +46,17 @@ export default function Layout({ children }) {
   background-position: 50%;
   background-attachment: fixed;`;
 
-  const ME_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/ME/productBg_me.png);
+  const ME_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/ME/productBg_me.webp);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;`;
 
-  const TECH_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/PURATECH/productBg.png);
+  const TECH_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/PURATECH/productBg.webp);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;`;
 
-  const FX5000_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/FX5000/productBg_fx-5000.png);
+  const FX5000_BG_CDN = `background: url(https://cdn.jsdelivr.net/gh/rewrite0w0/puraxel@master/src/image/FX5000/productBg_fx-5000.webp);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed;`;
