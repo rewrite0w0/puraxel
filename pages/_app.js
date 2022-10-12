@@ -11,8 +11,8 @@ import Script from "next/script";
 import { isMobile, isTablet } from "react-device-detect";
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
   const REDIRECT_MOBILE = "https://m.puraxel.co.kr/";
+  const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url) => {

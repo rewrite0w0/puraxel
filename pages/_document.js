@@ -7,7 +7,7 @@ export default function Document() {
         <link
           rel="stylesheet"
           as="style"
-          crossOrigin
+          crossOrigin="true"
           href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.5/static/pretendard.css"
         />
       </Head>
